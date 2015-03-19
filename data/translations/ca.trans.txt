@@ -1,0 +1,417 @@
+# Translated by Montxo Vicente i Sempere (montxo@akramedia.net).
+%Translate = split('
+',<<END_OF_TRANSLATION);
+Could not create %s
+No s'ha pogut crear %s
+Showing revision %s
+S'està mostrant la revisió %s
+Revision %s not available
+La revisió %s no és disponible
+showing current revision instead
+s'està mostrant aleshores la versió actual
+Updates since %s
+Modificacions des del %s
+Updates in the last %s day
+Modificacions en el darrer %s dia
+Updates in the last %s days
+Modificacions en els darrers % dies
+Could not open %s log file
+No s'ha pogut obrir el fitxer de registre %s
+Error was
+La fallida fou
+Note: This error is normal if no changes have been made.
+Nota: Aquesta fallida és normal si no s'han fet canvis.
+Could not open old %s log file
+No s'ha pogut obrir l'antic fitxer de registre %s
+for %s only
+només per a %s
+%s day
+%s dia
+%s days
+%s dies
+List new changes starting from
+Llistar nous canvis començant per
+No updates since %s
+No hi ha modificacions des de %s
+Page generated %s
+Pàgina generada %s
+(edit)
+(editar)
+(diff)
+(modificacions)
+changes
+canvis
+History of %s
+Historial de %s
+Revision %s
+revisió %s
+View
+Vore
+Edit
+Editar
+Diff
+Comparar
+by
+per
+Preferences
+Preferències
+Random Page
+Pàgina aleatòria
+ID %s
+Identificatiu %s
+from %s
+de %s
+[Home]
+[Inici]
+redirected from %s
+redireccionat des de %s
+Edit revision %s of this page
+Editar la revisió %s d'aquesta pàgina
+Edit text of this page
+Editar el text d'aquesta pàgina
+This page is read-only
+No es poden fer modificacions en aquesta pàgina
+View other revisions
+Vore altres revissions
+View current revision
+Vore la revisió actual
+Last edited
+Darrera edició
+Edited
+Editada
+Warning
+Avís
+Database is stored in temporary directory %s
+La base de dades és desada al directori temporal %s
+Search:
+Cercar:
+Your browser should go to the %s page.
+El teu navegador hauria d'anar cap la pàgina %s.
+If it does not, click %s to continue.
+Si no ho fa, clica en %s per a continuar.
+Thanks for editing...
+Gràcies per editar...
+Thank you for editing %s.
+Gràcies per editar %s.
+Link to another page...
+Enllaçar cap una altra pàgina...
+Follow the %s link to continue.
+Seguisca l'enllaç %s per a continuar.
+alternate
+alternatiu
+search
+cercar
+major diff
+modificació gran
+minor diff
+modificació petita
+author diff
+modificació dels autors
+major
+gran
+minor
+petit
+author
+autor
+(The revisions are identical or unavailable.)
+(Les revissions són idèntiques o inaccessibles).
+no other diffs
+no hi ha altres comparacions
+No diff available.
+No hi ha cap comparació disponible.
+Difference (from revision %s to current revision)
+Comparació (de la revisió %s amb la revisió actual)
+No diff available--this is the first %s revision.
+No hi ha comparació disponible--aquesta és la primera %s revisió.
+Difference (from prior %s revision)
+Comparació (de la darrera revisió %s)
+Changed:
+Canviat:
+Removed:
+Llevat:
+Added:
+Afegit:
+Describe the new page here.
+Descriu ací la nova pàgina.
+Bad page version (or corrupt page).
+Versió errònia de pàgina (o pàgina corrupta).
+cant write %s
+no puc escriure %s
+Page name is too long: %s
+El nom de la pàgina és massa llarg: %s
+Page name may not contain space characters: %s
+El nom de la pàgina no hi pot contindre caràcters d'espai: %s
+Too many / characters in page %s
+Hi ha hassa caràcters de barra inclinada a la pàgina %s
+Invalid Page %s (subpage without main page)
+Pàgina no vàlida %s (no pot haver-hi una subpàgina sense una pàgina principal prèviament)
+Invalid Page %s (missing subpage name)
+Pàgina no vàlida %s (hi manca el nom de la subpàgina)
+Invalid Page %s (/ not allowed)
+La pàgina no és vàlida %s (no es permès de posar el caràcter /)
+Invalid Page %s
+La pàgina no és vàlida %s
+Invalid Page %s (must not end with .db)
+La pàgina no és vàlida %s (no ha d'acabar amb ".db")
+Invalid Page %s (must not end with .lck)
+La pàgina no és vàlida %s (no ha d'acabar amb ".lck")
+can not make %s
+no es pot fer %s
+Can not open %s
+No es pot obrir %s
+Invalid action parameter %s
+Acció no vàlida del paràmetre %s
+Invalid URL.
+La URL no és vàlida.
+Editing Denied
+L'edició no és permesa
+Editing not allowed: user, ip, or network is blocked.
+L'edició no és permesa: s'hi ha blocat l'usuari, la ip, o la xarxa.
+Contact the wiki administrator for more information.
+Contacta amb l'administrador del wiki per a més informació.
+Editing not allowed: %s is read-only.
+L'edició no és permesa: %s és només per a llegir-ho.
+Editing %s
+Modificant %s
+Editing revision %s of
+Modificant la revisió %s de
+Editing old revision %s.
+Modificant la revisió antiga %s.
+Saving this page will replace the latest revision with this text.
+Si desa aquesta pàgina substituirà la darrera revisió amb aquest text.
+Edit Conflict!
+Conflicte en l'edició!
+(This is a new conflict)
+(Això és un nou conflict)
+Someone saved this page after you started editing.
+Algú alçà aquesta pàgina desprès que hages començat a editar-la.
+The top textbox contains the saved text.
+La caixa de text superior contè el text alçat.
+Only the text in the top textbox will be saved.
+Només el text que hi ha a la caixa superior serà alçat.
+Scroll down to see your edited text.
+Desplace cap avall per a vore el teu text editat.
+Last save time:
+Hora de la darrera alçada:
+Current time is:
+L'hora actual és:
+Summary:
+Resum:
+This change is a minor edit.
+Aquest canvi és una modificació petita.
+Send email notification that %s has been changed.
+Enviar un email d'avís sobre el canvi de %s.
+Save
+Alçar
+Your user name is
+El teu nom d'usuari és
+Visit %s to set your user name.
+Visite %s per a establir el teu nom d'usuari.
+Preview
+Vista prèvia
+This is the text you submitted:
+Aquest és el text que has lliurat:
+Preview:
+Vista prèvia:
+NOTE: This preview shows the revision of the other author.
+NOTA: Aquesta vista prèvia mostra la revissió de l'altre autor.
+Preview only, not yet saved
+Encara no se'n ha alçat. Això només és una vista preliminar.
+Editing Preferences
+S'està editant les Preferències
+
+User Information:
+Informació de l'usuari:
+Your User ID number: %s
+El teu número indicatiu d'usuari: %s
+UserName:
+Nom d'usuari:
+(blank to remove, or valid page name)
+(deixa'l buit per a treure'l, o altrament pots escriure un nom vàlid d'alguna pàgina)
+Set Password:
+Clau d'accès:
+(blank to remove password)
+(deixa'l buit per a treure la clau d'accès)
+Passwords allow sharing preferences between multiple systems.
+Les claus d'accès permeten la compartició de preferències entre diversos sistemes.
+Passwords are completely optional.
+Les claus d'accès són absolutament opcionals.
+Administrator Password:
+Clau d'accès de l'Administrador:
+(Administrator passwords are used for special maintenance.)
+(Les claus d'accès de l'Administrador es fan servir per a fer manteniments especials.)
+Include this address in the site email list.
+Incloure aquesta adreça a la llista de correu electrònic del lloc web.
+(Uncheck the box to remove the address.)
+(Si vol treure l'adreça, no marque la casella.)
+Email Address:
+Adreça Email:
+Default days to display:
+Nombre de dies a mostrar per defecte:
+Most recent changes on top
+Mostrar primer els canvis més recents
+Show all changes (not just most recent)
+Mostrar tots els canvis (no tan sols els més recents)
+Hide minor edits
+Amagar les modificacions petites
+Show minor edits
+Mostrar les modificacions petites
+Show only minor edits
+Mostrar només les modificacions petites
+Minor edit display:
+Mostrar les modificacions petites:
+Use "changes" as link to history
+
+Fer servir "chages" com a enllaç cap l'historial
+Differences:
+Diferències:
+Show (diff) links on %s
+Mostrar enllaços (diff) en %s
+Show differences on all pages
+Mostrar modificacions a totes les pàgines
+No differences on %s
+No hi ha modificacions en %s
+Major
+Gran
+Minor
+Petita
+Author
+Autor
+Default difference type:
+Mena de modificacions per defecte:
+Misc:
+Variats:
+Server time:
+Hora del servidor:
+Time Zone offset (hours):
+Diferència horària amb el servidor:
+Use 100% wide edit area (if supported)
+Fer servir el 100% de l'amplada de la finestra (si hi és permès)
+Edit area rows:
+Nombre de fileres de l'àrea d'edició:
+columns:
+Nombre de columnes de l'àrea d'edició:
+Show link bar on top
+Mostrar barra d'enllaços en la part superior:
+
+Add "Random Page" link to link bar
+Afegir l'enllaç de la "Pàgina aleatòria" a la barra d'enllaços
+Saving Preferences
+Alçant les Preferències
+Invalid UserID %s, preferences not saved.
+Les preferències no s 'han alçat perquè el número indicatiu de l'Usuari %s no és vàlid
+(Preferences require cookies, but no cookie was sent.)
+(Les Preferències requereixen galetes (cookies), però no s'ha enviat cap galeta.)
+UserName removed.
+S'ha tret el nom d'usuari.
+Invalid UserName %s: not saved.
+No se'n ha alçat perquè el nom d'Usuari %s no és vàlid.
+UserName must be 50 characters or less. (not saved)
+El nom d'usuari ha de tindre 50 o menys caràcters. (no se'n ha alçat)
+UserName %s saved.
+S'ha alçat el nom d'Usuari %s.
+Password removed.
+S'ha tret la Clau d'Accés.
+Password changed.
+S'ha canviat la Clau d'Accés.
+Administrator password removed.
+S'ha tret la Clau d'Accés de l'Administrador.
+Administrator password changed.
+S'ha canviat la Clau d'Accés de l'Administrador.
+User has administrative abilities.
+L'Usuari té permissos administratius.
+User has editor abilities.
+L'Usuari té permissos d'edició.
+User does not have administrative abilities.
+L'Usuari no té permissos administratius.
+(Password does not match administrative password(s).)
+(La Clau d'Accès no coincideix amb la (les) Clau(s) d'Accès.)
+Local time:
+Hora local:
+Preferences saved.
+Les preferències han estat alçades.
+Could not read from %s:
+No s'ha pogut llegir %s:
+Could not get mail lock
+No s'ha pogut obtindre un bloqueig del correu
+Could not append to %s:
+No s'ha pogut afegir a %s:
+Could not overwrite %s:
+No s'ha pogut substituir %s:
+Index of all pages
+Index de totes les pàgines
+Login
+Autentificació
+User ID number:
+Indicatiu d'usuari:
+Password:
+Clau d'Accès:
+Login Results
+Resultat de l'autentificació
+Login for user ID %s complete.
+L'autentificació per al indicatiu d'usuari %s ha estat completa.
+Login for user ID %s failed.
+Ha fallat l'autentificació per al indicatiu d'usuari %s.
+Could not get user-ID lock
+No s 'ha pogut obtindre el bloqueig de l'indicatiu d'usuari.
+Search for: %s
+Cercar:
+%s pages found:
+%s pàgines trobades:
+Full Link List
+Llista completa d'enllaços
+Editing not allowed for %s.
+No és permés l'edició de %s.
+SampleUndefinedPage
+
+%s cannot be defined.
+No es pot definir %s.
+Sample_Undefined_Page
+
+[[%s]] cannot be defined.
+No es pot definir [[%s]].
+Could not get editing lock
+No s'ha pogut obtindre el bloqueig de l'edició
+Normal Unlock.
+Desbloqueig Normal.
+Removing edit lock
+Llevar el bloqueig de l'edició
+This operation may take several seconds...
+Aquesta operació pot trigar uns segons...
+Forced Unlock.
+Desbloqueig Forçat.
+%s log error:
+%s error del registre:
+can not write diff_log
+no es pot escriure diff_log
+Maintenance on all pages
+Manteniment de totes les pàgines
+Maintenance not done.
+No s'ha realitzat el manteniment.
+(Maintenance can only be done once every 12 hours.)
+(El Manteniment només pot ser realitzat cada 12 hores.)
+Remove the "maintain" file or wait.
+Treure el fitxer "maintain" o esperar.
+Could not get maintain-lock
+No s'ha pogut obtindre el bloqueig del manteniment
+Processing rename/delete commands:
+Processant les ordres de reanomenar/esborrar:
+This operation is restricted to site editors only...
+L'ús d'aquesta operació és reservada per als editors del lloc web...
+This operation is restricted to administrators only...
+L'ús d'aquesta operació és reservada per als administradors...
+Set or Remove global edit lock
+Establir o llevar el bloqueig global d'edició
+Edit lock created.
+S'ha establert el bloqueig d'edició.
+Edit lock removed.
+S'ha llevat el bloqueig d'edició.
+Set or Remove page edit lock
+Establir o llevar el bloqueig d'edició de la pàgina
+Missing page id to lock/unlock...
+Hi manca l'indicatiu de la pàgina per a blocar/desblocar...
+Lock for %s created.
+S'ha establert el bloqueig d'edició per a %s.
+Lock for %s removed.
+S'ha llevat el bloqueig d'edició per a %s.
+END_OF_TRANSLATION

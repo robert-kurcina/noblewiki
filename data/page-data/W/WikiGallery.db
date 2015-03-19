@@ -1,0 +1,65 @@
+tsÿþ11223011252ÿþ1versionÿþ13ÿþ1cache_oldmajorÿþ18ÿþ1authorcreateÿþ1RobertKurcinaÿþ1cache_oldauthorÿþ18ÿþ1cache_diff_default_authorÿþ11ÿþ1revisionÿþ19ÿþ1tscreateÿþ11195453167ÿþ1text_defaultÿþ1ipÿþ2127.0.0.1ÿþ2tsÿþ21223011252ÿþ2versionÿþ21ÿþ2nameÿþ2text_defaultÿþ2dataÿþ2summaryÿþ3*ÿþ3textÿþ3{{toc}}
+
+== Image Gallery ==
+To display a nice image gallery, utilize the following syntax.  Ensure that a set of thumbnail images, and the larger images themselves, exist.  This gallery will display as a set of list items unless javascript is enabled.
+
+<pre>
+{{gallery:
+thumb=ExampleGallery/thumb_image1.jpg|image=ExampleGallery/image1.jpg|title=pity caption for tooltip1
+thumb=ExampleGallery/thumb_image2.jpg|image=ExampleGallery/image2.jpg|title=pity caption for tooltip2
+thumb=ExampleGallery/thumb_image3.jpg|image=ExampleGallery/image3.jpg|title=pity caption for tooltip3
+thumb=ExampleGallery/thumb_image4.jpg|image=ExampleGallery/image4.jpg|title=pity caption for tooltip4
+}}
+</pre>
+
+The above creates this:
+
+{{gallery:
+thumb=ExampleGallery/thumb_image1.jpg|image=ExampleGallery/image1.jpg
+thumb=ExampleGallery/thumb_image2.jpg|image=ExampleGallery/image2.jpg
+thumb=ExampleGallery/thumb_image3.jpg|image=ExampleGallery/image3.jpg
+thumb=ExampleGallery/thumb_image4.jpg|image=ExampleGallery/image4.jpg
+}}
+
+=== Robust Gallery =
+A more robust gallery can be defined by setting up the header text, caption, and description for the gallery itself.  Each image can also be provided a title that will result in a tooltip if the image is mouse-overed.
+
+{{gallery:header=Another Fantastic Set of Images|caption=Another One|description=Donec consectetuer, nibh ac tincidunt facilisis, nulla purus consequat ante, non feugiat sem metus vitae tortor. Quisque lacus quam, feugiat at, cursus eu, rhoncus vel, purus. Aenean eget dolor in risus facilisis euismod. Pellentesque dui est, congue a, varius ut, ultricies sed, orci. Maecenas a elit at libero volutpat sagittis. Donec lacus est, gravida euismod, gravida sit amet, cursus vel, tellus. Nullam eget odio. In hac habitasse platea dictumst. Nam eleifend, nunc id porttitor egestas, diam mi rutrum eros, vitae molestie eros leo quis sem. Etiam egestas metus id tortor posuere iaculis. Integer a turpis. Integer vitae justo ut pede interdum commodo. Ut nibh lacus, eleifend id, consectetuer et, cursus at, tellus. Fusce leo nibh, porta sed, adipiscing eu, posuere at, lectus. Nulla facilisi. Suspendisse ipsum diam, tincidunt nec, adipiscing et, ullamcorper vitae, nunc. Nam a urna. Etiam odio felis, placerat nec, sollicitudin malesuada, vulputate a, orci. Suspendisse vitae libero non arcu venenatis mollis. Vivamus vitae urna.
+thumb=ExampleGallery/thumb_image1.jpg|image=ExampleGallery/image1.jpg|title=pity caption for tooltip1
+thumb=ExampleGallery/thumb_image2.jpg|image=ExampleGallery/image2.jpg|title=pity caption for tooltip2
+thumb=ExampleGallery/thumb_image3.jpg|image=ExampleGallery/image3.jpg|title=pity caption for tooltip3
+thumb=ExampleGallery/thumb_image4.jpg|image=ExampleGallery/image4.jpg|title=pity caption for tooltip4
+}}
+
+The above was created with:
+<pre>
+{{gallery:header=Another Fantastic Set of Images|caption=Another One|description=Donec consectetuer, nibh ac tincidunt facilisis, nulla purus consequat ante, non feugiat sem metus vitae tortor. Quisque lacus quam, feugiat at, cursus eu, rhoncus vel, purus. Aenean eget dolor in risus facilisis euismod. Pellentesque dui est, congue a, varius ut, ultricies sed, orci. Maecenas a elit at libero volutpat sagittis. Donec lacus est, gravida euismod, gravida sit amet, cursus vel, tellus. Nullam eget odio. In hac habitasse platea dictumst. Nam eleifend, nunc id porttitor egestas, diam mi rutrum eros, vitae molestie eros leo quis sem. Etiam egestas metus id tortor posuere iaculis. Integer a turpis. Integer vitae justo ut pede interdum commodo. Ut nibh lacus, eleifend id, consectetuer et, cursus at, tellus. Fusce leo nibh, porta sed, adipiscing eu, posuere at, lectus. Nulla facilisi. Suspendisse ipsum diam, tincidunt nec, adipiscing et, ullamcorper vitae, nunc. Nam a urna. Etiam odio felis, placerat nec, sollicitudin malesuada, vulputate a, orci. Suspendisse vitae libero non arcu venenatis mollis. Vivamus vitae urna.
+thumb=ExampleGallery/thumb_image1.jpg|image=ExampleGallery/image1.jpg|title=pity caption for tooltip1
+thumb=ExampleGallery/thumb_image2.jpg|image=ExampleGallery/image2.jpg|title=pity caption for tooltip2
+thumb=ExampleGallery/thumb_image3.jpg|image=ExampleGallery/image3.jpg|title=pity caption for tooltip3
+thumb=ExampleGallery/thumb_image4.jpg|image=ExampleGallery/image4.jpg|title=pity caption for tooltip4
+}}
+</pre>
+
+=== Options Switches =
+Here is the complete list of options available for defining a gallery:
+
+!!Option|width=150!!Description!!
+||<tt><nowiki>|header=XXXX</nowiki></tt>||Provide a header above the gallery's thumbnail set.||
+||<tt><nowiki>|caption=XXXX</nowiki></tt>||Provide a caption below the gallery's thumbnail set that could lead into the gallery description.||
+||<tt><nowiki>|description=XXXX</nowiki></tt>||Provide a description below the gallery's thumbnail set.||
+||<tt><nowiki>|thumbWidth=NNN</nowiki></tt>||Specify how wide each thumbnail in the gallery should be.  This defaults to 100 pixels.  If the desired width is not that of the provided thumbnail; the gallery will scale accordingly.||
+||<tt><nowiki>|thumb=NNN|image=NNN</nowiki></tt>||Provide the images for the thumbnail and the zoomed-in view.  This should appear on its own line.  If none is provided, the gallery will use a default image for whatever is missing.  When providing the images, do not use the <nowiki>upload:</nowiki> prefix.  All images need to exist within the uploads directory.||
+||<tt><nowiki>|title=XXXX</nowiki></tt>||Add this after the thumb, image= parameters to provide a toolt-tip for a thumbnail image.||
+
+== Common Image Gallery =
+All image gallery should be filed as sub-pages under ImageGallery in order to make their management easier.
+== Related Entries =
+{{template:RelatedEntries/WikiEditing}}
+ÿþ3newauthorÿþ31ÿþ3minorÿþ30ÿþ2usernameÿþ2RobertKurcinaÿþ2hostÿþ2localhostÿþ2revisionÿþ29ÿþ2tscreateÿþ21195453167ÿþ2idÿþ21298ÿþ2keeptsÿþ21223011252ÿþ1cache_diff_default_majorÿþ11ÿþ1cache_diff_default_minorÿþ1<div id=wikidiffdiv><table id=wikidifftable><tr valign=top><td class="diff-header">Paragraph 46</td><td class="diff-vertical">&nbsp;</td><td class="diff-header">Paragraph 46</td></tr><tr valign=top><td class="diff-para-ident">All image gallery should be filed as sub-pages under ImageGallery in order to make their management easier.<br>
+</td><td class="diff-vertical"></td><td class="diff-para-ident">All image gallery should be filed as sub-pages under ImageGallery in order to make their management easier.<br>
+</td></tr><tr valign=top><td class="diff-para-deleted"><br>
+</td><td class="diff-vertical"></td><td class="diff-para-added">== Related Entries =<br>
+</td></tr><tr valign=top><td class="diff-para-ident">{{template:RelatedEntries/WikiEditing}}<br>
+</td><td class="diff-vertical"></td><td class="diff-para-ident">{{template:RelatedEntries/WikiEditing}}<br>
+</td></tr></table></div>

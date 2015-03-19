@@ -1,0 +1,960 @@
+/*---------------------------------------------------------------------------*/
+/* 2007.03.04 written by Robert Kurcina; taken from YUI page reset
+/* For use as the default CSS file
+/*---------------------------------------------------------------------------*/
+body,div,ul,ol,li,h1,h2,h3,h4,h5,h6,dd,dl,dt,pre,form,fieldset,input,textarea,p,blockquote,td {  
+    margin:0; 
+    padding:0; 
+} 
+table { 
+    border-collapse:collapse; 
+    border-spacing:0; 
+} 
+fieldset,img {  
+    border:0; 
+} 
+address,caption,cite,code,dfn,em,strong,th,var { 
+    font-style:normal; 
+    font-weight:normal; 
+} 
+ul { 
+    list-style:none; 
+} 
+caption,th { 
+    text-align:left; 
+} 
+q:before,q:after { 
+    content:''; 
+} 
+abbr,acronym { 
+	border:0; 
+}
+
+pre {
+	white-space: pre-wrap; /* css-3 */
+	white-space: -moz-pre-wrap !important; /* Mozilla, since 1999 */
+	white-space: -pre-wrap; /* Opera 4-6 */
+	white-space: -o-pre-wrap; /* Opera 7 */
+	word-wrap: break-word; /* Internet Explorer 5.5+ */
+}
+
+code {
+	font-weight: bold;
+}
+
+/*---------------------------------------------------------------------------*/
+/* HOVER effects*/
+/*---------------------------------------------------------------------------*/
+.hoverRow td {
+	background-color: #eeeeee !important;
+	border-top: 1px solid #ffffff !important;
+	border-bottom: 1px solid #000000 !important;	
+}
+
+/*---------------------------------------------------------------------------*/
+/* UseModWiki*/
+/*---------------------------------------------------------------------------*/
+.wikibutton {
+	padding: 1px;
+}
+* { 
+ 	font-family: Verdana, Arial, Sans-serif;
+ 	line-height: 1.6em;
+ 	font-size: 9pt;
+}
+
+a {
+	font-size: 9pt;
+}
+
+a:hover,
+a:active,
+a:visited,
+a:link {
+	color: blue;
+}
+
+iframe { 
+	margin-bottom: 20px;
+	
+}
+
+.footnotes {
+	border: 1px solid #eeeeee;
+	background-color: #cccccc;
+	padding: 10px;
+	margin-top: 10px;
+	padding-top: 0px;
+}
+
+.footnote-item {
+	font-size: 0.8em;
+}
+
+.footnote-note {
+	font-size: 0.8em;
+}
+
+.footnote-entry {
+	font-style: italic;
+}
+
+/*---------------------------------------------------------------------------*/
+/* Monospace*/
+/*---------------------------------------------------------------------------*/
+tt, code, pre {
+	font-family: Courier, Serif;
+	overflow: auto;
+}
+
+code {
+	padding: 5px;
+}
+
+pre {
+	font-family: Courier, Serif;
+}
+
+blockquote {
+	font-family: Courier, Serif;
+	margin-top: 5px;
+	margin-bottom: 10px;
+	padding-top: 10px;
+	padding-left: 35px;
+	padding-right: 35px;
+	background: url("/img/wiki/purple/blockquote.jpg") left top no-repeat;
+	overflow: auto;
+	_display: inline-block;
+}
+blockquote a:link {
+	font-family: Courier, Serif;
+}
+
+.wikipreview blockquote {
+	background: url("/img/wiki/purple/blockquote.preview.jpg") left top no-repeat;	
+}
+body {
+	text-align: center; /* for IE */
+	margin: 0 auto;   /* align for good browsers */
+	background-image: url("/img/wiki/purple/purple.stripe.gif");
+}
+
+h1, h1 .headline { font-size: 18pt; }
+h2, h2 .headline { font-size: 16pt; }
+h3, h3 .headline { font-size: 14pt; }
+h4, h4 .headline { font-size: 12pt; }
+h5, h5 .headline { font-size: 11pt; }
+h6, h6 .headline { font-size: 10pt; }
+
+h1 a{ font-size: 18pt; }
+h2 a{ font-size: 16pt; }
+h3 a{ font-size: 14pt; }
+h4 a{ font-size: 12pt; }
+h5 a{ font-size: 11pt; }
+h6 a{ font-size: 10pt; }
+
+.editsection {
+	font-weight: normal; 
+	float: right;
+	margin-top: 0.95em;
+}
+
+.editsection a {
+	font-size: 9pt !important;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+	margin-bottom: 3px;
+	font-weight: bold;
+	_display: inline-block;
+	border-bottom: 1px solid #cccccc;
+}
+h4, h5, h6 {
+	margin-top: 10px;
+}
+
+pre > h1,
+pre > h2,
+pre > h3,
+pre > h4,
+pre > h5,
+pre > h6 {
+	margin-top: -5px !important;
+}
+
+/*---------------------------------------------------------------------------*/
+/* Definitions lists*/
+/*---------------------------------------------------------------------------*/
+dl {
+	padding-bottom: 10px;
+	padding-top: 10px;
+}
+
+dt {
+	font-weight: bold;
+	padding-left: 10px;	
+	text-decoration: underline;
+}
+
+dd {
+	padding-left: 10px;
+	padding-bottom: 10px;
+}
+
+input[type="checkbox"]{
+	margin-right: 10px;
+	margin-bottom: 3px;
+}
+
+.wikitext h1,
+.wikipreview h1 {
+	font-weight: bold;
+}
+
+.wikitext h2,
+.wikipreview h2 {
+	font-weight: bold;
+}
+.wikitext h3,
+.wikipreview h3 {
+	font-weight: bold;
+}
+.wikitext h4,
+.wikipreview h4 {
+	font-weight: bold;
+}
+.wikitext h5,
+.wikipreview h5 {
+	font-weight: bold;
+}
+.wikitext h6,
+.wikipreview h6 {
+	font-weight: bold;
+	font-style: italics;
+	margin-bottom: 0px;
+}
+
+.wikitext, .wikidiff, .wikiadmin,
+.wikiheader, .wikifooter {
+	background-color: #ffffff;
+}
+
+.wikitext, .wikiadmin, .wikidiff, .wikipreview{
+	border: 1px solid #cccccc;
+	padding: 10px;
+	padding-top: 5px;
+	margin-left: 160px;
+	margin-right: 5px;
+	word-wrap: break-word; /* Internet Explorer 5.5+ */	
+}
+
+
+.wikipreview {
+	padding: 0px 10px 10px 10px;
+	margin-bottom: 1px;
+	background-color : #ffeeee;
+	border: 5px dotted #ff0000;
+	overflow: auto;
+}
+
+.wikiblurb {
+	padding: 10px;	
+}
+
+.wikiadmin h2 {
+	color: red;
+	font-weight: bold;
+}
+.wikiadmin .wikiscriptlink:hover {
+	color: red;
+}
+
+p {
+	padding-bottom: 5px;
+}
+
+.wikitoc {
+	width: 225px;
+	padding: 5px;
+	margin-right: 25px;
+	margin-top: 0px;
+	margin-bottom: 5px;
+	border: 1px solid #cccccc;
+	background-color: #f5f5f5;
+}
+
+.wikitoc a:hover  {
+}
+
+.wikitoc a:visited,
+.wikitoc a:active {
+}
+	
+.wikitoctitle {
+	font-weight: bold;
+	text-align: center;
+	background-color: #000000;
+	color: #ffffff;
+}
+
+.wikitoc dd,
+.wikitoc dl,
+.wikitoc dt {
+	padding: 0px;
+}
+
+.wikilockicon,
+.wikiediticon {
+	height: 12px;
+	width: 12px;
+	margin-left: 3px;
+	padding-right: 8px;
+	position: relative;
+	top: -10px;
+	_top: -15px;
+	background-repeat: no-repeat;
+	background-image: url("/img/wiki/purple/icon.edit.link.gif");
+}
+
+.wikilockicon {
+	background-image: url("/img/wiki/purple/icon.locked.link.gif");	
+}
+
+.wikilinkicon {
+	height: 12px;
+	width: 12px;
+	_margin-top: 10px;
+	margin-left: 3px;
+	padding-right: 8px;
+	position: relative;
+	top: -4px;
+	_top: -6px;
+	background-repeat: no-repeat;
+	background-image: url("/img/wiki/purple/icon.question.red.gif");
+	background-position: 0px 2px;
+	_background-position: 0px 0px;
+	text-decoration: none;
+}
+.wikisearch {	
+	padding: 10px;
+	position: absolute;
+	top: 150px;
+	right: 55px;
+}
+
+.wikileftnavsearch {
+	background-color: #cccccc;
+	padding: 5px;
+	margin-right: 5px;
+	margin-top: -5px;
+	border-bottom: 1px solid #999999;
+	border-left: 1px solid #999999;
+	border-right: 1px solid #999999;		
+}
+
+#wikitextareabanlist {
+
+	font-family: Courier, Serif;
+	line-height: 1.2;
+}
+.wikiheader {
+	padding-top: 100px;
+	_padding-top: 110px;
+	padding-left: 10px;
+	padding-right: 10px;
+	background-image: url("/img/wiki/purple/header.jpg");
+	background-repeat: repeat-x;
+}
+.wikiheader a:link,
+.wikiheader a:visited { 
+	color: White; 
+	text-decoration: none;
+}
+
+.wikiheader h1,
+.wikiheader h3 {
+	border: none;
+}
+.wikiheader h3,
+.wikiheader h3 * {
+	font-size: 8pt;
+	font-weight: normal;
+	margin-top: 10px;
+	margin-bottom: -5px;
+	_margin-bottom: 5px;
+}
+.wikifooter a:link,
+.wikifooter a:visited { 
+	color: White; 
+	text-decoration: none;
+}
+
+.wikiheader a:hover,
+.wikifooter a:hover {
+	text-decoration: underline;
+}
+
+.wikiheader,
+.wikifooter {
+	color: Yellow;
+}
+
+
+.wikilinediff {
+	height: 12px;
+	margin-bottom: 5px;
+	background-image: url("/img/wiki/purple/gray.shadow.top.gif");
+	background-repeat: repeat-x;
+}
+
+ol, ul {
+	margin-left: 25px;
+	padding-top: 5px;
+	padding-bottom: 10px;
+}
+
+ul li {
+	list-style-image: url("/img/wiki/purple/bullet.fancy.gif");
+	margin-bottom: 5px;
+}
+
+.wikiheader .wikigotobar {
+	margin-top: 0px;
+	margin-bottom: -5px;
+}
+
+.wikifooter .wikigotobar {
+	margin-bottom: 10px;
+}
+
+.wikiheader .wikigotobar a{
+	margin-right: 10px;
+	padding: 5px 10px 2px 0px;
+}
+
+.wikifooter .wikigotobar a{
+	margin-right: 10px;
+	padding: 2px 10px 5px 0px;
+}
+
+.wikifooter {
+	padding-bottom: 25px;
+	padding-left: 10px;
+	padding-right: 10px;
+	background-image: url("/img/wiki/purple/footer.jpg");
+	_margin-top: -5px;
+	min-height: 50px;
+}
+
+.wikigotobar {
+	font-weight: bold;
+}
+.wikilineheader {
+	margin-top: 10px;
+  	height : 16px;
+	margin-left: -10px;
+	margin-right: -10px;
+	background-image: url("/img/wiki/purple/gray.shadow.top.gif");
+	background-repeat: repeat-x;
+}
+
+.wikilineheaderpreview {
+  	height : 16px;
+	background-image: url("/img/wiki/purple/gray.shadow.top.gif");
+	background-repeat: repeat-x;
+}
+.wikilinefooter {
+	background-image: url("/img/wiki/purple/gray.shadow.bottom.gif");
+	background-repeat: repeat-x;
+  	height : 20px;
+  	_height: 25px;
+  	clear:both;
+}
+
+.wikiline {
+	border-bottom: #999999;
+  	height : 1px;
+  	margin-bottom: 5px;
+  	margin-top: 5px;
+  	_margin-top: -15px;
+}
+
+.wikiline1 {
+	border: 1px solid orange;
+  	height : 5px;
+}
+
+.wikiline2 {
+	border: 1px solid purple;
+  	height : 5px;
+}
+.wikilinepref {
+  	height : 1px;
+}
+.wikipagelink:link,
+.wikicreatepagelink:link {
+}
+
+.wikipagelink:visited,
+.wikicreatepagelink:visited {
+}
+
+.wikicreatepagelink:link {
+	color: red;
+}
+
+a.private {
+
+}
+
+span.disabled {
+	background-color: #eeeeee;
+	color: #cccccc;
+}
+
+.wikifooter span.disabled {
+	background-color: #000000 !important;
+	color: #999999;
+}
+
+.wikipageedit:hover {
+
+}
+.wikidiffold {
+	background-color : orange;
+}
+.wikidiffnew {
+	background-color : Lightgreen;
+}
+
+.wikirevision {
+
+}
+.wikiurlorimage img,
+.wikibracketurl img,
+.wikiuploadlink img,
+.wikiuploadbar img,
+.wikilogo img,
+.wikiinterpage img,
+.wikiurlorimage img {
+	margin-top: 0px;
+	padding: 3px;
+	padding-bottom: 6px;
+}
+
+.wikiexpandimageicon {
+	float: right;
+	background: url("/img/wiki/purple/icon.expand.white.gif");	
+	background-repeat: no-repeat;
+	padding-bottom: 14px;
+	padding-right: 14px;
+	text-decoration: none;
+	position: relative;
+	top: -16px;
+}
+
+
+.wikibracketbox {
+	border: 1px solid #cccccc;
+	background-color: #ffffff;
+	padding: 5px;
+}
+
+.wikibracketbox img {
+	border: none !important;
+}
+
+.wikibracketboxtitle {
+	font-weight: bold;
+	font-size: 0.8em;
+	padding: 3px;
+	border-bottom: 1px solid #cccccc;
+
+}
+.imagefloatright, .imagefloatleft {
+	margin-top: -15px !important;
+}
+
+.image {
+	margin-top: 5px;
+}
+
+.wikibracketboxdescription {
+	font-style: italic;
+	padding: 3px;
+}
+
+.floatnone {
+	float: none;
+}
+.floatleft {
+	float: left;
+	margin-right: 10px;
+	margin-left: 0px;
+}
+.floatright {
+	float: right;
+	margin-right: 0px;
+	margin-left: 10px;
+}
+.clearright {
+	clear: right;
+}
+.clearleft {
+	clear: left;
+}
+.clearboth {
+	clear: both;
+}
+.clearnone {
+	clear: none;
+}
+
+.clearfix:after {
+    content: "."; 
+    _display: block; 
+    height: 0; 
+    clear: both; 
+    visibility: hidden;
+}
+
+.clearfix {display: inline-block;}
+
+/*---------------------------------------------------------------------------*/
+/* Hides from IE-mac \*/
+* html .clearfix {height: 1%;}
+.clearfix {display: block;}
+/* End hide from IE-mac */
+/*---------------------------------------------------------------------------*/
+
+p img {
+	margin-top: -3px;
+}
+
+table.wikilargelist {
+	border: 1px solid #cccccc;
+}
+
+table.wikilargelist td {
+	vertical-align: top;
+	padding-left: 5px;
+	padding-right: 5px;
+	border: 1px solid #cccccc;
+}
+
+table.wikilargelist input {
+	margin-top: 5px;
+}
+
+table.wikilargelist th {
+	vertical-align: top;
+	background-color: #cccccc;
+	border-right: 1px solid #999999;
+	border-bottom: 1px solid #999999;
+	padding-top: 5px;
+	padding-left: 5px;
+	padding-right: 10px;
+	font-weight: bold;
+}
+
+.thblack {
+	background-color: #000000 !important;
+	font-weight: bold !important;
+	color: white !important;
+}
+
+.wikidiff li:hover,
+.wikihistory tr:hover {
+    background-color: #ffcc00;
+}
+ 
+.wikipreview table.wikilargelist th {
+	vertical-align: top;
+	background-color: #cccccc;
+}
+
+table.wikilargelist {
+	position: relative;
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+.wikileftnav {
+	width: 155px;
+	_width: 160px; 
+	padding: 5px;
+	float: left;
+
+}
+
+.wikileftnav li,
+.wikileftnav li a
+.wikileftnav li a:link {
+	padding-left: 5px;
+	padding-right: 5px;
+	margin-right: 5px;
+	_font-size: 0.95em;
+}
+
+
+.wikileftnav li.selected {
+	background-color: #ffcc00;
+	font-weight: bold;
+}
+
+.wikileftnav li.disabled {
+	background-color: #eeeeee;
+	font-weight: bold;
+	color: #cccccc;
+}
+
+.wikileftnav .wikileftnavbox {
+	margin-right: 5px;
+	_margin-right: -5px;
+	margin-bottom: 10px;
+	margin-top: -5px;
+	background-color: #ffffff;
+	border-top: 1px solid #eeeeee;
+	border-right: 1px solid #cccccc;
+	border-bottom: 1px solid #cccccc;
+	border-left: 1px solid #eeeeee;
+}
+
+/*---------------------------------------------------------------------------*/
+/*CUSTOM DIV*/
+/*---------------------------------------------------------------------------*/
+.warning {
+	padding: 20px;
+	font-size: 12px;
+	background-color: yellow;
+}
+
+/*---------------------------------------------------------------------------*/
+/*STRUCTURE*/
+/*---------------------------------------------------------------------------*/
+#wikibar {
+  	height : 12px;
+  	background-image: url("/img/wiki/purple/gray.shadow.any.gif");
+}
+
+#summarytext {
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+#anylogo {
+	background-image: url("/img/wiki/purple/npg.logo.jpg");
+	background-repeat: no-repeat;
+	float: right;
+	position: relative;
+	top: -54px;
+	margin-top: 20px;
+	height: 54px;
+	width: 42px;
+}
+
+#wikicontainer {
+	text-align: left; /* counter the body center */
+	background-color: #f5f5f5;
+	border-right: 1px solid #000000;
+	border-left: 1px solid #ffcc00;
+	border-bottom: 1px solid #000000;
+	margin-left: 50px;
+	margin-right: 50px;
+	text-align: left; /* counter the body center */
+
+	min-width: 600px;
+	_height: 100%;
+
+}
+
+.wikipreviewtitle {
+	padding: 5px;
+	padding-left: 10px;
+	color: #ffffff;
+	background-color: #ff0000;
+	font-weight: bold;
+	_margin-top: -5px;
+}
+#wikieditbar {
+	float:right;
+	margin-right: 10px;
+	padding: 5px;
+	_float: none;
+}
+#searchfield:hover {
+	border: 1px solid black;
+}
+
+#wikitextareatext {
+	font-family: Courier, Monospaced, Serif;
+	line-height: 1.2;
+}
+
+#wikitextareacommandlist {
+	position: relative;
+}
+
+/*---------------------------------------------------------------------------*/
+/*FORMS*/
+/*---------------------------------------------------------------------------*/
+#wikiform {
+	padding: 10px;
+}
+
+fieldset {
+	border: 1px solid #cccccc;
+	padding: 0 10px 10px 10px;
+	width: 60%;
+	margin-bottom: 10px;
+}
+
+/*---------------------------------------------------------------------------*/
+/*perlDiff*/
+/*---------------------------------------------------------------------------*/
+#wikidifftable {
+	width: 100.01%;	
+	padding: 10px;
+}
+#wikidiffdiv {
+	margin-bottom: 20px;
+	_width: 99%;
+	_overflow: auto
+}
+.wikidifftexttitle {
+	margin-top: 10px;
+	font-weight: bold;
+	color: #ffffff;
+	padding: 10px;
+	background-color: #ff0000;
+}
+
+.diff-header       { 
+	padding-top: 20px;
+	font-weight: bold; 
+	font-size: 12pt; 
+	color: #000000; 
+	padding-left: 5px; 
+	padding-right: 5px; 
+	width: 45%;
+
+} 
+.diff-para-deleted { background: #ffb6c1 }   /* deleted complete paragraphs */
+.diff-para-added   { background: #98fb98 }  /* added complete paragraphs */
+.diff-para-ident   { background: White;  }                    /* unchanged complete paragraphs */
+.diff-para-changed { background: White;  }                    /* changed paragraphs */
+.diff-span-ident   { background: White;  }                    /* unchanged words in changed paragraphs */
+.diff-span-added   { background: #7cfc00 }  /* added words in changed paragraphs */
+.diff-span-deleted { background: #ff4500 }    /* deleted words in changed paragraphs */
+
+.diff-para-ident,
+.diff-para-deleted,
+.diff-para-changed,
+.diff-para-added,
+.diff-span-added,
+.diff-span-ident,
+.diff-span-deleted {
+	font-family: Courier, Monospace, Serif;
+}
+
+.diff-para-ident,
+.diff-para-deleted,
+.diff-para-changed,
+.diff-para-added {
+	padding: 5px;
+	width: 50%;
+	line-height: 1.5;
+	border: 1px solid #cccccc;
+}
+
+.diff-para-ident {
+	border: none;
+}
+
+.diff-vertical {
+	padding: 5px;
+}
+
+/*---------------------------------------------------------------------------*/
+/* Magic Content Module */
+/*---------------------------------------------------------------------------*/
+.magic { padding: 10px; }
+.magic h4 { margin-top: 10px; }
+
+
+/*---------------------------------------------------------------------------*/
+/* Unobtrusive Flash Object */
+/*---------------------------------------------------------------------------*/
+.ufoFlash {
+	font-family: verdana, arial, sans-serif;
+	font-size: 8pt;
+	padding: 5px; 
+	margin: 10px; 
+	background-color: #ffffff;
+	border: 1px solid #cccccc;
+}
+
+/*---------------------------------------------------------------------------*/
+/* GALLERY - customize this section */
+/*---------------------------------------------------------------------------*/
+.gallery {
+	background-color: #fff;
+	padding: 10px;
+	padding-bottom: 0px;
+	min-width: 224px;
+	width: 75%;
+	border-top: 1px solid #eeeeee;
+	border-left: 1px solid #eeeeee;
+	border-right: 1px solid #cccccc;
+	border-bottom: 1px solid #cccccc;
+	margin-bottom: 20px;
+}
+.gallery ul { 
+	list-style: none; 
+	margin-left: 0px;
+	margin-top: 0px;
+}
+.gallery ul li { display: inline; }
+.gallery ul img {
+	border: 5px solid #eeeeee;
+	border-bottom: 10px solid #eeeeee;
+}
+.gallery ul a:hover img {
+	border: 5px solid #ffcc00;
+	border-bottom: 10px solid #ffcc00;
+	color: #fff;
+}
+.gallery ul a:link,
+.gallery ul a:active,
+.gallery ul a:hover,
+.gallery ul a:visited { text-decoration: none; }
+.gallery ul a:hover { color: #fff; }
+.gallery div {
+	padding: 0px;
+	width: 100%;
+	border: none;
+	color: #000000; 
+	font-family: Verdana, Arial, Helvetica, Sans-serif; 
+}
+.gallery .header {
+	margin-bottom: 10px;
+	padding: 3px 0px 3px 3px;
+	font-weight: bold;
+	font-size: 10pt;
+	color: #ffffff;
+	background-color: #000000;
+}
+.gallery .caption {
+	font-size: 9pt;
+	margin-bottom: 0px;
+	font-weight: bold;
+	color: #000;
+	border-bottom: 1px solid #cccccc;
+	background-color: #ffffff;
+}
+.gallery .description {
+	color: #333333;
+	font-size: 8pt;
+	line-height: 1.5em;
+}

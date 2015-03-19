@@ -1,0 +1,429 @@
+%Translate = split('\n',<<END_OF_TRANSLATION);
+Could not create %s
+Impossibile creare %s
+Showing revision %s
+Versione %s
+Revision %s not available
+La versione %s non è disponibile
+showing current revision instead
+viene mostrata la versione corrente
+Updates since %s
+Modifiche da %s
+Updates in the last %s day
+Modifiche nell'ultimo giorno
+Updates in the last %s days
+Modifiche negli ultimi %s giorni
+Could not open %s log file
+Impossibile aprire il file di log %s
+Error was
+L'errore è stato
+Note: This error is normal if no changes have been made.
+Nota: Questo errore è normale se non ci sono state modifiche.
+Could not open old %s log file
+Impossibile aprire il file di log precedente %s
+for %s only
+solo per %s
+%s day
+%s giorno
+%s days
+%s giorni
+List new changes starting from
+Elenca le modifiche a partire da
+No updates since %s
+Non ci sono modifiche da %s
+Page generated %s
+Pagina generata il %s
+(edit)
+(modifica)
+(diff)
+(diff)
+changes
+versioni
+History of %s
+Cronologia di %s
+Revision %s
+Versione %s
+View
+Mostra
+Edit
+Modifica
+Diff
+Modifiche
+by
+di
+Preferences
+Preferenze
+Random Page
+Pagina a caso
+ID %s
+ID %s
+from %s
+da %s
+[Home]
+[Inizio]
+redirected from %s
+ridirezionata da %s
+Edit revision %s of this page
+Modifica la versione %s di questa pagina
+Edit text of this page
+Modifica il testo di questa pagina
+This page is read-only
+Questa pagina non può essere modificata
+View other revisions
+Mostra altre versioni
+View current revision
+Mostra la versione attuale
+Last edited
+Ultima modifica
+Edited
+Modificato
+Warning
+Attenzione
+Database is stored in temporary directory %s
+Il Database è salvato nella directory temporanea %s
+Search:
+Cerca:
+Your browser should go to the %s page.
+Il tuo browser dovrebbe accedere alla pagina %s.
+If it does not, click %s to continue.
+Se non lo fa, clicca %s per continuare. 
+Thanks for editing...
+Grazie per le modifiche ...
+Thank you for editing %s.
+Grazie per aver modificato %s.
+Link to another page...
+Collega ad un altra pagina
+Follow the %s link to continue.
+Segui il link %s per continuare. 
+alternate
+alternativo
+search
+cerca
+major diff
+modifica principale
+minor diff
+revisione secondaria
+author diff
+revisione dell'ultimo autore
+major
+principale
+minor
+secondaria
+author
+autore
+(The revisions are identical or unavailable.)
+(Le revisioni sono identiche o non disponibili.)
+no other diffs
+non ci sono altre differenze disponibili
+No diff available.
+Differenze non disponibili.
+Difference (from revision %s to current revision)
+Differenze (fra la versione %s e la versione corrente)
+No diff available--this is the first %s revision.
+Non ci sono differenze disponibili -- Questa è la prima versione %s.
+Difference (from prior %s revision)
+Differenze: dalla precedente revisione %s
+Changed:
+Righe modificate:
+Removed:
+Righe cancellate:
+Added:
+Righe aggiunte:
+Describe the new page here.
+Descrivi qui la nuova pagina
+Bad page version (or corrupt page).
+Pagina illeggivile
+cant write %s
+non posso scrivere %s
+Page name is too long: %s
+Nome pagina troppo lungo: %s
+Page name may not contain space characters: %s
+Il nome pagina non può contenere spazi: %s
+Too many / characters in page %s
+Troppi / nella pagina %s
+Invalid Page %s (subpage without main page)
+Pagina non valida %s (sotto-pagina senza pagina principale)
+Invalid Page %s (missing subpage name)
+Pagina non valida %s (manca il nome della sotto-pagina)
+Invalid Page %s (/ not allowed)
+Pagina non valida %s (/ non consentito)
+Invalid Page %s
+Pagina non valida %s
+Invalid Page %s (must not end with .db)
+Pagina non valida %s (non può finire con .db)
+Invalid Page %s (must not end with .lck)
+Pagina non valida %s (non può finire con .lck)
+can not make %s
+impossibile generare %s
+Can not open %s
+Impossibile aprire %s
+Invalid action parameter %s
+Parametro di azione %s non valido
+Invalid URL.
+URL non valido.
+Editing Denied
+Modifica negata
+Editing not allowed: user, ip, or network is blocked.
+Modifiche non permesse: utente, indirizzo IP o rete bloccati.
+Contact the wiki administrator for more information.
+Contattate l'amministratore del wiki per maggiori informazioni.
+Editing not allowed: %s is read-only.
+Modifiche non permesse: %s è una pagina di sola lettura
+Editing %s
+Modifica %s
+Editing revision %s of
+Modifica la revisione %s di
+Editing old revision %s.
+Modifica la vecchia revisione %s.
+Saving this page will replace the latest revision with this text.
+Salvando questa pagina l'ultima versione verrà sostituita con questo testo
+Edit Conflict!
+Conflitto di modifica!
+(This is a new conflict)
+(Questo è un nuovo conflitto)
+Someone saved this page after you started editing.
+Qualcuno ha salvato questa pagina dopo che tu hai cominciato a modificarla.
+The top textbox contains the saved text.
+La casella di testo in alto contiene il testo salvato.
+Only the text in the top textbox will be saved.
+Solo il testo nel campo in alto sarà salvato. 
+Scroll down to see your edited text.
+In basso le tue modifiche. 
+Last save time:
+Ora ultima revisione:
+Current time is:
+Ora corrente:
+Summary:
+Riassunto:
+
+This change is a minor edit.
+Questa è una revisione secondaria
+Send email notification that %s has been changed.
+Manda un email per notificare la modifica di %s.
+Save
+Salva
+Your user name is
+Il tuo nome utente è
+Visit %s to set your user name.
+Visita %s per indicare il tuo nome utente
+Preview
+Anteprima
+This is the text you submitted:
+Questo è il testo che hai inviato:
+Preview:
+Anteprima:
+NOTE: This preview shows the revision of the other author.
+NOTA: Questa anteprima mostra la revisione dell'altro autore.
+Preview only, not yet saved
+Solo anteprima, pagina non ancora salvata
+Editing Preferences
+Modifica Preferenze
+User Information:
+Informazioni utente	
+Your User ID number: %s
+Il tuo numero utente: %s
+UserName:
+Utente: 
+(blank to remove, or valid page name)
+(lascia vuoto per cancellare oppure inserisci un nome pagina valido)
+Set Password:
+Password: 
+(blank to remove password)
+(lascia vuoto per cancellarla)
+Passwords allow sharing preferences between multiple systems.
+Le password servono a mantenere le preferenze fra computer diversi.
+Passwords are completely optional.
+Non servono ad autenticare un username
+Administrator Password:
+Password amministrazione
+(Administrator passwords are used for special maintenance.)
+La password amministrazione serve per funzioni speciali di mantenimento
+Include this address in the site email list.
+Includi questo indirizzo nella lista di distribuzione del sito.
+(Uncheck the box to remove the address.)
+(Deseleziona la casella per rimuovere l'indirizzo).
+Email Address:
+Indirizzo di posta elettronica:
+Default days to display:
+Giorni da mostrare: 
+Most recent changes on top
+Versioni più recenti nella parte alta della pagina
+Show all changes (not just most recent)
+Mostra tutte le versioni (non solo le più recenti)
+Hide minor edits
+Nascondi versioni secondarie
+Show minor edits
+Mostra versioni secondarie
+Show only minor edits
+Mostra solo versioni secondarie
+Minor edit display:
+Mostra le versioni secondarie:
+Use "changes" as link to history
+Usa "versioni" come link alla cronologia
+Differences:
+Modifiche: 
+Show (diff) links on %s
+Mostra (diff) i collegamenti su %s
+Show differences on all pages
+Mostra le differenze su tutte le pagine
+No differences on %s
+Nessuna differenza su %s
+Major
+Principale
+Minor
+Secondario
+Author
+Autore
+Default difference type:
+Tipo di differenza predefinito:
+Misc:
+Altro:
+Server time:
+Ora del server:
+Time Zone offset (hours):
+Differenza di fuso orario (ore): 
+Use 100% wide edit area (if supported)
+Usa un'area di modifica ampia il 100% della finestra (se supportata)
+Edit area rows:
+Area di testo righe:
+columns:
+colonne:
+Show link bar on top
+Mostra la barra dei collegamenti in alto
+Add "Random Page" link to link bar
+Aggiungi "Pagina a caso" alla barra dei collegamenti
+Saving Preferences
+Salva preferenze
+Invalid UserID %s, preferences not saved.
+La UserID %s non è valida, le preferenze non sono state salvate.
+(Preferences require cookies, but no cookie was sent.)
+(Le preferenze richiedono i cookies, ma non è stato inviato alcun cookie).
+UserName removed.
+Nome utente rimosso.
+Invalid UserName %s: not saved.
+Nome utente %s non valido: non salvato.
+UserName must be 50 characters or less. (not saved)
+Il nome utente può contenere al massimo 50 caratteri. (non salvato)
+UserName %s saved.
+Nome utente %s salvato.
+Password removed.
+Password rimossa.
+Password changed.
+Password modificata.
+Administrator password removed.
+Password dell'amministratore rimossa.
+Administrator password changed.
+Password dell'amministratore modificata.
+User has administrative abilities.
+L'utente ha capacità di amministrazione.
+User has editor abilities.
+L'utente ha capacità di modifica.
+User does not have administrative abilities.
+L'utente non ha capacità di amministrazione
+(Password does not match administrative password(s).)
+(La password non corrisponde alla/e password di amministrazione).
+Local time:
+Ora locale:
+Preferences saved.
+Preferenze salvate.
+Could not read from %s:
+Impossibile leggere da %s:
+Could not get mail lock
+
+Could not append to %s:
+Impossibile aggiungere a %s:
+Could not overwrite %s:
+Impossibile sovrascrivere %s:
+Index of all pages
+Elenco di tutte le pagine
+Login
+Accesso
+User ID number:
+Numero ID utente:
+Password:
+Password:
+Login Results
+Risultati dell'accesso:
+Login for user ID %s complete.
+Accesso dell'ID utente %s completo.
+Login for user ID %s failed.
+Accesso dell'ID utente %s non riuscito.
+Could not get user-ID lock
+
+Search for: %s
+Cerca: %s
+%s pages found:
+Trovate %s pagine:
+Full Link List
+Elenco di tutti i links
+Editing not allowed for %s.
+Modifica di %s non permessa.
+SampleUndefinedPage
+CampionePaginaNonDefinita
+%s cannot be defined.
+%s non può essere definito.
+Sample_Undefined_Page
+Campione_Pagina_Non_Definita
+[[%s]] cannot be defined.
+[[%s]] non può essere definito.
+Could not get editing lock
+
+Normal Unlock.
+
+Removing edit lock
+Rimozione del blocco delle modifiche
+This operation may take several seconds...
+Questa operazione potrebbe richiedere più secondi...
+Forced Unlock.
+Sblocco forzato.
+%s log error:
+
+can not write diff_log
+impossibile scrivere diff_log
+Maintenance on all pages
+Manutenzione su tutte le pagine
+Maintenance not done.
+Manutenzione non fatta.
+(Maintenance can only be done once every 12 hours.)
+(La manutenzione può essere fatta solo una volta ogni 12 ore).
+Remove the "maintain" file or wait.
+
+Could not get maintain-lock
+
+Processing rename/delete commands:
+Processo dei comandi rinomina/elimina:
+This operation is restricted to site editors only...
+Questa operazione è riservata ai soli redattori del sito...
+This operation is restricted to administrators only...
+Questa operazione è riservata ai soli amministratori...
+Set or Remove global edit lock
+Imposta o rimuovi blocco delle modifiche globale
+Edit lock created.
+Creato blocco delle modifiche.
+Edit lock removed.
+Blocco delle modifiche rimosso.
+Set or Remove page edit lock
+Imposta o rimuovi blocco delle modifiche della pagina
+Missing page id to lock/unlock...
+ID mancante della pagina da bloccare/sbloccare...
+Lock for %s created.
+Creato blocco per %s.
+Lock for %s removed.
+Rimosso il blocco per %s.
+Lock page
+Blocca pagina
+Administration: 
+Amministrazione: 
+Lock site
+Blocca sito
+Unlock site
+Sblocca sito
+Unlock page
+Sblocca pagina
+Run Maintenance
+Esegui manutenzione
+Edit Banned List
+Modifica l'elenco degli esclusi
+Rename/Delete pages
+Rinomina/Elimina pagine
+END_OF_TRANSLATION

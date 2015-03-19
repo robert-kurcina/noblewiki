@@ -1,0 +1,1252 @@
+ÿþ1tsÿþ21195698807ÿþ2ipÿþ2127.0.0.1ÿþ2versionÿþ21ÿþ2nameÿþ2text_defaultÿþ2dataÿþ2summaryÿþ3*ÿþ3textÿþ3<toc>
+== List of CGI actions that <nowiki>NobleWiki</nowiki> will accept =
+This list is actually incomplete; there are about 6 undocument commands that are used by the wiki engine itself, but are also able to be invoked from the browser address bar.  
+
+=== Search =
+ dosearch=1
+
+!!!!Search Actions!!
+||[LocalWiki:dosearch=1&amp;search=Actions &amp;search=text] || search title and body of all pages, provide a <tt>filter=xxxx</tt> to narrow search to pages with <tt>xxxx</tt> in their name||
+
+=== Browsing Actions ==
+ action=<action name>
+
+!!!!Browsing Actions!!
+||[LocalWiki:action=browse&amp;id=Actions  browse&amp;id=pagename]  || view page||
+||[LocalWiki:action=rc rc] || display all recent changes||
+||[LocalWiki:action=rss rss] || RSS output of recent changes.||
+||[LocalWiki:action=random random] || random page||
+||[LocalWiki:action=history&amp;id=Actions history&amp;id=pagename] || history of changes||
+||[LocalWiki:action=browse&amp;id=Actions&amp;revision=38 browse&amp;id=pagename&amp;revision=number] || view old version||
+
+=== Public Actions ==
+ action=<action name>
+
+!!!!Common Actions!!
+||[LocalWiki:action=edit&amp;id=Actions edit&amp;id=pagename] || edit page||
+||[LocalWiki:action=index index] || alphabetical index of all pages||
+||[LocalWiki:action=version version] || show program-version (and options ?)||
+||[LocalWiki:action=links links] || displays links between pages, in various forms||
+
+!!!!User Actions!!
+||[LocalWiki:action=login login] || for configured user ids||
+||[LocalWiki:action=newlogin newlogin] || creates completely new user ID (and overwrite old cookie)||
+||[LocalWiki:action=editprefs editprefs] || edits a users preferences||
+
+=== Secure Actions =
+ action=<action name>
+
+!!!!Editor Actions!!
+||[LocalWiki:action=upload upload] || Upload images and other assets to the attachments directory||
+||[LocalWiki:action=listfiles listfiles] || find all active assets, provide a <tt>filter=xxxx</tt> to narrow search to pages with <tt>xxxx</tt> in their name||
+||[LocalWiki:action=listdisabled listdisabled] || find all disabled assets, provide a <tt>filter=xxxx</tt> to narrow search to pages with <tt>xxxx</tt> in their name||
+
+!!!!Advanced Actions!!
+||[LocalWiki:back=HomePage back] || use <tt>back=xxxx</tt> to find all pages associated with xxxx, provide a <tt>filter=xxxx</tt> to narrow search to pages with <tt>xxxx</tt> in their name||
+||[LocalWiki:action=rss rss] || Output content in RSS format||
+
+=== Administrator Functions =
+ action=<action name>
+
+!!!!Admin General Actions (see AdminFeatures for more details)!!
+||[LocalWiki:action=pagelock pagelock] || This will lock a specific page against editing (except by the admin): <tt>&lt;nowiki&gt;wiki.pl?action=pagelock&amp;id=HomePage&amp;set=1&lt;/nowiki&gt;</tt>||
+||[LocalWiki:action=pagelock unlock] || Same as pagelock (except by the admin): <tt>&lt;nowiki&gt;wiki.pl?action=pagelock&amp;id=HomePage&amp;set=0&lt;/nowiki&gt;</tt>||
+||[LocalWiki:action=editlock editlock] || Locks the entire wiki against editing.  Use with set=1 and set=0 like the pagelock command.||
+||[LocalWiki:action=editbanned editbanned]||Edits a list of banned IP addresses/networks which are blocked from editing.||
+||[LocalWiki:action=editlinks editlinks]||Allows renaming and deletion of pages.||
+
+!!!!Admin Maintenance Actions!!
+||[LocalWiki:action=maintain maintain]  || Does periodic maintenance, such as expiring old kept revisions. Non-admins can only use action=maintain once every 12 hours.||
+||[LocalWiki:action=unlock unlock]    || Attempts to get the edit lock normally.  If this fails, the lock is considered &quot;stuck&quot; and is forcibly removed.||
+||[LocalWiki:action=trimusers  trimusers] || Trims down the user database, removing users with no useful preferences set. You must change the <nowiki><tt>$StartUID</tt></nowiki> variable in the config afterwards.||
+||[LocalWiki:action=delete delete]||Delete a page from the wiki, will ask for confirmation if <tt>$confirm=1</tt> is set in the code||
+
+Note that admins can still edit all edit-locked pages.  Users with an &quot;editor&quot; password can still edit even if their IP is in the editbanned list, or while the whole-wiki editlock block is active.  (Editors can not edit individually-locked pages.)  The editor password is useful for restricted-access wikis, or to allow a good user to edit even if they share a network/proxy with an abusive user.
+----
+The maintain action has an undocumented feature.  If a file &quot;editlinks&quot; exists in the data dir its contents will be run just as if entered from the editlinks action, and then the file will be renamed to &quot;editlinks.old&quot;.  This doesn't seem very useful, perhaps it is left over from before editlinks had a web interface?
+
+:It can be useful for sites that haven't set up an admin password (and can't use the web interface).  --[UseMod:CliffordAdams CliffordAdams]
+----
+'''Q:''' Is there a way to prune the difflog file? One of my wikis has a 4-meg file. &quot;maintain&quot; does not seem to prune any of the reference log files. -- [UseMod:JerryMuelver JerryMuelver]
+
+'''A:''' Not within the wiki.  You can simply remove the difflog file--it is not used by the wiki (it is a write-only log).  I probably should have disabled it by default in 1.0  The purpose of the difflog file is to allow an admin to track changes (and possibly undo them) if wanted, but the new <nowiki><tt>KeptPages</tt></nowiki> functionality makes this feature almost useless.  --[UseMod:CliffordAdams CliffordAdams]
+----
+'''Q:''' Is there a parameter to make the wiki spit out the raw wiki text for a page?
+
+'''A:''' Yes, there is.  :-)  More helpfully, you can use the browse action and add the &quot;raw=1&quot; parameter, like <nowiki><tt>LocalWiki?action=browse&amp;id=Free_Links&amp;raw=1</tt></nowiki>
+:Note that spaces in the page name should be replaced with _ (underscore) characters.  --[UseMod:CliffordAdams CliffordAdams]
+----
+'''Q:''' I want to ban a user that has set up an account (strange thing for a spammer). Can I just add his username or ID to the ban list or do I have to figure out his IP? --[http://wiki.musicbrainz.org/wiki.pl?DonRedman DonRedman]
+
+'''A:''' AFAIK there is no possibility to block based on username or id. If you need to block someone, you could use the ip, host name, subnet order (sub)domain.
+----
+'''Q:''' Is there a way to restore a page that has been spammed, preferably using one of the backup pages?  I saw a reference to &quot;previous author backup&quot;, but haven't discovered if this is what I need, and if so how to trigger it. 
+
+'''A:''' Click &quot;View other revisions&quot; on the bottom of the page. Then choose the revision. Maybe look at the differences between certain revisions. Click on the right revision. Click on &quot;Edit revision XX of this page&quot;. Then save that old revision. It's now the new version.
+----
+'''Q:''' I want to use a textbox for filling in a new page. Example. I type &quot;Rover&quot; in the textbox, and get sent to URL:  http://www.usemod.com/cgi-bin/wiki.pl?Rover , is there any easy solution?
+
+'''A:''' Set your <nowiki><tt>$FooterNote</tt></nowiki> variable (in the config) to this:
+
+<tt>
+&lt;pre&gt;
+  &lt;form method=&quot;get&quot; action=&quot;wiki.pl&quot; enctype=&quot;application/x-www-form-urlencoded&quot;&gt;
+    Edit page:&lt;br&gt;
+    &lt;input type=hidden name=action value=edit&gt;
+    &lt;input type=text name=id size=20&gt;
+  &lt;/form&gt;
+&lt;/pre&gt;
+</tt>
+----
+'''Q:''' I'd like to remove the revision history for a page on my wiki which has been spammed several times.  I've found people link to one of the previous versions which contain the spam.  Is there a simple way to remove the past revisions?  Thank you!
+
+'''A:''' You may call the maintain action. This will remove versions older than <nowiki><tt>$KeepDays</tt></nowiki>. A more radical way would be to delete the file with all the older versions. This is placed somewhere under keep/ in the <nowiki><tt>$DataDir</tt></nowiki>. Maybe make a backup before removing. Why is it a problem, if people link to some older version of a page? --[UseMod:MarkusLude MarkusLude]
+
+'''A2:''' Thanks for the advice.  To answer your question, it's a problem because of this: someone puts a link to porn in a wiki page.  I delete this, but the link remains in one of the revisions.  A bunch of other people link to that revision from their porn pages.  Google indexes these.  Now, when someone searches for my wiki in Google, several of the returned hits are pornographic web sites.  Also, users who are curious about the diffs in that page will end up seeing links to porn.  Given my user base, I'd prefer if neither of these happened.  I realize there's a limit to what I can do, but getting rid of old revisions would help.
+: You can stop Google visiting the [[AdminActions|action]] pages by editing your wiki's robots.txt file and adding something like:
+:: /cgi-bin/wiki.pl?action
+
+:See [http://www.usemod.com/robots.txt www.usemod.com 's robots.txt file] - [UseMod:CameronDewe CameronDewe]
+
+== Related Entries =
+ AdminFeatures
+ WikiAdmin
+ÿþ3newauthorÿþ30ÿþ3minorÿþ31ÿþ2hostÿþ2localhostÿþ2usernameÿþ2RobertKurcinaÿþ2revisionÿþ213ÿþ2idÿþ21130ÿþ2tscreateÿþ21178788954ÿþ2keeptsÿþ21195699620ÿþ1versionÿþ21ÿþ2ipÿþ2127.0.0.1ÿþ2tsÿþ21195699620ÿþ2nameÿþ2text_defaultÿþ2dataÿþ2summaryÿþ3*ÿþ3textÿþ3<toc>
+== List of CGI actions that <nowiki>NobleWiki</nowiki> will accept =
+This list is actually incomplete; there are about 6 undocument commands that are used by the wiki engine itself, but are also able to be invoked from the browser address bar.  
+
+=== Search =
+ dosearch=1
+
+!!!!Search Actions!!
+||[LocalWiki:dosearch=1&amp;search=Actions &amp;search=text] || search title and body of all pages, provide a <tt>filter=xxxx</tt> to narrow search to pages with <tt>xxxx</tt> in their name||
+
+=== Browsing Actions ==
+ action=<action name>
+
+!!!!Browsing Actions!!
+||[LocalWiki:action=browse&amp;id=Actions  browse&amp;id=pagename]  || view page||
+||[LocalWiki:action=rc rc] || display all recent changes||
+||[LocalWiki:action=rss rss] || RSS output of recent changes.||
+||[LocalWiki:action=random random] || random page||
+||[LocalWiki:action=history&amp;id=Actions history&amp;id=pagename] || history of changes||
+||[LocalWiki:action=browse&amp;id=Actions&amp;revision=38 browse&amp;id=pagename&amp;revision=number] || view old version||
+
+=== Public Actions ==
+ action=<action name>
+
+!!!!Common Actions!!
+||[LocalWiki:action=edit&amp;id=Actions edit&amp;id=pagename] || edit page||
+||[LocalWiki:action=index index] || alphabetical index of all pages||
+||[LocalWiki:action=version version] || show program-version (and options ?)||
+||[LocalWiki:action=links links] || displays links between pages, in various forms||
+
+!!!!User Actions!!
+||[LocalWiki:action=login login] || for configured user ids||
+||[LocalWiki:action=newlogin newlogin] || creates completely new user ID (and overwrite old cookie)||
+||[LocalWiki:action=editprefs editprefs] || edits a users preferences||
+
+=== Secure Actions =
+ action=<action name>
+
+!!!!Editor Actions!!
+||[LocalWiki:action=upload upload] || Upload images and other assets to the attachments directory||
+||[LocalWiki:action=listfiles listfiles] || find all active assets, provide a <tt>filter=xxxx</tt> to narrow search to pages with <tt>xxxx</tt> in their name||
+||[LocalWiki:action=listdisabled listdisabled] || find all disabled assets, provide a <tt>filter=xxxx</tt> to narrow search to pages with <tt>xxxx</tt> in their name||
+
+!!!!Advanced Actions!!
+||[LocalWiki:back=HomePage back] || use <tt>back=xxxx</tt> to find all pages associated with xxxx, provide a <tt>filter=xxxx</tt> to narrow search to pages with <tt>xxxx</tt> in their name||
+||[LocalWiki:action=rss rss] || Output content in RSS format||
+
+=== Administrator Functions =
+ action=<action name>
+
+!!!!Admin General Actions (see AdminFeatures for more details)!!
+||[LocalWiki:action=pagelock pagelock] || This will lock a specific page against editing (except by the admin): <tt>&lt;nowiki&gt;wiki.pl?action=pagelock&amp;id=HomePage&amp;set=1&lt;/nowiki&gt;</tt>||
+||[LocalWiki:action=pagelock unlock] || Same as pagelock (except by the admin): <tt>&lt;nowiki&gt;wiki.pl?action=pagelock&amp;id=HomePage&amp;set=0&lt;/nowiki&gt;</tt>||
+||[LocalWiki:action=editlock editlock] || Locks the entire wiki against editing.  Use with set=1 and set=0 like the pagelock command.||
+||[LocalWiki:action=editbanned editbanned]||Edits a list of banned IP addresses/networks which are blocked from editing.||
+||[LocalWiki:action=editlinks editlinks]||Allows renaming and deletion of pages.||
+
+!!!!Admin Maintenance Actions!!
+||[LocalWiki:action=maintain maintain]  || Does periodic maintenance, such as expiring old kept revisions. Non-admins can only use action=maintain once every 12 hours.||
+||[LocalWiki:action=unlock unlock]    || Attempts to get the edit lock normally.  If this fails, the lock is considered &quot;stuck&quot; and is forcibly removed.||
+||[LocalWiki:action=trimusers  trimusers] || Trims down the user database, removing users with no useful preferences set. You must change the <nowiki><tt>$StartUID</tt></nowiki> variable in the config afterwards.||
+||[LocalWiki:action=delete delete]||Delete a page from the wiki, will ask for confirmation if <tt>$confirm=1</tt> is set in the code||
+
+Note that admins can still edit all edit-locked pages.  Users with an &quot;editor&quot; password can still edit even if their IP is in the editbanned list, or while the whole-wiki editlock block is active.  (Editors can not edit individually-locked pages.)  The editor password is useful for restricted-access wikis, or to allow a good user to edit even if they share a network/proxy with an abusive user.
+----
+The maintain action has an undocumented feature.  If a file &quot;editlinks&quot; exists in the data dir its contents will be run just as if entered from the editlinks action, and then the file will be renamed to &quot;editlinks.old&quot;.  This doesn't seem very useful, perhaps it is left over from before editlinks had a web interface?
+
+:It can be useful for sites that haven't set up an admin password (and can't use the web interface).  --[UseMod:CliffordAdams CliffordAdams]
+----
+<b>Q</b> Is there a way to prune the difflog file? One of my wikis has a 4-meg file. &quot;maintain&quot; does not seem to prune any of the reference log files. -- [UseMod:JerryMuelver JerryMuelver]
+
+<b>A</b> Not within the wiki.  You can simply remove the difflog file--it is not used by the wiki (it is a write-only log).  I probably should have disabled it by default in 1.0  The purpose of the difflog file is to allow an admin to track changes (and possibly undo them) if wanted, but the new <nowiki><tt>KeptPages</tt></nowiki> functionality makes this feature almost useless.  --[UseMod:CliffordAdams CliffordAdams]
+----
+<b>Q</b> Is there a parameter to make the wiki spit out the raw wiki text for a page?
+
+<b>A</b> Yes, there is.  :-)  More helpfully, you can use the browse action and add the &quot;raw=1&quot; parameter, like <nowiki><tt>LocalWiki?action=browse&amp;id=Free_Links&amp;raw=1</tt></nowiki>
+:Note that spaces in the page name should be replaced with _ (underscore) characters.  --[UseMod:CliffordAdams CliffordAdams]
+----
+<b>Q</b> I want to ban a user that has set up an account (strange thing for a spammer). Can I just add his username or ID to the ban list or do I have to figure out his IP? --[http://wiki.musicbrainz.org/wiki.pl?DonRedman DonRedman]
+
+<b>A</b> AFAIK there is no possibility to block based on username or id. If you need to block someone, you could use the ip, host name, subnet order (sub)domain.
+----
+<b>Q</b> Is there a way to restore a page that has been spammed, preferably using one of the backup pages?  I saw a reference to &quot;previous author backup&quot;, but haven't discovered if this is what I need, and if so how to trigger it. 
+
+<b>A</b> Click &quot;View other revisions&quot; on the bottom of the page. Then choose the revision. Maybe look at the differences between certain revisions. Click on the right revision. Click on &quot;Edit revision XX of this page&quot;. Then save that old revision. It's now the new version.
+----
+<b>Q</b> I want to use a textbox for filling in a new page. Example. I type &quot;Rover&quot; in the textbox, and get sent to URL:  http://www.usemod.com/cgi-bin/wiki.pl?Rover , is there any easy solution?
+
+<b>A</b> Set your <nowiki><tt>$FooterNote</tt></nowiki> variable (in the config) to this:
+
+<tt>
+&lt;pre&gt;
+  &lt;form method=&quot;get&quot; action=&quot;wiki.pl&quot; enctype=&quot;application/x-www-form-urlencoded&quot;&gt;
+    Edit page:&lt;br&gt;
+    &lt;input type=hidden name=action value=edit&gt;
+    &lt;input type=text name=id size=20&gt;
+  &lt;/form&gt;
+&lt;/pre&gt;
+</tt>
+----
+<b>Q</b> I'd like to remove the revision history for a page on my wiki which has been spammed several times.  I've found people link to one of the previous versions which contain the spam.  Is there a simple way to remove the past revisions?  Thank you!
+
+<b>A</b> You may call the maintain action. This will remove versions older than <nowiki><tt>$KeepDays</tt></nowiki>. A more radical way would be to delete the file with all the older versions. This is placed somewhere under keep/ in the <nowiki><tt>$DataDir</tt></nowiki>. Maybe make a backup before removing. Why is it a problem, if people link to some older version of a page? --[UseMod:MarkusLude MarkusLude]
+
+<b>A</b> Thanks for the advice.  To answer your question, it's a problem because of this: someone puts a link to porn in a wiki page.  I delete this, but the link remains in one of the revisions.  A bunch of other people link to that revision from their porn pages.  Google indexes these.  Now, when someone searches for my wiki in Google, several of the returned hits are pornographic web sites.  Also, users who are curious about the diffs in that page will end up seeing links to porn.  Given my user base, I'd prefer if neither of these happened.  I realize there's a limit to what I can do, but getting rid of old revisions would help.
+: You can stop Google visiting the [[AdminActions|action]] pages by editing your wiki's robots.txt file and adding something like:
+:: /cgi-bin/wiki.pl?action
+
+:See [http://www.usemod.com/robots.txt www.usemod.com 's robots.txt file] - [UseMod:CameronDewe CameronDewe]
+
+== Related Entries =
+ AdminFeatures
+ WikiAdmin
+ AdminActions
+ÿþ3minorÿþ30ÿþ3newauthorÿþ30ÿþ2usernameÿþ2RobertKurcinaÿþ2hostÿþ2localhostÿþ2revisionÿþ214ÿþ2tscreateÿþ21178788954ÿþ2idÿþ21130ÿþ2keeptsÿþ21195945853ÿþ1tsÿþ21195945853ÿþ2ipÿþ2127.0.0.1ÿþ2versionÿþ21ÿþ2nameÿþ2text_defaultÿþ2dataÿþ2summaryÿþ3*ÿþ3textÿþ3<toc>
+== List of CGI actions that <nowiki>NobleWiki</nowiki> will accept =
+This list is actually incomplete; there are about 6 undocument commands that are used by the wiki engine itself, but are also able to be invoked from the browser address bar.  
+
+=== Search =
+ dosearch=1
+
+!!!!Search Actions!!
+||[LocalWiki:dosearch=1&amp;search=Actions &amp;search=text] || search title and body of all pages, provide a <tt>filter=xxxx</tt> to narrow search to pages with <tt>xxxx</tt> in their name||
+
+=== Browsing Actions ==
+ action=<action name>
+
+!!!!Browsing Actions!!
+||[LocalWiki:action=browse&amp;id=Actions  browse&amp;id=pagename]  || view page||
+||[LocalWiki:action=rc rc] || display all recent changes||
+||[LocalWiki:action=rss rss] || RSS output of recent changes.||
+||[LocalWiki:action=random random] || random page||
+||[LocalWiki:action=history&amp;id=Actions history&amp;id=pagename] || history of changes||
+||[LocalWiki:action=browse&amp;id=Actions&amp;revision=38 browse&amp;id=pagename&amp;revision=number] || view old version||
+
+=== Public Actions ==
+ action=<action name>
+
+!!!!Common Actions!!
+||[LocalWiki:action=edit&amp;id=Actions edit&amp;id=pagename] || edit page||
+||[LocalWiki:action=index index] || alphabetical index of all pages||
+||[LocalWiki:action=version version] || show program-version (and options ?)||
+||[LocalWiki:action=links links] || displays links between pages, in various forms||
+
+!!!!User Actions!!
+||[LocalWiki:action=login login] || for configured user ids||
+||[LocalWiki:action=newlogin newlogin] || creates completely new user ID (and overwrite old cookie)||
+||[LocalWiki:action=editprefs editprefs] || edits a users preferences||
+
+=== Secure Actions =
+ action=<action name>
+
+!!!!Editor Actions!!
+||[LocalWiki:action=upload upload] || Upload images and other assets to the attachments directory||
+||[LocalWiki:action=listfiles listfiles] || find all active assets, provide a <tt>filter=xxxx</tt> to narrow search to pages with <tt>xxxx</tt> in their name||
+||[LocalWiki:action=listdisabled listdisabled] || find all disabled assets, provide a <tt>filter=xxxx</tt> to narrow search to pages with <tt>xxxx</tt> in their name||
+
+!!!!Advanced Actions!!
+||[LocalWiki:back=HomePage back] || use <tt>back=xxxx</tt> to find all pages associated with xxxx, provide a <tt>filter=xxxx</tt> to narrow search to pages with <tt>xxxx</tt> in their name||
+||[LocalWiki:action=rss rss] || Output content in RSS format||
+
+=== Administrator Functions =
+ action=<action name>
+
+!!!!Admin General Actions (see AdminFeatures for more details)!!
+||[LocalWiki:action=pagelock pagelock] || This will lock a specific page against editing (except by the admin): <tt>&lt;nowiki&gt;wiki.pl?action=pagelock&amp;id=HomePage&amp;set=1&lt;/nowiki&gt;</tt>||
+||[LocalWiki:action=pagelock unlock] || Same as pagelock (except by the admin): <tt>&lt;nowiki&gt;wiki.pl?action=pagelock&amp;id=HomePage&amp;set=0&lt;/nowiki&gt;</tt>||
+||[LocalWiki:action=editlock editlock] || Locks the entire wiki against editing.  Use with set=1 and set=0 like the pagelock command.||
+||[LocalWiki:action=editbanned editbanned]||Edits a list of banned IP addresses/networks which are blocked from editing.||
+||[LocalWiki:action=editlinks editlinks]||Allows renaming and deletion of pages.||
+
+!!!!Admin Maintenance Actions!!
+||[LocalWiki:action=maintain maintain]  || Does periodic maintenance, such as expiring old kept revisions. Non-admins can only use action=maintain once every 12 hours.||
+||[LocalWiki:action=unlock unlock]    || Attempts to get the edit lock normally.  If this fails, the lock is considered &quot;stuck&quot; and is forcibly removed.||
+||[LocalWiki:action=trimusers  trimusers] || Trims down the user database, removing users with no useful preferences set. You must change the <nowiki><tt>$StartUID</tt></nowiki> variable in the config afterwards.||
+||[LocalWiki:action=delete delete]||Delete a page from the wiki, will ask for confirmation if <tt>$confirm=1</tt> is set in the code||
+
+Note that admins can still edit all edit-locked pages.  Users with an &quot;editor&quot; password can still edit even if their IP is in the editbanned list, or while the whole-wiki editlock block is active.  (Editors can not edit individually-locked pages.)  The editor password is useful for restricted-access wikis, or to allow a good user to edit even if they share a network/proxy with an abusive user.
+----
+The maintain action has an undocumented feature.  If a file &quot;editlinks&quot; exists in the data dir its contents will be run just as if entered from the editlinks action, and then the file will be renamed to &quot;editlinks.old&quot;.  This doesn't seem very useful, perhaps it is left over from before editlinks had a web interface?
+
+:It can be useful for sites that haven't set up an admin password (and can't use the web interface).  --[UseMod:CliffordAdams CliffordAdams]
+----
+<b>Q</b> Is there a way to prune the difflog file? One of my wikis has a 4-meg file. &quot;maintain&quot; does not seem to prune any of the reference log files. -- [UseMod:JerryMuelver JerryMuelver]
+
+<b>A</b> Not within the wiki.  You can simply remove the difflog file--it is not used by the wiki (it is a write-only log).  I probably should have disabled it by default in 1.0  The purpose of the difflog file is to allow an admin to track changes (and possibly undo them) if wanted, but the new <nowiki><tt>KeptPages</tt></nowiki> functionality makes this feature almost useless.  --[UseMod:CliffordAdams CliffordAdams]
+----
+<b>Q</b> Is there a parameter to make the wiki spit out the raw wiki text for a page?
+
+<b>A</b> Yes, there is.  :-)  More helpfully, you can use the browse action and add the &quot;raw=1&quot; parameter, like <nowiki><tt>LocalWiki?action=browse&amp;id=Free_Links&amp;raw=1</tt></nowiki>
+:Note that spaces in the page name should be replaced with _ (underscore) characters.  --[UseMod:CliffordAdams CliffordAdams]
+----
+<b>Q</b> I want to ban a user that has set up an account (strange thing for a spammer). Can I just add his username or ID to the ban list or do I have to figure out his IP? --[http://wiki.musicbrainz.org/wiki.pl?DonRedman DonRedman]
+
+<b>A</b> AFAIK there is no possibility to block based on username or id. If you need to block someone, you could use the ip, host name, subnet order (sub)domain.
+----
+<b>Q</b> Is there a way to restore a page that has been spammed, preferably using one of the backup pages?  I saw a reference to &quot;previous author backup&quot;, but haven't discovered if this is what I need, and if so how to trigger it. 
+
+<b>A</b> Click &quot;View other revisions&quot; on the bottom of the page. Then choose the revision. Maybe look at the differences between certain revisions. Click on the right revision. Click on &quot;Edit revision XX of this page&quot;. Then save that old revision. It's now the new version.
+----
+<b>Q</b> I want to use a textbox for filling in a new page. Example. I type &quot;Rover&quot; in the textbox, and get sent to URL:  http://www.usemod.com/cgi-bin/wiki.pl?Rover , is there any easy solution?
+
+<b>A</b> Set your <nowiki><tt>$FooterNote</tt></nowiki> variable (in the config) to this:
+
+<tt>
+&lt;pre&gt;
+  &lt;form method=&quot;get&quot; action=&quot;wiki.pl&quot; enctype=&quot;application/x-www-form-urlencoded&quot;&gt;
+    Edit page:&lt;br&gt;
+    &lt;input type=hidden name=action value=edit&gt;
+    &lt;input type=text name=id size=20&gt;
+  &lt;/form&gt;
+&lt;/pre&gt;
+</tt>
+----
+<b>Q</b> I'd like to remove the revision history for a page on my wiki which has been spammed several times.  I've found people link to one of the previous versions which contain the spam.  Is there a simple way to remove the past revisions?  Thank you!
+
+<b>A</b> You may call the maintain action. This will remove versions older than <nowiki><tt>$KeepDays</tt></nowiki>. A more radical way would be to delete the file with all the older versions. This is placed somewhere under keep/ in the <nowiki><tt>$DataDir</tt></nowiki>. Maybe make a backup before removing. Why is it a problem, if people link to some older version of a page? --[UseMod:MarkusLude MarkusLude]
+
+<b>A</b> Thanks for the advice.  To answer your question, it's a problem because of this: someone puts a link to porn in a wiki page.  I delete this, but the link remains in one of the revisions.  A bunch of other people link to that revision from their porn pages.  Google indexes these.  Now, when someone searches for my wiki in Google, several of the returned hits are pornographic web sites.  Also, users who are curious about the diffs in that page will end up seeing links to porn.  Given my user base, I'd prefer if neither of these happened.  I realize there's a limit to what I can do, but getting rid of old revisions would help.
+: You can stop Google visiting the [[AdminActions|action]] pages by editing your wiki's robots.txt file and adding something like:
+:: /cgi-bin/wiki.pl?action
+
+:See [http://www.usemod.com/robots.txt www.usemod.com 's robots.txt file] - [UseMod:CameronDewe CameronDewe]
+
+== Related Entries =
+{{template:RelatedEntries/WikiAdministration}}
+ÿþ3newauthorÿþ31ÿþ3minorÿþ31ÿþ2hostÿþ2localhostÿþ2usernameÿþ2RobertKurcinaÿþ2revisionÿþ215ÿþ2idÿþ21149ÿþ2tscreateÿþ21178788954ÿþ2keeptsÿþ21222315184ÿþ1versionÿþ21ÿþ2ipÿþ2127.0.0.1ÿþ2tsÿþ21222315184ÿþ2nameÿþ2text_defaultÿþ2dataÿþ2summaryÿþ3*ÿþ3textÿþ3<toc>
+== List of CGI actions that <nowiki>NobleWiki</nowiki> will accept =
+This list is actually incomplete; there are about 6 undocument commands that are used by the wiki engine itself, but are also able to be invoked from the browser address bar.  
+
+=== Search =
+ dosearch=1
+
+!!!!Search Actions!!
+||[LocalWiki:dosearch=1&amp;search=Actions &amp;search=text] || search title and body of all pages, provide a <tt>filter=xxxx</tt> to narrow search to pages with <tt>xxxx</tt> in their name||
+
+=== Browsing Actions ==
+ action=<action name>
+
+!!!!Browsing Actions!!
+||[LocalWiki:action=browse&amp;id=Actions  browse&amp;id=pagename]  || view page||
+||[LocalWiki:action=rc rc] || display all recent changes||
+||[LocalWiki:action=rss rss] || RSS output of recent changes.||
+||[LocalWiki:action=random random] || random page||
+||[LocalWiki:action=history&amp;id=Actions history&amp;id=pagename] || history of changes||
+||[LocalWiki:action=browse&amp;id=Actions&amp;revision=38 browse&amp;id=pagename&amp;revision=number] || view old version||
+
+=== Public Actions ==
+ action=<action name>
+
+!!!!Common Actions!!
+||[LocalWiki:action=edit&amp;id=SandBox edit&amp;id=pagename] || edit page||
+||[LocalWiki:action=index index] || alphabetical index of all pages||
+||[LocalWiki:action=version version] || show program-version (and options ?)||
+||[LocalWiki:action=links links] || displays links between pages, in various forms||
+
+!!!!User Actions!!
+||[LocalWiki:action=login login] || for configured user ids||
+||[LocalWiki:action=newlogin newlogin] || creates completely new user ID (and overwrite old cookie)||
+||[LocalWiki:action=editprefs editprefs] || edits a users preferences||
+
+=== Secure Actions =
+ action=<action name>
+
+!!!!Editor Actions!!
+||[LocalWiki:action=upload upload] || Upload images and other assets to the attachments directory||
+||[LocalWiki:action=listfiles listfiles] || find all active assets, provide a <tt>filter=xxxx</tt> to narrow search to pages with <tt>xxxx</tt> in their name||
+||[LocalWiki:action=listdisabled listdisabled] || find all disabled assets, provide a <tt>filter=xxxx</tt> to narrow search to pages with <tt>xxxx</tt> in their name||
+
+!!!!Advanced Actions!!
+||[LocalWiki:back=HomePage back] || use <tt>back=xxxx</tt> to find all pages associated with xxxx, provide a <tt>filter=xxxx</tt> to narrow search to pages with <tt>xxxx</tt> in their name||
+||[LocalWiki:action=rss rss] || Output content in RSS format||
+
+=== Administrator Functions =
+ action=<action name>
+
+!!!!Admin General Actions (see AdminFeatures for more details)!!
+||[LocalWiki:action=pagelock pagelock] || This will lock a specific page against editing (except by the admin): <tt>&lt;nowiki&gt;wiki.pl?action=pagelock&amp;id=HomePage&amp;set=1&lt;/nowiki&gt;</tt>||
+||[LocalWiki:action=pagelock unlock] || Same as pagelock (except by the admin): <tt>&lt;nowiki&gt;wiki.pl?action=pagelock&amp;id=HomePage&amp;set=0&lt;/nowiki&gt;</tt>||
+||[LocalWiki:action=editlock editlock] || Locks the entire wiki against editing.  Use with set=1 and set=0 like the pagelock command.||
+||[LocalWiki:action=editbanned editbanned]||Edits a list of banned IP addresses/networks which are blocked from editing.||
+||[LocalWiki:action=editlinks editlinks]||Allows renaming and deletion of pages.||
+
+!!!!Admin Maintenance Actions!!
+||[LocalWiki:action=maintain maintain]  || Does periodic maintenance, such as expiring old kept revisions. Non-admins can only use action=maintain once every 12 hours.||
+||[LocalWiki:action=unlock unlock]    || Attempts to get the edit lock normally.  If this fails, the lock is considered &quot;stuck&quot; and is forcibly removed.||
+||[LocalWiki:action=trimusers  trimusers] || Trims down the user database, removing users with no useful preferences set. You must change the <nowiki><tt>$StartUID</tt></nowiki> variable in the config afterwards.||
+||[LocalWiki:action=delete delete]||Delete a page from the wiki, will ask for confirmation if <tt>$confirm=1</tt> is set in the code||
+
+Note that admins can still edit all edit-locked pages.  Users with an &quot;editor&quot; password can still edit even if their IP is in the editbanned list, or while the whole-wiki editlock block is active.  (Editors can not edit individually-locked pages.)  The editor password is useful for restricted-access wikis, or to allow a good user to edit even if they share a network/proxy with an abusive user.
+----
+The maintain action has an undocumented feature.  If a file &quot;editlinks&quot; exists in the data dir its contents will be run just as if entered from the editlinks action, and then the file will be renamed to &quot;editlinks.old&quot;.  This doesn't seem very useful, perhaps it is left over from before editlinks had a web interface?
+
+:It can be useful for sites that haven't set up an admin password (and can't use the web interface).  --[UseMod:CliffordAdams CliffordAdams]
+----
+<b>Q</b> Is there a way to prune the difflog file? One of my wikis has a 4-meg file. &quot;maintain&quot; does not seem to prune any of the reference log files. -- [UseMod:JerryMuelver JerryMuelver]
+
+<b>A</b> Not within the wiki.  You can simply remove the difflog file--it is not used by the wiki (it is a write-only log).  I probably should have disabled it by default in 1.0  The purpose of the difflog file is to allow an admin to track changes (and possibly undo them) if wanted, but the new <nowiki><tt>KeptPages</tt></nowiki> functionality makes this feature almost useless.  --[UseMod:CliffordAdams CliffordAdams]
+----
+<b>Q</b> Is there a parameter to make the wiki spit out the raw wiki text for a page?
+
+<b>A</b> Yes, there is.  :-)  More helpfully, you can use the browse action and add the &quot;raw=1&quot; parameter, like <nowiki><tt>LocalWiki?action=browse&amp;id=Free_Links&amp;raw=1</tt></nowiki>
+:Note that spaces in the page name should be replaced with _ (underscore) characters.  --[UseMod:CliffordAdams CliffordAdams]
+----
+<b>Q</b> I want to ban a user that has set up an account (strange thing for a spammer). Can I just add his username or ID to the ban list or do I have to figure out his IP? --[http://wiki.musicbrainz.org/wiki.pl?DonRedman DonRedman]
+
+<b>A</b> AFAIK there is no possibility to block based on username or id. If you need to block someone, you could use the ip, host name, subnet order (sub)domain.
+----
+<b>Q</b> Is there a way to restore a page that has been spammed, preferably using one of the backup pages?  I saw a reference to &quot;previous author backup&quot;, but haven't discovered if this is what I need, and if so how to trigger it. 
+
+<b>A</b> Click &quot;View other revisions&quot; on the bottom of the page. Then choose the revision. Maybe look at the differences between certain revisions. Click on the right revision. Click on &quot;Edit revision XX of this page&quot;. Then save that old revision. It's now the new version.
+----
+<b>Q</b> I want to use a textbox for filling in a new page. Example. I type &quot;Rover&quot; in the textbox, and get sent to URL:  http://www.usemod.com/cgi-bin/wiki.pl?Rover , is there any easy solution?
+
+<b>A</b> Set your <nowiki><tt>$FooterNote</tt></nowiki> variable (in the config) to this:
+
+<tt>
+&lt;pre&gt;
+  &lt;form method=&quot;get&quot; action=&quot;wiki.pl&quot; enctype=&quot;application/x-www-form-urlencoded&quot;&gt;
+    Edit page:&lt;br&gt;
+    &lt;input type=hidden name=action value=edit&gt;
+    &lt;input type=text name=id size=20&gt;
+  &lt;/form&gt;
+&lt;/pre&gt;
+</tt>
+----
+<b>Q</b> I'd like to remove the revision history for a page on my wiki which has been spammed several times.  I've found people link to one of the previous versions which contain the spam.  Is there a simple way to remove the past revisions?  Thank you!
+
+<b>A</b> You may call the maintain action. This will remove versions older than <nowiki><tt>$KeepDays</tt></nowiki>. A more radical way would be to delete the file with all the older versions. This is placed somewhere under keep/ in the <nowiki><tt>$DataDir</tt></nowiki>. Maybe make a backup before removing. Why is it a problem, if people link to some older version of a page? --[UseMod:MarkusLude MarkusLude]
+
+<b>A</b> Thanks for the advice.  To answer your question, it's a problem because of this: someone puts a link to porn in a wiki page.  I delete this, but the link remains in one of the revisions.  A bunch of other people link to that revision from their porn pages.  Google indexes these.  Now, when someone searches for my wiki in Google, several of the returned hits are pornographic web sites.  Also, users who are curious about the diffs in that page will end up seeing links to porn.  Given my user base, I'd prefer if neither of these happened.  I realize there's a limit to what I can do, but getting rid of old revisions would help.
+: You can stop Google visiting the [[AdminActions|action]] pages by editing your wiki's robots.txt file and adding something like:
+:: /cgi-bin/wiki.pl?action
+
+:See [http://www.usemod.com/robots.txt www.usemod.com 's robots.txt file] - [UseMod:CameronDewe CameronDewe]
+
+== Related Entries =
+{{template:RelatedEntries/WikiAdministration}}
+ÿþ3minorÿþ30ÿþ3newauthorÿþ31ÿþ2usernameÿþ2RobertKurcinaÿþ2hostÿþ2localhostÿþ2revisionÿþ216ÿþ2tscreateÿþ21178788954ÿþ2idÿþ21248ÿþ2keeptsÿþ21222572574ÿþ1tsÿþ21222572574ÿþ2ipÿþ2127.0.0.1ÿþ2versionÿþ21ÿþ2nameÿþ2text_defaultÿþ2dataÿþ2summaryÿþ3*ÿþ3textÿþ3<toc>
+== List of CGI actions that <nowiki>NobleWiki</nowiki> will accept =
+This list is actually incomplete; there are about 6 undocument commands that are used by the wiki engine itself, but are also able to be invoked from the browser address bar.  
+
+=== Search =
+ dosearch=1
+
+!!!!Search Actions!!
+||[LocalWiki:dosearch=1&amp;search=Actions &amp;search=text] || search title and body of all pages, provide a <tt>filter=xxxx</tt> to narrow search to pages with <tt>xxxx</tt> in their name||
+
+=== Browsing Actions ==
+ action=<action name>
+
+!!!!Browsing Actions!!
+||[LocalWiki:action=browse&amp;id=Actions  browse&amp;id=pagename]  || view page||
+||[LocalWiki:action=rc rc] || display all recent changes||
+||[LocalWiki:action=rss rss] || RSS output of recent changes.||
+||[LocalWiki:action=random random] || random page||
+||[LocalWiki:action=history&amp;id=Actions history&amp;id=pagename] || history of changes||
+||[LocalWiki:action=history&amp;id=Actions history&amp;id=pagename&amp;userid=username] || history of changes made by username||
+||[LocalWiki:action=browse&amp;id=Actions&amp;revision=38 browse&amp;id=pagename&amp;revision=number] || view old version||
+
+=== Public Actions ==
+ action=<action name>
+
+!!!!Common Actions!!
+||[LocalWiki:action=edit&amp;id=SandBox edit&amp;id=pagename] || edit page||
+||[LocalWiki:action=index index] || alphabetical index of all pages||
+||[LocalWiki:action=version version] || show program-version (and options ?)||
+||[LocalWiki:action=links links] || displays links between pages, in various forms||
+
+!!!!User Actions!!
+||[LocalWiki:action=login login] || for configured user ids||
+||[LocalWiki:action=newlogin newlogin] || creates completely new user ID (and overwrite old cookie)||
+||[LocalWiki:action=editprefs editprefs] || edits a users preferences||
+
+=== Secure Actions =
+ action=<action name>
+
+!!!!Editor Actions!!
+||[LocalWiki:action=upload upload] || Upload images and other assets to the attachments directory||
+||[LocalWiki:action=listfiles listfiles] || find all active assets, provide a <tt>filter=xxxx</tt> to narrow search to pages with <tt>xxxx</tt> in their name||
+||[LocalWiki:action=listdisabled listdisabled] || find all disabled assets, provide a <tt>filter=xxxx</tt> to narrow search to pages with <tt>xxxx</tt> in their name||
+
+!!!!Advanced Actions!!
+||[LocalWiki:back=HomePage back] || use <tt>back=xxxx</tt> to find all pages associated with xxxx, provide a <tt>filter=xxxx</tt> to narrow search to pages with <tt>xxxx</tt> in their name||
+||[LocalWiki:action=rss rss] || Output content in RSS format||
+
+=== Administrator Functions =
+ action=<action name>
+
+!!!!Admin General Actions (see AdminFeatures for more details)!!
+||[LocalWiki:action=pagelock pagelock] || This will lock a specific page against editing (except by the admin): <tt>&lt;nowiki&gt;wiki.pl?action=pagelock&amp;id=HomePage&amp;set=1&lt;/nowiki&gt;</tt>||
+||[LocalWiki:action=pagelock unlock] || Same as pagelock (except by the admin): <tt>&lt;nowiki&gt;wiki.pl?action=pagelock&amp;id=HomePage&amp;set=0&lt;/nowiki&gt;</tt>||
+||[LocalWiki:action=editlock editlock] || Locks the entire wiki against editing.  Use with set=1 and set=0 like the pagelock command.||
+||[LocalWiki:action=editbanned editbanned]||Edits a list of banned IP addresses/networks which are blocked from editing.||
+||[LocalWiki:action=editlinks editlinks]||Allows renaming and deletion of pages.||
+
+!!!!Admin Maintenance Actions!!
+||[LocalWiki:action=maintain maintain]  || Does periodic maintenance, such as expiring old kept revisions. Non-admins can only use action=maintain once every 12 hours.||
+||[LocalWiki:action=unlock unlock]    || Attempts to get the edit lock normally.  If this fails, the lock is considered &quot;stuck&quot; and is forcibly removed.||
+||[LocalWiki:action=trimusers  trimusers] || Trims down the user database, removing users with no useful preferences set. You must change the <nowiki><tt>$StartUID</tt></nowiki> variable in the config afterwards.||
+||[LocalWiki:action=delete delete]||Delete a page from the wiki, will ask for confirmation if <tt>$confirm=1</tt> is set in the code||
+
+Note that admins can still edit all edit-locked pages.  Users with an &quot;editor&quot; password can still edit even if their IP is in the editbanned list, or while the whole-wiki editlock block is active.  (Editors can not edit individually-locked pages.)  The editor password is useful for restricted-access wikis, or to allow a good user to edit even if they share a network/proxy with an abusive user.
+----
+The maintain action has an undocumented feature.  If a file &quot;editlinks&quot; exists in the data dir its contents will be run just as if entered from the editlinks action, and then the file will be renamed to &quot;editlinks.old&quot;.  This doesn't seem very useful, perhaps it is left over from before editlinks had a web interface?
+
+:It can be useful for sites that haven't set up an admin password (and can't use the web interface).  --[UseMod:CliffordAdams CliffordAdams]
+----
+<b>Q</b> Is there a way to prune the difflog file? One of my wikis has a 4-meg file. &quot;maintain&quot; does not seem to prune any of the reference log files. -- [UseMod:JerryMuelver JerryMuelver]
+
+<b>A</b> Not within the wiki.  You can simply remove the difflog file--it is not used by the wiki (it is a write-only log).  I probably should have disabled it by default in 1.0  The purpose of the difflog file is to allow an admin to track changes (and possibly undo them) if wanted, but the new <nowiki><tt>KeptPages</tt></nowiki> functionality makes this feature almost useless.  --[UseMod:CliffordAdams CliffordAdams]
+----
+<b>Q</b> Is there a parameter to make the wiki spit out the raw wiki text for a page?
+
+<b>A</b> Yes, there is.  :-)  More helpfully, you can use the browse action and add the &quot;raw=1&quot; parameter, like <nowiki><tt>LocalWiki?action=browse&amp;id=Free_Links&amp;raw=1</tt></nowiki>
+:Note that spaces in the page name should be replaced with _ (underscore) characters.  --[UseMod:CliffordAdams CliffordAdams]
+----
+<b>Q</b> I want to ban a user that has set up an account (strange thing for a spammer). Can I just add his username or ID to the ban list or do I have to figure out his IP? --[http://wiki.musicbrainz.org/wiki.pl?DonRedman DonRedman]
+
+<b>A</b> AFAIK there is no possibility to block based on username or id. If you need to block someone, you could use the ip, host name, subnet order (sub)domain.
+----
+<b>Q</b> Is there a way to restore a page that has been spammed, preferably using one of the backup pages?  I saw a reference to &quot;previous author backup&quot;, but haven't discovered if this is what I need, and if so how to trigger it. 
+
+<b>A</b> Click &quot;View other revisions&quot; on the bottom of the page. Then choose the revision. Maybe look at the differences between certain revisions. Click on the right revision. Click on &quot;Edit revision XX of this page&quot;. Then save that old revision. It's now the new version.
+----
+<b>Q</b> I want to use a textbox for filling in a new page. Example. I type &quot;Rover&quot; in the textbox, and get sent to URL:  http://www.usemod.com/cgi-bin/wiki.pl?Rover , is there any easy solution?
+
+<b>A</b> Set your <nowiki><tt>$FooterNote</tt></nowiki> variable (in the config) to this:
+
+<tt>
+&lt;pre&gt;
+  &lt;form method=&quot;get&quot; action=&quot;wiki.pl&quot; enctype=&quot;application/x-www-form-urlencoded&quot;&gt;
+    Edit page:&lt;br&gt;
+    &lt;input type=hidden name=action value=edit&gt;
+    &lt;input type=text name=id size=20&gt;
+  &lt;/form&gt;
+&lt;/pre&gt;
+</tt>
+----
+<b>Q</b> I'd like to remove the revision history for a page on my wiki which has been spammed several times.  I've found people link to one of the previous versions which contain the spam.  Is there a simple way to remove the past revisions?  Thank you!
+
+<b>A</b> You may call the maintain action. This will remove versions older than <nowiki><tt>$KeepDays</tt></nowiki>. A more radical way would be to delete the file with all the older versions. This is placed somewhere under keep/ in the <nowiki><tt>$DataDir</tt></nowiki>. Maybe make a backup before removing. Why is it a problem, if people link to some older version of a page? --[UseMod:MarkusLude MarkusLude]
+
+<b>A</b> Thanks for the advice.  To answer your question, it's a problem because of this: someone puts a link to porn in a wiki page.  I delete this, but the link remains in one of the revisions.  A bunch of other people link to that revision from their porn pages.  Google indexes these.  Now, when someone searches for my wiki in Google, several of the returned hits are pornographic web sites.  Also, users who are curious about the diffs in that page will end up seeing links to porn.  Given my user base, I'd prefer if neither of these happened.  I realize there's a limit to what I can do, but getting rid of old revisions would help.
+: You can stop Google visiting the [[AdminActions|action]] pages by editing your wiki's robots.txt file and adding something like:
+:: /cgi-bin/wiki.pl?action
+
+:See [http://www.usemod.com/robots.txt www.usemod.com 's robots.txt file] - [UseMod:CameronDewe CameronDewe]
+
+== Related Entries =
+{{template:RelatedEntries/WikiAdministration}}
+ÿþ3newauthorÿþ31ÿþ3minorÿþ31ÿþ2hostÿþ2localhostÿþ2usernameÿþ2RobertKurcinaÿþ2revisionÿþ217ÿþ2idÿþ21257ÿþ2tscreateÿþ21178788954ÿþ2keeptsÿþ21222623692ÿþ1versionÿþ21ÿþ2ipÿþ2127.0.0.1ÿþ2tsÿþ21222623692ÿþ2nameÿþ2text_defaultÿþ2dataÿþ2summaryÿþ3*ÿþ3textÿþ3<toc>
+== List of CGI actions that <nowiki>NobleWiki</nowiki> will accept =
+This list is actually incomplete; there are about 6 undocument commands that are used by the wiki engine itself, but are also able to be invoked from the browser address bar.  
+
+=== Search =
+ dosearch=1
+
+!!!!Search Actions!!
+||[LocalWiki:dosearch=1&amp;search=Actions &amp;search=text] || search title and body of all pages, provide a <tt>filter=xxxx</tt> to narrow search to pages with <tt>xxxx</tt> in their name||
+
+=== Browsing Actions ==
+ action=<action name>
+
+!!!!Browsing Actions!!
+||[LocalWiki:action=browse&amp;id=Actions  browse&amp;id=pagename]  || view page||
+||[LocalWiki:action=rc rc] || display all recent changes||
+||[LocalWiki:action=rss rss] || RSS output of recent changes.||
+||[LocalWiki:action=random random] || random page||
+||[LocalWiki:action=history&amp;id=Actions history&amp;id=pagename] || history of changes||
+||[LocalWiki:action=history&amp;id=Actions history&amp;id=pagename&amp;userid=username] || history of changes made by username||
+||[LocalWiki:action=browse&amp;id=Actions&amp;revision=38 browse&amp;id=pagename&amp;revision=number] || view old version||
+||[LocalWiki:action=orphans] || list pages that are not linked.||
+
+=== Public Actions ==
+ action=<action name>
+
+!!!!Common Actions!!
+||[LocalWiki:action=edit&amp;id=SandBox edit&amp;id=pagename] || edit page||
+||[LocalWiki:action=index index] || alphabetical index of all pages||
+||[LocalWiki:action=version version] || show program-version (and options ?)||
+||[LocalWiki:action=links links] || displays links between pages, in various forms||
+
+!!!!User Actions!!
+||[LocalWiki:action=login login] || for configured user ids||
+||[LocalWiki:action=newlogin newlogin] || creates completely new user ID (and overwrite old cookie)||
+||[LocalWiki:action=editprefs editprefs] || edits a users preferences||
+
+=== Secure Actions =
+ action=<action name>
+
+!!!!Editor Actions!!
+||[LocalWiki:action=upload upload] || Upload images and other assets to the attachments directory||
+||[LocalWiki:action=listfiles listfiles] || find all active assets, provide a <tt>filter=xxxx</tt> to narrow search to pages with <tt>xxxx</tt> in their name||
+||[LocalWiki:action=listdisabled listdisabled] || find all disabled assets, provide a <tt>filter=xxxx</tt> to narrow search to pages with <tt>xxxx</tt> in their name||
+
+!!!!Advanced Actions!!
+||[LocalWiki:back=HomePage back] || use <tt>back=xxxx</tt> to find all pages associated with xxxx, provide a <tt>filter=xxxx</tt> to narrow search to pages with <tt>xxxx</tt> in their name||
+||[LocalWiki:action=rss rss] || Output content in RSS format||
+
+=== Administrator Functions =
+ action=<action name>
+
+!!!!Admin General Actions (see AdminFeatures for more details)!!
+||[LocalWiki:action=pagelock pagelock] || This will lock a specific page against editing (except by the admin): <tt>&lt;nowiki&gt;wiki.pl?action=pagelock&amp;id=HomePage&amp;set=1&lt;/nowiki&gt;</tt>||
+||[LocalWiki:action=pagelock unlock] || Same as pagelock (except by the admin): <tt>&lt;nowiki&gt;wiki.pl?action=pagelock&amp;id=HomePage&amp;set=0&lt;/nowiki&gt;</tt>||
+||[LocalWiki:action=editlock editlock] || Locks the entire wiki against editing.  Use with set=1 and set=0 like the pagelock command.||
+||[LocalWiki:action=editbanned editbanned]||Edits a list of banned IP addresses/networks which are blocked from editing.||
+||[LocalWiki:action=editlinks editlinks]||Allows renaming and deletion of pages.||
+
+!!!!Admin Maintenance Actions!!
+||[LocalWiki:action=maintain maintain]  || Does periodic maintenance, such as expiring old kept revisions. Non-admins can only use action=maintain once every 12 hours.||
+||[LocalWiki:action=unlock unlock]    || Attempts to get the edit lock normally.  If this fails, the lock is considered &quot;stuck&quot; and is forcibly removed.||
+||[LocalWiki:action=trimusers  trimusers] || Trims down the user database, removing users with no useful preferences set. You must change the <nowiki><tt>$StartUID</tt></nowiki> variable in the config afterwards.||
+||[LocalWiki:action=delete delete]||Delete a page from the wiki, will ask for confirmation if <tt>$confirm=1</tt> is set in the code||
+
+Note that admins can still edit all edit-locked pages.  Users with an &quot;editor&quot; password can still edit even if their IP is in the editbanned list, or while the whole-wiki editlock block is active.  (Editors can not edit individually-locked pages.)  The editor password is useful for restricted-access wikis, or to allow a good user to edit even if they share a network/proxy with an abusive user.
+----
+The maintain action has an undocumented feature.  If a file &quot;editlinks&quot; exists in the data dir its contents will be run just as if entered from the editlinks action, and then the file will be renamed to &quot;editlinks.old&quot;.  This doesn't seem very useful, perhaps it is left over from before editlinks had a web interface?
+
+:It can be useful for sites that haven't set up an admin password (and can't use the web interface).  --[UseMod:CliffordAdams CliffordAdams]
+----
+<b>Q</b> Is there a way to prune the difflog file? One of my wikis has a 4-meg file. &quot;maintain&quot; does not seem to prune any of the reference log files. -- [UseMod:JerryMuelver JerryMuelver]
+
+<b>A</b> Not within the wiki.  You can simply remove the difflog file--it is not used by the wiki (it is a write-only log).  I probably should have disabled it by default in 1.0  The purpose of the difflog file is to allow an admin to track changes (and possibly undo them) if wanted, but the new <nowiki><tt>KeptPages</tt></nowiki> functionality makes this feature almost useless.  --[UseMod:CliffordAdams CliffordAdams]
+----
+<b>Q</b> Is there a parameter to make the wiki spit out the raw wiki text for a page?
+
+<b>A</b> Yes, there is.  :-)  More helpfully, you can use the browse action and add the &quot;raw=1&quot; parameter, like <nowiki><tt>LocalWiki?action=browse&amp;id=Free_Links&amp;raw=1</tt></nowiki>
+:Note that spaces in the page name should be replaced with _ (underscore) characters.  --[UseMod:CliffordAdams CliffordAdams]
+----
+<b>Q</b> I want to ban a user that has set up an account (strange thing for a spammer). Can I just add his username or ID to the ban list or do I have to figure out his IP? --[http://wiki.musicbrainz.org/wiki.pl?DonRedman DonRedman]
+
+<b>A</b> AFAIK there is no possibility to block based on username or id. If you need to block someone, you could use the ip, host name, subnet order (sub)domain.
+----
+<b>Q</b> Is there a way to restore a page that has been spammed, preferably using one of the backup pages?  I saw a reference to &quot;previous author backup&quot;, but haven't discovered if this is what I need, and if so how to trigger it. 
+
+<b>A</b> Click &quot;View other revisions&quot; on the bottom of the page. Then choose the revision. Maybe look at the differences between certain revisions. Click on the right revision. Click on &quot;Edit revision XX of this page&quot;. Then save that old revision. It's now the new version.
+----
+<b>Q</b> I want to use a textbox for filling in a new page. Example. I type &quot;Rover&quot; in the textbox, and get sent to URL:  http://www.usemod.com/cgi-bin/wiki.pl?Rover , is there any easy solution?
+
+<b>A</b> Set your <nowiki><tt>$FooterNote</tt></nowiki> variable (in the config) to this:
+
+<tt>
+&lt;pre&gt;
+  &lt;form method=&quot;get&quot; action=&quot;wiki.pl&quot; enctype=&quot;application/x-www-form-urlencoded&quot;&gt;
+    Edit page:&lt;br&gt;
+    &lt;input type=hidden name=action value=edit&gt;
+    &lt;input type=text name=id size=20&gt;
+  &lt;/form&gt;
+&lt;/pre&gt;
+</tt>
+----
+<b>Q</b> I'd like to remove the revision history for a page on my wiki which has been spammed several times.  I've found people link to one of the previous versions which contain the spam.  Is there a simple way to remove the past revisions?  Thank you!
+
+<b>A</b> You may call the maintain action. This will remove versions older than <nowiki><tt>$KeepDays</tt></nowiki>. A more radical way would be to delete the file with all the older versions. This is placed somewhere under keep/ in the <nowiki><tt>$DataDir</tt></nowiki>. Maybe make a backup before removing. Why is it a problem, if people link to some older version of a page? --[UseMod:MarkusLude MarkusLude]
+
+<b>A</b> Thanks for the advice.  To answer your question, it's a problem because of this: someone puts a link to porn in a wiki page.  I delete this, but the link remains in one of the revisions.  A bunch of other people link to that revision from their porn pages.  Google indexes these.  Now, when someone searches for my wiki in Google, several of the returned hits are pornographic web sites.  Also, users who are curious about the diffs in that page will end up seeing links to porn.  Given my user base, I'd prefer if neither of these happened.  I realize there's a limit to what I can do, but getting rid of old revisions would help.
+: You can stop Google visiting the [[AdminActions|action]] pages by editing your wiki's robots.txt file and adding something like:
+:: /cgi-bin/wiki.pl?action
+
+:See [http://www.usemod.com/robots.txt www.usemod.com 's robots.txt file] - [UseMod:CameronDewe CameronDewe]
+
+== Related Entries =
+{{template:RelatedEntries/WikiAdministration}}
+ÿþ3minorÿþ31ÿþ3newauthorÿþ31ÿþ2usernameÿþ2RobertKurcinaÿþ2hostÿþ2localhostÿþ2revisionÿþ218ÿþ2tscreateÿþ21178788954ÿþ2idÿþ21261ÿþ2keeptsÿþ21222623772ÿþ1tsÿþ21222623772ÿþ2ipÿþ2127.0.0.1ÿþ2versionÿþ21ÿþ2nameÿþ2text_defaultÿþ2dataÿþ2summaryÿþ3*ÿþ3textÿþ3<toc>
+== List of CGI actions that <nowiki>NobleWiki</nowiki> will accept =
+This list is actually incomplete; there are about 6 undocument commands that are used by the wiki engine itself, but are also able to be invoked from the browser address bar.  
+
+=== Search =
+ dosearch=1
+
+!!!!Search Actions!!
+||[LocalWiki:dosearch=1&amp;search=Actions &amp;search=text] || search title and body of all pages, provide a <tt>filter=xxxx</tt> to narrow search to pages with <tt>xxxx</tt> in their name||
+
+=== Browsing Actions ==
+ action=<action name>
+
+!!!!Browsing Actions!!
+||[LocalWiki:action=browse&amp;id=Actions  browse&amp;id=pagename]  || view page||
+||[LocalWiki:action=rc rc] || display all recent changes||
+||[LocalWiki:action=rss rss] || RSS output of recent changes.||
+||[LocalWiki:action=random random] || random page||
+||[LocalWiki:action=history&amp;id=Actions history&amp;id=pagename] || history of changes||
+||[LocalWiki:action=history&amp;id=Actions history&amp;id=pagename&amp;userid=username] || history of changes made by username||
+||[LocalWiki:action=browse&amp;id=Actions&amp;revision=38 browse&amp;id=pagename&amp;revision=number] || view old version||
+||[LocalWiki:action=orphans action=orphans] || list pages that are not linked.||
+
+=== Public Actions ==
+ action=<action name>
+
+!!!!Common Actions!!
+||[LocalWiki:action=edit&amp;id=SandBox edit&amp;id=pagename] || edit page||
+||[LocalWiki:action=index index] || alphabetical index of all pages||
+||[LocalWiki:action=version version] || show program-version (and options ?)||
+||[LocalWiki:action=links links] || displays links between pages, in various forms||
+
+!!!!User Actions!!
+||[LocalWiki:action=login login] || for configured user ids||
+||[LocalWiki:action=newlogin newlogin] || creates completely new user ID (and overwrite old cookie)||
+||[LocalWiki:action=editprefs editprefs] || edits a users preferences||
+
+=== Secure Actions =
+ action=<action name>
+
+!!!!Editor Actions!!
+||[LocalWiki:action=upload upload] || Upload images and other assets to the attachments directory||
+||[LocalWiki:action=listfiles listfiles] || find all active assets, provide a <tt>filter=xxxx</tt> to narrow search to pages with <tt>xxxx</tt> in their name||
+||[LocalWiki:action=listdisabled listdisabled] || find all disabled assets, provide a <tt>filter=xxxx</tt> to narrow search to pages with <tt>xxxx</tt> in their name||
+
+!!!!Advanced Actions!!
+||[LocalWiki:back=HomePage back] || use <tt>back=xxxx</tt> to find all pages associated with xxxx, provide a <tt>filter=xxxx</tt> to narrow search to pages with <tt>xxxx</tt> in their name||
+||[LocalWiki:action=rss rss] || Output content in RSS format||
+
+=== Administrator Functions =
+ action=<action name>
+
+!!!!Admin General Actions (see AdminFeatures for more details)!!
+||[LocalWiki:action=pagelock pagelock] || This will lock a specific page against editing (except by the admin): <tt>&lt;nowiki&gt;wiki.pl?action=pagelock&amp;id=HomePage&amp;set=1&lt;/nowiki&gt;</tt>||
+||[LocalWiki:action=pagelock unlock] || Same as pagelock (except by the admin): <tt>&lt;nowiki&gt;wiki.pl?action=pagelock&amp;id=HomePage&amp;set=0&lt;/nowiki&gt;</tt>||
+||[LocalWiki:action=editlock editlock] || Locks the entire wiki against editing.  Use with set=1 and set=0 like the pagelock command.||
+||[LocalWiki:action=editbanned editbanned]||Edits a list of banned IP addresses/networks which are blocked from editing.||
+||[LocalWiki:action=editlinks editlinks]||Allows renaming and deletion of pages.||
+
+!!!!Admin Maintenance Actions!!
+||[LocalWiki:action=maintain maintain]  || Does periodic maintenance, such as expiring old kept revisions. Non-admins can only use action=maintain once every 12 hours.||
+||[LocalWiki:action=unlock unlock]    || Attempts to get the edit lock normally.  If this fails, the lock is considered &quot;stuck&quot; and is forcibly removed.||
+||[LocalWiki:action=trimusers  trimusers] || Trims down the user database, removing users with no useful preferences set. You must change the <nowiki><tt>$StartUID</tt></nowiki> variable in the config afterwards.||
+||[LocalWiki:action=delete delete]||Delete a page from the wiki, will ask for confirmation if <tt>$confirm=1</tt> is set in the code||
+
+Note that admins can still edit all edit-locked pages.  Users with an &quot;editor&quot; password can still edit even if their IP is in the editbanned list, or while the whole-wiki editlock block is active.  (Editors can not edit individually-locked pages.)  The editor password is useful for restricted-access wikis, or to allow a good user to edit even if they share a network/proxy with an abusive user.
+----
+The maintain action has an undocumented feature.  If a file &quot;editlinks&quot; exists in the data dir its contents will be run just as if entered from the editlinks action, and then the file will be renamed to &quot;editlinks.old&quot;.  This doesn't seem very useful, perhaps it is left over from before editlinks had a web interface?
+
+:It can be useful for sites that haven't set up an admin password (and can't use the web interface).  --[UseMod:CliffordAdams CliffordAdams]
+----
+<b>Q</b> Is there a way to prune the difflog file? One of my wikis has a 4-meg file. &quot;maintain&quot; does not seem to prune any of the reference log files. -- [UseMod:JerryMuelver JerryMuelver]
+
+<b>A</b> Not within the wiki.  You can simply remove the difflog file--it is not used by the wiki (it is a write-only log).  I probably should have disabled it by default in 1.0  The purpose of the difflog file is to allow an admin to track changes (and possibly undo them) if wanted, but the new <nowiki><tt>KeptPages</tt></nowiki> functionality makes this feature almost useless.  --[UseMod:CliffordAdams CliffordAdams]
+----
+<b>Q</b> Is there a parameter to make the wiki spit out the raw wiki text for a page?
+
+<b>A</b> Yes, there is.  :-)  More helpfully, you can use the browse action and add the &quot;raw=1&quot; parameter, like <nowiki><tt>LocalWiki?action=browse&amp;id=Free_Links&amp;raw=1</tt></nowiki>
+:Note that spaces in the page name should be replaced with _ (underscore) characters.  --[UseMod:CliffordAdams CliffordAdams]
+----
+<b>Q</b> I want to ban a user that has set up an account (strange thing for a spammer). Can I just add his username or ID to the ban list or do I have to figure out his IP? --[http://wiki.musicbrainz.org/wiki.pl?DonRedman DonRedman]
+
+<b>A</b> AFAIK there is no possibility to block based on username or id. If you need to block someone, you could use the ip, host name, subnet order (sub)domain.
+----
+<b>Q</b> Is there a way to restore a page that has been spammed, preferably using one of the backup pages?  I saw a reference to &quot;previous author backup&quot;, but haven't discovered if this is what I need, and if so how to trigger it. 
+
+<b>A</b> Click &quot;View other revisions&quot; on the bottom of the page. Then choose the revision. Maybe look at the differences between certain revisions. Click on the right revision. Click on &quot;Edit revision XX of this page&quot;. Then save that old revision. It's now the new version.
+----
+<b>Q</b> I want to use a textbox for filling in a new page. Example. I type &quot;Rover&quot; in the textbox, and get sent to URL:  http://www.usemod.com/cgi-bin/wiki.pl?Rover , is there any easy solution?
+
+<b>A</b> Set your <nowiki><tt>$FooterNote</tt></nowiki> variable (in the config) to this:
+
+<tt>
+&lt;pre&gt;
+  &lt;form method=&quot;get&quot; action=&quot;wiki.pl&quot; enctype=&quot;application/x-www-form-urlencoded&quot;&gt;
+    Edit page:&lt;br&gt;
+    &lt;input type=hidden name=action value=edit&gt;
+    &lt;input type=text name=id size=20&gt;
+  &lt;/form&gt;
+&lt;/pre&gt;
+</tt>
+----
+<b>Q</b> I'd like to remove the revision history for a page on my wiki which has been spammed several times.  I've found people link to one of the previous versions which contain the spam.  Is there a simple way to remove the past revisions?  Thank you!
+
+<b>A</b> You may call the maintain action. This will remove versions older than <nowiki><tt>$KeepDays</tt></nowiki>. A more radical way would be to delete the file with all the older versions. This is placed somewhere under keep/ in the <nowiki><tt>$DataDir</tt></nowiki>. Maybe make a backup before removing. Why is it a problem, if people link to some older version of a page? --[UseMod:MarkusLude MarkusLude]
+
+<b>A</b> Thanks for the advice.  To answer your question, it's a problem because of this: someone puts a link to porn in a wiki page.  I delete this, but the link remains in one of the revisions.  A bunch of other people link to that revision from their porn pages.  Google indexes these.  Now, when someone searches for my wiki in Google, several of the returned hits are pornographic web sites.  Also, users who are curious about the diffs in that page will end up seeing links to porn.  Given my user base, I'd prefer if neither of these happened.  I realize there's a limit to what I can do, but getting rid of old revisions would help.
+: You can stop Google visiting the [[AdminActions|action]] pages by editing your wiki's robots.txt file and adding something like:
+:: /cgi-bin/wiki.pl?action
+
+:See [http://www.usemod.com/robots.txt www.usemod.com 's robots.txt file] - [UseMod:CameronDewe CameronDewe]
+
+== Related Entries =
+{{template:RelatedEntries/WikiAdministration}}
+ÿþ3newauthorÿþ30ÿþ3minorÿþ31ÿþ2hostÿþ2localhostÿþ2usernameÿþ2RobertKurcinaÿþ2revisionÿþ219ÿþ2idÿþ21261ÿþ2tscreateÿþ21178788954ÿþ2keeptsÿþ21222627775ÿþ1versionÿþ21ÿþ2ipÿþ2127.0.0.1ÿþ2tsÿþ21222627775ÿþ2nameÿþ2text_defaultÿþ2dataÿþ2summaryÿþ3*ÿþ3textÿþ3<toc>
+== List of CGI actions that <nowiki>NobleWiki</nowiki> will accept =
+This list is actually incomplete; there are about 6 undocument commands that are used by the wiki engine itself, but are also able to be invoked from the browser address bar.  
+
+=== Search =
+ dosearch=1
+
+!!!!Search Actions!!
+||[LocalWiki:dosearch=1&amp;search=Actions &amp;search=text] || search title and body of all pages, provide a <tt>filter=xxxx</tt> to narrow search to pages with <tt>xxxx</tt> in their name||
+
+=== Browsing Actions ==
+ action=<action name>
+
+!!!!Browsing Actions!!
+||[LocalWiki:action=browse&amp;id=Actions  browse&amp;id=pagename]  || view page||
+||[LocalWiki:action=rc rc] || display all recent changes||
+||[LocalWiki:action=rss rss] || RSS output of recent changes.||
+||[LocalWiki:action=random random] || random page||
+||[LocalWiki:action=history&amp;id=Actions history&amp;id=pagename] || history of changes||
+||[LocalWiki:action=history&amp;id=Actions history&amp;id=pagename&amp;userid=username] || history of changes made by username||
+||[LocalWiki:action=browse&amp;id=Actions&amp;revision=38 browse&amp;id=pagename&amp;revision=number] || view old version||
+||[LocalWiki:action=orphans action=orphans] || list pages that are not linked.||
+
+=== Public Actions ==
+ action=<action name>
+
+!!!!Common Actions!!
+||[LocalWiki:action=edit&amp;id=SandBox edit&amp;id=pagename] || edit page||
+||[LocalWiki:action=index index] || alphabetical index of all pages||
+||[LocalWiki:action=version version] || show program-version (and options ?)||
+||[LocalWiki:action=links links] || displays links between pages, in various forms||
+
+!!!!User Actions!!
+||[LocalWiki:action=login login] || for configured user ids||
+||[LocalWiki:action=newlogin newlogin] || creates completely new user ID (and overwrite old cookie)||
+||[LocalWiki:action=editprefs editprefs] || edits a users preferences||
+
+=== Secure Actions =
+ action=<action name>
+
+!!!!Editor Actions!!
+||[LocalWiki:action=upload upload] || Upload images and other assets to the attachments directory||
+||[LocalWiki:action=listfiles listfiles] || find all active assets, provide a <tt>filter=xxxx</tt> to narrow search to pages with <tt>xxxx</tt> in their name||
+||[LocalWiki:action=listdisabled listdisabled] || find all disabled assets, provide a <tt>filter=xxxx</tt> to narrow search to pages with <tt>xxxx</tt> in their name||
+
+!!!!Advanced Actions!!
+||[LocalWiki:back=HomePage back] || use <tt>back=xxxx</tt> to find all pages associated with xxxx, provide a <tt>filter=xxxx</tt> to narrow search to pages with <tt>xxxx</tt> in their name||
+||[LocalWiki:action=rss rss] || Output content in RSS format||
+
+=== Administrator Functions =
+ action=<action name>
+
+!!!!Admin General Actions (see AdminFeatures for more details)!!
+||[LocalWiki:action=pagelock pagelock] || This will lock a specific page against editing (except by the admin): <tt>&lt;nowiki&gt;wiki.pl?action=pagelock&amp;id=HomePage&amp;set=1&lt;/nowiki&gt;</tt>||
+||[LocalWiki:action=pagelock unlock] || Same as pagelock (except by the admin): <tt>&lt;nowiki&gt;wiki.pl?action=pagelock&amp;id=HomePage&amp;set=0&lt;/nowiki&gt;</tt>||
+||[LocalWiki:action=editlock editlock] || Locks the entire wiki against editing.  Use with set=1 and set=0 like the pagelock command.||
+||[LocalWiki:action=editbanned editbanned]||Edits a list of banned IP addresses/networks which are blocked from editing.||
+||[LocalWiki:action=editlinks editlinks]||Allows renaming and deletion of pages.||
+
+!!!!Admin Maintenance Actions!!
+||[LocalWiki:action=maintain maintain]  || Does periodic maintenance, such as expiring old kept revisions. Non-admins can only use action=maintain once every 12 hours.||
+||[LocalWiki:action=unlock unlock]    || Attempts to get the edit lock normally.  If this fails, the lock is considered &quot;stuck&quot; and is forcibly removed.||
+||[LocalWiki:action=trimusers  trimusers] || Trims down the user database, removing users with no useful preferences set. You must change the <nowiki><tt>$StartUID</tt></nowiki> variable in the config afterwards.||
+||[LocalWiki:action=delete delete]||Delete a page from the wiki, will ask for confirmation if <tt>$confirm=1</tt> is set in the code||
+
+Note that admins can still edit all edit-locked pages.  Users with an &quot;editor&quot; password can still edit even if their IP is in the editbanned list, or while the whole-wiki editlock block is active.  (Editors can not edit individually-locked pages.)  The editor password is useful for restricted-access wikis, or to allow a good user to edit even if they share a network/proxy with an abusive user.
+----
+The maintain action has an undocumented feature.  If a file &quot;editlinks&quot; exists in the data dir its contents will be run just as if entered from the editlinks action, and then the file will be renamed to &quot;editlinks.old&quot;.  This doesn't seem very useful, perhaps it is left over from before editlinks had a web interface?
+
+:It can be useful for sites that haven't set up an admin password (and can't use the web interface).  --[UseMod:CliffordAdams CliffordAdams]
+----
+<b>Q</b> Is there a way to prune the difflog file? One of my wikis has a 4-meg file. &quot;maintain&quot; does not seem to prune any of the reference log files. -- [UseMod:JerryMuelver JerryMuelver]
+
+<b>A</b> Not within the wiki.  You can simply remove the difflog file--it is not used by the wiki (it is a write-only log).  I probably should have disabled it by default in 1.0  The purpose of the difflog file is to allow an admin to track changes (and possibly undo them) if wanted, but the new <nowiki><tt>KeptPages</tt></nowiki> functionality makes this feature almost useless.  --[UseMod:CliffordAdams CliffordAdams]
+----
+<b>Q</b> Is there a parameter to make the wiki spit out the raw wiki text for a page?
+
+<b>A</b> Yes, there is.  :-)  More helpfully, you can use the browse action and add the &quot;raw=1&quot; parameter, like <nowiki><tt>LocalWiki?action=browse&amp;id=Free_Links&amp;raw=1</tt></nowiki>
+:Note that spaces in the page name should be replaced with _ (underscore) characters.  --[UseMod:CliffordAdams CliffordAdams]
+----
+<b>Q</b> I want to ban a user that has set up an account (strange thing for a spammer). Can I just add his username or ID to the ban list or do I have to figure out his IP? --[http://wiki.musicbrainz.org/wiki.pl?DonRedman DonRedman]
+
+<b>A</b> AFAIK there is no possibility to block based on username or id. If you need to block someone, you could use the ip, host name, subnet order (sub)domain.
+----
+<b>Q</b> Is there a way to restore a page that has been spammed, preferably using one of the backup pages?  I saw a reference to &quot;previous author backup&quot;, but haven't discovered if this is what I need, and if so how to trigger it. 
+
+<b>A</b> Click &quot;View other revisions&quot; on the bottom of the page. Then choose the revision. Maybe look at the differences between certain revisions. Click on the right revision. Click on &quot;Edit revision XX of this page&quot;. Then save that old revision. It's now the new version.
+----
+<b>Q</b> I want to use a textbox for filling in a new page. Example. I type &quot;Rover&quot; in the textbox, and get sent to URL:  http://www.usemod.com/cgi-bin/wiki.pl?Rover , is there any easy solution?
+
+<b>A</b> Set your <nowiki><tt>$FooterNote</tt></nowiki> variable (in the config) to this:
+
+<tt>
+&lt;pre&gt;
+  &lt;form method=&quot;get&quot; action=&quot;wiki.pl&quot; enctype=&quot;application/x-www-form-urlencoded&quot;&gt;
+    Edit page:&lt;br&gt;
+    &lt;input type=hidden name=action value=edit&gt;
+    &lt;input type=text name=id size=20&gt;
+  &lt;/form&gt;
+&lt;/pre&gt;
+</tt>
+----
+<b>Q</b> I'd like to remove the revision history for a page on my wiki which has been spammed several times.  I've found people link to one of the previous versions which contain the spam.  Is there a simple way to remove the past revisions?  Thank you!
+
+<b>A</b> You may call the maintain action. This will remove versions older than <nowiki><tt>$KeepDays</tt></nowiki>. A more radical way would be to delete the file with all the older versions. This is placed somewhere under keep/ in the <nowiki><tt>$DataDir</tt></nowiki>. Maybe make a backup before removing. Why is it a problem, if people link to some older version of a page? --[UseMod:MarkusLude MarkusLude]
+
+<b>A</b> Thanks for the advice.  To answer your question, it's a problem because of this: someone puts a link to porn in a wiki page.  I delete this, but the link remains in one of the revisions.  A bunch of other people link to that revision from their porn pages.  Google indexes these.  Now, when someone searches for my wiki in Google, several of the returned hits are pornographic web sites.  Also, users who are curious about the diffs in that page will end up seeing links to porn.  Given my user base, I'd prefer if neither of these happened.  I realize there's a limit to what I can do, but getting rid of old revisions would help.
+: You can stop Google visiting the [[AdminActions|action]] pages by editing your wiki's robots.txt file and adding something like:
+:: /cgi-bin/wiki.pl?action
+
+:See [http://www.usemod.com/robots.txt www.usemod.com 's robots.txt file] - [UseMod:CameronDewe CameronDewe]
+
+{{template:RelatedEntries/WikiAdministration}}
+ÿþ3minorÿþ31ÿþ3newauthorÿþ30ÿþ2usernameÿþ2RobertKurcinaÿþ2hostÿþ2localhostÿþ2revisionÿþ220ÿþ2tscreateÿþ21178788954ÿþ2idÿþ21261ÿþ2keeptsÿþ21222629000ÿþ1tsÿþ21222629000ÿþ2ipÿþ2127.0.0.1ÿþ2versionÿþ21ÿþ2nameÿþ2text_defaultÿþ2dataÿþ2summaryÿþ3*ÿþ3textÿþ3<toc>
+== List of CGI actions that <nowiki>NobleWiki</nowiki> will accept =
+This list is actually incomplete; there are about 6 undocument commands that are used by the wiki engine itself, but are also able to be invoked from the browser address bar.  
+
+=== Search =
+ dosearch=1
+
+!!!!Search Actions!!
+||[LocalWiki:dosearch=1&amp;search=Actions &amp;search=text] || search title and body of all pages, provide a <tt>filter=xxxx</tt> to narrow search to pages with <tt>xxxx</tt> in their name||
+
+=== Browsing Actions ==
+ action=<action name>
+
+!!!!Browsing Actions!!
+||[LocalWiki:action=browse&amp;id=Actions  browse&amp;id=pagename]  || view page||
+||[LocalWiki:action=rc rc] || display all recent changes||
+||[LocalWiki:action=rss rss] || RSS output of recent changes.||
+||[LocalWiki:action=random random] || random page||
+||[LocalWiki:action=history&amp;id=Actions history&amp;id=pagename] || history of changes||
+||[LocalWiki:action=history&amp;id=Actions history&amp;id=pagename&amp;userid=username] || history of changes made by username||
+||[LocalWiki:action=browse&amp;id=Actions&amp;revision=38 browse&amp;id=pagename&amp;revision=number] || view old version||
+||[LocalWiki:action=orphans action=orphans] || list pages that are not linked.||
+||[LocalWiki:action=browse&raw=1&id=pagename action=browse&raw=1&id=pagename ] || browse a page and view its Wiki markup in raw mode||
+||[LocalWiki:action=browse&embed=1&id=pagename action=browse&embed=1&id=pagename ] || browse a page but do not include the header or footer||
+
+=== Public Actions ==
+ action=<action name>
+
+!!!!Common Actions!!
+||[LocalWiki:action=edit&amp;id=SandBox edit&amp;id=pagename] || edit page||
+||[LocalWiki:action=index index] || alphabetical index of all pages||
+||[LocalWiki:action=version version] || show program-version (and options ?)||
+||[LocalWiki:action=links links] || displays links between pages, in various forms||
+
+!!!!User Actions!!
+||[LocalWiki:action=login login] || for configured user ids||
+||[LocalWiki:action=newlogin newlogin] || creates completely new user ID (and overwrite old cookie)||
+||[LocalWiki:action=editprefs editprefs] || edits a users preferences||
+
+=== Secure Actions =
+ action=<action name>
+
+!!!!Editor Actions!!
+||[LocalWiki:action=upload upload] || Upload images and other assets to the attachments directory||
+||[LocalWiki:action=listfiles listfiles] || find all active assets, provide a <tt>filter=xxxx</tt> to narrow search to pages with <tt>xxxx</tt> in their name||
+||[LocalWiki:action=listdisabled listdisabled] || find all disabled assets, provide a <tt>filter=xxxx</tt> to narrow search to pages with <tt>xxxx</tt> in their name||
+
+!!!!Advanced Actions!!
+||[LocalWiki:back=HomePage back] || use <tt>back=xxxx</tt> to find all pages associated with xxxx, provide a <tt>filter=xxxx</tt> to narrow search to pages with <tt>xxxx</tt> in their name||
+||[LocalWiki:action=rss rss] || Output content in RSS format||
+
+=== Administrator Functions =
+ action=<action name>
+
+!!!!Admin General Actions (see AdminFeatures for more details)!!
+||[LocalWiki:action=pagelock pagelock] || This will lock a specific page against editing (except by the admin): <tt>&lt;nowiki&gt;wiki.pl?action=pagelock&amp;id=HomePage&amp;set=1&lt;/nowiki&gt;</tt>||
+||[LocalWiki:action=pagelock unlock] || Same as pagelock (except by the admin): <tt>&lt;nowiki&gt;wiki.pl?action=pagelock&amp;id=HomePage&amp;set=0&lt;/nowiki&gt;</tt>||
+||[LocalWiki:action=editlock editlock] || Locks the entire wiki against editing.  Use with set=1 and set=0 like the pagelock command.||
+||[LocalWiki:action=editbanned editbanned]||Edits a list of banned IP addresses/networks which are blocked from editing.||
+||[LocalWiki:action=editlinks editlinks]||Allows renaming and deletion of pages.||
+
+!!!!Admin Maintenance Actions!!
+||[LocalWiki:action=maintain maintain]  || Does periodic maintenance, such as expiring old kept revisions. Non-admins can only use action=maintain once every 12 hours.||
+||[LocalWiki:action=unlock unlock]    || Attempts to get the edit lock normally.  If this fails, the lock is considered &quot;stuck&quot; and is forcibly removed.||
+||[LocalWiki:action=trimusers  trimusers] || Trims down the user database, removing users with no useful preferences set. You must change the <nowiki><tt>$StartUID</tt></nowiki> variable in the config afterwards.||
+||[LocalWiki:action=delete delete]||Delete a page from the wiki, will ask for confirmation if <tt>$confirm=1</tt> is set in the code||
+
+Note that admins can still edit all edit-locked pages.  Users with an &quot;editor&quot; password can still edit even if their IP is in the editbanned list, or while the whole-wiki editlock block is active.  (Editors can not edit individually-locked pages.)  The editor password is useful for restricted-access wikis, or to allow a good user to edit even if they share a network/proxy with an abusive user.
+----
+The maintain action has an undocumented feature.  If a file &quot;editlinks&quot; exists in the data dir its contents will be run just as if entered from the editlinks action, and then the file will be renamed to &quot;editlinks.old&quot;.  This doesn't seem very useful, perhaps it is left over from before editlinks had a web interface?
+
+:It can be useful for sites that haven't set up an admin password (and can't use the web interface).  --[UseMod:CliffordAdams CliffordAdams]
+----
+<b>Q</b> Is there a way to prune the difflog file? One of my wikis has a 4-meg file. &quot;maintain&quot; does not seem to prune any of the reference log files. -- [UseMod:JerryMuelver JerryMuelver]
+
+<b>A</b> Not within the wiki.  You can simply remove the difflog file--it is not used by the wiki (it is a write-only log).  I probably should have disabled it by default in 1.0  The purpose of the difflog file is to allow an admin to track changes (and possibly undo them) if wanted, but the new <nowiki><tt>KeptPages</tt></nowiki> functionality makes this feature almost useless.  --[UseMod:CliffordAdams CliffordAdams]
+----
+<b>Q</b> Is there a parameter to make the wiki spit out the raw wiki text for a page?
+
+<b>A</b> Yes, there is.  :-)  More helpfully, you can use the browse action and add the &quot;raw=1&quot; parameter, like <nowiki><tt>LocalWiki?action=browse&amp;id=Free_Links&amp;raw=1</tt></nowiki>
+:Note that spaces in the page name should be replaced with _ (underscore) characters.  --[UseMod:CliffordAdams CliffordAdams]
+----
+<b>Q</b> I want to ban a user that has set up an account (strange thing for a spammer). Can I just add his username or ID to the ban list or do I have to figure out his IP? --[http://wiki.musicbrainz.org/wiki.pl?DonRedman DonRedman]
+
+<b>A</b> AFAIK there is no possibility to block based on username or id. If you need to block someone, you could use the ip, host name, subnet order (sub)domain.
+----
+<b>Q</b> Is there a way to restore a page that has been spammed, preferably using one of the backup pages?  I saw a reference to &quot;previous author backup&quot;, but haven't discovered if this is what I need, and if so how to trigger it. 
+
+<b>A</b> Click &quot;View other revisions&quot; on the bottom of the page. Then choose the revision. Maybe look at the differences between certain revisions. Click on the right revision. Click on &quot;Edit revision XX of this page&quot;. Then save that old revision. It's now the new version.
+----
+<b>Q</b> I want to use a textbox for filling in a new page. Example. I type &quot;Rover&quot; in the textbox, and get sent to URL:  http://www.usemod.com/cgi-bin/wiki.pl?Rover , is there any easy solution?
+
+<b>A</b> Set your <nowiki><tt>$FooterNote</tt></nowiki> variable (in the config) to this:
+
+<tt>
+&lt;pre&gt;
+  &lt;form method=&quot;get&quot; action=&quot;wiki.pl&quot; enctype=&quot;application/x-www-form-urlencoded&quot;&gt;
+    Edit page:&lt;br&gt;
+    &lt;input type=hidden name=action value=edit&gt;
+    &lt;input type=text name=id size=20&gt;
+  &lt;/form&gt;
+&lt;/pre&gt;
+</tt>
+----
+<b>Q</b> I'd like to remove the revision history for a page on my wiki which has been spammed several times.  I've found people link to one of the previous versions which contain the spam.  Is there a simple way to remove the past revisions?  Thank you!
+
+<b>A</b> You may call the maintain action. This will remove versions older than <nowiki><tt>$KeepDays</tt></nowiki>. A more radical way would be to delete the file with all the older versions. This is placed somewhere under keep/ in the <nowiki><tt>$DataDir</tt></nowiki>. Maybe make a backup before removing. Why is it a problem, if people link to some older version of a page? --[UseMod:MarkusLude MarkusLude]
+
+<b>A</b> Thanks for the advice.  To answer your question, it's a problem because of this: someone puts a link to porn in a wiki page.  I delete this, but the link remains in one of the revisions.  A bunch of other people link to that revision from their porn pages.  Google indexes these.  Now, when someone searches for my wiki in Google, several of the returned hits are pornographic web sites.  Also, users who are curious about the diffs in that page will end up seeing links to porn.  Given my user base, I'd prefer if neither of these happened.  I realize there's a limit to what I can do, but getting rid of old revisions would help.
+: You can stop Google visiting the [[AdminActions|action]] pages by editing your wiki's robots.txt file and adding something like:
+:: /cgi-bin/wiki.pl?action
+
+:See [http://www.usemod.com/robots.txt www.usemod.com 's robots.txt file] - [UseMod:CameronDewe CameronDewe]
+
+{{template:RelatedEntries/WikiAdministration}}
+ÿþ3newauthorÿþ30ÿþ3minorÿþ30ÿþ2hostÿþ2localhostÿþ2usernameÿþ2RobertKurcinaÿþ2revisionÿþ221ÿþ2idÿþ21261ÿþ2tscreateÿþ21178788954ÿþ2keeptsÿþ21222752401ÿþ1versionÿþ21ÿþ2ipÿþ2127.0.0.1ÿþ2tsÿþ21222752401ÿþ2nameÿþ2text_defaultÿþ2dataÿþ2summaryÿþ3*ÿþ3textÿþ3{{toc}}
+== List of CGI actions that <nowiki>NobleWiki</nowiki> will accept =
+This list is actually incomplete; there are about 6 undocument commands that are used by the wiki engine itself, but are also able to be invoked from the browser address bar.  
+
+=== Search =
+ dosearch=1
+
+!!!!Search Actions!!
+||[LocalWiki:dosearch=1&amp;search=Actions &amp;search=text] || search title and body of all pages, provide a <tt>filter=xxxx</tt> to narrow search to pages with <tt>xxxx</tt> in their name||
+
+=== Browsing Actions ==
+ action=<action name>
+
+!!!!Browsing Actions!!
+||[LocalWiki:action=browse&amp;id=Actions  browse&amp;id=pagename]  || view page||
+||[LocalWiki:action=rc rc] || display all recent changes||
+||[LocalWiki:action=rss rss] || RSS output of recent changes.||
+||[LocalWiki:action=random random] || random page||
+||[LocalWiki:action=history&amp;id=Actions history&amp;id=pagename] || history of changes||
+||[LocalWiki:action=history&amp;id=Actions history&amp;id=pagename&amp;userid=username] || history of changes made by username||
+||[LocalWiki:action=browse&amp;id=Actions&amp;revision=38 browse&amp;id=pagename&amp;revision=number] || view old version||
+||[LocalWiki:action=orphans action=orphans] || list pages that are not linked.||
+||[LocalWiki:action=browse&raw=1&id=pagename action=browse&raw=1&id=pagename ] || browse a page and view its Wiki markup in raw mode||
+||[LocalWiki:action=browse&embed=1&id=pagename action=browse&embed=1&id=pagename ] || browse a page but do not include the header or footer||
+
+=== Public Actions ==
+ action=<action name>
+
+!!!!Common Actions!!
+||[LocalWiki:action=edit&amp;id=SandBox edit&amp;id=pagename] || edit page||
+||[LocalWiki:action=index index] || alphabetical index of all pages||
+||[LocalWiki:action=version version] || show program-version (and options ?)||
+||[LocalWiki:action=links links] || displays links between pages, in various forms||
+
+!!!!User Actions!!
+||[LocalWiki:action=login login] || for configured user ids||
+||[LocalWiki:action=newlogin newlogin] || creates completely new user ID (and overwrite old cookie)||
+||[LocalWiki:action=editprefs editprefs] || edits a users preferences||
+
+=== Secure Actions =
+ action=<action name>
+
+!!!!Editor Actions!!
+||[LocalWiki:action=upload upload] || Upload images and other assets to the attachments directory||
+||[LocalWiki:action=listfiles listfiles] || find all active assets, provide a <tt>filter=xxxx</tt> to narrow search to pages with <tt>xxxx</tt> in their name||
+||[LocalWiki:action=listdisabled listdisabled] || find all disabled assets, provide a <tt>filter=xxxx</tt> to narrow search to pages with <tt>xxxx</tt> in their name||
+
+!!!!Advanced Actions!!
+||[LocalWiki:back=HomePage back] || use <tt>back=xxxx</tt> to find all pages associated with xxxx, provide a <tt>filter=xxxx</tt> to narrow search to pages with <tt>xxxx</tt> in their name||
+||[LocalWiki:action=rss rss] || Output content in RSS format||
+
+=== Administrator Functions =
+ action=<action name>
+
+!!!!Admin General Actions (see AdminFeatures for more details)!!
+||[LocalWiki:action=pagelock pagelock] || This will lock a specific page against editing (except by the admin): <tt>&lt;nowiki&gt;wiki.pl?action=pagelock&amp;id=HomePage&amp;set=1&lt;/nowiki&gt;</tt>||
+||[LocalWiki:action=pagelock unlock] || Same as pagelock (except by the admin): <tt>&lt;nowiki&gt;wiki.pl?action=pagelock&amp;id=HomePage&amp;set=0&lt;/nowiki&gt;</tt>||
+||[LocalWiki:action=editlock editlock] || Locks the entire wiki against editing.  Use with set=1 and set=0 like the pagelock command.||
+||[LocalWiki:action=editbanned editbanned]||Edits a list of banned IP addresses/networks which are blocked from editing.||
+||[LocalWiki:action=editlinks editlinks]||Allows renaming and deletion of pages.||
+
+!!!!Admin Maintenance Actions!!
+||[LocalWiki:action=maintain maintain]  || Does periodic maintenance, such as expiring old kept revisions. Non-admins can only use action=maintain once every 12 hours.||
+||[LocalWiki:action=unlock unlock]    || Attempts to get the edit lock normally.  If this fails, the lock is considered &quot;stuck&quot; and is forcibly removed.||
+||[LocalWiki:action=trimusers  trimusers] || Trims down the user database, removing users with no useful preferences set. You must change the <nowiki><tt>$StartUID</tt></nowiki> variable in the config afterwards.||
+||[LocalWiki:action=delete delete]||Delete a page from the wiki, will ask for confirmation if <tt>$confirm=1</tt> is set in the code||
+
+Note that admins can still edit all edit-locked pages.  Users with an &quot;editor&quot; password can still edit even if their IP is in the editbanned list, or while the whole-wiki editlock block is active.  (Editors can not edit individually-locked pages.)  The editor password is useful for restricted-access wikis, or to allow a good user to edit even if they share a network/proxy with an abusive user.
+----
+The maintain action has an undocumented feature.  If a file &quot;editlinks&quot; exists in the data dir its contents will be run just as if entered from the editlinks action, and then the file will be renamed to &quot;editlinks.old&quot;.  This doesn't seem very useful, perhaps it is left over from before editlinks had a web interface?
+
+:It can be useful for sites that haven't set up an admin password (and can't use the web interface).  --[UseMod:CliffordAdams CliffordAdams]
+----
+<b>Q</b> Is there a way to prune the difflog file? One of my wikis has a 4-meg file. &quot;maintain&quot; does not seem to prune any of the reference log files. -- [UseMod:JerryMuelver JerryMuelver]
+
+<b>A</b> Not within the wiki.  You can simply remove the difflog file--it is not used by the wiki (it is a write-only log).  I probably should have disabled it by default in 1.0  The purpose of the difflog file is to allow an admin to track changes (and possibly undo them) if wanted, but the new <nowiki><tt>KeptPages</tt></nowiki> functionality makes this feature almost useless.  --[UseMod:CliffordAdams CliffordAdams]
+----
+<b>Q</b> Is there a parameter to make the wiki spit out the raw wiki text for a page?
+
+<b>A</b> Yes, there is.  :-)  More helpfully, you can use the browse action and add the &quot;raw=1&quot; parameter, like <nowiki><tt>LocalWiki?action=browse&amp;id=Free_Links&amp;raw=1</tt></nowiki>
+:Note that spaces in the page name should be replaced with _ (underscore) characters.  --[UseMod:CliffordAdams CliffordAdams]
+----
+<b>Q</b> I want to ban a user that has set up an account (strange thing for a spammer). Can I just add his username or ID to the ban list or do I have to figure out his IP? --[http://wiki.musicbrainz.org/wiki.pl?DonRedman DonRedman]
+
+<b>A</b> AFAIK there is no possibility to block based on username or id. If you need to block someone, you could use the ip, host name, subnet order (sub)domain.
+----
+<b>Q</b> Is there a way to restore a page that has been spammed, preferably using one of the backup pages?  I saw a reference to &quot;previous author backup&quot;, but haven't discovered if this is what I need, and if so how to trigger it. 
+
+<b>A</b> Click &quot;View other revisions&quot; on the bottom of the page. Then choose the revision. Maybe look at the differences between certain revisions. Click on the right revision. Click on &quot;Edit revision XX of this page&quot;. Then save that old revision. It's now the new version.
+----
+<b>Q</b> I want to use a textbox for filling in a new page. Example. I type &quot;Rover&quot; in the textbox, and get sent to URL:  http://www.usemod.com/cgi-bin/wiki.pl?Rover , is there any easy solution?
+
+<b>A</b> Set your <nowiki><tt>$FooterNote</tt></nowiki> variable (in the config) to this:
+
+<tt>
+&lt;pre&gt;
+  &lt;form method=&quot;get&quot; action=&quot;wiki.pl&quot; enctype=&quot;application/x-www-form-urlencoded&quot;&gt;
+    Edit page:&lt;br&gt;
+    &lt;input type=hidden name=action value=edit&gt;
+    &lt;input type=text name=id size=20&gt;
+  &lt;/form&gt;
+&lt;/pre&gt;
+</tt>
+----
+<b>Q</b> I'd like to remove the revision history for a page on my wiki which has been spammed several times.  I've found people link to one of the previous versions which contain the spam.  Is there a simple way to remove the past revisions?  Thank you!
+
+<b>A</b> You may call the maintain action. This will remove versions older than <nowiki><tt>$KeepDays</tt></nowiki>. A more radical way would be to delete the file with all the older versions. This is placed somewhere under keep/ in the <nowiki><tt>$DataDir</tt></nowiki>. Maybe make a backup before removing. Why is it a problem, if people link to some older version of a page? --[UseMod:MarkusLude MarkusLude]
+
+<b>A</b> Thanks for the advice.  To answer your question, it's a problem because of this: someone puts a link to porn in a wiki page.  I delete this, but the link remains in one of the revisions.  A bunch of other people link to that revision from their porn pages.  Google indexes these.  Now, when someone searches for my wiki in Google, several of the returned hits are pornographic web sites.  Also, users who are curious about the diffs in that page will end up seeing links to porn.  Given my user base, I'd prefer if neither of these happened.  I realize there's a limit to what I can do, but getting rid of old revisions would help.
+: You can stop Google visiting the [[AdminActions|action]] pages by editing your wiki's robots.txt file and adding something like:
+:: /cgi-bin/wiki.pl?action
+
+:See [http://www.usemod.com/robots.txt www.usemod.com 's robots.txt file] - [UseMod:CameronDewe CameronDewe]
+
+{{template:RelatedEntries/WikiAdministration}}
+ÿþ3minorÿþ30ÿþ3newauthorÿþ31ÿþ2usernameÿþ2RobertKurcinaÿþ2hostÿþ2localhostÿþ2revisionÿþ222ÿþ2tscreateÿþ21178788954ÿþ2idÿþ21278ÿþ2keeptsÿþ21222831793ÿþ1tsÿþ21222831793ÿþ2ipÿþ2127.0.0.1ÿþ2versionÿþ21ÿþ2nameÿþ2text_defaultÿþ2dataÿþ2summaryÿþ3*ÿþ3textÿþ3= Admin Actions =
+{{toc}}
+== List of CGI actions that <nowiki>NobleWiki</nowiki> will accept =
+This list is actually incomplete; there are about 6 undocument commands that are used by the wiki engine itself, but are also able to be invoked from the browser address bar.  
+
+=== Search =
+ dosearch=1
+
+!!!!Search Actions!!
+||[LocalWiki:dosearch=1&amp;search=Actions &amp;search=text] || search title and body of all pages, provide a <tt>filter=xxxx</tt> to narrow search to pages with <tt>xxxx</tt> in their name||
+
+=== Browsing Actions ==
+ action=<action name>
+
+!!!!Browsing Actions!!
+||[LocalWiki:action=browse&amp;id=Actions  browse&amp;id=pagename]  || view page||
+||[LocalWiki:action=rc rc] || display all recent changes||
+||[LocalWiki:action=rss rss] || RSS output of recent changes.||
+||[LocalWiki:action=random random] || random page||
+||[LocalWiki:action=history&amp;id=Actions history&amp;id=pagename] || history of changes||
+||[LocalWiki:action=history&amp;id=Actions history&amp;id=pagename&amp;userid=username] || history of changes made by username||
+||[LocalWiki:action=browse&amp;id=Actions&amp;revision=38 browse&amp;id=pagename&amp;revision=number] || view old version||
+||[LocalWiki:action=orphans action=orphans] || list pages that are not linked.||
+||[LocalWiki:action=browse&raw=1&id=pagename action=browse&raw=1&id=pagename ] || browse a page and view its Wiki markup in raw mode||
+||[LocalWiki:action=browse&embed=1&id=pagename action=browse&embed=1&id=pagename ] || browse a page but do not include the header or footer||
+
+=== Public Actions ==
+ action=<action name>
+
+!!!!Common Actions!!
+||[LocalWiki:action=edit&amp;id=SandBox edit&amp;id=pagename] || edit page||
+||[LocalWiki:action=index index] || alphabetical index of all pages||
+||[LocalWiki:action=version version] || show program-version (and options ?)||
+||[LocalWiki:action=links links] || displays links between pages, in various forms||
+
+!!!!User Actions!!
+||[LocalWiki:action=login login] || for configured user ids||
+||[LocalWiki:action=newlogin newlogin] || creates completely new user ID (and overwrite old cookie)||
+||[LocalWiki:action=editprefs editprefs] || edits a users preferences||
+
+=== Secure Actions =
+ action=<action name>
+
+!!!!Editor Actions!!
+||[LocalWiki:action=upload upload] || Upload images and other assets to the attachments directory||
+||[LocalWiki:action=listfiles listfiles] || find all active assets, provide a <tt>filter=xxxx</tt> to narrow search to pages with <tt>xxxx</tt> in their name||
+||[LocalWiki:action=listdisabled listdisabled] || find all disabled assets, provide a <tt>filter=xxxx</tt> to narrow search to pages with <tt>xxxx</tt> in their name||
+
+!!!!Advanced Actions!!
+||[LocalWiki:back=HomePage back] || use <tt>back=xxxx</tt> to find all pages associated with xxxx, provide a <tt>filter=xxxx</tt> to narrow search to pages with <tt>xxxx</tt> in their name||
+||[LocalWiki:action=rss rss] || Output content in RSS format||
+
+=== Administrator Functions =
+ action=<action name>
+
+!!!!Admin General Actions (see AdminFeatures for more details)!!
+||[LocalWiki:action=pagelock pagelock] || This will lock a specific page against editing (except by the admin): <tt>&lt;nowiki&gt;wiki.pl?action=pagelock&amp;id=HomePage&amp;set=1&lt;/nowiki&gt;</tt>||
+||[LocalWiki:action=pagelock unlock] || Same as pagelock (except by the admin): <tt>&lt;nowiki&gt;wiki.pl?action=pagelock&amp;id=HomePage&amp;set=0&lt;/nowiki&gt;</tt>||
+||[LocalWiki:action=editlock editlock] || Locks the entire wiki against editing.  Use with set=1 and set=0 like the pagelock command.||
+||[LocalWiki:action=editbanned editbanned]||Edits a list of banned IP addresses/networks which are blocked from editing.||
+||[LocalWiki:action=editlinks editlinks]||Allows renaming and deletion of pages.||
+
+!!!!Admin Maintenance Actions!!
+||[LocalWiki:action=maintain maintain]  || Does periodic maintenance, such as expiring old kept revisions. Non-admins can only use action=maintain once every 12 hours.||
+||[LocalWiki:action=unlock unlock]    || Attempts to get the edit lock normally.  If this fails, the lock is considered &quot;stuck&quot; and is forcibly removed.||
+||[LocalWiki:action=trimusers  trimusers] || Trims down the user database, removing users with no useful preferences set. You must change the <nowiki><tt>$StartUID</tt></nowiki> variable in the config afterwards.||
+||[LocalWiki:action=delete delete]||Delete a page from the wiki, will ask for confirmation if <tt>$confirm=1</tt> is set in the code||
+
+Note that admins can still edit all edit-locked pages.  Users with an &quot;editor&quot; password can still edit even if their IP is in the editbanned list, or while the whole-wiki editlock block is active.  (Editors can not edit individually-locked pages.)  The editor password is useful for restricted-access wikis, or to allow a good user to edit even if they share a network/proxy with an abusive user.
+----
+The maintain action has an undocumented feature.  If a file &quot;editlinks&quot; exists in the data dir its contents will be run just as if entered from the editlinks action, and then the file will be renamed to &quot;editlinks.old&quot;.  This doesn't seem very useful, perhaps it is left over from before editlinks had a web interface?
+
+:It can be useful for sites that haven't set up an admin password (and can't use the web interface).  --[UseMod:CliffordAdams CliffordAdams]
+----
+<b>Q</b> Is there a way to prune the difflog file? One of my wikis has a 4-meg file. &quot;maintain&quot; does not seem to prune any of the reference log files. -- [UseMod:JerryMuelver JerryMuelver]
+
+<b>A</b> Not within the wiki.  You can simply remove the difflog file--it is not used by the wiki (it is a write-only log).  I probably should have disabled it by default in 1.0  The purpose of the difflog file is to allow an admin to track changes (and possibly undo them) if wanted, but the new <nowiki><tt>KeptPages</tt></nowiki> functionality makes this feature almost useless.  --[UseMod:CliffordAdams CliffordAdams]
+----
+<b>Q</b> Is there a parameter to make the wiki spit out the raw wiki text for a page?
+
+<b>A</b> Yes, there is.  :-)  More helpfully, you can use the browse action and add the &quot;raw=1&quot; parameter, like <nowiki><tt>LocalWiki?action=browse&amp;id=Free_Links&amp;raw=1</tt></nowiki>
+:Note that spaces in the page name should be replaced with _ (underscore) characters.  --[UseMod:CliffordAdams CliffordAdams]
+----
+<b>Q</b> I want to ban a user that has set up an account (strange thing for a spammer). Can I just add his username or ID to the ban list or do I have to figure out his IP? --[http://wiki.musicbrainz.org/wiki.pl?DonRedman DonRedman]
+
+<b>A</b> AFAIK there is no possibility to block based on username or id. If you need to block someone, you could use the ip, host name, subnet order (sub)domain.
+----
+<b>Q</b> Is there a way to restore a page that has been spammed, preferably using one of the backup pages?  I saw a reference to &quot;previous author backup&quot;, but haven't discovered if this is what I need, and if so how to trigger it. 
+
+<b>A</b> Click &quot;View other revisions&quot; on the bottom of the page. Then choose the revision. Maybe look at the differences between certain revisions. Click on the right revision. Click on &quot;Edit revision XX of this page&quot;. Then save that old revision. It's now the new version.
+----
+<b>Q</b> I want to use a textbox for filling in a new page. Example. I type &quot;Rover&quot; in the textbox, and get sent to URL:  http://www.usemod.com/cgi-bin/wiki.pl?Rover , is there any easy solution?
+
+<b>A</b> Set your <nowiki><tt>$FooterNote</tt></nowiki> variable (in the config) to this:
+
+<tt>
+&lt;pre&gt;
+  &lt;form method=&quot;get&quot; action=&quot;wiki.pl&quot; enctype=&quot;application/x-www-form-urlencoded&quot;&gt;
+    Edit page:&lt;br&gt;
+    &lt;input type=hidden name=action value=edit&gt;
+    &lt;input type=text name=id size=20&gt;
+  &lt;/form&gt;
+&lt;/pre&gt;
+</tt>
+----
+<b>Q</b> I'd like to remove the revision history for a page on my wiki which has been spammed several times.  I've found people link to one of the previous versions which contain the spam.  Is there a simple way to remove the past revisions?  Thank you!
+
+<b>A</b> You may call the maintain action. This will remove versions older than <nowiki><tt>$KeepDays</tt></nowiki>. A more radical way would be to delete the file with all the older versions. This is placed somewhere under keep/ in the <nowiki><tt>$DataDir</tt></nowiki>. Maybe make a backup before removing. Why is it a problem, if people link to some older version of a page? --[UseMod:MarkusLude MarkusLude]
+
+<b>A</b> Thanks for the advice.  To answer your question, it's a problem because of this: someone puts a link to porn in a wiki page.  I delete this, but the link remains in one of the revisions.  A bunch of other people link to that revision from their porn pages.  Google indexes these.  Now, when someone searches for my wiki in Google, several of the returned hits are pornographic web sites.  Also, users who are curious about the diffs in that page will end up seeing links to porn.  Given my user base, I'd prefer if neither of these happened.  I realize there's a limit to what I can do, but getting rid of old revisions would help.
+: You can stop Google visiting the [[AdminActions|action]] pages by editing your wiki's robots.txt file and adding something like:
+:: /cgi-bin/wiki.pl?action
+
+:See [http://www.usemod.com/robots.txt www.usemod.com 's robots.txt file] - [UseMod:CameronDewe CameronDewe]
+
+{{template:RelatedEntries/WikiAdministration}}
+ÿþ3newauthorÿþ31ÿþ3minorÿþ30ÿþ2hostÿþ2localhostÿþ2usernameÿþ2RobertKurcinaÿþ2revisionÿþ223ÿþ2idÿþ21280ÿþ2tscreateÿþ21178788954ÿþ2keeptsÿþ21223011189

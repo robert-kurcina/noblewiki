@@ -1,0 +1,231 @@
+ÿþ1ipÿþ2127.0.0.1ÿþ2tsÿþ21195986376ÿþ2versionÿþ21ÿþ2nameÿþ2text_defaultÿþ2dataÿþ2summaryÿþ3*ÿþ3textÿþ3<toc>
+
+== Displaying Flash SWF ==
+Any number of Flash SWF files may be displayed within a page if they exists within the uploads directory. Ideally, the dimensions of the SWF file as it appears in each instance within a page is limited to at most 400 pixels wide by 300 pixels. tall.  Exceeding these dimensions is not allowed.
+
+<pre>
+{{flash:name=FlashSWF/diceland.swf|width=400|height=300}}
+</pre>
+
+The above creates this:
+
+{{flash:name=FlashSWF/diceland.swf|width=400|height=300}}
+
+
+=== Options Switches =
+Here is the complete list of options available for defining a gallery:
+
+!!Option|width=150!!Description!!
+||<tt><nowiki>|name=XXXX</nowiki></tt>||Provide the name of the SWF file as it appears in the upload directory, minus the <nowiki>upload:</nowiki> prefix.  If the name of the SWF file is not provided, ufo.swf will be used instead.||
+||<tt><nowiki>|width=NNN</nowiki></tt>||Provide the width of the SWF file in pixels.  The default is 400 pixels if not provided; this is also the maximum size allowed.||
+||<tt><nowiki>|height=NNN</nowiki></tt>||Provide the height of the SWF file in pixels.  The default is 300 pixels if not provided; this is also the maximum size allowed.||
+
+== Magic Flash =
+If a SWF file is of importance or great curiosity, it should be placed upon a page by itself using the Magic Content directive.  As such, the page will not have a preview feature; it must be saved in order to render the results.  Here's an example of how the syntax would appear:
+
+<pre>
+  #MAGIC Flash name=FlashSWF/diceland.swf height=300 width=200
+</pre>
+
+
+== Flash Master page =
+To help organize Flash content, place any new MagicFlash pages under FlashSWF.  Non-<nowiki>MagicFlash</nowiki> SWF content can be placed anywhere, but should be linked from the master page as well.
+
+== Related Entries =
+{{template:RelatedEntries/WikiEditing}}
+ÿþ3minorÿþ31ÿþ3newauthorÿþ31ÿþ2usernameÿþ2ÿþ2hostÿþ2localhostÿþ2revisionÿþ28ÿþ2tscreateÿþ21195453937ÿþ2idÿþ2111ÿþ2keeptsÿþ21197616786ÿþ1versionÿþ21ÿþ2tsÿþ21197616786ÿþ2ipÿþ2127.0.0.1ÿþ2nameÿþ2text_defaultÿþ2dataÿþ2summaryÿþ3*ÿþ3textÿþ3<toc>
+
+== Displaying Flash SWF ==
+Any number of Flash SWF files may be displayed within a page if they exists within the uploads directory. Ideally, the dimensions of the SWF file as it appears in each instance within a page is limited to at most 400 pixels wide by 300 pixels. tall.  Exceeding these dimensions is not allowed.
+
+<pre>
+{{flash:name=diceland.swf|width=400|height=300}}
+</pre>
+
+The above creates this:
+
+{{flash:name=diceland.swf|width=400|height=300}}
+
+
+=== Options Switches =
+Here is the complete list of options available for defining a gallery:
+
+!!Option|width=150!!Description!!
+||<tt><nowiki>|name=XXXX</nowiki></tt>||Provide the name of the SWF file as it appears in the upload directory, minus the <nowiki>upload:</nowiki> prefix.  If the name of the SWF file is not provided, ufo.swf will be used instead.||
+||<tt><nowiki>|width=NNN</nowiki></tt>||Provide the width of the SWF file in pixels.  The default is 400 pixels if not provided; this is also the maximum size allowed.||
+||<tt><nowiki>|height=NNN</nowiki></tt>||Provide the height of the SWF file in pixels.  The default is 300 pixels if not provided; this is also the maximum size allowed.||
+
+== Magic Flash =
+If a SWF file is of importance or great curiosity, it should be placed upon a page by itself using the Magic Content directive.  As such, the page will not have a preview feature; it must be saved in order to render the results.  Here's an example of how the syntax would appear:
+
+<pre>
+  #MAGIC Flash name=diceland.swf height=300 width=200
+</pre>
+
+
+== Flash Master page =
+To help organize Flash content, place any new MagicFlash pages under FlashSWF.  Non-<nowiki>MagicFlash</nowiki> SWF content can be placed anywhere, but should be linked from the master page as well.
+
+== Related Entries =
+{{template:RelatedEntries/WikiEditing}}
+ÿþ3newauthorÿþ31ÿþ3minorÿþ30ÿþ2hostÿþ2localhostÿþ2usernameÿþ2RobertKurcinaÿþ2revisionÿþ29ÿþ2idÿþ21205ÿþ2tscreateÿþ21195453937ÿþ2keeptsÿþ21197616919ÿþ1ipÿþ2127.0.0.1ÿþ2tsÿþ21197616919ÿþ2versionÿþ21ÿþ2nameÿþ2text_defaultÿþ2dataÿþ2summaryÿþ3*ÿþ3textÿþ3<toc>
+
+== Displaying Flash SWF ==
+Any number of Flash SWF files may be displayed within a page if they exists within the uploads directory. Ideally, the dimensions of the SWF file as it appears in each instance within a page is limited to at most 400 pixels wide by 300 pixels. tall.  Exceeding these dimensions is not allowed.
+
+<pre>
+{{flash:name=FlashSWF/diceland.swf|width=400|height=300}}
+</pre>
+
+The above creates this:
+
+{{flash:name=FlashSWF/diceland.swf|width=400|height=300}}
+
+
+=== Options Switches =
+Here is the complete list of options available for defining a gallery:
+
+!!Option|width=150!!Description!!
+||<tt><nowiki>|name=XXXX</nowiki></tt>||Provide the name of the SWF file as it appears in the upload directory, minus the <nowiki>upload:</nowiki> prefix.  If the name of the SWF file is not provided, ufo.swf will be used instead.||
+||<tt><nowiki>|width=NNN</nowiki></tt>||Provide the width of the SWF file in pixels.  The default is 400 pixels if not provided; this is also the maximum size allowed.||
+||<tt><nowiki>|height=NNN</nowiki></tt>||Provide the height of the SWF file in pixels.  The default is 300 pixels if not provided; this is also the maximum size allowed.||
+
+== Magic Flash =
+If a SWF file is of importance or great curiosity, it should be placed upon a page by itself using the Magic Content directive.  As such, the page will not have a preview feature; it must be saved in order to render the results.  Here's an example of how the syntax would appear:
+
+<pre>
+  #MAGIC Flash name=FlashSWF/diceland.swf height=300 width=200
+</pre>
+
+
+== Flash Master page =
+To help organize Flash content, place any new MagicFlash pages under FlashSWF.  Non-<nowiki>MagicFlash</nowiki> SWF content can be placed anywhere, but should be linked from the master page as well.
+
+== Related Entries =
+{{template:RelatedEntries/WikiEditing}}
+ÿþ3minorÿþ30ÿþ3newauthorÿþ30ÿþ2usernameÿþ2RobertKurcinaÿþ2hostÿþ2localhostÿþ2revisionÿþ210ÿþ2tscreateÿþ21195453937ÿþ2idÿþ21205ÿþ2keeptsÿþ21222627917ÿþ1versionÿþ21ÿþ2tsÿþ21222627917ÿþ2ipÿþ2127.0.0.1ÿþ2nameÿþ2text_defaultÿþ2dataÿþ2summaryÿþ3*ÿþ3textÿþ3<toc>
+
+== Displaying Flash SWF ==
+Any number of Flash SWF files may be displayed within a page if they exists within the uploads directory. Ideally, the dimensions of the SWF file as it appears in each instance within a page is limited to at most 400 pixels wide by 300 pixels. tall.  Exceeding these dimensions is not allowed.
+
+<pre>
+{{flash:name=FlashSWF/diceland.swf|width=400|height=300}}
+</pre>
+
+The above creates this:
+
+{{flash:name=FlashSWF/diceland.swf|width=400|height=300}}
+
+=== Options Switches =
+Here is the complete list of options available for defining a gallery:
+
+!!Option|width=150!!Description!!
+||<tt><nowiki>|name=XXXX</nowiki></tt>||Provide the name of the SWF file as it appears in the upload directory, minus the <nowiki>upload:</nowiki> prefix.  If the name of the SWF file is not provided, ufo.swf will be used instead.||
+||<tt><nowiki>|width=NNN</nowiki></tt>||Provide the width of the SWF file in pixels.  The default is 400 pixels if not provided; this is also the maximum size allowed.||
+||<tt><nowiki>|height=NNN</nowiki></tt>||Provide the height of the SWF file in pixels.  The default is 300 pixels if not provided; this is also the maximum size allowed.||
+
+== Magic Flash =
+If a SWF file is of importance or great curiosity, it should be placed upon a page by itself using the Magic Content directive.  As such, the page will not have a preview feature; it must be saved in order to render the results.  Here's an example of how the syntax would appear:
+
+<pre>
+  #MAGIC Flash name=FlashSWF/diceland.swf height=300 width=200
+</pre>
+
+== Flash Master page =
+To help organize Flash content, place any new MagicFlash pages under FlashSWF.  Non-<nowiki>MagicFlash</nowiki> SWF content can be placed anywhere, but should be linked from the master page as well.
+
+{{template:RelatedEntries/WikiEditing}}
+ÿþ3newauthorÿþ31ÿþ3minorÿþ31ÿþ2hostÿþ2localhostÿþ2usernameÿþ2RobertKurcinaÿþ2revisionÿþ211ÿþ2idÿþ21261ÿþ2tscreateÿþ21195453937ÿþ2keeptsÿþ21222752468ÿþ1ipÿþ2127.0.0.1ÿþ2tsÿþ21222752468ÿþ2versionÿþ21ÿþ2nameÿþ2text_defaultÿþ2dataÿþ2summaryÿþ3*ÿþ3textÿþ3{{toc}}
+== Displaying Flash SWF ==
+Any number of Flash SWF files may be displayed within a page if they exists within the uploads directory. Ideally, the dimensions of the SWF file as it appears in each instance within a page is limited to at most 400 pixels wide by 300 pixels. tall.  Exceeding these dimensions is not allowed.
+
+<pre>
+{{flash:name=FlashSWF/diceland.swf|width=400|height=300}}
+</pre>
+
+The above creates this:
+
+{{flash:name=FlashSWF/diceland.swf|width=400|height=300}}
+
+=== Options Switches =
+Here is the complete list of options available for defining a gallery:
+
+!!Option|width=150!!Description!!
+||<tt><nowiki>|name=XXXX</nowiki></tt>||Provide the name of the SWF file as it appears in the upload directory, minus the <nowiki>upload:</nowiki> prefix.  If the name of the SWF file is not provided, ufo.swf will be used instead.||
+||<tt><nowiki>|width=NNN</nowiki></tt>||Provide the width of the SWF file in pixels.  The default is 400 pixels if not provided; this is also the maximum size allowed.||
+||<tt><nowiki>|height=NNN</nowiki></tt>||Provide the height of the SWF file in pixels.  The default is 300 pixels if not provided; this is also the maximum size allowed.||
+
+== Magic Flash =
+If a SWF file is of importance or great curiosity, it should be placed upon a page by itself using the Magic Content directive.  As such, the page will not have a preview feature; it must be saved in order to render the results.  Here's an example of how the syntax would appear:
+
+<pre>
+  #MAGIC Flash name=FlashSWF/diceland.swf height=300 width=200
+</pre>
+
+== Flash Master page =
+To help organize Flash content, place any new MagicFlash pages under FlashSWF.  Non-<nowiki>MagicFlash</nowiki> SWF content can be placed anywhere, but should be linked from the master page as well.
+
+{{template:RelatedEntries/WikiEditing}}
+ÿþ3minorÿþ31ÿþ3newauthorÿþ31ÿþ2usernameÿþ2RobertKurcinaÿþ2hostÿþ2localhostÿþ2revisionÿþ212ÿþ2tscreateÿþ21195453937ÿþ2idÿþ21278ÿþ2keeptsÿþ21222852964ÿþ1versionÿþ21ÿþ2tsÿþ21222852964ÿþ2ipÿþ2127.0.0.1ÿþ2nameÿþ2text_defaultÿþ2dataÿþ2summaryÿþ3*ÿþ3textÿþ3{{toc}}
+== Displaying Flash SWF ==
+Any number of Flash SWF files may be displayed within a page if they exists within the uploads directory. Ideally, the dimensions of the SWF file as it appears in each instance within a page is limited to at most 400 pixels wide by 300 pixels. tall.  Exceeding these dimensions is not allowed.
+
+<pre>
+{{flash:name=FlashSWF/diceland.swf|width=400|height=300}}
+</pre>
+
+The above creates this:
+
+{{flash:name=FlashSWF/diceland.swf|width=400|height=300}}
+
+=== Options Switches =
+Here is the complete list of options available for defining a gallery:
+
+!!Option|width=150!!Description!!
+||<tt><nowiki>|name=XXXX</nowiki></tt>||Provide the name of the SWF file as it appears in the upload directory, minus the <nowiki>upload:</nowiki> prefix.  If the name of the SWF file is not provided, ufo.swf will be used instead.||
+||<tt><nowiki>|width=NNN</nowiki></tt>||Provide the width of the SWF file in pixels.  The default is 400 pixels if not provided; this is also the maximum size allowed.||
+||<tt><nowiki>|height=NNN</nowiki></tt>||Provide the height of the SWF file in pixels.  The default is 300 pixels if not provided; this is also the maximum size allowed.||
+
+== Magic Flash =
+If a SWF file is of importance or great curiosity, it should be placed upon a page by itself using the <tt><nowiki>{{command}}</nowiki></tt> directive.  As such, the page will not have a preview feature; it must be saved in order to render the results.  Here's an example of how the syntax would appear:
+
+<pre>
+  {{command: Flash name=FlashSWF/diceland.swf height=300 width=200}}
+</pre>
+
+== Flash Master page =
+To help organize Flash content, place any new MagicFlash pages under FlashSWF.  Non-<nowiki>MagicFlash</nowiki> SWF content can be placed anywhere, but should be linked from the master page as well.
+
+{{template:RelatedEntries/WikiEditing}}
+ÿþ3newauthorÿþ31ÿþ3minorÿþ31ÿþ2hostÿþ2localhostÿþ2usernameÿþ2RobertKurcinaÿþ2revisionÿþ213ÿþ2idÿþ21293ÿþ2tscreateÿþ21195453937ÿþ2keeptsÿþ21223011226ÿþ1ipÿþ2127.0.0.1ÿþ2tsÿþ21223011226ÿþ2versionÿþ21ÿþ2nameÿþ2text_defaultÿþ2dataÿþ2summaryÿþ3*ÿþ3textÿþ3{{toc}}
+== Displaying Flash SWF ==
+Any number of Flash SWF files may be displayed within a page if they exists within the uploads directory. Ideally, the dimensions of the SWF file as it appears in each instance within a page is limited to at most 400 pixels wide by 300 pixels. tall.  Exceeding these dimensions is not allowed.
+
+<pre>
+{{flash:name=FlashSWF/diceland.swf|width=400|height=300}}
+</pre>
+
+The above creates this:
+
+{{flash:name=FlashSWF/diceland.swf|width=400|height=300}}
+
+=== Options Switches =
+Here is the complete list of options available for defining a gallery:
+
+!!Option|width=150!!Description!!
+||<tt><nowiki>|name=XXXX</nowiki></tt>||Provide the name of the SWF file as it appears in the upload directory, minus the <nowiki>upload:</nowiki> prefix.  If the name of the SWF file is not provided, ufo.swf will be used instead.||
+||<tt><nowiki>|width=NNN</nowiki></tt>||Provide the width of the SWF file in pixels.  The default is 400 pixels if not provided; this is also the maximum size allowed.||
+||<tt><nowiki>|height=NNN</nowiki></tt>||Provide the height of the SWF file in pixels.  The default is 300 pixels if not provided; this is also the maximum size allowed.||
+
+== Magic Flash =
+If a SWF file is of importance or great curiosity, it should be placed upon a page by itself using the <tt><nowiki>{{command}}</nowiki></tt> directive.  As such, the page will not have a preview feature; it must be saved in order to render the results.  Here's an example of how the syntax would appear:
+
+<pre>
+  {{command: Flash name=FlashSWF/diceland.swf height=300 width=200}}
+</pre>
+
+== Flash Master page =
+To help organize Flash content, place any new MagicFlash pages under FlashSWF.  Non-<nowiki>MagicFlash</nowiki> SWF content can be placed anywhere, but should be linked from the master page as well.
+== Related Entries =
+{{template:RelatedEntries/WikiEditing}}
+ÿþ3minorÿþ31ÿþ3newauthorÿþ31ÿþ2usernameÿþ2RobertKurcinaÿþ2hostÿþ2localhostÿþ2revisionÿþ214ÿþ2tscreateÿþ21195453937ÿþ2idÿþ21298ÿþ2keeptsÿþ21223835802

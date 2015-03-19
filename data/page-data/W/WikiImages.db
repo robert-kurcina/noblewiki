@@ -1,0 +1,160 @@
+versionÿþ13ÿþ1tsÿþ11223011287ÿþ1cache_oldmajorÿþ140ÿþ1cache_oldauthorÿþ143ÿþ1revisionÿþ144ÿþ1cache_diff_default_authorÿþ11ÿþ1tscreateÿþ11178783835ÿþ1text_defaultÿþ1versionÿþ21ÿþ2ipÿþ2127.0.0.1ÿþ2tsÿþ21223011287ÿþ2nameÿþ2text_defaultÿþ2dataÿþ2summaryÿþ3*ÿþ3textÿþ3= Insert Images into Noble Wiki =
+{{toc}}
+
+== Images and Assets ==
+Assets are files that are available either locally or via an external Web site.  Assets can be any of the following types/have the following filename extensions:
+
+!!Extension|class=first|width=200!!These are the basic ones, used for general viewing!!
+||.jpg||JPEG, Joint Photographer's Expert Group format.||
+||.bmp||Microsoft Bitmap format.||
+||.gif||<nowiki>CompuServe</nowiki> Graphic Image Format.||
+
+!!Extension|class=first|width=200!!These are used during the development cycle.!!
+||.psd||Adobe Photoshop.  These would generally be template files for creating new images.||
+||.ai||Adobe Illustrator.||
+||.doc||Microsoft Word document.||
+||.txt||Text files.||
+
+!!Extension|class=first|width=200!!These are often either the final product or used as reference material.!!
+||.xls|class=first||Microsoft Excel spreadsheet.||
+||.ppt||Microsoft Powerpoint.||
+||.pdf||Adobe Acrobat.  This should be the preferred format for sharing all assets not meant for Web-only viewing.||
+
+!!Extension|class=first|width=200!!These are specific to Web development.!!
+||.js||Javascript file.||
+||.css||Cascading Stylesheet file.||
+
+!!Extension|class=first|width=200!!These are miscellaneous types allowed.!!
+||.java||Java file.||
+||.blend||Blender3D file.||
+||.zip||Archive file.||
+
+=== Direct File Linking ===
+Images with extensions of .jpg, .bmp, or .gif can be inserted directly into a WikiPage by entering its full URL.
+
+<b>For example: </b><tt><nowiki>http://wiki.kurcina.org/attachments/SAMPLE.churcill.jpg</nowiki></tt>
+ http://wiki.kurcina.org/attachments/SAMPLE.churcill.jpg
+
+=== Local Assets ===
+Assets are files uploaded into the /attachments directory via the Upload function.  This function will be available only after signing in as an editor or administrator.  Assets are usually images, but can be other types as well.  Assets can be linked to by providing their 'upload' identifier, which is usually given as the keyword <tt>upload:</tt> followed by their filename as it appears in the attachments directory.
+
+<b>For example: </b><tt><nowiki>upload:SAMPLE.churcill.jpg</nowiki></tt> will do the following:
+
+upload:SAMPLE.churcill.jpg
+
+=== Alternate Linking ===
+All images and assets that are linked will, when clicked, open a new window or tab leading to the asset.  However, there's a way to show an asset link but have the URL indicate something else.  The syntax is as follows; <tt><nowiki>[actualURL imageURL]</nowiki></tt>
+
+<b>For example: </b> <tt><nowiki>[http://blogs.kurcina.org/cgi-bin/index.cgi http://wiki.kurcina.org/attachments/SAMPLE.churcill.jpg]</nowiki></tt>[http://blogs.kurcina.org/cgi-bin/blosxom.cgi http://wiki.kurcina.org/attachments/SAMPLE.churcill.jpg]
+<b>And also: </b> <tt><nowiki>[http://forums.kurcina.org/cgi-bin/groww2/index.cgi upload:SAMPLE.churcill.jpg]</nowiki></tt>[http://forums.kurcina.org/cgi-bin/groww2/index.cgi upload:SAMPLE.churcill.jpg]
+<b>As well as: </b> <tt><nowiki>[LocalWiki:HomePage upload:SAMPLE.churcill.jpg]</nowiki></tt>[LocalWiki:HomePage upload:SAMPLE.churcill.jpg]
+
+=== Customized Formatting ===
+If the alternate linking style is used - the one with the square brackets, above - then customization is allowed via key=value pairs.  Insert these before the closing bracket and separate them with the pipe characer '|' in order to control appearance.
+
+!!Option|width=100|class=first!!Description!!
+||<tt>float=left</tt>||Makes the image float to the left; all text appearing after the image information will wrap around it||
+||<tt>float=right</tt>||Makes the image float to the left; all text appearing after the image information will wrap around it||
+||<tt>clear=left</tt>||If the image has float=left, this command will force it to appear on the next line.||
+||<tt>clear=right</tt>||If the image has float=right, this command will force it to appear on the next line.||
+||<tt>width=NNN</tt>||Resizes the image to this width.  Works in conjunction with height; the most sensible version prevails in that no resize may create an image larger than the source||
+||<tt>height=NNN</tt>||Resizes the image to this height.  Works in conjunction with width; the most sensible version prevails in that no resize may create an image larger than the source||
+||<tt>title=NNN</tt>||Adds a tooltip to the image that will appear upon mouseover.  This will default to the URL specified||
+||<tt>caption=NNN</tt>||Creates a caption box that will appear beneath the image.  The caption box will create by default a description box as well. Wraps the image, the caption box, and its description in a container.||
+||<tt>description=NNN</tt>||Used with the caption option.  This will default to FIGURE QQQ which number is determined by the order of the images' appearance in the page body.  The description is a single-line that appears above the caption.||
+||<tt>boxfloat=left</tt>||Used with the caption option.  Makes the container float to the left; all text appearing after the container will wrap around it.||
+||<tt>boxfloat=right</tt>||Used with the caption option.  Makes the container float to the left; all text appearing after the container will wrap around it.||
+||<tt>boxclear=left</tt>||Used with the caption option.  If the container has boxfloat=left, this command will force it to appear on the next line.||
+||<tt>boxclear=right</tt>||Used with the caption option.  If the container has boxfloat=right, this command will force it to appear on the next line.||
+||<tt>boxwidth=NNN</tt>||Used with the caption option.  Specify the maximum width of the container.||
+
+For example:
+
+[http://www.yahoo.com/ upload:SAMPLE.churcill.jpg|boxwidth=350|boxfloat=left|float=left|caption=fantaia diaia dias asiasdiasdia asdiasd asdiasd] Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+That was created using:
+
+<tt><nowiki>
+[http://www.yahoo.com/ upload:SAMPLE.churcill.jpg|boxwidth=350|boxfloat=left|float=left|caption=fantaia diaia dias asiasdiasdia asdiasd asdiasd]
+</nowiki></tt>
+
+[LocalWiki:HomePage upload:SAMPLE.churcill.jpg|boxwidth=350|boxfloat=left|float=center|caption=fantaia diaia dias asiasdiasdia asdiasd asdiasd] Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+The above was created using:
+
+<tt><nowiki>
+[LocalWiki:HomePage upload:SAMPLE.churcill.jpg|boxwidth=350|boxfloat=left|float=center|caption=fantaia diaia dias asiasdiasdia asdiasd asdiasd]
+</nowiki></tt>
+
+=== Icon Boxes ===
+All files that aren't images referenced using the <tt><nowiki>upload:filename.ext</nowiki></tt> syntax will automatically create an icon and caption box. The icon presented will depend upon the extension of the file linked.  Here are examples of links to each of the files supported:
+
+||upload:SAMPLE.ai|tableclass=none||upload:SAMPLE.pdf||
+||upload:SAMPLE.fh||upload:SAMPLE.fla||
+||upload:SAMPLE.swf||upload:SAMPLE.psd||
+||upload:SAMPLE.xml||upload:SAMPLE.css||
+||upload:SAMPLE.js||upload:SAMPLE.txt||
+||upload:SAMPLE.doc||upload:SAMPLE.ppt||
+||upload:SAMPLE.xls||upload:SAMPLE.zip||
+||upload:SAMPLE.blend||upload:SAMPLE.java||
+
+Each of the above was written in a pattern similar to the following:
+
+<pre>
+||upload:SAMPLE.nnn||
+</pre>
+== Related Entries =
+{{template:RelatedEntries/WikiEditing}}
+ÿþ3newauthorÿþ31ÿþ3minorÿþ31ÿþ2usernameÿþ2RobertKurcinaÿþ2hostÿþ2localhostÿþ2revisionÿþ244ÿþ2tscreateÿþ21178783835ÿþ2idÿþ21298ÿþ2keeptsÿþ21223011287ÿþ1cache_diff_default_majorÿþ1<div id=wikidiffdiv><table id=wikidifftable><tr valign=top><td class="diff-header">Paragraph 1</td><td class="diff-vertical">&nbsp;</td><td class="diff-header">Paragraph 1</td></tr><tr valign=top><td class="diff-para-ident">= Insert Images into Noble Wiki =<br>
+</td><td class="diff-vertical"></td><td class="diff-para-ident">= Insert Images into Noble Wiki =<br>
+</td></tr><tr valign=top><td class="diff-para-deleted"><br>
+&lt;toc&gt;<br>
+</td><td class="diff-vertical"></td><td class="diff-para-added">{{toc}}<br>
+</td></tr><tr valign=top><td class="diff-para-ident"><br>
+== Images and Assets ==<br>
+</td><td class="diff-vertical"></td><td class="diff-para-ident"><br>
+== Images and Assets ==<br>
+</td></tr><tr valign=top><td class="diff-header">Paragraph 14</td><td class="diff-vertical">&nbsp;</td><td class="diff-header">Paragraph 14</td></tr><tr valign=top><td class="diff-para-changed"><span class="diff-span-ident">!!Extension|class=first|width=200!!</span><span class="diff-span-deleted">TThese</span><span class="diff-span-ident">&nbsp;are often either the final product or used as reference material.!!<br>
+</span></td><td class="diff-vertical"></td><td class="diff-para-changed"><span class="diff-span-ident">!!Extension|class=first|width=200!!</span><span class="diff-span-added">These</span><span class="diff-span-ident">&nbsp;are often either the final product or used as reference material.!!<br>
+</span></td></tr><tr valign=top><td class="diff-header">Paragraph 20</td><td class="diff-vertical">&nbsp;</td><td class="diff-header">Paragraph 20</td></tr><tr valign=top><td class="diff-para-ident">||.css||Cascading Stylesheet file.||<br>
+<br>
+</td><td class="diff-vertical"></td><td class="diff-para-ident">||.css||Cascading Stylesheet file.||<br>
+<br>
+</td></tr><tr valign=top><td class="diff-para-ident"></td><td class="diff-vertical"></td><td class="diff-para-added">!!Extension|class=first|width=200!!These are miscellaneous types allowed.!!<br>
+||.java||Java file.||<br>
+||.blend||Blender3D file.||<br>
+||.zip||Archive file.||<br>
+<br>
+</td></tr><tr valign=top><td class="diff-para-ident">=== Direct File Linking ===<br>
+</td><td class="diff-vertical"></td><td class="diff-para-ident">=== Direct File Linking ===<br>
+</td></tr><tr valign=top><td class="diff-header">Paragraph 52</td><td class="diff-vertical">&nbsp;</td><td class="diff-header">Paragraph 56</td></tr><tr valign=top><td class="diff-para-ident">[http://www.yahoo.com/ upload:SAMPLE.churcill.jpg|boxwidth=350|boxfloat=left|float=left|caption=fantaia diaia dias asiasdiasdia asdiasd asdiasd] Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>
+<br>
+</td><td class="diff-vertical"></td><td class="diff-para-ident">[http://www.yahoo.com/ upload:SAMPLE.churcill.jpg|boxwidth=350|boxfloat=left|float=left|caption=fantaia diaia dias asiasdiasdia asdiasd asdiasd] Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>
+<br>
+</td></tr><tr valign=top><td class="diff-para-deleted"><br>
+</td><td class="diff-vertical"></td><td class="diff-para-ident"></td></tr><tr valign=top><td class="diff-para-ident">That was created using:<br>
+</td><td class="diff-vertical"></td><td class="diff-para-ident">That was created using:<br>
+</td></tr><tr valign=top><td class="diff-header">Paragraph 56</td><td class="diff-vertical">&nbsp;</td><td class="diff-header">Paragraph 60</td></tr><tr valign=top><td class="diff-para-ident">&lt;/nowiki&gt;&lt;/tt&gt;<br>
+<br>
+</td><td class="diff-vertical"></td><td class="diff-para-ident">&lt;/nowiki&gt;&lt;/tt&gt;<br>
+<br>
+</td></tr><tr valign=top><td class="diff-para-deleted"><br>
+</td><td class="diff-vertical"></td><td class="diff-para-ident"></td></tr><tr valign=top><td class="diff-para-ident">[LocalWiki:HomePage upload:SAMPLE.churcill.jpg|boxwidth=350|boxfloat=left|float=center|caption=fantaia diaia dias asiasdiasdia asdiasd asdiasd] Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>
+<br>
+</td><td class="diff-vertical"></td><td class="diff-para-ident">[LocalWiki:HomePage upload:SAMPLE.churcill.jpg|boxwidth=350|boxfloat=left|float=center|caption=fantaia diaia dias asiasdiasdia asdiasd asdiasd] Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>
+<br>
+</td></tr><tr valign=top><td class="diff-para-deleted"><br>
+</td><td class="diff-vertical"></td><td class="diff-para-ident"></td></tr><tr valign=top><td class="diff-para-ident">The above was created using:<br>
+</td><td class="diff-vertical"></td><td class="diff-para-ident">The above was created using:<br>
+</td></tr><tr valign=top><td class="diff-header">Paragraph 75</td><td class="diff-vertical">&nbsp;</td><td class="diff-header">Paragraph 79</td></tr><tr valign=top><td class="diff-para-ident">&lt;/pre&gt;<br>
+</td><td class="diff-vertical"></td><td class="diff-para-ident">&lt;/pre&gt;<br>
+</td></tr><tr valign=top><td class="diff-para-deleted"><br>
+</td><td class="diff-vertical"></td><td class="diff-para-ident"></td></tr><tr valign=top><td class="diff-para-ident">== Related Entries =<br>
+</td><td class="diff-vertical"></td><td class="diff-para-ident">== Related Entries =<br>
+</td></tr></table></div>ÿþ1cache_diff_default_minorÿþ1<div id=wikidiffdiv><table id=wikidifftable><tr valign=top><td class="diff-header">Paragraph 79</td><td class="diff-vertical">&nbsp;</td><td class="diff-header">Paragraph 79</td></tr><tr valign=top><td class="diff-para-ident">&lt;/pre&gt;<br>
+</td><td class="diff-vertical"></td><td class="diff-para-ident">&lt;/pre&gt;<br>
+</td></tr><tr valign=top><td class="diff-para-deleted"><br>
+</td><td class="diff-vertical"></td><td class="diff-para-added">== Related Entries =<br>
+</td></tr><tr valign=top><td class="diff-para-ident">{{template:RelatedEntries/WikiEditing}}<br>
+</td><td class="diff-vertical"></td><td class="diff-para-ident">{{template:RelatedEntries/WikiEditing}}<br>
+</td></tr></table></div>

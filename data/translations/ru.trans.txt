@@ -1,0 +1,412 @@
+%Translate = split('\n',<<END_OF_TRANSLATION);
+Could not create %s
+Невозможно создать %s
+Showing revision %s
+Показ версии %s
+Revision %s not available
+Версия %s не доступна
+showing current revision instead
+отображение текущей версии вместо
+Updates since %s
+Обновления с %s
+Updates in the last %s day
+Обновления за последний %s день
+Updates in the last %s days
+Обновления за последние %s дней
+Could not open %s log file
+Не возможно открыть файл протокола %s 
+Error was
+Были ошибки 
+Note: This error is normal if no changes have been made.
+Примечание: Эта ошибка - нормально, если не было сделано изменений.
+Could not open old %s log file
+Не возможно открыть старый файл протокола %s 
+for %s only
+только для %s
+%s day
+%s день
+%s days
+%s дней
+List new changes starting from
+Список новых изменений начиная с
+No updates since %s
+Небыло обновлений с %s
+Page generated %s
+Страница сгенерирована %s
+(edit)
+(Правка)
+(diff)
+(отличия)
+changes
+изменения
+History of %s
+История %s
+Revision %s
+Версия %s
+View
+Вид
+Edit
+Правка
+Diff
+Отличие
+by
+
+Preferences
+Настройки
+Random Page
+Случайная страница
+ID %s
+
+from %s
+с %s
+[Home]
+[Домой]
+redirected from %s
+перенаправлено с %s
+Edit revision %s of this page
+Править версию % этой страницы
+Edit text of this page
+Править текст этой страницы
+This page is read-only
+Эта страница предназначена только для чтения
+View other revisions
+Смотреть другие версии
+View current revision
+Смотреть текущую версию
+Last edited
+Последнее правленное
+Edited
+Правленное
+Warning
+Внимание
+Database is stored in temporary directory %s
+База данных сохранена во временной директории %s
+Search:
+Поиск:
+Your browser should go to the %s page.
+Ваш броузер должен перейти на страницу %s.
+If it does not, click %s to continue.
+Если этого не произошло, попробуйте клликнуть %s сами.
+Thanks for editing...
+Благодарим за правку...
+Thank you for editing %s.
+Благодарим за правку %s.
+Link to another page...
+Ссылка на другую страницу...
+Follow the %s link to continue.
+Следуйте ссылке %s для продолжения.
+alternate
+альтернативный
+search
+поиск
+major diff
+основные отличия
+minor diff
+незначительные отличия
+author diff
+авторские отличия
+major
+
+minor
+
+author
+
+(The revisions are identical or unavailable.)
+(Версии идентичны или недоступны.)
+no other diffs
+других отличий нет
+No diff available.
+Отличий нет.
+Difference (from revision %s to current revision)
+Отличия (текущей версии от %s)
+No diff available--this is the first %s revision.
+Отличий нет - это первая версия %s.
+Difference (from prior %s revision)
+Отличия (текущей версии от предыдущей - %s)
+Changed:
+Изменилось:
+Removed:
+Удалено:
+Added:
+Добавлено:
+Describe the new page here.
+Опишите новую страницу здесь.
+Bad page version (or corrupt page).
+Плохая версия страницы (или испорченая).
+cant write %s
+невозможно записать %s
+Page name is too long: %s
+Имя страницы слишком велико: %s
+Page name may not contain space characters: %s
+Имя страницы не может содержать пробельные символы: %s
+Too many / characters in page %s
+Многовато / символов на странице %s
+Invalid Page %s (subpage without main page)
+Некорректная страница %s (подстраница без главной страницы)
+Invalid Page %s (missing subpage name)
+Некорректная страница %s (без имени подстраницы)
+Invalid Page %s (/ not allowed)
+Некорректная страница %s (/ не допустимо)
+Invalid Page %s
+Некорректная страница %s
+Invalid Page %s (must not end with .db)
+Некорректная страница %s (не должна оканчиваться на .db)
+Invalid Page %s (must not end with .lck)
+Некорректная страница %s (Некорректная страница %s lck)
+can not make %s
+не могу сделать %s
+Can not open %s
+Невозможно открыть %s
+Invalid action parameter %s
+Некорректный параметр действия %s
+Invalid URL.
+Некорректный URL.
+Editing Denied
+Правка запрещена
+Editing not allowed: user, ip, or network is blocked.
+Правка не допустима: пользователь, IP или сеть заблокированы.
+Contact the wiki administrator for more information.
+Свяжитесь с нашей администрацией чтоб узнать больше.
+Editing not allowed: %s is read-only.
+Правка не допустима: %s только для чтения.
+Editing %s
+Правка %s
+Editing revision %s of
+Правка версии %s
+Editing old revision %s.
+Правка старой версии %s.
+Saving this page will replace the latest revision with this text.
+Сохранение этой страницы заменит последную версию этого текста.
+Edit Conflict!
+Конфликт правки!
+(This is a new conflict)
+(Это новый конфликт)
+Someone saved this page after you started editing.
+Кто то сохранил эту страницу после того, как Вы начали её править.
+The top textbox contains the saved text.
+Верхнее поле с текстом содержит сохранённый текст.
+Only the text in the top textbox will be saved.
+Только текст из верхнего поля будет сохранён.
+Scroll down to see your edited text.
+Смотрите ниже, Ваш правленый текст там.
+Last save time:
+Время последнего сохранения:
+Current time is:
+Текущее время:
+Summary:
+Итого:
+This change is a minor edit.
+Это изменение является незначительным редактированием.
+Send email notification that %s has been changed.
+Отправить оповещение по почте, когда поменяется %s.
+Save
+Сохранить
+Your user name is
+Ваше имя 
+Visit %s to set your user name.
+Посетите %s чтоб указать ваше имя.
+Preview
+Предпросмотр
+This is the text you submitted:
+Вот отправленый Вами текст:
+Preview:
+Предпросмотр:
+NOTE: This preview shows the revision of the other author.
+Внимание: Тут отображена версия другого автора.
+Preview only, not yet saved
+Только предпросмотр - пока ничего не записано
+Editing Preferences
+Настройки правки
+User Information:
+Информация о пользователе:
+Your User ID number: %s
+Ваш User ID: %s
+UserName:
+Кличка:
+(blank to remove, or valid page name)
+(введите пустое значение для удаления или реальное имя страницы)
+Set Password:
+Установить пароль:
+(blank to remove password)
+(для удаления пароля введите его пустое значение)
+Passwords allow sharing preferences between multiple systems.
+Пароль дает возможность сохранения настроек между системами.
+Passwords are completely optional.
+Пароль ставить необязательно.
+Administrator Password:
+Ввод пароля администратора:
+(Administrator passwords are used for special maintenance.)
+(Пароли администратора используются для специальной поддержки.)
+Include this address in the site email list.
+
+(Uncheck the box to remove the address.)
+
+Email Address:
+Адрес электронной почты:
+Default days to display:
+Сколько дней показывать по умолчанию:
+Most recent changes on top
+Самые последние изменения наверху
+Show all changes (not just most recent)
+Показывать все изменения (не только последние)
+Hide minor edits
+Скрывать мелкие редакции
+Show minor edits
+Показать неосновные редакции
+Show only minor edits
+Показать только неосновные редакции
+Minor edit display:
+
+Use "changes" as link to history
+Использовать "изменения" как ссылки на историю
+Differences:
+Различия:
+Show (diff) links on %s
+
+Show differences on all pages
+Показать изменения на всех страницах
+No differences on %s
+
+Major
+
+Minor
+
+Author
+Автор
+Default difference type:
+
+Misc:
+
+Server time:
+
+Time Zone offset (hours):
+
+Use 100% wide edit area (if supported)
+
+Edit area rows:
+
+columns:
+колонки:
+Show link bar on top
+
+Add "Random Page" link to link bar
+
+Saving Preferences
+
+Invalid UserID %s, preferences not saved.
+
+(Preferences require cookies, but no cookie was sent.)
+
+UserName removed.
+Кличка удалена.
+Invalid UserName %s: not saved.
+
+UserName must be 50 characters or less. (not saved)
+
+UserName %s saved.
+
+Password removed.
+
+Password changed.
+Пароль изменён.
+Administrator password removed.
+Пароль администратора удалён.
+Administrator password changed.
+Пароль администратора изменён.
+User has administrative abilities.
+У пользователя есть возможности администрирования.
+User has editor abilities.
+У пользователя есть возможности редактора.
+User does not have administrative abilities.
+У пользователя нет возможности администрирования.
+(Password does not match administrative password(s).)
+
+Local time:
+Местное время:
+Preferences saved.
+Установки сохранены.
+Could not read from %s:
+
+Could not get mail lock
+
+Could not append to %s:
+
+Could not overwrite %s:
+
+Index of all pages
+
+Login
+
+User ID number:
+
+Password:
+Пароль:
+Login Results
+
+Login for user ID %s complete.
+
+Login for user ID %s failed.
+
+Could not get user-ID lock
+
+Search for: %s
+
+%s pages found:
+
+Full Link List
+
+Editing not allowed for %s.
+
+SampleUndefinedPage
+
+%s cannot be defined.
+
+Sample_Undefined_Page
+
+[[%s]] cannot be defined.
+
+Could not get editing lock
+
+Normal Unlock.
+
+Removing edit lock
+
+This operation may take several seconds...
+
+Forced Unlock.
+
+%s log error:
+
+can not write diff_log
+
+Maintenance on all pages
+
+Maintenance not done.
+
+(Maintenance can only be done once every 12 hours.)
+
+Remove the "maintain" file or wait.
+
+Could not get maintain-lock
+
+Processing rename/delete commands:
+
+This operation is restricted to site editors only...
+
+This operation is restricted to administrators only...
+
+Set or Remove global edit lock
+Установка или Снятие глобальной блокировки редактирования
+Edit lock created.
+Установлена блокировка редактирования.
+Edit lock removed.
+Блокировака редактирования снята.
+Set or Remove page edit lock
+Установить или Снять блокировку редактирования страницы
+Missing page id to lock/unlock...
+Отсутствует идентификатор страницы для блокировки/разблокировки...
+Lock for %s created.
+Блокировка для %s создана.
+Lock for %s removed.
+Блокировка для %s удалена.
+END_OF_TRANSLATION

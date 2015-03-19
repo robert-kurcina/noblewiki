@@ -1,0 +1,17 @@
+ÿþ1tsÿþ21195602726ÿþ2ipÿþ2127.0.0.1ÿþ2versionÿþ21ÿþ2nameÿþ2text_defaultÿþ2dataÿþ2summaryÿþ3*ÿþ3textÿþ3 
+
+!!!!EXAMPLE Template!!
+||Image|width=100|style=background-color:#eeeeee;||$VARIABLE1$|align=left ||
+||link||$VARIABLE2$ ||
+||my sub-page|| $VARIABLE3$ ||
+||your sub-page ||$VARIABLE4$ ||
+||bracketed url ||$VARIABLE5$ ||
+ÿþ3newauthorÿþ30ÿþ3minorÿþ30ÿþ2hostÿþ2localhostÿþ2usernameÿþ2RobertKurcinaÿþ2revisionÿþ27ÿþ2idÿþ21114ÿþ2tscreateÿþ21179982298ÿþ2keeptsÿþ21196647181ÿþ1versionÿþ21ÿþ2ipÿþ2127.0.0.1ÿþ2tsÿþ21196647181ÿþ2nameÿþ2text_defaultÿþ2dataÿþ2summaryÿþ3*ÿþ3textÿþ3 
+
+!!!!EXAMPLE Template!!
+||Image|width=100|class=first||$VARIABLE1$|align=left ||
+||link||$VARIABLE2$ ||
+||my sub-page|| $VARIABLE3$ ||
+||your sub-page ||$VARIABLE4$ ||
+||bracketed url ||$VARIABLE5$ ||
+ÿþ3minorÿþ30ÿþ3newauthorÿþ31ÿþ2usernameÿþ2RobertKurcinaÿþ2hostÿþ2localhostÿþ2revisionÿþ28ÿþ2tscreateÿþ21179982298ÿþ2idÿþ21182ÿþ2keeptsÿþ21222570145

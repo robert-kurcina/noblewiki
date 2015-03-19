@@ -1,0 +1,20 @@
+ÿþ1versionÿþ21ÿþ2ipÿþ2127.0.0.1ÿþ2tsÿþ21179636103ÿþ2nameÿþ2text_defaultÿþ2dataÿþ2minorÿþ31ÿþ3summaryÿþ3*ÿþ3textÿþ3===== DEFINITION: <nowiki>InterMap</nowiki> =
+The <nowiki>UseMod 1.0 InterMap</nowiki> provides for these namespaces for use in creating external wiki links:
+
+||Acronym||http://www.acronymfinder.com/af-query.asp?String=exact&Acronym=||Get the acronym of a provided word||
+||Dictionary||http://www.dict.org/bin/Dict?Database=*&Form=Dict1&Strategy=*&Query=||Reference a word||
+||Google||http://www.google.com/search?q=||Queries the basic Google search API||
+||<nowiki>GoogleGroups</nowiki>||http://groups.google.com/groups?q=||Queries <nowiki>Google Groups</nowiki>||
+||<nowiki>JargonFile</nowiki>||http://sunir.org/apps/meta.pl?wiki=JargonFile&redirect=||Queries <nowiki>MetaWiki</nowiki>||
+||<nowiki>UseMod</nowiki>||http://www.usemod.com/cgi-bin/wiki.pl?||Queries into [UseMod:UseModWiki UseModWiki]||
+||Wiki||http://c2.com/cgi/wiki?||Queries into [Wiki:FrontPage WikiWikiWeb], the original wiki||
+||<nowiki>WikiPedia</nowiki>||http://www.wikipedia.org/wiki/||Queries into wikipedia.org||
+
+For example:
+ Acronym:Good
+ Dictionary:Verisimilitude
+ Cache:Wargods
+ JargonFile:TourBus
+ WikiPedia:Earth
+ Google:Technology
+ÿþ3newauthorÿþ30ÿþ2usernameÿþ2ÿþ2hostÿþ2localhostÿþ2revisionÿþ22ÿþ2tscreateÿþ21179636042ÿþ2idÿþ2111ÿþ2keeptsÿþ21197707754

@@ -1,0 +1,24 @@
+versionÿþ13ÿþ1tsÿþ11226205952ÿþ1authorcreateÿþ1RobertKurcinaÿþ1descriptionÿþ1list of new commands planned for NobleWikiÿþ1cache_oldmajorÿþ11ÿþ1cache_oldauthorÿþ10ÿþ1cache_diff_default_authorÿþ1ÿþ1revisionÿþ12ÿþ1text_defaultÿþ1versionÿþ21ÿþ2tsÿþ21226205952ÿþ2ipÿþ2127.0.0.1ÿþ2nameÿþ2text_defaultÿþ2dataÿþ2summaryÿþ3*ÿþ3textÿþ3Not sure when these will come in, but definitely on the TODO list;
+
+!!New Commands Planned|width=300!!Description!!
+||<tt><nowiki>{{history|events}}</nowiki></tt>|class=first||Create a timeline using the Timeline javascript widget||
+||<tt><nowiki>{{latex|events}}</nowiki></tt>|class=first||Create LaTex markup for support of scientific notation||
+||<tt><nowiki>{{syntax|language}}</nowiki></tt>|class=first||Switch between the various markup languages.  Support Markdown, Creole.||
+||<tt><nowiki>{{section|WikiPage|header}}</nowiki></tt>||Non-recursively transclude the section text for any page of the identified TOC header||
+||<tt><nowiki>{{css|media|stylesheet}}</nowiki></tt>||Added at top of an editor's home-page to alter CSS used before rendering any wiki page.||
+||<tt><nowiki>{{feedback|template}}</nowiki></tt>||Use a template [ see above ] to capture feedback or voting information||
+||<tt><nowiki>{{columns|color}}</nowiki></tt>||Sort of like the version use on en.wikipedia.org; specify that content following appears in one, two, or three columns.||
+||<tt><nowiki>{{graph|type|dimension}}</nowiki></tt>||Add support for javascript-generated graphs.  Bar graphs, line graphs, etc.||
+||<tt><nowiki>{{data|id}}</nowiki></tt>||Add dataset storage in two phases.  Phase I is JSON creation for reference by SWFs, and <tt><nowiki>JavaScript</nowiki></tt> libraries.  Phase II is a read/write API possibly via <tt><nowiki>XmlHttpSocket</nowiki></tt> for AJAX or SWF.||
+||<tt><nowiki>{{blog|entryid}}</nowiki></tt>||This would be a new GUI that writes to a dataset page under <tt><nowiki>PageId/Blogentryid</nowiki></tt> and support RSS 1.0.  Features are editing, archive, publishing, and a WYSIWYG.||
+||<tt><nowiki>{{form|formid}}</nowiki></tt>||Create a simple configuration-driven form generator that would write to a dataset page.  Simple form templates should be made available such as voting + graph-view, feedback/mailer, calculation, and dataset data-entry + graph-view.||
+||<tt><nowiki>{{whiteboard|shared}}</nowiki></tt>||Create sketches using Flash, and store the output as a bitmap on the server, and the curves as JSON elements.||
+||<tt><nowiki>{{widget|type}}</nowiki></tt>||Wdigets will be pre-defined as right-hand elements for a HomePage view; calendar, blog roll, rss feeds, tag cloud, favorites, etc.||
+||<tt><nowiki>{{embed|type</nowiki></tt>||This is a generalized way to embed applets for java, flash, Quicktime, Windows Media Player, etc.||
+||<tt><nowiki>{{category|names}}</nowiki></tt>||Using a category tag should do two things; create an entry in the appropriate category page, and create a list of pages in place.||
+ÿþ3minorÿþ30ÿþ3newauthorÿþ30ÿþ3descriptionÿþ3ÿþ2hostÿþ2localhostÿþ2usernameÿþ2RobertKurcinaÿþ2revisionÿþ22ÿþ2idÿþ21339ÿþ2tscreateÿþ21226205308ÿþ2keeptsÿþ21226205952ÿþ1tscreateÿþ11226205308ÿþ1cache_diff_default_majorÿþ11ÿþ1cache_diff_default_minorÿþ1<div id=wikidiffdiv><table id=wikidifftable><tr valign=top><td class="diff-header">Paragraph 1</td><td class="diff-vertical">&nbsp;</td><td class="diff-header">Paragraph 1</td></tr><tr valign=top><td class="diff-para-ident"></td><td class="diff-vertical"></td><td class="diff-para-added">Not sure when these will come in, but definitely on the TODO list;<br>
+</td></tr><tr valign=top><td class="diff-para-ident"><br>
+!!New Commands Planned|width=300!!Description!!<br>
+</td><td class="diff-vertical"></td><td class="diff-para-ident"><br>
+!!New Commands Planned|width=300!!Description!!<br>
+</td></tr></table></div>

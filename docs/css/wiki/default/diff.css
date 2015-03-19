@@ -1,0 +1,67 @@
+/*---------------------------------------------------------------------------*/
+/*perlDiff*/
+/*---------------------------------------------------------------------------*/
+#wikidifftable {
+	width: 100.01%;	
+	padding: 10px;
+}
+#wikidiffdiv {
+	border: 1px solid #ff0000;
+	padding: 10px;
+	margin-bottom: 20px;
+	_width: 99%;
+	_overflow: auto
+}
+.wikidifftexttitle {
+	margin-top: 10px;
+	font-weight: bold;
+	color: #ffffff;
+	padding: 10px;
+	background-color: #ff0000;
+}
+
+.diff-header       { 
+	padding-top: 20px;
+	font-weight: bold; 
+	font-size: 12pt; 
+	color: #000000; 
+	padding-left: 5px; 
+	padding-right: 5px; 
+	width: 45%;
+
+} 
+.diff-para-deleted { background: #ffb6c1; }  /* deleted complete paragraphs */
+.diff-para-added   { background: #98fb98; }  /* added complete paragraphs */
+.diff-para-ident   { background: #ffffff; }  /* unchanged complete paragraphs */
+.diff-para-changed { background: #ffffff; }  /* changed paragraphs */
+.diff-span-ident   { background: #ffffff; }  /* unchanged words in changed paragraphs */
+.diff-span-added   { background: #7cfc00; }  /* added words in changed paragraphs */
+.diff-span-deleted { background: #ff4500; }  /* deleted words in changed paragraphs */
+
+.diff-para-ident,
+.diff-para-deleted,
+.diff-para-changed,
+.diff-para-added,
+.diff-span-added,
+.diff-span-ident,
+.diff-span-deleted {
+	font-family: Courier, Monospace, Serif;
+}
+
+.diff-para-ident,
+.diff-para-deleted,
+.diff-para-changed,
+.diff-para-added {
+	padding: 5px;
+	width: 50%;
+	line-height: 1.5;
+	border: 1px solid #ABD0E0;
+}
+
+.diff-para-ident {
+	border: none;
+}
+
+.diff-vertical {
+	padding: 5px;
+}

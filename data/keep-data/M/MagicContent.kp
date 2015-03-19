@@ -1,0 +1,206 @@
+ÿþ1versionÿþ21ÿþ2tsÿþ21197652570ÿþ2ipÿþ2127.0.0.1ÿþ2nameÿþ2text_defaultÿþ2dataÿþ2summaryÿþ3*ÿþ3textÿþ3= Magic Content Pages = 
+These type of pages have a special directive added to it that will be processed by the wiki engine to create unique content derived from one or more external modules.  For example, the ListOfWantedPages is essentially a blank page except for a single magic content directive.  Magic content can of also share a page with normal wiki content, as can be seen in the MagicDiscussion and MagicCalendar commands.
+<toc>
+== Syntax and Invocation =
+The way to invoke a magic content command is to specify at the very top of the page the following pattern:
+
+<pre>
+#MAGIC [@position] command [key=value key=value ...]
+</pre>
+
+An example specification that will invoke the <tt><nowiki>AllPages</nowiki></tt> command and place a list of pages above the wiki page's content.  The key/value pair <tt>list=ol</tt> informs the command to show the list as a numbered ordered list.
+
+<pre>
+#MAGIC @top AllPages list=ol
+</pre>
+
+The wiki engine will not display the magic content during a preview request while editing a page.  Magic content will display only after a page has been saved.
+
+== Single Process Request =
+The <tt>#MAGIC</tt> directive may appear only once and as the first line of a wiki page. Only the first directive is processed; all of the others are ignored.  
+
+== Position Attribute =
+The @position attribute is optional and by default is interpreted to be <tt>'bottom'</tt>.
+
+!!Position!!Effect!!
+||bottom||This is the default.  The magic content created will appear <i>after</i> any wiki content in the page.||
+||top||This will position the magic content <i>before</i> any wiki content in the page.||
+||solo||Any wiki content in the page will become suppressed; it will not display. ||
+||check||The wiki engine will look for a querystring parameter <tt>'magic'</tt> and use that value for the value of the position attribute's value.||
+
+== Command Attribute =
+This must be specified, and it must be one of the values as shown in the MagicCommands page.
+
+!!Command!!Parameters!!Content Generated!!
+||<tt><nowiki>Foobar</nowiki></tt>||none||Does nothing.  This is a place-holder to assist wiki developers to create their own commands.  Such development is done at the wiki engine level using perl.||
+||<tt><nowiki>Discuss</nowiki></tt>||threaded=Y, numbered=Y, thumbs=Y, locked=Y||Inserts a feedback/comments interface.  Assigning a value to any of the parameters, as in <tt>threaded=Y</tt> will activate that option.  See MagicDiscussion for more information.||
+||<tt><nowiki>Flash</nowiki></tt>||name=XXXX, height=NNN, width=NNN||Will create MagicFlash content by pulling an asset from the [WikiUploads uploads] directory.||
+||<tt><nowiki>Params</nowiki></tt>||key=value||This is a simple command that merely echoes the key=value pairs that are entered.  Useful for development.||
+||<tt><nowiki>ListCommands</nowiki></tt>||none||As can be seen at MagicCommands, this command lists all available magic content commands by name.||
+||<tt><nowiki>AllPages</nowiki></tt>||none||This is a cleaner version of the index search, and of the [LocalWiki:action=links All Links] request.  See MagicAll for an ordered-list implementation of this command.||
+||<tt><nowiki>WantedPages</nowiki></tt>||none||The ListOfWantedPages, which is a redirect from MagicWanted, demonstrates this command.  It is a list of all pages that have been created as links but do not yet have wiki pages.||
+ÿþ3newauthorÿþ30ÿþ3minorÿþ30ÿþ2hostÿþ2localhostÿþ2usernameÿþ2ÿþ2revisionÿþ27ÿþ2idÿþ2111ÿþ2tscreateÿþ21197612231ÿþ2keeptsÿþ21218036078ÿþ1ipÿþ2127.0.0.1ÿþ2tsÿþ21218036078ÿþ2versionÿþ21ÿþ2nameÿþ2text_defaultÿþ2dataÿþ2summaryÿþ3*ÿþ3textÿþ3= Magic Content Pages = 
+These type of pages have a special directive added to it that will be processed by the wiki engine to create unique content derived from one or more external modules.  For example, the ListOfWantedPages is essentially a blank page except for a single magic content directive.  Magic content can of also be placed within normal wiki content, as can be seen in the MagicDiscussion and MagicCalendar commands.
+<toc>
+== Syntax and Invocation =
+The way to invoke a magic content command is to specify at the very top of the page the following pattern:
+
+<pre>
+#MAGIC [@position] command [key=value key=value ...]
+</pre>
+
+An example specification that will invoke the <tt><nowiki>AllPages</nowiki></tt> command and place a list of pages above the wiki page's content.  The key/value pair <tt>list=ol</tt> informs the command to show the list as a numbered ordered list.
+
+<pre>
+#MAGIC @top AllPages list=ol
+</pre>
+
+The wiki engine will not display the magic content during a preview request while editing a page.  Magic content will display only after a page has been saved.
+
+== Single Process Request =
+The <tt>#MAGIC</tt> directive may appear only once and as the first line of a wiki page. Only the first directive is processed; all of the others are ignored.  
+
+== Position Attribute =
+The @position attribute is optional and by default is interpreted to be <tt>'bottom'</tt>.
+
+!!Position!!Effect!!
+||bottom||This is the default.  The magic content created will appear <i>after</i> any wiki content in the page.||
+||top||This will position the magic content <i>before</i> any wiki content in the page.||
+||solo||Any wiki content in the page will become suppressed; it will not display. ||
+||check||The wiki engine will look for a querystring parameter <tt>'magic'</tt> and use that value for the value of the position attribute's value.||
+
+== Command Attribute =
+This must be specified, and it must be one of the values as shown in the MagicCommands page.
+
+!!Command!!Parameters!!Content Generated!!
+||<tt><nowiki>Foobar</nowiki></tt>||none||Does nothing.  This is a place-holder to assist wiki developers to create their own commands.  Such development is done at the wiki engine level using perl.||
+||<tt><nowiki>Discuss</nowiki></tt>||threaded=Y, numbered=Y, thumbs=Y, locked=Y||Inserts a feedback/comments interface.  Assigning a value to any of the parameters, as in <tt>threaded=Y</tt> will activate that option.  See MagicDiscussion for more information.||
+||<tt><nowiki>Flash</nowiki></tt>||name=XXXX, height=NNN, width=NNN||Will create MagicFlash content by pulling an asset from the [WikiUploads uploads] directory.||
+||<tt><nowiki>Params</nowiki></tt>||key=value||This is a simple command that merely echoes the key=value pairs that are entered.  Useful for development.||
+||<tt><nowiki>ListCommands</nowiki></tt>||none||As can be seen at MagicCommands, this command lists all available magic content commands by name.||
+||<tt><nowiki>AllPages</nowiki></tt>||none||This is a cleaner version of the index search, and of the [LocalWiki:action=links All Links] request.  See MagicAll for an ordered-list implementation of this command.||
+||<tt><nowiki>WantedPages</nowiki></tt>||none||The ListOfWantedPages, which is a redirect from MagicWanted, demonstrates this command.  It is a list of all pages that have been created as links but do not yet have wiki pages.||
+ÿþ3minorÿþ31ÿþ3newauthorÿþ31ÿþ2usernameÿþ2RobertKurcinaÿþ2hostÿþ2localhostÿþ2revisionÿþ28ÿþ2tscreateÿþ21197612231ÿþ2idÿþ21220ÿþ2keeptsÿþ21218036112ÿþ1versionÿþ21ÿþ2tsÿþ21218036112ÿþ2ipÿþ2127.0.0.1ÿþ2nameÿþ2text_defaultÿþ2dataÿþ2summaryÿþ3*ÿþ3textÿþ3= Magic Content Pages = 
+These type of pages have a special directive added to it that will be processed by the wiki engine to create unique content derived from one or more external modules.  For example, the ListOfWantedPages is essentially a blank page except for a single magic content directive.  Magic content can also be placed within normal wiki content, as can be seen in the MagicDiscussion and MagicCalendar commands.
+<toc>
+== Syntax and Invocation =
+The way to invoke a magic content command is to specify at the very top of the page the following pattern:
+
+<pre>
+#MAGIC [@position] command [key=value key=value ...]
+</pre>
+
+An example specification that will invoke the <tt><nowiki>AllPages</nowiki></tt> command and place a list of pages above the wiki page's content.  The key/value pair <tt>list=ol</tt> informs the command to show the list as a numbered ordered list.
+
+<pre>
+#MAGIC @top AllPages list=ol
+</pre>
+
+The wiki engine will not display the magic content during a preview request while editing a page.  Magic content will display only after a page has been saved.
+
+== Single Process Request =
+The <tt>#MAGIC</tt> directive may appear only once and as the first line of a wiki page. Only the first directive is processed; all of the others are ignored.  
+
+== Position Attribute =
+The @position attribute is optional and by default is interpreted to be <tt>'bottom'</tt>.
+
+!!Position!!Effect!!
+||bottom||This is the default.  The magic content created will appear <i>after</i> any wiki content in the page.||
+||top||This will position the magic content <i>before</i> any wiki content in the page.||
+||solo||Any wiki content in the page will become suppressed; it will not display. ||
+||check||The wiki engine will look for a querystring parameter <tt>'magic'</tt> and use that value for the value of the position attribute's value.||
+
+== Command Attribute =
+This must be specified, and it must be one of the values as shown in the MagicCommands page.
+
+!!Command!!Parameters!!Content Generated!!
+||<tt><nowiki>Foobar</nowiki></tt>||none||Does nothing.  This is a place-holder to assist wiki developers to create their own commands.  Such development is done at the wiki engine level using perl.||
+||<tt><nowiki>Discuss</nowiki></tt>||threaded=Y, numbered=Y, thumbs=Y, locked=Y||Inserts a feedback/comments interface.  Assigning a value to any of the parameters, as in <tt>threaded=Y</tt> will activate that option.  See MagicDiscussion for more information.||
+||<tt><nowiki>Flash</nowiki></tt>||name=XXXX, height=NNN, width=NNN||Will create MagicFlash content by pulling an asset from the [WikiUploads uploads] directory.||
+||<tt><nowiki>Params</nowiki></tt>||key=value||This is a simple command that merely echoes the key=value pairs that are entered.  Useful for development.||
+||<tt><nowiki>ListCommands</nowiki></tt>||none||As can be seen at MagicCommands, this command lists all available magic content commands by name.||
+||<tt><nowiki>AllPages</nowiki></tt>||none||This is a cleaner version of the index search, and of the [LocalWiki:action=links All Links] request.  See MagicAll for an ordered-list implementation of this command.||
+||<tt><nowiki>WantedPages</nowiki></tt>||none||The ListOfWantedPages, which is a redirect from MagicWanted, demonstrates this command.  It is a list of all pages that have been created as links but do not yet have wiki pages.||
+ÿþ3newauthorÿþ30ÿþ3minorÿþ30ÿþ2hostÿþ2localhostÿþ2usernameÿþ2RobertKurcinaÿþ2revisionÿþ29ÿþ2idÿþ21220ÿþ2tscreateÿþ21197612231ÿþ2keeptsÿþ21222752547ÿþ1ipÿþ2127.0.0.1ÿþ2tsÿþ21222752547ÿþ2versionÿþ21ÿþ2nameÿþ2text_defaultÿþ2dataÿþ2summaryÿþ3*ÿþ3textÿþ3= Magic Content Pages = 
+These type of pages have a special directive added to it that will be processed by the wiki engine to create unique content derived from one or more external modules.  For example, the ListOfWantedPages is essentially a blank page except for a single magic content directive.  Magic content can also be placed within normal wiki content, as can be seen in the MagicDiscussion and MagicCalendar commands.
+{{toc}}
+== Syntax and Invocation =
+The way to invoke a magic content command is to specify at the very top of the page the following pattern:
+
+<pre>
+#MAGIC [@position] command [key=value key=value ...]
+</pre>
+
+An example specification that will invoke the <tt><nowiki>AllPages</nowiki></tt> command and place a list of pages above the wiki page's content.  The key/value pair <tt>list=ol</tt> informs the command to show the list as a numbered ordered list.
+
+<pre>
+#MAGIC @top AllPages list=ol
+</pre>
+
+The wiki engine will not display the magic content during a preview request while editing a page.  Magic content will display only after a page has been saved.
+
+== Single Process Request =
+The <tt>#MAGIC</tt> directive may appear only once and as the first line of a wiki page. Only the first directive is processed; all of the others are ignored.  
+
+== Position Attribute =
+The @position attribute is optional and by default is interpreted to be <tt>'bottom'</tt>.
+
+!!Position!!Effect!!
+||bottom||This is the default.  The magic content created will appear <i>after</i> any wiki content in the page.||
+||top||This will position the magic content <i>before</i> any wiki content in the page.||
+||solo||Any wiki content in the page will become suppressed; it will not display. ||
+||check||The wiki engine will look for a querystring parameter <tt>'magic'</tt> and use that value for the value of the position attribute's value.||
+
+== Command Attribute =
+This must be specified, and it must be one of the values as shown in the MagicCommands page.
+
+!!Command!!Parameters!!Content Generated!!
+||<tt><nowiki>Foobar</nowiki></tt>||none||Does nothing.  This is a place-holder to assist wiki developers to create their own commands.  Such development is done at the wiki engine level using perl.||
+||<tt><nowiki>Discuss</nowiki></tt>||threaded=Y, numbered=Y, thumbs=Y, locked=Y||Inserts a feedback/comments interface.  Assigning a value to any of the parameters, as in <tt>threaded=Y</tt> will activate that option.  See MagicDiscussion for more information.||
+||<tt><nowiki>Flash</nowiki></tt>||name=XXXX, height=NNN, width=NNN||Will create MagicFlash content by pulling an asset from the [WikiUploads uploads] directory.||
+||<tt><nowiki>Params</nowiki></tt>||key=value||This is a simple command that merely echoes the key=value pairs that are entered.  Useful for development.||
+||<tt><nowiki>ListCommands</nowiki></tt>||none||As can be seen at MagicCommands, this command lists all available magic content commands by name.||
+||<tt><nowiki>AllPages</nowiki></tt>||none||This is a cleaner version of the index search, and of the [LocalWiki:action=links All Links] request.  See MagicAll for an ordered-list implementation of this command.||
+||<tt><nowiki>WantedPages</nowiki></tt>||none||The ListOfWantedPages, which is a redirect from MagicWanted, demonstrates this command.  It is a list of all pages that have been created as links but do not yet have wiki pages.||
+ÿþ3minorÿþ31ÿþ3newauthorÿþ31ÿþ2usernameÿþ2RobertKurcinaÿþ2hostÿþ2localhostÿþ2revisionÿþ210ÿþ2tscreateÿþ21197612231ÿþ2idÿþ21278ÿþ2keeptsÿþ21222853527ÿþ1versionÿþ21ÿþ2tsÿþ21222853527ÿþ2ipÿþ2127.0.0.1ÿþ2nameÿþ2text_defaultÿþ2dataÿþ2summaryÿþ3*ÿþ3textÿþ3= Magic Content Pages = 
+These type of pages have a special directive added to it that will be processed by the wiki engine to create unique content derived from one or more external modules.  For example, the ListOfWantedPages is essentially a blank page except for a single magic content directive.  Magic content can also be placed within normal wiki content, as can be seen in the MagicDiscussion and MagicCalendar commands.
+{{toc}}
+== Syntax and Invocation =
+The way to invoke a magic content command is to specify at the very top of the page the following pattern:
+
+<pre>
+{{command: Module key=value|key=value|key=value ...]}}
+</pre>
+
+An example specification that will invoke the <tt><nowiki>AllPages</nowiki></tt> command and place a list of pages above the wiki page's content.  The key/value pair <tt>list=ol</tt> informs the command to show the list as a numbered ordered list.
+
+<pre>
+{{command: AllPages list=ol|position=top}}
+</pre>
+
+The wiki engine will not display the magic content during a preview request while editing a page.  Magic content will display only after a page has been saved.
+
+== Single Process Request =
+The <tt>{{command}}</tt> directive may appear only once and as the first line of a wiki page. Only the first directive is processed; all of the others are ignored.  
+
+== Position Attribute =
+The @position attribute is optional and by default is interpreted to be <tt>'bottom'</tt>.
+
+!!Position!!Effect!!
+||bottom||This is the default.  The magic content created will appear <i>after</i> any wiki content in the page.||
+||top||This will position the magic content <i>before</i> any wiki content in the page.||
+||solo||Any wiki content in the page will become suppressed; it will not display. ||
+||check||The wiki engine will look for a querystring parameter <tt>'magic'</tt> and use that value for the value of the position attribute's value.||
+
+== Command Attribute =
+This must be specified, and it must be one of the values as shown in the MagicCommands page.
+
+!!Command!!Parameters!!Content Generated!!
+||<tt><nowiki>Foobar</nowiki></tt>||none||Does nothing.  This is a place-holder to assist wiki developers to create their own commands.  Such development is done at the wiki engine level using perl.||
+||<tt><nowiki>Discuss</nowiki></tt>||threaded=Y, numbered=Y, thumbs=Y, locked=Y||Inserts a feedback/comments interface.  Assigning a value to any of the parameters, as in <tt>threaded=Y</tt> will activate that option.  See MagicDiscussion for more information.||
+||<tt><nowiki>Flash</nowiki></tt>||name=XXXX, height=NNN, width=NNN||Will create MagicFlash content by pulling an asset from the [WikiUploads uploads] directory.||
+||<tt><nowiki>Params</nowiki></tt>||key=value||This is a simple command that merely echoes the key=value pairs that are entered.  Useful for development.||
+||<tt><nowiki>ListCommands</nowiki></tt>||none||As can be seen at MagicCommands, this command lists all available magic content commands by name.||
+||<tt><nowiki>AllPages</nowiki></tt>||none||This is a cleaner version of the index search, and of the [LocalWiki:action=links All Links] request.  See MagicAll for an ordered-list implementation of this command.||
+||<tt><nowiki>WantedPages</nowiki></tt>||none||The ListOfWantedPages, which is a redirect from MagicWanted, demonstrates this command.  It is a list of all pages that have been created as links but do not yet have wiki pages.||
+ÿþ3newauthorÿþ31ÿþ3minorÿþ30ÿþ2hostÿþ2localhostÿþ2usernameÿþ2RobertKurcinaÿþ2revisionÿþ211ÿþ2idÿþ21293ÿþ2tscreateÿþ21197612231ÿþ2keeptsÿþ21223835739

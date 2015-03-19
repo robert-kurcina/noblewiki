@@ -1,0 +1,57 @@
+versionÿþ13ÿþ1tsÿþ11223011345ÿþ1cache_oldmajorÿþ117ÿþ1cache_oldauthorÿþ127ÿþ1revisionÿþ128ÿþ1cache_diff_default_authorÿþ11ÿþ1tscreateÿþ11179125464ÿþ1text_defaultÿþ1versionÿþ21ÿþ2ipÿþ2127.0.0.1ÿþ2tsÿþ21223011345ÿþ2nameÿþ2text_defaultÿþ2dataÿþ2summaryÿþ3*ÿþ3textÿþ3= Noble Pursuit Games Wiki Styleguide =
+This styleguide is for any wiki entries entered to ensure that the presentation is consistently applied between different contributors.  It is a strong recommendation for the veteran editors to pursue, and a requirement for any stable content under one of the links hubs.  It doesn't need to be adhered to by CasualContent or DraftContent.
+
+{{toc}}
+== First-level Entries =
+A WikiPage is one that is created with the standard WikiName.  All entries, including the HomePage, are created as primary pages.  However, some pages are known as "first-level" entries and represent a sort of hub that lists entries to other pages each of which uses the last [ or second ] word of the first-level pages' name as one of its WikiWord""s.  An example of this is CategoryWiki, which contain links to pages like WikiStyleGuide, WikiMarkup, and WikiURLs.
+
+== Sub-page Entries =
+Sub-pages are those which are created as a WikiName preceded by a slash '/' as in <tt><nowiki>/SubPage</nowiki></tt>.  The slash informs the wiki engine to nest the entry under the directory for the it referring page.  When it is referenced it will always be linked as shown in this format <tt><nowiki>?PrimaryPage/SubPage</nowiki></tt>. Use sub-pages to group collections of related content together for when searching for content.
+
+== Headings =
+First-level pages must begin with an H1 header as the only one of its type upon a page.  All other headers on a first-level page are H2 and lower.  All sub-pages must begin with an H2 header, of which there may be multiple upon a page.  No H1 headers are allowed in second-level pages.  For all headers except for the first on any page, precede them with a blank line. Any other type of WikiPage can be designed as desired, with the exception that the first header [ be it H1, H2, or H3 ] is the only one of it's sort upon the page.  Be sure to reserve H5 and H6 headers for special purposes as described below. 
+
+== Blockquotes =
+All headings of first-level pages and sub-pages must be followed by either a blockquote [ see WikiMarkup ] or some introductory text. 
+
+== Table of Contents =
+As described in WikiTOCs, H2 and lower headers that contain a '#' hashmark before the title as in <tt><nowiki>== # Section 1.1 =</nowiki></tt> can be referenced automatically by a table of contents command <tt>toc</tt>. Always utilize a table of contents for very long pages with varied content.  Candidates would be single-page HTML-formatted rules books.
+
+== Lines =
+Divider lines are formed by a string of 4 dashes like so; <tt>----</tt>.  Dividers are meant to separate common elements of the same topic.  Use divider lines sparingly! Never use a divider unless adequate non-header content appears before and after it.  Do not have blank lines precede or succeed a divider. 
+
+== Definitions =
+Often, a page needs not be more than a simple definition or list of definitions to be linked from a page with use of their terminology.  Start these pages with an H5 followed by the term being defined, as in <tt><nowiki>===== DEFINITION: Some Term Being Defined =</nowiki></tt>.  For long lists of terms, use the anchor form of the header like so: <tt><nowiki> ====== [#anchorName] Title Text Goes Here =</nowiki></tt>.
+
+== References =
+A wiki is extremely free-form and tends to become disorganized.  A user of a wiki will have a difficult time to quickly locate relevant content.  To circumvent this, always create a list of WikiName""s at the bottom of each page, preceded by an H6 header titled 'Related Entries'.  Each entry is to be a single line preceded by a blank space.  At minimum, the one entry each second-level page should have is a link back to it's first-level parent.
+
+== Related Entries =
+{{template:RelatedEntries/WikiEditing}}
+ÿþ3newauthorÿþ31ÿþ3minorÿþ31ÿþ2usernameÿþ2RobertKurcinaÿþ2hostÿþ2localhostÿþ2revisionÿþ228ÿþ2tscreateÿþ21179125464ÿþ2idÿþ21298ÿþ2keeptsÿþ21223011345ÿþ1cache_diff_default_majorÿþ1<div id=wikidiffdiv><table id=wikidifftable><tr valign=top><td class="diff-header">Paragraph 2</td><td class="diff-vertical">&nbsp;</td><td class="diff-header">Paragraph 2</td></tr><tr valign=top><td class="diff-para-ident">This styleguide is for any wiki entries entered to ensure that the presentation is consistently applied between different contributors.&nbsp; It is a strong recommendation for the veteran editors to pursue, and a requirement for any stable content under one of the links hubs.&nbsp; It doesn't need to be adhered to by CasualContent or DraftContent.<br>
+<br>
+</td><td class="diff-vertical"></td><td class="diff-para-ident">This styleguide is for any wiki entries entered to ensure that the presentation is consistently applied between different contributors.&nbsp; It is a strong recommendation for the veteran editors to pursue, and a requirement for any stable content under one of the links hubs.&nbsp; It doesn't need to be adhered to by CasualContent or DraftContent.<br>
+<br>
+</td></tr><tr valign=top><td class="diff-para-ident"></td><td class="diff-vertical"></td><td class="diff-para-added">{{toc}}<br>
+</td></tr><tr valign=top><td class="diff-para-ident">== First-level Entries =<br>
+</td><td class="diff-vertical"></td><td class="diff-para-ident">== First-level Entries =<br>
+</td></tr><tr valign=top><td class="diff-header">Paragraph 14</td><td class="diff-vertical">&nbsp;</td><td class="diff-header">Paragraph 15</td></tr><tr valign=top><td class="diff-para-changed"><span class="diff-span-ident">Divider lines are formed by a string of 4 dashes like so; &lt;</span><span class="diff-span-deleted">code</span><span class="diff-span-ident">&gt;----&lt;/</span><span class="diff-span-deleted">code</span><span class="diff-span-ident">&gt;.&nbsp; Dividers are meant to separate common elements of the same topic.&nbsp; Use divider lines sparingly! Never use a divider unless adequate non-header content appears before and after it.&nbsp; Do not have blank lines precede or succeed a divider. <br>
+</span></td><td class="diff-vertical"></td><td class="diff-para-changed"><span class="diff-span-ident">Divider lines are formed by a string of 4 dashes like so; &lt;</span><span class="diff-span-added">tt</span><span class="diff-span-ident">&gt;----&lt;/</span><span class="diff-span-added">tt</span><span class="diff-span-ident">&gt;.&nbsp; Dividers are meant to separate common elements of the same topic.&nbsp; Use divider lines sparingly! Never use a divider unless adequate non-header content appears before and after it.&nbsp; Do not have blank lines precede or succeed a divider. <br>
+</span></td></tr><tr valign=top><td class="diff-header">Paragraph 19</td><td class="diff-vertical">&nbsp;</td><td class="diff-header">Paragraph 20</td></tr><tr valign=top><td class="diff-para-changed"><span class="diff-span-ident">==</span><span class="diff-span-deleted">====</span><span class="diff-span-ident">&nbsp;Related Entries =<br>
+</span></td><td class="diff-vertical"></td><td class="diff-para-changed"><span class="diff-span-ident">==</span><span class="diff-span-ident">&nbsp;Related Entries =<br>
+</span></td></tr><tr valign=top><td class="diff-para-deleted">&nbsp;WikiMarkup<br>
+ WikiTOCs<br>
+ WikiHeadings<br>
+ WikiLists<br>
+ WikiTables<br>
+ WikiImages<br>
+ WikiURLs<br>
+</td><td class="diff-vertical"></td><td class="diff-para-added">{{template:RelatedEntries/WikiEditing}}<br>
+</td></tr></table></div>ÿþ1cache_diff_default_minorÿþ1<div id=wikidiffdiv><table id=wikidifftable><tr valign=top><td class="diff-header">Paragraph 19</td><td class="diff-vertical">&nbsp;</td><td class="diff-header">Paragraph 19</td></tr><tr valign=top><td class="diff-para-ident">A wiki is extremely free-form and tends to become disorganized.&nbsp; A user of a wiki will have a difficult time to quickly locate relevant content.&nbsp; To circumvent this, always create a list of WikiName""s at the bottom of each page, preceded by an H6 header titled 'Related Entries'.&nbsp; Each entry is to be a single line preceded by a blank space.&nbsp; At minimum, the one entry each second-level page should have is a link back to it's first-level parent.<br>
+<br>
+</td><td class="diff-vertical"></td><td class="diff-para-ident">A wiki is extremely free-form and tends to become disorganized.&nbsp; A user of a wiki will have a difficult time to quickly locate relevant content.&nbsp; To circumvent this, always create a list of WikiName""s at the bottom of each page, preceded by an H6 header titled 'Related Entries'.&nbsp; Each entry is to be a single line preceded by a blank space.&nbsp; At minimum, the one entry each second-level page should have is a link back to it's first-level parent.<br>
+<br>
+</td></tr><tr valign=top><td class="diff-para-ident"></td><td class="diff-vertical"></td><td class="diff-para-added">== Related Entries =<br>
+</td></tr><tr valign=top><td class="diff-para-ident">{{template:RelatedEntries/WikiEditing}}<br>
+</td><td class="diff-vertical"></td><td class="diff-para-ident">{{template:RelatedEntries/WikiEditing}}<br>
+</td></tr></table></div>

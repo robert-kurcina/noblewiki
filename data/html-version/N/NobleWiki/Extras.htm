@@ -1,0 +1,100 @@
+Content-Type: text/html; charset=UTF-8
+
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+<head>
+<title>Noble Pursuit Games Wiki: NobleWiki/Extras</title>
+<meta name='keywords' content='Noble, Wiki/Extras'/>
+<meta http-equiv='Content-Type' content='text/html;UTF-8' >
+<meta name='robots' content='noindex,nofollow'>
+<meta http-equiv='Pragma' content='no-cache'>
+<meta http-equiv='Expires' content='-1'><link rel="stylesheet" href="/css/wiki/default.css"><meta name="robots" content="index,follow" />
+
+<link type='text/css' rel='stylesheet' media='print' href='/css/printer.friendly.css'/>
+<link type='text/css' rel='stylesheet' media='screen' href='/css/jquery/jquery.lightbox.css'/>
+<script type='text/javascript' src='/js/jquery/jquery.js'></script>
+<script type='text/javascript' src='/js/jquery/jquery.lightbox.js'></script>
+<script type='text/javascript' src='/js/jquery/jquery.tablesorter.js'></script>
+<script type='text/javascript' src='/js/codepress/codepress.js'></script>
+<script type='text/javascript' src='/js/ufo/ufo.js'></script>
+<script type='text/javascript' src='/js/wiki/NPG.js'></script>
+</head>
+<body>
+<div id='wikicontainer-outer'>
+<div id='wikicontainer-inner'>
+<div id='wikicontainer'>
+<a name='wikiheader'></a><div class='wikiheader'><h3>&nbsp;</h3><h1><a href='index.cgi?back=/Extras' title='click to see which pages link to this one' class='wikiscriptlinktitle'>NobleWiki/Extras</a><a href='index.cgi?action=edit&id=NobleWiki/Extras' title='click to edit this page'><span class='wikiediticon'>&nbsp;</span></a></h1>
+<div class='wikigotobar'><a href='index.cgi?NobleWiki' class='wikipagelink locked'>NobleWiki&not;</a>
+<a href='index.cgi?action=browse&id=NobleWiki/Extras' class='selected'>View</a>
+<a href='index.cgi?action=edit&id=NobleWiki/Extras'>Edit</a>
+<a href='index.cgi?action=browse&id=NobleWiki/Extras_Notes' class='notfound'>Notes</a>
+<a href='index.cgi?action=history&id=NobleWiki/Extras'>Version History</a>
+<a href='index.cgi?RecentChanges'>Recent Changes</a>
+<a href='index.cgi?Help'>Help</a><a href='#wikifooter' class='wikiscriptlink' title='click to jump to footer'>&darr;</a></div>
+<div class='wikilineheader'></div></div>
+<div class='wikileftnav'>
+    <div class='wikileftnavbox'>
+        <ul>
+<li><a class='wikipagelink' title='click to visit this page.' href='?HomePage'>Main</a></li>
+<li><a class='wikipagelink' title='click to visit this page.' href='?About'>About</a></li>
+<li><a class='wikipagelink' title='click to visit this page.' href='?CategoryCategory'>Contents</a></li>
+<li><a class='wikipagelink' title='click to visit this page.' href='?Featured'>Featured</a></li>
+<li><a class='wikipagelink' title='click to visit this page.' href='?SandBox'>SandBox</a></li>
+<li><a class='wikipagelink' title='click to visit this page.' href='?WikiContacts'>Contact Us</a></li>
+<li><a class='wikipagelink' title='click to visit this page.' href='?Help'>Help</a></li>
+        </ul>
+    </div>    
+    <div class='wikileftnavbox'>
+        <ul>
+<li><a class='wikipagelink' title='click to visit this page.' href='?action=newlogin'>Login</a></li>
+<li><a class='wikipagelink' title='click to visit this page.' href='?action=listfiles&filter=!/'>List Assets</a></li>
+<li><a class='wikipagelink' title='click to visit this page.' href='?RecentChanges'>Recent changes</a></li>
+<li><a class='wikipagelink' title='click to visit this page.' href='?ListOfWantedPages'>Wanted Pages</a></li>
+<li><a class='wikipagelink' title='click to visit this page.' href='?action=version'>System Info</a></li>
+        </ul>
+    </div>
+    <div class='wikileftnavbox'>
+        <ul>
+<li><a href='index.cgi?action=edit&id=NobleWiki/Extras'>Edit Page</a></li>
+<li class='disabled'>Discuss Page</li>
+<li><a href='index.cgi?action=edit&id=NobleWiki/Extras_Notes' title='click to create notes for this page'>Notes Page</a></li>
+<li><a href='index.cgi?action=history&id=NobleWiki/Extras'>Version History</a></li>
+    </ul></div>
+    <div class='wikileftnavsearch' style='text-align:right;'>
+        <form>
+            <div class='wikisearchlabel' style='text-align:left;'><b>Search</b></div>
+            <input type='text' title='Enter ! before search term for exclusion' name='search' class='searchterm' />
+            <span><input type='checkbox' value='1' name='regex' title='click to enable searches using Regular Expressions'/>regex&nbsp;</span>
+			<span><input type='checkbox' value='1' checked='checked' name='titlesonly' title='click to restrict results to page titles'/>titles</span>
+            <input id='btnGo' type='submit' value='Go!' name='dosearch' title='click to perform your search request.'/>
+        </form><div style='clear: both;'></div></div>
+</div>
+<div class='wikitext'>
+<p>These are minor features of <a href='index.cgi?NobleWiki' class='wikipagelink locked'>NobleWiki&not;</a>.
+
+<p><table id='tablesorter-1'   class='tablesorter wikilargelist'><thead><tr><th   width='300' align='left' colspan='1'>Minor&nbsp;Things</th><th    align='left' colspan='1'>Description</th></tr></thead>
+<tbody><tr><td class='first'   align='left' colspan='1'>Cancel button</td><td    align='left' colspan='1'>Added to Edit page; basically <tt>onclick='window.location="&amp;ScriptName()?$id;";'</tt></td></tr>
+<tr><td class='first'   align='left' colspan='1'>Print Link List</td><td    align='left' colspan='1'>Updated this presentation to have a table.  Any non-existent pages identified will show with the 'Create this entry' icon.</td></tr>
+<tr><td class='first'   align='left' colspan='1'>Recent Changes</td><td    align='left' colspan='1'>Instead of <tt>$FS3</tt> to split the recent changes log, use <tt>\W</tt>.  For example <tt>($ts) = split( /\W/, $fullrc[$i] );</tt>.  Seems to work better for WIN32.</td></tr>
+<tr><td class='first'   align='left' colspan='1'>Page Lock Icon</td><td    align='left' colspan='1'>Added a small icon to the right of the page title to show that a page is locked or editable.</td></tr>
+<tr><td class='first'   align='left' colspan='1'>index.cgi</td><td    align='left' colspan='1'>The wiki.pl script has been renamed.</td></tr>
+<tr><td class='first'   align='left' colspan='1'>IE6 textarea</td><td    align='left' colspan='1'>Added <tt>&lt;div style='width:100%;'&gt;...&lt;/div&gt;</tt> around the textarea in <tt>sub GetTextArea {}</tt> to enable 100% width in IE6</td></tr>
+<tr><td class='first'   align='left' colspan='1'>Table Sorting</td><td    align='left' colspan='1'>Added jQuery Tablesorter 2.0 to engage any table created properly.  See <a href='index.cgi?WikiTables' class='wikipagelink locked'>WikiTables&not;</a> for more information.</td></tr>
+<tr><td class='first'   align='left' colspan='1'>Disabled regex Search</td><td    align='left' colspan='1'>A checkbox near the search form when marked will disable the default search mechanism that allows search terms to be interpreted as regex values.</td></tr>
+<tr><td class='first'   align='left' colspan='1'>Disable regex back-links</td><td    align='left' colspan='1'>The <tt>DoBackLinks</tt> subroutine no longer uses search terms as regular expressions.</td></tr>
+<tr><td class='first'   align='left' colspan='1'>Table Of Contents</td><td    align='left' colspan='1'>The <a href='index.cgi?WikiTOCs' title='Table of Contents' class='wikibracketurl '>Table of Contents</a> may be assigned a pixel width parameter as in <tt>{{toc NNN}}</tt></td></tr>
+<tr><td class='first'   align='left' colspan='1'>Expanded Config</td><td    align='left' colspan='1'>Added a number of configuration variables.</td></tr>
+<tr><td class='first'   align='left' colspan='1'>Windows Config</td><td    align='left' colspan='1'>Set <tt>$Windows = 1</tt> to remove CGITemp files after uploading assets.</td></tr>
+<tr><td class='first'   align='left' colspan='1'>Title attribute</td><td    align='left' colspan='1'>Added a title attribute to all links where possible</td></tr>
+<tr><td class='first'   align='left' colspan='1'>Auto Signature</td><td    align='left' colspan='1'>Insert <tt>[ [HomePage/RobertKurcina RobertKurcina] ]</tt> to automatically insert username with link to home page; defaults to 'Guest' and no link if not logged in.  Use <tt>[ [HomePage/RobertKurcina RobertKurcina] at 2008.10.12 21:18 ]</tt> to append timestamp.</td></tr>
+<tr><td class='first'   align='left' colspan='1'>Bracketed Image URLs with options</td><td    align='left' colspan='1'><tt>[URL upload:image|&lt;options&gt;]</tt> There's a number of options available now for images including title, description, boxclear, boxwidth, boxfloat, float, and clear.  The last are for images within a caption box if description is provided.  If description is provided but not title, then the title will show "FIGURE X" where X is computed as the current number of un-titled images</td></tr>
+<tr><td class='first'   align='left' colspan='1'>Edit Box</td><td    align='left' colspan='1'>The edit box and other textareas are always 100% width in every browser implementation.</td></tr>
+<tr><td class='first'   align='left' colspan='1'>Lock-out Indicators</td><td    align='left' colspan='1'>Added small symbols to allow quick access to editing a page from the title, and symbols to indicate that a page is locked.  <tt>'&not;'</tt> is that symbol prefixed to a locked page.</td></tr>
+<tr><td class='first'   align='left' colspan='1'>Naming Filter</td><td    align='left' colspan='1'>Provide multiple keywords with or with negated terms to filter the names returned from <tt>backlinks</tt>, <tt>search</tt>, or the asset management interface.</td></tr>
+</tbody></table></p></div>
+
+<div class='wikilinefooter'></div>
+<a name='wikifooter'></a><div class='wikifooter'>
+<div class='wikirevision'>Created 2008.11.08 20:32 PST by RobertKurcina | Last edited 2008.11.08 20:47 PST by <a href='index.cgi?HomePage/RobertKurcina' title='ID 1339 from localhost' class='wikiscriptlinktitle'>RobertKurcina</a> <a href='index.cgi?action=browse&amp;diff=1&amp;id=NobleWiki/Extras' title='click to view last revision' class='wikiscriptlinktitle'>(diff)</a>
+<form id='wikifooterform' action='index.cgi' enctype='application/x-www-form-urlencoded' method='POST'></form><a href='?action=editprefs'><div id='anylogo' title='Guest  '>&nbsp;</div></a><div style='clear: both;'></div></div>
+<script>$(document).ready(function(){ $('#tablesorter-1').tablesorter({widgets: ['zebra']}); });</script></div></div></div></div></body></html>

@@ -1,0 +1,26 @@
+versionÿþ13ÿþ1tsÿþ11226206048ÿþ1authorcreateÿþ1RobertKurcinaÿþ1descriptionÿþ1additional features of NobleWiki worth mentioning even though somewhat minor...ÿþ1cache_oldmajorÿþ11ÿþ1cache_oldauthorÿþ10ÿþ1cache_diff_default_authorÿþ1ÿþ1revisionÿþ12ÿþ1text_defaultÿþ1versionÿþ21ÿþ2tsÿþ21226206048ÿþ2ipÿþ2127.0.0.1ÿþ2nameÿþ2text_defaultÿþ2dataÿþ2summaryÿþ3*ÿþ3textÿþ3These are minor features of NobleWiki.
+
+!!Minor&nbsp;Things|width=300!!Description!!
+||Cancel button|class=first||Added to Edit page; basically <tt><nowiki>onclick='window.location="&ScriptName()?$id;";'</nowiki></tt>||
+||Print Link List||Updated this presentation to have a table.  Any non-existent pages identified will show with the 'Create this entry' icon.||
+||Recent Changes||Instead of <tt>$FS3</tt> to split the recent changes log, use <tt>\W</tt>.  For example <tt>($ts) = split( /\W/, $fullrc[$i] );</tt>.  Seems to work better for WIN32.||
+||Page Lock Icon||Added a small icon to the right of the page title to show that a page is locked or editable.||
+||index.cgi||The wiki.pl script has been renamed.||
+||IE6 textarea||Added <tt><nowiki><div style='width:100%;'>...</div></nowiki></tt> around the textarea in <tt><nowiki>sub GetTextArea {}</nowiki></tt> to enable 100% width in IE6||
+||Table Sorting||Added jQuery Tablesorter 2.0 to engage any table created properly.  See WikiTables for more information.||
+||Disabled regex Search||A checkbox near the search form when marked will disable the default search mechanism that allows search terms to be interpreted as regex values.||
+||Disable regex back-links||The <tt><nowiki>DoBackLinks</nowiki></tt> subroutine no longer uses search terms as regular expressions.||
+||Table Of Contents||The [LocalWiki:WikiTOCs Table of Contents] may be assigned a pixel width parameter as in <tt><nowiki>{{toc NNN}}</nowiki></tt>||
+||Expanded Config||Added a number of configuration variables.||
+||Windows Config||Set <tt><nowiki>$Windows = 1</nowiki></tt> to remove CGITemp files after uploading assets.||
+||Title attribute||Added a title attribute to all links where possible||
+||Auto Signature||Insert <tt><nowiki>[ [HomePage/RobertKurcina RobertKurcina] ]</nowiki></tt> to automatically insert username with link to home page; defaults to 'Guest' and no link if not logged in.  Use <tt><nowiki>[ [HomePage/RobertKurcina RobertKurcina] at 2008.10.12 21:18 ]</nowiki></tt> to append timestamp.||
+||Bracketed Image URLs with options||<tt><nowiki>[URL upload:image|<options>]</nowiki></tt> There's a number of options available now for images including title, description, boxclear, boxwidth, boxfloat, float, and clear.  The last are for images within a caption box if description is provided.  If description is provided but not title, then the title will show "FIGURE X" where X is computed as the current number of un-titled images||
+||Edit Box||The edit box and other textareas are always 100% width in every browser implementation.||
+||Lock-out Indicators||Added small symbols to allow quick access to editing a page from the title, and symbols to indicate that a page is locked.  <tt>'&not;'</tt> is that symbol prefixed to a locked page.||
+||Naming Filter||Provide multiple keywords with or with negated terms to filter the names returned from <tt>backlinks</tt>, <tt>search</tt>, or the asset management interface.||
+ÿþ3minorÿþ30ÿþ3newauthorÿþ30ÿþ3descriptionÿþ3ÿþ2hostÿþ2localhostÿþ2usernameÿþ2RobertKurcinaÿþ2revisionÿþ22ÿþ2idÿþ21339ÿþ2tscreateÿþ21226205147ÿþ2keeptsÿþ21226206048ÿþ1tscreateÿþ11226205147ÿþ1cache_diff_default_majorÿþ11ÿþ1cache_diff_default_minorÿþ1<div id=wikidiffdiv><table id=wikidifftable><tr valign=top><td class="diff-header">Paragraph 1</td><td class="diff-vertical">&nbsp;</td><td class="diff-header">Paragraph 1</td></tr><tr valign=top><td class="diff-para-ident"></td><td class="diff-vertical"></td><td class="diff-para-added">These are minor features of NobleWiki.<br>
+<br>
+</td></tr><tr valign=top><td class="diff-para-ident">!!Minor&amp;nbsp;Things|width=300!!Description!!<br>
+</td><td class="diff-vertical"></td><td class="diff-para-ident">!!Minor&amp;nbsp;Things|width=300!!Description!!<br>
+</td></tr></table></div>

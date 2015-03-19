@@ -1,0 +1,516 @@
+# Translated by Quique <http://sindominio.net/quique> after some initial work by Sergio A. Kessler.
+# Updated by Antonio Zugaldía <http://gcubo.org/wiki> for UseModWiki version 1.0
+%Translate = split('\n',<<END_OF_TRANSLATION);
+Unknown Error (no error text)
+Error desconocido (no hay más información)
+Could not create %s
+No se puede crear %s
+Showing revision %s
+Mostrando versión %s
+Revision %s not available
+Versión %s no disponible
+showing current revision instead
+mostrando versión actual en su lugar
+Updates since %s
+Modificaciones desde %s
+Updates in the last %s day
+Modificaciones en el último %s día
+Updates in the last %s days
+Modificaciones en los últimos %s días
+Could not open %s log file
+No se puede abrir el fichero de log %s
+Error was
+Error
+Note: This error is normal if no changes have been made.
+Nota: Este error es normal si no se han hecho cambios.
+Could not open old %s log file
+No se puede abrir el fichero de log antiguo %s
+for %s only
+sólo para %s
+%s day
+%s día
+%s days
+%s días
+List new changes starting from
+Lista de nuevas modificaciones comenzando desde
+No updates since %s
+No hay modificaciones desde %s
+Page generated %s
+Página generada %s
+(edit)
+(editar)
+(diff)
+(modificaciones)
+changes
+modificaciones
+History of %s
+Historia de %s
+Compare
+Comparar
+(logged)
+(archivado)
+Revision %s
+Versión %s
+Edit
+Editar
+by
+por
+Preferences
+Preferencias
+Random Page
+Página al azar
+Upload
+Subir
+ID %s
+ID %s
+from %s
+desde %s
+[Home]
+[Inicio]
+redirected from %s
+redirigido desde %s
+Edit revision %s of this page
+Editar versión %s de esta página
+Edit text of this page
+Editar el texto de esta página
+This page is read-only
+Esta página es de sólo lectura
+View other revisions
+Ver otras versiones
+View current revision
+Ver versión actual
+Search MetaWiki
+Buscar MetaWiki
+Last edited
+Última edición
+Edited
+Editada
+by %s
+por %s
+Warning
+Aviso
+Database is stored in temporary directory %s
+La base de datos se almacena en el directorio temporal %s
+Config file error:
+Error en el archivo de configuración:
+Search:
+Buscar:
+Go!
+¡Ir!
+Your browser should go to the %s page.
+Su navegador debería ir a la página %s.
+If it does not, click %s to continue.
+Si no lo hace, pulse %s para continuar.
+Thanks for editing...
+Gracias por editar...
+Thank you for editing %s.
+Gracias por editar %s.
+Link to another page...
+Enlace a otra página...
+Follow the %s link to continue.
+Siga el enlace %s para continuar.
+Local rule error:
+Error en una regla local:
+major diff
+modificación importante
+minor diff
+modificación menor
+author diff
+modificaciones de los autores
+major
+importante
+minor
+menor
+author
+autor
+(The revisions are identical or unavailable.)
+(Las versiones son idénticas o no están disponibles)
+no other diffs
+no hay otros diffs
+No diff available.
+No hay ningún diff disponible.
+current revision
+versión actual
+revision %s
+versión %s
+Difference (from revision %1 to %2)
+Modificaciones (de la versión %1 a la %2)
+No diff available--this is the first %s revision.
+No hay ningún diff disponible: ésta es la primera %s versión.
+Difference (from prior %s revision)
+Diferencias (de la versión anterior %s)
+Changed:
+Cambiada:
+Removed:
+Eliminada:
+Added:
+Añadida:
+Describe the new page here.
+Describa la nueva página aquí.
+Bad page version (or corrupt page).
+Versión de página incorrecta (o página corrupta).
+cant write %s
+no se puede escribir %s
+Page name is too long: %s
+El nombre de la página es demasiado largo: %s
+Page name may not contain space characters: %s
+El nombre de la página no puede contener espacios: %s
+Too many / characters in page %s
+Demasiados caracteres / en la página %s
+Invalid Page %s (subpage without main page)
+Página %s no válida (subpágina sin página principal)
+Invalid Page %s (missing subpage name)
+Página %s no válida (falta nombre de la subpágina)
+Invalid Page %s (/ not allowed)
+Página %s no válida (no se permite el carácter /)
+Invalid Page %s
+Página %s no válida
+Invalid Page %s (must not end with .db)
+Página %s no válida (no debe acabar en .db)
+Invalid Page %s (must not end with .lck)
+Página %s no válida (no debe acabar en .lck)
+can not make %s
+no se puede hacer %s
+Can not open %s
+No se puede abrir %s
+Invalid action parameter %s
+Parámetro de acción %s no válido
+Invalid URL.
+URL no válido.
+Editing Denied
+No se permite hacer modificaciones
+Editing not allowed: user, ip, or network is blocked.
+No se permite hacer modificaciones: usuario, ip o red bloquedo.
+Contact the wiki administrator for more information.
+Contacte con el administrador del wiki para más información.
+Editing not allowed: %s is read-only.
+No se permite hacer modificación: %s es de sólo lectura.
+Editing %s
+Editando %s
+Editing revision %s of 
+Editando la versión %s de 
+Editing old revision %s.
+Editando la versión antigua %s.
+Saving this page will replace the latest revision with this text.
+Guardar esta página reemplazará la última versión con este texto.
+Edit Conflict!
+¡Conflicto en la edición!
+(This is a new conflict)
+(Éste es un nuevo conflicto)
+Someone saved this page after you started editing.
+Alguien ha guardado esta página después de que usted empezara a editarla.
+The top textbox contains the saved text.
+La caja de texto superior contiene el texto guardado.
+Only the text in the top textbox will be saved.
+Sólo el texto en la caja de texto superior será guardado.
+Scroll down to see your edited text.
+Baje para ver su texto editado.
+Last save time:
+Hora de la última edición:
+Current time is:
+Hora actual:
+Summary:
+Resumen:
+This change is a minor edit.
+Esta cambio es una modificación menor.
+Send email notification that %s has been changed.
+Enviar un correo electrónico para avisar de que %s ha sido modificada.
+Save
+Guardar
+Your user name is
+Su nombre de usuario es
+Visit %s to set your user name.
+Visite %s para establecer su nombre de usuario.
+Preview
+Vista previa
+This is the text you submitted:
+Éste es el texto que ha enviado:
+Preview:
+Vista previa:
+NOTE: This preview shows the revision of the other author.
+NOTA: Esta vista preliminar muestra las modificaciones del otro autor.
+Preview only, not yet saved
+Solamente vista previa, aun no guardada
+Editing Preferences
+Editando Preferencias
+User Information:
+Información de usuario:
+Your User ID number: %s
+Identificación de usuario: %s
+UserName:
+Nombre de usuario:
+(blank to remove, or valid page name)
+(en blanco para eliminar, y si no un nombre de página valido)
+Set Password:
+Contraseña:
+(blank to remove password)
+(en blanco para eliminar la contraseña)
+Passwords allow sharing preferences between multiple systems.
+Las contraseñas permiten compartir las preferencias entre varios sistemas.
+Passwords are completely optional.
+Las contraseñas son completamente opcionales.
+Administrator Password:
+Contraseña del administrador:
+(Administrator passwords are used for special maintenance.)
+(Las contraseñas de administrador se usan para funciones especiales de mantenimiento)
+Include this address in the site email list.
+Incluir esta dirección en la lista de correo electrónico del sitio.
+(Uncheck the box to remove the address.)
+(No marque la caja para eliminar la dirección)
+Email Address:
+Dirección de correo electrónico:
+Default days to display:
+Días a mostrar por defecto:
+Most recent changes on top
+Las modificaciones más recientes en la parte superior de la página
+Show all changes (not just most recent)
+Mostrar todas las modificaciones (no sólo las más recientes)
+Hide minor edits
+Ocultar las modificaciones menores
+Show minor edits
+Mostrar las modificaciones menores
+Show only minor edits
+Mostrar sólo las modificaciones menores
+Minor edit display:
+Visualización de las modificaciones menores:
+Use "changes" as link to history
+Usar "modificaciones" como enlace a la historia
+Differences:
+Modificaciones:
+Show (diff) links on %s
+Mostras enlaces (diff) en %s
+Show differences on all pages
+Mostrar las modificaciones en todas las páginas
+No differences on %s
+No hay modificaciones en %s
+Major
+Importante
+Minor
+Menor
+Author
+Autor
+Default difference type:
+Tipo de modificación por defecto:
+Misc:
+Varios:
+Server time:
+Hora del servidor:
+Time Zone offset (hours):
+Diferencia de horas con el servidor:
+Use 100% wide edit area (if supported)
+Usar un área de modificación del 100% de la ventana (si se permite)
+Edit area rows:
+Filas del área de edición:
+columns:
+columnas:
+Show link bar on top
+Mostrar barra de enlaces en la parte superior
+Add "Random Page" link to link bar
+Añadir un enlace "Página al azar" en la barra de enlaces
+StyleSheet URL:
+Dirección de la hoja de estilo:
+Saving Preferences
+Guardando las preferencias
+Invalid UserID %s, preferences not saved.
+Identificactivo de usuario %s no válido, no se han guardado las preferencias.
+(Preferences require cookies, but no cookie was sent.)
+(Las preferencias necesitan cookies, pero no se ha enviado ninguna cookie).
+UserName removed.
+Eliminado nombre de usuario.
+Invalid UserName %s: not saved.
+Nombre de usuaro %s no válido: no se ha guardado.
+UserName must be 50 characters or less. (not saved)
+El nombre de usuario debe tener menos de 50 caracteres (no se ha guardado).
+UserName %s saved.
+Guardado nombre de usuario %s.
+Password removed.
+Contraseña eliminada.
+Password changed.
+Se ha cambiado la contraseña.
+Administrator password removed.
+Se ha eliminado la contraseña del administrador.
+Administrator password changed.
+La contraseña del administrador ha sido cambiada.
+User has administrative abilities.
+El usuario tiene permisos de administración.
+User has editor abilities.
+El usuario tiene permisos de edición.
+User does not have administrative abilities.
+El usuario no tiene permisos de administración.
+(Password does not match administrative password(s).)
+(La contraseña no coincide con la(s) contraseña(s) de administración).
+Local time:
+Hora local:
+StyleSheet URL removed.
+Dirección de la hoja de estilo eliminada.
+StyleSheet setting saved.
+Configuración de la hoja de estilo guardada.
+Preferences saved.
+Se han guardado las preferencias.
+Could not read from %s:
+No se ha podido leer %s:
+Could not get mail lock
+No se ha podido obtener un bloqueo del correo
+Could not append to %s:
+No se ha podido añadir a %s:
+Could not overwrite %s:
+No se ha podido sobreescribir %s:
+Index of all pages
+Índice de todas las páginas
+Login
+Ingreso
+User ID number:
+Identificativo de usuario:
+Password:
+Contraseña:
+Login Results
+Resultado del ingreso
+Login for user ID %s complete.
+Se ha completado el ingreso del usuario %s.
+Login for user ID %s failed.
+No se ha podido realizar el ingreso del usuario %s.
+Could not get user-ID lock
+No se ha podido obtener un bloquo del identificativo de usuario.
+Search for: %s
+Buscar: %s
+Backlinks for: %s
+Páginas que enlazan a %s
+%s pages found:
+Encontradas %s páginas:
+Full Link List
+Lista de enlaces completa
+Editing not allowed for %s.
+No se permite la edición de %s.
+SampleUndefinedPage
+EjemploPaginaInexistente
+Sample_Undefined_Page
+Ejemplo_Pagina_Inexistente
+%s cannot be defined.
+No se puede definir %s
+Could not get editing lock
+No se puede obtener un bloqueo de la edición
+Normal Unlock.
+Desbloqueo normal.
+Removing edit lock
+Eliminando bloqueo de edición
+This operation may take several seconds...
+Esta operación puede tomar varios segundos...
+Forced Unlock.
+Desbloqueo forzado.
+%s log error:
+Error de log %s
+can not write diff_log
+no se puede escribir diff_log
+(done)
+(hecho)
+(deleted)
+(borrado)
+(replaced)
+(sustituido)
+Maintenance on all pages
+Mantenimiento de todas las páginas
+Maintenance not done.
+Mantenimiento no realizado.
+(Maintenance can only be done once every 12 hours.)
+(El mantenimiento sólo se puede hacer una vez cada 12 horas.)
+Remove the "maintain" file or wait.
+Elimine el fichero "maintain" o espere.
+Could not get maintain-lock
+No se ha podido obtener un bloqueo de mantenimiento.
+Maintenance done at %s
+Mantenimiento hecho a las %s
+Processing rename/delete commands:
+Procesando órdenes renombrar/borrar:
+Could not get lock for RC maintenance
+
+Maintaining RC log
+
+RC maintenance done.
+
+RC maintenance not done.
+
+This operation is restricted to site editors only...
+Esta operación sólo se permite a los editores del sitio...
+This operation is restricted to administrators only...
+Esta operación sólo se permite a los admininstradores...
+Set or Remove global edit lock
+Establecer o eliminar bloqueo de edición global
+Edit lock created.
+Creado bloqueo de edición.
+Edit lock removed.
+Eliminado bloqueo de edición.
+Set or Remove page edit lock
+Establecer o borrar bloqueo de edición de página
+Missing page id to lock/unlock...
+Falta el identificativo de la página a bloquear/desbloquear
+Lock for %s created.
+Creado bloqueo para %s.
+Lock for %s removed.
+Eliminado bloqueo para %s.
+UpdateLinksList could not get main lock
+no pude obtener un bloqueo de UpdateLinksList
+Updating Links
+Actualizando enlaces
+Administration
+Administración
+Unlock page
+Desbloquear página
+Lock page
+Bloquear página
+Delete this page
+Borrar esta página
+Edit Banned List
+Editar lista de prohibiciones
+Run Maintenance
+Ejecutar mantenimiento
+Edit/Rename pages
+Editar/Renombrar páginas
+Unlock site
+Desbloquear sitio
+Lock site
+Bloquear sitio
+Confirm Delete %s
+Confirmar la eliminación de %s
+Confirm deletion of %s by following this link:
+Confirmar la eliminación de %s pulsando el siguiente enlace:
+Confirm Delete
+Confirmar la eliminación
+Delete %s
+Borrar %s
+%s can not be deleted.
+%s no puede borrarse.
+%s can not be deleted because it is locked.
+%s no puede borrarse porque está bloqueada.
+%s has been deleted.
+%s ha sido borrada.
+File Upload Page
+Página para subir archivos
+The current upload size limit is %s.
+El límite actual para el tamaño de un archivo es %s.
+Change the %s variable to increase this limit.
+Cambia la variable %s para incrementar este límite.
+Upload Finished
+Transferencia finalizada
+The wiki link to your file is:
+El enlace a tu archivo es:
+Could not open file %s
+No pude abrir el archivo %s
+Convert wiki DB
+Convertir la base de datos del wiki
+You must change the %s option before converting the wiki DB.
+Debes cambiar la opción %s antes de convertir la base de datos del wiki.
+Wiki DB locked for conversion.
+La base de datos del wiki está bloqueada ante la conversión.
+Converting Wiki DB...
+Convirtiendo la base de datos del Wiki...
+Finished converting wiki DB.
+Finalizó la conversión de la base de datos del wiki.
+Remove file %s to unlock wiki for editing.
+Elimina el archivo %s para desbloquear la edición del wiki.
+Trim wiki users
+Ajustar los usuarios del wiki
+Removed %s files.
+Se han eliminado %s archivos.
+Recommended $StartUID setting is %s.
+El valor recomendado de $StartUID es %s.
+END_OF_TRANSLATION

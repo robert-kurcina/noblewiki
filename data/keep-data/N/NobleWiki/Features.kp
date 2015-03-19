@@ -1,0 +1,82 @@
+ÿþ1versionÿþ21ÿþ2tsÿþ21226204677ÿþ2ipÿþ2127.0.0.1ÿþ2nameÿþ2text_defaultÿþ2dataÿþ2summaryÿþ3Initial draft.ÿþ3textÿþ3!!Major&nbsp;Things|width=300!!Description!!
+||Negation Search|class=first||Precede the search term with '!' exclamation point and the search API will find every <em>but</em> that term.||
+||Manage Assets||Files uploaded go into the uploads directory as active assets, and can be moved between the uploaded and disabled directories. Supports a naming filter, folder creation, and asset deletion.  See WikiUploads for more information.||
+||CSS||Every relevant element has been assigned a CSS class or ID||
+||CSS Selection||All CSS files named using the pattern <tt>wiki.*</tt> such as <tt>wiki.css</tt> or <tt>wiki.gray</tt> are made available automatically for selection via the Preferences interface.||
+||HTML Structure||Made the HTML structure a bit more robust in order to allow advanced CSS styling.  The most significant change is to add <tt><div class='wikicontainer'></div></tt> around the basic HTML ouput.||
+||Full Tables||Revised UseMod:WikiPatches/WikiTemplate to allow option switches to control class, style, alignment, width, etc.  See WikiTables for more information||
+||Flash Object||Flash SWFs may be added using the <tt><nowiki></nowiki></tt> directive and module. See WikiFlash for more information.||
+||<nowiki>LightBox</nowiki> Gallery||Implemented a way to view gallery images.  See WikiGallery for more information.||
+||File Icon Boxes||If an asset link has a non-bitmap image extension a box with an icon for that file type is presented.||
+||JSON Blocks||Very useful for providing data to various applets like the open-source Flash charting tool.||
+||Code Boxes||If code needs to be shown - be it perl, <nowiki>JavaScript</nowiki>, CSS, or even HTML; use [WikiCodeBox Code Boxes].   These will show line-numbering and have syntax-highlighting.||
+||User Home||User home pages are to be created and are assumed to exist as sub-pages defined within <tt><nowiki>$HomePagePrefix</nowiki></tt> which is defaulted to be <tt><nowiki>HomePage</nowiki></tt>||
+||Discuss Page||This is a work-in-progress.  Essentially add <tt><nowiki>{{magic: Discuss}}</nowiki></tt> in order to activate discussion form and feedback set for a page.  Deactivate form but leave feedback in place by adding parameter locked=true.||
+||Expanded <tt><nowiki>$SimpleLinks</nowiki></tt>||Links like <tt><nowiki>Setup_Box</nowiki></tt> and <tt><nowiki>SetUp_box</nowiki></tt> are allowed.  Both will create bracketed links but not show the underscore character.||
+||Expanded <tt><nowiki>FreeLinks and $LinkPattern</nowiki></tt>||Pages that are formed with a single word instead of a WikiWord may only be created by EditorRole and AdminRole.||
+||View User Contributions||Use <tt><nowiki>action=rc&userid=RobertKurcina</nowiki></tt> to see all contributions by a given userid.  This is made available in each RecentChanges history line as well.||
+||Redirect to Edit Page||By setting action=referer in the <tt><nowiki>$NotFoundPage</nowiki></tt>, the hyperlink created will redirect to the edit page for the name of the page. This is useful to automatically generate edit requests for Notes pages.||
+||Block Colors||Introduced custom coloring with <tt><nowiki>{{color:key=value|key=value|..}}</nowiki></tt> where key is bgcolor, color, or padding [in pixels].  bgcolor and color accept standard CSS color names.||
+||Message Boxes||Introduced custom coloring with <tt><nowiki>{{box:type|message=value}}</nowiki></tt> where type is one of error, alert, warn, info, update, todo, yes, no, delete, or lock. See MessageBox for more information. ||
+||Source View||When a page is locked for Guests, the Edit feature will display a READONLY textarea.||
+||<tt><nowiki>Dynamic GotoBar</nowiki></tt>||The <tt><nowiki>GotoBar</nowiki></tt>for users and admins have been consolidated.  By default only the top bar will show, but the Preferences section will allow a bottom one to appear.  The elements of the bars will dynamically enable or disable according to the page or action being viewed.||
+||Dynamic Navigation Menu||The left-navigation incorporates user and admin options, and like the <tt><nowiki>GotoBar</nowiki></tt>will enable or disable the items.||
+||System Info||The [LocalWiki:action=version action=version] page has been expanded with verbose but static information.||
+||Page Creation Prompt||The <tt><nowiki>PageNotFound</nowiki></tt> result will now prompt the user to create a new page if their search request involved a legitimate page name as qualified by the <tt><nowiki>$LinkPattern</nowiki></tt> variable in the wiki code.||
+||Description Text||Descriptions for a page can be created while editing the wikitext for it.  These will display for search results.||
+||Formatted Search Results||Search results will display in two columns if a custom threshold of results found is exceeded.||
+ÿþ3newauthorÿþ31ÿþ3minorÿþ30ÿþ3descriptionÿþ3ÿþ2hostÿþ2localhostÿþ2usernameÿþ2RobertKurcinaÿþ2revisionÿþ21ÿþ2idÿþ21339ÿþ2tscreateÿþ21226204677ÿþ2keeptsÿþ21226204832ÿþ1ipÿþ2127.0.0.1ÿþ2tsÿþ21226204832ÿþ2versionÿþ21ÿþ2nameÿþ2text_defaultÿþ2dataÿþ2summaryÿþ3added description.ÿþ3textÿþ3!!Major&nbsp;Things|width=300!!Description!!
+||Negation Search|class=first||Precede the search term with '!' exclamation point and the search API will find every <em>but</em> that term.||
+||Manage Assets||Files uploaded go into the uploads directory as active assets, and can be moved between the uploaded and disabled directories. Supports a naming filter, folder creation, and asset deletion.  See WikiUploads for more information.||
+||CSS||Every relevant element has been assigned a CSS class or ID||
+||CSS Selection||All CSS files named using the pattern <tt>wiki.*</tt> such as <tt>wiki.css</tt> or <tt>wiki.gray</tt> are made available automatically for selection via the Preferences interface.||
+||HTML Structure||Made the HTML structure a bit more robust in order to allow advanced CSS styling.  The most significant change is to add <tt><div class='wikicontainer'></div></tt> around the basic HTML ouput.||
+||Full Tables||Revised UseMod:WikiPatches/WikiTemplate to allow option switches to control class, style, alignment, width, etc.  See WikiTables for more information||
+||Flash Object||Flash SWFs may be added using the <tt><nowiki></nowiki></tt> directive and module. See WikiFlash for more information.||
+||<nowiki>LightBox</nowiki> Gallery||Implemented a way to view gallery images.  See WikiGallery for more information.||
+||File Icon Boxes||If an asset link has a non-bitmap image extension a box with an icon for that file type is presented.||
+||JSON Blocks||Very useful for providing data to various applets like the open-source Flash charting tool.||
+||Code Boxes||If code needs to be shown - be it perl, <nowiki>JavaScript</nowiki>, CSS, or even HTML; use [WikiCodeBox Code Boxes].   These will show line-numbering and have syntax-highlighting.||
+||User Home||User home pages are to be created and are assumed to exist as sub-pages defined within <tt><nowiki>$HomePagePrefix</nowiki></tt> which is defaulted to be <tt><nowiki>HomePage</nowiki></tt>||
+||Discuss Page||This is a work-in-progress.  Essentially add <tt><nowiki>{{magic: Discuss}}</nowiki></tt> in order to activate discussion form and feedback set for a page.  Deactivate form but leave feedback in place by adding parameter locked=true.||
+||Expanded <tt><nowiki>$SimpleLinks</nowiki></tt>||Links like <tt><nowiki>Setup_Box</nowiki></tt> and <tt><nowiki>SetUp_box</nowiki></tt> are allowed.  Both will create bracketed links but not show the underscore character.||
+||Expanded <tt><nowiki>FreeLinks and $LinkPattern</nowiki></tt>||Pages that are formed with a single word instead of a WikiWord may only be created by EditorRole and AdminRole.||
+||View User Contributions||Use <tt><nowiki>action=rc&userid=RobertKurcina</nowiki></tt> to see all contributions by a given userid.  This is made available in each RecentChanges history line as well.||
+||Redirect to Edit Page||By setting action=referer in the <tt><nowiki>$NotFoundPage</nowiki></tt>, the hyperlink created will redirect to the edit page for the name of the page. This is useful to automatically generate edit requests for Notes pages.||
+||Block Colors||Introduced custom coloring with <tt><nowiki>{{color:key=value|key=value|..}}</nowiki></tt> where key is bgcolor, color, or padding [in pixels].  bgcolor and color accept standard CSS color names.||
+||Message Boxes||Introduced custom coloring with <tt><nowiki>{{box:type|message=value}}</nowiki></tt> where type is one of error, alert, warn, info, update, todo, yes, no, delete, or lock. See MessageBox for more information. ||
+||Source View||When a page is locked for Guests, the Edit feature will display a READONLY textarea.||
+||<nowiki>Dynamic GotoBar</nowiki>||The <tt><nowiki>GotoBar</nowiki></tt>for users and admins have been consolidated.  By default only the top bar will show, but the Preferences section will allow a bottom one to appear.  The elements of the bars will dynamically enable or disable according to the page or action being viewed.||
+||Dynamic Navigation Menu||The left-navigation incorporates user and admin options, and like the <tt><nowiki>GotoBar</nowiki></tt>will enable or disable the items.||
+||System Info||The [LocalWiki:action=version action=version] page has been expanded with verbose but static information.||
+||Page Creation Prompt||The <tt><nowiki>PageNotFound</nowiki></tt> result will now prompt the user to create a new page if their search request involved a legitimate page name as qualified by the <tt><nowiki>$LinkPattern</nowiki></tt> variable in the wiki code.||
+||Description Text||Descriptions for a page can be created while editing the wikitext for it.  These will display for search results.||
+||Formatted Search Results||Search results will display in two columns if a custom threshold of results found is exceeded.||
+ÿþ3minorÿþ30ÿþ3newauthorÿþ30ÿþ3descriptionÿþ3list of features that the NobleWiki has that are not necessarily in UseModWikiÿþ2usernameÿþ2RobertKurcinaÿþ2hostÿþ2localhostÿþ2revisionÿþ22ÿþ2tscreateÿþ21226204677ÿþ2idÿþ21339ÿþ2keeptsÿþ21226205054ÿþ1versionÿþ21ÿþ2tsÿþ21226205054ÿþ2ipÿþ2127.0.0.1ÿþ2nameÿþ2text_defaultÿþ2dataÿþ2summaryÿþ3*ÿþ3textÿþ3!!Major&nbsp;Things|width=300!!Description!!
+||Negation Search|class=first||Precede the search term with '!' exclamation point and the search API will find every <em>but</em> that term.||
+||Manage Assets||Files uploaded go into the uploads directory as active assets, and can be moved between the uploaded and disabled directories. Supports a naming filter, folder creation, and asset deletion.  See WikiUploads for more information.||
+||CSS||Every relevant element has been assigned a CSS class or ID||
+||CSS Selection||All CSS files named using the pattern <tt>wiki.*</tt> such as <tt>wiki.css</tt> or <tt>wiki.gray</tt> are made available automatically for selection via the Preferences interface.||
+||HTML Structure||Made the HTML structure a bit more robust in order to allow advanced CSS styling.  The most significant change is to add <tt><div class='wikicontainer'></div></tt> around the basic HTML ouput.||
+||Full Tables||Revised UseMod:WikiPatches/WikiTemplate to allow option switches to control class, style, alignment, width, etc.  See WikiTables for more information||
+||Flash Object||Flash SWFs may be added using the <tt><nowiki></nowiki></tt> directive and module. See WikiFlash for more information.||
+||<nowiki>LightBox</nowiki> Gallery||Implemented a way to view gallery images.  See WikiGallery for more information.||
+||File Icon Boxes||If an asset link has a non-bitmap image extension a box with an icon for that file type is presented.||
+||JSON Blocks||Very useful for providing data to various applets like the open-source Flash charting tool.||
+||Code Boxes||If code needs to be shown - be it perl, <nowiki>JavaScript</nowiki>, CSS, or even HTML; use [WikiCodeBox Code Boxes].   These will show line-numbering and have syntax-highlighting.||
+||User Home||User home pages are to be created and are assumed to exist as sub-pages defined within <tt><nowiki>$HomePagePrefix</nowiki></tt> which is defaulted to be <tt><nowiki>HomePage</nowiki></tt>||
+||Discuss Page||This is a work-in-progress.  Essentially add <tt><nowiki>{{magic: Discuss}}</nowiki></tt> in order to activate discussion form and feedback set for a page.  Deactivate form but leave feedback in place by adding parameter locked=true.||
+||Expanded <nowiki>$SimpleLinks</nowiki>||Links like <tt><nowiki>Setup_Box</nowiki></tt> and <tt><nowiki>SetUp_box</nowiki></tt> are allowed.  Both will create bracketed links but not show the underscore character.||
+||Expanded <nowiki>FreeLinks and $LinkPattern</nowiki>||Pages that are formed with a single word instead of a WikiWord may only be created by EditorRole and AdminRole.||
+||View User Contributions||Use <tt><nowiki>action=rc&userid=RobertKurcina</nowiki></tt> to see all contributions by a given userid.  This is made available in each RecentChanges history line as well.||
+||Redirect to Edit Page||By setting action=referer in the <tt><nowiki>$NotFoundPage</nowiki></tt>, the hyperlink created will redirect to the edit page for the name of the page. This is useful to automatically generate edit requests for Notes pages.||
+||Block Colors||Introduced custom coloring with <tt><nowiki>{{color:key=value|key=value|..}}</nowiki></tt> where key is bgcolor, color, or padding [in pixels].  bgcolor and color accept standard CSS color names.||
+||Message Boxes||Introduced custom coloring with <tt><nowiki>{{box:type|message=value}}</nowiki></tt> where type is one of error, alert, warn, info, update, todo, yes, no, delete, or lock. See MessageBox for more information. ||
+||Source View||When a page is locked for Guests, the Edit feature will display a READONLY textarea.||
+||<nowiki>Dynamic GotoBar</nowiki>||The <tt><nowiki>GotoBar</nowiki></tt>for users and admins have been consolidated.  By default only the top bar will show, but the Preferences section will allow a bottom one to appear.  The elements of the bars will dynamically enable or disable according to the page or action being viewed.||
+||Dynamic Navigation Menu||The left-navigation incorporates user and admin options, and like the <tt><nowiki>GotoBar</nowiki></tt>will enable or disable the items.||
+||System Info||The [LocalWiki:action=version action=version] page has been expanded with verbose but static information.||
+||Page Creation Prompt||The <tt><nowiki>PageNotFound</nowiki></tt> result will now prompt the user to create a new page if their search request involved a legitimate page name as qualified by the <tt><nowiki>$LinkPattern</nowiki></tt> variable in the wiki code.||
+||Description Text||Descriptions for a page can be created while editing the wikitext for it.  These will display for search results.||
+||Formatted Search Results||Search results will display in two columns if a custom threshold of results found is exceeded.||
+ÿþ3newauthorÿþ30ÿþ3minorÿþ30ÿþ3descriptionÿþ3ÿþ2hostÿþ2localhostÿþ2usernameÿþ2RobertKurcinaÿþ2revisionÿþ23ÿþ2idÿþ21339ÿþ2tscreateÿþ21226204677ÿþ2keeptsÿþ21226205898

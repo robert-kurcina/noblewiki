@@ -1,0 +1,63 @@
+tsÿþ11226131706ÿþ1versionÿþ13ÿþ1cache_oldmajorÿþ12ÿþ1descriptionÿþ1use message boxes at the top of a page or section to bring attention to it.ÿþ1authorcreateÿþ1ÿþ1cache_oldauthorÿþ12ÿþ1cache_diff_default_authorÿþ11ÿþ1revisionÿþ13ÿþ1tscreateÿþ11226075623ÿþ1text_defaultÿþ1ipÿþ2127.0.0.1ÿþ2tsÿþ21226131706ÿþ2versionÿþ21ÿþ2nameÿþ2text_defaultÿþ2dataÿþ2summaryÿþ3Expanded examples.ÿþ3textÿþ3== Message Boxes =
+[MessageBox MessageBoxes] are a sort of WikiCommands.  Similiar to other commands allowed in NobleWiki, it follows one of these two syntax patterns:
+
+<pre>
+{{box:type|message=value}}
+{{box:type|title=value|message=value}}
+</pre>
+
+The type corresponds to one of the following as shown in the table below.  As can be seen, the icon and field color is dependent on the type. THe only require value is for the message.  If the title is left empty, the wiki will pre-populate the value. 
+
+!!Notification Types|width=125!!Syntax|width=400!!Example!!
+||Alert[#alert]||<pre>{{box:alert|message=This page requires revision.}}</pre>||{{box:alert|message=This page requires revision.}}||
+||Warning[#warning]||<pre>{{box:warn|message=Please be careful.}}</pre>||{{box:warn|message=Please be careful.}}||
+||Information||<pre>{{box:info|message=More details below...}}</pre>||{{box:info|message=More details below...}}||
+||Update||<pre>{{box:update|message=Something Grand}}</pre>||{{box:update|message=Something Grand}}||
+
+!!Reserved Types|width=125!!Syntax|width=400!!Example!!
+||Error||<pre>{{box:error|message=Something is wrong with this page.}}</pre>||{{box:error|message=Something is wrong with this page.}}||
+||Locked Page||<pre>{{box:lock|message=This page is locked.}}</pre>||{{box:lock|message=This page is locked.}}||
+||Deleted Page||<pre>{{box:delete|message=This page is scheduled for deletion...}}</pre>||{{box:delete|message=This page is scheduled for deletion...}}||
+
+!!Status Types|width=125!!Syntax|width=400!!Example!!
+||TODO||<pre>{{box:todo|message=Page under construction...}}</pre>||{{box:todo|message=Page under construction...}}||
+||Yes||<pre>{{box:yes|message=Content has been approved.}}</pre>||{{box:yes|message=SContent has been approved.}}||
+||No||<pre>{{box:no|message=Content has been rejected.}}</pre>||{{box:no|message=Content has been rejected.}}||
+ÿþ3newauthorÿþ31ÿþ3minorÿþ30ÿþ3descriptionÿþ3use message boxes at the top of a page or section to bring attention to it.ÿþ2usernameÿþ2RobertKurcinaÿþ2hostÿþ2localhostÿþ2revisionÿþ23ÿþ2tscreateÿþ21226075623ÿþ2idÿþ21338ÿþ2keeptsÿþ21226131706ÿþ1cache_diff_default_majorÿþ11ÿþ1cache_diff_default_minorÿþ1<div id=wikidiffdiv><table id=wikidifftable><tr valign=top><td class="diff-header">Paragraph 1</td><td class="diff-vertical">&nbsp;</td><td class="diff-header">Paragraph 1</td></tr><tr valign=top><td class="diff-para-deleted">{{box:error|title=Something Grand}}<br>
+{{box:alert|title=Something Grand}}<br>
+{{box:warn|title=Something Grand}}<br>
+{{box:info|title=Something Grand}}<br>
+<br>
+{{box:update|title=Something Grand}}<br>
+{{box:todo|title=Something Grand}}<br>
+{{box:delete|title=Something Grand}}<br>
+<br>
+{{box:lock|title=Something Grand}}<br>
+{{box:yes|title=Something Grand}}<br>
+{{box:no|title=Something Grand}}<br>
+</td><td class="diff-vertical"></td><td class="diff-para-added">== Message Boxes =<br>
+[MessageBox MessageBoxes] are a sort of WikiCommands.&nbsp; Similiar to other commands allowed in NobleWiki, it follows one of these two syntax patterns:<br>
+<br>
+&lt;pre&gt;<br>
+{{box:type|message=value}}<br>
+{{box:type|title=value|message=value}}<br>
+&lt;/pre&gt;<br>
+<br>
+The type corresponds to one of the following as shown in the table below.&nbsp; As can be seen, the icon and field color is dependent on the type. THe only require value is for the message.&nbsp; If the title is left empty, the wiki will pre-populate the value. <br>
+<br>
+!!Notification Types|width=125!!Syntax|width=400!!Example!!<br>
+||Alert[#alert]||&lt;pre&gt;{{box:alert|message=This page requires revision.}}&lt;/pre&gt;||{{box:alert|message=This page requires revision.}}||<br>
+||Warning[#warning]||&lt;pre&gt;{{box:warn|message=Please be careful.}}&lt;/pre&gt;||{{box:warn|message=Please be careful.}}||<br>
+||Information||&lt;pre&gt;{{box:info|message=More details below...}}&lt;/pre&gt;||{{box:info|message=More details below...}}||<br>
+||Update||&lt;pre&gt;{{box:update|message=Something Grand}}&lt;/pre&gt;||{{box:update|message=Something Grand}}||<br>
+<br>
+!!Reserved Types|width=125!!Syntax|width=400!!Example!!<br>
+||Error||&lt;pre&gt;{{box:error|message=Something is wrong with this page.}}&lt;/pre&gt;||{{box:error|message=Something is wrong with this page.}}||<br>
+||Locked Page||&lt;pre&gt;{{box:lock|message=This page is locked.}}&lt;/pre&gt;||{{box:lock|message=This page is locked.}}||<br>
+||Deleted Page||&lt;pre&gt;{{box:delete|message=This page is scheduled for deletion...}}&lt;/pre&gt;||{{box:delete|message=This page is scheduled for deletion...}}||<br>
+<br>
+!!Status Types|width=125!!Syntax|width=400!!Example!!<br>
+||TODO||&lt;pre&gt;{{box:todo|message=Page under construction...}}&lt;/pre&gt;||{{box:todo|message=Page under construction...}}||<br>
+||Yes||&lt;pre&gt;{{box:yes|message=Content has been approved.}}&lt;/pre&gt;||{{box:yes|message=SContent has been approved.}}||<br>
+||No||&lt;pre&gt;{{box:no|message=Content has been rejected.}}&lt;/pre&gt;||{{box:no|message=Content has been rejected.}}||<br>
+</td></tr></table></div>

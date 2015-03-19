@@ -1,0 +1,412 @@
+%Translate = split('\n',<<END_OF_TRANSLATION);
+Could not create %s
+Kon %s niet aanmaken
+Showing revision %s
+U ziet revisie %s
+Revision %s not available
+Revisie %s niet beschikbaar
+showing current revision instead
+u ziet de huidige revisie ter vervanging
+Updates since %s
+Updates sinds %s
+Updates in the last %s day
+Updates gedurende de laatste %s dag
+Updates in the last %s days
+Updates gedurende de laatste %s dagen
+Could not open %s log file
+Kon %s logbestand niet openen
+Error was
+Fout was
+Note: This error is normal if no changes have been made.
+Noot: Deze foutmelding is normaal als er geen aanpassingen gedaan zijn.
+Could not open old %s log file
+Kon oud %s logbestand niet openen
+for %s only
+enkel %s 
+%s day
+%s dag
+%s days
+%s dagen
+List new changes starting from
+Toon nieuwe aanpassingen vanaf
+No updates since %s
+Geen updates sinds %s
+Page generated %s
+Pagina gegenereerd %s
+(edit)
+(bewerk)
+(diff)
+(verschil)
+changes
+aanpassingen
+History of %s
+Geschiedenis van %s
+Revision %s
+Revisie %S
+View
+Bekijk
+Edit
+Bewerk
+Diff
+Verschil
+by
+door
+Preferences
+Voorkeuren
+Random Page
+Willekeurige Pagina
+ID %s
+ID %s
+from %s
+van %s
+[Home]
+[Start]
+redirected from %s
+verwezen van %s
+Edit revision %s of this page
+Bewerk revisie %s van deze pagina
+Edit text of this page
+Bewerk tekst van deze pagina
+This page is read-only
+Deze pagina kan je enkel lezen
+View other revisions
+Bekijk andere revisies
+View current revision
+Bekijk huidige revisie
+Last edited
+Laatst bewerkt
+Edited
+Bewerkt
+Warning
+Opgelet
+Database is stored in temporary directory %s
+Database opgeslagen in tijdelijke map %s
+Search:
+Zoek:
+Your browser should go to the %s page.
+Je browser zou naar de %s pagina moeten.
+If it does not, click %s to continue.
+Als hij dat niet doet, klik %s om verder te gaan.
+Thanks for editing...
+Bedankt voor uw bijdrage...
+Thank you for editing %s.
+Bedankt voor uw bijdrage aan %s.
+Link to another page...
+Link naar een andere pagina...
+Follow the %s link to continue.
+Volg de %s link om verder te gaan.
+alternate
+alternatief
+search
+zoek
+major diff
+groot verschil
+minor diff
+klein verschil
+author diff
+auteur verschil
+major
+groot
+minor
+klein
+author
+auteur
+(The revisions are identical or unavailable.)
+(De revisies zijn identiek of niet beschikbaar.)
+no other diffs
+geen andere verschillen
+No diff available.
+Geen verschil beschikbaar.
+Difference (from revision %s to current revision)
+Verschil (van revisie %s naar huidige revisie)
+No diff available--this is the first %s revision.
+Geen verschil beschikbaar--dit is de eerste %s revisie.
+Difference (from prior %s revision)
+Verschil (van vorige %s revisie)
+Changed:
+Veranderd:
+Removed:
+Verwijderd:
+Added:
+Toegevoegd:
+Describe the new page here.
+Beschrijf de nieuwe pagina hier.
+Bad page version (or corrupt page).
+Slechte paginaversie (of rotte pagina).
+cant write %s
+kan %s niet schrijven
+Page name is too long: %s
+Paginanaam is te lang: %s
+Page name may not contain space characters: %s
+Paginanaam mag geen spaties bevatten: %s
+Too many / characters in page %s
+Te veel / karakters in pagina %s
+Invalid Page %s (subpage without main page)
+Ongeldige pagina %s (subpagina zonder hoofdpagina)
+Invalid Page %s (missing subpage name)
+Ongeldige pagina %s (ontbrekende subpaginanaam)
+Invalid Page %s (/ not allowed)
+Ongeldige pagina %s (/niet toegestaan)
+Invalid Page %s
+Ongeldige pagina %S
+Invalid Page %s (must not end with .db)
+Ongeldige pagina %s (mag niet eindigen op .db)
+Invalid Page %s (must not end with .lck)
+Ongeldige pagina (mag niet eindigen op .lck)
+can not make %s
+kan %s niet aanmaken
+Can not open %s
+Kan %s niet openen
+Invalid action parameter %s
+Ongeldige action-parameter %s
+Invalid URL.
+Ongeldige URL
+Editing Denied
+Bewerken niet toegestaan
+Editing not allowed: user, ip, or network is blocked.
+Bewerken niet toegestaan: gebruiker, ip of netwerk geblokkeerd
+Contact the wiki administrator for more information.
+Contacteer de wiki-administrator voor meer informatie.
+Editing not allowed: %s is read-only.
+Bewerken niet toegestaan: %s kan je enkel lezen.
+Editing %s
+%s aan het bewerken
+Editing revision %s of
+Revisie %s aan het bewerken van
+Editing old revision %s.
+Oude revisie %s aan het bewerken.
+Saving this page will replace the latest revision with this text.
+Opslaan vervangt de laatste revisie door deze tekst.
+Edit Conflict!
+Bewerkconflict!
+(This is a new conflict)
+(Dit is een nieuw conflict)
+Someone saved this page after you started editing.
+Iemand heeft deze pagina opgeslagen nadat je begon te bewerken.
+The top textbox contains the saved text.
+De tekstdoos bovenaan bevat de opgeslagen tekst.
+Only the text in the top textbox will be saved.
+Enkel de tekst in de tekstdoos bovenaan wordt opgeslagen.
+Scroll down to see your edited text.
+Schuif naar beneden om je bewerkte tekst te zien.
+Last save time:
+Laatst opgeslagen:
+Current time is:
+Huidige tijd is:
+Summary:
+Samenvatting:
+This change is a minor edit.
+Deze aanpassing is een miniem verschil.
+Send email notification that %s has been changed.
+Stuur emailverwittiging dat %s aangepast is.
+Save
+Sla op.
+Your user name is
+Je gebruikersnaam is
+Visit %s to set your user name.
+Ga naar %s om je gebruikersnaam in te stellen.
+Preview
+Voorsmaakje
+This is the text you submitted:
+Dit is de tekst die je inzond:
+Preview:
+Voorsmaakje:
+NOTE: This preview shows the revision of the other author.
+NOOT: Dit voorsmaakje toont de revisie van de andere auteur.
+Preview only, not yet saved
+Enkel voorsmaakje, nog niet opgeslagen.
+Editing Preferences
+Voorkeuren aan het bewerken
+User Information:
+Gebruikersinformatie:
+Your User ID number: %s
+Je gebruikersID: %s
+UserName:
+GebruikersNaam:
+(blank to remove, or valid page name)
+(leeg om te verwijderen, of geldige paginanaam)
+Set Password:
+Stel wachtwoord in:
+(blank to remove password)
+(leeg om wachtwoord te verwijderen)
+Passwords allow sharing preferences between multiple systems.
+Wachtwoorden laten toe voorkeuren te delen tussen meerdere systemen.
+Passwords are completely optional.
+Wachtwoorden zijn compleet optioneel.
+Administrator Password:
+Administratorwachtwoord:
+(Administrator passwords are used for special maintenance.)
+(Administratorwachtwoorden worden gebruikt voor speciaal onderhoud.)
+Include this address in the site email list.
+Neem dit adres op in de emaillijst van de site.
+(Uncheck the box to remove the address.)
+(Deselecteer checkbox om het adres e verwijderen.)
+Email Address:
+Emailadres:
+Default days to display:
+Standaard dagen om te tonen:
+Most recent changes on top
+Recentste aanpassingen bovenaan
+Show all changes (not just most recent)
+Toon alle aanpassingen (niet alleen recentste)
+Hide minor edits
+Verberg minieme bewerkingen
+Show minor edits
+Toon minieme bewerkingen
+Show only minor edits
+Toon enkel minieme bewerkingen
+Minor edit display:
+U ziet minieme bewerkingen:
+Use "changes" as link to history
+Gebruik "aanpassingen" als link naar geschiedenis
+Differences:
+Verschillen:
+Show (diff) links on %s
+Toon (verschil) links op %s
+Show differences on all pages
+Toon verschillen op alle pagina's
+No differences on %s
+Geen verschillen op %s
+Major
+Groot
+Minor
+Klein
+Author
+Auteur
+Default difference type:
+Standaard verschiltype:
+Misc:
+Allerlei:
+Server time:
+Servertijd:
+Time Zone offset (hours):
+Tijdzone (uren):
+Use 100% wide edit area (if supported)
+Gebruik 100% breedte als bewerkruimte (indien ondersteund)
+Edit area rows:
+Bewerk rijen ruimte:
+columns:
+kolommen:
+Show link bar on top
+Toon linkrij bovenaan
+Add "Random Page" link to link bar
+Voeg "Willekeurige Pagina"-link toe aan linkrij
+Saving Preferences
+Voorkeuren aan het opslaan
+Invalid UserID %s, preferences not saved.
+Ongeldige GebruikersID, voorkeuren niet opgeslagen.
+(Preferences require cookies, but no cookie was sent.)
+(Voorkeuren vereisen cookies, maar geen cookie verstuurd.)
+UserName removed.
+GebruikersNaam verwijderd.
+Invalid UserName %s: not saved.
+Ongeldige GebruikersNaam %s: niet opgeslagen.
+UserName must be 50 characters or less. (not saved)
+GebruikersNaam moet 50 karakters of minder zijn. (niet opgeslagen)
+UserName %s saved.
+Gebruikersnaam %s opgeslagen.
+Password removed.
+Wachtwoord verwijderd.
+Password changed.
+Wachtwoord veranderd.
+Administrator password removed.
+Administratorwachtwoord verwijderd.
+Administrator password changed.
+Administratorwachtwoord gewijzigd.
+User has administrative abilities.
+Gebruiker heeft adminmacht.
+User has editor abilities.
+Gebruiker heeft bewerkermacht.
+User does not have administrative abilities.
+Gebruiker heeft geen adminmacht.
+(Password does not match administrative password(s).)
+(Wachtwoord klopt niet met adminwachtwoord(en).)
+Local time:
+Lokale tijd:
+Preferences saved.
+Voorkeuren opgeslagen.
+Could not read from %s:
+Kon niet lezen van %S:
+Could not get mail lock
+Kon postslot niet krijgen
+Could not append to %s:
+Kon niet aanhaken aan %s:
+Could not overwrite %s:
+Kon %s niet overschrijven:
+Index of all pages
+Index van alle pagina's
+Login
+Login
+User ID number:
+GebruikersID nummer:
+Password:
+Wachtwoord:
+Login Results
+Loginresultaten
+Login for user ID %s complete.
+Login voor gebruikersID %s geslaagd.
+Login for user ID %s failed.
+Login voor gebruikersID %s mislukt.
+Could not get user-ID lock
+Kon gebruikersID-slot niet krijgen
+Search for: %s
+Zoek naar: %s
+%s pages found:
+%s pagina's gevonden:
+Full Link List
+Volledige lijst van links
+Editing not allowed for %s.
+Bewerken niet toegestaan voor %s.
+SampleUndefinedPage
+VoorbeeldOndedefinieerdePagina
+%s cannot be defined.
+%s kan niet gedefinieerd worden.
+Sample_Undefined_Page
+Voorbeeld_Ondedefinieerde_Pagina
+[[%s]] cannot be defined.
+[[%s]] kan niet gedefinieerd worden.
+Could not get editing lock
+Kon bewerkslot niet krijgen.
+Normal Unlock.
+Normaal slot openen.
+Removing edit lock
+Bewerkslot aan het verwijderen
+This operation may take several seconds...
+Deze operatie kan verscheidene seconden duren...
+Forced Unlock.
+Geforceerd openen.
+%s log error:
+%s logfout:
+can not write diff_log
+kan diff_log niet schrijven
+Maintenance on all pages
+Onderhoud aan alle pagina's
+Maintenance not done.
+Onderhoud niet gedaan.
+(Maintenance can only be done once every 12 hours.)
+(Onderhoud kan maar om de 12 uur.)
+Remove the "maintain" file or wait.
+Verwijder "maintain" bestand of wacht.
+Could not get maintain-lock
+Kon onderhoudslot niet krijgen
+Processing rename/delete commands:
+Hernoem/verwijdercommando’s verwerken:
+This operation is restricted to site editors only...
+Deze bewerking enkel toegestaan aan sitebewerkers...
+This operation is restricted to administrators only...
+Deze bewerking enkel toegestaan aan admins...
+Set or Remove global edit lock
+Verwijder of stel algemeen bewerkslot in
+Edit lock created.
+Bewerkslot aangemaakt.
+Edit lock removed.
+Bewerkslot verwijderd.
+Set or Remove page edit lock
+Verwijder of stel paginabewerkslot in
+Missing page id to lock/unlock...
+PaginaID om te (ont)sluiten ontbreekt
+Lock for %s created.
+Slot op %s aangemaakt.
+Lock for %s removed.
+Slot op %s verwijderd.
+END_OF_TRANSLATION

@@ -1,0 +1,347 @@
+versionÿþ13ÿþ1tsÿþ11226202215ÿþ1authorcreateÿþ1RobertKurcinaÿþ1descriptionÿþ1use HTML Entities to present special characters, symbols, or letters on a WikiPage.ÿþ1cache_oldmajorÿþ13ÿþ1cache_oldauthorÿþ10ÿþ1cache_diff_default_authorÿþ1ÿþ1revisionÿþ14ÿþ1text_defaultÿþ1versionÿþ21ÿþ2tsÿþ21226202215ÿþ2ipÿþ2127.0.0.1ÿþ2nameÿþ2text_defaultÿþ2dataÿþ2summaryÿþ3revised table to be smaller.ÿþ3textÿþ3== HTML Entities Reference =
+
+Here are selected HTML Entities that can be used when creating a WikiPage.
+
+!!Common Symbols|width=300!!Symbol|width=100!!Code!!
+||Section  ||&sect;||&amp;sect;||
+||Copyright ||&copy;||&amp;copy;||
+||Registered trademark ||&reg;||&amp;reg;||
+||Trademark ||&trade;||&amp;trade;||
+||Degrees  ||&deg;||&amp;deg;||
+||Dagger ||&dagger;||&amp;dagger;||
+||Double dagger ||&Dagger;||&amp;Dagger;||
+||Paragraph symbol (pilcrow)  ||&para;||&amp;para;||
+
+!!Arrows|width=300!!Symbol|width=100!!Code!!
+||Leftward arrow  ||&#x2190;||&amp;#x2190;||
+||Rightward arrow ||&#x2192;||&amp;#x2192;||
+||Upward arrow ||&#x2191;||&amp;#x2191;||
+||Downward arrow ||&#x2193;||&amp;#x2193;||
+||Left right arrow ||&#x2194;||&amp;#x2194;||
+||Leftward double arrow ||&#x21D0;||&amp;#x21D0;||
+||Rightward double arrow  ||&#x21D2;||&amp;#x21D2;||
+||Upward double arrow ||&#x21D1;||&amp;#x21D1;||
+||Downward double arrow ||&#x21D3;||&amp;#x21D3;||
+||Left right double arrow ||&#x21D4;||&amp;#x21D4;||
+
+!!Math Symbols|width=300!!Symbol|width=100!!Code!!
+||Plus or minus  ||&plusmn;||&amp;plusmn;||
+||Multiplication sign ||&times;||&amp;times;||
+||Division sign ||&divide;||&amp;divide;||
+||Less-than or equal-to  ||&le;||&amp;le;||
+||Greater-than or equal-to ||&ge;||&amp;ge;||
+||Not equal to ||&ne;||&amp;ne;||
+||Approximately equal to  ||&cong;||&amp;cong;||
+||Almost equal to ||&asymp;||&amp;asymp;||
+||Identical to ||&equiv;||&amp;equiv;||
+||Infinity ||&infin;||&amp;infin;||
+
+!!Planet|width=300!!Symbol|width=100!!Code!!
+||Mercury  ||&#x263F;||&amp;#x263F;||
+||Venus (also female symbol) ||&#x2640;||&amp;#x2640;||
+||Earth ||&#x2641;||&amp;#x2641;||
+||Mars (also male symbol) ||&#x2642;||&amp;#x2642;||
+||Jupiter ||&#x2643;||&amp;#x2643;||
+||Saturn ||&#x2644;||&amp;#x2644;||
+||Uranus ||&#x2645;||&amp;#x2645;||
+||Neptune ||&#x2646;||&amp;#x2646;||
+||Pluto ||&#x2647;||&amp;#x2647;||
+
+!!Signs of the Zodiac|width=300!!Symbol|width=100!!Code!!
+||Aries  ||&#x2648;||&amp;#x2648;||
+||Taurus ||&#x2649;||&amp;#x2649;||
+||Gemini ||&#x264A;||&amp;#x264A;||
+||Cancer ||&#x264B;||&amp;#x264B;||
+||Leo ||&#x264C;||&amp;#x264C;||
+||Virgo ||&#x264D;||&amp;#x264D;||
+||Libra ||&#x264E;||&amp;#x264E;||
+||Scorpio ||&#x264F;||&amp;#x264F;||
+||Sagittarius ||&#x2650;||&amp;#x2650;||
+||Capricorn ||&#x2651;||&amp;#x2651;||
+||Aquarius ||&#x2652;||&amp;#x2652;||
+||Pisces ||&#x2653;||&amp;#x2653;||
+ÿþ3minorÿþ30ÿþ3newauthorÿþ30ÿþ3descriptionÿþ3ÿþ2hostÿþ2localhostÿþ2usernameÿþ2RobertKurcinaÿþ2revisionÿþ24ÿþ2idÿþ21339ÿþ2tscreateÿþ21226198337ÿþ2keeptsÿþ21226202215ÿþ1tscreateÿþ11226198337ÿþ1cache_diff_default_majorÿþ11ÿþ1cache_diff_default_minorÿþ1<div id=wikidiffdiv><table id=wikidifftable><tr valign=top><td class="diff-header">Paragraph 2</td><td class="diff-vertical">&nbsp;</td><td class="diff-header">Paragraph 2</td></tr><tr valign=top><td class="diff-para-changed"><span class="diff-span-ident">Here are selected HTML Entities that can be used when creating a WikiPage.</span><span class="diff-span-deleted">&nbsp; More definitions can be found at [http://htmlhelp.com/reference/html40/entities/ WDC].</span><span class="diff-span-ident"><br>
+</span></td><td class="diff-vertical"></td><td class="diff-para-changed"><span class="diff-span-ident">Here are selected HTML Entities that can be used when creating a WikiPage.</span><span class="diff-span-ident"><br>
+</span></td></tr><tr valign=top><td class="diff-para-ident"><br>
+</td><td class="diff-vertical"></td><td class="diff-para-ident"><br>
+</td></tr><tr valign=top><td class="diff-para-changed"><span class="diff-span-ident">!!Common </span><span class="diff-span-deleted">Symbol</span><span class="diff-span-ident">|width=300!!</span><span class="diff-span-deleted">Code!!Result</span><span class="diff-span-ident">!!<br>
+</span></td><td class="diff-vertical"></td><td class="diff-para-changed"><span class="diff-span-ident">!!Common </span><span class="diff-span-added">Symbols</span><span class="diff-span-ident">|width=300!!</span><span class="diff-span-added">Symbol|width=100!!Code</span><span class="diff-span-ident">!!<br>
+</span></td></tr><tr valign=top><td class="diff-para-deleted">||no-break space = non-breaking space&nbsp; ||&amp;nbsp;&nbsp; ||<br>
+||inverted exclamation mark ||&amp;iexcl; ||<br>
+||cent sign ||&amp;cent; ||<br>
+||pound sign ||&amp;pound; ||<br>
+||currency sign ||&amp;curren; ||<br>
+||yen sign = yuan sign ||&amp;yen; ||<br>
+||broken bar = broken vertical bar ||&amp;brvbar; ||<br>
+||section sign ||&amp;sect; ||<br>
+||diaeresis = spacing diaeresis ||&amp;uml; ||<br>
+||copyright sign ||&amp;copy; ||<br>
+||feminine ordinal indicator ||&amp;ordf; ||<br>
+||left-pointing double angle quotation mark = left pointing guillemet ||&amp;laquo; ||<br>
+||not sign ||&amp;not; ||<br>
+||soft hyphen = discretionary hyphen ||&amp;shy; ||<br>
+||registered sign = registered trade mark sign ||&amp;reg; ||<br>
+||macron = spacing macron = overline = APL overbar ||&amp;macr; ||<br>
+||degree sign ||&amp;deg; ||<br>
+||plus-minus sign = plus-or-minus sign ||&amp;plusmn; ||<br>
+||superscript two = superscript digit two = squared ||&amp;sup2; ||<br>
+||superscript three = superscript digit three = cubed ||&amp;sup3; ||<br>
+||acute accent = spacing acute ||&amp;acute; ||<br>
+||micro sign ||&amp;micro; ||<br>
+||pilcrow sign = paragraph sign ||&amp;para; ||<br>
+||middle dot = Georgian comma = Greek middle dot ||&amp;middot; ||<br>
+||cedilla = spacing cedilla ||&amp;cedil; ||<br>
+||superscript one = superscript digit one ||&amp;sup1; ||<br>
+||masculine ordinal indicator ||&amp;ordm; ||<br>
+||right-pointing double angle quotation mark = right pointing guillemet ||&amp;raquo; ||<br>
+||ulgar fraction one quarter = fraction one quarter ||&amp;frac14; ||<br>
+||vulgar fraction one half = fraction one half ||&amp;frac12; ||<br>
+||vulgar fraction three quarters = fraction three quarters ||&amp;frac34; ||<br>
+||inverted question mark = turned question mark ||&amp;iquest; ||<br>
+||Latin capital letter A grave ||&amp;Agrave; ||<br>
+||Latin capital letter A with acute ||&amp;Aacute; ||<br>
+||Latin capital letter A with circumflex ||&amp;Acirc; ||<br>
+||Latin capital letter A with tilde ||&amp;Atilde; ||<br>
+||Latin capital letter A with diaeresis ||&amp;Auml; ||<br>
+||Latin capital letter A ring ||&amp;Aring; ||<br>
+||Latin capital ligature AE ||&amp;AElig; ||<br>
+||Latin capital letter C with cedilla ||&amp;Ccedil; ||<br>
+||Latin capital letter E with grave ||&amp;Egrave; ||<br>
+||Latin capital letter E with acute ||&amp;Eacute; ||<br>
+||Latin capital letter E with circumflex ||&amp;Ecirc; ||<br>
+||Latin capital letter E with diaeresis ||&amp;Euml; ||<br>
+||Latin capital letter I with grave ||&amp;Igrave; ||<br>
+||Latin capital letter I with acute ||&amp;Iacute; ||<br>
+||Latin capital letter I with circumflex ||&amp;Icirc; ||<br>
+||Latin capital letter I with diaeresis ||&amp;Iuml; ||<br>
+||Latin capital letter ETH ||&amp;ETH; ||<br>
+||Latin capital letter N with tilde ||&amp;Ntilde; ||<br>
+||Latin capital letter O with grave ||&amp;Ograve; ||<br>
+||Latin capital letter O with acute ||&amp;Oacute; ||<br>
+||Latin capital letter O with circumflex ||&amp;Ocirc; ||<br>
+||Latin capital letter O with tilde ||&amp;Otilde; ||<br>
+||Latin capital letter O with diaeresis ||&amp;Ouml; ||<br>
+||multiplication sign ||&amp;times; ||<br>
+||Latin capital letter O slash ||&amp;Oslash; ||<br>
+||Latin capital letter U with grave ||&amp;Ugrave; ||<br>
+||Latin capital letter U with acute ||&amp;Uacute; ||<br>
+||Latin capital letter U with circumflex ||&amp;Ucirc; ||<br>
+||Latin capital letter U with diaeresis ||&amp;Uuml; ||<br>
+||Latin capital letter Y with acute ||&amp;Yacute; ||<br>
+||Latin capital letter THORN ||&amp;THORN; ||<br>
+||Latin small letter sharp s = ess-zed ||&amp;szlig; ||<br>
+||Latin small letter a with grave = ||Latin small letter a grave ||&amp;agrave; ||<br>
+||Latin small letter a with acute ||&amp;aacute; ||<br>
+||Latin small letter a with circumflex ||&amp;acirc; ||<br>
+||Latin small letter a with tilde ||&amp;atilde; ||<br>
+||Latin small letter a with diaeresis ||&amp;auml; ||<br>
+||Latin small letter a with ring above = ||Latin small letter a ring ||&amp;aring; ||<br>
+||Latin small letter ae = ||Latin small ligature ae ||&amp;aelig; ||<br>
+||Latin small letter c with cedilla ||&amp;ccedil; ||<br>
+||Latin small letter e with grave ||&amp;egrave; ||<br>
+||Latin small letter e with acute ||&amp;eacute; ||<br>
+||Latin small letter e with circumflex ||&amp;ecirc; ||<br>
+||Latin small letter e with diaeresis ||&amp;euml; ||<br>
+||Latin small letter i with grave ||&amp;igrave; ||<br>
+||Latin small letter i with acute ||&amp;iacute; ||<br>
+||Latin small letter i with circumflex ||&amp;icirc; ||<br>
+||Latin small letter i with diaeresis ||&amp;iuml; ||<br>
+||Latin small letter eth ||&amp;eth; ||<br>
+||Latin small letter n with tilde ||&amp;ntilde; ||<br>
+||Latin small letter o with grave ||&amp;ograve; ||<br>
+||Latin small letter o with acute ||&amp;oacute; ||<br>
+||Latin small letter o with circumflex ||&amp;ocirc; ||<br>
+||Latin small letter o with tilde ||&amp;otilde; ||<br>
+||Latin small letter o with diaeresis ||&amp;ouml; ||<br>
+||division sign ||&amp;divide; ||<br>
+||Latin small letter o slash ||&amp;oslash; ||<br>
+||Latin small letter u with grave ||&amp;ugrave; ||<br>
+||Latin small letter u with acute ||&amp;uacute; ||<br>
+||Latin small letter u with circumflex ||&amp;ucirc; ||<br>
+||Latin small letter u with diaeresis ||&amp;uuml; ||<br>
+||Latin small letter y with acute ||&amp;yacute; ||<br>
+||Latin small letter thorn ||&amp;thorn; ||<br>
+||Latin small letter y with diaeresis ||&amp;yuml; ||<br>
+||dagger&nbsp; ||&amp;dagger;&nbsp; ||<br>
+||double dagger ||&amp;Dagger; ||<br>
+||per mille sign ||&amp;permil; ||<br>
+||Latin small f with hook = function = florin&nbsp; ||&amp;fnof;&nbsp; ||<br>
+||Greek capital letter alpha ||&amp;Alpha; ||<br>
+||Greek capital letter beta ||&amp;Beta; ||<br>
+||Greek capital letter gamma ||&amp;Gamma; ||<br>
+||Greek capital letter delta ||&amp;Delta; ||<br>
+||Greek capital letter epsilon ||&amp;Epsilon; ||<br>
+||Greek capital letter zeta ||&amp;Zeta; ||<br>
+||Greek capital letter eta ||&amp;Eta; ||<br>
+||Greek capital letter theta ||&amp;Theta; ||<br>
+||Greek capital letter iota ||&amp;Iota; ||<br>
+||Greek capital letter kappa ||&amp;Kappa; ||<br>
+||Greek capital letter lambda ||&amp;Lambda; ||<br>
+||Greek capital letter mu ||&amp;Mu; ||<br>
+||Greek capital letter nu ||&amp;Nu; ||<br>
+||Greek capital letter xi ||&amp;Xi; ||<br>
+||Greek capital letter omicron ||&amp;Omicron; ||<br>
+||Greek capital letter pi ||&amp;Pi; ||<br>
+||Greek capital letter rho ||&amp;Rho; ||<br>
+||Greek capital letter sigma ||&amp;Sigma; ||<br>
+||Greek capital letter tau ||&amp;Tau; ||<br>
+||Greek capital letter upsilon ||&amp;Upsilon; ||<br>
+||Greek capital letter phi ||&amp;Phi; ||<br>
+||Greek capital letter chi ||&amp;Chi; ||<br>
+||Greek capital letter psi ||&amp;Psi; ||<br>
+||Greek capital letter omega ||&amp;Omega; ||<br>
+||Greek small letter alpha ||&amp;alpha; ||<br>
+||Greek small letter beta ||&amp;beta; ||<br>
+||Greek small letter gamma ||&amp;gamma; ||<br>
+||Greek small letter delta ||&amp;delta; ||<br>
+||Greek small letter epsilon ||&amp;epsilon; ||<br>
+||Greek small letter zeta ||&amp;zeta; ||<br>
+||Greek small letter eta ||&amp;eta; ||<br>
+||Greek small letter theta ||&amp;theta; ||<br>
+||Greek small letter iota ||&amp;iota; ||<br>
+||Greek small letter kappa ||&amp;kappa; ||<br>
+||Greek small letter lambda ||&amp;lambda; ||<br>
+||Greek small letter mu ||&amp;mu; ||<br>
+||Greek small letter nu ||&amp;nu; ||<br>
+||Greek small letter xi ||&amp;xi; ||<br>
+||Greek small letter omicron ||&amp;omicron; ||<br>
+||Greek small letter pi ||&amp;pi; ||<br>
+||Greek small letter rho ||&amp;rho; ||<br>
+||Greek small letter final sigma ||&amp;sigmaf; ||<br>
+||Greek small letter sigma ||&amp;sigma; ||<br>
+||Greek small letter tau ||&amp;tau; ||<br>
+||Greek small letter upsilon ||&amp;upsilon; ||<br>
+||Greek small letter phi ||&amp;phi; ||<br>
+||Greek small letter chi ||&amp;chi; ||<br>
+||Greek small letter psi ||&amp;psi; ||<br>
+||Greek small letter omega ||&amp;omega; ||<br>
+||Greek small letter theta symbol ||&amp;thetasym; ||<br>
+||Greek upsilon with hook symbol ||&amp;upsih; ||<br>
+||Greek pi symbol ||&amp;piv; ||<br>
+||bullet = black small circle ||&amp;bull; ||<br>
+||horizontal ellipsis = three dot leader ||&amp;hellip; ||<br>
+||prime = minutes = feet ||&amp;prime; ||<br>
+||double prime = seconds = inches ||&amp;Prime; ||<br>
+||overline = spacing overscore ||&amp;oline; ||<br>
+||fraction slash ||&amp;frasl; ||<br>
+||script capital P = power set = Weierstrass p ||&amp;weierp; ||<br>
+||blackletter capital I = imaginary part ||&amp;image; ||<br>
+||blackletter capital R = real part symbol ||&amp;real; ||<br>
+||trade mark sign ||&amp;trade; ||<br>
+||alef symbol = first transfinite cardinal ||&amp;alefsym; ||<br>
+||leftwards arrow ||&amp;larr; ||<br>
+||upwards arrow ||&amp;uarr; ||<br>
+||rightwards arrow ||&amp;rarr; ||<br>
+||downwards arrow ||&amp;darr; ||<br>
+||left right arrow ||&amp;harr; ||<br>
+||downwards arrow with corner leftwards = carriage return ||&amp;crarr; ||<br>
+||leftwards double arrow ||&amp;lArr; ||<br>
+||upwards double arrow ||&amp;uArr; ||<br>
+||rightwards double arrow ||&amp;rArr; ||<br>
+||downwards double arrow ||&amp;dArr; ||<br>
+||left right double arrow ||&amp;hArr; ||<br>
+||for all ||&amp;forall; ||<br>
+||partial differential ||&amp;part; ||<br>
+||there exists ||&amp;exist; ||<br>
+||empty set = null set = diameter ||&amp;empty; ||<br>
+||nabla = backward difference ||&amp;nabla; ||<br>
+||element of ||&amp;isin; ||<br>
+||not an element of ||&amp;notin; ||<br>
+||contains as member ||&amp;ni; ||<br>
+||n-ary product = product sign ||&amp;prod; ||<br>
+||n-ary sumation ||&amp;sum; ||<br>
+||minus sign ||&amp;minus; ||<br>
+||asterisk operator ||&amp;lowast; ||<br>
+||square root = radical sign ||&amp;radic; ||<br>
+||proportional to ||&amp;prop; ||<br>
+||infinity ||&amp;infin; ||<br>
+||angle ||&amp;ang; ||<br>
+||logical and = wedge ||&amp;and; ||<br>
+||logical or = vee ||&amp;or; ||<br>
+||intersection = cap ||&amp;cap; ||<br>
+||union = cup ||&amp;cup; ||<br>
+||integral ||&amp;int; ||<br>
+||therefore ||&amp;there4; ||<br>
+||tilde operator = varies with = similar to ||&amp;sim; ||<br>
+||approximately equal to ||&amp;cong; ||<br>
+||almost equal to = asymptotic to ||&amp;asymp; ||<br>
+||not equal to ||&amp;ne; ||<br>
+||identical to ||&amp;equiv; ||<br>
+||less-than or equal to ||&amp;le; ||<br>
+||Greater-than or equal to ||&amp;ge; ||<br>
+||subset of ||&amp;sub; ||<br>
+||superset of ||&amp;sup; ||<br>
+||not a subset of ||&amp;nsub; ||<br>
+||subset of or equal to ||&amp;sube; ||<br>
+||superset of or equal to ||&amp;supe; ||<br>
+||circled plus = direct sum ||&amp;oplus; ||<br>
+||circled times = vector product ||&amp;otimes; ||<br>
+||up tack = orthogonal to = perpendicular ||&amp;perp; ||<br>
+||dot operator ||&amp;sdot; ||<br>
+||left ceiling = APL upstile ||&amp;lceil; ||<br>
+||right ceiling ||&amp;rceil; ||<br>
+||left floor = APL downstile ||&amp;lfloor; ||<br>
+||right floor ||&amp;rfloor; ||<br>
+||lozenge ||&amp;loz; ||<br>
+||black spade suit ||&amp;spades; ||<br>
+||black club suit = shamrock ||&amp;clubs; ||<br>
+||black heart suit = valentine ||&amp;hearts; ||<br>
+||black diamond suit ||&amp;diams; ||<br>
+</td><td class="diff-vertical"></td><td class="diff-para-added">||Section&nbsp; ||&amp;sect;||&amp;amp;sect;||<br>
+||Copyright ||&amp;copy;||&amp;amp;copy;||<br>
+||Registered trademark ||&amp;reg;||&amp;amp;reg;||<br>
+||Trademark ||&amp;trade;||&amp;amp;trade;||<br>
+||Degrees&nbsp; ||&amp;deg;||&amp;amp;deg;||<br>
+||Dagger ||&amp;dagger;||&amp;amp;dagger;||<br>
+||Double dagger ||&amp;Dagger;||&amp;amp;Dagger;||<br>
+||Paragraph symbol (pilcrow)&nbsp; ||&amp;para;||&amp;amp;para;||<br>
+<br>
+!!Arrows|width=300!!Symbol|width=100!!Code!!<br>
+||Leftward arrow&nbsp; ||&amp;#x2190;||&amp;amp;#x2190;||<br>
+||Rightward arrow ||&amp;#x2192;||&amp;amp;#x2192;||<br>
+||Upward arrow ||&amp;#x2191;||&amp;amp;#x2191;||<br>
+||Downward arrow ||&amp;#x2193;||&amp;amp;#x2193;||<br>
+||Left right arrow ||&amp;#x2194;||&amp;amp;#x2194;||<br>
+||Leftward double arrow ||&amp;#x21D0;||&amp;amp;#x21D0;||<br>
+||Rightward double arrow&nbsp; ||&amp;#x21D2;||&amp;amp;#x21D2;||<br>
+||Upward double arrow ||&amp;#x21D1;||&amp;amp;#x21D1;||<br>
+||Downward double arrow ||&amp;#x21D3;||&amp;amp;#x21D3;||<br>
+||Left right double arrow ||&amp;#x21D4;||&amp;amp;#x21D4;||<br>
+<br>
+!!Math Symbols|width=300!!Symbol|width=100!!Code!!<br>
+||Plus or minus&nbsp; ||&amp;plusmn;||&amp;amp;plusmn;||<br>
+||Multiplication sign ||&amp;times;||&amp;amp;times;||<br>
+||Division sign ||&amp;divide;||&amp;amp;divide;||<br>
+||Less-than or equal-to&nbsp; ||&amp;le;||&amp;amp;le;||<br>
+||Greater-than or equal-to ||&amp;ge;||&amp;amp;ge;||<br>
+||Not equal to ||&amp;ne;||&amp;amp;ne;||<br>
+||Approximately equal to&nbsp; ||&amp;cong;||&amp;amp;cong;||<br>
+||Almost equal to ||&amp;asymp;||&amp;amp;asymp;||<br>
+||Identical to ||&amp;equiv;||&amp;amp;equiv;||<br>
+||Infinity ||&amp;infin;||&amp;amp;infin;||<br>
+<br>
+!!Planet|width=300!!Symbol|width=100!!Code!!<br>
+||Mercury&nbsp; ||&amp;#x263F;||&amp;amp;#x263F;||<br>
+||Venus (also female symbol) ||&amp;#x2640;||&amp;amp;#x2640;||<br>
+||Earth ||&amp;#x2641;||&amp;amp;#x2641;||<br>
+||Mars (also male symbol) ||&amp;#x2642;||&amp;amp;#x2642;||<br>
+||Jupiter ||&amp;#x2643;||&amp;amp;#x2643;||<br>
+||Saturn ||&amp;#x2644;||&amp;amp;#x2644;||<br>
+||Uranus ||&amp;#x2645;||&amp;amp;#x2645;||<br>
+||Neptune ||&amp;#x2646;||&amp;amp;#x2646;||<br>
+||Pluto ||&amp;#x2647;||&amp;amp;#x2647;||<br>
+<br>
+!!Signs of the Zodiac|width=300!!Symbol|width=100!!Code!!<br>
+||Aries&nbsp; ||&amp;#x2648;||&amp;amp;#x2648;||<br>
+||Taurus ||&amp;#x2649;||&amp;amp;#x2649;||<br>
+||Gemini ||&amp;#x264A;||&amp;amp;#x264A;||<br>
+||Cancer ||&amp;#x264B;||&amp;amp;#x264B;||<br>
+||Leo ||&amp;#x264C;||&amp;amp;#x264C;||<br>
+||Virgo ||&amp;#x264D;||&amp;amp;#x264D;||<br>
+||Libra ||&amp;#x264E;||&amp;amp;#x264E;||<br>
+||Scorpio ||&amp;#x264F;||&amp;amp;#x264F;||<br>
+||Sagittarius ||&amp;#x2650;||&amp;amp;#x2650;||<br>
+||Capricorn ||&amp;#x2651;||&amp;amp;#x2651;||<br>
+||Aquarius ||&amp;#x2652;||&amp;amp;#x2652;||<br>
+||Pisces ||&amp;#x2653;||&amp;amp;#x2653;||<br>
+</td></tr></table></div>

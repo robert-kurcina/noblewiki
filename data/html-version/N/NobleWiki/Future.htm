@@ -1,0 +1,91 @@
+Content-Type: text/html; charset=UTF-8
+
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+<head>
+<title>Noble Pursuit Games Wiki: NobleWiki/Future</title>
+<meta name='keywords' content='Noble, Wiki/Future'/>
+<meta http-equiv='Content-Type' content='text/html;UTF-8' >
+<meta name='robots' content='noindex,nofollow'>
+<meta http-equiv='Pragma' content='no-cache'>
+<meta http-equiv='Expires' content='-1'><link rel="stylesheet" href="/css/wiki/default.css"><meta name="robots" content="index,follow" />
+
+<link type='text/css' rel='stylesheet' media='print' href='/css/printer.friendly.css'/>
+<link type='text/css' rel='stylesheet' media='screen' href='/css/jquery/jquery.lightbox.css'/>
+<script type='text/javascript' src='/js/jquery/jquery.js'></script>
+<script type='text/javascript' src='/js/jquery/jquery.lightbox.js'></script>
+<script type='text/javascript' src='/js/jquery/jquery.tablesorter.js'></script>
+<script type='text/javascript' src='/js/codepress/codepress.js'></script>
+<script type='text/javascript' src='/js/ufo/ufo.js'></script>
+<script type='text/javascript' src='/js/wiki/NPG.js'></script>
+</head>
+<body>
+<div id='wikicontainer-outer'>
+<div id='wikicontainer-inner'>
+<div id='wikicontainer'>
+<a name='wikiheader'></a><div class='wikiheader'><h3>&nbsp;</h3><h1><a href='index.cgi?back=/Future' title='click to see which pages link to this one' class='wikiscriptlinktitle'>NobleWiki/Future</a><a href='index.cgi?action=edit&id=NobleWiki/Future' title='click to edit this page'><span class='wikiediticon'>&nbsp;</span></a></h1>
+<div class='wikigotobar'><a href='index.cgi?NobleWiki' class='wikipagelink locked'>NobleWiki&not;</a>
+<a href='index.cgi?action=browse&id=NobleWiki/Future' class='selected'>View</a>
+<a href='index.cgi?action=edit&id=NobleWiki/Future'>Edit</a>
+<a href='index.cgi?action=browse&id=NobleWiki/Future_Notes' class='notfound'>Notes</a>
+<a href='index.cgi?action=history&id=NobleWiki/Future'>Version History</a>
+<a href='index.cgi?RecentChanges'>Recent Changes</a>
+<a href='index.cgi?Help'>Help</a><a href='#wikifooter' class='wikiscriptlink' title='click to jump to footer'>&darr;</a></div>
+<div class='wikilineheader'></div></div>
+<div class='wikileftnav'>
+    <div class='wikileftnavbox'>
+        <ul>
+<li><a class='wikipagelink' title='click to visit this page.' href='?HomePage'>Main</a></li>
+<li><a class='wikipagelink' title='click to visit this page.' href='?About'>About</a></li>
+<li><a class='wikipagelink' title='click to visit this page.' href='?CategoryCategory'>Contents</a></li>
+<li><a class='wikipagelink' title='click to visit this page.' href='?Featured'>Featured</a></li>
+<li><a class='wikipagelink' title='click to visit this page.' href='?SandBox'>SandBox</a></li>
+<li><a class='wikipagelink' title='click to visit this page.' href='?WikiContacts'>Contact Us</a></li>
+<li><a class='wikipagelink' title='click to visit this page.' href='?Help'>Help</a></li>
+        </ul>
+    </div>    
+    <div class='wikileftnavbox'>
+        <ul>
+<li><a class='wikipagelink' title='click to visit this page.' href='?action=newlogin'>Login</a></li>
+<li><a class='wikipagelink' title='click to visit this page.' href='?action=listfiles&filter=!/'>List Assets</a></li>
+<li><a class='wikipagelink' title='click to visit this page.' href='?RecentChanges'>Recent changes</a></li>
+<li><a class='wikipagelink' title='click to visit this page.' href='?ListOfWantedPages'>Wanted Pages</a></li>
+<li><a class='wikipagelink' title='click to visit this page.' href='?action=version'>System Info</a></li>
+        </ul>
+    </div>
+    <div class='wikileftnavbox'>
+        <ul>
+<li><a href='index.cgi?action=edit&id=NobleWiki/Future'>Edit Page</a></li>
+<li class='disabled'>Discuss Page</li>
+<li><a href='index.cgi?action=edit&id=NobleWiki/Future_Notes' title='click to create notes for this page'>Notes Page</a></li>
+<li><a href='index.cgi?action=history&id=NobleWiki/Future'>Version History</a></li>
+    </ul></div>
+    <div class='wikileftnavsearch' style='text-align:right;'>
+        <form>
+            <div class='wikisearchlabel' style='text-align:left;'><b>Search</b></div>
+            <input type='text' title='Enter ! before search term for exclusion' name='search' class='searchterm' />
+            <span><input type='checkbox' value='1' name='regex' title='click to enable searches using Regular Expressions'/>regex&nbsp;</span>
+			<span><input type='checkbox' value='1' checked='checked' name='titlesonly' title='click to restrict results to page titles'/>titles</span>
+            <input id='btnGo' type='submit' value='Go!' name='dosearch' title='click to perform your search request.'/>
+        </form><div style='clear: both;'></div></div>
+</div>
+<div class='wikitext'>
+<p>These items I think I'll need to complete before I submit the code to <a href='http://www.sourceforge.net' target='_blank' title='SourceForge' class='wikibracketurl external '>SourceForge</a>
+
+<p><table id='tablesorter-1'   class='tablesorter wikilargelist'><thead><tr><th   width='300' align='left' colspan='1'>Features Planned</th><th    align='left' colspan='1'>Description</th></tr></thead>
+<tbody><tr><td    align='left' colspan='1'>Update <tt>PRINT</tt></td><td    align='left' colspan='1'>All of the incidences of the <tt>PRINT</tt> command in the code need to be replaced with a String glob.  This will make the code more flexible.</td></tr>
+<tr><td    align='left' colspan='1'>Localization</td><td    align='left' colspan='1'>I see the <tt>trans.pl</tt> and <tt>umtrans.pl</tt>.  I'm not sure that this is the best way to support I18N.  For example, the wiki engine should be able to serve up content localized to a specific language when given a preference.  This requires sub-directories by language in the database such as <tt>//en/content1</tt>  or <tt>//ja/content2</tt>.</td></tr>
+<tr><td    align='left' colspan='1'>Lock List</td><td    align='left' colspan='1'>The administrator view needs to be able to determine which pages have been locked, and which pages are private.</td></tr>
+<tr><td    align='left' colspan='1'>Visitor's Log</td><td    align='left' colspan='1'>This would be an audit trail of visitors by IP address and possibly by logon ID.</td></tr>
+<tr><td    align='left' colspan='1'>Home Page Binding</td><td    align='left' colspan='1'>Once Preferences are set and a logon ID is determined, the visitor should be given the option to create a Home Page or to redirect to it if it already exists.</td></tr>
+<tr><td    align='left' colspan='1'>GMT Offset Detection</td><td    align='left' colspan='1'>This could be done via <a href='index.cgi?JavaScript' class='wikipagelink'>JavaScript</a> and passed automatically to the CGI whenever a page is edited.  Of course, also preset this in the Preferences page as well.</td></tr>
+<tr><td    align='left' colspan='1'>Namespaces</td><td    align='left' colspan='1'>This would create separate directories for sets of pages that will not be searched/indexed unless explicitly invoked.</td></tr>
+<tr><td    align='left' colspan='1'>WikiFarm</td><td    align='left' colspan='1'>This will create a separate set of directories for each wiki instance, to include data and configuration files.  The idea is to have single CGI script but allow multiple wiki sites without having to modify the HTTPd configuration files.</td></tr>
+<tr><td    align='left' colspan='1'>Authentication</td><td    align='left' colspan='1'>The existing <a href='http://www.usemod.com/cgi-bin/wiki.pl?UseMod' target='_blank' class='wikiurlorimage external'>UseMod:UseMod</a> system for user management doesn't really support roles, groups, and management of page collections.  By enhancing this feature the <a href='index.cgi?NobleWiki' class='wikipagelink locked'>NobleWiki&not;</a> engine becomes more realistic as an option for use by others.</td></tr>
+</tbody></table></p></div>
+
+<div class='wikilinefooter'></div>
+<a name='wikifooter'></a><div class='wikifooter'>
+<div class='wikirevision'>Created 2008.11.08 20:36 PST by RobertKurcina | Last edited 2008.11.08 20:46 PST by <a href='index.cgi?HomePage/RobertKurcina' title='ID 1339 from localhost' class='wikiscriptlinktitle'>RobertKurcina</a> <a href='index.cgi?action=browse&amp;diff=1&amp;id=NobleWiki/Future' title='click to view last revision' class='wikiscriptlinktitle'>(diff)</a>
+<form id='wikifooterform' action='index.cgi' enctype='application/x-www-form-urlencoded' method='POST'></form><a href='?action=editprefs'><div id='anylogo' title='Guest  '>&nbsp;</div></a><div style='clear: both;'></div></div>
+<script>$(document).ready(function(){ $('#tablesorter-1').tablesorter({widgets: ['zebra']}); });</script></div></div></div></div></body></html>

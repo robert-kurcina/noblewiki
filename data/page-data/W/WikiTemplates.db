@@ -1,0 +1,88 @@
+versionÿþ13ÿþ1tsÿþ11223011382ÿþ1cache_oldmajorÿþ120ÿþ1cache_oldauthorÿþ121ÿþ1cache_diff_default_authorÿþ11ÿþ1revisionÿþ122ÿþ1tscreateÿþ11179982138ÿþ1text_defaultÿþ1versionÿþ21ÿþ2ipÿþ2127.0.0.1ÿþ2tsÿþ21223011382ÿþ2nameÿþ2text_defaultÿþ2dataÿþ2summaryÿþ3*ÿþ3textÿþ3= Using Templated Layouts =
+A template is an entry with a specific layout and place-holder variables.  Any other entry may then make reference to the template and send variables to it.  This allows a standardized presentation of commonly provided information, such as profile pages.
+
+{{toc}}
+
+== Examples =
+Two kinds of templates can be created; primary or sub-pages, as can be seen on these two links:
+ ExampleTemplate
+ /TemplateExample
+ /TemplateCategories
+
+=== Sample Template =
+For example, here's the code for the both of the templates used.  It's a simple table with three variables named <tt>$VARIABLE1$, $VARIABLE2$, $VARIABLE3$</tt>.  Note that each variable is cushioned by the <tt>$</tt> symbol on either side.
+
+<pre>
+!!!! EXAMPLE Template !!
+|| Image|| $VARIABLE1$ ||
+|| link|| $VARIABLE2$ ||
+|| my sub-page|| $VARIABLE3$ ||
+|| your sub-page ||$VARIABLE4$ ||
+|| bracketed url ||$VARIABLE5$ ||
+</pre>
+
+=== Sending parameters =
+To utilize a template, create a data block that begins with <tt>'{{template:'</tt> ends with paired curly braces <tt>'}}'</tt>.  Within that block, specify the template name immediately after the 'template;' command, and calling out each place-holder variable exactly as defined in the template except for the <tt>'$'</tt> symbols.  Set values to each variables as desired following an <tt>'='</tt> equals sign symbol.
+
+==== Parent Template =
+This example shows a data block using a primary page template <tt>'ExampleTemplate</tt>, and passing several values including an image link via the <tt>upload:</tt> syntax.
+<pre>
+{{template:ExampleTemplate
+VARIABLE1 = upload:SAMPLE.churcill.jpg
+VARIABLE2 = DoesntExist
+VARIABLE3 = /ImpossibleFile
+VARIABLE4 = DoesntExist/ExampleDummy
+VARIABLE5 = [[DoesntExist/ExampleDummy|Nothing]]
+}}</pre>
+{{template:ExampleTemplate
+VARIABLE1 = upload:SAMPLE.churcill.jpg
+VARIABLE2 = DoesntExist
+VARIABLE3 = /ImpossibleFile
+VARIABLE4 = DoesntExist/ExampleDummy
+VARIABLE5 = [[DoesntExist/ExampleDummy|Nothing]]
+}}
+
+==== Sub-page Template =
+This example shows use of a template created as a sub-page.  Notice that the parameters are the same, and that the sub-page is shown fully qualified as <tt>WikiTemplates/TemplateExample</tt> instead of <tt>/TemplateExample</tt>.
+<pre>
+{{template:WikiTemplates/TemplateExample
+VARIABLE1 = upload:SAMPLE.churcill.jpg
+VARIABLE2 = DoesntExist
+VARIABLE3 = /ImpossibleFile
+VARIABLE4 = DoesntExist/ExampleDummy
+VARIABLE5 = [[DoesntExist/ExampleDummy|Nothing]]
+}}</pre>
+{{template:WikiTemplates/TemplateExample
+VARIABLE1 = upload:SAMPLE.churcill.jpg
+VARIABLE2 = DoesntExist
+VARIABLE3 = /ImpossibleFile
+VARIABLE4 = DoesntExist/ExampleDummy
+VARIABLE5 = [[DoesntExist/ExampleDummy|Nothing]]
+}}
+
+== Organization =
+Place all templates as sub-pages under WikiTemplates as slash '/' and then the template name as in /TemplateExample.  Or, if the templates are external to this page, prefix them with <tt>Template</tt> as the keyword for it's WikiName.
+
+== Related Entries =
+{{template:RelatedEntries/WikiEditing}}
+
+ {{subpages}}
+ÿþ3newauthorÿþ31ÿþ3minorÿþ31ÿþ2usernameÿþ2RobertKurcinaÿþ2hostÿþ2localhostÿþ2revisionÿþ222ÿþ2tscreateÿþ21179982138ÿþ2idÿþ21298ÿþ2keeptsÿþ21223011382ÿþ1cache_diff_default_majorÿþ1<div id=wikidiffdiv><table id=wikidifftable><tr valign=top><td class="diff-header">Paragraph 56</td><td class="diff-vertical">&nbsp;</td><td class="diff-header">Paragraph 56</td></tr><tr valign=top><td class="diff-para-ident">Place all templates as sub-pages under WikiTemplates as slash '/' and then the template name as in /TemplateExample.&nbsp; Or, if the templates are external to this page, prefix them with &lt;tt&gt;Template&lt;/tt&gt; as the keyword for it's WikiName.<br>
+<br>
+</td><td class="diff-vertical"></td><td class="diff-para-ident">Place all templates as sub-pages under WikiTemplates as slash '/' and then the template name as in /TemplateExample.&nbsp; Or, if the templates are external to this page, prefix them with &lt;tt&gt;Template&lt;/tt&gt; as the keyword for it's WikiName.<br>
+<br>
+</td></tr><tr valign=top><td class="diff-para-ident"></td><td class="diff-vertical"></td><td class="diff-para-added">== Related Entries =<br>
+</td></tr><tr valign=top><td class="diff-para-ident">{{template:RelatedEntries/WikiEditing}}<br>
+<br>
+</td><td class="diff-vertical"></td><td class="diff-para-ident">{{template:RelatedEntries/WikiEditing}}<br>
+<br>
+</td></tr><tr valign=top><td class="diff-para-deleted">&nbsp;#SUBPAGES<br>
+</td><td class="diff-vertical"></td><td class="diff-para-added">&nbsp;{{subpages}}<br>
+</td></tr></table></div>ÿþ1cache_diff_default_minorÿþ1<div id=wikidiffdiv><table id=wikidifftable><tr valign=top><td class="diff-header">Paragraph 56</td><td class="diff-vertical">&nbsp;</td><td class="diff-header">Paragraph 56</td></tr><tr valign=top><td class="diff-para-ident">Place all templates as sub-pages under WikiTemplates as slash '/' and then the template name as in /TemplateExample.&nbsp; Or, if the templates are external to this page, prefix them with &lt;tt&gt;Template&lt;/tt&gt; as the keyword for it's WikiName.<br>
+<br>
+</td><td class="diff-vertical"></td><td class="diff-para-ident">Place all templates as sub-pages under WikiTemplates as slash '/' and then the template name as in /TemplateExample.&nbsp; Or, if the templates are external to this page, prefix them with &lt;tt&gt;Template&lt;/tt&gt; as the keyword for it's WikiName.<br>
+<br>
+</td></tr><tr valign=top><td class="diff-para-ident"></td><td class="diff-vertical"></td><td class="diff-para-added">== Related Entries =<br>
+</td></tr><tr valign=top><td class="diff-para-ident">{{template:RelatedEntries/WikiEditing}}<br>
+</td><td class="diff-vertical"></td><td class="diff-para-ident">{{template:RelatedEntries/WikiEditing}}<br>
+</td></tr></table></div>

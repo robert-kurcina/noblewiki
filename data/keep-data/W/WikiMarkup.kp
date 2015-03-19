@@ -1,0 +1,535 @@
+ÿþ1tsÿþ21195700184ÿþ2ipÿþ2127.0.0.1ÿþ2versionÿþ21ÿþ2nameÿþ2text_defaultÿþ2dataÿþ2summaryÿþ3*ÿþ3textÿþ3= Wiki Markup Syntax =
+
+<toc>
+
+== Text Formatting =
+This page provides both the rules for text formatting and succinct examples. See elsewhere for the rules on lists, linking, etc.
+
+''Features marked with *** require the HtmlTags option to be activated.''
+
+=== Paragraphs =
+Leave a blank line between paragraphs.
+
+Like this<pre>
+Leave a blank line between paragraphs.
+
+Like this
+</pre>
+
+=== Emphasis =
+Create bold and italicized text via HTML tags, eg;
+<pre>
+<b>bold</b> <i>italic</i> <b><i>bold and italic</i></b> <u>underline</u> <s>strikeout</s> <sup>superscript</sup> <sub>subscript</sub><br /> <big>big</big> <small>small</small>
+</pre>
+<b>bold</b> <i>italic</i> <b><i>bold and italic</i></b> <u>underline</u><s>strikeout</s><sup>superscript</sup>*** <sub>subscript</sub>*** <big>big</big>*** <small>small</small>***
+
+=== Monospace text =
+Create monospace text by using a " " space as the first character on a line,
+eg<pre>
+ This is text in a monospace font
+</pre>
+ This is text in a monospace font
+----
+Alternatively use the HTML tags
+eg<pre>
+<tt>typewriter</tt>
+</pre>
+<tt>typewriter</tt>
+
+=== Indenting =
+Indent text by using a ":" colon as the first character on a line,
+eg<pre>
+:Text
+::More text
+:::Yet more text
+</pre>
+:Text
+::More text
+:::Yet more text
+
+=== Line continuation =
+Continue a line of text by using a "\" backslash. This can be useful for breaking up long lines of text in line sensitive sections such as lists or indented text,
+eg
+ * This bullet\\
+ <br>point could have a long\\
+ <br>sentence that takes several lines.
+
+* This bullet\
+point could have a long\
+sentence that takes several lines.
+
+=== New line =
+Use <nowiki><br></nowiki> to change the line eg
+ First line<nowiki><br></nowiki>
+ Next line
+
+=== Escaping =
+Use <nowiki><nowiki></nowiki></nowiki> to terminate WikiWord<nowiki>s</nowiki>
+eg <pre>Wikiword<nowiki><nowiki>s</nowiki></nowiki></pre> 
+
+Also, WikiWord""s may be formatted as <nowiki>WikiWord""s</nowiki>.
+
+Use <nowiki><nowiki></nowiki></nowiki> to disable wiki rules within a piece of text, eg:
+ <nowiki><nowiki>WikiNames are not linked, '''formatting''' does not occur.</nowiki><nowiki><</nowiki>/nowiki>
+<nowiki>WikiNames are not linked, '''formatting''' does not occur.</nowiki>
+
+=== Quotation =
+Wrap any text with <code><nowiki><blockquote></blockquote></nowiki></code> tags in order to show it with a nice quotation mark image.  Insert your author name within <tt><cite></cite></tt> tags before closing the quote.  Here's a nice example of using blockquote:
+
+<blockquote>Memetic combat resolution only occurs during adjustment periods; whenever a new meme is introduce, or a potential host is introduced
+During each adjustment period, each meme may perform one task; infect, dominate, support, weaken, poison or ingrain. Once a host has been infected by a specific meme, it may not be infected by that meme again until the host rids the meme. <cite>-- [LocalWiki:HomePage/RobertKurcina Robert Kurcina]</cite></blockquote>
+
+=== Miscellaneous formatting =
+Use < pre> </ pre> as an alternative method of preserving layout of text, for example for code, eg
+<pre>< pre>   preserves      spacing    and
+lines</ pre></pre>
+<pre>   preserves      spacing    and
+lines</pre>
+
+== Related Entries =
+ WikiStyleGuide
+ WikiTOCs
+ WikiHeadings
+ WikiLists
+ WikiTables
+ WikiImages
+ WikiURLs
+ WikiGallery
+ WikiFlash
+ÿþ3newauthorÿþ30ÿþ3minorÿþ31ÿþ2hostÿþ2localhostÿþ2usernameÿþ2RobertKurcinaÿþ2revisionÿþ222ÿþ2idÿþ21130ÿþ2tscreateÿþ21178782977ÿþ2keeptsÿþ21195945650ÿþ1versionÿþ21ÿþ2ipÿþ2127.0.0.1ÿþ2tsÿþ21195945650ÿþ2nameÿþ2text_defaultÿþ2dataÿþ2summaryÿþ3*ÿþ3textÿþ3= Wiki Markup Syntax =
+
+<toc>
+
+== Text Formatting =
+This page provides both the rules for text formatting and succinct examples. See elsewhere for the rules on lists, linking, etc.
+
+''Features marked with *** require the HtmlTags option to be activated.''
+
+=== Paragraphs =
+Leave a blank line between paragraphs.
+
+Like this<pre>
+Leave a blank line between paragraphs.
+
+Like this
+</pre>
+
+=== Emphasis =
+Create bold and italicized text via HTML tags, eg;
+<pre>
+<b>bold</b> <i>italic</i> <b><i>bold and italic</i></b> <u>underline</u> <s>strikeout</s> <sup>superscript</sup> <sub>subscript</sub><br /> <big>big</big> <small>small</small>
+</pre>
+<b>bold</b> <i>italic</i> <b><i>bold and italic</i></b> <u>underline</u><s>strikeout</s><sup>superscript</sup>*** <sub>subscript</sub>*** <big>big</big>*** <small>small</small>***
+
+=== Monospace text =
+Create monospace text by using a " " space as the first character on a line,
+eg<pre>
+ This is text in a monospace font
+</pre>
+ This is text in a monospace font
+----
+Alternatively use the HTML tags
+eg<pre>
+<tt>typewriter</tt>
+</pre>
+<tt>typewriter</tt>
+
+=== Indenting =
+Indent text by using a ":" colon as the first character on a line,
+eg<pre>
+:Text
+::More text
+:::Yet more text
+</pre>
+:Text
+::More text
+:::Yet more text
+
+=== Line continuation =
+Continue a line of text by using a "\" backslash. This can be useful for breaking up long lines of text in line sensitive sections such as lists or indented text,
+eg
+ * This bullet\\
+ <br>point could have a long\\
+ <br>sentence that takes several lines.
+
+* This bullet\
+point could have a long\
+sentence that takes several lines.
+
+=== New line =
+Use <nowiki><br></nowiki> to change the line eg
+ First line<nowiki><br></nowiki>
+ Next line
+
+=== Escaping =
+Use <nowiki><nowiki></nowiki></nowiki> to terminate WikiWord<nowiki>s</nowiki>
+eg <pre>Wikiword<nowiki><nowiki>s</nowiki></nowiki></pre> 
+
+Also, WikiWord""s may be formatted as <nowiki>WikiWord""s</nowiki>.
+
+Use <nowiki><nowiki></nowiki></nowiki> to disable wiki rules within a piece of text, eg:
+ <nowiki><nowiki>WikiNames are not linked, '''formatting''' does not occur.</nowiki><nowiki><</nowiki>/nowiki>
+<nowiki>WikiNames are not linked, '''formatting''' does not occur.</nowiki>
+
+=== Quotation =
+Wrap any text with <code><nowiki><blockquote></blockquote></nowiki></code> tags in order to show it with a nice quotation mark image.  Insert your author name within <tt><cite></cite></tt> tags before closing the quote.  Here's a nice example of using blockquote:
+
+<blockquote>Memetic combat resolution only occurs during adjustment periods; whenever a new meme is introduce, or a potential host is introduced
+During each adjustment period, each meme may perform one task; infect, dominate, support, weaken, poison or ingrain. Once a host has been infected by a specific meme, it may not be infected by that meme again until the host rids the meme. <cite>-- [LocalWiki:HomePage/RobertKurcina Robert Kurcina]</cite></blockquote>
+
+=== Miscellaneous formatting =
+Use < pre> </ pre> as an alternative method of preserving layout of text, for example for code, eg
+<pre>< pre>   preserves      spacing    and
+lines</ pre></pre>
+<pre>   preserves      spacing    and
+lines</pre>
+
+== Related Entries =
+{{template:RelatedEntries/WikiEditing}}
+ÿþ3minorÿþ31ÿþ3newauthorÿþ31ÿþ2usernameÿþ2RobertKurcinaÿþ2hostÿþ2localhostÿþ2revisionÿþ223ÿþ2tscreateÿþ21178782977ÿþ2idÿþ21149ÿþ2keeptsÿþ21222627973ÿþ1tsÿþ21222627973ÿþ2ipÿþ2127.0.0.1ÿþ2versionÿþ21ÿþ2nameÿþ2text_defaultÿþ2dataÿþ2summaryÿþ3*ÿþ3textÿþ3= Wiki Markup Syntax =
+
+<toc>
+
+== Text Formatting =
+This page provides both the rules for text formatting and succinct examples. See elsewhere for the rules on lists, linking, etc.
+
+''Features marked with *** require the HtmlTags option to be activated.''
+
+=== Paragraphs =
+Leave a blank line between paragraphs.
+
+Like this<pre>
+Leave a blank line between paragraphs.
+
+Like this
+</pre>
+
+=== Emphasis =
+Create bold and italicized text via HTML tags, eg;
+<pre>
+<b>bold</b> <i>italic</i> <b><i>bold and italic</i></b> <u>underline</u> <s>strikeout</s> <sup>superscript</sup> <sub>subscript</sub><br /> <big>big</big> <small>small</small>
+</pre>
+<b>bold</b> <i>italic</i> <b><i>bold and italic</i></b> <u>underline</u><s>strikeout</s><sup>superscript</sup>*** <sub>subscript</sub>*** <big>big</big>*** <small>small</small>***
+
+=== Monospace text =
+Create monospace text by using a " " space as the first character on a line,
+eg<pre>
+ This is text in a monospace font
+</pre>
+ This is text in a monospace font
+----
+Alternatively use the HTML tags
+eg<pre>
+<tt>typewriter</tt>
+</pre>
+<tt>typewriter</tt>
+
+=== Indenting =
+Indent text by using a ":" colon as the first character on a line,
+eg<pre>
+:Text
+::More text
+:::Yet more text
+</pre>
+:Text
+::More text
+:::Yet more text
+
+=== Line continuation =
+Continue a line of text by using a "\" backslash. This can be useful for breaking up long lines of text in line sensitive sections such as lists or indented text,
+eg
+ * This bullet\\
+ <br>point could have a long\\
+ <br>sentence that takes several lines.
+
+* This bullet\
+point could have a long\
+sentence that takes several lines.
+
+=== New line =
+Use <nowiki><br></nowiki> to change the line eg
+ First line<nowiki><br></nowiki>
+ Next line
+
+=== Escaping =
+Use <nowiki><nowiki></nowiki></nowiki> to terminate WikiWord<nowiki>s</nowiki>
+eg <pre>Wikiword<nowiki><nowiki>s</nowiki></nowiki></pre> 
+
+Also, WikiWord""s may be formatted as <nowiki>WikiWord""s</nowiki>.
+
+Use <nowiki><nowiki></nowiki></nowiki> to disable wiki rules within a piece of text, eg:
+ <nowiki><nowiki>WikiNames are not linked, '''formatting''' does not occur.</nowiki><nowiki><</nowiki>/nowiki>
+<nowiki>WikiNames are not linked, '''formatting''' does not occur.</nowiki>
+
+=== Quotation =
+Wrap any text with <code><nowiki><blockquote></blockquote></nowiki></code> tags in order to show it with a nice quotation mark image.  Insert your author name within <tt><cite></cite></tt> tags before closing the quote.  Here's a nice example of using blockquote:
+
+<blockquote>Memetic combat resolution only occurs during adjustment periods; whenever a new meme is introduce, or a potential host is introduced
+During each adjustment period, each meme may perform one task; infect, dominate, support, weaken, poison or ingrain. Once a host has been infected by a specific meme, it may not be infected by that meme again until the host rids the meme. <cite>-- [LocalWiki:HomePage/RobertKurcina Robert Kurcina]</cite></blockquote>
+
+=== Miscellaneous formatting =
+Use < pre> </ pre> as an alternative method of preserving layout of text, for example for code, eg
+<pre>< pre>   preserves      spacing    and
+lines</ pre></pre>
+<pre>   preserves      spacing    and
+lines</pre>
+
+{{template:RelatedEntries/WikiEditing}}
+ÿþ3newauthorÿþ31ÿþ3minorÿþ31ÿþ2hostÿþ2localhostÿþ2usernameÿþ2RobertKurcinaÿþ2revisionÿþ224ÿþ2idÿþ21261ÿþ2tscreateÿþ21178782977ÿþ2keeptsÿþ21222752418ÿþ1versionÿþ21ÿþ2ipÿþ2127.0.0.1ÿþ2tsÿþ21222752418ÿþ2nameÿþ2text_defaultÿþ2dataÿþ2summaryÿþ3*ÿþ3textÿþ3= Wiki Markup Syntax =
+
+{{toc}}
+
+== Text Formatting =
+This page provides both the rules for text formatting and succinct examples. See elsewhere for the rules on lists, linking, etc.
+
+''Features marked with *** require the HtmlTags option to be activated.''
+
+=== Paragraphs =
+Leave a blank line between paragraphs.
+
+Like this<pre>
+Leave a blank line between paragraphs.
+
+Like this
+</pre>
+
+=== Emphasis =
+Create bold and italicized text via HTML tags, eg;
+<pre>
+<b>bold</b> <i>italic</i> <b><i>bold and italic</i></b> <u>underline</u> <s>strikeout</s> <sup>superscript</sup> <sub>subscript</sub><br /> <big>big</big> <small>small</small>
+</pre>
+<b>bold</b> <i>italic</i> <b><i>bold and italic</i></b> <u>underline</u><s>strikeout</s><sup>superscript</sup>*** <sub>subscript</sub>*** <big>big</big>*** <small>small</small>***
+
+=== Monospace text =
+Create monospace text by using a " " space as the first character on a line,
+eg<pre>
+ This is text in a monospace font
+</pre>
+ This is text in a monospace font
+----
+Alternatively use the HTML tags
+eg<pre>
+<tt>typewriter</tt>
+</pre>
+<tt>typewriter</tt>
+
+=== Indenting =
+Indent text by using a ":" colon as the first character on a line,
+eg<pre>
+:Text
+::More text
+:::Yet more text
+</pre>
+:Text
+::More text
+:::Yet more text
+
+=== Line continuation =
+Continue a line of text by using a "\" backslash. This can be useful for breaking up long lines of text in line sensitive sections such as lists or indented text,
+eg
+ * This bullet\\
+ <br>point could have a long\\
+ <br>sentence that takes several lines.
+
+* This bullet\
+point could have a long\
+sentence that takes several lines.
+
+=== New line =
+Use <nowiki><br></nowiki> to change the line eg
+ First line<nowiki><br></nowiki>
+ Next line
+
+=== Escaping =
+Use <nowiki><nowiki></nowiki></nowiki> to terminate WikiWord<nowiki>s</nowiki>
+eg <pre>Wikiword<nowiki><nowiki>s</nowiki></nowiki></pre> 
+
+Also, WikiWord""s may be formatted as <nowiki>WikiWord""s</nowiki>.
+
+Use <nowiki><nowiki></nowiki></nowiki> to disable wiki rules within a piece of text, eg:
+ <nowiki><nowiki>WikiNames are not linked, '''formatting''' does not occur.</nowiki><nowiki><</nowiki>/nowiki>
+<nowiki>WikiNames are not linked, '''formatting''' does not occur.</nowiki>
+
+=== Quotation =
+Wrap any text with <code><nowiki><blockquote></blockquote></nowiki></code> tags in order to show it with a nice quotation mark image.  Insert your author name within <tt><cite></cite></tt> tags before closing the quote.  Here's a nice example of using blockquote:
+
+<blockquote>Memetic combat resolution only occurs during adjustment periods; whenever a new meme is introduce, or a potential host is introduced
+During each adjustment period, each meme may perform one task; infect, dominate, support, weaken, poison or ingrain. Once a host has been infected by a specific meme, it may not be infected by that meme again until the host rids the meme. <cite>-- [LocalWiki:HomePage/RobertKurcina Robert Kurcina]</cite></blockquote>
+
+=== Miscellaneous formatting =
+Use < pre> </ pre> as an alternative method of preserving layout of text, for example for code, eg
+<pre>< pre>   preserves      spacing    and
+lines</ pre></pre>
+<pre>   preserves      spacing    and
+lines</pre>
+
+{{template:RelatedEntries/WikiEditing}}
+ÿþ3minorÿþ31ÿþ3newauthorÿþ31ÿþ2usernameÿþ2RobertKurcinaÿþ2hostÿþ2localhostÿþ2revisionÿþ225ÿþ2tscreateÿþ21178782977ÿþ2idÿþ21278ÿþ2keeptsÿþ21222962094ÿþ1tsÿþ21222962094ÿþ2ipÿþ2127.0.0.1ÿþ2versionÿþ21ÿþ2nameÿþ2text_defaultÿþ2dataÿþ2summaryÿþ3*ÿþ3textÿþ3= Wiki Markup Syntax =
+
+{{toc}}
+
+== Text Formatting =
+This page provides both the rules for text formatting and succinct examples. See elsewhere for the rules on lists, linking, etc.
+
+''Features marked with *** require the HtmlTags option to be activated.''
+
+=== Paragraphs =
+Leave a blank line between paragraphs.
+
+Like this<pre>
+Leave a blank line between paragraphs.
+
+Like this
+</pre>
+
+=== Emphasis =
+Create bold and italicized text via HTML tags, eg;
+<pre>
+<b>bold</b> <i>italic</i> <b><i>bold and italic</i></b> <u>underline</u> <s>strikeout</s> <sup>superscript</sup> <sub>subscript</sub><br /> <big>big</big> <small>small</small>
+</pre>
+<b>bold</b> <i>italic</i> <b><i>bold and italic</i></b> <u>underline</u><s>strikeout</s><sup>superscript</sup>*** <sub>subscript</sub>*** <big>big</big>*** <small>small</small>***
+
+=== Monospace text =
+Create monospace text by using a " " space as the first character on a line,
+eg<pre>
+ This is text in a monospace font
+</pre>
+ This is text in a monospace font
+----
+Alternatively use the HTML tags
+eg<pre>
+<tt>typewriter</tt>
+</pre>
+<tt>typewriter</tt>
+
+=== Indenting =
+Indent text by using a ":" colon as the first character on a line,
+eg<pre>
+:Text
+::More text
+:::Yet more text
+</pre>
+:Text
+::More text
+:::Yet more text
+
+=== Line continuation =
+Continue a line of text by using a "\\" backslash. This can be useful for breaking up long lines of text in line sensitive sections such as lists or indented text,
+eg
+<tt><nowiki>* This bullet\\point could have a long\\sentence that takes several lines.</nowiki></tt>
+* This bullet\\point could have a long\\sentence that takes several lines.
+
+=== New line =
+Use <nowiki><br></nowiki> to change the line eg
+ First line<nowiki><br></nowiki>
+ Next line
+
+=== Escaping =
+Use <nowiki><nowiki></nowiki></nowiki> to terminate WikiWord<nowiki>s</nowiki>
+eg <pre>Wikiword<nowiki><nowiki>s</nowiki></nowiki></pre> 
+
+Also, WikiWord""s may be formatted as <nowiki>WikiWord""s</nowiki>.
+
+Use <nowiki><nowiki></nowiki></nowiki> to disable wiki rules within a piece of text, eg:
+ <nowiki><nowiki>WikiNames are not linked, '''formatting''' does not occur.</nowiki><nowiki><</nowiki>/nowiki>
+<nowiki>WikiNames are not linked, '''formatting''' does not occur.</nowiki>
+
+=== Quotation =
+Wrap any text with <code><nowiki><blockquote></blockquote></nowiki></code> tags in order to show it with a nice quotation mark image.  Insert your author name within <tt><cite></cite></tt> tags before closing the quote.  Here's a nice example of using blockquote:
+
+<blockquote>Memetic combat resolution only occurs during adjustment periods; whenever a new meme is introduce, or a potential host is introduced
+During each adjustment period, each meme may perform one task; infect, dominate, support, weaken, poison or ingrain. Once a host has been infected by a specific meme, it may not be infected by that meme again until the host rids the meme. <cite>-- [LocalWiki:HomePage/RobertKurcina Robert Kurcina]</cite></blockquote>
+
+=== Miscellaneous formatting =
+Use < pre> </ pre> as an alternative method of preserving layout of text, for example for code, eg
+<pre>< pre>   preserves      spacing    and
+lines</ pre></pre>
+<pre>   preserves      spacing    and
+lines</pre>
+
+{{template:RelatedEntries/WikiEditing}}
+ÿþ3newauthorÿþ31ÿþ3minorÿþ30ÿþ2hostÿþ2localhostÿþ2usernameÿþ2RobertKurcinaÿþ2revisionÿþ226ÿþ2idÿþ21297ÿþ2tscreateÿþ21178782977ÿþ2keeptsÿþ21222962119ÿþ1versionÿþ21ÿþ2ipÿþ2127.0.0.1ÿþ2tsÿþ21222962119ÿþ2nameÿþ2text_defaultÿþ2dataÿþ2summaryÿþ3*ÿþ3textÿþ3= Wiki Markup Syntax =
+
+{{toc}}
+
+== Text Formatting =
+This page provides both the rules for text formatting and succinct examples. See elsewhere for the rules on lists, linking, etc.
+
+''Features marked with *** require the HtmlTags option to be activated.''
+
+=== Paragraphs =
+Leave a blank line between paragraphs.
+
+Like this<pre>
+Leave a blank line between paragraphs.
+
+Like this
+</pre>
+
+=== Emphasis =
+Create bold and italicized text via HTML tags, eg;
+<pre>
+<b>bold</b> <i>italic</i> <b><i>bold and italic</i></b> <u>underline</u> <s>strikeout</s> <sup>superscript</sup> <sub>subscript</sub><br /> <big>big</big> <small>small</small>
+</pre>
+<b>bold</b> <i>italic</i> <b><i>bold and italic</i></b> <u>underline</u><s>strikeout</s><sup>superscript</sup>*** <sub>subscript</sub>*** <big>big</big>*** <small>small</small>***
+
+=== Monospace text =
+Create monospace text by using a " " space as the first character on a line,
+eg<pre>
+ This is text in a monospace font
+</pre>
+ This is text in a monospace font
+----
+Alternatively use the HTML tags
+eg<pre>
+<tt>typewriter</tt>
+</pre>
+<tt>typewriter</tt>
+
+=== Indenting =
+Indent text by using a ":" colon as the first character on a line,
+eg<pre>
+:Text
+::More text
+:::Yet more text
+</pre>
+:Text
+::More text
+:::Yet more text
+
+=== Line continuation =
+Continue a line of text by using a "\\" backslash. This can be useful for breaking up long lines of text in line sensitive sections such as lists or indented text,
+eg;
+ <tt><nowiki>* This bullet\\point could have a long\\sentence that takes several lines.</nowiki></tt>
+* This bullet\\point could have a long\\sentence that takes several lines.
+
+=== New line =
+Use <nowiki><br></nowiki> to change the line eg
+ First line<nowiki><br></nowiki>
+ Next line
+
+=== Escaping =
+Use <nowiki><nowiki></nowiki></nowiki> to terminate WikiWord<nowiki>s</nowiki>
+eg <pre>Wikiword<nowiki><nowiki>s</nowiki></nowiki></pre> 
+
+Also, WikiWord""s may be formatted as <nowiki>WikiWord""s</nowiki>.
+
+Use <nowiki><nowiki></nowiki></nowiki> to disable wiki rules within a piece of text, eg:
+ <nowiki><nowiki>WikiNames are not linked, '''formatting''' does not occur.</nowiki><nowiki><</nowiki>/nowiki>
+<nowiki>WikiNames are not linked, '''formatting''' does not occur.</nowiki>
+
+=== Quotation =
+Wrap any text with <code><nowiki><blockquote></blockquote></nowiki></code> tags in order to show it with a nice quotation mark image.  Insert your author name within <tt><cite></cite></tt> tags before closing the quote.  Here's a nice example of using blockquote:
+
+<blockquote>Memetic combat resolution only occurs during adjustment periods; whenever a new meme is introduce, or a potential host is introduced
+During each adjustment period, each meme may perform one task; infect, dominate, support, weaken, poison or ingrain. Once a host has been infected by a specific meme, it may not be infected by that meme again until the host rids the meme. <cite>-- [LocalWiki:HomePage/RobertKurcina Robert Kurcina]</cite></blockquote>
+
+=== Miscellaneous formatting =
+Use < pre> </ pre> as an alternative method of preserving layout of text, for example for code, eg
+<pre>< pre>   preserves      spacing    and
+lines</ pre></pre>
+<pre>   preserves      spacing    and
+lines</pre>
+
+{{template:RelatedEntries/WikiEditing}}
+ÿþ3minorÿþ30ÿþ3newauthorÿþ30ÿþ2usernameÿþ2RobertKurcinaÿþ2hostÿþ2localhostÿþ2revisionÿþ227ÿþ2tscreateÿþ21178782977ÿþ2idÿþ21297ÿþ2keeptsÿþ21223011312

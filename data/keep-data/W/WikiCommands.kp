@@ -1,0 +1,269 @@
+ÿþ1versionÿþ21ÿþ2tsÿþ21223836983ÿþ2ipÿþ2127.0.0.1ÿþ2nameÿþ2text_defaultÿþ2dataÿþ2summaryÿþ3Initial draft.ÿþ3textÿþ3== Special Commands =
+WikiCommands are instructions to generate very specific behaviors within a page.  Most of these commands can be used multiple times within a page, but they all must appear on a line by themselves.  All commands are of the format:
+
+<pre>
+ {{command}}
+ {{command:data}}
+ {{command:key=value|data}}
+</pre>
+
+Where <tt>command</tt> is any of the following:
+
+<pre>
+ block:
+ template
+ toc
+ flash
+ bbcode
+ data
+ gallery
+ code
+ subpages:
+ include
+ replace
+ redirect
+ delete}}
+ command
+</pre>
+
+The opening and closing pairs of curly braces will need to wrapped around the command and any data that is provided.  Commands need to be placed on a line by themselves. 
+ÿþ3newauthorÿþ31ÿþ3minorÿþ30ÿþ2hostÿþ2localhostÿþ2usernameÿþ2RobertKurcinaÿþ2revisionÿþ21ÿþ2idÿþ21311ÿþ2tscreateÿþ21223836983ÿþ2keeptsÿþ21223836996ÿþ1ipÿþ2127.0.0.1ÿþ2tsÿþ21223836996ÿþ2versionÿþ21ÿþ2nameÿþ2text_defaultÿþ2dataÿþ2summaryÿþ3*ÿþ3textÿþ3== Special Commands =
+WikiCommands are instructions to generate very specific behaviors within a page.  Most of these commands can be used multiple times within a page, but they all must appear on a line by themselves.  All commands are of the format:
+
+<pre>
+ {{command}}
+ {{command:data}}
+ {{command:key=value|data}}
+</pre>
+
+Where <tt>command</tt> is any of the following:
+
+<pre>
+ block:
+ template
+ toc
+ flash
+ bbcode
+ data
+ gallery
+ code
+ subpages:
+ include
+ replace
+ redirect
+ delete
+ command
+</pre>
+
+The opening and closing pairs of curly braces will need to wrapped around the command and any data that is provided.  Commands need to be placed on a line by themselves.
+ÿþ3minorÿþ31ÿþ3newauthorÿþ30ÿþ2usernameÿþ2RobertKurcinaÿþ2hostÿþ2localhostÿþ2revisionÿþ22ÿþ2tscreateÿþ21223836983ÿþ2idÿþ21311ÿþ2keeptsÿþ21223837659ÿþ1versionÿþ21ÿþ2tsÿþ21223837659ÿþ2ipÿþ2127.0.0.1ÿþ2nameÿþ2text_defaultÿþ2dataÿþ2summaryÿþ3*ÿþ3textÿþ3== Special Commands =
+WikiCommands are instructions to generate very specific behaviors within a page.  Most of these commands can be used multiple times within a page, but they all must appear on a line by themselves.  All commands are of the format:
+
+<pre>
+ {{command}}
+ {{command:data}}
+ {{command:key=value|data}}
+</pre>
+
+Where <tt>command</tt> is any of the following:
+
+<pre>
+
+ template
+ toc
+ flash
+ bbcode
+ gallery
+ code
+ subpages
+ redirect
+ delete
+ magic
+ include  [ not yet tested]
+ replace  [ not yet tested]
+ data     [ not yet implemented ]
+ block    [ not yet implemented ]
+</pre>
+
+The opening and closing pairs of curly braces will need to wrapped around the command and any data that is provided.  Commands need to be placed on a line by themselves.
+ÿþ3newauthorÿþ30ÿþ3minorÿþ31ÿþ2hostÿþ2localhostÿþ2usernameÿþ2RobertKurcinaÿþ2revisionÿþ23ÿþ2idÿþ21311ÿþ2tscreateÿþ21223836983ÿþ2keeptsÿþ21223837669ÿþ1ipÿþ2127.0.0.1ÿþ2tsÿþ21223837669ÿþ2versionÿþ21ÿþ2nameÿþ2text_defaultÿþ2dataÿþ2summaryÿþ3*ÿþ3textÿþ3== Special Commands =
+WikiCommands are instructions to generate very specific behaviors within a page.  Most of these commands can be used multiple times within a page, but they all must appear on a line by themselves.  All commands are of the format:
+
+<pre>
+ {{command}}
+ {{command:data}}
+ {{command:key=value|data}}
+</pre>
+
+Where <tt>command</tt> is any of the following:
+
+<pre>
+ template
+ toc
+ flash
+ bbcode
+ gallery
+ code
+ subpages
+ redirect
+ delete
+ magic
+ include  [ not yet tested]
+ replace  [ not yet tested]
+ data     [ not yet implemented ]
+ block    [ not yet implemented ]
+</pre>
+
+The opening and closing pairs of curly braces will need to wrapped around the command and any data that is provided.  Commands need to be placed on a line by themselves.
+ÿþ3minorÿþ31ÿþ3newauthorÿþ30ÿþ2usernameÿþ2RobertKurcinaÿþ2hostÿþ2localhostÿþ2revisionÿþ24ÿþ2tscreateÿþ21223836983ÿþ2idÿþ21311ÿþ2keeptsÿþ21223849465ÿþ1versionÿþ21ÿþ2tsÿþ21223849465ÿþ2ipÿþ2127.0.0.1ÿþ2nameÿþ2text_defaultÿþ2dataÿþ2summaryÿþ3*ÿþ3textÿþ3== Special Commands =
+WikiCommands are instructions to generate very specific behaviors within a page.  Most of these commands can be used multiple times within a page, but they all must appear on a line by themselves.  All commands are of the format:
+
+<pre>
+ {{command}}
+ {{command:data}}
+ {{command:key=value|data}}
+ {{command:key=value|key=value|...key=value|data}}
+</pre>
+
+Where <tt>command</tt> is any of the following:
+
+<pre>
+ template
+ toc
+ flash
+ bbcode
+ gallery
+ code
+ subpages
+ redirect
+ delete
+ magic
+ include  [ not yet tested]
+ replace  [ not yet tested]
+ data     [ not yet implemented ]
+ block    [ not yet implemented ]
+</pre>
+
+The opening and closing pairs of curly braces will need to wrapped around the command and any data that is provided.  Commands need to be placed on a line by themselves.
+ÿþ3newauthorÿþ31ÿþ3minorÿþ30ÿþ2hostÿþ2localhostÿþ2usernameÿþ2ÿþ2revisionÿþ25ÿþ2idÿþ2111ÿþ2tscreateÿþ21223836983ÿþ2keeptsÿþ21226030123ÿþ1ipÿþ2127.0.0.1ÿþ2tsÿþ21226030123ÿþ2versionÿþ21ÿþ2nameÿþ2text_defaultÿþ2dataÿþ2summaryÿþ3*ÿþ3textÿþ3== Special Commands =
+WikiCommands are instructions to generate very specific behaviors within a page.  Most of these commands can be used multiple times within a page, but they all must appear on a line by themselves.  All commands are of the format:
+
+<pre>
+ {{command}}
+ {{command:data}}
+ {{command:key=value|data}}
+ {{command:key=value|key=value|...key=value|data}}
+</pre>
+
+Where <tt>command</tt> is any of the following:
+
+<pre>
+ template
+ toc
+ flash
+ bbcode
+ block
+ gallery
+ code
+ subpages
+ redirect
+ delete
+ magic
+ include  [ not yet tested]
+ replace  [ not yet tested]
+ data     [ not yet implemented ]
+ block    [ not yet implemented ]
+</pre>
+
+The opening and closing pairs of curly braces will need to wrapped around the command and any data that is provided.  Commands need to be placed on a line by themselves.
+ÿþ3minorÿþ30ÿþ3newauthorÿþ30ÿþ3descriptionÿþ3ÿþ2usernameÿþ2ÿþ2hostÿþ2localhostÿþ2revisionÿþ26ÿþ2tscreateÿþ21223836983ÿþ2idÿþ2111ÿþ2keeptsÿþ21226030291ÿþ1versionÿþ21ÿþ2tsÿþ21226030291ÿþ2ipÿþ2127.0.0.1ÿþ2nameÿþ2text_defaultÿþ2dataÿþ2summaryÿþ3*ÿþ3textÿþ3== Special Commands =
+WikiCommands are instructions to generate very specific behaviors within a page.  Most of these commands can be used multiple times within a page, but they all must appear on a line by themselves.  All commands are of the format:
+
+<pre>
+ {{command}}
+ {{command:data}}
+ {{command:key=value|data}}
+ {{command:key=value|key=value|...key=value|data}}
+</pre>
+
+Where <tt>command</tt> is any of the following:
+
+<pre>
+ template
+ toc
+ flash
+ bbcode
+ block
+ gallery
+ code
+ subpages
+ redirect
+ delete
+ magic
+ include  [ not yet tested]
+ replace  [ not yet tested]
+ data     [ not yet implemented ]
+</pre>
+
+The opening and closing pairs of curly braces will need to wrapped around the command and any data that is provided.  Commands need to be placed on a line by themselves.
+ÿþ3newauthorÿþ30ÿþ3minorÿþ30ÿþ3descriptionÿþ3ÿþ2hostÿþ2localhostÿþ2usernameÿþ2ÿþ2revisionÿþ27ÿþ2idÿþ2111ÿþ2tscreateÿþ21223836983ÿþ2keeptsÿþ21226125620ÿþ1ipÿþ2127.0.0.1ÿþ2tsÿþ21226125620ÿþ2versionÿþ21ÿþ2nameÿþ2text_defaultÿþ2dataÿþ2summaryÿþ3*ÿþ3textÿþ3== Special Commands =
+WikiCommands are instructions to generate very specific behaviors within a page.  Most of these commands can be used multiple times within a page, but they all must appear on a line by themselves.  All commands are of the format:
+
+<pre>
+ {{command}}
+ {{command:data}}
+ {{command:key=value|data}}
+ {{command:key=value|key=value|...key=value|data}}
+</pre>
+
+Where <tt>command</tt> is any of the following:
+
+<pre>
+ template
+ toc
+ flash
+ bbcode
+ box
+ block
+ gallery
+ code
+ subpages
+ redirect
+ delete
+ magic
+ include  [ not yet tested]
+ replace  [ not yet tested]
+ data     [ not yet implemented ]
+</pre>
+
+The opening and closing pairs of curly braces will need to wrapped around the command and any data that is provided.  Commands need to be placed on a line by themselves.
+ÿþ3minorÿþ30ÿþ3newauthorÿþ30ÿþ3descriptionÿþ3ÿþ2usernameÿþ2ÿþ2hostÿþ2localhostÿþ2revisionÿþ28ÿþ2tscreateÿþ21223836983ÿþ2idÿþ2111ÿþ2keeptsÿþ21226126597ÿþ1versionÿþ21ÿþ2tsÿþ21226126597ÿþ2ipÿþ2127.0.0.1ÿþ2nameÿþ2text_defaultÿþ2dataÿþ2summaryÿþ3Added search links for each command.ÿþ3textÿþ3== Special Commands =
+WikiCommands are instructions to generate very specific behaviors within a page.  Most of these commands can be used multiple times within a page, but they all must appear on a line by themselves.  All commands are of the format:
+
+<pre>
+ {{command}}
+ {{command:data}}
+ {{command:key=value|data}}
+ {{command:key=value|key=value|...key=value|data}}
+</pre>
+
+Where <tt>command</tt> is any of the following:
+
+ [LocalWiki:search={{template template]
+ [LocalWiki:search={{toc toc]
+ [LocalWiki:search={{flash flash]
+ [LocalWiki:search={{bbcode bbcode ]
+ [LocalWiki:search={{box box]
+ [LocalWiki:search={{block block]
+ [LocalWiki:search={{gallery gallery]
+ [LocalWiki:search={{code code]
+ [LocalWiki:search={{subpages subpages]
+ [LocalWiki:search={{redirect redirect]
+ [LocalWiki:search={{delete delete]
+ [LocalWiki:search={{magic magic]
+ [LocalWiki:search={{include include]  [ not yet tested]
+ [LocalWiki:search={{replace replace] [ not yet tested]
+ [LocalWiki:search={{data data]   [ not yet implemented ]
+
+The opening and closing pairs of curly braces will need to wrapped around the command and any data that is provided.  Commands need to be placed on a line by themselves.
+ÿþ3newauthorÿþ31ÿþ3minorÿþ30ÿþ3descriptionÿþ3all of the available commands are linked below; click on any of the links to find which other pages utilize these commands.ÿþ2hostÿþ2localhostÿþ2usernameÿþ2RobertKurcinaÿþ2revisionÿþ29ÿþ2idÿþ21338ÿþ2tscreateÿþ21223836983ÿþ2keeptsÿþ21226134384

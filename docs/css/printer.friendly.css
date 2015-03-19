@@ -1,0 +1,46 @@
+body {
+	background-image: none;
+}
+
+.wikiheader,
+.wikiform,  
+.wikitext, 
+.wikipreview, 
+.wikiadmin,
+.wikifooter,
+.wikidiff
+p {
+	height: auto;
+	min-height: auto;
+	margin-left: 0;
+	margin-bottom: auto;
+	padding-left: 0;
+	border: none;
+
+	clear: both;
+	float: none;
+	width: 100%;
+	background: none;
+}
+.wikigotobar,
+.wikileftnav
+{
+	display: none !important;
+	visibility: hidden;
+}
+
+table.wikilargelist {
+	width: 100%;
+	height: auto;
+	min-height: 0;
+	overflow: auto;
+}
+
+#wikicontainer-inner,
+#wikicontainer-outer,
+#wikicontainer {
+	position: relative;
+	background-image: none;
+}
+
+

@@ -1,0 +1,72 @@
+versionÿþ13ÿþ1tsÿþ11226134384ÿþ1authorcreateÿþ1RobertKurcinaÿþ1cache_oldmajorÿþ19ÿþ1descriptionÿþ1all of the available commands are linked below; click on any of the links to find which other pages utilize these commands.ÿþ1cache_oldauthorÿþ18ÿþ1cache_diff_default_authorÿþ1<div id=wikidiffdiv><table id=wikidifftable><tr valign=top><td class="diff-header">Paragraph 9</td><td class="diff-vertical">&nbsp;</td><td class="diff-header">Paragraph 9</td></tr><tr valign=top><td class="diff-para-ident">Where &lt;tt&gt;command&lt;/tt&gt; is any of the following:<br>
+<br>
+</td><td class="diff-vertical"></td><td class="diff-para-ident">Where &lt;tt&gt;command&lt;/tt&gt; is any of the following:<br>
+<br>
+</td></tr><tr valign=top><td class="diff-para-deleted">&lt;pre&gt;<br>
+ template<br>
+ toc<br>
+ flash<br>
+ bbcode<br>
+ box<br>
+ block<br>
+ gallery<br>
+ code<br>
+ subpages<br>
+ redirect<br>
+ delete<br>
+</td><td class="diff-vertical"></td><td class="diff-para-added">&nbsp;[LocalWiki:search={{template template]<br>
+ [LocalWiki:search={{toc toc]<br>
+ [LocalWiki:search={{flash flash]<br>
+ [LocalWiki:search={{bbcode bbcode ]<br>
+ [LocalWiki:search={{box box]<br>
+ [LocalWiki:search={{color color]<br>
+ [LocalWiki:search={{gallery gallery]<br>
+ [LocalWiki:search={{code code]<br>
+ [LocalWiki:search={{subpages subpages]<br>
+ [LocalWiki:search={{redirect redirect]<br>
+ [LocalWiki:search={{delete delete]<br>
+ [LocalWiki:search={{magic magic]<br>
+</td></tr><tr valign=top><td class="diff-para-changed"><span class="diff-span-ident">&nbsp;</span><span class="diff-span-deleted">magic<br>
+ include</span><span class="diff-span-ident">&nbsp; [ not yet tested]<br>
+</span></td><td class="diff-vertical"></td><td class="diff-para-changed"><span class="diff-span-ident">&nbsp;</span><span class="diff-span-added">[LocalWiki:search={{include include]</span><span class="diff-span-ident">&nbsp; [ not yet tested]<br>
+</span></td></tr><tr valign=top><td class="diff-para-changed"><span class="diff-span-ident">&nbsp;</span><span class="diff-span-deleted">replace </span><span class="diff-span-ident">&nbsp;[ not yet tested]<br>
+</span><span class="diff-span-ident">&nbsp;</span><span class="diff-span-deleted">data&nbsp; </span><span class="diff-span-ident">&nbsp;&nbsp; [ not yet implemented ]<br>
+</span></td><td class="diff-vertical"></td><td class="diff-para-changed"><span class="diff-span-ident">&nbsp;</span><span class="diff-span-added">[LocalWiki:search={{replace replace]</span><span class="diff-span-ident">&nbsp;[ not yet tested]<br>
+</span><span class="diff-span-ident">&nbsp;</span><span class="diff-span-added">[LocalWiki:search={{data data]</span><span class="diff-span-ident">&nbsp;&nbsp; [ not yet implemented ]<br>
+</span></td></tr><tr valign=top><td class="diff-para-deleted">&lt;/pre&gt;<br>
+</td><td class="diff-vertical"></td><td class="diff-para-ident"></td></tr><tr valign=top><td class="diff-para-ident"><br>
+The opening and closing pairs of curly braces will need to wrapped around the command and any data that is provided.&nbsp; Commands need to be placed on a line by themselves.<br>
+</td><td class="diff-vertical"></td><td class="diff-para-ident"><br>
+The opening and closing pairs of curly braces will need to wrapped around the command and any data that is provided.&nbsp; Commands need to be placed on a line by themselves.<br>
+</td></tr></table></div>ÿþ1revisionÿþ110ÿþ1text_defaultÿþ1versionÿþ21ÿþ2tsÿþ21226134384ÿþ2ipÿþ2127.0.0.1ÿþ2nameÿþ2text_defaultÿþ2dataÿþ2summaryÿþ3changed 'block' to 'color'ÿþ3textÿþ3== Special Commands =
+WikiCommands are instructions to generate very specific behaviors within a page.  Most of these commands can be used multiple times within a page, but they all must appear on a line by themselves.  All commands are of the format:
+
+<pre>
+ {{command}}
+ {{command:data}}
+ {{command:key=value|data}}
+ {{command:key=value|key=value|...key=value|data}}
+</pre>
+
+Where <tt>command</tt> is any of the following:
+
+ [LocalWiki:search={{template template]
+ [LocalWiki:search={{toc toc]
+ [LocalWiki:search={{flash flash]
+ [LocalWiki:search={{bbcode bbcode ]
+ [LocalWiki:search={{box box]
+ [LocalWiki:search={{color color]
+ [LocalWiki:search={{gallery gallery]
+ [LocalWiki:search={{code code]
+ [LocalWiki:search={{subpages subpages]
+ [LocalWiki:search={{redirect redirect]
+ [LocalWiki:search={{delete delete]
+ [LocalWiki:search={{magic magic]
+ [LocalWiki:search={{include include]  [ not yet tested]
+ [LocalWiki:search={{replace replace] [ not yet tested]
+ [LocalWiki:search={{data data]   [ not yet implemented ]
+
+The opening and closing pairs of curly braces will need to wrapped around the command and any data that is provided.  Commands need to be placed on a line by themselves.
+ÿþ3minorÿþ30ÿþ3newauthorÿþ30ÿþ3descriptionÿþ3ÿþ2hostÿþ2localhostÿþ2usernameÿþ2RobertKurcinaÿþ2revisionÿþ210ÿþ2idÿþ21338ÿþ2tscreateÿþ21223836983ÿþ2keeptsÿþ21226134384ÿþ1tscreateÿþ11223836983ÿþ1cache_diff_default_majorÿþ11ÿþ1cache_diff_default_minorÿþ1<div id=wikidiffdiv><table id=wikidifftable><tr valign=top><td class="diff-header">Paragraph 15</td><td class="diff-vertical">&nbsp;</td><td class="diff-header">Paragraph 15</td></tr><tr valign=top><td class="diff-para-changed"><span class="diff-span-ident">&nbsp;[LocalWiki:search={{</span><span class="diff-span-deleted">block block</span><span class="diff-span-ident">]<br>
+</span></td><td class="diff-vertical"></td><td class="diff-para-changed"><span class="diff-span-ident">&nbsp;[LocalWiki:search={{</span><span class="diff-span-added">color color</span><span class="diff-span-ident">]<br>
+</span></td></tr></table></div>

@@ -1,0 +1,339 @@
+versionÿþ13ÿþ1tsÿþ11222752569ÿþ1authorcreateÿþ1ÿþ1cache_oldmajorÿþ132ÿþ1cache_oldauthorÿþ133ÿþ1cache_diff_default_authorÿþ11ÿþ1revisionÿþ134ÿþ1tscreateÿþ11194069079ÿþ1text_defaultÿþ1versionÿþ21ÿþ2tsÿþ21222752569ÿþ2ipÿþ2127.0.0.1ÿþ2nameÿþ2text_defaultÿþ2dataÿþ2summaryÿþ3*ÿþ3textÿþ3= Table of Organization and Equipment =
+<blockquote>Consider that 1 Operational Point [ OP ] is equivalent to about	100 soldiers.  A standard 5 OP unit like the Biluxi Regulars then represent about 500 soldiers.  Keep this in mind when seeing the very end of this document that the Allied Supreme Headquarters governs about 100,000 OP. That's about 10 million soldiers across approximately 2,000 divisions from all nations in the Allied powers [ USA, USSR, UK, plus minor nations ].</blockquote>
+{{toc}}
+Otherwise known as TOEs or TO&Es; these were blueprints used by each nations logistical and strategy experts to create new units and budget for training and technology.  Even within a nation the various branches could have their own variations based upon combat or support philosophy.  For example; the USA Marine Corps uses 13-man squads while the Army uses 9-man squads, or even 6 for BMP vehicles.  This bubbles up through the battalion levels and higher; resulting in an average of 15,000 persons per Marine Infantry division versus 10,000 persons on average for an Army Infantry division.
+
+== Construction =
+Historically, the US used square elements while the European forces used triangular elements.  That means; 2 battalions forms 1 regiment, and then 2 regiments for 1 brigade, and 2 brigades form 1 division.  Etc.  In the world of GROWWII, things are quadratic because of the increased numbers of available soldiers and equipment. In addition there's an assumption that well-balanced forces will be constructed with an average of 1 support unit [ HQ, Supply, Signals ] for every 4 or so combat units.
+
+Therefore, define regiments as 4 declared battalions.  These regiments are OP independent in order to allow grouping into divisions or brigades.  Create divisions by defining 4 regiments.  
+
+Corps are then defined as 4 divisions, and Armies as 4 corps.  Army Groups are then 4 Armies.  Following Army Groups are Theater of Operations with 3-6 Army Groups apiece, and then Supreme Forces as defined by either the Axis or Allies; each of which have 3-6 Theaters depending on the year within the GROWWII world history.
+
+== Orders of Battle =
+All levels of organization could be configured with 3-6 sub-elements instead of the normal 4. Depending on the needs of strategic command; each sub-element could instead be 3-6 of the next level lower in order to fulfill special operations demands.  At all organizational levels International elements are allowed but are most likely the be represented within the Army Groups from an administrative perspective. From a mission construction perspective; divisions, brigades, regiments, and battalions will appear from various international parent elements according to the conditions of environment and the period represented.  
+
+=== Simple OOB =
+The 3rd US Army that had 3 Corps and the 87th Airborne Division attached. 
+	
+=== Mixed OOB =
+The FUSAG [ First United States Army Group ] was a fictitious OOB which included the US 14th Army and the British 4th Army as follows:
+
+ US Fourteenth Army:		
+	XXXIII Corps
+		17th Division
+		59th Division
+		
+	XXXVII Corps
+		25th Division
+		11th Division
+		48th Division 
+
+ British 4th Army: 
+	2nd Corps 
+		55th Division
+		61st Division
+		80th Division
+		35th Division
+		
+	7th Corps
+		5th Division
+		58th Division 
+		
+	2nd Airborne Division
+
+=== Complete OOB =		
+The Battle for France entry on wikipedia.org has an outstanding OOB with further links into the site for details.  Here's the URL: http://en.wikipedia.org/wiki/Order_of_Battle_for_the_Battle_of_France
+	
+and here's an excerpt:
+		
+ Allies
+  French First Army Group
+    French Cavalry Corps
+      2nd Light Mechanized Division
+      3rd Light Mechanized Division
+    French III Corps
+      1st Moroccan Infantry Division
+      2nd North African Infantry Division
+    4th Army Corps (France)
+      32nd Infantry Division
+    French V Corps
+      5th North African Infantry Division
+      101st Infantry Division
+    Belgian VII Corps
+      2nd Chasseurs Ardennais
+      8th Infantry Division
+
+  French Second Army Group
+  French Third Army Group
+  Dutch Army
+  Army of the Alps 
+  French reserves
+  British Expeditionary Force
+  
+ Axis
+  OKH Reserve
+  German Army Group A
+  German Army Group B
+  German Army Group C
+
+== Corps Organization Roles =
+Not all Corps have combat mission roles; as a result their sub-elements will have different emphasis missions, and the parent Army and Army Groups will also vary as a result of aggregation.
+
+There are four broad categories of roles; Combat Mission, Service Missions, Support Missions, and Base Missions.  The first two are near the battlefront and are separated by perhaps 100 miles.  Support Missions are usually out of the combat zones, but Base Missions are always at established cities of national origin. Below are a list of possible missions and roles for a wide variety of corps, followed by example names of corps.
+
+!!Mission!!Role!!Example Unit!!
+||Combat|class=first||Amphibious||V Amphibious Corps||
+||Combat||Armor||10th Armored Corps||
+||Combat||Engineers||33rd Engineers Corps||
+||Combat||Infantry||II Infantry Corps||
+||Combat||Naval Operations||4th Naval Operations Corps||
+||Combat||Strategic Air||First Strategic Air Corps||
+||Service||Logistics||8th Logistics Corps||
+||Service||Ordnance||22nd Ordnance Corps||
+||Service||Repair||9th Repair Corps||
+||Service||Robotics||XIV Robotics Corps||
+||Service||Signals||Third Signals Corps||
+||Service||Technology||1st Technology Corps||
+||Support||Advanced Research||Boston Advanced Research Corps||
+||Support||Chaplain||3rd Chaplain Corps||
+||Support||Command||Alpha-2 Command Corps||
+||Support||Electronics||23rd Electronics Corps||
+||Support||Intelligence||7th Intelligence Coprs||
+||Support||Medical||5th Medical Corps||
+||Base||Construction||16th Construction Corps||
+||Base||Finance||Third Finance Corps||
+||Base||Legal||Primary Legal Corps||
+||Base||Peace||Pacific Peace Corps||
+||Base||Police||Group 3 Police Corps||
+||Base||Public Affairs||Western Public Affairs Corps||
+||Base||Research||Boston Research Corps||
+||Base||Training||Biluxi Training Corps||
+||Base||Transportation||East Transportation Corps|| 
+			
+== Pseudo-historical Details =
+From a history-building perspective; these kinds configurations can be used in
+various numbers to be doctrinal, uncommon, or rare assignments.  Regardless;
+when a configuration is defined it can be named and cited with full illustrative
+examples and force anaylsis for puff pieces.  That's a goal.  For example: 
+
+=== Allohistorical LADs =
+<i>The "Robotic Assault Regiment" first became established with the wide-spread production of the Halen Assault robot, which was not possible until the creation of the positronic neural-net at Harvard University in 1941. The regiment had multiple configurations including a couple with greater presence of infantry companies in order to hold ground. It was then determined that the best mission for which this type of regiment could be employed was those of Search and Destroy.  As such, great amounts of firepower - regardless of speed of approach - was desired. In 1944, the first of what became known as the "Loer Automated Destroyers [ LADs ]" became deployed at Gibraltar, Spain. They proved entirely successful	in weeding out remnant Axis pockets in short order. See FIGURE 30A and 30B for the	most common configurations. FIGURE 30C shows how the LADs were organized into the standard Brute Assault Corps.  The most famous of the LAD implementations was the 5th LAD Regiment, 2nd Mechanized Division of the 10th Armored Corps. Equally famous was the 23rd LAD Rgt of the	3/10 AC.</i>
+
+== Leader Assignment =
+Once the various divisions are configured can assign specific leaders to each of the divisions. The rules as of version 0.43.2 allow 1 leader per regiment and 1 more per 50 OP. The application of this should be conservative in order to keep leader ranks consistent between divisions.
+
+Therefore apply this to the division:
+ 4 x 1-star [ 1 per regiment ]
+ 1 x 2-star [ 1 per the division ]
+ 
+ 1 x 2-star [ if 150 OP or more ]
+ 1 x 3-star [ if 200 OP or more ]
+ 1 x 2-star [ if 250 OP or more ]
+
+To round things out, assign a 4-star leader to the corps but associate it with the division that has the most OP in support units, or preferably a division that is mechanized or wing.
+
+ 3-star Leaders may control a Division; it could be shared by 2 2-star Leaders
+ 4-star Leaders will control a Corps
+ 5-star Leaders will control an Army
+ 6-star Leaders will control an Army Group
+ 7-star Leaders will control a Theater of Operations
+ 8-star Leaders will control a Supreme Forces
+
+== Decorated Units =
+Lastly, we can create Insignia bonuses to map out to very specific implementations of a division configuration.  These bonuses should be between at most 2 insignia per regiment within one division of a given corps.  Each bonus will increase the OP value of the overal division by 1-3 OP and should come from a restricted list.
+
+== Sample TOEs =
+These are various seed examples of TO & E for a possible direction that combat units for the USA can be modeled.
+
+=== Regimental TOEs =
+Regiments are 4 battalions.  Usually one or two of the battalions of the four are unique or specialized.  For example, 3 of the battalions could be combat-oriented and the third would be a support unit.  This sort of variety ensures that the regiment is robust enough for incorporation into the larger division formations.  Regiments are lead by a 1-star Leader.  The total Operational Points [ OP ] value of a regiment can vary greatly; ranging from 20 OP for the typical infantry regiment to over 100 OP for a heavy armored assault regiment as the one shown below.
+
+!!Class|tablesort=none!!Light Infantry Regiment|width=250!!23 OP!!
+||INF|width=30||Biluxi Regulars||5 OP||
+||INF||Biluxi Regulars||5 OP||
+||INF||Biluxi Regulars||5 OP||
+||INF||Sectarian Troopers||8 OP||
+!!Class!!Heavy Infantry Regiment!! 27 OP !!
+||INF||Sectarian Troopers||8 OP||
+||INF||Raven Battle Armor||9 OP||
+||INF||Biluxi Regulars||5 OP||
+||INF||Biluxi Regulars||5 OP||
+!!Class!!Advanced Infantry Regiment!! 40 OP!!
+||INF||Raven Battle Armor||9 OP||
+||INF||Feldman AT-88 Walkers||8 OP||
+||RBT||Orum Slaughterbots||17 OP||
+||WNG||Carver Recon||6 OP||
+!!Class!!Robotic Assault Regiment!! 82 OP!!
+||RBT||Orum Slaughter Bots||17 OP||
+||RBT||Orum Slaughter Bots||17 OP||
+||RBT||Halen Assault Ballistar||34 OP||
+||WPN||Garfield Rocket Platform||14 OP||
+!!Class!!Vanguard Infantry Regiment!! 46 OP!!
+||INF||Nabilum Rocketeers||11 OP||
+||INF||Nabilum Rocketeers||11 OP||
+||INF||Heavy Marines||10 OP||
+||WPN||Kennision Heavy Weapons||14 OP||
+!!Class!!Artillery Support Regiment!! 37 OP!!
+||BAT||Machron Field Artillery||12 OP||
+||BAT||Machron Field Artillery||12 OP||
+||BAT||Paulson Anti-air||9 OP||
+||WNG||Carver Recon||5 OP||
+!!Class!!Field Infantry Regiment!! 27 OP!!
+||INF||Biluxi Regulars||5 OP||
+||INF||Biluxi Regulars||5 OP||
+||INF||Heavy Marines||10 OP||
+||SUP||Newcomb Field Support||7 OP||
+!!Class!!Division Support Regiment!! 33 OP!!
+||HQ||FSN Command Center||10 OP||
+||HQ||FSN Command Center||10 OP||
+||SUP||FSN Support Battalion||8 OP||
+||SGN||Ground Hog Signals Battalion||5 OP||
+!!Class!!Armored Assault Regiment!! 78 OP!!
+||CAV||Nevadan Light Tanks||17 OP||
+||CAV||Nevadan Light Tanks||17 OP||
+||CAV||M6A4 Heavy Tanks||30 OP||
+||WNG||Ferguson Bombardier||14 OP||
+!!Class!!Heavy Armored Assault Regiment!! 104 OP!!
+||CAV||M6A4 Heavy Tanks||30 OP||
+||CAV||M6A4 Heavy Tanks||30 OP||
+||CAV||M6A4 Heavy Tanks||30 OP||
+||WNG||Ferguson Bombardier||14 OP||
+
+=== Corps Organization =
+A Corps is the largest unit that can be represented by one "core game set" issued for GROWWII game kit since one kit will have 72 battalion counters - the number for an average-sized corps formation comprised of 4 divisions of 16 battalions each.  Corps are lead by a 4-star Leader and have 4-6 divisions; each of those lead by a 3-star Leader. The total value of a corps is dependent on how its divisions are formed, with each division comprised of 4 regiments or 16 battalions.  The average total could be said to be about 1000 OP and 64 battalions.
+
+In the chart below is a sample Order-of-Battle [ OOB ] for an implementation of the standard TO&E template for a corps formation.  This unit is the 10th Armored Corps, and has in total 983 OP, 80 battalions arranged into 5 divisions.  There are a total of 33 Leaders.
+
+||||Divisions of the 10th Armored Corps|class=thblack||983 OP|class=thblack||20 x 1-star|class=thblack||9 x 2-star|class=thblack||3 x 3-star|class=thblack||1 x 4-star|class=thblack ||
+!!!!2nd Mechanized Assault Division NOTE!!251 OP!!4!!3!!1!!1!!
+|| ||Robotic Assault Regiment||82 OP|| || || || ||
+|| ||Heavy Armored Assault Regiment||104 OP|| || || || ||
+|| ||Artillery Support Regiment||37 OP|| || || || ||
+|| ||Division Support Regiment||33 OP|| || || || ||
+!!!!4th Mechanized Division!!230 OP!!4!!2!!1!!-!!
+|| ||Robotic Assault Regiment||82 OP|| || || || ||
+|| ||Armored Assault Regiment||78 OP|| || || || ||
+|| ||Artillery Support Regiment||37 OP|| || || || ||
+|| ||Division Support Regiment||33 OP|| || || || ||
+!!!!178th Infantry Division!!242 OP!!4!!2!!1!!-!!
+|| ||Advanced Infantry Regiment||40 OP|| || || || ||
+|| ||Vanguard Infantry Regiment||46 OP|| || || || ||
+|| ||Armored Assault Regiment||78 OP|| || || || ||
+|| ||Armored Assault Regiment||78 OP|| || || || ||
+!!!!3rd Infantry Division!!129 OP!!4!!1!!-!!-!!
+|| ||Light Infantry Regiment||23 OP|| || || || ||
+|| ||Light Infantry Regiment||23 OP|| || || || ||
+|| ||Field Infantry Regiment|| 27 OP|| || || || ||
+|| ||Vanguard Infantry Regiment||46 OP|| || || || ||
+!!!!52nd Infantry Division!!133 OP!!4!!1!!-!!-!!
+|| ||Light Infantry Regiment||23 OP|| || || || ||
+|| ||Heavy Infantry Regiment||27 OP|| || || || ||
+|| ||Field Infantry Regiment||27 OP|| || || || ||
+|| ||Vanguard Infantry Regiment||46 OP|| || || || ||
+  
+ 
+  <b>NOTE:</b>
+  Insignia [ +5 OP ]
+   One of the Robotic Assault Regiments of the 2nd Mechanized Division is
+   the highly-decorated 5th LAD Regiment. Two of the units within receive
+   Insignia with these effects according to the unit type boosted:
+      
+   RBT - Orum Slaughter Bots; receives Agile 1
+   RBT - Halen Assault Ballistar; receives +2 MOV
+   WPN - Garfield Rocket Platform; receives Heavy Metal 2
+ 
+ 
+=== Army Group =
+This is an example of an Army Group.  An Army group contains 4-6 Armies totaling about 100 divisions or 5000 OP. At this level, the Army Group can contain armies belonging to other nations.  Any Army Group is commanded by a 6-star Leader with a subordinate 5-star Leader for each Army beneath.  Each Army is then comprised of 4-7 Corps serving a variety of roles [ see above ].  The totals for an Army then is around 1000 OP and about 300 battalions; roughly 20 divisions.  Each Corps is lead by a 5-star Leader.
+
+||||12th Army Group|class=thblack||
+!! |width=20!!3rd United States Army!!
+|| ||9th Armored Corps||
+|| ||10th Armored Corps||
+|| ||Marine Corps||
+|| ||Robot Corps||  
+!! !!9th United States Army!!
+|| ||4th Assault Corps||
+|| ||Assault Wing Corps||
+|| ||11th Armored Corps||
+|| ||14th Armored Corps||  
+!! !!12th United States Army!!
+|| ||1st Assault Corps||
+|| ||2nd Assault Corps||
+|| ||17th Armored Corps||
+|| ||Auxiliary Corps||  
+!! !!18th British Army!!
+|| ||8th Armored Corps||
+|| ||15th Armored Corps||
+|| ||Strategic Air Corps||
+|| ||3rd Assault Corps||  
+!! !!49th British Army!!
+|| ||3rd Armored Corps||
+|| ||6th Armored Corps||
+|| ||Expeditionary Corps||
+|| ||Guardian Corps||
+ 
+=== Supreme Forces =
+The Allies have a single Supreme Forces structure that encompasses all of the allied nations.  This is led by an 8-star Leader with subordinate 7-star Leaders at a rate of one per Operations Theater reporting.  The total for each Supreme Force is about 2000 divisions or roughly 100,000 OP.  Each Operations Theater forces totals 500 divisions and around 20,000 OP.  These are each comprised of 4-6 Army Groups; each lead by a 6-star Leader.
+
+||||Supreme Headquarters Allied Expeditionary Forces (SHAEF)|class=thblack||
+!! |width=20!!European Theater Operations Group!!
+|| ||1st Army Group||
+|| ||3rd Army Group||
+|| ||12th Army Group||
+|| ||17th Army Group||
+|| ||22nd Army Group||
+!! !!Mediterranean Theater Operations Group!!
+|| ||2nd Army Group||
+|| ||5th Army Group||
+|| ||6th Army Group||
+|| ||21st Army Group||
+!! !!Pacific Theater Operations Group!!
+|| ||4th Army Group||
+|| ||7th Army Group||
+|| ||9th Army Group||
+|| ||17th Army Group||
+|| ||19th Army Group||
+|| ||23rd Army Group||
+!! !!Atlantic Theater Operations Group!!
+|| ||8th Army Group||
+|| ||11th Army Group||
+|| ||14th Army Group||
+!! !!Asiatic Theater Operations Group!!
+|| ||10th Army Group||
+|| ||13th Army Group||
+|| ||15th Army Group||
+|| ||16th Army Group|| 
+|| ||20th Army Group||
+ÿþ3minorÿþ31ÿþ3newauthorÿþ31ÿþ2hostÿþ2localhostÿþ2usernameÿþ2RobertKurcinaÿþ2revisionÿþ234ÿþ2idÿþ21278ÿþ2tscreateÿþ21194069079ÿþ2keeptsÿþ21222752569ÿþ1cache_diff_default_majorÿþ1<div id=wikidiffdiv><table id=wikidifftable><tr valign=top><td class="diff-header">Paragraph 2</td><td class="diff-vertical">&nbsp;</td><td class="diff-header">Paragraph 2</td></tr><tr valign=top><td class="diff-para-ident">&lt;blockquote&gt;Consider that 1 Operational Point [ OP ] is equivalent to about	100 soldiers.&nbsp; A standard 5 OP unit like the Biluxi Regulars then represent about 500 soldiers.&nbsp; Keep this in mind when seeing the very end of this document that the Allied Supreme Headquarters governs about 100,000 OP. That's about 10 million soldiers across approximately 2,000 divisions from all nations in the Allied powers [ USA, USSR, UK, plus minor nations ].&lt;/blockquote&gt;<br>
+</td><td class="diff-vertical"></td><td class="diff-para-ident">&lt;blockquote&gt;Consider that 1 Operational Point [ OP ] is equivalent to about	100 soldiers.&nbsp; A standard 5 OP unit like the Biluxi Regulars then represent about 500 soldiers.&nbsp; Keep this in mind when seeing the very end of this document that the Allied Supreme Headquarters governs about 100,000 OP. That's about 10 million soldiers across approximately 2,000 divisions from all nations in the Allied powers [ USA, USSR, UK, plus minor nations ].&lt;/blockquote&gt;<br>
+</td></tr><tr valign=top><td class="diff-para-deleted">&lt;toc 200&gt;<br>
+<br>
+</td><td class="diff-vertical"></td><td class="diff-para-added">{{toc}}<br>
+</td></tr><tr valign=top><td class="diff-para-ident">Otherwise known as TOEs or TO&amp;Es; these were blueprints used by each nations logistical and strategy experts to create new units and budget for training and technology.&nbsp; Even within a nation the various branches could have their own variations based upon combat or support philosophy.&nbsp; For example; the USA Marine Corps uses 13-man squads while the Army uses 9-man squads, or even 6 for BMP vehicles.&nbsp; This bubbles up through the battalion levels and higher; resulting in an average of 15,000 persons per Marine Infantry division versus 10,000 persons on average for an Army Infantry division.<br>
+</td><td class="diff-vertical"></td><td class="diff-para-ident">Otherwise known as TOEs or TO&amp;Es; these were blueprints used by each nations logistical and strategy experts to create new units and budget for training and technology.&nbsp; Even within a nation the various branches could have their own variations based upon combat or support philosophy.&nbsp; For example; the USA Marine Corps uses 13-man squads while the Army uses 9-man squads, or even 6 for BMP vehicles.&nbsp; This bubbles up through the battalion levels and higher; resulting in an average of 15,000 persons per Marine Infantry division versus 10,000 persons on average for an Army Infantry division.<br>
+</td></tr><tr valign=top><td class="diff-header">Paragraph 36</td><td class="diff-vertical">&nbsp;</td><td class="diff-header">Paragraph 36</td></tr><tr valign=top><td class="diff-para-ident">&nbsp;2nd Airborne Division<br>
+<br>
+</td><td class="diff-vertical"></td><td class="diff-para-ident">&nbsp;2nd Airborne Division<br>
+<br>
+</td></tr><tr valign=top><td class="diff-para-deleted"><br>
+</td><td class="diff-vertical"></td><td class="diff-para-ident"></td></tr><tr valign=top><td class="diff-para-ident">=== Complete OOB =&nbsp;	<br>
+</td><td class="diff-vertical"></td><td class="diff-para-ident">=== Complete OOB =&nbsp;	<br>
+</td></tr><tr valign=top><td class="diff-header">Paragraph 131</td><td class="diff-vertical">&nbsp;</td><td class="diff-header">Paragraph 131</td></tr><tr valign=top><td class="diff-para-changed"><span class="diff-span-ident">!!Class</span><span class="diff-span-ident">!!Light Infantry Regiment|width=250!!23 OP!!<br>
+</span></td><td class="diff-vertical"></td><td class="diff-para-changed"><span class="diff-span-ident">!!Class</span><span class="diff-span-added">|tablesort=none</span><span class="diff-span-ident">!!Light Infantry Regiment|width=250!!23 OP!!<br>
+</span></td></tr></table></div>ÿþ1cache_diff_default_minorÿþ1<div id=wikidiffdiv><table id=wikidifftable><tr valign=top><td class="diff-header">Paragraph 2</td><td class="diff-vertical">&nbsp;</td><td class="diff-header">Paragraph 2</td></tr><tr valign=top><td class="diff-para-ident">&lt;blockquote&gt;Consider that 1 Operational Point [ OP ] is equivalent to about	100 soldiers.&nbsp; A standard 5 OP unit like the Biluxi Regulars then represent about 500 soldiers.&nbsp; Keep this in mind when seeing the very end of this document that the Allied Supreme Headquarters governs about 100,000 OP. That's about 10 million soldiers across approximately 2,000 divisions from all nations in the Allied powers [ USA, USSR, UK, plus minor nations ].&lt;/blockquote&gt;<br>
+</td><td class="diff-vertical"></td><td class="diff-para-ident">&lt;blockquote&gt;Consider that 1 Operational Point [ OP ] is equivalent to about	100 soldiers.&nbsp; A standard 5 OP unit like the Biluxi Regulars then represent about 500 soldiers.&nbsp; Keep this in mind when seeing the very end of this document that the Allied Supreme Headquarters governs about 100,000 OP. That's about 10 million soldiers across approximately 2,000 divisions from all nations in the Allied powers [ USA, USSR, UK, plus minor nations ].&lt;/blockquote&gt;<br>
+</td></tr><tr valign=top><td class="diff-para-deleted">&lt;toc 200&gt;<br>
+<br>
+</td><td class="diff-vertical"></td><td class="diff-para-added">{{toc}}<br>
+</td></tr><tr valign=top><td class="diff-para-ident">Otherwise known as TOEs or TO&amp;Es; these were blueprints used by each nations logistical and strategy experts to create new units and budget for training and technology.&nbsp; Even within a nation the various branches could have their own variations based upon combat or support philosophy.&nbsp; For example; the USA Marine Corps uses 13-man squads while the Army uses 9-man squads, or even 6 for BMP vehicles.&nbsp; This bubbles up through the battalion levels and higher; resulting in an average of 15,000 persons per Marine Infantry division versus 10,000 persons on average for an Army Infantry division.<br>
+</td><td class="diff-vertical"></td><td class="diff-para-ident">Otherwise known as TOEs or TO&amp;Es; these were blueprints used by each nations logistical and strategy experts to create new units and budget for training and technology.&nbsp; Even within a nation the various branches could have their own variations based upon combat or support philosophy.&nbsp; For example; the USA Marine Corps uses 13-man squads while the Army uses 9-man squads, or even 6 for BMP vehicles.&nbsp; This bubbles up through the battalion levels and higher; resulting in an average of 15,000 persons per Marine Infantry division versus 10,000 persons on average for an Army Infantry division.<br>
+</td></tr><tr valign=top><td class="diff-header">Paragraph 36</td><td class="diff-vertical">&nbsp;</td><td class="diff-header">Paragraph 36</td></tr><tr valign=top><td class="diff-para-ident">&nbsp;2nd Airborne Division<br>
+<br>
+</td><td class="diff-vertical"></td><td class="diff-para-ident">&nbsp;2nd Airborne Division<br>
+<br>
+</td></tr><tr valign=top><td class="diff-para-deleted"><br>
+</td><td class="diff-vertical"></td><td class="diff-para-ident"></td></tr><tr valign=top><td class="diff-para-ident">=== Complete OOB =&nbsp;	<br>
+</td><td class="diff-vertical"></td><td class="diff-para-ident">=== Complete OOB =&nbsp;	<br>
+</td></tr></table></div>

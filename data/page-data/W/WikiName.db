@@ -1,0 +1,49 @@
+cache_oldmajorÿþ15ÿþ1revisionÿþ19ÿþ1tsÿþ11179996770ÿþ1text_defaultÿþ1tsÿþ21179996770ÿþ2revisionÿþ29ÿþ2hostÿþ2localhostÿþ2nameÿþ2text_defaultÿþ2dataÿþ2summaryÿþ3*ÿþ3minorÿþ31ÿþ3textÿþ3== Demonstration of <nowiki>WikiName</nowiki> =
+This is an example page demonstrating the Wiki:WikiName format (capitalized words squished together).
+
+:ISThisAWord ''-- yes''
+:IsThisAWord ''-- yes''
+:IsTHISAWORD ''-- yes''
+:IsthisaworD ''-- yes''
+:ISTHISAWORD ''-- no''
+:iSTHISAWORD ''-- no''
+:isthisaword ''-- no''
+:isthisaworD ''-- no''
+:Isthisaword ''-- no''
+:isthisaworD ''-- no''
+  
+ .
+<i><b>NOTE:</b> It is the presence of the ? link which indicates that the WikiWord is valid. </i>
+ÿþ3newauthorÿþ30ÿþ2ipÿþ2127.0.0.1ÿþ2usernameÿþ2RobertKurcinaÿþ2idÿþ21031ÿþ2versionÿþ21ÿþ2keeptsÿþ21179996770ÿþ2tscreateÿþ21178786687ÿþ1cache_diff_default_minorÿþ1<div id=wikidiffdiv><table id=wikidifftable><tr valign=top><td class="diff-header">Paragraph 12</td><td class="diff-vertical">&nbsp;</td><td class="diff-header">Paragraph 12</td></tr><tr valign=top><td class="diff-para-ident">:isthisaworD ''-- no''<br>
+</td><td class="diff-vertical"></td><td class="diff-para-ident">:isthisaworD ''-- no''<br>
+</td></tr><tr valign=top><td class="diff-para-deleted"><br>
+<br>
+</td><td class="diff-vertical"></td><td class="diff-para-added">&nbsp; <br>
+ .<br>
+</td></tr><tr valign=top><td class="diff-para-ident">&lt;i&gt;&lt;b&gt;NOTE:&lt;/b&gt; It is the presence of the ? link which indicates that the WikiWord is valid. &lt;/i&gt;<br>
+</td><td class="diff-vertical"></td><td class="diff-para-ident">&lt;i&gt;&lt;b&gt;NOTE:&lt;/b&gt; It is the presence of the ? link which indicates that the WikiWord is valid. &lt;/i&gt;<br>
+</td></tr></table></div>ÿþ1cache_diff_default_majorÿþ1<div id=wikidiffdiv><table id=wikidifftable><tr valign=top><td class="diff-header">Paragraph 1</td><td class="diff-vertical">&nbsp;</td><td class="diff-header">Paragraph 1</td></tr><tr valign=top><td class="diff-para-ident"></td><td class="diff-vertical"></td><td class="diff-para-added">== Demonstration of &lt;nowiki&gt;WikiName&lt;/nowiki&gt; =<br>
+</td></tr><tr valign=top><td class="diff-para-ident">This is an example page demonstrating the Wiki:WikiName format (capitalized words squished together).<br>
+<br>
+</td><td class="diff-vertical"></td><td class="diff-para-ident">This is an example page demonstrating the Wiki:WikiName format (capitalized words squished together).<br>
+<br>
+</td></tr><tr valign=top><td class="diff-para-deleted">==== Examples ====<br>
+<br>
+</td><td class="diff-vertical"></td><td class="diff-para-ident"></td></tr><tr valign=top><td class="diff-para-ident">:ISThisAWord ''-- yes''<br>
+</td><td class="diff-vertical"></td><td class="diff-para-ident">:ISThisAWord ''-- yes''<br>
+</td></tr><tr valign=top><td class="diff-header">Paragraph 12</td><td class="diff-vertical">&nbsp;</td><td class="diff-header">Paragraph 12</td></tr><tr valign=top><td class="diff-para-ident">:isthisaworD ''-- no''<br>
+</td><td class="diff-vertical"></td><td class="diff-para-ident">:isthisaworD ''-- no''<br>
+</td></tr><tr valign=top><td class="diff-para-deleted"><br>
+<br>
+</td><td class="diff-vertical"></td><td class="diff-para-added">&nbsp; <br>
+ .<br>
+</td></tr><tr valign=top><td class="diff-para-changed"><span class="diff-span-ident">&lt;i&gt;&lt;b&gt;NOTE:&lt;/b&gt; It is the presence of the ? link which indicates that the WikiWord is valid. </span><span class="diff-span-deleted">&nbsp;However, please don't create any entries from this page.</span><span class="diff-span-ident">&lt;/i&gt;<br>
+</span></td><td class="diff-vertical"></td><td class="diff-para-changed"><span class="diff-span-ident">&lt;i&gt;&lt;b&gt;NOTE:&lt;/b&gt; It is the presence of the ? link which indicates that the WikiWord is valid. </span><span class="diff-span-ident">&lt;/i&gt;<br>
+</span></td></tr></table></div>ÿþ1cache_oldauthorÿþ17ÿþ1versionÿþ13ÿþ1cache_diff_default_authorÿþ1<div id=wikidiffdiv><table id=wikidifftable><tr valign=top><td class="diff-header">Paragraph 12</td><td class="diff-vertical">&nbsp;</td><td class="diff-header">Paragraph 12</td></tr><tr valign=top><td class="diff-para-ident">:isthisaworD ''-- no''<br>
+</td><td class="diff-vertical"></td><td class="diff-para-ident">:isthisaworD ''-- no''<br>
+</td></tr><tr valign=top><td class="diff-para-deleted"><br>
+</td><td class="diff-vertical"></td><td class="diff-para-added">&nbsp; <br>
+ .<br>
+</td></tr><tr valign=top><td class="diff-para-ident">&lt;i&gt;&lt;b&gt;NOTE:&lt;/b&gt; It is the presence of the ? link which indicates that the WikiWord is valid. &lt;/i&gt;<br>
+</td><td class="diff-vertical"></td><td class="diff-para-ident">&lt;i&gt;&lt;b&gt;NOTE:&lt;/b&gt; It is the presence of the ? link which indicates that the WikiWord is valid. &lt;/i&gt;<br>
+</td></tr></table></div>ÿþ1tscreateÿþ11178786687

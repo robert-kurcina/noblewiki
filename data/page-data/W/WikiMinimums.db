@@ -1,0 +1,162 @@
+tsÿþ11223025143ÿþ1versionÿþ13ÿþ1cache_oldmajorÿþ19ÿþ1authorcreateÿþ1RobertKurcinaÿþ1cache_oldauthorÿþ112ÿþ1revisionÿþ114ÿþ1cache_diff_default_authorÿþ1<div id=wikidiffdiv><table id=wikidifftable><tr valign=top><td class="diff-header">Paragraph 18</td><td class="diff-vertical">&nbsp;</td><td class="diff-header">Paragraph 18</td></tr><tr valign=top><td class="diff-para-changed"><span class="diff-span-ident">**ListOfWantedPages</span><span class="diff-span-deleted">¬</span><span class="diff-span-ident"><br>
+</span></td><td class="diff-vertical"></td><td class="diff-para-changed"><span class="diff-span-ident">**ListOfWantedPages</span><span class="diff-span-ident"><br>
+</span></td></tr><tr valign=top><td class="diff-header">Paragraph 106</td><td class="diff-vertical">&nbsp;</td><td class="diff-header">Paragraph 106</td></tr><tr valign=top><td class="diff-para-ident">**cgi-bin/utilities/umtrans.pl<br>
+</td><td class="diff-vertical"></td><td class="diff-para-ident">**cgi-bin/utilities/umtrans.pl<br>
+</td></tr><tr valign=top><td class="diff-para-ident"></td><td class="diff-vertical"></td><td class="diff-para-added"><br>
+== Environment =<br>
+*Apache HTTP Server [ a Web server ]<br>
+*perl [ a programming language ]<br>
+*Microsoft Windows 2000 or Linux<br>
+</td></tr></table></div>ÿþ1text_defaultÿþ1ipÿþ2127.0.0.1ÿþ2tsÿþ21223025143ÿþ2versionÿþ21ÿþ2nameÿþ2text_defaultÿþ2dataÿþ2summaryÿþ3*ÿþ3textÿþ3= Minimum Wiki Elements =
+These are the minimum elements that come with a standard deployment of NobleWiki
+{{toc}}
+
+== Pages =
+=== Single Pages =
+**TourBusStop
+**HomePage
+**PageNotFound
+**BulletinBoardCode
+**AuthError
+**LoremIpsum
+**SandBox
+**InterMap
+**ExampleTemplate
+**FeaturedContent
+**WikiAnchors
+**PrivateUserGroups
+**ListOfWantedPages
+**MagicAll
+**MagicBlog
+**MagicDiscussion
+**MagicCommands
+**MagicContent
+**MagicFlash 
+**WikiMinimums
+**WikiHelp
+**WikiContacts
+**WikiStyleGuide
+**WikiHeadings
+**WikiGallery
+**WikiFlash
+**WikiTOCs
+**WikiURLs
+**WikiImages
+**WikiTables
+**WikiLists
+**WikiMarkup
+**WikiTemplates
+**WikiUploads
+
+=== Collections =
+Each of these contain sub-pages or have numerous pages associated
+**ImageGallery
+**WikiTemplates
+**WikiEditing
+**WikiAdmin
+**FlashSWF
+**RelatedEntries
+
+== Assets =
+=== Standard Assets =
+These are within the file system and can only be updated by the site owner.
+**img/
+***img/screenshots/*
+***img/lightbox/*
+***img/ufo/*
+***img/wiki.default/*
+***img/wiki.gray/*
+***img/wiki.greyness/*
+***img/wiki.purple/*
+***icons/
+****icons/icons.ai.100px.jpg
+****icons/icons.fh.100px.jpg
+****icons/icons.fla.100px.jpg
+****icons/icons.psd.100px.jpg
+****icons/icons.pdf.100px.jpg
+****icons/icons.swf.100px.jpg
+****icons/icons.ppt.100px.jpg
+****icons/icons.xls.100px.jpg
+****icons/icons.doc.100px.jpg
+****icons/icons.txt.100px.jpg
+****icons/icons.as.100px.jpg
+****icons/icons.css.100px.jpg
+****icons/icons.js.100px.jpg
+****icons/icons.xml.100px.jpg
+****icons/icons.UNKNOWN.100px.jpg
+**css/
+***css/jquery.lightbox.css
+***css/wiki.css
+***css/wiki.default.css
+***css/wiki.gray.css
+***css/wiki.greyness.css
+***css/wiki.purple.css
+**js/
+***js/jquery.js
+***js/jquery.lightbox.js
+***js/ufo.js
+
+=== Upload Assets =
+These are set as default and can be modified, moved, or deleted via the Manage Assets interface.
+**attachments/
+***attachments/sample_files*
+***attachments/[ImageGallery ImageGallery]/*
+***attachments/[FlashSWF FlashSWF]/*
+**disabled/*
+
+== File System =
+*wiki/
+**wiki/includes-data
+**wiki/keep-data
+**wiki/page-data
+**wiki/temp-files
+**wiki/user-data
+
+== Modules =
+*cgi-bin/
+**cgi-bin/diff.pm
+**cgi-bin/[MagicContent MagicContent.pm]
+**cgi-bin/utilities/trans.pl
+**cgi-bin/utilities/wiki-update-diff.cgi
+**cgi-bin/utilities/umtrans.pl
+
+== Environment =
+*Apache HTTP Server [ a Web server ]
+*perl [ a programming language ]
+*Microsoft Windows 2000 or Linux
+ÿþ3newauthorÿþ30ÿþ3minorÿþ31ÿþ2usernameÿþ2RobertKurcinaÿþ2hostÿþ2localhostÿþ2revisionÿþ214ÿþ2tscreateÿþ21196356883ÿþ2idÿþ21300ÿþ2keeptsÿþ21223025143ÿþ1tscreateÿþ11196356883ÿþ1cache_diff_default_majorÿþ1<div id=wikidiffdiv><table id=wikidifftable><tr valign=top><td class="diff-header">Paragraph 2</td><td class="diff-vertical">&nbsp;</td><td class="diff-header">Paragraph 2</td></tr><tr valign=top><td class="diff-para-ident">These are the minimum elements that come with a standard deployment of NobleWiki<br>
+</td><td class="diff-vertical"></td><td class="diff-para-ident">These are the minimum elements that come with a standard deployment of NobleWiki<br>
+</td></tr><tr valign=top><td class="diff-para-deleted">&lt;toc&gt;<br>
+</td><td class="diff-vertical"></td><td class="diff-para-added">{{toc}}<br>
+</td></tr><tr valign=top><td class="diff-para-ident"><br>
+== Pages =<br>
+</td><td class="diff-vertical"></td><td class="diff-para-ident"><br>
+== Pages =<br>
+</td></tr><tr valign=top><td class="diff-header">Paragraph 18</td><td class="diff-vertical">&nbsp;</td><td class="diff-header">Paragraph 18</td></tr><tr valign=top><td class="diff-para-changed"><span class="diff-span-ident">**ListOfWantedPages</span><span class="diff-span-deleted">¬</span><span class="diff-span-ident"><br>
+</span></td><td class="diff-vertical"></td><td class="diff-para-changed"><span class="diff-span-ident">**ListOfWantedPages</span><span class="diff-span-ident"><br>
+</span></td></tr><tr valign=top><td class="diff-header">Paragraph 51</td><td class="diff-vertical">&nbsp;</td><td class="diff-header">Paragraph 51</td></tr><tr valign=top><td class="diff-para-ident">**img/<br>
+</td><td class="diff-vertical"></td><td class="diff-para-ident">**img/<br>
+</td></tr><tr valign=top><td class="diff-para-ident"></td><td class="diff-vertical"></td><td class="diff-para-added">***img/screenshots/*<br>
+</td></tr><tr valign=top><td class="diff-para-ident">***img/lightbox/*<br>
+</td><td class="diff-vertical"></td><td class="diff-para-ident">***img/lightbox/*<br>
+</td></tr><tr valign=top><td class="diff-header">Paragraph 75</td><td class="diff-vertical">&nbsp;</td><td class="diff-header">Paragraph 76</td></tr><tr valign=top><td class="diff-para-changed"><span class="diff-span-ident">***css/jquery.lightbox</span><span class="diff-span-deleted">-0.4</span><span class="diff-span-ident">.css<br>
+</span></td><td class="diff-vertical"></td><td class="diff-para-changed"><span class="diff-span-ident">***css/jquery.lightbox</span><span class="diff-span-ident">.css<br>
+</span></td></tr><tr valign=top><td class="diff-header">Paragraph 82</td><td class="diff-vertical">&nbsp;</td><td class="diff-header">Paragraph 83</td></tr><tr valign=top><td class="diff-para-changed"><span class="diff-span-ident">***js/jquery</span><span class="diff-span-deleted">-1.2.1</span><span class="diff-span-ident">.js<br>
+</span><span class="diff-span-ident">***js/jquery.lightbox</span><span class="diff-span-deleted">-0.4</span><span class="diff-span-ident">.js<br>
+</span></td><td class="diff-vertical"></td><td class="diff-para-changed"><span class="diff-span-ident">***js/jquery</span><span class="diff-span-ident">.js<br>
+</span><span class="diff-span-ident">***js/jquery.lightbox</span><span class="diff-span-ident">.js<br>
+</span></td></tr><tr valign=top><td class="diff-header">Paragraph 105</td><td class="diff-vertical">&nbsp;</td><td class="diff-header">Paragraph 106</td></tr><tr valign=top><td class="diff-para-ident">**cgi-bin/utilities/umtrans.pl<br>
+</td><td class="diff-vertical"></td><td class="diff-para-ident">**cgi-bin/utilities/umtrans.pl<br>
+</td></tr><tr valign=top><td class="diff-para-ident"></td><td class="diff-vertical"></td><td class="diff-para-added"><br>
+== Environment =<br>
+*Apache HTTP Server [ a Web server ]<br>
+*perl [ a programming language ]<br>
+*Microsoft Windows 2000 or Linux<br>
+</td></tr></table></div>ÿþ1cache_diff_default_minorÿþ1<div id=wikidiffdiv><table id=wikidifftable><tr valign=top><td class="diff-header">Paragraph 106</td><td class="diff-vertical">&nbsp;</td><td class="diff-header">Paragraph 106</td></tr><tr valign=top><td class="diff-para-ident">**cgi-bin/utilities/umtrans.pl<br>
+</td><td class="diff-vertical"></td><td class="diff-para-ident">**cgi-bin/utilities/umtrans.pl<br>
+</td></tr><tr valign=top><td class="diff-para-ident"></td><td class="diff-vertical"></td><td class="diff-para-added"><br>
+== Environment =<br>
+*Apache HTTP Server [ a Web server ]<br>
+*perl [ a programming language ]<br>
+*Microsoft Windows 2000 or Linux<br>
+</td></tr></table></div>

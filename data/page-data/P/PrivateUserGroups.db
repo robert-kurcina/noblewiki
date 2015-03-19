@@ -1,0 +1,164 @@
+tsÿþ11225900814ÿþ1versionÿþ13ÿþ1cache_oldmajorÿþ16ÿþ1authorcreateÿþ1RobertKurcinaÿþ1cache_oldauthorÿþ15ÿþ1cache_diff_default_authorÿþ1<div id=wikidiffdiv><table id=wikidifftable><tr valign=top><td class="diff-header">Paragraph 4</td><td class="diff-vertical">&nbsp;</td><td class="diff-header">Paragraph 4</td></tr><tr valign=top><td class="diff-para-changed"><span class="diff-span-ident">Suppose we've modified the SandBox by adding the following to </span><span class="diff-span-deleted">it</span><span class="diff-span-ident">:<br>
+</span></td><td class="diff-vertical"></td><td class="diff-para-changed"><span class="diff-span-ident">Suppose we've modified the SandBox by adding the following to </span><span class="diff-span-added">a subpage &lt;nowiki&gt;/Authorization&lt;/nowiki&gt;</span><span class="diff-span-ident">:<br>
+</span></td></tr><tr valign=top><td class="diff-para-ident"><br>
+</td><td class="diff-vertical"></td><td class="diff-para-ident"><br>
+</td></tr><tr valign=top><td class="diff-para-changed"><span class="diff-span-ident">&lt;</span><span class="diff-span-deleted">tt&gt;&lt;nowiki&gt;</span><span class="diff-span-ident">{e:JohnDoe}</span><span class="diff-span-deleted">&lt;/nowiki&gt;&lt;/tt&gt;</span><span class="diff-span-ident"><br>
+</span></td><td class="diff-vertical"></td><td class="diff-para-changed"><span class="diff-span-ident">&lt;</span><span class="diff-span-added">pre&gt;<br>
+</span><span class="diff-span-ident">{e:JohnDoe}</span><span class="diff-span-ident"><br>
+</span></td></tr><tr valign=top><td class="diff-para-ident"></td><td class="diff-vertical"></td><td class="diff-para-added">&lt;/pre&gt;<br>
+</td></tr><tr valign=top><td class="diff-para-ident"><br>
+The above will allow the username &lt;nowiki&gt;JohnDoe&lt;/nowiki&gt; and only him to edit the page; all others may read the page.<br>
+<br>
+</td><td class="diff-vertical"></td><td class="diff-para-ident"><br>
+The above will allow the username &lt;nowiki&gt;JohnDoe&lt;/nowiki&gt; and only him to edit the page; all others may read the page.<br>
+<br>
+</td></tr><tr valign=top><td class="diff-para-deleted"><br>
+</td><td class="diff-vertical"></td><td class="diff-para-ident"></td></tr><tr valign=top><td class="diff-para-ident">====== Example-2 =<br>
+</td><td class="diff-vertical"></td><td class="diff-para-ident">====== Example-2 =<br>
+</td></tr><tr valign=top><td class="diff-para-deleted">Suppose we've modified the SandBox by adding the following to it:<br>
+</td><td class="diff-vertical"></td><td class="diff-para-added">Multiple editors are simply additions of extra names in a row:<br>
+</td></tr><tr valign=top><td class="diff-para-ident"><br>
+</td><td class="diff-vertical"></td><td class="diff-para-ident"><br>
+</td></tr><tr valign=top><td class="diff-para-changed"><span class="diff-span-ident">&lt;</span><span class="diff-span-deleted">tt&gt;&lt;nowiki&gt;</span><span class="diff-span-ident">{e:JohnDoe}</span><span class="diff-span-deleted">&lt;/nowiki&gt;&lt;/tt&gt;</span><span class="diff-span-ident"><br>
+</span><span class="diff-span-deleted">&lt;tt&gt;&lt;nowiki&gt;</span><span class="diff-span-ident">{e:JaneSmith}</span><span class="diff-span-deleted">&lt;/nowiki&gt;&lt;/tt&gt;</span><span class="diff-span-ident"><br>
+</span></td><td class="diff-vertical"></td><td class="diff-para-changed"><span class="diff-span-ident">&lt;</span><span class="diff-span-added">pre&gt;<br>
+</span><span class="diff-span-ident">{e:JohnDoe}</span><span class="diff-span-ident"><br>
+</span><span class="diff-span-ident">{e:JaneSmith}</span><span class="diff-span-ident"><br>
+</span></td></tr><tr valign=top><td class="diff-para-ident"></td><td class="diff-vertical"></td><td class="diff-para-added">&lt;/pre&gt;<br>
+</td></tr><tr valign=top><td class="diff-para-ident"><br>
+The above will allow the usernames &lt;nowiki&gt;JohnDoe&lt;/nowiki&gt; and &lt;nowiki&gt;JaneSmith&lt;/nowiki&gt; to edit the page; all others may read the page.<br>
+<br>
+</td><td class="diff-vertical"></td><td class="diff-para-ident"><br>
+The above will allow the usernames &lt;nowiki&gt;JohnDoe&lt;/nowiki&gt; and &lt;nowiki&gt;JaneSmith&lt;/nowiki&gt; to edit the page; all others may read the page.<br>
+<br>
+</td></tr><tr valign=top><td class="diff-para-deleted"><br>
+</td><td class="diff-vertical"></td><td class="diff-para-ident"></td></tr><tr valign=top><td class="diff-para-ident">====== Example-3 =<br>
+</td><td class="diff-vertical"></td><td class="diff-para-ident">====== Example-3 =<br>
+</td></tr><tr valign=top><td class="diff-para-deleted">Suppose we've modified the SandBox by adding the following to it:<br>
+</td><td class="diff-vertical"></td><td class="diff-para-added">To cause a page to be entirely private except for particular usernames:<br>
+</td></tr><tr valign=top><td class="diff-para-ident"><br>
+</td><td class="diff-vertical"></td><td class="diff-para-ident"><br>
+</td></tr><tr valign=top><td class="diff-para-changed"><span class="diff-span-ident">&lt;</span><span class="diff-span-deleted">tt&gt;&lt;nowiki&gt;</span><span class="diff-span-ident">{r:JaneSmith}</span><span class="diff-span-deleted">&lt;/nowiki&gt;&lt;/tt&gt;</span><span class="diff-span-ident"><br>
+</span></td><td class="diff-vertical"></td><td class="diff-para-changed"><span class="diff-span-ident">&lt;</span><span class="diff-span-added">pre&gt;<br>
+</span><span class="diff-span-ident">{r:JaneSmith}</span><span class="diff-span-ident"><br>
+</span></td></tr><tr valign=top><td class="diff-para-ident"></td><td class="diff-vertical"></td><td class="diff-para-added">&lt;/pre&gt;<br>
+</td></tr><tr valign=top><td class="diff-para-ident"><br>
+The above will allow the username &lt;nowiki&gt;JaneSmith&lt;/nowiki&gt; to __read__ the page; no others may access the page.<br>
+<br>
+</td><td class="diff-vertical"></td><td class="diff-para-ident"><br>
+The above will allow the username &lt;nowiki&gt;JaneSmith&lt;/nowiki&gt; to __read__ the page; no others may access the page.<br>
+<br>
+</td></tr><tr valign=top><td class="diff-para-deleted"><br>
+</td><td class="diff-vertical"></td><td class="diff-para-ident"></td></tr><tr valign=top><td class="diff-para-ident">====== Example-4 =<br>
+</td><td class="diff-vertical"></td><td class="diff-para-ident">====== Example-4 =<br>
+</td></tr><tr valign=top><td class="diff-para-deleted">Suppose we've modified the SandBox by adding the following to it:<br>
+</td><td class="diff-vertical"></td><td class="diff-para-added">Mixing and matching is allowed as well:<br>
+</td></tr><tr valign=top><td class="diff-para-ident"><br>
+</td><td class="diff-vertical"></td><td class="diff-para-ident"><br>
+</td></tr><tr valign=top><td class="diff-para-changed"><span class="diff-span-ident">&lt;</span><span class="diff-span-deleted">tt&gt;&lt;nowiki&gt;</span><span class="diff-span-ident">{e:JohnDoe}</span><span class="diff-span-deleted">&lt;/nowiki&gt;&lt;/tt&gt;</span><span class="diff-span-ident"><br>
+</span><span class="diff-span-deleted">&lt;tt&gt;&lt;nowiki&gt;</span><span class="diff-span-ident">{r:JaneSmith}</span><span class="diff-span-deleted">&lt;/nowiki&gt;&lt;/tt&gt;</span><span class="diff-span-ident"><br>
+</span></td><td class="diff-vertical"></td><td class="diff-para-changed"><span class="diff-span-ident">&lt;</span><span class="diff-span-added">pre&gt;<br>
+</span><span class="diff-span-ident">{e:JohnDoe}</span><span class="diff-span-ident"><br>
+</span><span class="diff-span-ident">{r:JaneSmith}</span><span class="diff-span-ident"><br>
+</span></td></tr><tr valign=top><td class="diff-para-ident"></td><td class="diff-vertical"></td><td class="diff-para-added">&lt;/pre&gt;<br>
+</td></tr><tr valign=top><td class="diff-para-ident"><br>
+The above will allow the usernames &lt;nowiki&gt;JohnDoe&lt;/nowiki&gt; and &lt;nowiki&gt;JaneSmith&lt;/nowiki&gt; to read the page; no others may read the page.&nbsp; &lt;nowiki&gt;JohnDoe&lt;/nowiki&gt; may also edit the page.<br>
+</td><td class="diff-vertical"></td><td class="diff-para-ident"><br>
+The above will allow the usernames &lt;nowiki&gt;JohnDoe&lt;/nowiki&gt; and &lt;nowiki&gt;JaneSmith&lt;/nowiki&gt; to read the page; no others may read the page.&nbsp; &lt;nowiki&gt;JohnDoe&lt;/nowiki&gt; may also edit the page.<br>
+</td></tr><tr valign=top><td class="diff-para-deleted"><br>
+<br>
+</td><td class="diff-vertical"></td><td class="diff-para-ident"></td></tr></table></div>ÿþ1revisionÿþ17ÿþ1tscreateÿþ11195946276ÿþ1text_defaultÿþ1ipÿþ2127.0.0.1ÿþ2tsÿþ21225900814ÿþ2versionÿþ21ÿþ2nameÿþ2text_defaultÿþ2dataÿþ2summaryÿþ3Altered formatting by adding pre tagsÿþ3textÿþ3===== TASK: Private User Groups =
+
+Editors may create an authorization filter for access to any page by creating a sub-page with a list of usernames.  Users in the list are allowed either Editor access or Read-only access.  Create the sub-page with each user name on it's own line and surrounded by curly braces like <tt><nowiki>{e:UserName}</nowiki></tt> or <tt><nowiki>{r:UserName}</nowiki></tt> to indicate can edit or can read. Guests and non-listed users otherwise attempting to access the page will receive an [AuthError Authorization Error] page.
+
+====== Example-1 =
+Suppose we've modified the SandBox by adding the following to a subpage <nowiki>/Authorization</nowiki>:
+
+<pre>
+{e:JohnDoe}
+</pre>
+
+The above will allow the username <nowiki>JohnDoe</nowiki> and only him to edit the page; all others may read the page.
+
+====== Example-2 =
+Multiple editors are simply additions of extra names in a row:
+
+<pre>
+{e:JohnDoe}
+{e:JaneSmith}
+</pre>
+
+The above will allow the usernames <nowiki>JohnDoe</nowiki> and <nowiki>JaneSmith</nowiki> to edit the page; all others may read the page.
+
+====== Example-3 =
+To cause a page to be entirely private except for particular usernames:
+
+<pre>
+{r:JaneSmith}
+</pre>
+
+The above will allow the username <nowiki>JaneSmith</nowiki> to __read__ the page; no others may access the page.
+
+====== Example-4 =
+Mixing and matching is allowed as well:
+
+<pre>
+{e:JohnDoe}
+{r:JaneSmith}
+</pre>
+
+The above will allow the usernames <nowiki>JohnDoe</nowiki> and <nowiki>JaneSmith</nowiki> to read the page; no others may read the page.  <nowiki>JohnDoe</nowiki> may also edit the page.
+ÿþ3newauthorÿþ30ÿþ3minorÿþ30ÿþ3descriptionÿþ3ÿþ2usernameÿþ2ÿþ2hostÿþ2localhostÿþ2revisionÿþ27ÿþ2tscreateÿþ21195946276ÿþ2idÿþ2111ÿþ2keeptsÿþ21225900814ÿþ1cache_diff_default_majorÿþ11ÿþ1cache_diff_default_minorÿþ1<div id=wikidiffdiv><table id=wikidifftable><tr valign=top><td class="diff-header">Paragraph 5</td><td class="diff-vertical">&nbsp;</td><td class="diff-header">Paragraph 5</td></tr><tr valign=top><td class="diff-para-changed"><span class="diff-span-ident">&lt;</span><span class="diff-span-deleted">tt&gt;&lt;nowiki&gt;</span><span class="diff-span-ident">{e:JohnDoe}</span><span class="diff-span-deleted">&lt;/nowiki&gt;&lt;/tt&gt;</span><span class="diff-span-ident"><br>
+</span></td><td class="diff-vertical"></td><td class="diff-para-changed"><span class="diff-span-ident">&lt;</span><span class="diff-span-added">pre&gt;<br>
+</span><span class="diff-span-ident">{e:JohnDoe}</span><span class="diff-span-ident"><br>
+</span></td></tr><tr valign=top><td class="diff-para-ident"></td><td class="diff-vertical"></td><td class="diff-para-added">&lt;/pre&gt;<br>
+</td></tr><tr valign=top><td class="diff-para-ident"><br>
+The above will allow the username &lt;nowiki&gt;JohnDoe&lt;/nowiki&gt; and only him to edit the page; all others may read the page.<br>
+<br>
+</td><td class="diff-vertical"></td><td class="diff-para-ident"><br>
+The above will allow the username &lt;nowiki&gt;JohnDoe&lt;/nowiki&gt; and only him to edit the page; all others may read the page.<br>
+<br>
+</td></tr><tr valign=top><td class="diff-para-deleted"><br>
+</td><td class="diff-vertical"></td><td class="diff-para-ident"></td></tr><tr valign=top><td class="diff-para-ident">====== Example-2 =<br>
+</td><td class="diff-vertical"></td><td class="diff-para-ident">====== Example-2 =<br>
+</td></tr><tr valign=top><td class="diff-header">Paragraph 9</td><td class="diff-vertical">&nbsp;</td><td class="diff-header">Paragraph 10</td></tr><tr valign=top><td class="diff-para-changed"><span class="diff-span-ident">&lt;</span><span class="diff-span-deleted">tt&gt;&lt;nowiki&gt;</span><span class="diff-span-ident">{e:JohnDoe}</span><span class="diff-span-deleted">&lt;/nowiki&gt;&lt;/tt&gt;</span><span class="diff-span-ident"><br>
+</span><span class="diff-span-deleted">&lt;tt&gt;&lt;nowiki&gt;</span><span class="diff-span-ident">{e:JaneSmith}</span><span class="diff-span-deleted">&lt;/nowiki&gt;&lt;/tt&gt;</span><span class="diff-span-ident"><br>
+</span></td><td class="diff-vertical"></td><td class="diff-para-changed"><span class="diff-span-ident">&lt;</span><span class="diff-span-added">pre&gt;<br>
+</span><span class="diff-span-ident">{e:JohnDoe}</span><span class="diff-span-ident"><br>
+</span><span class="diff-span-ident">{e:JaneSmith}</span><span class="diff-span-ident"><br>
+</span></td></tr><tr valign=top><td class="diff-para-ident"></td><td class="diff-vertical"></td><td class="diff-para-added">&lt;/pre&gt;<br>
+</td></tr><tr valign=top><td class="diff-para-ident"><br>
+The above will allow the usernames &lt;nowiki&gt;JohnDoe&lt;/nowiki&gt; and &lt;nowiki&gt;JaneSmith&lt;/nowiki&gt; to edit the page; all others may read the page.<br>
+<br>
+</td><td class="diff-vertical"></td><td class="diff-para-ident"><br>
+The above will allow the usernames &lt;nowiki&gt;JohnDoe&lt;/nowiki&gt; and &lt;nowiki&gt;JaneSmith&lt;/nowiki&gt; to edit the page; all others may read the page.<br>
+<br>
+</td></tr><tr valign=top><td class="diff-para-deleted"><br>
+</td><td class="diff-vertical"></td><td class="diff-para-ident"></td></tr><tr valign=top><td class="diff-para-ident">====== Example-3 =<br>
+</td><td class="diff-vertical"></td><td class="diff-para-ident">====== Example-3 =<br>
+</td></tr><tr valign=top><td class="diff-header">Paragraph 14</td><td class="diff-vertical">&nbsp;</td><td class="diff-header">Paragraph 16</td></tr><tr valign=top><td class="diff-para-changed"><span class="diff-span-ident">&lt;</span><span class="diff-span-deleted">tt&gt;&lt;nowiki&gt;</span><span class="diff-span-ident">{r:JaneSmith}</span><span class="diff-span-deleted">&lt;/nowiki&gt;&lt;/tt&gt;</span><span class="diff-span-ident"><br>
+</span></td><td class="diff-vertical"></td><td class="diff-para-changed"><span class="diff-span-ident">&lt;</span><span class="diff-span-added">pre&gt;<br>
+</span><span class="diff-span-ident">{r:JaneSmith}</span><span class="diff-span-ident"><br>
+</span></td></tr><tr valign=top><td class="diff-para-ident"></td><td class="diff-vertical"></td><td class="diff-para-added">&lt;/pre&gt;<br>
+</td></tr><tr valign=top><td class="diff-para-ident"><br>
+The above will allow the username &lt;nowiki&gt;JaneSmith&lt;/nowiki&gt; to __read__ the page; no others may access the page.<br>
+<br>
+</td><td class="diff-vertical"></td><td class="diff-para-ident"><br>
+The above will allow the username &lt;nowiki&gt;JaneSmith&lt;/nowiki&gt; to __read__ the page; no others may access the page.<br>
+<br>
+</td></tr><tr valign=top><td class="diff-para-deleted"><br>
+</td><td class="diff-vertical"></td><td class="diff-para-ident"></td></tr><tr valign=top><td class="diff-para-ident">====== Example-4 =<br>
+</td><td class="diff-vertical"></td><td class="diff-para-ident">====== Example-4 =<br>
+</td></tr><tr valign=top><td class="diff-header">Paragraph 18</td><td class="diff-vertical">&nbsp;</td><td class="diff-header">Paragraph 21</td></tr><tr valign=top><td class="diff-para-changed"><span class="diff-span-ident">&lt;</span><span class="diff-span-deleted">tt&gt;&lt;nowiki&gt;</span><span class="diff-span-ident">{e:JohnDoe}</span><span class="diff-span-deleted">&lt;/nowiki&gt;&lt;/tt&gt;</span><span class="diff-span-ident"><br>
+</span><span class="diff-span-deleted">&lt;tt&gt;&lt;nowiki&gt;</span><span class="diff-span-ident">{r:JaneSmith}</span><span class="diff-span-deleted">&lt;/nowiki&gt;&lt;/tt&gt;</span><span class="diff-span-ident"><br>
+</span></td><td class="diff-vertical"></td><td class="diff-para-changed"><span class="diff-span-ident">&lt;</span><span class="diff-span-added">pre&gt;<br>
+</span><span class="diff-span-ident">{e:JohnDoe}</span><span class="diff-span-ident"><br>
+</span><span class="diff-span-ident">{r:JaneSmith}</span><span class="diff-span-ident"><br>
+</span></td></tr><tr valign=top><td class="diff-para-ident"></td><td class="diff-vertical"></td><td class="diff-para-added">&lt;/pre&gt;<br>
+</td></tr><tr valign=top><td class="diff-para-ident"><br>
+The above will allow the usernames &lt;nowiki&gt;JohnDoe&lt;/nowiki&gt; and &lt;nowiki&gt;JaneSmith&lt;/nowiki&gt; to read the page; no others may read the page.&nbsp; &lt;nowiki&gt;JohnDoe&lt;/nowiki&gt; may also edit the page.<br>
+</td><td class="diff-vertical"></td><td class="diff-para-ident"><br>
+The above will allow the usernames &lt;nowiki&gt;JohnDoe&lt;/nowiki&gt; and &lt;nowiki&gt;JaneSmith&lt;/nowiki&gt; to read the page; no others may read the page.&nbsp; &lt;nowiki&gt;JohnDoe&lt;/nowiki&gt; may also edit the page.<br>
+</td></tr><tr valign=top><td class="diff-para-deleted"><br>
+<br>
+</td><td class="diff-vertical"></td><td class="diff-para-ident"></td></tr></table></div>

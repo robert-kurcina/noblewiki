@@ -1,0 +1,464 @@
+%Translate = split('\n',<<END_OF_TRANSLATION);
+Could not create %s
+Ne sukcesis krei %s
+Showing revision %s
+Jen estas la %s-a revisio:
+Revision %s not available
+Revizio %s ne haveblas
+showing current revision instead
+anstatauxe aperas la %s-a revizio
+Updates since %s
+Gxisdatigoj ekde %s
+Updates in the last %s day
+Gxisdatigoj dum la lasta %s tago
+Updates in the last %s days
+Gxisdatigoj dum la lastaj %s tagoj
+Could not open %s log file
+Ne sukcesis malfermi log-dosieron por %s
+Error was
+Eraro estis
+Note: This error is normal if no changes have been made.
+Rimarko: Tiu cxi eraro aperas ankaux se neniu gxis nun sxangxis la pagxon.
+Could not open old %s log file
+Ne sukcesis malfermi malnovan log-dosieron por %s
+for %s only
+nur por %s
+%s day
+%s tago
+%s days
+%s tagoj
+List new changes starting from
+Listigu novajn sxangxojn ekde
+No updates since %s
+Neniuj gxisdatigoj ekde %s
+Page generated %s
+Pagxo generigxis je %s
+(edit)
+(redakteto)
+(diff)
+(diferencoj)
+changes
+sxangxoj
+History of %s
+Historio de %s
+Compare
+Kompari
+(logged)
+(logregistrita)
+Revision %s
+Revizio %s
+Edit
+Redaktu
+by
+fare de
+Preferences
+ViajPreferoj
+Random Page
+Hazarda Pagxo
+ID %s
+Uzantonombro %s
+from %s
+de %s
+[Home]
+[Hejmen]
+redirected from %s
+plusendita de %s
+Edit revision %s of this page
+Redaktu %s-an revizion de tiu cxi pagxo
+Edit text of this page
+Redaktu tekston de tiu cxi pagxo
+This page is read-only
+Eblas nur legi tiun cxi pagxon
+View other revisions
+Vidu aliajn reviziojn
+View current revision
+Vidu aktualan revizion
+Last edited
+Laste redaktita
+Edited
+Redaktita
+Warning
+Averto
+Database is stored in temporary directory %s
+Datumbazo trovigxas en provizora dosierujo %s
+Search:
+Sercxu:
+Your browser should go to the %s page.
+Via foliumilo baldaux iros al la pagxo %s.
+If it does not, click %s to continue.
+Se ne, klaku sur %s por dauxrigi.
+Thanks for editing...
+Dankon pro via redaktado...
+Thank you for editing %s.
+Dankon pro redakti %s.
+Link to another page...
+Ligilo al alia pagxo...
+Follow the %s link to continue.
+Sekvi la ligilon al %s por dauxrigi.
+major diff
+granda sxangxo
+minor diff
+malgranda sxangxo
+author diff
+auxtora sxangxo
+major
+granda
+minor
+malgranda
+author
+auxtora
+(The revisions are identical or unavailable.)
+(La revizioj estas identaj aux nehaveblaj.)
+no other diffs
+neniuj aliaj sxangxoj
+No diff available.
+Diferencoj ne haveblas.
+current revision
+aktuala revizio
+revision %s
+%s-a revizio
+Difference (from revision %1 to %2)
+Diferencoj (de la %1-a revizio gxis %2)
+No diff available--this is the first %s revision.
+Diferencoj ne haveblas--tiu cxi estas la unua %s revizio.
+Difference (from prior %s revision)
+Diferencoj (de la antauxa %s revizio)
+Changed:
+Sxangxis:
+Removed:
+Forprenigxis:
+Added:
+Aldonigxis:
+Describe the new page here.
+Ekverku tie cxi la novan pagxon.
+Bad page version (or corrupt page).
+Nevalida revizi-nombro (aux nefunkcianta pagxo).
+cant write %s
+ne povas skribi al %s
+Page name is too long: %s
+Pagxnomo tro longas: %s
+Page name may not contain space characters: %s
+Pagxnomo ne rajtas enhavi spacojn: %s
+Too many / characters in page %s
+Tro multas la /-signoj en la pagxo %s
+Invalid Page %s (subpage without main page)
+Nevalida pagxo "%s" (subpagxo sen cxefpagxo)
+Invalid Page %s (missing subpage name)
+Nevalida pagxo "%s" (mankas subpagxa nomo)
+Invalid Page %s (/ not allowed)
+Nevalida pagxo "%s" (/-signoj ne estas permesataj)
+Invalid Page %s
+Nevalida pagxo "%s"
+Invalid Page %s (must not end with .db)
+Nevalida pagxo "%s" (nomo ne rajtas finigxi per ".db")
+Invalid Page %s (must not end with .lck)
+Nevalida pagxo "%s" (nomo ne rajtas finigxi per ".lck")
+can not make %s
+ne povas krei %s
+Can not open %s
+Ne povas malfermi %s
+Invalid action parameter %s
+Nevalida parametro "%s"
+Invalid URL.
+Nevalida URL.
+Editing Denied
+Redaktado malpermesata
+Editing not allowed: user, ip, or network is blocked.
+Redaktado malpermesata: uzanto, IP-adreso, aux reto blokata.
+Contact the wiki administrator for more information.
+Kontaktu la administranton por pliaj informoj.
+Editing not allowed: %s is read-only.
+Redaktado malpermesata: %s estas nur legebla.
+Editing %s
+Redaktilo por %s
+Editing revision %s of
+Redaktilo por %s-a revizio de
+Editing old revision %s.
+Vi redaktas nun la %s-an revizion de tiu cxi pagxo.
+Saving this page will replace the latest revision with this text.
+Se vi konservos gxin, vi anstatauxigos la plej lastan version per tiu cxi.
+Edit Conflict!
+Redaktado kauxzis konflikton!
+(This is a new conflict)
+(Tio cxi estas nova konflikto)
+Someone saved this page after you started editing.
+Iu konservis tiun cxi pagxon post kiam mi komencis redakti gxin.
+The top textbox contains the saved text.
+En la supra skatolo aperas la konservita teksto.
+Only the text in the top textbox will be saved.
+Nur la teksto en la supra skatolo konservigxos.
+Scroll down to see your edited text.
+Iru malsupren por vidi vian redaktitan tekston.
+Last save time:
+Laste konservigxis:
+Current time is:
+La horo nun estas:
+Summary:
+Resumo:
+This change is a minor edit.
+Tio cxi estas malgranda sxangxo. 
+Send email notification that %s has been changed.
+Retposxte sciigu la aliajn ke sxangxigxis %s.
+Save
+Konservu
+Your user name is
+Via nomo estas
+Visit %s to set your user name.
+Vizitu %s por ei enmeti nomon.
+Preview
+Antauxmontru
+This is the text you submitted:
+Jen estas la teksto kiun vi submetis:
+Preview:
+Antauxmontro:
+NOTE: This preview shows the revision of the other author.
+AVERTO: Tiu cxi antauxmontro ne inkluzivas la sxangxojn de la alia auxtoro.
+Preview only, not yet saved
+Tio cxi estas antauxmontro; la pagxo ankoraux ne konservigxis.
+Editing Preferences
+Viaj Preferoj
+User Information:
+Uzantaj Informoj:
+Your User ID number: %s
+Via uzantonombro: %s
+UserName:
+Nomo:
+(blank to remove, or valid page name)
+(malplenigu por nuligi nomon) 
+Set Password:
+Sxangxu pasvorton:
+(blank to remove password)
+(malplenigu por nuligi pasvorton)
+Passwords allow sharing preferences between multiple systems.
+Pasvortoj ebligas uzadon de preferoj inter multaj sistemoj.
+Passwords are completely optional.
+Pasvortoj estas tute nedevigaj.
+Administrator Password:
+Administra pasvorto:
+(Administrator passwords are used for special maintenance.)
+(Administraj pasvortoj estas uzataj por speciala prizorgado de la sistemo.)
+Include this address in the site email list.
+Inkluzivu tiun cxi adreson en la retposxta listo de la vikio.
+(Uncheck the box to remove the address.)
+(Malplenigu la kvadraton por forpreni la adreson.)
+Email Address:
+Retposxta adreso:
+Default days to display:
+Defauxlta nombro da tagoj:
+Most recent changes on top
+Plej lastaj sxangxoj aperu supre
+Show all changes (not just most recent)
+Montru cxiujn sxangxojn (ne nur lastatempajn)
+Hide minor edits
+Kasxu malgrandajn sxangxojn
+Show minor edits
+Montru malgrandajn sxangxojn
+Show only minor edits
+Montru nur malgrandajn sxangxojn
+Minor edit display:
+Montrado de malgrandaj sxangxoj:
+Use "changes" as link to history
+Uzu "sxangxojn" kiel ligilon al historio
+Differences:
+Diferencoj:
+Show (diff) links on %s
+Montru (diferencoj)-ligiloj cxe %s
+Show differences on all pages
+Montru diferencojn cxe cxiuj pagxoj
+No differences on %s
+Ne montru cxe %s
+Major
+Grandaj
+Minor
+Malgrandaj
+Author
+Auxtoraj
+Default difference type:
+Defauxlte sxangxoj estu:
+Misc:
+Aliaj aferoj:
+Server time:
+Tempo cxe la servilo:
+Time Zone offset (hours):
+Tempo-diferenco cxe vi (horoj):
+Use 100% wide edit area (if supported)
+Uzu plenlargxan redaktejon (se eblas)
+Edit area rows:
+Linioj en la redaktejo:
+columns:
+Kolumnoj:
+Show link bar on top
+Montru ligilojn supre
+Add "Random Page" link to link bar
+Aperu ligilo al hazarde elektita pagxo
+Saving Preferences
+Konservado de viaj preferoj
+Invalid UserID %s, preferences not saved.
+Nevalida uzantonombro %s, ne konservis viajn preferojn.
+(Preferences require cookies, but no cookie was sent.)
+(Por uzi preferojn, la foliumilo devas subteni "cookies".)
+UserName removed.
+Nuligis nomon.
+Invalid UserName %s: not saved.
+Ne konservis la nevalidan nomon "%s".
+UserName must be 50 characters or less. (not saved)
+Ne konservis tro longan nomon "%s".
+UserName %s saved.
+Konservis nomon "%s".
+Password removed.
+Nuligis pasvorton.
+Password changed.
+Sxangxis pasvorton.
+Administrator password removed.
+Nuligis administran pasvorton.
+Administrator password changed.
+Sxangxis administran pasvorton.
+User has administrative abilities.
+Uzanto havas rajtojn de administranto.
+User has editor abilities.
+Uzanto havas rajtojn de redaktanto.
+User does not have administrative abilities.
+Uzanto ne havas rajtojn de administranto.
+(Password does not match administrative password(s).)
+(La entajpita pasvorto ne validas.)
+Local time:
+Loka tempo:
+Preferences saved.
+Konservis viajn preferojn.
+Could not read from %s:
+Ne sukcesis legi de %s:
+Could not get mail lock
+Ne sukcesis akiri seruron por retposxto
+Could not append to %s:
+Ne sukcesis aldoni al %s:
+Could not overwrite %s:
+Ne sukcesis anstatauxigi %s:
+Index of all pages
+Indekso de cxiuj pagxoj
+Login
+Salutu la sistemon
+User ID number:
+Uzantonombro:
+Password:
+Pasvorto: 
+Login Results
+Rezulto de via saluto
+Login for user ID %s complete.
+Saluto de uzanto %s sukcesis.
+Login for user ID %s failed.
+Saluto de uzanto %s malsukcesis.
+Could not get user-ID lock
+Ne sukcesis akiri seruron por tiu uzantonombro
+Search for: %s
+Sercxvorto: %s
+Backlinks for: %s
+Pagxoj ligantaj al: %s
+%s pages found:
+Trovis %s pagxojn:
+Full Link List
+Listo de cxiuj ligiloj
+Editing not allowed for %s.
+Redaktado de %s estas malpermesata.
+SampleUndefinedPage
+EkzemplaNedifinitaPagxo
+%s cannot be defined.
+Ne povas difini %s.
+Sample_Undefined_Page
+Ekzempla_Nedifinita_Pagxo
+[[%s]] cannot be defined.
+Ne povas difini [[%s]].
+Could not get editing lock
+Ne sukcesis akiri seruron por redaktado
+Normal Unlock.
+Kutima malsxloso.
+Removing edit lock
+Forprenas seruron por redaktado
+This operation may take several seconds...
+Tio cxi eble postulos kelkajn sekundojn...
+Forced Unlock.
+Deviga malsxloso.
+%s log error:
+Eraro cxe log-dosiero %s:
+can not write diff_log
+Ne povas skribi al diferenco-logo.
+(done)
+(fine)
+(deleted)
+(forigis)
+(replaced)
+(anstatauxis)
+Maintenance on all pages
+Prizorgado/riparado de cxiuj pagxoj
+Maintenance not done.
+Ne faris prizorgadon/riparadon.
+(Maintenance can only be done once every 12 hours.)
+(Nur povas prizorgi/ripari la sistemon cxiujn 12 horojn.)
+Remove the "maintain" file or wait.
+Forprenu la dosieron "maintain" aux atendu.
+Could not get maintain-lock
+Ne sukcesis akiri seruron
+Processing rename/delete commands:
+Traktas renomigojn kaj/aux forprenojn:
+This operation is restricted to site editors only...
+Tion cxi rajtas fari nur redaktantoj...
+This operation is restricted to administrators only...
+Tion cxi rajtas fari nur administrantoj...
+Set or Remove global edit lock
+Aldonu aux forprenu seruron por cxiuj pagxoj
+Edit lock created.
+Aldonis seruron por redaktado.
+Edit lock removed.
+Forprenis seruron por redaktado.
+Set or Remove page edit lock
+Aldonu aux forprenu seruron por redaktado
+Missing page id to lock/unlock...
+Mankas pagx-identigilo por sxlosi/malsxlosi...
+Lock for %s created.
+Kreis seruron por %s.
+Lock for %s removed.
+Forprenis seruron por %s.
+UpdateLinksList could not get main lock
+UpdateLinksList malsukcesis seruri
+Updating Links
+Gxisdatigas Ligilojn
+Administration
+Administrejo
+Unlock page
+Malsxlosu pagxon
+Lock page
+Sxlosu pagxon
+Delete this page
+Forigu tiun cxi pagxon
+Edit Banned List
+Redaktu Barilojn
+Run Maintenance
+Bonordigi Arkivojn
+Edit/Rename pages
+Redaktu/Movi pagxojn
+Unlock site
+Malsxlosu pagxaron
+Lock site
+Sxlosu pagxaron
+Confirm Delete %s
+Konfirmu Forigadon: %s
+Confirm deletion of %s by following this link:
+Konfirmu la forigadon de %s per sekvi jenan ligilon:
+Confirm Delete
+Konfirmu Forigadon
+Delete %s
+Forigu %s
+%s can not be deleted.
+Ne povas forigi %s
+%s can not be deleted because it is locked.
+Ne povas forigi %s cxar oni sxlosis gxin
+%s has been deleted.
+Forigis %s
+Use X-System
+Uzu X-Sistemon
+Use Unicode
+Uzu Unikodon
+Return to previous page.
+Revenu al antauxa pagxo.
+Show supersigns in Unicode
+Montru supersignojn per Unikodo
+END_OF_TRANSLATION

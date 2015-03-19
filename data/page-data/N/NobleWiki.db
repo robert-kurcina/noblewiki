@@ -1,0 +1,176 @@
+versionÿþ13ÿþ1tsÿþ11226206341ÿþ1descriptionÿþ1a summary of all features available in this wiki.ÿþ1cache_oldmajorÿþ1153ÿþ1cache_oldauthorÿþ1151ÿþ1cache_diff_default_authorÿþ1<div id=wikidiffdiv><table id=wikidifftable><tr valign=top><td class="diff-header">Paragraph 6</td><td class="diff-vertical">&nbsp;</td><td class="diff-header">Paragraph 6</td></tr><tr valign=top><td class="diff-para-ident">== Features =<br>
+</td><td class="diff-vertical"></td><td class="diff-para-ident">== Features =<br>
+</td></tr><tr valign=top><td class="diff-para-deleted">This version of the &lt;nowiki&gt;UseMod&lt;/nowiki&gt;wiki engine is highly customized, and adds the following features not available in the standard UseMod:wiki.pl. <br>
+<br>
+!!Major&amp;nbsp;Things|width=300!!Description!!<br>
+||Negation Search|class=first||Precede the search term with '!' exclamation point and the search API will find every &lt;em&gt;but&lt;/em&gt; that term.||<br>
+||Manage Assets||Files uploaded go into the uploads directory as active assets, and can be moved between the uploaded and disabled directories. Supports a naming filter, folder creation, and asset deletion.&nbsp; See WikiUploads for more information.||<br>
+||CSS||Every relevant element has been assigned a CSS class or ID||<br>
+||CSS Selection||All CSS files named using the pattern &lt;tt&gt;wiki.*&lt;/tt&gt; such as &lt;tt&gt;wiki.css&lt;/tt&gt; or &lt;tt&gt;wiki.gray&lt;/tt&gt; are made available automatically for selection via the Preferences interface.||<br>
+||HTML Structure||Made the HTML structure a bit more robust in order to allow advanced CSS styling.&nbsp; The most significant change is to add &lt;tt&gt;&lt;div class='wikicontainer'&gt;&lt;/div&gt;&lt;/tt&gt; around the basic HTML ouput.||<br>
+||Full Tables||Revised UseMod:WikiPatches/WikiTemplate to allow option switches to control class, style, alignment, width, etc.&nbsp; See WikiTables for more information||<br>
+||Flash Object||Flash SWFs may be added using the &lt;tt&gt;&lt;nowiki&gt;&lt;/nowiki&gt;&lt;/tt&gt; directive and module. See WikiFlash for more information.||<br>
+||&lt;nowiki&gt;LightBox&lt;/nowiki&gt; Gallery||Implemented a way to view gallery images.&nbsp; See WikiGallery for more information.||<br>
+||File Icon Boxes||If an asset link has a non-bitmap image extension a box with an icon for that file type is presented.||<br>
+||JSON Blocks||Very useful for providing data to various applets like the open-source Flash charting tool.||<br>
+||Code Boxes||If code needs to be shown - be it perl, &lt;nowiki&gt;JavaScript&lt;/nowiki&gt;, CSS, or even HTML; use [WikiCodeBox Code Boxes].&nbsp;&nbsp; These will show line-numbering and have syntax-highlighting.||<br>
+||User Home||User home pages are to be created and are assumed to exist as sub-pages defined within &lt;tt&gt;&lt;nowiki&gt;$HomePagePrefix&lt;/nowiki&gt;&lt;/tt&gt; which is defaulted to be &lt;tt&gt;&lt;nowiki&gt;HomePage&lt;/nowiki&gt;&lt;/tt&gt;||<br>
+||Discuss Page||This is a work-in-progress.&nbsp; Essentially add &lt;tt&gt;&lt;nowiki&gt;{{magic: Discuss}}&lt;/nowiki&gt;&lt;/tt&gt; in order to activate discussion form and feedback set for a page.&nbsp; Deactivate form but leave feedback in place by adding parameter locked=true.||<br>
+||Expanded &lt;tt&gt;&lt;nowiki&gt;$SimpleLinks&lt;/nowiki&gt;&lt;/tt&gt;||Links like &lt;tt&gt;&lt;nowiki&gt;Setup_Box&lt;/nowiki&gt;&lt;/tt&gt; and &lt;tt&gt;&lt;nowiki&gt;SetUp_box&lt;/nowiki&gt;&lt;/tt&gt; are allowed.&nbsp; Both will create bracketed links but not show the underscore character.||<br>
+||Expanded &lt;tt&gt;&lt;nowiki&gt;FreeLinks and $LinkPattern&lt;/nowiki&gt;&lt;/tt&gt;||Pages that are formed with a single word instead of a WikiWord may only be created by EditorRole and AdminRole.||<br>
+||View User Contributions||Use &lt;tt&gt;&lt;nowiki&gt;action=rc&amp;userid=RobertKurcina&lt;/nowiki&gt;&lt;/tt&gt; to see all contributions by a given userid.&nbsp; This is made available in each RecentChanges history line as well.||<br>
+||Redirect to Edit Page||By setting action=referer in the &lt;tt&gt;&lt;nowiki&gt;$NotFoundPage&lt;/nowiki&gt;&lt;/tt&gt;, the hyperlink created will redirect to the edit page for the name of the page. This is useful to automatically generate edit requests for Notes pages.||<br>
+||Block Colors||Introduced custom coloring with &lt;tt&gt;&lt;nowiki&gt;{{color:key=value|key=value|..}}&lt;/nowiki&gt;&lt;/tt&gt; where key is bgcolor, color, or padding [in pixels].&nbsp; bgcolor and color accept standard CSS color names.||<br>
+||Message Boxes||Introduced custom coloring with &lt;tt&gt;&lt;nowiki&gt;{{box:type|message=value}}&lt;/nowiki&gt;&lt;/tt&gt; where type is one of error, alert, warn, info, update, todo, yes, no, delete, or lock. See MessageBox for more information. ||<br>
+||Source View||When a page is locked for Guests, the Edit feature will display a READONLY textarea.||<br>
+||&lt;tt&gt;&lt;nowiki&gt;Dynamic GotoBar&lt;/nowiki&gt;&lt;/tt&gt;||The &lt;tt&gt;&lt;nowiki&gt;GotoBar&lt;/nowiki&gt;&lt;/tt&gt;for users and admins have been consolidated.&nbsp; By default only the top bar will show, but the Preferences section will allow a bottom one to appear.&nbsp; The elements of the bars will dynamically enable or disable according to the page or action being viewed.||<br>
+||Dynamic Navigation Menu||The left-navigation incorporates user and admin options, and like the &lt;tt&gt;&lt;nowiki&gt;GotoBar&lt;/nowiki&gt;&lt;/tt&gt;will enable or disable the items.||<br>
+||System Info||The [LocalWiki:action=version action=version] page has been expanded with verbose but static information.||<br>
+||Page Creation Prompt||The &lt;tt&gt;&lt;nowiki&gt;PageNotFound&lt;/nowiki&gt;&lt;/tt&gt; result will now prompt the user to create a new page if their search request involved a legitimate page name as qualified by the &lt;tt&gt;&lt;nowiki&gt;$LinkPattern&lt;/nowiki&gt;&lt;/tt&gt; variable in the wiki code.||<br>
+||Description Text||Descriptions for a page can be created while editing the wikitext for it.&nbsp; These will display for search results.||<br>
+||Formatted Search Results||Search results will display in two columns if a custom threshold of results found is exceeded.||<br>
+<br>
+!!Minor&amp;nbsp;Things|width=300!!Description!!<br>
+||Cancel button|class=first||Added to Edit page; basically &lt;tt&gt;&lt;nowiki&gt;onclick='window.location="&amp;ScriptName()?$id;";'&lt;/nowiki&gt;&lt;/tt&gt;||<br>
+||Print Link List||Updated this presentation to have a table.&nbsp; Any non-existent pages identified will show with the 'Create this entry' icon.||<br>
+||Recent Changes||Instead of &lt;tt&gt;$FS3&lt;/tt&gt; to split the recent changes log, use &lt;tt&gt;\W&lt;/tt&gt;.&nbsp; For example &lt;tt&gt;($ts) = split( /\W/, $fullrc[$i] );&lt;/tt&gt;.&nbsp; Seems to work better for WIN32.||<br>
+||Page Lock Icon||Added a small icon to the right of the page title to show that a page is locked or editable.||<br>
+||index.cgi||The wiki.pl script has been renamed.||<br>
+||IE6 textarea||Added &lt;tt&gt;&lt;nowiki&gt;&lt;div style='width:100%;'&gt;...&lt;/div&gt;&lt;/nowiki&gt;&lt;/tt&gt; around the textarea in &lt;tt&gt;&lt;nowiki&gt;sub GetTextArea {}&lt;/nowiki&gt;&lt;/tt&gt; to enable 100% width in IE6||<br>
+||Table Sorting||Added jQuery Tablesorter 2.0 to engage any table created properly.&nbsp; See WikiTables for more information.||<br>
+||Disabled regex Search||A checkbox near the search form when marked will disable the default search mechanism that allows search terms to be interpreted as regex values.||<br>
+||Disable regex back-links||The &lt;tt&gt;&lt;nowiki&gt;DoBackLinks&lt;/nowiki&gt;&lt;/tt&gt; subroutine no longer uses search terms as regular expressions.||<br>
+||Table Of Contents||The [LocalWiki:WikiTOCs Table of Contents] may be assigned a pixel width parameter as in &lt;tt&gt;&lt;nowiki&gt;{{toc NNN}}&lt;/nowiki&gt;&lt;/tt&gt;||<br>
+||Expanded Config||Added a number of configuration variables.||<br>
+||Windows Config||Set &lt;tt&gt;&lt;nowiki&gt;$Windows = 1&lt;/nowiki&gt;&lt;/tt&gt; to remove CGITemp files after uploading assets.||<br>
+||Title attribute||Added a title attribute to all links where possible||<br>
+||Auto Signature||Insert &lt;tt&gt;&lt;nowiki&gt;[ [HomePage/RobertKurcina RobertKurcina] ]&lt;/nowiki&gt;&lt;/tt&gt; to automatically insert username with link to home page; defaults to 'Guest' and no link if not logged in.&nbsp; Use &lt;tt&gt;&lt;nowiki&gt;[ [HomePage/RobertKurcina RobertKurcina] at 2008.10.12 21:18 ]&lt;/nowiki&gt;&lt;/tt&gt; to append timestamp.||<br>
+||Bracketed Image URLs with options||&lt;tt&gt;&lt;nowiki&gt;[URL upload:image|&lt;options&gt;]&lt;/nowiki&gt;&lt;/tt&gt; There's a number of options available now for images including title, description, boxclear, boxwidth, boxfloat, float, and clear.&nbsp; The last are for images within a caption box if description is provided.&nbsp; If description is provided but not title, then the title will show "FIGURE X" where X is computed as the current number of un-titled images||<br>
+||Edit Box||The edit box and other textareas are always 100% width in every browser implementation.||<br>
+||Lock-out Indicators||Added small symbols to allow quick access to editing a page from the title, and symbols to indicate that a page is locked.&nbsp; &lt;tt&gt;'&amp;not;'&lt;/tt&gt; is that symbol prefixed to a locked page.||<br>
+||Naming Filter||Provide multiple keywords with or with negated terms to filter the names returned from &lt;tt&gt;backlinks&lt;/tt&gt;, &lt;tt&gt;search&lt;/tt&gt;, or the asset management interface.||<br>
+<br>
+== Patches Applied =<br>
+These are the patches that have been applied:<br>
+!!Patches Applied!!Description!!<br>
+||UseMod:WikiPatches/AnchorsInFreeLinkBugFix|class=first|width=300||Corrects how [LocalWiki:WikiURLs#freelinks FreeLinks] appear||<br>
+||UseMod:WikiPatches/PerlDiff||Perl-based diff; should work on WIN32 and LINUX||<br>
+||UseMod:WikiPatches/GetSubpages||Return all subpages of a page via the Manage Pages interface for administrators||<br>
+||UseMod:WikiPatches/RenameSubpages||Rename subpages if it's parent page is renamed||<br>
+||UseMod:WikiPatches/EmbeddedSubpageList||Allows placement of &lt;nowiki&gt;{{subpages}}&lt;/nowiki&gt; on any page, and wiki engine will generate list of subpages associated with it.||<br>
+||UseMod:WikiPatches/BacklinksImproved||Eliminates listings that match the current page||<br>
+||UseMod:WikiPatches/SiteIndex||Changes the search index results to a list of links to sections named A .. Z.&nbsp; Altered to allow entries to flow across a row of text delimited by commas.||<br>
+||UseMod:WikiPatches/AutoMailto||Convert email addresses found into mailTo:&lt;address&gt;||<br>
+||UseMod:WikiPatches/WikiTemplate||Modified to require a command string of &lt;tt&gt;{{template:&lt;/tt&gt; before it can be used. Created instructions for use as well; see WikiTemplates||<br>
+||UseMod:WikiPatches/MagicContent||Added.&nbsp; Need to create links to standard magic content pages||<br>
+||UseMod:WikiPatches/MagicWantedPages||Via [Wiki:WikiPatches/MagicContent MagicContent]; creates a list of pages that have not yet been created but are referenced by at least 1 existing page||<br>
+||UseMod:WikiPatches/ListOrphans||Available via Admin view; list all pages that have no links leading to them||<br>
+||UseMod:WikiPatches/FileInclusion||Insert a file into &lt;nowiki&gt;$DataDir/includes&lt;/nowiki&gt; and have it appear in a page using command &lt;tt&gt;&lt;nowiki&gt;INCLUDE&lt;/nowiki&gt;: filename&lt;/tt&gt;||<br>
+||UseMod:WikiPatches/UneditablePageBugFix||Prevent pages to be created that can't be edited||<br>
+||UseMod:WikiPatches/RobotsMetaTag||Prevent search engine robots from indexing edit history versions||<br>
+||UseMod:WikiPatches/OriginalAuthor||Modified from original.&nbsp; Inserts prior to 'Last Edited by' the phrase 'Created on DATE' and adds an author if it one exists||<br>
+||UseMod:WikiPatches/AutoSignature||Modified from original; basically checks for login status and sets $id to 'Guest' if empty||<br>
+||UseMod:WikiPatches/SubPages||Modified syntax&nbsp; &lt;tt&gt;&lt;nowiki&gt;{{subpages}}&lt;/nowiki&gt;&lt;/tt&gt;Inserts all of a page's sub-pages.&nbsp; Optional page name as in &lt;tt&gt;&lt;nowiki&gt;{{subpages:PageName}}&lt;/nowiki&gt;&lt;/tt&gt; will show that page's subpages||<br>
+||UseMod:WikiPatches/PrivateUserGroups||Modified from original.&nbsp; Each user name must be on it's own line and surrounded by curly braces like &lt;tt&gt;&lt;nowiki&gt;{e:UserName} or {r:UserName}&lt;/nowiki&gt;&lt;/tt&gt; to indicate can edit or can read.&nbsp; Otherwise an Authorization Error page will appear [ AuthError ]||<br>
+||UseMod:WikiPatches/UserTalkSpace||Modified from original such that each page potentially has a 'Notes' page.&nbsp; See NotesPages.||<br>
+||UseMod:WikiPatches/FooterNotes||Allows for plain-text citations.&nbsp; See FootNotes page.||<br>
+<br>
+== Possible Patches =<br>
+</td><td class="diff-vertical"></td><td class="diff-para-added">{{template:NobleWiki/Features}}<br>
+{{template:NobleWiki/Extras}}<br>
+<br>
+== Patches Applied =<br>
+{{template:NobleWiki/Patches}}<br>
+<br>
+== Possible Patches =<br>
+Other patches worth implementing for Anti-spam and Denial of Service attacks are as follows:<br>
+</td></tr><tr valign=top><td class="diff-para-ident">!!Patches Under Consideration|width=300!!Description!!<br>
+</td><td class="diff-vertical"></td><td class="diff-para-ident">!!Patches Under Consideration|width=300!!Description!!<br>
+</td></tr><tr valign=top><td class="diff-header">Paragraph 90</td><td class="diff-vertical">&nbsp;</td><td class="diff-header">Paragraph 24</td></tr><tr valign=top><td class="diff-para-ident">=== Planned Things =<br>
+</td><td class="diff-vertical"></td><td class="diff-para-ident">=== Planned Things =<br>
+</td></tr><tr valign=top><td class="diff-para-deleted">Not sure when these will come in, but definitely on the TODO list;<br>
+</td><td class="diff-vertical"></td><td class="diff-para-added">{{template:NobleWiki/Planned}}<br>
+</td></tr><tr valign=top><td class="diff-para-ident"><br>
+</td><td class="diff-vertical"></td><td class="diff-para-ident"><br>
+</td></tr><tr valign=top><td class="diff-para-deleted">!!New Commands Planned|width=300!!Description!!<br>
+||&lt;tt&gt;&lt;nowiki&gt;{{history|events}}&lt;/nowiki&gt;&lt;/tt&gt;|class=first||Create a timeline using the Timeline javascript widget||<br>
+||&lt;tt&gt;&lt;nowiki&gt;{{latex|events}}&lt;/nowiki&gt;&lt;/tt&gt;|class=first||Create LaTex markup for support of scientific notation||<br>
+||&lt;tt&gt;&lt;nowiki&gt;{{syntax|language}}&lt;/nowiki&gt;&lt;/tt&gt;|class=first||Switch between the various markup languages.&nbsp; Support Markdown, Creole.||<br>
+||&lt;tt&gt;&lt;nowiki&gt;{{section|WikiPage|header}}&lt;/nowiki&gt;&lt;/tt&gt;||Non-recursively transclude the section text for any page of the identified TOC header||<br>
+||&lt;tt&gt;&lt;nowiki&gt;{{css|media|stylesheet}}&lt;/nowiki&gt;&lt;/tt&gt;||Added at top of an editor's home-page to alter CSS used before rendering any wiki page.||<br>
+||&lt;tt&gt;&lt;nowiki&gt;{{feedback|template}}&lt;/nowiki&gt;&lt;/tt&gt;||Use a template [ see above ] to capture feedback or voting information||<br>
+||&lt;tt&gt;&lt;nowiki&gt;{{columns|color}}&lt;/nowiki&gt;&lt;/tt&gt;||Sort of like the version use on en.wikipedia.org; specify that content following appears in one, two, or three columns.||<br>
+||&lt;tt&gt;&lt;nowiki&gt;{{graph|type|dimension}}&lt;/nowiki&gt;&lt;/tt&gt;||Add support for javascript-generated graphs.&nbsp; Bar graphs, line graphs, etc.||<br>
+||&lt;tt&gt;&lt;nowiki&gt;{{data|id}}&lt;/nowiki&gt;&lt;/tt&gt;||Add dataset storage in two phases.&nbsp; Phase I is JSON creation for reference by SWFs, and &lt;tt&gt;&lt;nowiki&gt;JavaScript&lt;/nowiki&gt;&lt;/tt&gt; libraries.&nbsp; Phase II is a read/write API possibly via &lt;tt&gt;&lt;nowiki&gt;XmlHttpSocket&lt;/nowiki&gt;&lt;/tt&gt; for AJAX or SWF.||<br>
+||&lt;tt&gt;&lt;nowiki&gt;{{blog|entryid}}&lt;/nowiki&gt;&lt;/tt&gt;||This would be a new GUI that writes to a dataset page under &lt;tt&gt;&lt;nowiki&gt;PageId/Blogentryid&lt;/nowiki&gt;&lt;/tt&gt; and support RSS 1.0.&nbsp; Features are editing, archive, publishing, and a WYSIWYG.||<br>
+||&lt;tt&gt;&lt;nowiki&gt;{{form|formid}}&lt;/nowiki&gt;&lt;/tt&gt;||Create a simple configuration-driven form generator that would write to a dataset page.&nbsp; Simple form templates should be made available such as voting + graph-view, feedback/mailer, calculation, and dataset data-entry + graph-view.||<br>
+||&lt;tt&gt;&lt;nowiki&gt;{{whiteboard|shared}}&lt;/nowiki&gt;&lt;/tt&gt;||Create sketches using Flash, and store the output as a bitmap on the server, and the curves as JSON elements.||<br>
+||&lt;tt&gt;&lt;nowiki&gt;{{widget|type}}&lt;/nowiki&gt;&lt;/tt&gt;||Wdigets will be pre-defined as right-hand elements for a HomePage view; calendar, blog roll, rss feeds, tag cloud, favorites, etc.||<br>
+||&lt;tt&gt;&lt;nowiki&gt;{{embed|type&lt;/nowiki&gt;&lt;/tt&gt;||This is a generalized way to embed applets for java, flash, Quicktime, Windows Media Player, etc.||<br>
+||&lt;tt&gt;&lt;nowiki&gt;{{category|names}}&lt;/nowiki&gt;&lt;/tt&gt;||Using a category tag should do two things; create an entry in the appropriate category page, and create a list of pages in place.||<br>
+<br>
+=== Code-related Features =<br>
+These items I think I'll need to complete before I submit the code to [http://www.sourceforge.net SourceForge]<br>
+<br>
+!!Features Planned|width=300!!Description!!<br>
+||Update &lt;tt&gt;PRINT&lt;/tt&gt;||All of the incidences of the &lt;tt&gt;PRINT&lt;/tt&gt; command in the code need to be replaced with a String glob.&nbsp; This will make the code more flexible.||<br>
+||Localization||I see the &lt;tt&gt;trans.pl&lt;/tt&gt; and &lt;tt&gt;umtrans.pl&lt;/tt&gt;.&nbsp; I'm not sure that this is the best way to support I18N.&nbsp; For example, the wiki engine should be able to serve up content localized to a specific language when given a preference.&nbsp; This requires sub-directories by language in the database such as &lt;tt&gt;//en/content1&lt;/tt&gt;&nbsp; or &lt;tt&gt;//ja/content2&lt;/tt&gt;.||<br>
+||Lock List||The administrator view needs to be able to determine which pages have been locked, and which pages are private.||<br>
+||Visitor's Log||This would be an audit trail of visitors by IP address and possibly by logon ID.||<br>
+||Home Page Binding||Once Preferences are set and a logon ID is determined, the visitor should be given the option to create a Home Page or to redirect to it if it already exists.||<br>
+||GMT Offset Detection||This could be done via JavaScript and passed automatically to the CGI whenever a page is edited.&nbsp; Of course, also preset this in the Preferences page as well.||<br>
+||Namespaces||This would create separate directories for sets of pages that will not be searched/indexed unless explicitly invoked.||<br>
+||&lt;nowiki&gt;WikiFarm&lt;/nowiki&gt;||This will create a separate set of directories for each wiki instance, to include data and configuration files.&nbsp; The idea is to have single CGI script but allow multiple wiki sites without having to modify the HTTPd configuration files.||<br>
+||Authentication||The existing UseMod:UseMod system for user management doesn't really support roles, groups, and management of page collections.&nbsp; By enhancing this feature the NobleWiki engine becomes more realistic as an option for use by others.||<br>
+</td><td class="diff-vertical"></td><td class="diff-para-added">=== Code-related Features =<br>
+{{template:NobleWiki/Future}}<br>
+</td></tr><tr valign=top><td class="diff-para-ident"><br>
+== Related Entries =<br>
+{{template:RelatedEntries/WikiTour}}<br>
+</td><td class="diff-vertical"></td><td class="diff-para-ident"><br>
+== Related Entries =<br>
+{{template:RelatedEntries/WikiTour}}<br>
+</td></tr><tr valign=top><td class="diff-para-ident"></td><td class="diff-vertical"></td><td class="diff-para-added">&nbsp;{{subpages}}<br>
+</td></tr></table></div>ÿþ1revisionÿþ1154ÿþ1tscreateÿþ11179218118ÿþ1text_defaultÿþ1versionÿþ21ÿþ2ipÿþ2127.0.0.1ÿþ2tsÿþ21226206341ÿþ2nameÿþ2text_defaultÿþ2dataÿþ2summaryÿþ3*ÿþ3textÿþ3= The NobleWiki Engine =
+<blockquote>I really wished that I read more of the [Wiki:UseModWiki UseModWiki] before I started fussing with the 1.0 code.  I see a number of cool ideas from that site that has [Wiki:SunirShah Sunir Shah's] plans for a [Wiki:UseMod UseMod 2.0] that I'd like to include via the available patches.  I think that this behavior of mine to fix something not broken - and therefore break it - is also known as 'hubris'. -- <cite>[LocalWiki:HomePage/RobertKurcina Robert Kurcina]</cite></blockquote>
+{{toc}}
+
+== About this Wiki =
+This wiki for Noble Pursuit Games is derived from the freely available [Wiki:UseModWIki UseMod 1.04] wiki engine available as the Wiki:UseModWiki site.  The base install of the NobleWiki engine includes everything listed within the [WikiMinimums StarterPages].
+
+== Features =
+{{template:NobleWiki/Features}}
+{{template:NobleWiki/Extras}}
+
+== Patches Applied =
+{{template:NobleWiki/Patches}}
+
+== Possible Patches =
+Other patches worth implementing for Anti-spam and Denial of Service attacks are as follows:
+!!Patches Under Consideration|width=300!!Description!!
+||UseMod:WikiPatches/EmbeddedBacklinks|class=first||This should be made an option in the preferences to show all LINKS IN and LINKS OUT of a currently viewed page; perhaps placed at the bottom or top as a matter of choice.||
+||UseMod:WikiPatches/NoAnonyms||need; should prevent spammers||
+||UseMod:WikiPatches/SurgeProtector||hould make it more difficult for spam submission.||
+||MeatBall:EditHash||Should make it more difficult for spam submission.||
+
+=== Broken Things =
+Here are some standard [UseMod:UseMod UseMod] wiki.pl features that have been removed; not to worry - they'll return.  For a list of actual defects, see WikiBugs.
+
+!!Broken Things|width=300!!Description!!
+||<tt>T(<string>)</tt>|class=first||These are removed for now to declutter the perl code.  Will return as a set of configuration files - one per language.||
+||<tt>Ts(<string>)</tt>||With T() being messed with, and the fact that Ts() calls T() ... well, this is broken as well.||
+||<tt>Tss(<string>)</tt>||See above.  Tss() -> Ts() -> T()||
+
+=== Planned Things =
+{{template:NobleWiki/Planned}}
+
+=== Code-related Features =
+{{template:NobleWiki/Future}}
+
+== Related Entries =
+{{template:RelatedEntries/WikiTour}}
+ {{subpages}}
+ÿþ3newauthorÿþ30ÿþ3minorÿþ30ÿþ3descriptionÿþ3a summary of all features available in this wiki.ÿþ2usernameÿþ2RobertKurcinaÿþ2hostÿþ2localhostÿþ2revisionÿþ2154ÿþ2tscreateÿþ21179218118ÿþ2idÿþ21339ÿþ2keeptsÿþ21226206341ÿþ1cache_diff_default_majorÿþ11ÿþ1cache_diff_default_minorÿþ1<div id=wikidiffdiv><table id=wikidifftable><tr valign=top><td class="diff-header">Paragraph 29</td><td class="diff-vertical">&nbsp;</td><td class="diff-header">Paragraph 29</td></tr><tr valign=top><td class="diff-para-ident">{{template:RelatedEntries/WikiTour}}<br>
+</td><td class="diff-vertical"></td><td class="diff-para-ident">{{template:RelatedEntries/WikiTour}}<br>
+</td></tr><tr valign=top><td class="diff-para-ident"></td><td class="diff-vertical"></td><td class="diff-para-added">&nbsp;{{subpages}}<br>
+</td></tr></table></div>

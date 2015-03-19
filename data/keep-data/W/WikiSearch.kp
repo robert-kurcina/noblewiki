@@ -1,0 +1,16 @@
+ÿþ1versionÿþ21ÿþ2ipÿþ2127.0.0.1ÿþ2tsÿþ21179470109ÿþ2nameÿþ2text_defaultÿþ2dataÿþ2minorÿþ30ÿþ3summaryÿþ3*ÿþ3textÿþ3== <nowiki>WikiName Keyword Search</nowiki> =
+The search engine is accessed normally via the search form that appears [ usually ] at the footer of this page.  It accepts a single term and will scan the search space and return all matches.  If an exclamation point '!' immediately precedes the term, the search engine will return all results that do not match.  The basic behavior of the search engine is that it will examine the WikiName database and search for the term - or lack of - in every bit of text associated with that entry, including it's title.
+
+== <nowiki>Searching Uploaded Assets</nowiki> =
+The search engine is also available for when searching uploaded assets. This is a feature limited to WikiEditor''s and WikiAdmin''s, but essentially it will return all assets that do or do not match the given keyword.
+
+== <nowiki>Back-links</nowiki> =
+When a wiki entry is presented in the browser, the page's header will show the entry's WikiName as a hyper-link.  Clicking on that link will invoke the search engine and showall other wiki entries that have links into the current page.
+
+== <nowiki>Filters</nowiki> =
+The result set of the search on a keyword can be constrained by entering one or more filters delimited by commas.  When the 'Apply Filters' button is clicked, the search engine will show only those entries that have titles matching all of the filters.  Filters that are immediately preceded by an exclamation point '!' will tell the search engine to not return any titles that match.
+
+====== Related Entries =
+ CategoryWiki
+ WikiUploads
+ÿþ3newauthorÿþ31ÿþ2usernameÿþ2ÿþ2hostÿþ2localhostÿþ2revisionÿþ24ÿþ2tscreateÿþ21179385729ÿþ2idÿþ21020ÿþ2keeptsÿþ21195699333

@@ -1,0 +1,23 @@
+ÿþ1versionÿþ21ÿþ2tsÿþ21226205226ÿþ2ipÿþ2127.0.0.1ÿþ2nameÿþ2text_defaultÿþ2dataÿþ2summaryÿþ3Initial draft.ÿþ3textÿþ3!!Patches Applied!!Description!!
+||UseMod:WikiPatches/AnchorsInFreeLinkBugFix|class=first|width=300||Corrects how [LocalWiki:WikiURLs#freelinks FreeLinks] appear||
+||UseMod:WikiPatches/PerlDiff||Perl-based diff; should work on WIN32 and LINUX||
+||UseMod:WikiPatches/GetSubpages||Return all subpages of a page via the Manage Pages interface for administrators||
+||UseMod:WikiPatches/RenameSubpages||Rename subpages if it's parent page is renamed||
+||UseMod:WikiPatches/EmbeddedSubpageList||Allows placement of <nowiki>{{subpages}}</nowiki> on any page, and wiki engine will generate list of subpages associated with it.||
+||UseMod:WikiPatches/BacklinksImproved||Eliminates listings that match the current page||
+||UseMod:WikiPatches/SiteIndex||Changes the search index results to a list of links to sections named A .. Z.  Altered to allow entries to flow across a row of text delimited by commas.||
+||UseMod:WikiPatches/AutoMailto||Convert email addresses found into mailTo:<address>||
+||UseMod:WikiPatches/WikiTemplate||Modified to require a command string of <tt>{{template:</tt> before it can be used. Created instructions for use as well; see WikiTemplates||
+||UseMod:WikiPatches/MagicContent||Added.  Need to create links to standard magic content pages||
+||UseMod:WikiPatches/MagicWantedPages||Via [Wiki:WikiPatches/MagicContent MagicContent]; creates a list of pages that have not yet been created but are referenced by at least 1 existing page||
+||UseMod:WikiPatches/ListOrphans||Available via Admin view; list all pages that have no links leading to them||
+||UseMod:WikiPatches/FileInclusion||Insert a file into <nowiki>$DataDir/includes</nowiki> and have it appear in a page using command <tt><nowiki>INCLUDE</nowiki>: filename</tt>||
+||UseMod:WikiPatches/UneditablePageBugFix||Prevent pages to be created that can't be edited||
+||UseMod:WikiPatches/RobotsMetaTag||Prevent search engine robots from indexing edit history versions||
+||UseMod:WikiPatches/OriginalAuthor||Modified from original.  Inserts prior to 'Last Edited by' the phrase 'Created on DATE' and adds an author if it one exists||
+||UseMod:WikiPatches/AutoSignature||Modified from original; basically checks for login status and sets $id to 'Guest' if empty||
+||UseMod:WikiPatches/SubPages||Modified syntax  <tt><nowiki>{{subpages}}</nowiki></tt>Inserts all of a page's sub-pages.  Optional page name as in <tt><nowiki>{{subpages:PageName}}</nowiki></tt> will show that page's subpages||
+||UseMod:WikiPatches/PrivateUserGroups||Modified from original.  Each user name must be on it's own line and surrounded by curly braces like <tt><nowiki>{e:UserName} or {r:UserName}</nowiki></tt> to indicate can edit or can read.  Otherwise an Authorization Error page will appear [ AuthError ]||
+||UseMod:WikiPatches/UserTalkSpace||Modified from original such that each page potentially has a 'Notes' page.  See NotesPages.||
+||UseMod:WikiPatches/FooterNotes||Allows for plain-text citations.  See FootNotes page.||
+ÿþ3newauthorÿþ31ÿþ3minorÿþ30ÿþ3descriptionÿþ3list of all significant UseMod patches that have been applied to NobleWiki.ÿþ2hostÿþ2localhostÿþ2usernameÿþ2RobertKurcinaÿþ2revisionÿþ21ÿþ2idÿþ21339ÿþ2tscreateÿþ21226205226ÿþ2keeptsÿþ21226205929

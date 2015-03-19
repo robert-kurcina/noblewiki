@@ -1,0 +1,208 @@
+ÿþ1versionÿþ21ÿþ2tsÿþ21197620068ÿþ2ipÿþ2127.0.0.1ÿþ2nameÿþ2text_defaultÿþ2dataÿþ2summaryÿþ3*ÿþ3textÿþ3= Bulletin Board Code =
+This is a microformat for quick creation of text using simplified markup syntax.  BBCode is named as such because it is a feature for Bulletin Board applications like phpBB and eBlah.  Within the NobleWiki wiki engine, BBCode is available via the MagicBlog directive, the MagicDiscussion directive, and via the <tt><nowiki>{{bbcode:}}</nowiki></tt> command.  The BBCode features in NobleWiki is lazily implemented; for example the <tt>[list][/list]</tt> command allows nesting a mere three-layers deep.
+
+<toc>
+
+== Syntax for Safe Parsing =
+The goal of BBCode is to present a relatively easy way of marking up user input that is also easy to parse.  Here's an example of how BBCode is used, via the <tt><nowiki>{{bbcode::}}</nowiki></tt> command:
+
+Type this:
+<pre>
+{{bbcode:
+[list]
+[*] [email=x@x.com]item 1 is an e-mail link[/email]
+[*] [u]item 2 is underlined[/u]
+[*] [i]item 3 is italicized[/i]
+[*] [b]item 4 is bold[/b]
+[*] [url=www.yahoo.com]item 5 links to www.yahoo.com[/url]
+[/list]
+}}
+</pre>
+
+To get this:
+{{bbcode:
+[list]
+[*] [email=x@x.com]item 1 is an e-mail link[/email]
+[*] [u]item 2 is underlined[/u]
+[*] [i]item 3 is italicized[/i]
+[*] [b]item 4 is bold[/b]
+[*] [url=www.yahoo.com]item 5 links to www.yahoo.com[/url]
+[/list]
+}}
+== BBCode Tags =
+  The list of tags available are as follows:
+
+!!Tag!!Effect Generated!!
+||<tt>[code]text[/code]</tt>||Creates a padded code-block for presenting monospaced text.  Excellent for showing programming language syntax.||
+||<tt>[b]text[/b]</tt>||The wrapped text will become bold.||
+||<tt>[i]text[/i]</tt>||The wrapped text will become italicized.||
+||<tt>[u]text[/u]</tt>||The wrapped text will become underlined.||
+||<tt>[email]text[/email]</tt>||The wrapped text becomes an email hyperlink with a URL being that of the wrapped text.||
+||<tt>[email=uri]text[/email]</tt>||The wrapped text becomes an email hyperlink with a URL of the uri provided.||
+||<tt>[url]text[/url]]</tt>||The wrapped text becomes a hyperlink with a URL being that of the wrapped text.||
+||<tt>[url=uri]text[/url]</tt>||The wrapped text becomes a hyperlink with a URL of the uri provided.||
+ÿþ3newauthorÿþ31ÿþ3minorÿþ30ÿþ2hostÿþ2localhostÿþ2usernameÿþ2RobertKurcinaÿþ2revisionÿþ21ÿþ2idÿþ21205ÿþ2tscreateÿþ21197620068ÿþ2keeptsÿþ21197687280ÿþ1ipÿþ2127.0.0.1ÿþ2tsÿþ21197687280ÿþ2versionÿþ21ÿþ2nameÿþ2text_defaultÿþ2dataÿþ2summaryÿþ3ÿþ3textÿþ3= Bulletin Board Code =
+This is a microformat for quick creation of text using simplified markup syntax.  BBCode is named as such because it is a feature for Bulletin Board applications like phpBB and eBlah.  Within the NobleWiki wiki engine, BBCode is available via the MagicBlog directive, the MagicDiscussion directive, and via the <tt><nowiki>{{bbcode:}}</nowiki></tt> command.  The BBCode features in NobleWiki is lazily implemented; for example the <tt>[list][/list]</tt> command allows nesting a mere three-layers deep.
+
+<toc>
+
+== Syntax for Safe Parsing =
+The goal of BBCode is to present a relatively easy way of marking up user input that is also easy to parse.  Here's an example of how BBCode is used, via the <tt><nowiki>{{bbcode::}}</nowiki></tt> command:
+
+Type this:
+<pre>
+{{bbcode:
+[list]
+[*] [email=x@x.com]item 1 is an e-mail link[/email]
+[*] [u]item 2 is underlined[/u]
+[*] [i]item 3 is italicized[/i]
+[*] [b]item 4 is bold[/b]
+[*] [url=www.yahoo.com]item 5 links to www.yahoo.com[/url]
+[/list]
+}}
+</pre>
+
+To get this:
+{{bbcode:
+[list]
+[*] [email=x@x.com]item 1 is an e-mail link[/email]
+[*] [u]item 2 is underlined[/u]
+[*] [i]item 3 is italicized[/i]
+[*] [b]item 4 is bold[/b]
+[*] [url=www.yahoo.com]item 5 links to www.yahoo.com[/url]
+[/list]
+}}
+== BBCode Tags =
+  The list of tags available are as follows:
+
+!!Tag!!Effect Generated!!
+||<tt>[code]text[/code]</tt>||Creates a padded code-block for presenting monospaced text.  Excellent for showing programming language syntax.||
+||<tt>text</tt>||The text entered will be shown with all extra white-space like line-spaces removed.||
+||<tt>[br]text</tt>||Adds a line break before the text entered.||
+||<tt>[b]text[/b]</tt>||The wrapped text will become bold.||
+||<tt>[i]text[/i]</tt>||The wrapped text will become italicized.||
+||<tt>[u]text[/u]</tt>||The wrapped text will become underlined.||
+||<tt>[img]text[/img]</tt>||The wrapped text will become replaced by the image it points to.||
+||<tt>[img=url]text[/img]</tt>||The wrapped text will become replaced by the image it points to.  The text itself becomes the tooltip.||
+||<tt>[upload]text[/upload]</tt>||The wrapped text will become replaced by the asset it points to. See WikiUploads for a list of available assets.||
+||<tt>[upload=url]text[/upload]</tt>||The wrapped text will become replaced by the asset it points to.  The text itself becomes the tooltip.  See WikiUploads for a list of available assets.||
+||<tt>[email]text[/email]</tt>||The wrapped text becomes an email hyperlink with a URL being that of the wrapped text.||
+||<tt>[email=uri]text[/email]</tt>||The wrapped text becomes an email hyperlink with a URL of the uri provided.||
+||<tt>[url]text[/url]]</tt>||The wrapped text becomes a hyperlink with a URL being that of the wrapped text.||
+||<tt>[url=uri]text[/url]</tt>||The wrapped text becomes a hyperlink with a URL of the uri provided.||
+||<tt>[list]text[*]item[/list]</tt>||Creates a bulleted list with each list item on a separate line.||
+||<tt>[list=1]text[*]item[/list]</tt>||Creates an ordered list using numbers with each list item on a separate line.||
+||<tt>[list=a]text[*]item[/list]</tt>||Creates an ordered list using lower-case letters with each list item on a separate line.||
+||<tt>[list=A]text[*]item[/list]</tt>||Creates an ordered list using upper-case letters with each list item on a separate line.||
+||<tt>[quote]text[/quote]</tt>||The wrapped text is set within a padded and bordered box with a slight offset.  The title of the box will show the word <tt>quote:</tt>||
+||<tt>[quote=author]text[/quote]</tt>||The wrapped text is set within a padded and bordered box with a slight offset.  The title of the box will show <tt>author said:</tt>||
+||<tt>[code]text[/code]</tt>||The wrapped text becomes monospaced and will be set within a padded and bordered box with a slight offset.  Any BBCode wrapped by these tags will not be processed through the parser and instead remain as code.</tt>||
+ÿþ3minorÿþ30ÿþ3newauthorÿþ31ÿþ2usernameÿþ2RobertKurcinaÿþ2hostÿþ2localhostÿþ2revisionÿþ22ÿþ2tscreateÿþ21197620068ÿþ2idÿþ21206ÿþ2keeptsÿþ21197688900ÿþ1versionÿþ21ÿþ2tsÿþ21197688900ÿþ2ipÿþ2127.0.0.1ÿþ2nameÿþ2text_defaultÿþ2dataÿþ2summaryÿþ3*ÿþ3textÿþ3= Bulletin Board Code =
+This is a microformat for quick creation of text using simplified markup syntax.  BBCode is named as such because it is a feature for Bulletin Board applications like phpBB and eBlah.  Within the NobleWiki wiki engine, BBCode is available via the MagicBlog directive, the MagicDiscussion directive, and via the <tt><nowiki>{{bbcode:}}</nowiki></tt> command.  The BBCode features in NobleWiki is lazily implemented; for example the <tt>[list][/list]</tt> command allows nesting a mere three-layers deep.
+
+<toc>
+
+== Syntax for Safe Parsing =
+The goal of BBCode is to present a relatively easy way of marking up user input that is also easy to parse.  Here's an example of how BBCode is used, via the <tt><nowiki>{{bbcode::}}</nowiki></tt> command:
+
+Type this:
+<pre>
+{{bbcode:
+[list]
+[*] [email=x@x.com]item 1 is an e-mail link[/email]
+[*] [u]item 2 is underlined[/u]
+[*] [i]item 3 is italicized[/i]
+[*] [b]item 4 is bold[/b]
+[*] [url=www.yahoo.com]item 5 links to www.yahoo.com[/url]
+[/list]
+}}
+</pre>
+
+To get this:
+{{bbcode:
+[list]
+[*] [email=x@x.com]item 1 is an e-mail link[/email]
+[*] [u]item 2 is underlined[/u]
+[*] [i]item 3 is italicized[/i]
+[*] [b]item 4 is bold[/b]
+[*] [url=www.yahoo.com]item 5 links to www.yahoo.com[/url]
+[/list]
+}}
+== BBCode Tags =
+  The list of tags available are as follows:
+
+!!Tag!!Effect Generated!!
+||<tt>text</tt>||The text entered will be shown with all extra white-space like line-spaces removed.||
+||<tt>[br]</tt>||Adds a line break||
+||<tt>[b]text[/b]</tt>||The wrapped text will become bold.||
+||<tt>[i]text[/i]</tt>||The wrapped text will become italicized.||
+||<tt>[u]text[/u]</tt>||The wrapped text will become underlined.||
+||<tt>[img]text[/img]</tt>||The wrapped text will become replaced by the image it points to.||
+||<tt>[img=url]text[/img]</tt>||The wrapped text will become replaced by the image it points to.  The text itself becomes the tooltip.||
+||<tt>[upload]text[/upload]</tt>||The wrapped text will become replaced by the asset it points to. See WikiUploads for a list of available assets.||
+||<tt>[upload=url]text[/upload]</tt>||The wrapped text will become replaced by the asset it points to.  The text itself becomes the tooltip.  See WikiUploads for a list of available assets.||
+||<tt>[email]text[/email]</tt>||The wrapped text becomes an email hyperlink with a URL being that of the wrapped text.||
+||<tt>[email=uri]text[/email]</tt>||The wrapped text becomes an email hyperlink with a URL of the uri provided.||
+||<tt>[url]text[/url]]</tt>||The wrapped text becomes a hyperlink with a URL being that of the wrapped text.||
+||<tt>[url=uri]text[/url]</tt>||The wrapped text becomes a hyperlink with a URL of the uri provided.||
+||<tt>[list]text[*]item[/list]</tt>||Creates a bulleted list with each list item on a separate line.||
+||<tt>[list=1]text[*]item[/list]</tt>||Creates an ordered list using numbers with each list item on a separate line.||
+||<tt>[list=a]text[*]item[/list]</tt>||Creates an ordered list using lower-case letters with each list item on a separate line.||
+||<tt>[list=A]text[*]item[/list]</tt>||Creates an ordered list using upper-case letters with each list item on a separate line.||
+||<tt>[quote]text[/quote]</tt>||The wrapped text is set within a padded and bordered box with a slight offset.  The title of the box will show the word <tt>quote:</tt>||
+||<tt>[quote=author]text[/quote]</tt>||The wrapped text is set within a padded and bordered box with a slight offset.  The title of the box will show <tt>author said:</tt>||
+||<tt>[code]text[/code]</tt>||The wrapped text becomes monospaced and will be set within a padded and bordered box with a slight offset.  Any BBCode wrapped by these tags will not be processed through the parser and instead remain as code.</tt>||
+ÿþ3newauthorÿþ30ÿþ3minorÿþ30ÿþ2hostÿþ2localhostÿþ2usernameÿþ2RobertKurcinaÿþ2revisionÿþ23ÿþ2idÿþ21206ÿþ2tscreateÿþ21197620068ÿþ2keeptsÿþ21222752588ÿþ1ipÿþ2127.0.0.1ÿþ2tsÿþ21222752588ÿþ2versionÿþ21ÿþ2nameÿþ2text_defaultÿþ2dataÿþ2summaryÿþ3*ÿþ3textÿþ3= Bulletin Board Code =
+This is a microformat for quick creation of text using simplified markup syntax.  BBCode is named as such because it is a feature for Bulletin Board applications like phpBB and eBlah.  Within the NobleWiki wiki engine, BBCode is available via the MagicBlog directive, the MagicDiscussion directive, and via the <tt><nowiki>{{bbcode:}}</nowiki></tt> command.  The BBCode features in NobleWiki is lazily implemented; for example the <tt>[list][/list]</tt> command allows nesting a mere three-layers deep.
+{{toc}}
+== Syntax for Safe Parsing =
+The goal of BBCode is to present a relatively easy way of marking up user input that is also easy to parse.  Here's an example of how BBCode is used, via the <tt><nowiki>{{bbcode::}}</nowiki></tt> command:
+
+Type this:
+<pre>
+{{bbcode:
+[list]
+[*] [email=x@x.com]item 1 is an e-mail link[/email]
+[*] [u]item 2 is underlined[/u]
+[*] [i]item 3 is italicized[/i]
+[*] [b]item 4 is bold[/b]
+[*] [url=www.yahoo.com]item 5 links to www.yahoo.com[/url]
+[/list]
+}}
+</pre>
+
+To get this:
+{{bbcode:
+[list]
+[*] [email=x@x.com]item 1 is an e-mail link[/email]
+[*] [u]item 2 is underlined[/u]
+[*] [i]item 3 is italicized[/i]
+[*] [b]item 4 is bold[/b]
+[*] [url=www.yahoo.com]item 5 links to www.yahoo.com[/url]
+[/list]
+}}
+== BBCode Tags =
+  The list of tags available are as follows:
+
+!!Tag!!Effect Generated!!
+||<tt>text</tt>||The text entered will be shown with all extra white-space like line-spaces removed.||
+||<tt>[br]</tt>||Adds a line break||
+||<tt>[b]text[/b]</tt>||The wrapped text will become bold.||
+||<tt>[i]text[/i]</tt>||The wrapped text will become italicized.||
+||<tt>[u]text[/u]</tt>||The wrapped text will become underlined.||
+||<tt>[img]text[/img]</tt>||The wrapped text will become replaced by the image it points to.||
+||<tt>[img=url]text[/img]</tt>||The wrapped text will become replaced by the image it points to.  The text itself becomes the tooltip.||
+||<tt>[upload]text[/upload]</tt>||The wrapped text will become replaced by the asset it points to. See WikiUploads for a list of available assets.||
+||<tt>[upload=url]text[/upload]</tt>||The wrapped text will become replaced by the asset it points to.  The text itself becomes the tooltip.  See WikiUploads for a list of available assets.||
+||<tt>[email]text[/email]</tt>||The wrapped text becomes an email hyperlink with a URL being that of the wrapped text.||
+||<tt>[email=uri]text[/email]</tt>||The wrapped text becomes an email hyperlink with a URL of the uri provided.||
+||<tt>[url]text[/url]]</tt>||The wrapped text becomes a hyperlink with a URL being that of the wrapped text.||
+||<tt>[url=uri]text[/url]</tt>||The wrapped text becomes a hyperlink with a URL of the uri provided.||
+||<tt>[list]text[*]item[/list]</tt>||Creates a bulleted list with each list item on a separate line.||
+||<tt>[list=1]text[*]item[/list]</tt>||Creates an ordered list using numbers with each list item on a separate line.||
+||<tt>[list=a]text[*]item[/list]</tt>||Creates an ordered list using lower-case letters with each list item on a separate line.||
+||<tt>[list=A]text[*]item[/list]</tt>||Creates an ordered list using upper-case letters with each list item on a separate line.||
+||<tt>[quote]text[/quote]</tt>||The wrapped text is set within a padded and bordered box with a slight offset.  The title of the box will show the word <tt>quote:</tt>||
+||<tt>[quote=author]text[/quote]</tt>||The wrapped text is set within a padded and bordered box with a slight offset.  The title of the box will show <tt>author said:</tt>||
+||<tt>[code]text[/code]</tt>||The wrapped text becomes monospaced and will be set within a padded and bordered box with a slight offset.  Any BBCode wrapped by these tags will not be processed through the parser and instead remain as code.</tt>||
+ÿþ3minorÿþ31ÿþ3newauthorÿþ31ÿþ2usernameÿþ2RobertKurcinaÿþ2hostÿþ2localhostÿþ2revisionÿþ24ÿþ2tscreateÿþ21197620068ÿþ2idÿþ21278ÿþ2keeptsÿþ21226175391

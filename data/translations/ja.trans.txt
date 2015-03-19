@@ -1,0 +1,518 @@
+%Translate = split('\n',<<END_OF_TRANSLATION);
+Unknown Error (no error text)
+
+Could not create %s
+
+Showing revision %s
+ƒŠƒrƒWƒ‡ƒ“%s‚ğ•\¦‚µ‚Ü‚·
+Revision %s not available
+
+showing current revision instead
+
+Updates since %s
+%sˆÈ~‚ÌXV
+Updates in the last %s day
+Å‹ß%s“ú‚ÌXV
+Updates in the last %s days
+Å‹ß%s“ú‚ÌXV
+Could not open %s log file
+%s‚ÌƒƒOƒtƒ@ƒCƒ‹‚ğŠJ‚¯‚Ü‚¹‚ñ
+Error was
+ƒGƒ‰[——R
+Note: This error is normal if no changes have been made.
+
+Could not open old %s log file
+‰ß‹‚Ì%s‚ÌƒƒOƒtƒ@ƒCƒ‹‚ğŠJ‚¯‚Ü‚¹‚ñ
+for %s only
+
+%s day
+%s“ú
+%s days
+%s“ú
+List new changes starting from
+‰E‹LŠJn“úˆÈ~‚Ì•ÏXˆê——
+No updates since %s
+%sˆÈ~‚ÌXV‚Í‚ ‚è‚Ü‚¹‚ñ
+Page generated %s
+‚±‚Ìƒy[ƒW‚Í%s‚É¶¬‚³‚ê‚Ü‚µ‚½
+(edit)
+
+(diff)
+(·•ª)
+changes
+‰ñ‚Ì•ÏX—š—ğ
+History of %s
+
+Compare
+”äŠr
+(logged)
+
+Revision %s
+
+Edit
+
+by
+
+Preferences
+‰Šúİ’è
+Random Page
+
+Upload
+
+ID %s
+
+from %s
+
+[Home]
+[Home]
+redirected from %s
+
+Edit revision %s of this page
+‚±‚Ìƒy[ƒW‚ÌƒŠƒrƒWƒ‡ƒ“%s‚ğ•ÒW
+Edit text of this page
+‚±‚Ìƒy[ƒW‚ÌƒeƒLƒXƒg‚ğ•ÒW
+This page is read-only
+‚±‚Ìƒy[ƒW‚Í“Ç‚İæ‚èê—p‚Å‚·
+View other revisions
+‘¼‚ÌƒŠƒrƒWƒ‡ƒ“‚ğŒ©‚é
+View current revision
+Œ»İ‚ÌƒŠƒrƒWƒ‡ƒ“‚ğŒ©‚é
+Search MetaWiki
+
+Last edited
+ÅIXV
+Edited
+
+by %s
+%s‚É‚æ‚é
+Warning
+
+Database is stored in temporary directory %s
+
+Config file error:
+
+Search:
+ŒŸõ:
+Go!
+
+Your browser should go to the %s page.
+
+If it does not, click %s to continue.
+
+Thanks for editing...
+
+Thank you for editing %s.
+
+Link to another page...
+
+Follow the %s link to continue.
+
+Local rule error:
+
+major diff
+ƒƒWƒƒ[‚È·•ª
+minor diff
+ƒ}ƒCƒi[‚È·•ª
+author diff
+’˜Ò‚Ì·•ª
+major
+ƒƒWƒƒ[
+minor
+ƒ}ƒCƒi[
+author
+’˜Ò
+(The revisions are identical or unavailable.)
+(‚±‚ÌƒŠƒrƒWƒ‡ƒ“‚ÍˆêˆÓ‚Æ‚È‚Á‚Ä‚¢‚é‚©‚Ü‚½‚Íg—p‚Å‚«‚Ü‚¹‚ñ)
+no other diffs
+‘¼‚Ì·•ª‚Í‚ ‚è‚Ü‚¹‚ñ
+No diff available.
+·•ª‚Í‚ ‚è‚Ü‚¹‚ñ
+current revision
+Œ»İƒŠƒrƒWƒ‡ƒ“
+revision %s
+ƒŠƒrƒWƒ‡ƒ“%s
+Difference (from revision %1 to %2)
+·•ª (ƒŠƒrƒWƒ‡ƒ“%1‚©‚ç%2‚Ì)
+No diff available--this is the first %s revision.
+·•ª‚Í‚ ‚è‚Ü‚¹‚ñ--‚±‚ê‚ª%s‚ÌÅ‰‚ÌƒŠƒrƒWƒ‡ƒ“‚Å‚·
+Difference (from prior %s revision)
+·•ª (Å‰‚Ì%s‚ÌƒŠƒrƒWƒ‡ƒ“‚©‚ç‚Ì)
+Changed:
+•ÏX:
+Removed:
+íœ:
+Added:
+’Ç‰Á:
+Describe the new page here.
+‚±‚±‚ÉV‚µ‚¢ƒy[ƒW‚ğ‹Lq‚µ‚Ä‚­‚¾‚³‚¢
+Bad page version (or corrupt page).
+
+cant write %s
+
+Page name is too long: %s
+
+Page name may not contain space characters: %s
+
+Too many / characters in page %s
+
+Invalid Page %s (subpage without main page)
+
+Invalid Page %s (missing subpage name)
+
+Invalid Page %s (/ not allowed)
+
+Invalid Page %s
+
+Invalid Page %s (must not end with .db)
+
+Invalid Page %s (must not end with .lck)
+
+can not make %s
+
+Can not open %s
+
+Invalid action parameter %s
+
+Invalid URL.
+
+Editing Denied
+
+Editing not allowed: user, ip, or network is blocked.
+
+Contact the wiki administrator for more information.
+
+Editing not allowed: %s is read-only.
+
+Editing %s
+%s‚Ì•ÒW
+Editing revision %s of 
+
+Editing old revision %s.
+
+Saving this page will replace the latest revision with this text.
+
+Edit Conflict!
+
+(This is a new conflict)
+
+Someone saved this page after you started editing.
+
+The top textbox contains the saved text.
+
+Only the text in the top textbox will be saved.
+
+Scroll down to see your edited text.
+
+Last save time:
+
+Current time is:
+
+Summary:
+—v–ñ:
+This change is a minor edit.
+‚±‚Ì•ÒW‚Íƒ}ƒCƒi[•ÒW‚Å‚·
+Send email notification that %s has been changed.
+
+Save
+•Û‘¶
+Your user name is
+‚ ‚È‚½‚Ìƒ†[ƒU–¼‚Í
+Visit %s to set your user name.
+%s‚Å‚ ‚È‚½‚Ì–¼‘O‚ğİ’è‚µ‚Ä‚­‚¾‚³‚¢
+Preview
+ƒvƒŒƒrƒ…[
+This is the text you submitted:
+
+Preview:
+ƒvƒŒƒrƒ…[:
+NOTE: This preview shows the revision of the other author.
+
+Preview only, not yet saved
+ƒvƒŒƒrƒ…[‚µ‚½‚¾‚¯‚ÅA•Û‘¶‚³‚ê‚Ä‚¢‚Ü‚¹‚ñ
+Editing Preferences
+‰Šúİ’è‚Ì•ÒW
+User Information:
+ƒ†[ƒUî•ñ:
+Your User ID number: %s
+‚ ‚È‚½‚ÌID”Ô†: %s
+UserName:
+ƒ†[ƒU–¼:
+(blank to remove, or valid page name)
+(‹ó”’‚Í“ü‚ê‚È‚¢‚Å‚­‚¾‚³‚¢A‚ ‚é‚¢‚Í³‚µ‚¢ƒy[ƒW–¼‚ğ“ü‚ê‚Ä‚­‚¾‚³‚¢)
+Set Password:
+ƒpƒXƒ[ƒh‚Ìİ’è:
+(blank to remove password)
+(‹ó”’‚Ìê‡ƒpƒXƒ[ƒh‚ğ‰ğœ‚µ‚Ü‚·)
+Passwords allow sharing preferences between multiple systems.
+
+Passwords are completely optional.
+
+Administrator Password:
+
+(Administrator passwords are used for special maintenance.)
+
+Include this address in the site email list.
+
+(Uncheck the box to remove the address.)
+
+Email Address:
+
+Default days to display:
+•\¦‚·‚é“ú”:
+Most recent changes on top
+Å‚àÅ‹ß‚Ì•ÏX‚ğã‚É
+Show all changes (not just most recent)
+‘S‚Ä‚Ì•ÏX“_‚ğ•\¦‚·‚é (Å‹ß‚¾‚¯‚Å‚È‚­)
+Hide minor edits
+ƒ}ƒCƒi[‚È•ÏX“_‚Í‰B‚·
+Show minor edits
+ƒ}ƒCƒi[‚È•ÏX“_‚ğ•\¦‚·‚é
+Show only minor edits
+ƒ}ƒCƒi[‚È•ÏX“_‚¾‚¯‚ğ•\¦‚·‚é
+Minor edit display:
+ƒ}ƒCƒi[‚È•ÏX“_‚Ì•\¦•û–@:
+Use "changes" as link to history
+—š—ğ‚Ö‚ÌƒŠƒ“ƒN‚Æ‚µ‚Ä"changes"‚ğg—p‚·‚é
+Differences:
+·•ª:
+Show (diff) links on %s
+%s‚Ì(·•ª)ƒŠƒ“ƒN‚ğ•\¦‚·‚é
+Show differences on all pages
+‘S‚Ä‚Ì·•ª‚ğ•\¦‚·‚é
+No differences on %s
+%s‚Ì·•ª‚ğœ‚­
+Major
+ƒƒWƒƒ[
+Minor
+
+
+ƒ}ƒCƒi[
+Author
+’˜Ò
+Default difference type:
+ƒfƒtƒHƒ‹ƒg‚Ì·•ªƒ^ƒCƒv:
+Misc:
+‚»‚Ì‘¼:
+Server time:
+ƒT[ƒo[:
+Time Zone offset (hours):
+ƒ^ƒCƒ€ƒ][ƒ“ƒIƒtƒZƒbƒg (ŠÔ)
+Use 100% wide edit area (if supported)
+‘S•‚ğ•ÒWƒGƒŠƒA‚Æ‚µ‚Äg‚¤ (‚à‚µ‰Â”\‚Å‚ ‚ê‚Î)
+Edit area rows:
+•ÒWƒGƒŠƒAs”:
+columns:
+ƒJƒ‰ƒ€”:
+Show link bar on top
+ã•”‚ÉƒŠƒ“ƒNƒo[‚ğ•\¦‚·‚é
+Add "Random Page" link to link bar
+"Random Page"‚ğƒŠƒ“ƒNƒo[‚É’Ç‰Á‚·‚é
+StyleSheet URL:
+ƒXƒ^ƒCƒ‹ƒV[ƒgURL:
+Saving Preferences
+‰Šúİ’è‚Ì•Û‘¶
+Invalid UserID %s, preferences not saved.
+ƒ†[ƒUID%s‚Í•s“KØ‚Å‚·B‰Šúİ’è‚Í•Û‘¶‚³‚ê‚Ü‚¹‚ñ‚Å‚µ‚½
+(Preferences require cookies, but no cookie was sent.)
+(‰Šúİ’è‚ÍƒNƒbƒL[‚ğ•K—v‚Æ‚µ‚Ü‚·‚ªAƒNƒbƒL[‚ª‘—M‚³‚ê‚Ü‚¹‚ñ‚Å‚µ‚½)
+UserName removed.
+
+Invalid UserName %s: not saved.
+
+UserName must be 50 characters or less. (not saved)
+
+UserName %s saved.
+ƒ†[ƒU–¼%s‚Í•Û‘¶‚³‚ê‚Ü‚µ‚½
+Password removed.
+
+Password changed.
+
+Administrator password removed.
+
+Administrator password changed.
+
+User has administrative abilities.
+
+User has editor abilities.
+
+User does not have administrative abilities.
+
+(Password does not match administrative password(s).)
+
+Local time:
+Œ»’n:
+StyleSheet URL removed.
+
+StyleSheet setting saved.
+
+Preferences saved.
+‰Šúİ’è‚Í•Û‘¶‚³‚ê‚Ü‚µ‚½
+Could not read from %s:
+
+Could not get mail lock
+
+Could not append to %s:
+
+Could not overwrite %s:
+
+Index of all pages
+
+Login
+
+User ID number:
+
+Password:
+
+Login Results
+
+Login for user ID %s complete.
+
+Login for user ID %s failed.
+
+Could not get user-ID lock
+
+Search for: %s
+
+Backlinks for: %s
+ŒŸõŒ‹‰Ê: %s
+%s pages found:
+%sƒy[ƒW‚ªŒ©‚Â‚©‚è‚Ü‚µ‚½:
+Full Link List
+
+Editing not allowed for %s.
+
+SampleUndefinedPage
+
+Sample_Undefined_Page
+
+%s cannot be defined.
+
+Could not get editing lock
+
+Normal Unlock.
+
+Removing edit lock
+
+This operation may take several seconds...
+
+Forced Unlock.
+
+%s log error:
+
+can not write diff_log
+
+(done)
+
+(deleted)
+
+(replaced)
+
+Maintenance on all pages
+
+Maintenance not done.
+
+(Maintenance can only be done once every 12 hours.)
+
+Remove the "maintain" file or wait.
+
+Could not get maintain-lock
+
+Maintenance done at %s
+
+Processing rename/delete commands:
+
+Could not get lock for RC maintenance
+
+Maintaining RC log
+
+RC maintenance done.
+
+RC maintenance not done.
+
+This operation is restricted to site editors only...
+
+This operation is restricted to administrators only...
+
+Set or Remove global edit lock
+
+Edit lock created.
+
+Edit lock removed.
+
+Set or Remove page edit lock
+
+Missing page id to lock/unlock...
+
+Lock for %s created.
+
+Lock for %s removed.
+
+UpdateLinksList could not get main lock
+
+Updating Links
+
+Administration
+
+Unlock page
+
+Lock page
+
+Delete this page
+
+Edit Banned List
+
+Run Maintenance
+
+Edit/Rename pages
+
+Unlock site
+
+Lock site
+
+Confirm Delete %s
+
+Confirm deletion of %s by following this link:
+
+Confirm Delete
+
+Delete %s
+
+%s can not be deleted.
+
+%s can not be deleted because it is locked.
+
+%s has been deleted.
+
+File Upload Page
+
+The current upload size limit is %s.
+
+Change the %s variable to increase this limit.
+
+Upload Finished
+
+The wiki link to your file is:
+
+Could not open file %s
+
+Convert wiki DB
+
+You must change the %s option before converting the wiki DB.
+
+Wiki DB locked for conversion.
+
+Converting Wiki DB...
+
+Finished converting wiki DB.
+
+Remove file %s to unlock wiki for editing.
+
+Trim wiki users
+
+Removed %s files.
+
+Recommended $StartUID setting is %s.
+
+END_OF_TRANSLATION
+
+# == End of Translation ===================================================

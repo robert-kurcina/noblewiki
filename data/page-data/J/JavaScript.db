@@ -1,0 +1,35 @@
+versionÿþ13ÿþ1tsÿþ11224648009ÿþ1authorcreateÿþ1RobertKurcinaÿþ1cache_oldmajorÿþ19ÿþ1cache_oldauthorÿþ18ÿþ1cache_diff_default_authorÿþ1<div id=wikidiffdiv><table id=wikidifftable><tr valign=top><td class="diff-header">Paragraph 2</td><td class="diff-vertical">&nbsp;</td><td class="diff-header">Paragraph 2</td></tr><tr valign=top><td class="diff-para-ident">A Web Browser programming language designed to enhance user experience.&nbsp; Without JavaScript, all actions on a Web page that is to present dynamic information must make a round-trip call to the CGI code on the server.&nbsp; JavaScript is used principally to manage forms validation, but many other subtle additions to a user experience can be had.&nbsp; A key example is the ImageGallery.&nbsp; The major script libraries used in the NobleWiki are as follows:<br>
+<br>
+</td><td class="diff-vertical"></td><td class="diff-para-ident">A Web Browser programming language designed to enhance user experience.&nbsp; Without JavaScript, all actions on a Web page that is to present dynamic information must make a round-trip call to the CGI code on the server.&nbsp; JavaScript is used principally to manage forms validation, but many other subtle additions to a user experience can be had.&nbsp; A key example is the ImageGallery.&nbsp; The major script libraries used in the NobleWiki are as follows:<br>
+<br>
+</td></tr><tr valign=top><td class="diff-para-deleted"><br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+</td><td class="diff-vertical"></td><td class="diff-para-ident"></td></tr><tr valign=top><td class="diff-para-changed"><span class="diff-span-deleted">* jQuery - </span><span class="diff-span-ident">the base-line scripting library that allows for cross-platform/cross-browser support.<br>
+</span><span class="diff-span-deleted">* </span><span class="diff-span-ident">UFO - Unobtrusive Flash Object</span><span class="diff-span-deleted">; </span><span class="diff-span-ident">allows embedding of Flash SWFs and graceful error notification in case the Flash player version is wrong.<br>
+</span><span class="diff-span-deleted">* </span><span class="diff-span-ident">&lt;nowiki&gt;LightBox&lt;/nowiki&gt;</span><span class="diff-span-deleted">&nbsp;- </span><span class="diff-span-ident">Allows for the behavior of the ImageGallery.<br>
+</span></td><td class="diff-vertical"></td><td class="diff-para-changed"><span class="diff-span-added">;jQuery:</span><span class="diff-span-ident">the base-line scripting library that allows for cross-platform/cross-browser support.<br>
+</span><span class="diff-span-added">;</span><span class="diff-span-ident">UFO - Unobtrusive Flash Object</span><span class="diff-span-added">:</span><span class="diff-span-ident">allows embedding of Flash SWFs and graceful error notification in case the Flash player version is wrong.<br>
+</span><span class="diff-span-added">;</span><span class="diff-span-ident">&lt;nowiki&gt;LightBox&lt;/nowiki&gt;</span><span class="diff-span-added">:</span><span class="diff-span-ident">Allows for the behavior of the ImageGallery.<br>
+</span></td></tr></table></div>ÿþ1revisionÿþ110ÿþ1tscreateÿþ11222485091ÿþ1text_defaultÿþ1versionÿþ21ÿþ2tsÿþ21224648009ÿþ2ipÿþ2127.0.0.1ÿþ2nameÿþ2text_defaultÿþ2dataÿþ2summaryÿþ3*ÿþ3textÿþ3===== DEFINITION: JavaScript =
+
+A Web Browser programming language designed to enhance user experience.  Without JavaScript, all actions on a Web page that is to present dynamic information must make a round-trip call to the CGI code on the server.  JavaScript is used principally to manage forms validation, but many other subtle additions to a user experience can be had.  A key example is the ImageGallery.  The major script libraries used in the NobleWiki are as follows:
+
+;jQuery:the base-line scripting library that allows for cross-platform/cross-browser support.
+;UFO - Unobtrusive Flash Object:allows embedding of Flash SWFs and graceful error notification in case the Flash player version is wrong.
+;<nowiki>LightBox</nowiki>:Allows for the behavior of the ImageGallery.
+ÿþ3minorÿþ30ÿþ3newauthorÿþ30ÿþ2hostÿþ2localhostÿþ2usernameÿþ2ÿþ2revisionÿþ210ÿþ2idÿþ2111ÿþ2tscreateÿþ21222485091ÿþ2keeptsÿþ21224648009ÿþ1cache_diff_default_majorÿþ11ÿþ1cache_diff_default_minorÿþ1<div id=wikidiffdiv><table id=wikidifftable><tr valign=top><td class="diff-header">Paragraph 3</td><td class="diff-vertical">&nbsp;</td><td class="diff-header">Paragraph 3</td></tr><tr valign=top><td class="diff-para-changed"><span class="diff-span-deleted">* jQuery - </span><span class="diff-span-ident">the base-line scripting library that allows for cross-platform/cross-browser support.<br>
+</span><span class="diff-span-deleted">* </span><span class="diff-span-ident">UFO - Unobtrusive Flash Object</span><span class="diff-span-deleted">; </span><span class="diff-span-ident">allows embedding of Flash SWFs and graceful error notification in case the Flash player version is wrong.<br>
+</span><span class="diff-span-deleted">* </span><span class="diff-span-ident">&lt;nowiki&gt;LightBox&lt;/nowiki&gt;</span><span class="diff-span-deleted">&nbsp;- </span><span class="diff-span-ident">Allows for the behavior of the ImageGallery.<br>
+</span></td><td class="diff-vertical"></td><td class="diff-para-changed"><span class="diff-span-added">;jQuery:</span><span class="diff-span-ident">the base-line scripting library that allows for cross-platform/cross-browser support.<br>
+</span><span class="diff-span-added">;</span><span class="diff-span-ident">UFO - Unobtrusive Flash Object</span><span class="diff-span-added">:</span><span class="diff-span-ident">allows embedding of Flash SWFs and graceful error notification in case the Flash player version is wrong.<br>
+</span><span class="diff-span-added">;</span><span class="diff-span-ident">&lt;nowiki&gt;LightBox&lt;/nowiki&gt;</span><span class="diff-span-added">:</span><span class="diff-span-ident">Allows for the behavior of the ImageGallery.<br>
+</span></td></tr></table></div>

@@ -1,0 +1,3 @@
+A WikiWord is a word written in such a way as to create a link to a wiki page.  A <nowiki>WikiWord</nowiki> is any word which contains at least two upper case letters, separated by at least one lower case letter.  
+
+If the <nowiki>WikiWord</nowiki> is inserted, but the page to which it references doesn't exist, save the changes to the page.  Afterwards, view the current page and find that a hyperlink has been created.  Click on that hyperlink to create and edit the new page.

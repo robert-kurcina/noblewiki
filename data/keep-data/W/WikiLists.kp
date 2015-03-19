@@ -1,0 +1,272 @@
+ÿþ1tsÿþ21179099978ÿþ2revisionÿþ26ÿþ2hostÿþ2localhostÿþ2nameÿþ2text_defaultÿþ2dataÿþ2minorÿþ30ÿþ3summaryÿþ3*ÿþ3textÿþ3== Lists ==
+Lists are powerful ways of presenting information.  Lists are either <tt>bulleted</tt>, <tt>numbered</tt>, or are <tt>definition</tt> lists.
+
+=== Bulleted Lists ===
+You create bulleted lists by using an "*" asterisk as the first character on a line.  Use multiple asterisks in a row to further indent the list.
+
+<b>For example:</b>
+* bullets
+** indented bullets
+*** indented bullets
+The above was created using this syntax:
+<pre>
+* bullets
+** indented bullets
+*** indented bullets
+</pre>
+
+=== Number Lists ===
+You can create numbered lists by using a "#" hashmark as the first character on each line.  The numbering will increment according to the size of the list of lines.  Use multiple hashmarks in a row to further indent the list.
+
+<b>For example:</b>
+# numbered list
+## indented list
+### depth 3 indented list
+### more
+## and more
+The above was created using this syntax:
+<pre>
+# numbered list
+## indented list
+### depth 3 indented list
+### more
+## and more
+# and more
+</pre>
+
+=== Definition Lists ===
+A definition list can be created by placing a ";" semicolon as the first character on a line, and using a ":" colon to separate the term from the definition. The colon must be on the same line as the semicolon; Definitions can be indented by repeated use of the ";" semicolon.
+
+<b>For example:</b>
+;Term:Definition
+;Verse:The owl and the pussy cat went to sea
+;;Indented Term:Definition of an indented term
+The above was created using this syntax:
+<pre>
+;Term:Definition
+;Verse:The owl and the pussy cat went to sea
+;;Indented Term:Definition of an indented term
+</pre>
+ÿþ3newauthorÿþ30ÿþ2ipÿþ2127.0.0.1ÿþ2usernameÿþ2ÿþ2idÿþ21011ÿþ2versionÿþ21ÿþ2keeptsÿþ21179375900ÿþ2tscreateÿþ21178783746ÿþ1versionÿþ21ÿþ2ipÿþ2127.0.0.1ÿþ2tsÿþ21195699304ÿþ2nameÿþ2text_defaultÿþ2dataÿþ2summaryÿþ3*ÿþ3textÿþ3<toc>
+
+== Lists ==
+Lists are powerful ways of presenting information.  Lists are either <tt>bulleted</tt>, <tt>numbered</tt>, or are <tt>definition</tt> lists.
+
+=== Bulleted Lists ===
+You create bulleted lists by using an "*" asterisk as the first character on a line.  Use multiple asterisks in a row to further indent the list.
+
+<b>For example:</b>
+* bullets
+** indented bullets
+*** indented bullets
+The above was created using this syntax:
+<pre>
+* bullets
+** indented bullets
+*** indented bullets
+</pre>
+
+=== Number Lists ===
+You can create numbered lists by using a "#" hashmark as the first character on each line.  The numbering will increment according to the size of the list of lines.  Use multiple hashmarks in a row to further indent the list.
+
+<b>For example:</b>
+# numbered list
+## indented list
+### depth 3 indented list
+### more
+## and more
+The above was created using this syntax:
+<pre>
+# numbered list
+## indented list
+### depth 3 indented list
+### more
+## and more
+# and more
+</pre>
+
+=== Definition Lists ===
+A definition list can be created by placing a ";" semicolon as the first character on a line, and using a ":" colon to separate the term from the definition. The colon must be on the same line as the semicolon; Definitions can be indented by repeated use of the ";" semicolon.
+
+<b>For example:</b>
+;Term:Definition
+;Verse:The owl and the pussy cat went to sea
+;;Indented Term:Definition of an indented term
+The above was created using this syntax:
+<pre>
+;Term:Definition
+;Verse:The owl and the pussy cat went to sea
+;;Indented Term:Definition of an indented term
+</pre>
+
+== Related Entries =
+ WikiStyleGuide
+ WikiMarkup
+ WikiTOCs
+ WikiHeadings
+ WikiTables
+ WikiImages
+ WikiURLs
+ WikiGallery
+ WikiFlash
+ÿþ3minorÿþ31ÿþ3newauthorÿþ31ÿþ2usernameÿþ2RobertKurcinaÿþ2hostÿþ2localhostÿþ2revisionÿþ211ÿþ2tscreateÿþ21178783746ÿþ2idÿþ21130ÿþ2keeptsÿþ21195945632ÿþ1tsÿþ21195945632ÿþ2ipÿþ2127.0.0.1ÿþ2versionÿþ21ÿþ2nameÿþ2text_defaultÿþ2dataÿþ2summaryÿþ3*ÿþ3textÿþ3<toc>
+
+== Lists ==
+Lists are powerful ways of presenting information.  Lists are either <tt>bulleted</tt>, <tt>numbered</tt>, or are <tt>definition</tt> lists.
+
+=== Bulleted Lists ===
+You create bulleted lists by using an "*" asterisk as the first character on a line.  Use multiple asterisks in a row to further indent the list.
+
+<b>For example:</b>
+* bullets
+** indented bullets
+*** indented bullets
+The above was created using this syntax:
+<pre>
+* bullets
+** indented bullets
+*** indented bullets
+</pre>
+
+=== Number Lists ===
+You can create numbered lists by using a "#" hashmark as the first character on each line.  The numbering will increment according to the size of the list of lines.  Use multiple hashmarks in a row to further indent the list.
+
+<b>For example:</b>
+# numbered list
+## indented list
+### depth 3 indented list
+### more
+## and more
+The above was created using this syntax:
+<pre>
+# numbered list
+## indented list
+### depth 3 indented list
+### more
+## and more
+# and more
+</pre>
+
+=== Definition Lists ===
+A definition list can be created by placing a ";" semicolon as the first character on a line, and using a ":" colon to separate the term from the definition. The colon must be on the same line as the semicolon; Definitions can be indented by repeated use of the ";" semicolon.
+
+<b>For example:</b>
+;Term:Definition
+;Verse:The owl and the pussy cat went to sea
+;;Indented Term:Definition of an indented term
+The above was created using this syntax:
+<pre>
+;Term:Definition
+;Verse:The owl and the pussy cat went to sea
+;;Indented Term:Definition of an indented term
+</pre>
+
+== Related Entries =
+{{template:RelatedEntries/WikiEditing}}
+ÿþ3newauthorÿþ31ÿþ3minorÿþ31ÿþ2hostÿþ2localhostÿþ2usernameÿþ2RobertKurcinaÿþ2revisionÿþ212ÿþ2idÿþ21149ÿþ2tscreateÿþ21178783746ÿþ2keeptsÿþ21222627963ÿþ1versionÿþ21ÿþ2ipÿþ2127.0.0.1ÿþ2tsÿþ21222627963ÿþ2nameÿþ2text_defaultÿþ2dataÿþ2summaryÿþ3*ÿþ3textÿþ3<toc>
+
+== Lists ==
+Lists are powerful ways of presenting information.  Lists are either <tt>bulleted</tt>, <tt>numbered</tt>, or are <tt>definition</tt> lists.
+
+=== Bulleted Lists ===
+You create bulleted lists by using an "*" asterisk as the first character on a line.  Use multiple asterisks in a row to further indent the list.
+
+<b>For example:</b>
+* bullets
+** indented bullets
+*** indented bullets
+The above was created using this syntax:
+<pre>
+* bullets
+** indented bullets
+*** indented bullets
+</pre>
+
+=== Number Lists ===
+You can create numbered lists by using a "#" hashmark as the first character on each line.  The numbering will increment according to the size of the list of lines.  Use multiple hashmarks in a row to further indent the list.
+
+<b>For example:</b>
+# numbered list
+## indented list
+### depth 3 indented list
+### more
+## and more
+The above was created using this syntax:
+<pre>
+# numbered list
+## indented list
+### depth 3 indented list
+### more
+## and more
+# and more
+</pre>
+
+=== Definition Lists ===
+A definition list can be created by placing a ";" semicolon as the first character on a line, and using a ":" colon to separate the term from the definition. The colon must be on the same line as the semicolon; Definitions can be indented by repeated use of the ";" semicolon.
+
+<b>For example:</b>
+;Term:Definition
+;Verse:The owl and the pussy cat went to sea
+;;Indented Term:Definition of an indented term
+The above was created using this syntax:
+<pre>
+;Term:Definition
+;Verse:The owl and the pussy cat went to sea
+;;Indented Term:Definition of an indented term
+</pre>
+
+{{template:RelatedEntries/WikiEditing}}
+ÿþ3minorÿþ31ÿþ3newauthorÿþ31ÿþ2usernameÿþ2RobertKurcinaÿþ2hostÿþ2localhostÿþ2revisionÿþ213ÿþ2tscreateÿþ21178783746ÿþ2idÿþ21261ÿþ2keeptsÿþ21222752426ÿþ1tsÿþ21222752426ÿþ2ipÿþ2127.0.0.1ÿþ2versionÿþ21ÿþ2nameÿþ2text_defaultÿþ2dataÿþ2summaryÿþ3*ÿþ3textÿþ3{{toc}}
+
+== Lists ==
+Lists are powerful ways of presenting information.  Lists are either <tt>bulleted</tt>, <tt>numbered</tt>, or are <tt>definition</tt> lists.
+
+=== Bulleted Lists ===
+You create bulleted lists by using an "*" asterisk as the first character on a line.  Use multiple asterisks in a row to further indent the list.
+
+<b>For example:</b>
+* bullets
+** indented bullets
+*** indented bullets
+The above was created using this syntax:
+<pre>
+* bullets
+** indented bullets
+*** indented bullets
+</pre>
+
+=== Number Lists ===
+You can create numbered lists by using a "#" hashmark as the first character on each line.  The numbering will increment according to the size of the list of lines.  Use multiple hashmarks in a row to further indent the list.
+
+<b>For example:</b>
+# numbered list
+## indented list
+### depth 3 indented list
+### more
+## and more
+The above was created using this syntax:
+<pre>
+# numbered list
+## indented list
+### depth 3 indented list
+### more
+## and more
+# and more
+</pre>
+
+=== Definition Lists ===
+A definition list can be created by placing a ";" semicolon as the first character on a line, and using a ":" colon to separate the term from the definition. The colon must be on the same line as the semicolon; Definitions can be indented by repeated use of the ";" semicolon.
+
+<b>For example:</b>
+;Term:Definition
+;Verse:The owl and the pussy cat went to sea
+;;Indented Term:Definition of an indented term
+The above was created using this syntax:
+<pre>
+;Term:Definition
+;Verse:The owl and the pussy cat went to sea
+;;Indented Term:Definition of an indented term
+</pre>
+
+{{template:RelatedEntries/WikiEditing}}
+ÿþ3newauthorÿþ31ÿþ3minorÿþ31ÿþ2hostÿþ2localhostÿþ2usernameÿþ2RobertKurcinaÿþ2revisionÿþ214ÿþ2idÿþ21278ÿþ2tscreateÿþ21178783746ÿþ2keeptsÿþ21223011300

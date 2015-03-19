@@ -1,0 +1,64 @@
+versionÿþ13ÿþ1tsÿþ11195699003ÿþ1cache_oldmajorÿþ13ÿþ1cache_oldauthorÿþ17ÿþ1cache_diff_default_authorÿþ11ÿþ1revisionÿþ18ÿþ1tscreateÿþ11179387301ÿþ1text_defaultÿþ1versionÿþ21ÿþ2ipÿþ2127.0.0.1ÿþ2tsÿþ21195699003ÿþ2nameÿþ2text_defaultÿþ2dataÿþ2summaryÿþ3*ÿþ3textÿþ3= Overview =
+This is a minor hub pertaining to the nature of NobleWiki.
+
+== Types of Roles =
+ VisitorRole
+ DesignerRole
+ PlayTesterRole
+ EditorRole
+ DeveloperRole
+ AdminRole
+ 
+== Types of Content =
+ DraftContent
+ CasualContent
+ RealContent
+ StubContent
+ MajorHubContent
+ MinorHubContent
+ PersonalContent
+ TutorialContent
+ ListContent
+
+== Related Entries =
+ CategoryCategory
+ÿþ3newauthorÿþ31ÿþ3minorÿþ31ÿþ2usernameÿþ2RobertKurcinaÿþ2hostÿþ2localhostÿþ2revisionÿþ28ÿþ2tscreateÿþ21179387301ÿþ2idÿþ21130ÿþ2keeptsÿþ21195699003ÿþ1cache_diff_default_majorÿþ1<div id=wikidiffdiv><table id=wikidifftable><tr valign=top><td class="diff-header">Paragraph 2</td><td class="diff-vertical">&nbsp;</td><td class="diff-header">Paragraph 2</td></tr><tr valign=top><td class="diff-para-ident">This is a minor hub pertaining to the nature of NobleWiki.<br>
+<br>
+</td><td class="diff-vertical"></td><td class="diff-para-ident">This is a minor hub pertaining to the nature of NobleWiki.<br>
+<br>
+</td></tr><tr valign=top><td class="diff-para-deleted">== General Information =<br>
+ NobleWiki<br>
+ TourBusStop<br>
+<br>
+== Frequently Asked Questions =<br>
+ [LocalWiki:FaqGames Games]<br>
+ [LocalWiki:FaqPeople People]<br>
+</td><td class="diff-vertical"></td><td class="diff-para-added">== Types of Roles =<br>
+ VisitorRole<br>
+ DesignerRole<br>
+ PlayTesterRole<br>
+ EditorRole<br>
+ DeveloperRole<br>
+ AdminRole<br>
+</td></tr><tr valign=top><td class="diff-para-changed"><span class="diff-span-ident">&nbsp;</span><span class="diff-span-deleted">[LocalWiki:FaqWiki Wiki]</span><span class="diff-span-ident"><br>
+</span></td><td class="diff-vertical"></td><td class="diff-para-changed"><span class="diff-span-ident">&nbsp;</span><span class="diff-span-ident"><br>
+</span></td></tr><tr valign=top><td class="diff-para-deleted">&nbsp;[LocalWiki:FaqOther Other]<br>
+<br>
+====== Related Entries =<br>
+</td><td class="diff-vertical"></td><td class="diff-para-added">== Types of Content =<br>
+ DraftContent<br>
+ CasualContent<br>
+ RealContent<br>
+ StubContent<br>
+ MajorHubContent<br>
+ MinorHubContent<br>
+ PersonalContent<br>
+ TutorialContent<br>
+ ListContent<br>
+<br>
+== Related Entries =<br>
+</td></tr><tr valign=top><td class="diff-para-ident">&nbsp;CategoryCategory<br>
+</td><td class="diff-vertical"></td><td class="diff-para-ident">&nbsp;CategoryCategory<br>
+</td></tr></table></div>ÿþ1cache_diff_default_minorÿþ1<div id=wikidiffdiv><table id=wikidifftable><tr valign=top><td class="diff-header">Paragraph 21</td><td class="diff-vertical">&nbsp;</td><td class="diff-header">Paragraph 21</td></tr><tr valign=top><td class="diff-para-changed"><span class="diff-span-ident">==</span><span class="diff-span-deleted">====</span><span class="diff-span-ident">&nbsp;Related Entries =<br>
+</span></td><td class="diff-vertical"></td><td class="diff-para-changed"><span class="diff-span-ident">==</span><span class="diff-span-ident">&nbsp;Related Entries =<br>
+</span></td></tr></table></div>

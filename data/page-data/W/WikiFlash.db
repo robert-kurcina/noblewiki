@@ -1,0 +1,66 @@
+tsÿþ11223835802ÿþ1versionÿþ13ÿþ1cache_oldmajorÿþ19ÿþ1authorcreateÿþ1RobertKurcinaÿþ1cache_oldauthorÿþ114ÿþ1cache_diff_default_authorÿþ11ÿþ1revisionÿþ115ÿþ1tscreateÿþ11195453937ÿþ1text_defaultÿþ1ipÿþ2127.0.0.1ÿþ2tsÿþ21223835802ÿþ2versionÿþ21ÿþ2nameÿþ2text_defaultÿþ2dataÿþ2summaryÿþ3*ÿþ3textÿþ3{{toc}}
+== Displaying Flash SWF ==
+Any number of Flash SWF files may be displayed within a page if they exists within the uploads directory. Ideally, the dimensions of the SWF file as it appears in each instance within a page is limited to at most 400 pixels wide by 300 pixels. tall.  Exceeding these dimensions is not allowed.
+
+<pre>
+{{flash:name=FlashSWF/diceland.swf|width=400|height=300}}
+</pre>
+
+The above creates this:
+
+{{flash:name=FlashSWF/diceland.swf|width=400|height=300}}
+
+=== Options Switches =
+Here is the complete list of options available for defining a gallery:
+
+!!Option|width=150!!Description!!
+||<tt><nowiki>|name=XXXX</nowiki></tt>||Provide the name of the SWF file as it appears in the upload directory, minus the <nowiki>upload:</nowiki> prefix.  If the name of the SWF file is not provided, ufo.swf will be used instead.||
+||<tt><nowiki>|width=NNN</nowiki></tt>||Provide the width of the SWF file in pixels.  The default is 400 pixels if not provided; this is also the maximum size allowed.||
+||<tt><nowiki>|height=NNN</nowiki></tt>||Provide the height of the SWF file in pixels.  The default is 300 pixels if not provided; this is also the maximum size allowed.||
+
+== Magic Flash =
+If a SWF file is of importance or great curiosity, it should be placed upon a page by itself using the <tt><nowiki>{{magic}}</nowiki></tt> directive.  As such, the page will not have a preview feature; it must be saved in order to render the results.  Here's an example of how the syntax would appear:
+
+<pre>
+  {{magic: Flash name=FlashSWF/diceland.swf height=300 width=200}}
+</pre>
+
+== Flash Master page =
+To help organize Flash content, place any new MagicFlash pages under FlashSWF.  Non-<nowiki>MagicFlash</nowiki> SWF content can be placed anywhere, but should be linked from the master page as well.
+== Related Entries =
+{{template:RelatedEntries/WikiEditing}}
+ÿþ3newauthorÿþ31ÿþ3minorÿþ31ÿþ2usernameÿþ2RobertKurcinaÿþ2hostÿþ2localhostÿþ2revisionÿþ215ÿþ2tscreateÿþ21195453937ÿþ2idÿþ21311ÿþ2keeptsÿþ21223835802ÿþ1cache_diff_default_majorÿþ1<div id=wikidiffdiv><table id=wikidifftable><tr valign=top><td class="diff-header">Paragraph 1</td><td class="diff-vertical">&nbsp;</td><td class="diff-header">Paragraph 1</td></tr><tr valign=top><td class="diff-para-deleted">&lt;toc&gt;<br>
+<br>
+</td><td class="diff-vertical"></td><td class="diff-para-added">{{toc}}<br>
+</td></tr><tr valign=top><td class="diff-para-ident">== Displaying Flash SWF ==<br>
+</td><td class="diff-vertical"></td><td class="diff-para-ident">== Displaying Flash SWF ==<br>
+</td></tr><tr valign=top><td class="diff-header">Paragraph 5</td><td class="diff-vertical">&nbsp;</td><td class="diff-header">Paragraph 5</td></tr><tr valign=top><td class="diff-para-changed"><span class="diff-span-ident">{{flash:name=</span><span class="diff-span-ident">diceland.swf|width=400|height=300}}<br>
+</span></td><td class="diff-vertical"></td><td class="diff-para-changed"><span class="diff-span-ident">{{flash:name=</span><span class="diff-span-added">FlashSWF/</span><span class="diff-span-ident">diceland.swf|width=400|height=300}}<br>
+</span></td></tr><tr valign=top><td class="diff-header">Paragraph 8</td><td class="diff-vertical">&nbsp;</td><td class="diff-header">Paragraph 8</td></tr><tr valign=top><td class="diff-para-changed"><span class="diff-span-ident">{{flash:name=</span><span class="diff-span-ident">diceland.swf|width=400|height=300}}<br>
+</span></td><td class="diff-vertical"></td><td class="diff-para-changed"><span class="diff-span-ident">{{flash:name=</span><span class="diff-span-added">FlashSWF/</span><span class="diff-span-ident">diceland.swf|width=400|height=300}}<br>
+</span></td></tr><tr valign=top><td class="diff-para-ident"><br>
+</td><td class="diff-vertical"></td><td class="diff-para-ident"><br>
+</td></tr><tr valign=top><td class="diff-para-deleted"><br>
+</td><td class="diff-vertical"></td><td class="diff-para-ident"></td></tr><tr valign=top><td class="diff-para-ident">=== Options Switches =<br>
+</td><td class="diff-vertical"></td><td class="diff-para-ident">=== Options Switches =<br>
+</td></tr><tr valign=top><td class="diff-header">Paragraph 16</td><td class="diff-vertical">&nbsp;</td><td class="diff-header">Paragraph 16</td></tr><tr valign=top><td class="diff-para-changed"><span class="diff-span-ident">If a SWF file is of importance or great curiosity, it should be placed upon a page by itself using the </span><span class="diff-span-deleted">Magic Content</span><span class="diff-span-ident">&nbsp;directive.&nbsp; As such, the page will not have a preview feature; it must be saved in order to render the results.&nbsp; Here's an example of how the syntax would appear:<br>
+</span></td><td class="diff-vertical"></td><td class="diff-para-changed"><span class="diff-span-ident">If a SWF file is of importance or great curiosity, it should be placed upon a page by itself using the </span><span class="diff-span-added">&lt;tt&gt;&lt;nowiki&gt;{{magic}}&lt;/nowiki&gt;&lt;/tt&gt;</span><span class="diff-span-ident">&nbsp;directive.&nbsp; As such, the page will not have a preview feature; it must be saved in order to render the results.&nbsp; Here's an example of how the syntax would appear:<br>
+</span></td></tr><tr valign=top><td class="diff-header">Paragraph 18</td><td class="diff-vertical">&nbsp;</td><td class="diff-header">Paragraph 18</td></tr><tr valign=top><td class="diff-para-changed"><span class="diff-span-ident">&nbsp; </span><span class="diff-span-deleted">#MAGIC</span><span class="diff-span-ident">&nbsp;Flash name=</span><span class="diff-span-ident">diceland.swf height=300 width=200</span><span class="diff-span-ident"><br>
+</span></td><td class="diff-vertical"></td><td class="diff-para-changed"><span class="diff-span-ident">&nbsp; </span><span class="diff-span-added">{{magic:</span><span class="diff-span-ident">&nbsp;Flash name=</span><span class="diff-span-added">FlashSWF/</span><span class="diff-span-ident">diceland.swf height=300 width=200</span><span class="diff-span-added">}}</span><span class="diff-span-ident"><br>
+</span></td></tr><tr valign=top><td class="diff-para-ident">&lt;/pre&gt;<br>
+<br>
+</td><td class="diff-vertical"></td><td class="diff-para-ident">&lt;/pre&gt;<br>
+<br>
+</td></tr><tr valign=top><td class="diff-para-deleted"><br>
+</td><td class="diff-vertical"></td><td class="diff-para-ident"></td></tr><tr valign=top><td class="diff-para-ident">== Flash Master page =<br>
+To help organize Flash content, place any new MagicFlash pages under FlashSWF.&nbsp; Non-&lt;nowiki&gt;MagicFlash&lt;/nowiki&gt; SWF content can be placed anywhere, but should be linked from the master page as well.<br>
+</td><td class="diff-vertical"></td><td class="diff-para-ident">== Flash Master page =<br>
+To help organize Flash content, place any new MagicFlash pages under FlashSWF.&nbsp; Non-&lt;nowiki&gt;MagicFlash&lt;/nowiki&gt; SWF content can be placed anywhere, but should be linked from the master page as well.<br>
+</td></tr><tr valign=top><td class="diff-para-deleted"><br>
+</td><td class="diff-vertical"></td><td class="diff-para-ident"></td></tr><tr valign=top><td class="diff-para-ident">== Related Entries =<br>
+</td><td class="diff-vertical"></td><td class="diff-para-ident">== Related Entries =<br>
+</td></tr></table></div>ÿþ1cache_diff_default_minorÿþ1<div id=wikidiffdiv><table id=wikidifftable><tr valign=top><td class="diff-header">Paragraph 16</td><td class="diff-vertical">&nbsp;</td><td class="diff-header">Paragraph 16</td></tr><tr valign=top><td class="diff-para-changed"><span class="diff-span-ident">If a SWF file is of importance or great curiosity, it should be placed upon a page by itself using the &lt;tt&gt;&lt;nowiki&gt;{{</span><span class="diff-span-deleted">command</span><span class="diff-span-ident">}}&lt;/nowiki&gt;&lt;/tt&gt; directive.&nbsp; As such, the page will not have a preview feature; it must be saved in order to render the results.&nbsp; Here's an example of how the syntax would appear:<br>
+</span></td><td class="diff-vertical"></td><td class="diff-para-changed"><span class="diff-span-ident">If a SWF file is of importance or great curiosity, it should be placed upon a page by itself using the &lt;tt&gt;&lt;nowiki&gt;{{</span><span class="diff-span-added">magic</span><span class="diff-span-ident">}}&lt;/nowiki&gt;&lt;/tt&gt; directive.&nbsp; As such, the page will not have a preview feature; it must be saved in order to render the results.&nbsp; Here's an example of how the syntax would appear:<br>
+</span></td></tr><tr valign=top><td class="diff-header">Paragraph 18</td><td class="diff-vertical">&nbsp;</td><td class="diff-header">Paragraph 18</td></tr><tr valign=top><td class="diff-para-changed"><span class="diff-span-ident">&nbsp; {{</span><span class="diff-span-deleted">command</span><span class="diff-span-ident">: Flash name=FlashSWF/diceland.swf height=300 width=200}}<br>
+</span></td><td class="diff-vertical"></td><td class="diff-para-changed"><span class="diff-span-ident">&nbsp; {{</span><span class="diff-span-added">magic</span><span class="diff-span-ident">: Flash name=FlashSWF/diceland.swf height=300 width=200}}<br>
+</span></td></tr></table></div>

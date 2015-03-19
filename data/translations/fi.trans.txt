@@ -1,0 +1,412 @@
+%Translate = split('\n',<<END_OF_TRANSLATION);
+Could not create %s
+Ei voitu luoda: %s
+Showing revision %s
+Tämä on versio %s
+Revision %s not available
+Versio %s ei ole saatavilla
+showing current revision instead
+tässä nykyinen versio sen sijaan
+Updates since %s
+Päivitykset sitten %s
+Updates in the last %s day
+Päivitykset viimeisen %s päivän aikana
+Updates in the last %s days
+Päivitykset viimeisen %s päivän aikana
+Could not open %s log file
+%s lokitiedostoa ei voitu avata
+Error was
+Virhe oli
+Note: This error is normal if no changes have been made.
+Huom: Tämä virhe ei ole virhe, jos muutoksia ei ole tehty.
+Could not open old %s log file
+Vanhaa %s lokitiedostoa ei voitu avata
+for %s only
+vain %s varten
+%s day
+%s päivä
+%s days
+%s päivää
+List new changes starting from
+Listaa uudet muutokset alkaen
+No updates since %s
+Ei muutoksia sitten %s
+Page generated %s
+Sivu luotu %s
+(edit)
+(muokkaa)
+(diff)
+(erot)
+changes
+muutokset
+History of %s
+Sivun %s historia
+Revision %s
+Versio %s
+View
+Katso
+Edit
+Muokkaa
+Erot
+Näytä muutokset
+by
+tekijä
+Preferences
+Mieltymykset
+Random Page
+Satunnainen sivu
+ID %s
+ID %s
+from %s
+from %s
+[Home]
+[Koti]
+redirected from %s
+uudelleenohjattu sivulta %s
+Edit revision %s of this page
+Muokkaa tämän sivun versiota %s
+Edit text of this page
+Muokkaa tätä sivua
+This page is read-only
+Tälle sivulle ei voi kirjoittaa
+View other revisions
+Katso muita versioita
+View current revision
+Katso nykyistä versiota
+Last edited
+Viimeksi muokattu
+Edited
+Muokattu
+Warning
+Varoitus
+Database is stored in temporary directory %s
+Tietokantaa säilytetään tilapäishakemistossa %s
+Search:
+Etsi:
+Your browser should go to the %s page.
+Selaimesi pitäisi mennä sivulle %s.
+If it does not, click %s to continue.
+Jos se ei tee niin, napsauta %s jatkaaksesi.
+Thanks for editing...
+Kiitos muokkaamisesta...
+Thank you for editing %s.
+Kiitos sivun %s muokkaamisesta!
+Link to another page...
+Linkki toiselle sivulle...
+Follow the %s link to continue.
+Seuraa %s linkkiä jatkaaksesi.
+alternate
+vaihtoehtoinen
+search
+etsi
+major diff
+suuri muutos
+minor diff
+pieni muutos
+author diff
+tekijänmuutos
+major
+suuri
+minor
+pieni
+author
+tekijä
+(The revisions are identical or unavailable.)
+(Versiot ovat identtisiä tai saavuttamattomissa.)
+no other diffs
+ei muita versioita
+No diff available.
+Muutostietoja ei saatavana.
+Difference (from revision %s to current revision)
+Ero (version %s ja nykyisen version välillä)
+No diff available--this is the first %s revision.
+Muutostietoja ei saatavana -- tämä on ensimmäinen versio sivusta %s.
+Difference (from prior %s revision)
+Ero (ennen %s versiota)
+Changed:
+Muuttunut:
+Removed:
+Poistettu:
+Added:
+Lisätty:
+Describe the new page here.
+Kuvaile uutta sivua tähän.
+Bad page version (or corrupt page).
+Sivun versio ei kelpaa (tai viallinen sivu).
+cant write %s
+en voi kirjoittaa %s
+Page name is too long: %s
+Sivun nimi on liian pitkä: %s
+Page name may not contain space characters: %s
+Sivunnimi ei saa sisältää tyhjiä merkkejä: %s
+Too many / characters in page %s
+Liian monta /-merkkiä sivulla %s
+Invalid Page %s (subpage without main page)
+Sivu %s ei kelpaa (alisivu ilman pääsivua)
+Invalid Page %s (missing subpage name)
+Sivu %s ei kelpaa (alisivun nimi puuttuu)
+Invalid Page %s (/ not allowed)
+Sivu %s ei kelpaa (/ ei sallittu)
+Invalid Page %s
+Sivu %s ei kelpaa
+Invalid Page %s (must not end with .db)
+Sivu %s ei kelpaa (ei saa päättyä .db)
+Invalid Page %s (must not end with .lck)
+Sivu %s ei kelpaa (ei saa päättyä .lck)
+can not make %s
+en voi tehdä %s
+Can not open %s
+En voi avata %s
+Invalid action parameter %s
+Toimintaparametri %s ei kelpaa
+Invalid URL.
+URL ei kelpaa.
+Editing Denied
+Muokkaaminen kielletty.
+Editing not allowed: user, ip, or network is blocked.
+Muokkaaminen kielletty: käyttäjätunnus, ip tai verkko estetty.
+Contact the wiki administrator for more information.
+Lisätietoja saat ylläpidolta.
+Editing not allowed: %s is read-only.
+Muokkaaminen ei ole sallittua: sivulle %s ei saa kirjoittaa.
+Editing %s
+Muokkaan: %s
+Editing revision %s of
+Muokkaan versiota %s sivusta
+Editing old revision %s.
+Muokkaan vanhaa versiota %s.
+Saving this page will replace the latest revision with this text.
+Tämän sivun tallentaminen korvaa uusimman version tällä tekstillä.
+Edit Conflict!
+Muokkauskonflikti!
+(This is a new conflict)
+(Tämä on uusi konflikti)
+Someone saved this page after you started editing.
+Joku tallensi tämän sivun sen jälkeen kun aloitit muokkaamisen.
+The top textbox contains the saved text.
+Ylempi tekstilaatikko sisältää tallennetun tekstin.
+Only the text in the top textbox will be saved.
+Vain ylemmän tekstilaatikon sisältö tallentuu.
+Scroll down to see your edited text.
+Vieritä alaspäin nähdäksesi muokkaamasi tekstin.
+Last save time:
+Viimeisin tallennusaika:
+Current time is:
+Kello on nyt:
+Summary:
+Tiivistelmä:
+This change is a minor edit.
+Tämä on pieni muutos.
+Send email notification that %s has been changed.
+Lähetä sähköposti-ilmoitus että %s on muuttunut.
+Save
+Tallenna
+Your user name is
+Käyttäjätunnuksesi on
+Visit %s to set your user name.
+Käy sivulla %s asettaaksesi käyttäjätunnuksesi.
+Preview
+Esikatselu
+This is the text you submitted:
+Tämän tekstin lähetit:
+Preview:
+Esikatselu:
+NOTE: This preview shows the revision of the other author.
+Huom! Tämä esikatselu näyttää toisen tekijän tekemän muutoksen.
+Preview only, not yet saved
+Vain esikatselu, ei vielä tallennettu
+Editing Preferences
+Muokkausmieltymykset
+User Information:
+Käyttäjätiedot:
+Your User ID number: %s
+Käyttäjätunnusnumerosi: %s
+UserName:
+Käyttäjätunnus:
+(blank to remove, or valid page name)
+(tyhjä poistaaksesi, tai kelvollinen sivunnimi)
+Set Password:
+Aseta salasanaksi:
+(blank to remove password)
+(tyhjä poistaa salasanan)
+Passwords allow sharing preferences between multiple systems.
+Salasanat mahdollistavat mieltymysten jakamisen useiden systeemien kesken.
+Passwords are completely optional.
+Salasanat ovat täysin vapaaehtoisia.
+Administrator Password:
+Ylläpitosalana:
+(Administrator passwords are used for special maintenance.)
+(Ylläpitosalasanoja käytetään erityistarpeisiin.)
+Include this address in the site email list.
+Sisällytä tämä osoite sivuston sähköpostilistaan.
+(Uncheck the box to remove the address.)
+(Poista rasti ruudusta poistaaksesi osoitteen.)
+Email Address:
+Sähköpostiosoite:
+Default days to display:
+Oletuspäivämäärä:
+Most recent changes on top
+Uusimmat muutokset ensin
+Show all changes (not just most recent)
+Näytä kaikki muutokset (ei vain uusimpia)
+Hide minor edits
+Kätke pienet muutokset
+Show minor edits
+Näytä pienet muutokset
+Show only minor edits
+Näytä vain pienet muutokset
+Minor edit display:
+Pienten muutosten näyttäminen:
+Use "changes" as link to history
+Käytä "muutoksia" linkkinä historiaan
+Differences:
+Erot:
+Show (diff) links on %s
+Näytä (näytä muutokset) linkkejä sivulla %s
+Show differences on all pages
+Näytä muutokset kaikilla sivuilla
+No differences on %s
+Ei muutoksia sivulla %s
+Major
+Suuret
+Minor
+Pienet
+Author
+Tekijä
+Default difference type:
+Oletusmuutostyyppi:
+Misc:
+Sekalaisia:
+Server time:
+Palvelimen aika:
+Time Zone offset (hours):
+Aikavyöhykekorjaus (tunteja):
+Use 100% wide edit area (if supported)
+Käytä 100% levyistä muokkausaluetta (jos tuettu)
+Edit area rows:
+Muokkausalueen rivit:
+columns:
+sarakkeet:
+Show link bar on top
+Näytä linkkirivi yläreunassa
+Add "Random Page" link to link bar
+Lisää "Satunnainen sivu" linkki linkkiriviin
+Saving Preferences
+Tallennan mieltymyksiä
+Invalid UserID %s, preferences not saved.
+Käyttäjätunnus %s ei kelpaa, mieltymyksiä ei tallennettu.
+(Preferences require cookies, but no cookie was sent.)
+(Mieltymykset vaativat cookien, mutta cookieta ei lähetetty.)
+UserName removed.
+Käyttäjätunnus poistettu.
+Invalid UserName %s: not saved.
+Käyttäjätunnus %s ei kelpaa: ei tallennettu.
+UserName must be 50 characters or less. (not saved)
+Käyttäjätunnuksen täytyy olla alle 50 merkkiä (ei tallennettu).
+UserName %s saved.
+Käyttäjätunnus %s tallennettu.
+Password removed.
+Salasana poistettu.
+Password changed.
+Salasana muutettu.
+Administrator password removed.
+Ylläpitosalasana poistettu.
+Administrator password changed.
+Ylläpitosalasana muutettu.
+User has administrative abilities.
+Käyttäjällä on ylläpito-oikeudet.
+User has editor abilities.
+Käyttäjällä on toimitusoikeudet.
+User does not have administrative abilities.
+Käyttäjällä ei ole ylläpito-oikeuksia.
+(Password does not match administrative password(s).)
+(Salasana ei vastaa ylläpitosalasanaa.)
+Local time:
+Paikallinen aika:
+Preferences saved.
+Mieltymykset tallennettu.
+Could not read from %s:
+%s ei voitu lukea:
+Could not get mail lock
+Postilukkoa ei saatu
+Could not append to %s:
+%s ei voitu lisätä:
+Could not overwrite %s:
+%s ei voitu ylikirjoittaa:
+Index of all pages
+Kaikkien sivujen sisällysluettelo
+Login
+Login
+User ID number:
+Käyttäjätunnusnumero:
+Password:
+Salasana:
+Login Results
+Kirjautumisen tulokset
+Login for user ID %s complete.
+Käyttäjätunnuksen %s kirjautuminen valmis.
+Login for user ID %s failed.
+Käyttäjätunnuksen %s kirjautuminen epäonnistunut.
+Could not get user-ID lock
+Käyttäjätunnuslukkoa ei saatu.
+Search for: %s
+Etsi aiheesta: %s
+%s pages found:
+%s sivuja löytyi:
+Full Link List
+Täysi linkkilista
+Editing not allowed for %s.
+%s muokkaus ei sallittu.
+SampleUndefinedPage
+EsimerkkiMäärittelemätönSivu
+%s cannot be defined.
+Ei voida määritellä: %s
+Sample_Undefined_Page
+Esimerkki_Määrittelemätön_Sivu
+[[%s]] cannot be defined.
+Ei voida määritellä: [[%s]]
+Could not get editing lock
+Muokkauslukkoa ei saatu
+Normal Unlock.
+Normaali lukon aukaiseminen.
+Removing edit lock
+Poistan muokkauslukon
+This operation may take several seconds...
+Tässä voi kestää muutama sekunti...
+Forced Unlock.
+Pakotettu lukon aukaiseminen.
+%s log error:
+%s lokivirhe:
+can not write diff_log
+diff_logia ei voitu kirjoittaa
+Maintenance on all pages
+Huoltoa kaikilla sivuilla
+Maintenance not done.
+Huoltoa ei suoritettu.
+(Maintenance can only be done once every 12 hours.)
+(Huollon voi tehdä vain kerran 12 tunnissa.)
+Remove the "maintain" file or wait.
+Poista "huolto"-tiedosto tai odota.
+Could not get maintain-lock
+Huoltolukkoa ei saatu
+Processing rename/delete commands:
+Käsittelen uudelleennimeämis/poistokomentoja:
+This operation is restricted to site editors only...
+Tämä toiminto on vain toimittajille...
+This operation is restricted to administrators only...
+Tämä toiminto on vain ylläpitäjille...
+Set or Remove global edit lock
+Aseta tai poista yleinen muokkauslukko
+Edit lock created.
+Muokkauslukko luotu.
+Edit lock removed.
+Muokkauslukko poistettu.
+Set or Remove page edit lock
+Aseta tai poista sivun muokkauslukko
+Missing page id to lock/unlock...
+Sivun tunnus puuttuu lukitsemista/avaamista varten...
+Lock for %s created.
+Lukko sivulle %s luotu.
+Lock for %s removed.
+Lukko sivulle %s poistettu.
+END_OF_TRANSLATION

@@ -1,0 +1,17 @@
+cache_oldmajorÿþ13ÿþ1cache_diff_default_minorÿþ1ÿþ1text_defaultÿþ1revisionÿþ26ÿþ2tsÿþ21179734152ÿþ2hostÿþ2localhostÿþ2nameÿþ2text_defaultÿþ2dataÿþ2minorÿþ31ÿþ3summaryÿþ3*ÿþ3textÿþ3== Advanced Option =
+<nowiki>UseMod</nowiki> can be configured to allow/deny the use of HTML at two levels.
+
+1. The option $HtmlTags controls whether to allow tags defined by two arrays:
+** @HtmlSingle defines the tags which are then allowed if seen singly
+** @HtmlPairs defines the tags that are only allowed in <tag> xxx </tag> pairs
+**Any of the "singles" will also be allowed in a "pair"
+**These arrays ignored when $HtmlTags = 0
+2. The option $RawHtml (I think) allows unrestricted HTML.''(please correct me if I am wrong...)''
+
+== Wiki Health Warning ==
+The $RawHtml option is very dangerous in a wiki that is editable by the unknown Internet user.  Any hostile person (and there are such sad specimens around) can drop any Javascript code onto a page, and for anyone loading a page with Javascript enabled they will not know what has happened till after the code has run.
+
+My advice would be to keep this option only for use on a readonly site where you trust all the people with edit/admin status.(Do you ever really trust people)?
+
+Note**** Getting javascript to run within a page (<script type="text/javascript" src="http://www.furl.net/jsLatest.jsp?id=??????"></script>) and enabling <nowiki>RawHTML</nowiki> does work, but adding script to the list of tags in those defined in @HtmlPairs and enabling $HtmlTags does not seem to work.
+ÿþ3newauthorÿþ31ÿþ2ipÿþ2127.0.0.1ÿþ2usernameÿþ2Robert Kurcinaÿþ2idÿþ21025ÿþ2versionÿþ21ÿþ2keeptsÿþ21179734152ÿþ2tscreateÿþ21178785687ÿþ1tsÿþ11179734152ÿþ1revisionÿþ16ÿþ1cache_diff_default_majorÿþ1ÿþ1cache_oldauthorÿþ15ÿþ1cache_diff_default_authorÿþ11ÿþ1versionÿþ13ÿþ1tscreateÿþ11178785687

@@ -1,0 +1,94 @@
+tsÿþ11223011244ÿþ1versionÿþ13ÿþ1cache_oldmajorÿþ162ÿþ1cache_oldauthorÿþ164ÿþ1cache_diff_default_authorÿþ11ÿþ1revisionÿþ165ÿþ1tscreateÿþ11178782941ÿþ1text_defaultÿþ1tsÿþ21223011244ÿþ2ipÿþ2127.0.0.1ÿþ2versionÿþ21ÿþ2nameÿþ2text_defaultÿþ2dataÿþ2summaryÿþ3*ÿþ3textÿþ3= Wiki Text Formatting Rules =
+The following is an overview of the [http://www.usemod.com/cgi-bin/wiki.pl UseModWiki] text formatting rules for when editing a page. For examples without all the explanatory text, see WikiMarkup. To try these rules for yourself, please feel free to edit the SandBox page. 
+To see how any page is formatted, just follow the link "Edit text of this page" at the bottom of the page. 
+
+{{toc}}
+
+== Basic Syntax =
+The first character entered on a line often controls the formatting of the text on that line.  Repetition of the first character on the line generally increases the indentation or emphasis
+* <tt>" "</tt> space causes text to appear in a <tt>monospaced font where spaces are significant</tt>. 
+* <tt>":"</tt> colon causes text to be indented
+* <tt>"="</tt> equals - followed by a space - creates a heading, a trailing <tt>"="</tt> - preceded by a space - is required
+* <tt>"*"</tt> asterisk creates a bulleted list
+* <tt>"#"</tt> hash creates a numbered list
+* <tt>";"</tt> semicolon creates a <i>definition</i> list, a <tt>":"</tt> colon is required subsequently on the same line
+* <tt>"<nowiki>----</nowiki>"</tt> four hyphens creates a horizontal line
+
+=== Decoration =
+Entering text on a wiki can be done simply. Follow these guidelines:
+* Use tags <nowiki><b></nowiki><b>bold</b><nowiki></b></nowiki> and <nowiki><i></nowiki><i>italic</i><nowiki></i></nowiki> 
+* Use tag <nowiki><tt></nowiki><tt>for monospace text</tt><nowiki></tt></nowiki> (tt stands for typewriter text)
+
+=== Miscellaneous =
+* Create links to other pages by naming it using the WikiWord syntax; any 2 or more capitalized words placed together.
+* New pages can be created by using a <tt>WikiWord</tt>, saving the page, and then clicking on the hyperlink that was formed.
+* A line which ends in a backslash character (\) will be joined with the next line before most formatting rules are applied. This can be useful for breaking up long sections of text in line-sensitive sections (like lists or indented text).
+* Using paired <tt><nowiki><blockquote>..</blockquote></nowiki></tt> will throw a nice quotation marks images at the top left of the quote.
+* Using <tt><nowiki>~~~~</nowiki></tt> will sign your name if you've signed in via the [LocalWiki:action=editprefs Preferences].  This is useful for quick comments.
+* Using <tt><nowiki>$$$$</nowiki></tt> will sign your name followed by a timestamp if you've signed in via the [LocalWiki:action=editprefs Preferences].
+
+== Advanced Syntax =
+* To quote text without applying the wiki formatting rules, enclose it within a <nowiki><nowiki></nowiki> ... <nowiki></nowiki></nowiki> section. Within a nowiki section, only HTML-quoting of special characters (<>&) will occur - no other formatting rules will be applied.
+* If raw-HTML sections are enabled (they are disabled by default), you can enter raw HTML code within an <html> ... </html> section. Note that <b>no</b> quoting is done, so you will need to use sequences like &amp;lt; if you want to display a < character.
+* Most of the formatting rules are order-independent. On rare occasions, the order of processing may be important. The rules are processed in the following order: raw HTML sections, HTML quoting, nowiki tags, backslash line joining, preformatted sections, paragraphs, lists and indented text, horizontal lines, italic/bold text, URLs, and finally ordinary WikiName links.
+
+=== Directives =
+* To redirect one wiki page to another, use the following syntax:
+<pre>
+  <nowiki>{{redirect:TargetPage}}</nowiki>
+  <nowiki>{{redirect:TargetPage/SubPage}}</nowiki>
+  <nowiki>{{redirect:[[Freelink]]}}</nowiki>
+</pre>
+* To include a file that was added into the <tt><nowiki>$DataDir</nowiki></tt>:
+<pre>
+  <nowiki>{{include:filename}}</nowiki>
+</pre>
+
+ {{include:something.html}}
+
+* Magic Content Pages create content based upon input parameters.  The ListOfWantedPages are an example of Magic Content.  A list of modules can be had by providing <tt><nowiki>ModuleName=ListCommands</nowiki></tt>. The effects of the Magic Content won't show up until page is saved.
+<pre>
+  {{command: ModuleName param1=value1 param2=value2 ...}}
+</pre>
+
+* To list all of the sub pages of a parent page do the following, leaving <tt><nowiki>TargetPage</nowiki></tt> blank if this is for the current page being edited:
+<pre>
+  {{subpages:TargetPage}}
+</pre>
+
+* Flash SWF content can be inserted into place if three parameters - name, width, and height - are provided.  The defaults will be set if not given to name=ufo.swf, width=400 pixels, and height=300 pixels.  This is a single flash object within a page, which is ideal for standalone applications.  For use of Flash multiple times within a page, see WikiFlash.
+
+<pre>
+  {{command: Flash name=diceland.swf height=300 width=200}}
+</pre>
+== Related Entries =
+{{template:RelatedEntries/WikiEditing}}
+ÿþ3minorÿþ31ÿþ3newauthorÿþ31ÿþ2hostÿþ2localhostÿþ2usernameÿþ2RobertKurcinaÿþ2revisionÿþ265ÿþ2idÿþ21298ÿþ2tscreateÿþ21178782941ÿþ2keeptsÿþ21223011244ÿþ1cache_diff_default_majorÿþ1<div id=wikidiffdiv><table id=wikidifftable><tr valign=top><td class="diff-header">Paragraph 38</td><td class="diff-vertical">&nbsp;</td><td class="diff-header">Paragraph 38</td></tr><tr valign=top><td class="diff-para-changed"><span class="diff-span-ident">&nbsp; &lt;nowiki&gt;</span><span class="diff-span-deleted">#INCLUDE filename</span><span class="diff-span-ident">&lt;/nowiki&gt;<br>
+</span></td><td class="diff-vertical"></td><td class="diff-para-changed"><span class="diff-span-ident">&nbsp; &lt;nowiki&gt;</span><span class="diff-span-added">{{include:filename}}</span><span class="diff-span-ident">&lt;/nowiki&gt;<br>
+</span></td></tr><tr valign=top><td class="diff-para-ident">&lt;/pre&gt;<br>
+<br>
+</td><td class="diff-vertical"></td><td class="diff-para-ident">&lt;/pre&gt;<br>
+<br>
+</td></tr><tr valign=top><td class="diff-para-deleted">&nbsp;#INCLUDE something.html<br>
+</td><td class="diff-vertical"></td><td class="diff-para-added">&nbsp;{{include:something.html}}<br>
+</td></tr><tr valign=top><td class="diff-para-ident"><br>
+* Magic Content Pages create content based upon input parameters.&nbsp; The ListOfWantedPages are an example of Magic Content.&nbsp; A list of modules can be had by providing &lt;tt&gt;&lt;nowiki&gt;ModuleName=ListCommands&lt;/nowiki&gt;&lt;/tt&gt;. The effects of the Magic Content won't show up until page is saved.<br>
+</td><td class="diff-vertical"></td><td class="diff-para-ident"><br>
+* Magic Content Pages create content based upon input parameters.&nbsp; The ListOfWantedPages are an example of Magic Content.&nbsp; A list of modules can be had by providing &lt;tt&gt;&lt;nowiki&gt;ModuleName=ListCommands&lt;/nowiki&gt;&lt;/tt&gt;. The effects of the Magic Content won't show up until page is saved.<br>
+</td></tr><tr valign=top><td class="diff-header">Paragraph 43</td><td class="diff-vertical">&nbsp;</td><td class="diff-header">Paragraph 43</td></tr><tr valign=top><td class="diff-para-changed"><span class="diff-span-ident">&nbsp; </span><span class="diff-span-deleted">#MAGIC</span><span class="diff-span-ident">&nbsp;ModuleName param1=value1 param2=value2 ...</span><span class="diff-span-ident"><br>
+</span></td><td class="diff-vertical"></td><td class="diff-para-changed"><span class="diff-span-ident">&nbsp; </span><span class="diff-span-added">{{command:</span><span class="diff-span-ident">&nbsp;ModuleName param1=value1 param2=value2 ...</span><span class="diff-span-added">}}</span><span class="diff-span-ident"><br>
+</span></td></tr><tr valign=top><td class="diff-header">Paragraph 51</td><td class="diff-vertical">&nbsp;</td><td class="diff-header">Paragraph 51</td></tr><tr valign=top><td class="diff-para-changed"><span class="diff-span-ident">&nbsp; </span><span class="diff-span-deleted">#MAGIC</span><span class="diff-span-ident">&nbsp;Flash name=diceland.swf height=300 width=200</span><span class="diff-span-ident"><br>
+</span></td><td class="diff-vertical"></td><td class="diff-para-changed"><span class="diff-span-ident">&nbsp; </span><span class="diff-span-added">{{command:</span><span class="diff-span-ident">&nbsp;Flash name=diceland.swf height=300 width=200</span><span class="diff-span-added">}}</span><span class="diff-span-ident"><br>
+</span></td></tr><tr valign=top><td class="diff-para-ident">&lt;/pre&gt;<br>
+</td><td class="diff-vertical"></td><td class="diff-para-ident">&lt;/pre&gt;<br>
+</td></tr><tr valign=top><td class="diff-para-deleted"><br>
+</td><td class="diff-vertical"></td><td class="diff-para-added">== Related Entries =<br>
+</td></tr><tr valign=top><td class="diff-para-ident">{{template:RelatedEntries/WikiEditing}}<br>
+</td><td class="diff-vertical"></td><td class="diff-para-ident">{{template:RelatedEntries/WikiEditing}}<br>
+</td></tr></table></div>ÿþ1cache_diff_default_minorÿþ1<div id=wikidiffdiv><table id=wikidifftable><tr valign=top><td class="diff-header">Paragraph 52</td><td class="diff-vertical">&nbsp;</td><td class="diff-header">Paragraph 52</td></tr><tr valign=top><td class="diff-para-ident">&lt;/pre&gt;<br>
+</td><td class="diff-vertical"></td><td class="diff-para-ident">&lt;/pre&gt;<br>
+</td></tr><tr valign=top><td class="diff-para-deleted"><br>
+</td><td class="diff-vertical"></td><td class="diff-para-added">== Related Entries =<br>
+</td></tr><tr valign=top><td class="diff-para-ident">{{template:RelatedEntries/WikiEditing}}<br>
+</td><td class="diff-vertical"></td><td class="diff-para-ident">{{template:RelatedEntries/WikiEditing}}<br>
+</td></tr></table></div>

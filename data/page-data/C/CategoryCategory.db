@@ -1,0 +1,23 @@
+versionÿþ13ÿþ1tsÿþ11223641707ÿþ1cache_oldmajorÿþ114ÿþ1cache_oldauthorÿþ114ÿþ1cache_diff_default_authorÿþ11ÿþ1revisionÿþ115ÿþ1tscreateÿþ11179218376ÿþ1text_defaultÿþ1versionÿþ21ÿþ2ipÿþ2127.0.0.1ÿþ2tsÿþ21223641707ÿþ2nameÿþ2text_defaultÿþ2dataÿþ2summaryÿþ3*ÿþ3textÿþ3= Organized Entries =
+This is a list of categories created for the NobleWiki.  The [WikiName WikiNames] for the categories all begin with a <tt>Category</tt> prefix. The purpose of each category entry is to group related information.  Other prefixes are available, and can also be created in order to organize custom information. 
+
+!!General           !!Purpose                                                                          !!
+||CategoryOverview  ||FAQs, TourBusStop, and other information related to the goals of this wiki       ||
+||CategoryWiki      ||How to use a wiki, and bunches of wiki-related terms                             ||
+||CategoryAdmin     ||Useful information for NobleWiki adminisrators                                   ||
+||CategoryPeople    ||Lists of persons contributing, developing, or related to any aspect of this wiki.||
+
+!!Site-centric      !!Purpose                                                                          !!
+||CategoryGames     ||Lists of all games grouped by their purpose, with links to their own subsections.||
+||CategoryIllustration||Tutorials on using graphics design tools||
+||CategoryWebDev    ||Items of interests for W/LAMP web development; HTML/CSS, javascript, perl, <nowiki>MySql</nowiki>||
+||CategoryGalleries ||Image galleries of various sorts, including those associated with games          ||
+||CategoryLinks     ||Useful bookmarks and links to other sites                                        ||
+||CategoryMisc      ||A bucket category to catch small things until a separate category can be created.||
+||CategoryTemplates ||A list of all templates and [MeatBall:TransClusion transclusion] files           ||
+
+== Related Entries =
+ HomePage
+ÿþ3newauthorÿþ31ÿþ3minorÿþ30ÿþ2usernameÿþ2ÿþ2hostÿþ2localhostÿþ2revisionÿþ215ÿþ2tscreateÿþ21179218376ÿþ2idÿþ21307ÿþ2keeptsÿþ21223641707ÿþ1cache_diff_default_majorÿþ11ÿþ1cache_diff_default_minorÿþ1<div id=wikidiffdiv><table id=wikidifftable><tr valign=top><td class="diff-header">Paragraph 2</td><td class="diff-vertical">&nbsp;</td><td class="diff-header">Paragraph 2</td></tr><tr valign=top><td class="diff-para-changed"><span class="diff-span-ident">This is a list of categories created for the NobleWiki.&nbsp; The </span><span class="diff-span-deleted">WikiName''''s</span><span class="diff-span-ident">&nbsp;for the categories all begin with a &lt;tt&gt;Category&lt;/tt&gt; prefix. The purpose of each category entry is to group related information.&nbsp; Other prefixes are available, and can also be created in order to organize custom information. <br>
+</span></td><td class="diff-vertical"></td><td class="diff-para-changed"><span class="diff-span-ident">This is a list of categories created for the NobleWiki.&nbsp; The </span><span class="diff-span-added">[WikiName WikiNames]</span><span class="diff-span-ident">&nbsp;for the categories all begin with a &lt;tt&gt;Category&lt;/tt&gt; prefix. The purpose of each category entry is to group related information.&nbsp; Other prefixes are available, and can also be created in order to organize custom information. <br>
+</span></td></tr></table></div>

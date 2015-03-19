@@ -1,0 +1,410 @@
+ÿþ1tsÿþ21195945697ÿþ2ipÿþ2127.0.0.1ÿþ2versionÿþ21ÿþ2nameÿþ2text_defaultÿþ2dataÿþ2summaryÿþ3*ÿþ3textÿþ3= Using Templated Layouts =
+A template is an entry with a specific layout and place-holder variables.  Any other entry may then make reference to the template and send variables to it.  This allows a standardized presentation of commonly provided information, such as profile pages.
+
+<toc>
+
+== Examples =
+Two kinds of templates can be created; primary or sub-pages, as can be seen on these two links:
+ ExampleTemplate
+ /TemplateExample
+ /TemplateCategories
+
+=== Sample Template =
+For example, here's the code for the both of the templates used.  It's a simple table with three variables named <tt>$VARIABLE1$, $VARIABLE2$, $VARIABLE3$</tt>.  Note that each variable is cushioned by the <tt>$</tt> symbol on either side.
+
+<pre>
+!!!! EXAMPLE Template !!
+|| Image|| $VARIABLE1$ ||
+|| link|| $VARIABLE2$ ||
+|| my sub-page|| $VARIABLE3$ ||
+|| your sub-page ||$VARIABLE4$ ||
+|| bracketed url ||$VARIABLE5$ ||
+</pre>
+
+=== Sending parameters =
+To utilize a template, create a data block that begins with <tt>'{{template:'</tt> ends with paired curly braces <tt>'}}'</tt>.  Within that block, specify the template name immediately after the 'template;' command, and calling out each place-holder variable exactly as defined in the template except for the <tt>'$'</tt> symbols.  Set values to each variables as desired following an <tt>'='</tt> equals sign symbol.
+
+==== Parent Template =
+This example shows a data block using a primary page template <tt>'ExampleTemplate</tt>, and passing several values including an image link via the <tt>upload:</tt> syntax.
+<pre>
+{{template:ExampleTemplate
+VARIABLE1 = upload:SAMPLE.churcill.jpg
+VARIABLE2 = DoesntExist
+VARIABLE3 = /ImpossibleFile
+VARIABLE4 = DoesntExist/ExampleDummy
+VARIABLE5 = [[DoesntExist/ExampleDummy|Nothing]]
+}}</pre>
+{{template:ExampleTemplate
+VARIABLE1 = upload:SAMPLE.churcill.jpg
+VARIABLE2 = DoesntExist
+VARIABLE3 = /ImpossibleFile
+VARIABLE4 = DoesntExist/ExampleDummy
+VARIABLE5 = [[DoesntExist/ExampleDummy|Nothing]]
+}}
+
+==== Sub-page Template =
+This example shows use of a template created as a sub-page.  Notice that the parameters are the same, and that the sub-page is shown fully qualified as <tt>WikiTemplates/TemplateExample</tt> instead of <tt>/TemplateExample</tt>.
+<pre>
+{{template:WikiTemplates/TemplateExample
+VARIABLE1 = upload:SAMPLE.churcill.jpg
+VARIABLE2 = DoesntExist
+VARIABLE3 = /ImpossibleFile
+VARIABLE4 = DoesntExist/ExampleDummy
+VARIABLE5 = [[DoesntExist/ExampleDummy|Nothing]]
+}}</pre>
+{{template:WikiTemplates/TemplateExample
+VARIABLE1 = upload:SAMPLE.churcill.jpg
+VARIABLE2 = DoesntExist
+VARIABLE3 = /ImpossibleFile
+VARIABLE4 = DoesntExist/ExampleDummy
+VARIABLE5 = [[DoesntExist/ExampleDummy|Nothing]]
+}}
+
+== Organization =
+Place all templates as sub-pages under <nowiki>WikiTemplates</nowiki> as slash '/' and then the template name as in <nowiki>/Profile</nowiki>.  Or, if the templates are external to this page, prefix them with <tt>Template</tt> as the keyword.
+
+== Related Entries =
+{{template:RelatedEntries/WikiEditing}}
+ÿþ3newauthorÿþ30ÿþ3minorÿþ31ÿþ2hostÿþ2localhostÿþ2usernameÿþ2RobertKurcinaÿþ2revisionÿþ216ÿþ2idÿþ21149ÿþ2tscreateÿþ21179982138ÿþ2keeptsÿþ21196487828ÿþ1versionÿþ21ÿþ2ipÿþ2127.0.0.1ÿþ2tsÿþ21196487828ÿþ2nameÿþ2text_defaultÿþ2dataÿþ2summaryÿþ3Added Sub-pages linkÿþ3textÿþ3= Using Templated Layouts =
+A template is an entry with a specific layout and place-holder variables.  Any other entry may then make reference to the template and send variables to it.  This allows a standardized presentation of commonly provided information, such as profile pages.
+
+<toc>
+
+== Examples =
+Two kinds of templates can be created; primary or sub-pages, as can be seen on these two links:
+ ExampleTemplate
+ /TemplateExample
+ /TemplateCategories
+
+=== Sample Template =
+For example, here's the code for the both of the templates used.  It's a simple table with three variables named <tt>$VARIABLE1$, $VARIABLE2$, $VARIABLE3$</tt>.  Note that each variable is cushioned by the <tt>$</tt> symbol on either side.
+
+<pre>
+!!!! EXAMPLE Template !!
+|| Image|| $VARIABLE1$ ||
+|| link|| $VARIABLE2$ ||
+|| my sub-page|| $VARIABLE3$ ||
+|| your sub-page ||$VARIABLE4$ ||
+|| bracketed url ||$VARIABLE5$ ||
+</pre>
+
+=== Sending parameters =
+To utilize a template, create a data block that begins with <tt>'{{template:'</tt> ends with paired curly braces <tt>'}}'</tt>.  Within that block, specify the template name immediately after the 'template;' command, and calling out each place-holder variable exactly as defined in the template except for the <tt>'$'</tt> symbols.  Set values to each variables as desired following an <tt>'='</tt> equals sign symbol.
+
+==== Parent Template =
+This example shows a data block using a primary page template <tt>'ExampleTemplate</tt>, and passing several values including an image link via the <tt>upload:</tt> syntax.
+<pre>
+{{template:ExampleTemplate
+VARIABLE1 = upload:SAMPLE.churcill.jpg
+VARIABLE2 = DoesntExist
+VARIABLE3 = /ImpossibleFile
+VARIABLE4 = DoesntExist/ExampleDummy
+VARIABLE5 = [[DoesntExist/ExampleDummy|Nothing]]
+}}</pre>
+{{template:ExampleTemplate
+VARIABLE1 = upload:SAMPLE.churcill.jpg
+VARIABLE2 = DoesntExist
+VARIABLE3 = /ImpossibleFile
+VARIABLE4 = DoesntExist/ExampleDummy
+VARIABLE5 = [[DoesntExist/ExampleDummy|Nothing]]
+}}
+
+==== Sub-page Template =
+This example shows use of a template created as a sub-page.  Notice that the parameters are the same, and that the sub-page is shown fully qualified as <tt>WikiTemplates/TemplateExample</tt> instead of <tt>/TemplateExample</tt>.
+<pre>
+{{template:WikiTemplates/TemplateExample
+VARIABLE1 = upload:SAMPLE.churcill.jpg
+VARIABLE2 = DoesntExist
+VARIABLE3 = /ImpossibleFile
+VARIABLE4 = DoesntExist/ExampleDummy
+VARIABLE5 = [[DoesntExist/ExampleDummy|Nothing]]
+}}</pre>
+{{template:WikiTemplates/TemplateExample
+VARIABLE1 = upload:SAMPLE.churcill.jpg
+VARIABLE2 = DoesntExist
+VARIABLE3 = /ImpossibleFile
+VARIABLE4 = DoesntExist/ExampleDummy
+VARIABLE5 = [[DoesntExist/ExampleDummy|Nothing]]
+}}
+
+== Organization =
+Place all templates as sub-pages under <nowiki>WikiTemplates</nowiki> as slash '/' and then the template name as in <nowiki>/Profile</nowiki>.  Or, if the templates are external to this page, prefix them with <tt>Template</tt> as the keyword.
+
+== Related Entries =
+{{template:RelatedEntries/WikiEditing}}
+
+ #SUBPAGES
+ÿþ3minorÿþ31ÿþ3newauthorÿþ31ÿþ2usernameÿþ2RobertKurcinaÿþ2hostÿþ2localhostÿþ2revisionÿþ217ÿþ2tscreateÿþ21179982138ÿþ2idÿþ21176ÿþ2keeptsÿþ21222570574ÿþ1tsÿþ21222570574ÿþ2ipÿþ2127.0.0.1ÿþ2versionÿþ21ÿþ2nameÿþ2text_defaultÿþ2dataÿþ2summaryÿþ3*ÿþ3textÿþ3= Using Templated Layouts =
+A template is an entry with a specific layout and place-holder variables.  Any other entry may then make reference to the template and send variables to it.  This allows a standardized presentation of commonly provided information, such as profile pages.
+
+<toc>
+
+== Examples =
+Two kinds of templates can be created; primary or sub-pages, as can be seen on these two links:
+ ExampleTemplate
+ /TemplateExample
+ /TemplateCategories
+
+=== Sample Template =
+For example, here's the code for the both of the templates used.  It's a simple table with three variables named <tt>$VARIABLE1$, $VARIABLE2$, $VARIABLE3$</tt>.  Note that each variable is cushioned by the <tt>$</tt> symbol on either side.
+
+<pre>
+!!!! EXAMPLE Template !!
+|| Image|| $VARIABLE1$ ||
+|| link|| $VARIABLE2$ ||
+|| my sub-page|| $VARIABLE3$ ||
+|| your sub-page ||$VARIABLE4$ ||
+|| bracketed url ||$VARIABLE5$ ||
+</pre>
+
+=== Sending parameters =
+To utilize a template, create a data block that begins with <tt>'{{template:'</tt> ends with paired curly braces <tt>'}}'</tt>.  Within that block, specify the template name immediately after the 'template;' command, and calling out each place-holder variable exactly as defined in the template except for the <tt>'$'</tt> symbols.  Set values to each variables as desired following an <tt>'='</tt> equals sign symbol.
+
+==== Parent Template =
+This example shows a data block using a primary page template <tt>'ExampleTemplate</tt>, and passing several values including an image link via the <tt>upload:</tt> syntax.
+<pre>
+{{template:ExampleTemplate
+VARIABLE1 = upload:SAMPLE.churcill.jpg
+VARIABLE2 = DoesntExist
+VARIABLE3 = /ImpossibleFile
+VARIABLE4 = DoesntExist/ExampleDummy
+VARIABLE5 = [[DoesntExist/ExampleDummy|Nothing]]
+}}</pre>
+{{template:ExampleTemplate
+VARIABLE1 = upload:SAMPLE.churcill.jpg
+VARIABLE2 = DoesntExist
+VARIABLE3 = /ImpossibleFile
+VARIABLE4 = DoesntExist/ExampleDummy
+VARIABLE5 = [[DoesntExist/ExampleDummy|Nothing]]
+}}
+
+==== Sub-page Template =
+This example shows use of a template created as a sub-page.  Notice that the parameters are the same, and that the sub-page is shown fully qualified as <tt>WikiTemplates/TemplateExample</tt> instead of <tt>/TemplateExample</tt>.
+<pre>
+{{template:WikiTemplates/TemplateExample
+VARIABLE1 = upload:SAMPLE.churcill.jpg
+VARIABLE2 = DoesntExist
+VARIABLE3 = /ImpossibleFile
+VARIABLE4 = DoesntExist/ExampleDummy
+VARIABLE5 = [[DoesntExist/ExampleDummy|Nothing]]
+}}</pre>
+{{template:WikiTemplates/TemplateExample
+VARIABLE1 = upload:SAMPLE.churcill.jpg
+VARIABLE2 = DoesntExist
+VARIABLE3 = /ImpossibleFile
+VARIABLE4 = DoesntExist/ExampleDummy
+VARIABLE5 = [[DoesntExist/ExampleDummy|Nothing]]
+}}
+
+== Organization =
+Place all templates as sub-pages under WikiTemplates as slash '/' and then the template name as in /TemplateExample.  Or, if the templates are external to this page, prefix them with <tt>Template</tt> as the keyword for it's WikiName.
+
+== Related Entries =
+{{template:RelatedEntries/WikiEditing}}
+
+ #SUBPAGES
+ÿþ3newauthorÿþ31ÿþ3minorÿþ31ÿþ2hostÿþ2localhostÿþ2usernameÿþ2RobertKurcinaÿþ2revisionÿþ218ÿþ2idÿþ21257ÿþ2tscreateÿþ21179982138ÿþ2keeptsÿþ21222628032ÿþ1versionÿþ21ÿþ2ipÿþ2127.0.0.1ÿþ2tsÿþ21222628032ÿþ2nameÿþ2text_defaultÿþ2dataÿþ2summaryÿþ3*ÿþ3textÿþ3= Using Templated Layouts =
+A template is an entry with a specific layout and place-holder variables.  Any other entry may then make reference to the template and send variables to it.  This allows a standardized presentation of commonly provided information, such as profile pages.
+
+<toc>
+
+== Examples =
+Two kinds of templates can be created; primary or sub-pages, as can be seen on these two links:
+ ExampleTemplate
+ /TemplateExample
+ /TemplateCategories
+
+=== Sample Template =
+For example, here's the code for the both of the templates used.  It's a simple table with three variables named <tt>$VARIABLE1$, $VARIABLE2$, $VARIABLE3$</tt>.  Note that each variable is cushioned by the <tt>$</tt> symbol on either side.
+
+<pre>
+!!!! EXAMPLE Template !!
+|| Image|| $VARIABLE1$ ||
+|| link|| $VARIABLE2$ ||
+|| my sub-page|| $VARIABLE3$ ||
+|| your sub-page ||$VARIABLE4$ ||
+|| bracketed url ||$VARIABLE5$ ||
+</pre>
+
+=== Sending parameters =
+To utilize a template, create a data block that begins with <tt>'{{template:'</tt> ends with paired curly braces <tt>'}}'</tt>.  Within that block, specify the template name immediately after the 'template;' command, and calling out each place-holder variable exactly as defined in the template except for the <tt>'$'</tt> symbols.  Set values to each variables as desired following an <tt>'='</tt> equals sign symbol.
+
+==== Parent Template =
+This example shows a data block using a primary page template <tt>'ExampleTemplate</tt>, and passing several values including an image link via the <tt>upload:</tt> syntax.
+<pre>
+{{template:ExampleTemplate
+VARIABLE1 = upload:SAMPLE.churcill.jpg
+VARIABLE2 = DoesntExist
+VARIABLE3 = /ImpossibleFile
+VARIABLE4 = DoesntExist/ExampleDummy
+VARIABLE5 = [[DoesntExist/ExampleDummy|Nothing]]
+}}</pre>
+{{template:ExampleTemplate
+VARIABLE1 = upload:SAMPLE.churcill.jpg
+VARIABLE2 = DoesntExist
+VARIABLE3 = /ImpossibleFile
+VARIABLE4 = DoesntExist/ExampleDummy
+VARIABLE5 = [[DoesntExist/ExampleDummy|Nothing]]
+}}
+
+==== Sub-page Template =
+This example shows use of a template created as a sub-page.  Notice that the parameters are the same, and that the sub-page is shown fully qualified as <tt>WikiTemplates/TemplateExample</tt> instead of <tt>/TemplateExample</tt>.
+<pre>
+{{template:WikiTemplates/TemplateExample
+VARIABLE1 = upload:SAMPLE.churcill.jpg
+VARIABLE2 = DoesntExist
+VARIABLE3 = /ImpossibleFile
+VARIABLE4 = DoesntExist/ExampleDummy
+VARIABLE5 = [[DoesntExist/ExampleDummy|Nothing]]
+}}</pre>
+{{template:WikiTemplates/TemplateExample
+VARIABLE1 = upload:SAMPLE.churcill.jpg
+VARIABLE2 = DoesntExist
+VARIABLE3 = /ImpossibleFile
+VARIABLE4 = DoesntExist/ExampleDummy
+VARIABLE5 = [[DoesntExist/ExampleDummy|Nothing]]
+}}
+
+== Organization =
+Place all templates as sub-pages under WikiTemplates as slash '/' and then the template name as in /TemplateExample.  Or, if the templates are external to this page, prefix them with <tt>Template</tt> as the keyword for it's WikiName.
+
+{{template:RelatedEntries/WikiEditing}}
+
+ #SUBPAGES
+ÿþ3minorÿþ31ÿþ3newauthorÿþ31ÿþ2usernameÿþ2RobertKurcinaÿþ2hostÿþ2localhostÿþ2revisionÿþ219ÿþ2tscreateÿþ21179982138ÿþ2idÿþ21261ÿþ2keeptsÿþ21222752311ÿþ1tsÿþ21222752311ÿþ2ipÿþ2127.0.0.1ÿþ2versionÿþ21ÿþ2nameÿþ2text_defaultÿþ2dataÿþ2summaryÿþ3*ÿþ3textÿþ3= Using Templated Layouts =
+A template is an entry with a specific layout and place-holder variables.  Any other entry may then make reference to the template and send variables to it.  This allows a standardized presentation of commonly provided information, such as profile pages.
+
+{{toc}}
+
+== Examples =
+Two kinds of templates can be created; primary or sub-pages, as can be seen on these two links:
+ ExampleTemplate
+ /TemplateExample
+ /TemplateCategories
+
+=== Sample Template =
+For example, here's the code for the both of the templates used.  It's a simple table with three variables named <tt>$VARIABLE1$, $VARIABLE2$, $VARIABLE3$</tt>.  Note that each variable is cushioned by the <tt>$</tt> symbol on either side.
+
+<pre>
+!!!! EXAMPLE Template !!
+|| Image|| $VARIABLE1$ ||
+|| link|| $VARIABLE2$ ||
+|| my sub-page|| $VARIABLE3$ ||
+|| your sub-page ||$VARIABLE4$ ||
+|| bracketed url ||$VARIABLE5$ ||
+</pre>
+
+=== Sending parameters =
+To utilize a template, create a data block that begins with <tt>'{{template:'</tt> ends with paired curly braces <tt>'}}'</tt>.  Within that block, specify the template name immediately after the 'template;' command, and calling out each place-holder variable exactly as defined in the template except for the <tt>'$'</tt> symbols.  Set values to each variables as desired following an <tt>'='</tt> equals sign symbol.
+
+==== Parent Template =
+This example shows a data block using a primary page template <tt>'ExampleTemplate</tt>, and passing several values including an image link via the <tt>upload:</tt> syntax.
+<pre>
+{{template:ExampleTemplate
+VARIABLE1 = upload:SAMPLE.churcill.jpg
+VARIABLE2 = DoesntExist
+VARIABLE3 = /ImpossibleFile
+VARIABLE4 = DoesntExist/ExampleDummy
+VARIABLE5 = [[DoesntExist/ExampleDummy|Nothing]]
+}}</pre>
+{{template:ExampleTemplate
+VARIABLE1 = upload:SAMPLE.churcill.jpg
+VARIABLE2 = DoesntExist
+VARIABLE3 = /ImpossibleFile
+VARIABLE4 = DoesntExist/ExampleDummy
+VARIABLE5 = [[DoesntExist/ExampleDummy|Nothing]]
+}}
+
+==== Sub-page Template =
+This example shows use of a template created as a sub-page.  Notice that the parameters are the same, and that the sub-page is shown fully qualified as <tt>WikiTemplates/TemplateExample</tt> instead of <tt>/TemplateExample</tt>.
+<pre>
+{{template:WikiTemplates/TemplateExample
+VARIABLE1 = upload:SAMPLE.churcill.jpg
+VARIABLE2 = DoesntExist
+VARIABLE3 = /ImpossibleFile
+VARIABLE4 = DoesntExist/ExampleDummy
+VARIABLE5 = [[DoesntExist/ExampleDummy|Nothing]]
+}}</pre>
+{{template:WikiTemplates/TemplateExample
+VARIABLE1 = upload:SAMPLE.churcill.jpg
+VARIABLE2 = DoesntExist
+VARIABLE3 = /ImpossibleFile
+VARIABLE4 = DoesntExist/ExampleDummy
+VARIABLE5 = [[DoesntExist/ExampleDummy|Nothing]]
+}}
+
+== Organization =
+Place all templates as sub-pages under WikiTemplates as slash '/' and then the template name as in /TemplateExample.  Or, if the templates are external to this page, prefix them with <tt>Template</tt> as the keyword for it's WikiName.
+
+{{template:RelatedEntries/WikiEditing}}
+
+ #SUBPAGES
+ÿþ3newauthorÿþ31ÿþ3minorÿþ31ÿþ2hostÿþ2localhostÿþ2usernameÿþ2RobertKurcinaÿþ2revisionÿþ220ÿþ2idÿþ21278ÿþ2tscreateÿþ21179982138ÿþ2keeptsÿþ21222919599ÿþ1versionÿþ21ÿþ2ipÿþ2127.0.0.1ÿþ2tsÿþ21222919599ÿþ2nameÿþ2text_defaultÿþ2dataÿþ2summaryÿþ3*ÿþ3textÿþ3= Using Templated Layouts =
+A template is an entry with a specific layout and place-holder variables.  Any other entry may then make reference to the template and send variables to it.  This allows a standardized presentation of commonly provided information, such as profile pages.
+
+{{toc}}
+
+== Examples =
+Two kinds of templates can be created; primary or sub-pages, as can be seen on these two links:
+ ExampleTemplate
+ /TemplateExample
+ /TemplateCategories
+
+=== Sample Template =
+For example, here's the code for the both of the templates used.  It's a simple table with three variables named <tt>$VARIABLE1$, $VARIABLE2$, $VARIABLE3$</tt>.  Note that each variable is cushioned by the <tt>$</tt> symbol on either side.
+
+<pre>
+!!!! EXAMPLE Template !!
+|| Image|| $VARIABLE1$ ||
+|| link|| $VARIABLE2$ ||
+|| my sub-page|| $VARIABLE3$ ||
+|| your sub-page ||$VARIABLE4$ ||
+|| bracketed url ||$VARIABLE5$ ||
+</pre>
+
+=== Sending parameters =
+To utilize a template, create a data block that begins with <tt>'{{template:'</tt> ends with paired curly braces <tt>'}}'</tt>.  Within that block, specify the template name immediately after the 'template;' command, and calling out each place-holder variable exactly as defined in the template except for the <tt>'$'</tt> symbols.  Set values to each variables as desired following an <tt>'='</tt> equals sign symbol.
+
+==== Parent Template =
+This example shows a data block using a primary page template <tt>'ExampleTemplate</tt>, and passing several values including an image link via the <tt>upload:</tt> syntax.
+<pre>
+{{template:ExampleTemplate
+VARIABLE1 = upload:SAMPLE.churcill.jpg
+VARIABLE2 = DoesntExist
+VARIABLE3 = /ImpossibleFile
+VARIABLE4 = DoesntExist/ExampleDummy
+VARIABLE5 = [[DoesntExist/ExampleDummy|Nothing]]
+}}</pre>
+{{template:ExampleTemplate
+VARIABLE1 = upload:SAMPLE.churcill.jpg
+VARIABLE2 = DoesntExist
+VARIABLE3 = /ImpossibleFile
+VARIABLE4 = DoesntExist/ExampleDummy
+VARIABLE5 = [[DoesntExist/ExampleDummy|Nothing]]
+}}
+
+==== Sub-page Template =
+This example shows use of a template created as a sub-page.  Notice that the parameters are the same, and that the sub-page is shown fully qualified as <tt>WikiTemplates/TemplateExample</tt> instead of <tt>/TemplateExample</tt>.
+<pre>
+{{template:WikiTemplates/TemplateExample
+VARIABLE1 = upload:SAMPLE.churcill.jpg
+VARIABLE2 = DoesntExist
+VARIABLE3 = /ImpossibleFile
+VARIABLE4 = DoesntExist/ExampleDummy
+VARIABLE5 = [[DoesntExist/ExampleDummy|Nothing]]
+}}</pre>
+{{template:WikiTemplates/TemplateExample
+VARIABLE1 = upload:SAMPLE.churcill.jpg
+VARIABLE2 = DoesntExist
+VARIABLE3 = /ImpossibleFile
+VARIABLE4 = DoesntExist/ExampleDummy
+VARIABLE5 = [[DoesntExist/ExampleDummy|Nothing]]
+}}
+
+== Organization =
+Place all templates as sub-pages under WikiTemplates as slash '/' and then the template name as in /TemplateExample.  Or, if the templates are external to this page, prefix them with <tt>Template</tt> as the keyword for it's WikiName.
+
+{{template:RelatedEntries/WikiEditing}}
+
+ {{subpages}}
+ÿþ3minorÿþ30ÿþ3newauthorÿþ31ÿþ2usernameÿþ2RobertKurcinaÿþ2hostÿþ2localhostÿþ2revisionÿþ221ÿþ2tscreateÿþ21179982138ÿþ2idÿþ21295ÿþ2keeptsÿþ21223011382

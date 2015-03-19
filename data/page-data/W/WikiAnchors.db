@@ -1,0 +1,90 @@
+versionÿþ13ÿþ1tsÿþ11223610980ÿþ1cache_oldmajorÿþ113ÿþ1cache_oldauthorÿþ114ÿþ1cache_diff_default_authorÿþ11ÿþ1revisionÿþ115ÿþ1tscreateÿþ11179112265ÿþ1text_defaultÿþ1versionÿþ21ÿþ2ipÿþ2127.0.0.1ÿþ2tsÿþ21223610980ÿþ2nameÿþ2text_defaultÿþ2dataÿþ2summaryÿþ3*ÿþ3textÿþ3= Anchors =
+Don't edit this page.  It's meant to demonstrate how named anchors work.  It's back link is from the WikiURLs page. Anchors are allowed in headers and also as standalone.  
+
+;Basic Syntax: All anchors are created using these square brackets, where the word 'anchor' is the name of the anchor.  The wiki engine will parse that bit of markup and make it available from any other page. 
+:<tt><nowiki>[#anchor]</nowiki></tt>
+
+;Header Anchors: Headers may also utilize anchors and the syntax is similar.  The headers that utilize anchors must be a level two or smaller, just like the one in the examples used above and below.  Level one headers [ H1 ] will not be parsed for anchors.
+:<tt><nowiki>== [#anchor] Header Text Goes Here =</nowiki></tt>
+:
+;Tables of Content Anchors: If the <tt><nowiki>{{toc}}</nowiki></tt> command is used to create a TOC, the wiki engine will automatically generate anchors for each header equal to the name of the header text itself.
+
+== [#anchor] Demonstrating Anchors =
+The anchor for this header, albeit hidden, is coded as <tt><nowiki>= [#anchor] Demonstrating Anchors =</nowiki></tt>.
+* blah
+* blah
+* blah
+* blah
+* blah
+* blah
+* blah
+* blah
+* blah
+
+== [#nextanchor] Demonstrating Anchors =
+The anchor for this header, albeit hidden, is coded as <tt><nowiki>= [#nextanchor]Demonstrating Anchors =</nowiki></tt>.
+* blah
+* blah
+* blah
+* blah
+* blah
+* blah
+* blah
+* blah
+* blah
+
+=== [#anotheranchor] Demonstrating Anchors =
+The anchor for this header, albeit hidden, is coded as <tt><nowiki>= [#anotheranchor]Demonstrating Anchors =</nowiki></tt>.
+* blah
+* blah
+* blah
+* blah
+* blah
+* blah
+* blah
+* blah
+* blah
+ÿþ3newauthorÿþ31ÿþ3minorÿþ31ÿþ2usernameÿþ2RobertKurcinaÿþ2hostÿþ2localhostÿþ2revisionÿþ215ÿþ2tscreateÿþ21179112265ÿþ2idÿþ21305ÿþ2keeptsÿþ21223610980ÿþ1cache_diff_default_majorÿþ1<div id=wikidiffdiv><table id=wikidifftable><tr valign=top><td class="diff-header">Paragraph 1</td><td class="diff-vertical">&nbsp;</td><td class="diff-header">Paragraph 1</td></tr><tr valign=top><td class="diff-para-deleted">{{toc}}<br>
+== #anchor Demonstrating Anchors =<br>
+</td><td class="diff-vertical"></td><td class="diff-para-added">= Anchors =<br>
+</td></tr><tr valign=top><td class="diff-para-changed"><span class="diff-span-ident">Don't edit this page.&nbsp; It's meant to demonstrate how named anchors work.&nbsp; It's back link is from the WikiURLs page. </span><span class="diff-span-deleted">&nbsp;The anchor for this header, albeit hidden, is coded as &lt;tt&gt;&lt;nowiki&gt;= [#anchor] Demonstrating Anchors =&lt;/nowiki&gt;&lt;/tt&gt;.</span><span class="diff-span-ident"><br>
+</span></td><td class="diff-vertical"></td><td class="diff-para-changed"><span class="diff-span-ident">Don't edit this page.&nbsp; It's meant to demonstrate how named anchors work.&nbsp; It's back link is from the WikiURLs page. </span><span class="diff-span-added">Anchors are allowed in headers and also as standalone.&nbsp; </span><span class="diff-span-ident"><br>
+</span></td></tr><tr valign=top><td class="diff-para-ident"></td><td class="diff-vertical"></td><td class="diff-para-added"><br>
+;Basic Syntax: All anchors are created using these square brackets, where the word 'anchor' is the name of the anchor.&nbsp; The wiki engine will parse that bit of markup and make it available from any other page. <br>
+:&lt;tt&gt;&lt;nowiki&gt;[#anchor]&lt;/nowiki&gt;&lt;/tt&gt;<br>
+<br>
+;Header Anchors: Headers may also utilize anchors and the syntax is similar.&nbsp; The headers that utilize anchors must be a level two or smaller, just like the one in the examples used above and below.&nbsp; Level one headers [ H1 ] will not be parsed for anchors.<br>
+:&lt;tt&gt;&lt;nowiki&gt;== [#anchor] Header Text Goes Here =&lt;/nowiki&gt;&lt;/tt&gt;<br>
+:<br>
+;Tables of Content Anchors: If the &lt;tt&gt;&lt;nowiki&gt;{{toc}}&lt;/nowiki&gt;&lt;/tt&gt; command is used to create a TOC, the wiki engine will automatically generate anchors for each header equal to the name of the header text itself.<br>
+<br>
+== [#anchor] Demonstrating Anchors =<br>
+The anchor for this header, albeit hidden, is coded as &lt;tt&gt;&lt;nowiki&gt;= [#anchor] Demonstrating Anchors =&lt;/nowiki&gt;&lt;/tt&gt;.<br>
+</td></tr><tr valign=top><td class="diff-para-ident">* blah<br>
+</td><td class="diff-vertical"></td><td class="diff-para-ident">* blah<br>
+</td></tr><tr valign=top><td class="diff-header">Paragraph 13</td><td class="diff-vertical">&nbsp;</td><td class="diff-header">Paragraph 20</td></tr><tr valign=top><td class="diff-para-changed"><span class="diff-span-ident">== </span><span class="diff-span-deleted">#nextanchor</span><span class="diff-span-ident">&nbsp;Demonstrating Anchors =<br>
+</span><span class="diff-span-ident">The anchor for this header, albeit hidden, is coded as &lt;tt&gt;&lt;nowiki&gt;= [#nextanchor]</span><span class="diff-span-deleted">&nbsp;</span><span class="diff-span-ident">Demonstrating Anchors =&lt;/nowiki&gt;&lt;/tt&gt;.<br>
+</span></td><td class="diff-vertical"></td><td class="diff-para-changed"><span class="diff-span-ident">== </span><span class="diff-span-added">[#nextanchor]</span><span class="diff-span-ident">&nbsp;Demonstrating Anchors =<br>
+</span><span class="diff-span-ident">The anchor for this header, albeit hidden, is coded as &lt;tt&gt;&lt;nowiki&gt;= [#nextanchor]</span><span class="diff-span-ident">Demonstrating Anchors =&lt;/nowiki&gt;&lt;/tt&gt;.<br>
+</span></td></tr><tr valign=top><td class="diff-header">Paragraph 24</td><td class="diff-vertical">&nbsp;</td><td class="diff-header">Paragraph 31</td></tr><tr valign=top><td class="diff-para-changed"><span class="diff-span-ident">=== </span><span class="diff-span-deleted">#anotheranchor</span><span class="diff-span-ident">&nbsp;Demonstrating Anchors =<br>
+</span><span class="diff-span-ident">The anchor for this header, albeit hidden, is coded as &lt;tt&gt;&lt;nowiki&gt;= [#anotheranchor]</span><span class="diff-span-deleted">&nbsp;</span><span class="diff-span-ident">Demonstrating Anchors =&lt;/nowiki&gt;&lt;/tt&gt;.<br>
+</span></td><td class="diff-vertical"></td><td class="diff-para-changed"><span class="diff-span-ident">=== </span><span class="diff-span-added">[#anotheranchor]</span><span class="diff-span-ident">&nbsp;Demonstrating Anchors =<br>
+</span><span class="diff-span-ident">The anchor for this header, albeit hidden, is coded as &lt;tt&gt;&lt;nowiki&gt;= [#anotheranchor]</span><span class="diff-span-ident">Demonstrating Anchors =&lt;/nowiki&gt;&lt;/tt&gt;.<br>
+</span></td></tr></table></div>ÿþ1cache_diff_default_minorÿþ1<div id=wikidiffdiv><table id=wikidifftable><tr valign=top><td class="diff-header">Paragraph 1</td><td class="diff-vertical">&nbsp;</td><td class="diff-header">Paragraph 1</td></tr><tr valign=top><td class="diff-para-changed"><span class="diff-span-ident">= </span><span class="diff-span-deleted">[#anchor] Demonstrating </span><span class="diff-span-ident">Anchors =<br>
+</span><span class="diff-span-ident">Don't edit this page.&nbsp; It's meant to demonstrate how named anchors work.&nbsp; It's back link is from the WikiURLs page. </span><span class="diff-span-deleted">&nbsp;The anchor for this header, albeit hidden, is coded as &lt;tt&gt;&lt;nowiki&gt;= [#anchor] Demonstrating Anchors =&lt;/nowiki&gt;&lt;/tt&gt;.</span><span class="diff-span-ident"><br>
+</span></td><td class="diff-vertical"></td><td class="diff-para-changed"><span class="diff-span-ident">= </span><span class="diff-span-ident">Anchors =<br>
+</span><span class="diff-span-ident">Don't edit this page.&nbsp; It's meant to demonstrate how named anchors work.&nbsp; It's back link is from the WikiURLs page. </span><span class="diff-span-added">Anchors are allowed in headers and also as standalone.&nbsp; </span><span class="diff-span-ident"><br>
+</span></td></tr><tr valign=top><td class="diff-para-ident"></td><td class="diff-vertical"></td><td class="diff-para-added"><br>
+;Basic Syntax: All anchors are created using these square brackets, where the word 'anchor' is the name of the anchor.&nbsp; The wiki engine will parse that bit of markup and make it available from any other page. <br>
+:&lt;tt&gt;&lt;nowiki&gt;[#anchor]&lt;/nowiki&gt;&lt;/tt&gt;<br>
+<br>
+;Header Anchors: Headers may also utilize anchors and the syntax is similar.&nbsp; The headers that utilize anchors must be a level two or smaller, just like the one in the examples used above and below.&nbsp; Level one headers [ H1 ] will not be parsed for anchors.<br>
+:&lt;tt&gt;&lt;nowiki&gt;== [#anchor] Header Text Goes Here =&lt;/nowiki&gt;&lt;/tt&gt;<br>
+:<br>
+;Tables of Content Anchors: If the &lt;tt&gt;&lt;nowiki&gt;{{toc}}&lt;/nowiki&gt;&lt;/tt&gt; command is used to create a TOC, the wiki engine will automatically generate anchors for each header equal to the name of the header text itself.<br>
+<br>
+== [#anchor] Demonstrating Anchors =<br>
+The anchor for this header, albeit hidden, is coded as &lt;tt&gt;&lt;nowiki&gt;= [#anchor] Demonstrating Anchors =&lt;/nowiki&gt;&lt;/tt&gt;.<br>
+</td></tr><tr valign=top><td class="diff-para-ident">* blah<br>
+</td><td class="diff-vertical"></td><td class="diff-para-ident">* blah<br>
+</td></tr></table></div>

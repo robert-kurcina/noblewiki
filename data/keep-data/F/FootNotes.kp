@@ -1,0 +1,94 @@
+ÿþ1versionÿþ21ÿþ2tsÿþ21222626408ÿþ2ipÿþ2127.0.0.1ÿþ2nameÿþ2text_defaultÿþ2dataÿþ2summaryÿþ3Initial draft.ÿþ3textÿþ3===== DEFINITION: Footer Notes =
+
+Footer notes can be created in two ways; as one-way links and as reference entries.  One way links are created using a single pair of square brackets around an InterWiki, LocalWiki, or URL with no second term.  Reference links are bi-directional within a page and will generated at the bottom a a page a References section.
+
+===== EXAMPLE: One-way Links =
+<pre>
+Note via <nowiki>LocalWiki</nowiki>. [LocalWiki:NothingNew]
+Note via internal URL. [http://wiki.kurcina.org/testing]
+Note with URL. [http://www.google.com/]
+Note via InterMap [Wiki:WardCunningham]
+</pre>
+
+Created this:
+
+Note via <nowiki>LocalWiki</nowiki>. [LocalWiki:NothingNew]
+Note via internal URL. [http://wiki.kurcina.org/testing]
+Note with URL. [http://www.google.com/]
+Note via InterMap [Wiki:WardCunningham]
+
+===== EXAMPLE: Reference Links =
+<pre>
+A fascinating search engine. [[[See more at http://www.google.com/]]]
+Another powerful way to search the Web. [[[Ibid.]]]
+All of my statements of fact are true. [[[Citation disputed by http://en.wikipedia.org.]]]
+</pre>
+
+Created this:
+
+A fascinating search engine. [[[See more at http://www.google.com/]]]
+Another powerful way to search the Web. [[[Ibid.]]]
+All of my statements of fact are true. [[[Citation disputed by http://en.wikipedia.org.]]]
+ÿþ3newauthorÿþ31ÿþ3minorÿþ30ÿþ2hostÿþ2localhostÿþ2usernameÿþ2RobertKurcinaÿþ2revisionÿþ21ÿþ2idÿþ21261ÿþ2tscreateÿþ21222626408ÿþ2keeptsÿþ21222962294ÿþ1ipÿþ2127.0.0.1ÿþ2tsÿþ21222962294ÿþ2versionÿþ21ÿþ2nameÿþ2text_defaultÿþ2dataÿþ2summaryÿþ3*ÿþ3textÿþ3===== DEFINITION: Footer Notes =
+
+Footer notes can be created in two ways; as one-way links and as reference entries.  One way links are created using a single pair of square brackets around an InterWMap, LocalWiki, or URL with no second term.  Reference links are bi-directional within a page and will generated at the bottom a a page a References section.
+
+===== EXAMPLE: One-way Links =
+<pre>
+Note via <nowiki>LocalWiki</nowiki>. [LocalWiki:NothingNew]
+Note via internal URL. [http://wiki.kurcina.org/testing]
+Note with URL. [http://www.google.com/]
+Note via InterMap [Wiki:WardCunningham]
+</pre>
+
+Created this:
+
+Note via <nowiki>LocalWiki</nowiki>. [LocalWiki:NothingNew]
+Note via internal URL. [http://wiki.kurcina.org/testing]
+Note with URL. [http://www.google.com/]
+Note via InterMap [Wiki:WardCunningham]
+
+===== EXAMPLE: Reference Links =
+<pre>
+A fascinating search engine. [[[See more at http://www.google.com/]]]
+Another powerful way to search the Web. [[[Ibid.]]]
+All of my statements of fact are true. [[[Citation disputed by http://en.wikipedia.org.]]]
+</pre>
+
+Created this:
+
+A fascinating search engine. [[[See more at http://www.google.com/]]]
+Another powerful way to search the Web. [[[Ibid.]]]
+All of my statements of fact are true. [[[Citation disputed by http://en.wikipedia.org.]]]
+ÿþ3minorÿþ31ÿþ3newauthorÿþ31ÿþ2usernameÿþ2RobertKurcinaÿþ2hostÿþ2localhostÿþ2revisionÿþ22ÿþ2tscreateÿþ21222626408ÿþ2idÿþ21297ÿþ2keeptsÿþ21222962304ÿþ1versionÿþ21ÿþ2tsÿþ21222962304ÿþ2ipÿþ2127.0.0.1ÿþ2nameÿþ2text_defaultÿþ2dataÿþ2summaryÿþ3*ÿþ3textÿþ3===== DEFINITION: Footer Notes =
+
+Footer notes can be created in two ways; as one-way links and as reference entries.  One way links are created using a single pair of square brackets around an InterMap, LocalWiki, or URL with no second term.  Reference links are bi-directional within a page and will generated at the bottom a a page a References section.
+
+===== EXAMPLE: One-way Links =
+<pre>
+Note via <nowiki>LocalWiki</nowiki>. [LocalWiki:NothingNew]
+Note via internal URL. [http://wiki.kurcina.org/testing]
+Note with URL. [http://www.google.com/]
+Note via InterMap [Wiki:WardCunningham]
+</pre>
+
+Created this:
+
+Note via <nowiki>LocalWiki</nowiki>. [LocalWiki:NothingNew]
+Note via internal URL. [http://wiki.kurcina.org/testing]
+Note with URL. [http://www.google.com/]
+Note via InterMap [Wiki:WardCunningham]
+
+===== EXAMPLE: Reference Links =
+<pre>
+A fascinating search engine. [[[See more at http://www.google.com/]]]
+Another powerful way to search the Web. [[[Ibid.]]]
+All of my statements of fact are true. [[[Citation disputed by http://en.wikipedia.org.]]]
+</pre>
+
+Created this:
+
+A fascinating search engine. [[[See more at http://www.google.com/]]]
+Another powerful way to search the Web. [[[Ibid.]]]
+All of my statements of fact are true. [[[Citation disputed by http://en.wikipedia.org.]]]
+ÿþ3newauthorÿþ30ÿþ3minorÿþ31ÿþ2hostÿþ2localhostÿþ2usernameÿþ2RobertKurcinaÿþ2revisionÿþ23ÿþ2idÿþ21297ÿþ2tscreateÿþ21222626408ÿþ2keeptsÿþ21222962330

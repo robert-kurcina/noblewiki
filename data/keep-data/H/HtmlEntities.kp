@@ -1,0 +1,459 @@
+ÿþ1versionÿþ21ÿþ2tsÿþ21226198337ÿþ2ipÿþ2127.0.0.1ÿþ2nameÿþ2text_defaultÿþ2dataÿþ2summaryÿþ3Initial draft.ÿþ3textÿþ3== HTML Entities Reference =
+
+Here are selected HTML Entities that can be used when creating a WikiPage.  More definitions can be found at [http://htmlhelp.com/reference/html40/entities/ WDC].
+.
+ÿþ3newauthorÿþ31ÿþ3minorÿþ30ÿþ3descriptionÿþ3use HTML Entities to present special characters, symbols, or letters on a WikiPage.ÿþ2hostÿþ2localhostÿþ2usernameÿþ2RobertKurcinaÿþ2revisionÿþ21ÿþ2idÿþ21339ÿþ2tscreateÿþ21226198337ÿþ2keeptsÿþ21226198973ÿþ1ipÿþ2127.0.0.1ÿþ2tsÿþ21226198973ÿþ2versionÿþ21ÿþ2nameÿþ2text_defaultÿþ2dataÿþ2summaryÿþ3Added actual table.  Will need to add last column.ÿþ3textÿþ3== HTML Entities Reference =
+
+Here are selected HTML Entities that can be used when creating a WikiPage.  More definitions can be found at [http://htmlhelp.com/reference/html40/entities/ WDC].
+
+!!Common Symbol|width=300!!Code!!Result!!
+||no-break space = non-breaking space  ||&nbsp;  ||
+||inverted exclamation mark ||&iexcl; ||
+||cent sign ||&cent; ||
+||pound sign ||&pound; ||
+||currency sign ||&curren; ||
+||yen sign = yuan sign ||&yen; ||
+||broken bar = broken vertical bar ||&brvbar; ||
+||section sign ||&sect; ||
+||diaeresis = spacing diaeresis ||&uml; ||
+||copyright sign ||&copy; ||
+||feminine ordinal indicator ||&ordf; ||
+||left-pointing double angle quotation mark = left pointing guillemet ||&laquo; ||
+||not sign ||&not; ||
+||soft hyphen = discretionary hyphen ||&shy; ||
+||registered sign = registered trade mark sign ||&reg; ||
+||macron = spacing macron = overline = APL overbar ||&macr; ||
+||degree sign ||&deg; ||
+||plus-minus sign = plus-or-minus sign ||&plusmn; ||
+||superscript two = superscript digit two = squared ||&sup2; ||
+||superscript three = superscript digit three = cubed ||&sup3; ||
+||acute accent = spacing acute ||&acute; ||
+||micro sign ||&micro; ||
+||pilcrow sign = paragraph sign ||&para; ||
+||middle dot = Georgian comma = Greek middle dot ||&middot; ||
+||cedilla = spacing cedilla ||&cedil; ||
+||superscript one = superscript digit one ||&sup1; ||
+||masculine ordinal indicator ||&ordm; ||
+||right-pointing double angle quotation mark = right pointing guillemet ||&raquo; ||
+||ulgar fraction one quarter = fraction one quarter ||&frac14; ||
+||vulgar fraction one half = fraction one half ||&frac12; ||
+||vulgar fraction three quarters = fraction three quarters ||&frac34; ||
+||inverted question mark = turned question mark ||&iquest; ||
+||Latin capital letter A with grave = ||Latin capital letter A grave ||&Agrave; ||
+||Latin capital letter A with acute ||&Aacute; ||
+||Latin capital letter A with circumflex ||&Acirc; ||
+||Latin capital letter A with tilde ||&Atilde; ||
+||Latin capital letter A with diaeresis ||&Auml; ||
+||Latin capital letter A with ring above = ||Latin capital letter A ring ||&Aring; ||
+||Latin capital letter AE = ||Latin capital ligature AE ||&AElig; ||
+||Latin capital letter C with cedilla ||&Ccedil; ||
+||Latin capital letter E with grave ||&Egrave; ||
+||Latin capital letter E with acute ||&Eacute; ||
+||Latin capital letter E with circumflex ||&Ecirc; ||
+||Latin capital letter E with diaeresis ||&Euml; ||
+||Latin capital letter I with grave ||&Igrave; ||
+||Latin capital letter I with acute ||&Iacute; ||
+||Latin capital letter I with circumflex ||&Icirc; ||
+||Latin capital letter I with diaeresis ||&Iuml; ||
+||Latin capital letter ETH ||&ETH; ||
+||Latin capital letter N with tilde ||&Ntilde; ||
+||Latin capital letter O with grave ||&Ograve; ||
+||Latin capital letter O with acute ||&Oacute; ||
+||Latin capital letter O with circumflex ||&Ocirc; ||
+||Latin capital letter O with tilde ||&Otilde; ||
+||Latin capital letter O with diaeresis ||&Ouml; ||
+||multiplication sign ||&times; ||
+||Latin capital letter O slash ||&Oslash; ||
+||Latin capital letter U with grave ||&Ugrave; ||
+||Latin capital letter U with acute ||&Uacute; ||
+||Latin capital letter U with circumflex ||&Ucirc; ||
+||Latin capital letter U with diaeresis ||&Uuml; ||
+||Latin capital letter Y with acute ||&Yacute; ||
+||Latin capital letter THORN ||&THORN; ||
+||Latin small letter sharp s = ess-zed ||&szlig; ||
+||Latin small letter a with grave = ||Latin small letter a grave ||&agrave; ||
+||Latin small letter a with acute ||&aacute; ||
+||Latin small letter a with circumflex ||&acirc; ||
+||Latin small letter a with tilde ||&atilde; ||
+||Latin small letter a with diaeresis ||&auml; ||
+||Latin small letter a with ring above = ||Latin small letter a ring ||&aring; ||
+||Latin small letter ae = ||Latin small ligature ae ||&aelig; ||
+||Latin small letter c with cedilla ||&ccedil; ||
+||Latin small letter e with grave ||&egrave; ||
+||Latin small letter e with acute ||&eacute; ||
+||Latin small letter e with circumflex ||&ecirc; ||
+||Latin small letter e with diaeresis ||&euml; ||
+||Latin small letter i with grave ||&igrave; ||
+||Latin small letter i with acute ||&iacute; ||
+||Latin small letter i with circumflex ||&icirc; ||
+||Latin small letter i with diaeresis ||&iuml; ||
+||Latin small letter eth ||&eth; ||
+||Latin small letter n with tilde ||&ntilde; ||
+||Latin small letter o with grave ||&ograve; ||
+||Latin small letter o with acute ||&oacute; ||
+||Latin small letter o with circumflex ||&ocirc; ||
+||Latin small letter o with tilde ||&otilde; ||
+||Latin small letter o with diaeresis ||&ouml; ||
+||division sign ||&divide; ||
+||Latin small letter o with stroke = ||Latin small letter o slash ||&oslash; ||
+||Latin small letter u with grave ||&ugrave; ||
+||Latin small letter u with acute ||&uacute; ||
+||Latin small letter u with circumflex ||&ucirc; ||
+||Latin small letter u with diaeresis ||&uuml; ||
+||Latin small letter y with acute ||&yacute; ||
+||Latin small letter thorn ||&thorn; ||
+||Latin small letter y with diaeresis ||&yuml; ||
+||dagger  ||&dagger;  ||
+||double dagger ||&Dagger; ||
+||per mille sign ||&permil; ||
+||Latin small f with hook = function = florin  ||&fnof;  ||
+||Greek capital letter alpha ||&Alpha; ||
+||Greek capital letter beta ||&Beta; ||
+||Greek capital letter gamma ||&Gamma; ||
+||Greek capital letter delta ||&Delta; ||
+||Greek capital letter epsilon ||&Epsilon; ||
+||Greek capital letter zeta ||&Zeta; ||
+||Greek capital letter eta ||&Eta; ||
+||Greek capital letter theta ||&Theta; ||
+||Greek capital letter iota ||&Iota; ||
+||Greek capital letter kappa ||&Kappa; ||
+||Greek capital letter lambda ||&Lambda; ||
+||Greek capital letter mu ||&Mu; ||
+||Greek capital letter nu ||&Nu; ||
+||Greek capital letter xi ||&Xi; ||
+||Greek capital letter omicron ||&Omicron; ||
+||Greek capital letter pi ||&Pi; ||
+||Greek capital letter rho ||&Rho; ||
+||Greek capital letter sigma ||&Sigma; ||
+||Greek capital letter tau ||&Tau; ||
+||Greek capital letter upsilon ||&Upsilon; ||
+||Greek capital letter phi ||&Phi; ||
+||Greek capital letter chi ||&Chi; ||
+||Greek capital letter psi ||&Psi; ||
+||Greek capital letter omega ||&Omega; ||
+||Greek small letter alpha ||&alpha; ||
+||Greek small letter beta ||&beta; ||
+||Greek small letter gamma ||&gamma; ||
+||Greek small letter delta ||&delta; ||
+||Greek small letter epsilon ||&epsilon; ||
+||Greek small letter zeta ||&zeta; ||
+||Greek small letter eta ||&eta; ||
+||Greek small letter theta ||&theta; ||
+||Greek small letter iota ||&iota; ||
+||Greek small letter kappa ||&kappa; ||
+||Greek small letter lambda ||&lambda; ||
+||Greek small letter mu ||&mu; ||
+||Greek small letter nu ||&nu; ||
+||Greek small letter xi ||&xi; ||
+||Greek small letter omicron ||&omicron; ||
+||Greek small letter pi ||&pi; ||
+||Greek small letter rho ||&rho; ||
+||Greek small letter final sigma ||&sigmaf; ||
+||Greek small letter sigma ||&sigma; ||
+||Greek small letter tau ||&tau; ||
+||Greek small letter upsilon ||&upsilon; ||
+||Greek small letter phi ||&phi; ||
+||Greek small letter chi ||&chi; ||
+||Greek small letter psi ||&psi; ||
+||Greek small letter omega ||&omega; ||
+||Greek small letter theta symbol ||&thetasym; ||
+||Greek upsilon with hook symbol ||&upsih; ||
+||Greek pi symbol ||&piv; ||
+||bullet = black small circle ||&bull; ||
+||horizontal ellipsis = three dot leader ||&hellip; ||
+||prime = minutes = feet ||&prime; ||
+||double prime = seconds = inches ||&Prime; ||
+||overline = spacing overscore ||&oline; ||
+||fraction slash ||&frasl; ||
+||script capital P = power set = Weierstrass p ||&weierp; ||
+||blackletter capital I = imaginary part ||&image; ||
+||blackletter capital R = real part symbol ||&real; ||
+||trade mark sign ||&trade; ||
+||alef symbol = first transfinite cardinal ||&alefsym; ||
+||leftwards arrow ||&larr; ||
+||upwards arrow ||&uarr; ||
+||rightwards arrow ||&rarr; ||
+||downwards arrow ||&darr; ||
+||left right arrow ||&harr; ||
+||downwards arrow with corner leftwards = carriage return ||&crarr; ||
+||leftwards double arrow ||&lArr; ||
+||upwards double arrow ||&uArr; ||
+||rightwards double arrow ||&rArr; ||
+||downwards double arrow ||&dArr; ||
+||left right double arrow ||&hArr; ||
+||for all ||&forall; ||
+||partial differential ||&part; ||
+||there exists ||&exist; ||
+||empty set = null set = diameter ||&empty; ||
+||nabla = backward difference ||&nabla; ||
+||element of ||&isin; ||
+||not an element of ||&notin; ||
+||contains as member ||&ni; ||
+||n-ary product = product sign ||&prod; ||
+||n-ary sumation ||&sum; ||
+||minus sign ||&minus; ||
+||asterisk operator ||&lowast; ||
+||square root = radical sign ||&radic; ||
+||proportional to ||&prop; ||
+||infinity ||&infin; ||
+||angle ||&ang; ||
+||logical and = wedge ||&and; ||
+||logical or = vee ||&or; ||
+||intersection = cap ||&cap; ||
+||union = cup ||&cup; ||
+||integral ||&int; ||
+||therefore ||&there4; ||
+||tilde operator = varies with = similar to ||&sim; ||
+||approximately equal to ||&cong; ||
+||almost equal to = asymptotic to ||&asymp; ||
+||not equal to ||&ne; ||
+||identical to ||&equiv; ||
+||less-than or equal to ||&le; ||
+||Greater-than or equal to ||&ge; ||
+||subset of ||&sub; ||
+||superset of ||&sup; ||
+||not a subset of ||&nsub; ||
+||subset of or equal to ||&sube; ||
+||superset of or equal to ||&supe; ||
+||circled plus = direct sum ||&oplus; ||
+||circled times = vector product ||&otimes; ||
+||up tack = orthogonal to = perpendicular ||&perp; ||
+||dot operator ||&sdot; ||
+||left ceiling = APL upstile ||&lceil; ||
+||right ceiling ||&rceil; ||
+||left floor = APL downstile ||&lfloor; ||
+||right floor ||&rfloor; ||
+||left-pointing angle bracket = bra ||&lang; ||
+||right-pointing angle bracket = ket ||&rang; ||
+||lozenge ||&loz; ||
+||black spade suit ||&spades; ||
+||black club suit = shamrock ||&clubs; ||
+||black heart suit = valentine ||&hearts; ||
+||black diamond suit ||&diams; ||
+ÿþ3minorÿþ30ÿþ3newauthorÿþ30ÿþ3descriptionÿþ3ÿþ2usernameÿþ2RobertKurcinaÿþ2hostÿþ2localhostÿþ2revisionÿþ22ÿþ2tscreateÿþ21226198337ÿþ2idÿþ21339ÿþ2keeptsÿþ21226199135ÿþ1versionÿþ21ÿþ2tsÿþ21226199135ÿþ2ipÿþ2127.0.0.1ÿþ2nameÿþ2text_defaultÿþ2dataÿþ2summaryÿþ3*ÿþ3textÿþ3== HTML Entities Reference =
+
+Here are selected HTML Entities that can be used when creating a WikiPage.  More definitions can be found at [http://htmlhelp.com/reference/html40/entities/ WDC].
+
+!!Common Symbol|width=300!!Code!!Result!!
+||no-break space = non-breaking space  ||&nbsp;  ||
+||inverted exclamation mark ||&iexcl; ||
+||cent sign ||&cent; ||
+||pound sign ||&pound; ||
+||currency sign ||&curren; ||
+||yen sign = yuan sign ||&yen; ||
+||broken bar = broken vertical bar ||&brvbar; ||
+||section sign ||&sect; ||
+||diaeresis = spacing diaeresis ||&uml; ||
+||copyright sign ||&copy; ||
+||feminine ordinal indicator ||&ordf; ||
+||left-pointing double angle quotation mark = left pointing guillemet ||&laquo; ||
+||not sign ||&not; ||
+||soft hyphen = discretionary hyphen ||&shy; ||
+||registered sign = registered trade mark sign ||&reg; ||
+||macron = spacing macron = overline = APL overbar ||&macr; ||
+||degree sign ||&deg; ||
+||plus-minus sign = plus-or-minus sign ||&plusmn; ||
+||superscript two = superscript digit two = squared ||&sup2; ||
+||superscript three = superscript digit three = cubed ||&sup3; ||
+||acute accent = spacing acute ||&acute; ||
+||micro sign ||&micro; ||
+||pilcrow sign = paragraph sign ||&para; ||
+||middle dot = Georgian comma = Greek middle dot ||&middot; ||
+||cedilla = spacing cedilla ||&cedil; ||
+||superscript one = superscript digit one ||&sup1; ||
+||masculine ordinal indicator ||&ordm; ||
+||right-pointing double angle quotation mark = right pointing guillemet ||&raquo; ||
+||ulgar fraction one quarter = fraction one quarter ||&frac14; ||
+||vulgar fraction one half = fraction one half ||&frac12; ||
+||vulgar fraction three quarters = fraction three quarters ||&frac34; ||
+||inverted question mark = turned question mark ||&iquest; ||
+||Latin capital letter A grave ||&Agrave; ||
+||Latin capital letter A with acute ||&Aacute; ||
+||Latin capital letter A with circumflex ||&Acirc; ||
+||Latin capital letter A with tilde ||&Atilde; ||
+||Latin capital letter A with diaeresis ||&Auml; ||
+||Latin capital letter A ring ||&Aring; ||
+||Latin capital ligature AE ||&AElig; ||
+||Latin capital letter C with cedilla ||&Ccedil; ||
+||Latin capital letter E with grave ||&Egrave; ||
+||Latin capital letter E with acute ||&Eacute; ||
+||Latin capital letter E with circumflex ||&Ecirc; ||
+||Latin capital letter E with diaeresis ||&Euml; ||
+||Latin capital letter I with grave ||&Igrave; ||
+||Latin capital letter I with acute ||&Iacute; ||
+||Latin capital letter I with circumflex ||&Icirc; ||
+||Latin capital letter I with diaeresis ||&Iuml; ||
+||Latin capital letter ETH ||&ETH; ||
+||Latin capital letter N with tilde ||&Ntilde; ||
+||Latin capital letter O with grave ||&Ograve; ||
+||Latin capital letter O with acute ||&Oacute; ||
+||Latin capital letter O with circumflex ||&Ocirc; ||
+||Latin capital letter O with tilde ||&Otilde; ||
+||Latin capital letter O with diaeresis ||&Ouml; ||
+||multiplication sign ||&times; ||
+||Latin capital letter O slash ||&Oslash; ||
+||Latin capital letter U with grave ||&Ugrave; ||
+||Latin capital letter U with acute ||&Uacute; ||
+||Latin capital letter U with circumflex ||&Ucirc; ||
+||Latin capital letter U with diaeresis ||&Uuml; ||
+||Latin capital letter Y with acute ||&Yacute; ||
+||Latin capital letter THORN ||&THORN; ||
+||Latin small letter sharp s = ess-zed ||&szlig; ||
+||Latin small letter a with grave = ||Latin small letter a grave ||&agrave; ||
+||Latin small letter a with acute ||&aacute; ||
+||Latin small letter a with circumflex ||&acirc; ||
+||Latin small letter a with tilde ||&atilde; ||
+||Latin small letter a with diaeresis ||&auml; ||
+||Latin small letter a with ring above = ||Latin small letter a ring ||&aring; ||
+||Latin small letter ae = ||Latin small ligature ae ||&aelig; ||
+||Latin small letter c with cedilla ||&ccedil; ||
+||Latin small letter e with grave ||&egrave; ||
+||Latin small letter e with acute ||&eacute; ||
+||Latin small letter e with circumflex ||&ecirc; ||
+||Latin small letter e with diaeresis ||&euml; ||
+||Latin small letter i with grave ||&igrave; ||
+||Latin small letter i with acute ||&iacute; ||
+||Latin small letter i with circumflex ||&icirc; ||
+||Latin small letter i with diaeresis ||&iuml; ||
+||Latin small letter eth ||&eth; ||
+||Latin small letter n with tilde ||&ntilde; ||
+||Latin small letter o with grave ||&ograve; ||
+||Latin small letter o with acute ||&oacute; ||
+||Latin small letter o with circumflex ||&ocirc; ||
+||Latin small letter o with tilde ||&otilde; ||
+||Latin small letter o with diaeresis ||&ouml; ||
+||division sign ||&divide; ||
+||Latin small letter o slash ||&oslash; ||
+||Latin small letter u with grave ||&ugrave; ||
+||Latin small letter u with acute ||&uacute; ||
+||Latin small letter u with circumflex ||&ucirc; ||
+||Latin small letter u with diaeresis ||&uuml; ||
+||Latin small letter y with acute ||&yacute; ||
+||Latin small letter thorn ||&thorn; ||
+||Latin small letter y with diaeresis ||&yuml; ||
+||dagger  ||&dagger;  ||
+||double dagger ||&Dagger; ||
+||per mille sign ||&permil; ||
+||Latin small f with hook = function = florin  ||&fnof;  ||
+||Greek capital letter alpha ||&Alpha; ||
+||Greek capital letter beta ||&Beta; ||
+||Greek capital letter gamma ||&Gamma; ||
+||Greek capital letter delta ||&Delta; ||
+||Greek capital letter epsilon ||&Epsilon; ||
+||Greek capital letter zeta ||&Zeta; ||
+||Greek capital letter eta ||&Eta; ||
+||Greek capital letter theta ||&Theta; ||
+||Greek capital letter iota ||&Iota; ||
+||Greek capital letter kappa ||&Kappa; ||
+||Greek capital letter lambda ||&Lambda; ||
+||Greek capital letter mu ||&Mu; ||
+||Greek capital letter nu ||&Nu; ||
+||Greek capital letter xi ||&Xi; ||
+||Greek capital letter omicron ||&Omicron; ||
+||Greek capital letter pi ||&Pi; ||
+||Greek capital letter rho ||&Rho; ||
+||Greek capital letter sigma ||&Sigma; ||
+||Greek capital letter tau ||&Tau; ||
+||Greek capital letter upsilon ||&Upsilon; ||
+||Greek capital letter phi ||&Phi; ||
+||Greek capital letter chi ||&Chi; ||
+||Greek capital letter psi ||&Psi; ||
+||Greek capital letter omega ||&Omega; ||
+||Greek small letter alpha ||&alpha; ||
+||Greek small letter beta ||&beta; ||
+||Greek small letter gamma ||&gamma; ||
+||Greek small letter delta ||&delta; ||
+||Greek small letter epsilon ||&epsilon; ||
+||Greek small letter zeta ||&zeta; ||
+||Greek small letter eta ||&eta; ||
+||Greek small letter theta ||&theta; ||
+||Greek small letter iota ||&iota; ||
+||Greek small letter kappa ||&kappa; ||
+||Greek small letter lambda ||&lambda; ||
+||Greek small letter mu ||&mu; ||
+||Greek small letter nu ||&nu; ||
+||Greek small letter xi ||&xi; ||
+||Greek small letter omicron ||&omicron; ||
+||Greek small letter pi ||&pi; ||
+||Greek small letter rho ||&rho; ||
+||Greek small letter final sigma ||&sigmaf; ||
+||Greek small letter sigma ||&sigma; ||
+||Greek small letter tau ||&tau; ||
+||Greek small letter upsilon ||&upsilon; ||
+||Greek small letter phi ||&phi; ||
+||Greek small letter chi ||&chi; ||
+||Greek small letter psi ||&psi; ||
+||Greek small letter omega ||&omega; ||
+||Greek small letter theta symbol ||&thetasym; ||
+||Greek upsilon with hook symbol ||&upsih; ||
+||Greek pi symbol ||&piv; ||
+||bullet = black small circle ||&bull; ||
+||horizontal ellipsis = three dot leader ||&hellip; ||
+||prime = minutes = feet ||&prime; ||
+||double prime = seconds = inches ||&Prime; ||
+||overline = spacing overscore ||&oline; ||
+||fraction slash ||&frasl; ||
+||script capital P = power set = Weierstrass p ||&weierp; ||
+||blackletter capital I = imaginary part ||&image; ||
+||blackletter capital R = real part symbol ||&real; ||
+||trade mark sign ||&trade; ||
+||alef symbol = first transfinite cardinal ||&alefsym; ||
+||leftwards arrow ||&larr; ||
+||upwards arrow ||&uarr; ||
+||rightwards arrow ||&rarr; ||
+||downwards arrow ||&darr; ||
+||left right arrow ||&harr; ||
+||downwards arrow with corner leftwards = carriage return ||&crarr; ||
+||leftwards double arrow ||&lArr; ||
+||upwards double arrow ||&uArr; ||
+||rightwards double arrow ||&rArr; ||
+||downwards double arrow ||&dArr; ||
+||left right double arrow ||&hArr; ||
+||for all ||&forall; ||
+||partial differential ||&part; ||
+||there exists ||&exist; ||
+||empty set = null set = diameter ||&empty; ||
+||nabla = backward difference ||&nabla; ||
+||element of ||&isin; ||
+||not an element of ||&notin; ||
+||contains as member ||&ni; ||
+||n-ary product = product sign ||&prod; ||
+||n-ary sumation ||&sum; ||
+||minus sign ||&minus; ||
+||asterisk operator ||&lowast; ||
+||square root = radical sign ||&radic; ||
+||proportional to ||&prop; ||
+||infinity ||&infin; ||
+||angle ||&ang; ||
+||logical and = wedge ||&and; ||
+||logical or = vee ||&or; ||
+||intersection = cap ||&cap; ||
+||union = cup ||&cup; ||
+||integral ||&int; ||
+||therefore ||&there4; ||
+||tilde operator = varies with = similar to ||&sim; ||
+||approximately equal to ||&cong; ||
+||almost equal to = asymptotic to ||&asymp; ||
+||not equal to ||&ne; ||
+||identical to ||&equiv; ||
+||less-than or equal to ||&le; ||
+||Greater-than or equal to ||&ge; ||
+||subset of ||&sub; ||
+||superset of ||&sup; ||
+||not a subset of ||&nsub; ||
+||subset of or equal to ||&sube; ||
+||superset of or equal to ||&supe; ||
+||circled plus = direct sum ||&oplus; ||
+||circled times = vector product ||&otimes; ||
+||up tack = orthogonal to = perpendicular ||&perp; ||
+||dot operator ||&sdot; ||
+||left ceiling = APL upstile ||&lceil; ||
+||right ceiling ||&rceil; ||
+||left floor = APL downstile ||&lfloor; ||
+||right floor ||&rfloor; ||
+||lozenge ||&loz; ||
+||black spade suit ||&spades; ||
+||black club suit = shamrock ||&clubs; ||
+||black heart suit = valentine ||&hearts; ||
+||black diamond suit ||&diams; ||
+ÿþ3newauthorÿþ30ÿþ3minorÿþ30ÿþ3descriptionÿþ3use HTML Entities to present special characters, symbols, or letters on a WikiPage.ÿþ2hostÿþ2localhostÿþ2usernameÿþ2RobertKurcinaÿþ2revisionÿþ23ÿþ2idÿþ21339ÿþ2tscreateÿþ21226198337ÿþ2keeptsÿþ21226202215

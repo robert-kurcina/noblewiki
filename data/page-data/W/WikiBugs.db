@@ -1,0 +1,34 @@
+versionÿþ13ÿþ1tsÿþ11226204243ÿþ1authorcreateÿþ1RobertKurcinaÿþ1cache_oldmajorÿþ126ÿþ1descriptionÿþ1all known defects of the NobleWiki engine.ÿþ1cache_oldauthorÿþ126ÿþ1cache_diff_default_authorÿþ12ÿþ1revisionÿþ128ÿþ1text_defaultÿþ1versionÿþ21ÿþ2tsÿþ21226204243ÿþ2ipÿþ2127.0.0.1ÿþ2nameÿþ2text_defaultÿþ2dataÿþ2summaryÿþ3*ÿþ3textÿþ3== Known Defects =
+These are the defects or 'bugs' that have been identified to exist within the NobleWiki wiki engine. 
+
+=== Currently Open =
+{{template:WikiBugs/OpenDefects}}
+=== Defects Repaired =
+{{template:WikiBugs/ClosedDefects}}
+ÿþ3minorÿþ31ÿþ3newauthorÿþ30ÿþ3descriptionÿþ3ÿþ2hostÿþ2localhostÿþ2usernameÿþ2RobertKurcinaÿþ2revisionÿþ228ÿþ2idÿþ21339ÿþ2tscreateÿþ21192301346ÿþ2keeptsÿþ21226204243ÿþ1tscreateÿþ11192301346ÿþ1cache_diff_default_majorÿþ1<div id=wikidiffdiv><table id=wikidifftable><tr valign=top><td class="diff-header">Paragraph 1</td><td class="diff-vertical">&nbsp;</td><td class="diff-header">Paragraph 1</td></tr><tr valign=top><td class="diff-para-ident"></td><td class="diff-vertical"></td><td class="diff-para-added">== Known Defects =<br>
+</td></tr><tr valign=top><td class="diff-para-ident">These are the defects or 'bugs' that have been identified to exist within the NobleWiki wiki engine. <br>
+<br>
+</td><td class="diff-vertical"></td><td class="diff-para-ident">These are the defects or 'bugs' that have been identified to exist within the NobleWiki wiki engine. <br>
+<br>
+</td></tr><tr valign=top><td class="diff-para-deleted">!!Date!!Contributor!!Description!!Status!!<br>
+||2007.10.14||[HomePage/RobertKurcina RobertKurcina]||List Orphans appears to list valid pages||FIXED-2007.11.02||<br>
+||2007.10.13||[HomePage/RobertKurcina RobertKurcina]||When editing a WikiPage, adding more than the necessary carriage-returns/line-feeds will cause the page to render with HTML code visible.||FIXED-2008.09.27||<br>
+||2007.10.11||[HomePage/RobertKurcina RobertKurcina]||ListOfWantedPages via the UseMod:MagicContent will show pages that have been created but may exist as a Wiki sub-page or as an external link.||FIXED-2007.10.13||<br>
+||2007.11.05||[HomePage/RobertKurcina RobertKurcina]||Looks like MS-IE6 view of pages like WikiMarkup shows gray blocks||FIXED-2007.11.05||<br>
+||2007.11.16||[HomePage/RobertKurcina RobertKurcina]||The enhanced table option switches work for the last cell of a row only when it ends with a blank space||OPEN||<br>
+||2007.11.18||[HomePage/RobertKurcina RobertKurcina]||Appears to be that bracket images within table cells fail to resolve.&nbsp; See any of the home page images||FIXED-2007.11.27||<br>
+||2007.11.18||[HomePage/RobertKurcina RobertKurcina]||List Orphans incorrectly lists legitimate sub pages||FIXED-2008.09.28||<br>
+||2007.11.19||[HomePage/RobertKurcina RobertKurcina]||The various Admin bar links should be enabled or disable to match the left nav.||OPEN||<br>
+||2007.11.24||[HomePage/RobertKurcina RobertKurcina]||Table last column; the property seems to be picked up by the previous column.||OPEN||<br>
+||2007.12.01||[HomePage/RobertKurcina RobertKurcina]||Seems that the back-links or &lt;tt&gt;&lt;nowiki&gt;GetFullLinkList&lt;/nowiki&gt;&lt;/tt&gt; subroutines ignore spaces, periods, and capitilization when performing a search.||FIXED-2007.12.01||<br>
+||2007.12.01||[HomePage/RobertKurcina RobertKurcina]||Print preview shows that the CSS is messed up; need to create an @import for printer-friendly output.||FIXED-2007.12.03||<br>
+||2008.09.28||[HomePage/RobertKurcina RobertKurcina]||Need to update T(), Ts(), Tss() and to remove all double-quotes expressions for taint.||OPEN||<br>
+||2008.09.29||[HomePage/RobertKurcina RobertKurcina]||Table of Contents doesn't properly number when including templates with their own headings.||OPEN||<br>
+||2008.10.12||[HomePage/RobertKurcina RobertKurcina]||Seems that the rename pages doesn't catch all variations of links.&nbsp; esp. sub-pages.||OPEN||<br>
+</td><td class="diff-vertical"></td><td class="diff-para-added">=== Currently Open =<br>
+{{template:WikiBugs/OpenDefects}}<br>
+=== Defects Repaired =<br>
+{{template:WikiBugs/ClosedDefects}}<br>
+</td></tr></table></div>ÿþ1cache_diff_default_minorÿþ1<div id=wikidiffdiv><table id=wikidifftable><tr valign=top><td class="diff-header">Paragraph 5</td><td class="diff-vertical">&nbsp;</td><td class="diff-header">Paragraph 5</td></tr><tr valign=top><td class="diff-para-changed"><span class="diff-span-ident">==</span><span class="diff-span-ident">&nbsp;Defects Repaired =<br>
+</span></td><td class="diff-vertical"></td><td class="diff-para-changed"><span class="diff-span-ident">==</span><span class="diff-span-added">=</span><span class="diff-span-ident">&nbsp;Defects Repaired =<br>
+</span></td></tr></table></div>

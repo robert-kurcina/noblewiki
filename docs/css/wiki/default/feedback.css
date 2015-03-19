@@ -1,0 +1,173 @@
+#Discuss.magic {
+	padding: 10px;
+	border: 2px solid #ABD0E0;
+}
+
+#feedback {
+
+}
+
+#feedback .title {
+	font-weight: bold;
+	color: #ABD0E0;
+	font-size: 1.5em;
+}
+/* FEEDBACK FORM */
+.feedbackForm {
+	padding: 10px;
+	background-color: #D0E4ED;
+	border-top: 1px solid #aaaaaa;
+	border-right: 1px solid #666666;
+	border-bottom: 1px solid #666666;
+	border-left: 1px solid #aaaaaa;
+	margin-top: 5px;
+}
+
+
+.feedbackForm .wide {
+	width: 100%;
+	background-color: #EBF3F7;	
+}
+
+.feedbackForm textarea {
+	height: 150px;
+	background-color: #EBF3F7;
+	font-family: Courier, Serif;
+}
+
+
+#showcount {
+	width: 50px;
+	text-align: center;
+	color: #000000;	
+	border: 1px solid #8FC1E0;
+	background-color: #ABD0E0;
+}
+
+/* FEEDBACK RESULTS */
+.feedbackComment-odd,
+.feedbackComment-even,
+.feedbackComment-author-odd,
+.feedbackComment-author-even {
+	font-family: Arial, sans-serif;
+	font-size: 0.8em;
+	padding: 5px;
+}
+.feedbackComment-odd pre,
+.feedbackComment-even pre,
+.feedbackComment-author-odd pre,
+.feedbackComment-author-even pre {
+	padding: 5px;
+	color: #000000;
+	border: 1px dashed #8FC1E0;
+	background-color: #EBF3F7;
+
+}
+
+.feedbackComment-odd blockquote,
+.feedbackComment-even blockquote,
+.feedbackComment-author-odd blockquote,
+.feedbackComment-author-even blockquote {
+	background-image: none;
+	background-color: #acc1e0;
+	padding: 5px;
+	border: 1px dashed #000000;
+	font-family: Arial, sans-serif;
+	color: #000000;
+}
+
+.feedbackComment-odd cite,
+.feedbackComment-even cite,
+.feedbackComment-author-odd cite,
+.feedbackComment-author-even cite {
+	color: #000000;
+}
+
+.feedbackComment-even {
+	background-color: #ABD0E0;
+}
+
+.feedbackComment-odd {
+	background-color: #EBF3F7;	
+}
+
+.feedbackComment-author-odd {
+	background-color: #D0E4ED;
+}
+
+.feedbackComment-author-even {
+	background-color: #8FC1E0;	
+}
+
+.commentText {
+	padding: 5px 20px 10px 10px;
+	line-height: 1.3em;
+	margin-left: 55px;
+}
+
+.commentBy {
+	font-style: italic;
+	margin-bottom: 10px;
+}
+
+.commentId {
+	float: left;
+	padding: 5px;
+	height: 40px;
+	width: 55px;
+	_width: 65px;
+	margin-top: 5px;
+	margin-left: 5px;
+
+}
+
+ .commentNumber {
+ 	font-family: Arial, Helvetica, Verdana, Sans-serif;
+ 	font-weight: bold;
+	color: #88A6B3;
+	font-size: 35px;
+	text-align: center;
+	margin-top: 0px;
+	border: 1px solid #88A6B3;
+}
+
+.feedbackComment-even .commentNumber,
+.feedbackComment-author-even .commentNumber {
+	color: #EBF3F7;
+}
+
+.commentImage {
+	float: right;
+	padding: 5px;
+	margin: 0 3px 10px 5px;
+	background-color: #D0E4ED;
+	border: 1px solid #88A6B3;
+	height: 50px;
+	width: 50px;
+}
+
+.commentTitle {
+	font-weight: bold;
+	font-style: italic;
+	font-size: 1.2em;
+	border-bottom: 1px solid #88A6B3;
+}
+
+.commentDateTime {
+	text-align: right;	
+	width: 100%;
+	color: #666699;
+	font-style: italic;
+}
+
+.nobody {
+	background: #D0E4ED url("/img/wiki/default/nobody.jpg") no-repeat;
+	height: 50px;
+	width: 50px;
+}
+
+.preview {
+	border: 2px solid #ff0000;
+	margin: -4px;
+	padding: 5px;
+}

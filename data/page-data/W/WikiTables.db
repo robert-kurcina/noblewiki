@@ -1,0 +1,104 @@
+tsÿþ11223011370ÿþ1versionÿþ13ÿþ1cache_oldmajorÿþ135ÿþ1cache_oldauthorÿþ138ÿþ1cache_diff_default_authorÿþ11ÿþ1revisionÿþ139ÿþ1tscreateÿþ11178783690ÿþ1text_defaultÿþ1tsÿþ21223011370ÿþ2ipÿþ2127.0.0.1ÿþ2versionÿþ21ÿþ2nameÿþ2text_defaultÿþ2dataÿþ2summaryÿþ3*ÿþ3textÿþ3= Creating Tabular Views ==
+Tables can be inserted directly into wiki entries.  Below are two ways of describing how show a table using either custom wiki syntax or using HTML.  The preferred method for this wiki as a practice should be to limit the creation of tables entirely and instead insert images that are bitmap renders of a table.
+
+{{toc}}
+
+== Standard Wiki Tables ===
+The standard way of creating tables in this wiki is to use custom notation, which is much faster and compact than using HTML syntax.  There is a trade-off in that the tables aren't too fancy and all cells have left-aligned text.  Create a table by defining a row of table cells, with each cell delimited by either pairs of exclamation points <tt>!!</tt> or of pipes <tt>||</tt>.  Cells can be defined as spanning multiple columns by repeating the number of pairs..
+
+<b>Example Wiki Table</b>
+!!<b>Column A</b>          !!<b>Column B</b>          !!<b>Column C</b>          !!
+||Entry for row 1, Column A||Entry for row 1, Column B||Entry for row 1, Column C||
+||Entry for row 2, Column A||Entry for row 2, Column B||Entry for row 2, Column C||
+||||Spanning entry                                    ||Entry for row 3, Column C||
+||||||More spanning                                                              ||
+
+The above table is achieved with the following:
+
+<pre>
+!!<b>Column A</b>          !!<b>Column B</b>          !!<b>Column C</b>          !!
+||Entry for row 1, Column A||Entry for row 1, Column B||Entry for row 1, Column C||
+||Entry for row 2, Column A||Entry for row 2, Column B||Entry for row 2, Column C||
+||||Spanning entry                                    ||Entry for row 3, Column C||
+||||||More spanning                                                              ||
+</pre>
+
+=== Table Sorting ===
+A client-side implementation of table sorting via the use of the jQuery extension "Tablesorter 2.0" is automatically engaged for any table created properly.  The sample tables above are properly created; they start with the <tt><nowiki>!!</nowiki></tt> in the first row, and are followed entirely by <tt><nowiki>||</nowiki></tt> in all remaining rows. Click in the header of a column to reverse the sort order.  Hold the <tt>SHIFT</tt> key to select multiple columns.
+
+=== Cell Alignment ===
+The wiki tables allow syntax for setting up cell width and alignment.  Set alignment to 'right' by padding the cell's content with 2 blank spaces preceding the entry.  For 'center' alignment, pad the content on both sides.  This feature works only with the table rows, and not with the table headers; those stay 'left' aligned.
+||  right aligned|width=200||  center-aligned  |width=200||left-aligned|width=200||
+
+The above was created using:
+
+<pre>
+||  right aligned|width=200||  center-aligned  |width=200||left-aligned|width=200||
+</pre>
+
+=== Option Switches ===
+There are multiple switches allowed for each cell in order to control presentation as shown below.  Setting any of the options will carry the values to every cell in the same column for all following rows of the same table.  For the rowstyle, rowalign, and rowclass switches; setting any of those options in the first cell of a row will carry to all remaining cells in the row for every row in the table. Unset any option by giving it a value of 'clear', as in rowstyle=clear or align=clear.
+
+!!Option|width=150!!Description!!
+||<tt><nowiki>|width=NNN</nowiki></tt>||Set the width to a certain value in pixels or percentages.  For complex tables, set this in the top-most row that should be affected by this value and all other columns beneath the row will be similarly affected.||
+||<tt><nowiki>|style=XXXX</nowiki></tt>||Set the in-line style attribute of a cell.  Be sure to end each property with a semi-colon.  For example this entry into a cell will set the background color to red with bold white text.<tt><nowiki>|style=background-color:red;color:white;font-weight:bold;</nowiki></tt> ||
+||<tt><nowiki>|class=XXXX</nowiki></tt>||Set the class attribute to the selectors identified.  This is the preferred way to style a cell since it will allow consistent styling according to the CSS file used.||
+||<tt><nowiki>|align=XXXX</nowiki></tt>||Set the cell alignment.  The value used here will over-ride the value dynamically determined by the padding identified in the previous section.  As before, the alignment setting will not affect cells created with the <tt><nowiki>!!</nowiki></tt> markup for table headers.||
+||<tt><nowiki>|rowstyle=XXXX</nowiki></tt>||Set the in-line style attribute of a row.||
+||<tt><nowiki>|rowclass=XXXX</nowiki></tt>||Set the class attribute to the selectors identified for all cells in the row.||
+||<tt><nowiki>|rowalign=XXXX</nowiki></tt>||Set the alignment for all cells in a row.||
+||<tt><nowiki>|tablewidth=NNN</nowiki></tt>||When provided in the first row of a table, will set the table width to this value.||
+||<tt><nowiki>|tablestyle=XXXX</nowiki></tt>||When provided in the first row of a table, will set the table style to this value.||
+||<tt><nowiki>|tableclass=XXXX</nowiki></tt>||When provided in the first row of a table, will set the table class to this value.  The default is <tt>wikilargelist</tt> which exists in the stylesheet.||
+||<tt><nowiki>|tablesort=none</nowiki></tt>||When provided in the first row of a table, will prevent the Tablesorter script to elect the table for javascript sortable table interactivity.||
+
+<tt><b>NOTE:</b></tt> There's a bug in the regex that is used to determine the last option for the last column in a row; the fix is to add a space after that last option.
+
+||A|width=200|rowstyle=background-color:#cccccc;|rowalign=right||B|width=150||C|class=thblack|width=100 ||
+||1||2||3||
+||3||4||5||
+||5|rowstyle=background-color:#ffcc00;||6||7|class=clear|align=center ||
+||D|rowstyle=clear||E||F||
+||7||8||9||
+
+The above was created using:
+
+<pre>
+||A|width=200|rowstyle=background-color:#cccccc;|rowalign=right||B|width=150||C|class=thblack|width=100 ||
+||1||2||3||
+||3||4||5||
+||5|rowstyle=background-color:#ffcc00;||6||7|class=clear|align=center ||
+||D|rowstyle=clear||E||F||
+||7||8||9||
+</pre>
+
+=== HTML Tables ===
+This particular wiki DOES NOT ALLOW markup for full HTML tables.  The WikiAdmin will need to re-insert <tt>table</tt> into <tt><nowiki>@HtmlPairs</nowiki></tt> within the Wiki engine script.
+
+== Related Entries =
+{{template:RelatedEntries/WikiEditing}}
+ÿþ3minorÿþ31ÿþ3newauthorÿþ31ÿþ2hostÿþ2localhostÿþ2usernameÿþ2RobertKurcinaÿþ2revisionÿþ239ÿþ2idÿþ21298ÿþ2tscreateÿþ21178783690ÿþ2keeptsÿþ21223011370ÿþ1cache_diff_default_majorÿþ1<div id=wikidiffdiv><table id=wikidifftable><tr valign=top><td class="diff-header">Paragraph 2</td><td class="diff-vertical">&nbsp;</td><td class="diff-header">Paragraph 2</td></tr><tr valign=top><td class="diff-para-ident">Tables can be inserted directly into wiki entries.&nbsp; Below are two ways of describing how show a table using either custom wiki syntax or using HTML.&nbsp; The preferred method for this wiki as a practice should be to limit the creation of tables entirely and instead insert images that are bitmap renders of a table.<br>
+<br>
+</td><td class="diff-vertical"></td><td class="diff-para-ident">Tables can be inserted directly into wiki entries.&nbsp; Below are two ways of describing how show a table using either custom wiki syntax or using HTML.&nbsp; The preferred method for this wiki as a practice should be to limit the creation of tables entirely and instead insert images that are bitmap renders of a table.<br>
+<br>
+</td></tr><tr valign=top><td class="diff-para-deleted">&lt;toc&gt;<br>
+</td><td class="diff-vertical"></td><td class="diff-para-added">{{toc}}<br>
+</td></tr><tr valign=top><td class="diff-para-ident"><br>
+== Standard Wiki Tables ===<br>
+</td><td class="diff-vertical"></td><td class="diff-para-ident"><br>
+== Standard Wiki Tables ===<br>
+</td></tr><tr valign=top><td class="diff-header">Paragraph 41</td><td class="diff-vertical">&nbsp;</td><td class="diff-header">Paragraph 41</td></tr><tr valign=top><td class="diff-para-ident">||&lt;tt&gt;&lt;nowiki&gt;|tableclass=XXXX&lt;/nowiki&gt;&lt;/tt&gt;||When provided in the first row of a table, will set the table class to this value.&nbsp; The default is &lt;tt&gt;wikilargelist&lt;/tt&gt; which exists in the stylesheet.||<br>
+</td><td class="diff-vertical"></td><td class="diff-para-ident">||&lt;tt&gt;&lt;nowiki&gt;|tableclass=XXXX&lt;/nowiki&gt;&lt;/tt&gt;||When provided in the first row of a table, will set the table class to this value.&nbsp; The default is &lt;tt&gt;wikilargelist&lt;/tt&gt; which exists in the stylesheet.||<br>
+</td></tr><tr valign=top><td class="diff-para-ident"></td><td class="diff-vertical"></td><td class="diff-para-added">||&lt;tt&gt;&lt;nowiki&gt;|tablesort=none&lt;/nowiki&gt;&lt;/tt&gt;||When provided in the first row of a table, will prevent the Tablesorter script to elect the table for javascript sortable table interactivity.||<br>
+</td></tr><tr valign=top><td class="diff-para-ident"><br>
+&lt;tt&gt;&lt;b&gt;NOTE:&lt;/b&gt;&lt;/tt&gt; There's a bug in the regex that is used to determine the last option for the last column in a row; the fix is to add a space after that last option.<br>
+</td><td class="diff-vertical"></td><td class="diff-para-ident"><br>
+&lt;tt&gt;&lt;b&gt;NOTE:&lt;/b&gt;&lt;/tt&gt; There's a bug in the regex that is used to determine the last option for the last column in a row; the fix is to add a space after that last option.<br>
+</td></tr></table></div>ÿþ1cache_diff_default_minorÿþ1<div id=wikidiffdiv><table id=wikidifftable><tr valign=top><td class="diff-header">Paragraph 60</td><td class="diff-vertical">&nbsp;</td><td class="diff-header">Paragraph 60</td></tr><tr valign=top><td class="diff-para-ident">This particular wiki DOES NOT ALLOW markup for full HTML tables.&nbsp; The WikiAdmin will need to re-insert &lt;tt&gt;table&lt;/tt&gt; into &lt;tt&gt;&lt;nowiki&gt;@HtmlPairs&lt;/nowiki&gt;&lt;/tt&gt; within the Wiki engine script.<br>
+<br>
+</td><td class="diff-vertical"></td><td class="diff-para-ident">This particular wiki DOES NOT ALLOW markup for full HTML tables.&nbsp; The WikiAdmin will need to re-insert &lt;tt&gt;table&lt;/tt&gt; into &lt;tt&gt;&lt;nowiki&gt;@HtmlPairs&lt;/nowiki&gt;&lt;/tt&gt; within the Wiki engine script.<br>
+<br>
+</td></tr><tr valign=top><td class="diff-para-ident"></td><td class="diff-vertical"></td><td class="diff-para-added">== Related Entries =<br>
+</td></tr><tr valign=top><td class="diff-para-ident">{{template:RelatedEntries/WikiEditing}}<br>
+</td><td class="diff-vertical"></td><td class="diff-para-ident">{{template:RelatedEntries/WikiEditing}}<br>
+</td></tr></table></div>

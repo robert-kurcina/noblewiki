@@ -1,0 +1,133 @@
+
+#------------------------------------------------------------------------------
+# BEGIN WikiFarm site configurations
+#------------------------------------------------------------------------------
+$SiteName         = "Noble Pursuit Games Wiki";         # Name of site (used for titles)
+$SiteDescription  = $SiteName;                          # Description of this wiki. (for RSS)
+$SiteBase         = "";                                 # Full URL for <BASE> tag to be used in all page headers 
+$InterWikiMoniker = "NobleWiki";                        # InterWiki moniker for this wiki. (for RSS)
+$EmailFrom        = "Noble Wiki";                       # Text for "From: " field of email notes.
+
+$RssLogoUrl       = "";                                 # URL for optional site logo used as image for RSS feed
+$LogoUrl          = "";                                 # URL for site logo ("" for no logo) that will be added to the left of each page title
+$FavIcon          = "";                                 # URL of bookmark/favorites icon, or ''
+$StyleSheet       = "/css/wiki/default.css";            # URL for CSS stylesheet (like "/wiki/default.css")
+
+$HomePage         = "HomePage";                         # Name of Home page
+$HomePagePrefix   = "HomePage/";                        # Which page will be linked when a valid $username is clicked in the RC history; end with slash if using Sub pages
+$RCName           = "RecentChanges";                    # Name of changes page ("" to remove from menu)
+$HelpPage         = "Help";                             # Name of Help page ("" to remove from menu)
+$InfoPage         = "About";                            # Name of About page ("" to remove from menu)
+$CategoriesPage   = "CategoryCategory";                 # Name of Index page ("" to remove from menu)
+$FeaturedPage     = "Featured";                         # Name of Featured content page ("" to remove from menu)
+$SandBoxPage      = "SandBox";                          # Name of SandBox page ("" to remove from menu)
+$ContactUsPage    = "WikiContacts";                     # Name of Contacts page ("" to remove from menu)
+$NotFoundPage     = "PageNotFound";                     # Page for not-found links ("" for blank page)
+$DeletedPage      = "WikiDelete";                       # 0 = disable, 'PageName' = tag to delete page
+
+$NotesSuffix      = "_Notes";                           # Name of suffix for notes page ("" to remove from menu; also set $UseNotesPages to 0)
+$AdminPass        = "linhson";                          # Set to non-blank to enable password(s)
+$EditPass         = "emerald";                          # Like AdminPass, but for editing only
+
+@ReplaceableFiles = ();                                 # List of allowed server files to replace via {{replace:/path/to/file/system/item}}
+
+#------------------------------------------------------------------------------
+# WikiFarm rendered HTML page modifications
+#------------------------------------------------------------------------------
+$EditNote         = "";                                 # HTML notice above buttons on edit page      
+$NewText          = "[Describe the new page here]";     # New page text ("" for default message)
+
+
+$EarlyRules       = "";                                 # Local syntax rules for wiki->html (evaled)
+$LateRules        = "";                                 # Local syntax rules for wiki->html (evaled)
+
+$UserGotoBar      = "";                                 # HTML added to end of goto bar
+$UserGotoBar     .= "";
+
+$UserHeader       = "";                                 # Optional HTML header additional content
+$UserHeader      .= "\n<link type='text/css' rel='stylesheet' media='print' href='/css/printer.friendly.css'/>";
+$UserHeader      .= "\n<link type='text/css' rel='stylesheet' media='screen' href='/css/jquery/jquery.lightbox.css'/>";
+$UserHeader      .= "\n<script type='text/javascript' src='/js/jquery/jquery.js'></script>";
+$UserHeader      .= "\n<script type='text/javascript' src='/js/jquery/jquery.lightbox.js'></script>";
+$UserHeader      .= "\n<script type='text/javascript' src='/js/jquery/jquery.tablesorter.js'></script>";
+$UserHeader      .= "\n<script type='text/javascript' src='/js/codepress/codepress.js'></script>";
+$UserHeader      .= "\n<script type='text/javascript' src='/js/ufo/ufo.js'></script>";
+$UserHeader      .= "\n<script type='text/javascript' src='/js/wiki/NPG.js'></script>";
+
+$UserBody         = "";                                 # Optional <BODY> tag additional content
+$UserFooter       = "";                                 # Optional HTML or text to append to the end of each rendered footer
+
+$FooterNote       = "";                                 # HTML for bottom of every page
+$FooterNote      .= "<a href='?action=editprefs'>";
+$FooterNote      .= "<div id='anylogo' title='access username'>&nbsp;</div>";
+$FooterNote      .= "</a><div style='clear: both;'></div>";       
+
+#------------------------------------------------------------------------------
+# Major options
+#------------------------------------------------------------------------------
+$UseNotesPages    = 1;								    # 1 = use _Notes pages,   0 = do not use _Notes pages
+$UseSubpage       = 1;                                  # 1 = use subpages,       0 = do not use subpages
+$UseCache         = 0;                                  # 1 = cache HTML pages,   0 = generate every page
+$EditAllowed      = 1;                                  # 1 = editing allowed,    0 = read-only
+$RawHtml          = 0;                                  # 1 = allow <HTML> tag,   0 = no raw HTML in pages
+$HtmlTags         = 1;                                  # 1 = "unsafe" HTML tags, 0 = only minimal tags
+$UseDiff          = 1;                                  # 1 = use diff features,  0 = do not use diff
+$FreeLinks        = 1;                                  # 1 = use [[word]] links, 0 = LinkPattern only
+$WikiLinks        = 1;                                  # 1 = use LinkPattern,    0 = use [[word]] only
+$AdminDelete      = 1;                                  # 1 = Admin only deletes, 0 = Editor can delete
+$RunCGI           = 1;                                  # 1 = Run script as CGI,  0 = Load but do not run
+$EmailNotify      = 1;                                  # 1 = use email notices,  0 = no email on changes
+$EmbedWiki        = 0;                                  # 1 = no headers/footers, 0 = normal wiki pages
+$TableSyntax      = 1;                                  # 1 = wiki syntax tables, 0 = no table syntax
+$NewFS            = 1;                                  # 1 = new multibyte $FS,  0 = old $FS
+$UseUpload        = 1;                                  # 1 = allow uploads,      0 = no uploads
+$AllowInclusion   = 1;                                  # 1 = files (*.txt,*.html) may be included by {{include:$InclusionDir/somefile.html}}, 0 = files will not be included
+$AllowReplaceFiles= 0;                                  # 1 = system files may be over-written by content of pages using {{replace:/filesystem/path/somefile}}, 0 = files will not be replaced
+
+
+#------------------------------------------------------------------------------
+# Minor options
+#------------------------------------------------------------------------------
+$RecentTop        = 1;                                  # 1 = recent on top,      0 = recent on bottom
+$UseDiffLog       = 1;                                  # 1 = save diffs to log,  0 = do not save diffs
+$KeepMajor        = 1;                                  # 1 = keep major rev,     0 = expire all revisions
+$KeepAuthor       = 1;                                  # 1 = keep author rev,    0 = expire all revisions
+$ShowEdits        = 0;                                  # 1 = show minor edits,   0 = hide edits by default
+$HtmlLinks        = 1;                                  # 1 = allow A HREF links, 0 = no raw HTML links
+$SimpleLinks      = 0;                                  # 1 = only letters,       0 = allow _ and numbers
+$NonEnglish       = 0;                                  # 1 = extra link chars,   0 = only A-Za-z chars
+$ThinLine         = 0;                                  # 1 = fancy <hr> tags,    0 = classic wiki <hr>
+$BracketText      = 1;                                  # 1 = allow [URL text],   0 = no link descriptions
+$UseAmPm          = 0;                                  # 1 = use am/pm in times, 0 = use 24-hour times
+$UseIndex         = 0;                                  # 1 = use index file,     0 = slow/reliable method
+$UseHeadings      = 1;                                  # 1 = allow = h1 text =,  0 = no header formatting
+$NetworkFile      = 1;                                  # 1 = allow remote file:, 0 = no file:// links
+$BracketWiki      = 1;                                  # 1 = [WikiLnk txt] link, 0 = no local descriptions
+$UseLookup        = 1;                                  # 1 = lookup host names,  0 = skip lookup (IP only)
+$FreeUpper        = 1;                                  # 1 = force upper case,   0 = do not force case
+$FastGlob         = 1;                                  # 1 = new faster code,    0 = old compatible code
+$MetaKeywords     = 1;                                  # 1 = Google-friendly,    0 = search-engine averse
+$NamedAnchors     = 1;                                  # 0 = no anchors, 1 = enable anchors, 2 = enable but suppress display
+$SlashLinks       = 0;                                  # 1 = use script/action links, 0 = script?action
+$UpperFirst       = 1;                                  # 1 = free links start uppercase, 0 = no ucfirst
+$AdminBar         = 1;                                  # 1 = admins see admin links, 0 = no admin bar
+$RepInterMap      = 0;                                  # 1 = intermap is replacable, 0 = not replacable
+$ConfirmDel       = 1;                                  # 1 = delete link confirm page, 0 = immediate delete
+$MaskHosts        = 0;                                  # 1 = mask hosts/IPs,      0 = no masking
+$LockCrash        = 0;                                  # 1 = crash if lock stuck, 0 = auto clear locks
+$HistoryEdit      = 0;                                  # 1 = edit links on history page, 0 = no edit links
+$OldThinLine      = 0;                                  # 1 = old ==== thick line, 0 = ------ for thick line
+$NumberDates      = 1;                                  # 1 = 2003-6-17 dates,     0 = June 17, 2003 dates
+$NumberDatesDelim = ".";                                # 1 = this character separates the values for year, month, day
+$ParseParas       = 1;                                  # 1 = new paragraph markup, 0 = old markup
+$AuthorFooter     = 1;                                  # 1 = show last author in footer, 0 = do not show
+$AllUpload        = 0;                                  # 1 = anyone can upload,   0 = only editor/admins
+$LimitFileUrl     = 1;                                  # 1 = limited use of file: URLs, 0 = no limits
+$MaintTrimRc      = 1;                                  # 1 = maintain action trims RC, 0 = only maintainrc
+$SearchButton     = 1;                                  # 1 = search button on page, 0 = old behavior
+$EditNameLink     = 0;                                  # 1 = edit links use name (CSS), 0 = '?' links
+$BracketImg       = 1;                                  # 1 = [url url.gif] becomes image link, 0 = no img
+
+#------------------------------------------------------------------------------
+# END WikiFarm site configurations
+#------------------------------------------------------------------------------

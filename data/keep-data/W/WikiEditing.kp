@@ -1,0 +1,660 @@
+ÿþ1versionÿþ21ÿþ2ipÿþ2127.0.0.1ÿþ2tsÿþ21195452052ÿþ2nameÿþ2text_defaultÿþ2dataÿþ2summaryÿþ3*ÿþ3textÿþ3<toc>
+= # Wiki Text Formatting Rules =
+The following is an overview of the [http://www.usemod.com/cgi-bin/wiki.pl UseModWiki] text formatting rules for when editing a page. For examples without all the explanatory text, see WikiMarkup. To try these rules for yourself, please feel free to edit the SandBox page. 
+To see how any page is formatted, just follow the link "Edit text of this page" at the bottom of the page. 
+
+== # Basic Syntax =
+The first character entered on a line often controls the formatting of the text on that line.  Repetition of the first character on the line generally increases the indentation or emphasis
+* <tt>" "</tt> space causes text to appear in a <tt>monospaced font where spaces are significant</tt>. 
+* <tt>":"</tt> colon causes text to be indented
+* <tt>"="</tt> equals - followed by a space - creates a heading, a trailing <tt>"="</tt> - preceded by a space - is required
+* <tt>"*"</tt> asterisk creates a bulleted list
+* <tt>"#"</tt> hash creates a numbered list
+* <tt>";"</tt> semicolon creates a <i>definition</i> list, a <tt>":"</tt> colon is required subsequently on the same line
+* <tt>"<nowiki>----</nowiki>"</tt> four hyphens creates a horizontal line
+
+=== # Decoration =
+Entering text on a wiki can be done simply. Follow these guidelines:
+* Use tags <nowiki><b></nowiki><b>bold</b><nowiki></b></nowiki> and <nowiki><i></nowiki><i>italic</i><nowiki></i></nowiki> 
+* Use tag <nowiki><tt></nowiki><tt>for monospace text</tt><nowiki></tt></nowiki> (tt stands for typewriter text)
+
+=== # Miscellaneous =
+* Create links to other pages by naming it using the WikiWord syntax; any 2 or more capitalized words placed together.
+* New pages can be created by using a <tt>WikiWord</tt>, saving the page, and then clicking on the hyperlink that was formed.
+* A line which ends in a backslash character (\) will be joined with the next line before most formatting rules are applied. This can be useful for breaking up long sections of text in line-sensitive sections (like lists or indented text).
+* Using paired <tt><nowiki><blockquote>..</blockquote></nowiki></tt> will throw a nice quotation marks images at the top left of the quote.
+
+== # Advanced Syntax =
+* To quote text without applying the wiki formatting rules, enclose it within a <nowiki><nowiki></nowiki> ... <nowiki></nowiki></nowiki> section. Within a nowiki section, only HTML-quoting of special characters (<>&) will occur - no other formatting rules will be applied.
+* If raw-HTML sections are enabled (they are disabled by default), you can enter raw HTML code within an <html> ... </html> section. Note that <b>no</b> quoting is done, so you will need to use sequences like &amp;lt; if you want to display a < character.
+* Most of the formatting rules are order-independent. On rare occasions, the order of processing may be important. The rules are processed in the following order: raw HTML sections, HTML quoting, nowiki tags, backslash line joining, preformatted sections, paragraphs, lists and indented text, horizontal lines, italic/bold text, URLs, and finally ordinary WikiName links.
+=== # Directives =
+* To redirect one wiki page to another, use the following syntax:
+<pre>
+  <nowiki>#REDIRECT TargetPage</nowiki>
+  <nowiki>#REDIRECT TargetPage/SubPage</nowiki>
+</pre>
+* To include a file that was added into the <tt><nowiki>$DataDir</nowiki></tt>:
+<pre>
+  <nowiki>#INCLUDE filename</nowiki>
+</pre>
+
+ #INCLUDE something.html
+
+* Magic Content Pages create content based upon input parameters.  The ListOfWantedPages are an example of Magic Content.  A list of modules can be had by providing <tt><nowiki>ModuleName=ListCommands</nowiki></tt>. The effects of the Magic Content won't show up until page is saved.
+<pre>
+  #MAGIC ModuleName param1=value1 param2=value2 ...
+</pre>
+
+* To list all of the sub pages of a parent page do the following, leaving <tt><nowiki>TargetPage</nowiki></tt> blank if this is for the current page being edited:
+<pre>
+  #SUBPAGES TargetPage
+</pre>
+
+* Flash SWF content can be inserted into place if three parameters - name, width, and height - are provided.  The defaults will be set if not given to name=ufo.swf, width=400 pixels, and height=300 pixels.  This is a single flash object within a page, which is ideal for standalone applications.  For use of Flash multiple times within a page, see WikiFlash.
+<pre>
+  #FLASH name=filename.swf|width=NNN|height=NNN
+</pre>
+
+====== Related Entries =
+ WikiStyleGuide
+ WikiMarkup
+ WikiTOCs
+ WikiHeadings
+ WikiLists
+ WikiTables
+ WikiImages
+ WikiURLs
+ WikiTemplates
+ WikiGallery
+ WikiFlash
+ÿþ3minorÿþ31ÿþ3newauthorÿþ30ÿþ2usernameÿþ2RobertKurcinaÿþ2hostÿþ2localhostÿþ2revisionÿþ253ÿþ2tscreateÿþ21178782941ÿþ2idÿþ21104ÿþ2keeptsÿþ21195528173ÿþ1tsÿþ21195700088ÿþ2ipÿþ2127.0.0.1ÿþ2versionÿþ21ÿþ2nameÿþ2text_defaultÿþ2dataÿþ2summaryÿþ3*ÿþ3textÿþ3= Wiki Text Formatting Rules =
+The following is an overview of the [http://www.usemod.com/cgi-bin/wiki.pl UseModWiki] text formatting rules for when editing a page. For examples without all the explanatory text, see WikiMarkup. To try these rules for yourself, please feel free to edit the SandBox page. 
+To see how any page is formatted, just follow the link "Edit text of this page" at the bottom of the page. 
+
+<toc 170>
+
+== Basic Syntax =
+The first character entered on a line often controls the formatting of the text on that line.  Repetition of the first character on the line generally increases the indentation or emphasis
+* <tt>" "</tt> space causes text to appear in a <tt>monospaced font where spaces are significant</tt>. 
+* <tt>":"</tt> colon causes text to be indented
+* <tt>"="</tt> equals - followed by a space - creates a heading, a trailing <tt>"="</tt> - preceded by a space - is required
+* <tt>"*"</tt> asterisk creates a bulleted list
+* <tt>"#"</tt> hash creates a numbered list
+* <tt>";"</tt> semicolon creates a <i>definition</i> list, a <tt>":"</tt> colon is required subsequently on the same line
+* <tt>"<nowiki>----</nowiki>"</tt> four hyphens creates a horizontal line
+
+=== Decoration =
+Entering text on a wiki can be done simply. Follow these guidelines:
+* Use tags <nowiki><b></nowiki><b>bold</b><nowiki></b></nowiki> and <nowiki><i></nowiki><i>italic</i><nowiki></i></nowiki> 
+* Use tag <nowiki><tt></nowiki><tt>for monospace text</tt><nowiki></tt></nowiki> (tt stands for typewriter text)
+
+=== Miscellaneous =
+* Create links to other pages by naming it using the WikiWord syntax; any 2 or more capitalized words placed together.
+* New pages can be created by using a <tt>WikiWord</tt>, saving the page, and then clicking on the hyperlink that was formed.
+* A line which ends in a backslash character (\) will be joined with the next line before most formatting rules are applied. This can be useful for breaking up long sections of text in line-sensitive sections (like lists or indented text).
+* Using paired <tt><nowiki><blockquote>..</blockquote></nowiki></tt> will throw a nice quotation marks images at the top left of the quote.
+
+== Advanced Syntax =
+* To quote text without applying the wiki formatting rules, enclose it within a <nowiki><nowiki></nowiki> ... <nowiki></nowiki></nowiki> section. Within a nowiki section, only HTML-quoting of special characters (<>&) will occur - no other formatting rules will be applied.
+* If raw-HTML sections are enabled (they are disabled by default), you can enter raw HTML code within an <html> ... </html> section. Note that <b>no</b> quoting is done, so you will need to use sequences like &amp;lt; if you want to display a < character.
+* Most of the formatting rules are order-independent. On rare occasions, the order of processing may be important. The rules are processed in the following order: raw HTML sections, HTML quoting, nowiki tags, backslash line joining, preformatted sections, paragraphs, lists and indented text, horizontal lines, italic/bold text, URLs, and finally ordinary WikiName links.
+
+=== Directives =
+* To redirect one wiki page to another, use the following syntax:
+<pre>
+  <nowiki>#REDIRECT TargetPage</nowiki>
+  <nowiki>#REDIRECT TargetPage/SubPage</nowiki>
+</pre>
+* To include a file that was added into the <tt><nowiki>$DataDir</nowiki></tt>:
+<pre>
+  <nowiki>#INCLUDE filename</nowiki>
+</pre>
+
+ #INCLUDE something.html
+
+* Magic Content Pages create content based upon input parameters.  The ListOfWantedPages are an example of Magic Content.  A list of modules can be had by providing <tt><nowiki>ModuleName=ListCommands</nowiki></tt>. The effects of the Magic Content won't show up until page is saved.
+<pre>
+  #MAGIC ModuleName param1=value1 param2=value2 ...
+</pre>
+
+* To list all of the sub pages of a parent page do the following, leaving <tt><nowiki>TargetPage</nowiki></tt> blank if this is for the current page being edited:
+<pre>
+  #SUBPAGES TargetPage
+</pre>
+
+* Flash SWF content can be inserted into place if three parameters - name, width, and height - are provided.  The defaults will be set if not given to name=ufo.swf, width=400 pixels, and height=300 pixels.  This is a single flash object within a page, which is ideal for standalone applications.  For use of Flash multiple times within a page, see WikiFlash.
+
+<pre>
+  #MAGIC Flash name=diceland.swf height=300 width=200
+</pre>
+
+== Related Entries =
+ WikiStyleGuide
+ WikiMarkup
+ WikiTOCs
+ WikiHeadings
+ WikiLists
+ WikiTables
+ WikiImages
+ WikiURLs
+ WikiTemplates
+ WikiGallery
+ WikiFlash
+ÿþ3newauthorÿþ30ÿþ3minorÿþ31ÿþ2hostÿþ2localhostÿþ2usernameÿþ2RobertKurcinaÿþ2revisionÿþ256ÿþ2idÿþ21130ÿþ2tscreateÿþ21178782941ÿþ2keeptsÿþ21195945547ÿþ1versionÿþ21ÿþ2ipÿþ2127.0.0.1ÿþ2tsÿþ21195945547ÿþ2nameÿþ2text_defaultÿþ2dataÿþ2summaryÿþ3*ÿþ3textÿþ3= Wiki Text Formatting Rules =
+The following is an overview of the [http://www.usemod.com/cgi-bin/wiki.pl UseModWiki] text formatting rules for when editing a page. For examples without all the explanatory text, see WikiMarkup. To try these rules for yourself, please feel free to edit the SandBox page. 
+To see how any page is formatted, just follow the link "Edit text of this page" at the bottom of the page. 
+
+<toc 170>
+
+== Basic Syntax =
+The first character entered on a line often controls the formatting of the text on that line.  Repetition of the first character on the line generally increases the indentation or emphasis
+* <tt>" "</tt> space causes text to appear in a <tt>monospaced font where spaces are significant</tt>. 
+* <tt>":"</tt> colon causes text to be indented
+* <tt>"="</tt> equals - followed by a space - creates a heading, a trailing <tt>"="</tt> - preceded by a space - is required
+* <tt>"*"</tt> asterisk creates a bulleted list
+* <tt>"#"</tt> hash creates a numbered list
+* <tt>";"</tt> semicolon creates a <i>definition</i> list, a <tt>":"</tt> colon is required subsequently on the same line
+* <tt>"<nowiki>----</nowiki>"</tt> four hyphens creates a horizontal line
+
+=== Decoration =
+Entering text on a wiki can be done simply. Follow these guidelines:
+* Use tags <nowiki><b></nowiki><b>bold</b><nowiki></b></nowiki> and <nowiki><i></nowiki><i>italic</i><nowiki></i></nowiki> 
+* Use tag <nowiki><tt></nowiki><tt>for monospace text</tt><nowiki></tt></nowiki> (tt stands for typewriter text)
+
+=== Miscellaneous =
+* Create links to other pages by naming it using the WikiWord syntax; any 2 or more capitalized words placed together.
+* New pages can be created by using a <tt>WikiWord</tt>, saving the page, and then clicking on the hyperlink that was formed.
+* A line which ends in a backslash character (\) will be joined with the next line before most formatting rules are applied. This can be useful for breaking up long sections of text in line-sensitive sections (like lists or indented text).
+* Using paired <tt><nowiki><blockquote>..</blockquote></nowiki></tt> will throw a nice quotation marks images at the top left of the quote.
+
+== Advanced Syntax =
+* To quote text without applying the wiki formatting rules, enclose it within a <nowiki><nowiki></nowiki> ... <nowiki></nowiki></nowiki> section. Within a nowiki section, only HTML-quoting of special characters (<>&) will occur - no other formatting rules will be applied.
+* If raw-HTML sections are enabled (they are disabled by default), you can enter raw HTML code within an <html> ... </html> section. Note that <b>no</b> quoting is done, so you will need to use sequences like &amp;lt; if you want to display a < character.
+* Most of the formatting rules are order-independent. On rare occasions, the order of processing may be important. The rules are processed in the following order: raw HTML sections, HTML quoting, nowiki tags, backslash line joining, preformatted sections, paragraphs, lists and indented text, horizontal lines, italic/bold text, URLs, and finally ordinary WikiName links.
+
+=== Directives =
+* To redirect one wiki page to another, use the following syntax:
+<pre>
+  <nowiki>#REDIRECT TargetPage</nowiki>
+  <nowiki>#REDIRECT TargetPage/SubPage</nowiki>
+</pre>
+* To include a file that was added into the <tt><nowiki>$DataDir</nowiki></tt>:
+<pre>
+  <nowiki>#INCLUDE filename</nowiki>
+</pre>
+
+ #INCLUDE something.html
+
+* Magic Content Pages create content based upon input parameters.  The ListOfWantedPages are an example of Magic Content.  A list of modules can be had by providing <tt><nowiki>ModuleName=ListCommands</nowiki></tt>. The effects of the Magic Content won't show up until page is saved.
+<pre>
+  #MAGIC ModuleName param1=value1 param2=value2 ...
+</pre>
+
+* To list all of the sub pages of a parent page do the following, leaving <tt><nowiki>TargetPage</nowiki></tt> blank if this is for the current page being edited:
+<pre>
+  #SUBPAGES TargetPage
+</pre>
+
+* Flash SWF content can be inserted into place if three parameters - name, width, and height - are provided.  The defaults will be set if not given to name=ufo.swf, width=400 pixels, and height=300 pixels.  This is a single flash object within a page, which is ideal for standalone applications.  For use of Flash multiple times within a page, see WikiFlash.
+
+<pre>
+  #MAGIC Flash name=diceland.swf height=300 width=200
+</pre>
+
+== Related Entries =
+{{template:RelatedEntries/WikiEditing}}
+ÿþ3minorÿþ31ÿþ3newauthorÿþ31ÿþ2usernameÿþ2RobertKurcinaÿþ2hostÿþ2localhostÿþ2revisionÿþ257ÿþ2tscreateÿþ21178782941ÿþ2idÿþ21149ÿþ2keeptsÿþ21222414690ÿþ1tsÿþ21222414690ÿþ2ipÿþ2127.0.0.1ÿþ2versionÿþ21ÿþ2nameÿþ2text_defaultÿþ2dataÿþ2summaryÿþ3Adding information regarding Auto Signature.ÿþ3textÿþ3= Wiki Text Formatting Rules =
+The following is an overview of the [http://www.usemod.com/cgi-bin/wiki.pl UseModWiki] text formatting rules for when editing a page. For examples without all the explanatory text, see WikiMarkup. To try these rules for yourself, please feel free to edit the SandBox page. 
+To see how any page is formatted, just follow the link "Edit text of this page" at the bottom of the page. 
+
+<toc 170>
+
+== Basic Syntax =
+The first character entered on a line often controls the formatting of the text on that line.  Repetition of the first character on the line generally increases the indentation or emphasis
+* <tt>" "</tt> space causes text to appear in a <tt>monospaced font where spaces are significant</tt>. 
+* <tt>":"</tt> colon causes text to be indented
+* <tt>"="</tt> equals - followed by a space - creates a heading, a trailing <tt>"="</tt> - preceded by a space - is required
+* <tt>"*"</tt> asterisk creates a bulleted list
+* <tt>"#"</tt> hash creates a numbered list
+* <tt>";"</tt> semicolon creates a <i>definition</i> list, a <tt>":"</tt> colon is required subsequently on the same line
+* <tt>"<nowiki>----</nowiki>"</tt> four hyphens creates a horizontal line
+
+=== Decoration =
+Entering text on a wiki can be done simply. Follow these guidelines:
+* Use tags <nowiki><b></nowiki><b>bold</b><nowiki></b></nowiki> and <nowiki><i></nowiki><i>italic</i><nowiki></i></nowiki> 
+* Use tag <nowiki><tt></nowiki><tt>for monospace text</tt><nowiki></tt></nowiki> (tt stands for typewriter text)
+
+=== Miscellaneous =
+* Create links to other pages by naming it using the WikiWord syntax; any 2 or more capitalized words placed together.
+* New pages can be created by using a <tt>WikiWord</tt>, saving the page, and then clicking on the hyperlink that was formed.
+* A line which ends in a backslash character (\) will be joined with the next line before most formatting rules are applied. This can be useful for breaking up long sections of text in line-sensitive sections (like lists or indented text).
+* Using paired <tt><nowiki><blockquote>..</blockquote></nowiki></tt> will throw a nice quotation marks images at the top left of the quote.
+* Using <tt><nowiki>~~~~</nowiki></tt> will sign your name if you've signed in via the [LocalWiki:action=editprefs Preferences].  This is useful for quick comments.
+* Using <tt><nowiki>$$$$</nowiki></tt> will sign your name followed by a timestamp if you've signed in via the [LocalWiki:action=editprefs Preferences]
+
+== Advanced Syntax =
+* To quote text without applying the wiki formatting rules, enclose it within a <nowiki><nowiki></nowiki> ... <nowiki></nowiki></nowiki> section. Within a nowiki section, only HTML-quoting of special characters (<>&) will occur - no other formatting rules will be applied.
+* If raw-HTML sections are enabled (they are disabled by default), you can enter raw HTML code within an <html> ... </html> section. Note that <b>no</b> quoting is done, so you will need to use sequences like &amp;lt; if you want to display a < character.
+* Most of the formatting rules are order-independent. On rare occasions, the order of processing may be important. The rules are processed in the following order: raw HTML sections, HTML quoting, nowiki tags, backslash line joining, preformatted sections, paragraphs, lists and indented text, horizontal lines, italic/bold text, URLs, and finally ordinary WikiName links.
+
+=== Directives =
+* To redirect one wiki page to another, use the following syntax:
+<pre>
+  <nowiki>#REDIRECT TargetPage</nowiki>
+  <nowiki>#REDIRECT TargetPage/SubPage</nowiki>
+</pre>
+* To include a file that was added into the <tt><nowiki>$DataDir</nowiki></tt>:
+<pre>
+  <nowiki>#INCLUDE filename</nowiki>
+</pre>
+
+ #INCLUDE something.html
+
+* Magic Content Pages create content based upon input parameters.  The ListOfWantedPages are an example of Magic Content.  A list of modules can be had by providing <tt><nowiki>ModuleName=ListCommands</nowiki></tt>. The effects of the Magic Content won't show up until page is saved.
+<pre>
+  #MAGIC ModuleName param1=value1 param2=value2 ...
+</pre>
+
+* To list all of the sub pages of a parent page do the following, leaving <tt><nowiki>TargetPage</nowiki></tt> blank if this is for the current page being edited:
+<pre>
+  #SUBPAGES TargetPage
+</pre>
+
+* Flash SWF content can be inserted into place if three parameters - name, width, and height - are provided.  The defaults will be set if not given to name=ufo.swf, width=400 pixels, and height=300 pixels.  This is a single flash object within a page, which is ideal for standalone applications.  For use of Flash multiple times within a page, see WikiFlash.
+
+<pre>
+  #MAGIC Flash name=diceland.swf height=300 width=200
+</pre>
+
+== Related Entries =
+{{template:RelatedEntries/WikiEditing}}
+ÿþ3newauthorÿþ31ÿþ3minorÿþ30ÿþ2hostÿþ2localhostÿþ2usernameÿþ2RobertKurcinaÿþ2revisionÿþ258ÿþ2idÿþ21250ÿþ2tscreateÿþ21178782941ÿþ2keeptsÿþ21222414719ÿþ1versionÿþ21ÿþ2ipÿþ2127.0.0.1ÿþ2tsÿþ21222414719ÿþ2nameÿþ2text_defaultÿþ2dataÿþ2summaryÿþ3*ÿþ3textÿþ3= Wiki Text Formatting Rules =
+The following is an overview of the [http://www.usemod.com/cgi-bin/wiki.pl UseModWiki] text formatting rules for when editing a page. For examples without all the explanatory text, see WikiMarkup. To try these rules for yourself, please feel free to edit the SandBox page. 
+To see how any page is formatted, just follow the link "Edit text of this page" at the bottom of the page. 
+
+<toc 170>
+
+== Basic Syntax =
+The first character entered on a line often controls the formatting of the text on that line.  Repetition of the first character on the line generally increases the indentation or emphasis
+* <tt>" "</tt> space causes text to appear in a <tt>monospaced font where spaces are significant</tt>. 
+* <tt>":"</tt> colon causes text to be indented
+* <tt>"="</tt> equals - followed by a space - creates a heading, a trailing <tt>"="</tt> - preceded by a space - is required
+* <tt>"*"</tt> asterisk creates a bulleted list
+* <tt>"#"</tt> hash creates a numbered list
+* <tt>";"</tt> semicolon creates a <i>definition</i> list, a <tt>":"</tt> colon is required subsequently on the same line
+* <tt>"<nowiki>----</nowiki>"</tt> four hyphens creates a horizontal line
+
+=== Decoration =
+Entering text on a wiki can be done simply. Follow these guidelines:
+* Use tags <nowiki><b></nowiki><b>bold</b><nowiki></b></nowiki> and <nowiki><i></nowiki><i>italic</i><nowiki></i></nowiki> 
+* Use tag <nowiki><tt></nowiki><tt>for monospace text</tt><nowiki></tt></nowiki> (tt stands for typewriter text)
+
+=== Miscellaneous =
+* Create links to other pages by naming it using the WikiWord syntax; any 2 or more capitalized words placed together.
+* New pages can be created by using a <tt>WikiWord</tt>, saving the page, and then clicking on the hyperlink that was formed.
+* A line which ends in a backslash character (\) will be joined with the next line before most formatting rules are applied. This can be useful for breaking up long sections of text in line-sensitive sections (like lists or indented text).
+* Using paired <tt><nowiki><blockquote>..</blockquote></nowiki></tt> will throw a nice quotation marks images at the top left of the quote.
+* Using <tt><nowiki>~~~~</nowiki></tt> will sign your name if you've signed in via the [LocalWiki:action=editprefs Preferences].  This is useful for quick comments.
+* Using <tt><nowiki>$$$$</nowiki></tt> will sign your name followed by a timestamp if you've signed in via the [LocalWiki:action=editprefs Preferences].
+
+== Advanced Syntax =
+* To quote text without applying the wiki formatting rules, enclose it within a <nowiki><nowiki></nowiki> ... <nowiki></nowiki></nowiki> section. Within a nowiki section, only HTML-quoting of special characters (<>&) will occur - no other formatting rules will be applied.
+* If raw-HTML sections are enabled (they are disabled by default), you can enter raw HTML code within an <html> ... </html> section. Note that <b>no</b> quoting is done, so you will need to use sequences like &amp;lt; if you want to display a < character.
+* Most of the formatting rules are order-independent. On rare occasions, the order of processing may be important. The rules are processed in the following order: raw HTML sections, HTML quoting, nowiki tags, backslash line joining, preformatted sections, paragraphs, lists and indented text, horizontal lines, italic/bold text, URLs, and finally ordinary WikiName links.
+
+=== Directives =
+* To redirect one wiki page to another, use the following syntax:
+<pre>
+  <nowiki>#REDIRECT TargetPage</nowiki>
+  <nowiki>#REDIRECT TargetPage/SubPage</nowiki>
+</pre>
+* To include a file that was added into the <tt><nowiki>$DataDir</nowiki></tt>:
+<pre>
+  <nowiki>#INCLUDE filename</nowiki>
+</pre>
+
+ #INCLUDE something.html
+
+* Magic Content Pages create content based upon input parameters.  The ListOfWantedPages are an example of Magic Content.  A list of modules can be had by providing <tt><nowiki>ModuleName=ListCommands</nowiki></tt>. The effects of the Magic Content won't show up until page is saved.
+<pre>
+  #MAGIC ModuleName param1=value1 param2=value2 ...
+</pre>
+
+* To list all of the sub pages of a parent page do the following, leaving <tt><nowiki>TargetPage</nowiki></tt> blank if this is for the current page being edited:
+<pre>
+  #SUBPAGES TargetPage
+</pre>
+
+* Flash SWF content can be inserted into place if three parameters - name, width, and height - are provided.  The defaults will be set if not given to name=ufo.swf, width=400 pixels, and height=300 pixels.  This is a single flash object within a page, which is ideal for standalone applications.  For use of Flash multiple times within a page, see WikiFlash.
+
+<pre>
+  #MAGIC Flash name=diceland.swf height=300 width=200
+</pre>
+
+== Related Entries =
+{{template:RelatedEntries/WikiEditing}}
+ÿþ3minorÿþ30ÿþ3newauthorÿþ30ÿþ2usernameÿþ2RobertKurcinaÿþ2hostÿþ2localhostÿþ2revisionÿþ259ÿþ2tscreateÿþ21178782941ÿþ2idÿþ21250ÿþ2keeptsÿþ21222627903ÿþ1tsÿþ21222627903ÿþ2ipÿþ2127.0.0.1ÿþ2versionÿþ21ÿþ2nameÿþ2text_defaultÿþ2dataÿþ2summaryÿþ3*ÿþ3textÿþ3= Wiki Text Formatting Rules =
+The following is an overview of the [http://www.usemod.com/cgi-bin/wiki.pl UseModWiki] text formatting rules for when editing a page. For examples without all the explanatory text, see WikiMarkup. To try these rules for yourself, please feel free to edit the SandBox page. 
+To see how any page is formatted, just follow the link "Edit text of this page" at the bottom of the page. 
+
+<toc 170>
+
+== Basic Syntax =
+The first character entered on a line often controls the formatting of the text on that line.  Repetition of the first character on the line generally increases the indentation or emphasis
+* <tt>" "</tt> space causes text to appear in a <tt>monospaced font where spaces are significant</tt>. 
+* <tt>":"</tt> colon causes text to be indented
+* <tt>"="</tt> equals - followed by a space - creates a heading, a trailing <tt>"="</tt> - preceded by a space - is required
+* <tt>"*"</tt> asterisk creates a bulleted list
+* <tt>"#"</tt> hash creates a numbered list
+* <tt>";"</tt> semicolon creates a <i>definition</i> list, a <tt>":"</tt> colon is required subsequently on the same line
+* <tt>"<nowiki>----</nowiki>"</tt> four hyphens creates a horizontal line
+
+=== Decoration =
+Entering text on a wiki can be done simply. Follow these guidelines:
+* Use tags <nowiki><b></nowiki><b>bold</b><nowiki></b></nowiki> and <nowiki><i></nowiki><i>italic</i><nowiki></i></nowiki> 
+* Use tag <nowiki><tt></nowiki><tt>for monospace text</tt><nowiki></tt></nowiki> (tt stands for typewriter text)
+
+=== Miscellaneous =
+* Create links to other pages by naming it using the WikiWord syntax; any 2 or more capitalized words placed together.
+* New pages can be created by using a <tt>WikiWord</tt>, saving the page, and then clicking on the hyperlink that was formed.
+* A line which ends in a backslash character (\) will be joined with the next line before most formatting rules are applied. This can be useful for breaking up long sections of text in line-sensitive sections (like lists or indented text).
+* Using paired <tt><nowiki><blockquote>..</blockquote></nowiki></tt> will throw a nice quotation marks images at the top left of the quote.
+* Using <tt><nowiki>~~~~</nowiki></tt> will sign your name if you've signed in via the [LocalWiki:action=editprefs Preferences].  This is useful for quick comments.
+* Using <tt><nowiki>$$$$</nowiki></tt> will sign your name followed by a timestamp if you've signed in via the [LocalWiki:action=editprefs Preferences].
+
+== Advanced Syntax =
+* To quote text without applying the wiki formatting rules, enclose it within a <nowiki><nowiki></nowiki> ... <nowiki></nowiki></nowiki> section. Within a nowiki section, only HTML-quoting of special characters (<>&) will occur - no other formatting rules will be applied.
+* If raw-HTML sections are enabled (they are disabled by default), you can enter raw HTML code within an <html> ... </html> section. Note that <b>no</b> quoting is done, so you will need to use sequences like &amp;lt; if you want to display a < character.
+* Most of the formatting rules are order-independent. On rare occasions, the order of processing may be important. The rules are processed in the following order: raw HTML sections, HTML quoting, nowiki tags, backslash line joining, preformatted sections, paragraphs, lists and indented text, horizontal lines, italic/bold text, URLs, and finally ordinary WikiName links.
+
+=== Directives =
+* To redirect one wiki page to another, use the following syntax:
+<pre>
+  <nowiki>#REDIRECT TargetPage</nowiki>
+  <nowiki>#REDIRECT TargetPage/SubPage</nowiki>
+</pre>
+* To include a file that was added into the <tt><nowiki>$DataDir</nowiki></tt>:
+<pre>
+  <nowiki>#INCLUDE filename</nowiki>
+</pre>
+
+ #INCLUDE something.html
+
+* Magic Content Pages create content based upon input parameters.  The ListOfWantedPages are an example of Magic Content.  A list of modules can be had by providing <tt><nowiki>ModuleName=ListCommands</nowiki></tt>. The effects of the Magic Content won't show up until page is saved.
+<pre>
+  #MAGIC ModuleName param1=value1 param2=value2 ...
+</pre>
+
+* To list all of the sub pages of a parent page do the following, leaving <tt><nowiki>TargetPage</nowiki></tt> blank if this is for the current page being edited:
+<pre>
+  #SUBPAGES TargetPage
+</pre>
+
+* Flash SWF content can be inserted into place if three parameters - name, width, and height - are provided.  The defaults will be set if not given to name=ufo.swf, width=400 pixels, and height=300 pixels.  This is a single flash object within a page, which is ideal for standalone applications.  For use of Flash multiple times within a page, see WikiFlash.
+
+<pre>
+  #MAGIC Flash name=diceland.swf height=300 width=200
+</pre>
+
+{{template:RelatedEntries/WikiEditing}}
+ÿþ3newauthorÿþ31ÿþ3minorÿþ31ÿþ2hostÿþ2localhostÿþ2usernameÿþ2RobertKurcinaÿþ2revisionÿþ260ÿþ2idÿþ21261ÿþ2tscreateÿþ21178782941ÿþ2keeptsÿþ21222752241ÿþ1versionÿþ21ÿþ2ipÿþ2127.0.0.1ÿþ2tsÿþ21222752241ÿþ2nameÿþ2text_defaultÿþ2dataÿþ2summaryÿþ3*ÿþ3textÿþ3= Wiki Text Formatting Rules =
+The following is an overview of the [http://www.usemod.com/cgi-bin/wiki.pl UseModWiki] text formatting rules for when editing a page. For examples without all the explanatory text, see WikiMarkup. To try these rules for yourself, please feel free to edit the SandBox page. 
+To see how any page is formatted, just follow the link "Edit text of this page" at the bottom of the page. 
+
+{{toc}}
+
+== Basic Syntax =
+The first character entered on a line often controls the formatting of the text on that line.  Repetition of the first character on the line generally increases the indentation or emphasis
+* <tt>" "</tt> space causes text to appear in a <tt>monospaced font where spaces are significant</tt>. 
+* <tt>":"</tt> colon causes text to be indented
+* <tt>"="</tt> equals - followed by a space - creates a heading, a trailing <tt>"="</tt> - preceded by a space - is required
+* <tt>"*"</tt> asterisk creates a bulleted list
+* <tt>"#"</tt> hash creates a numbered list
+* <tt>";"</tt> semicolon creates a <i>definition</i> list, a <tt>":"</tt> colon is required subsequently on the same line
+* <tt>"<nowiki>----</nowiki>"</tt> four hyphens creates a horizontal line
+
+=== Decoration =
+Entering text on a wiki can be done simply. Follow these guidelines:
+* Use tags <nowiki><b></nowiki><b>bold</b><nowiki></b></nowiki> and <nowiki><i></nowiki><i>italic</i><nowiki></i></nowiki> 
+* Use tag <nowiki><tt></nowiki><tt>for monospace text</tt><nowiki></tt></nowiki> (tt stands for typewriter text)
+
+=== Miscellaneous =
+* Create links to other pages by naming it using the WikiWord syntax; any 2 or more capitalized words placed together.
+* New pages can be created by using a <tt>WikiWord</tt>, saving the page, and then clicking on the hyperlink that was formed.
+* A line which ends in a backslash character (\) will be joined with the next line before most formatting rules are applied. This can be useful for breaking up long sections of text in line-sensitive sections (like lists or indented text).
+* Using paired <tt><nowiki><blockquote>..</blockquote></nowiki></tt> will throw a nice quotation marks images at the top left of the quote.
+* Using <tt><nowiki>~~~~</nowiki></tt> will sign your name if you've signed in via the [LocalWiki:action=editprefs Preferences].  This is useful for quick comments.
+* Using <tt><nowiki>$$$$</nowiki></tt> will sign your name followed by a timestamp if you've signed in via the [LocalWiki:action=editprefs Preferences].
+
+== Advanced Syntax =
+* To quote text without applying the wiki formatting rules, enclose it within a <nowiki><nowiki></nowiki> ... <nowiki></nowiki></nowiki> section. Within a nowiki section, only HTML-quoting of special characters (<>&) will occur - no other formatting rules will be applied.
+* If raw-HTML sections are enabled (they are disabled by default), you can enter raw HTML code within an <html> ... </html> section. Note that <b>no</b> quoting is done, so you will need to use sequences like &amp;lt; if you want to display a < character.
+* Most of the formatting rules are order-independent. On rare occasions, the order of processing may be important. The rules are processed in the following order: raw HTML sections, HTML quoting, nowiki tags, backslash line joining, preformatted sections, paragraphs, lists and indented text, horizontal lines, italic/bold text, URLs, and finally ordinary WikiName links.
+
+=== Directives =
+* To redirect one wiki page to another, use the following syntax:
+<pre>
+  <nowiki>#REDIRECT TargetPage</nowiki>
+  <nowiki>#REDIRECT TargetPage/SubPage</nowiki>
+</pre>
+* To include a file that was added into the <tt><nowiki>$DataDir</nowiki></tt>:
+<pre>
+  <nowiki>#INCLUDE filename</nowiki>
+</pre>
+
+ #INCLUDE something.html
+
+* Magic Content Pages create content based upon input parameters.  The ListOfWantedPages are an example of Magic Content.  A list of modules can be had by providing <tt><nowiki>ModuleName=ListCommands</nowiki></tt>. The effects of the Magic Content won't show up until page is saved.
+<pre>
+  #MAGIC ModuleName param1=value1 param2=value2 ...
+</pre>
+
+* To list all of the sub pages of a parent page do the following, leaving <tt><nowiki>TargetPage</nowiki></tt> blank if this is for the current page being edited:
+<pre>
+  #SUBPAGES TargetPage
+</pre>
+
+* Flash SWF content can be inserted into place if three parameters - name, width, and height - are provided.  The defaults will be set if not given to name=ufo.swf, width=400 pixels, and height=300 pixels.  This is a single flash object within a page, which is ideal for standalone applications.  For use of Flash multiple times within a page, see WikiFlash.
+
+<pre>
+  #MAGIC Flash name=diceland.swf height=300 width=200
+</pre>
+
+{{template:RelatedEntries/WikiEditing}}
+ÿþ3minorÿþ31ÿþ3newauthorÿþ31ÿþ2usernameÿþ2RobertKurcinaÿþ2hostÿþ2localhostÿþ2revisionÿþ261ÿþ2tscreateÿþ21178782941ÿþ2idÿþ21278ÿþ2keeptsÿþ21222852082ÿþ1tsÿþ21222852082ÿþ2ipÿþ2127.0.0.1ÿþ2versionÿþ21ÿþ2nameÿþ2text_defaultÿþ2dataÿþ2summaryÿþ3*ÿþ3textÿþ3= Wiki Text Formatting Rules =
+The following is an overview of the [http://www.usemod.com/cgi-bin/wiki.pl UseModWiki] text formatting rules for when editing a page. For examples without all the explanatory text, see WikiMarkup. To try these rules for yourself, please feel free to edit the SandBox page. 
+To see how any page is formatted, just follow the link "Edit text of this page" at the bottom of the page. 
+
+{{toc}}
+
+== Basic Syntax =
+The first character entered on a line often controls the formatting of the text on that line.  Repetition of the first character on the line generally increases the indentation or emphasis
+* <tt>" "</tt> space causes text to appear in a <tt>monospaced font where spaces are significant</tt>. 
+* <tt>":"</tt> colon causes text to be indented
+* <tt>"="</tt> equals - followed by a space - creates a heading, a trailing <tt>"="</tt> - preceded by a space - is required
+* <tt>"*"</tt> asterisk creates a bulleted list
+* <tt>"#"</tt> hash creates a numbered list
+* <tt>";"</tt> semicolon creates a <i>definition</i> list, a <tt>":"</tt> colon is required subsequently on the same line
+* <tt>"<nowiki>----</nowiki>"</tt> four hyphens creates a horizontal line
+
+=== Decoration =
+Entering text on a wiki can be done simply. Follow these guidelines:
+* Use tags <nowiki><b></nowiki><b>bold</b><nowiki></b></nowiki> and <nowiki><i></nowiki><i>italic</i><nowiki></i></nowiki> 
+* Use tag <nowiki><tt></nowiki><tt>for monospace text</tt><nowiki></tt></nowiki> (tt stands for typewriter text)
+
+=== Miscellaneous =
+* Create links to other pages by naming it using the WikiWord syntax; any 2 or more capitalized words placed together.
+* New pages can be created by using a <tt>WikiWord</tt>, saving the page, and then clicking on the hyperlink that was formed.
+* A line which ends in a backslash character (\) will be joined with the next line before most formatting rules are applied. This can be useful for breaking up long sections of text in line-sensitive sections (like lists or indented text).
+* Using paired <tt><nowiki><blockquote>..</blockquote></nowiki></tt> will throw a nice quotation marks images at the top left of the quote.
+* Using <tt><nowiki>~~~~</nowiki></tt> will sign your name if you've signed in via the [LocalWiki:action=editprefs Preferences].  This is useful for quick comments.
+* Using <tt><nowiki>$$$$</nowiki></tt> will sign your name followed by a timestamp if you've signed in via the [LocalWiki:action=editprefs Preferences].
+
+== Advanced Syntax =
+* To quote text without applying the wiki formatting rules, enclose it within a <nowiki><nowiki></nowiki> ... <nowiki></nowiki></nowiki> section. Within a nowiki section, only HTML-quoting of special characters (<>&) will occur - no other formatting rules will be applied.
+* If raw-HTML sections are enabled (they are disabled by default), you can enter raw HTML code within an <html> ... </html> section. Note that <b>no</b> quoting is done, so you will need to use sequences like &amp;lt; if you want to display a < character.
+* Most of the formatting rules are order-independent. On rare occasions, the order of processing may be important. The rules are processed in the following order: raw HTML sections, HTML quoting, nowiki tags, backslash line joining, preformatted sections, paragraphs, lists and indented text, horizontal lines, italic/bold text, URLs, and finally ordinary WikiName links.
+
+=== Directives =
+* To redirect one wiki page to another, use the following syntax:
+<pre>
+  <nowiki>{{redirect:TargetPage}}</nowiki>
+  <nowiki>{{redirect:TargetPage/SubPage}}</nowiki>
+  <nowiki>{{redirect:[[Freelink]]}}</nowiki>
+</pre>
+* To include a file that was added into the <tt><nowiki>$DataDir</nowiki></tt>:
+<pre>
+  <nowiki>#INCLUDE filename</nowiki>
+</pre>
+
+ #INCLUDE something.html
+
+* Magic Content Pages create content based upon input parameters.  The ListOfWantedPages are an example of Magic Content.  A list of modules can be had by providing <tt><nowiki>ModuleName=ListCommands</nowiki></tt>. The effects of the Magic Content won't show up until page is saved.
+<pre>
+  #MAGIC ModuleName param1=value1 param2=value2 ...
+</pre>
+
+* To list all of the sub pages of a parent page do the following, leaving <tt><nowiki>TargetPage</nowiki></tt> blank if this is for the current page being edited:
+<pre>
+  {{subpages:TargetPage}}
+</pre>
+
+* Flash SWF content can be inserted into place if three parameters - name, width, and height - are provided.  The defaults will be set if not given to name=ufo.swf, width=400 pixels, and height=300 pixels.  This is a single flash object within a page, which is ideal for standalone applications.  For use of Flash multiple times within a page, see WikiFlash.
+
+<pre>
+  #MAGIC Flash name=diceland.swf height=300 width=200
+</pre>
+
+{{template:RelatedEntries/WikiEditing}}
+ÿþ3newauthorÿþ31ÿþ3minorÿþ30ÿþ2hostÿþ2localhostÿþ2usernameÿþ2RobertKurcinaÿþ2revisionÿþ262ÿþ2idÿþ21293ÿþ2tscreateÿþ21178782941ÿþ2keeptsÿþ21222852230ÿþ1versionÿþ21ÿþ2ipÿþ2127.0.0.1ÿþ2tsÿþ21222852230ÿþ2nameÿþ2text_defaultÿþ2dataÿþ2summaryÿþ3*ÿþ3textÿþ3= Wiki Text Formatting Rules =
+The following is an overview of the [http://www.usemod.com/cgi-bin/wiki.pl UseModWiki] text formatting rules for when editing a page. For examples without all the explanatory text, see WikiMarkup. To try these rules for yourself, please feel free to edit the SandBox page. 
+To see how any page is formatted, just follow the link "Edit text of this page" at the bottom of the page. 
+
+{{toc}}
+
+== Basic Syntax =
+The first character entered on a line often controls the formatting of the text on that line.  Repetition of the first character on the line generally increases the indentation or emphasis
+* <tt>" "</tt> space causes text to appear in a <tt>monospaced font where spaces are significant</tt>. 
+* <tt>":"</tt> colon causes text to be indented
+* <tt>"="</tt> equals - followed by a space - creates a heading, a trailing <tt>"="</tt> - preceded by a space - is required
+* <tt>"*"</tt> asterisk creates a bulleted list
+* <tt>"#"</tt> hash creates a numbered list
+* <tt>";"</tt> semicolon creates a <i>definition</i> list, a <tt>":"</tt> colon is required subsequently on the same line
+* <tt>"<nowiki>----</nowiki>"</tt> four hyphens creates a horizontal line
+
+=== Decoration =
+Entering text on a wiki can be done simply. Follow these guidelines:
+* Use tags <nowiki><b></nowiki><b>bold</b><nowiki></b></nowiki> and <nowiki><i></nowiki><i>italic</i><nowiki></i></nowiki> 
+* Use tag <nowiki><tt></nowiki><tt>for monospace text</tt><nowiki></tt></nowiki> (tt stands for typewriter text)
+
+=== Miscellaneous =
+* Create links to other pages by naming it using the WikiWord syntax; any 2 or more capitalized words placed together.
+* New pages can be created by using a <tt>WikiWord</tt>, saving the page, and then clicking on the hyperlink that was formed.
+* A line which ends in a backslash character (\) will be joined with the next line before most formatting rules are applied. This can be useful for breaking up long sections of text in line-sensitive sections (like lists or indented text).
+* Using paired <tt><nowiki><blockquote>..</blockquote></nowiki></tt> will throw a nice quotation marks images at the top left of the quote.
+* Using <tt><nowiki>~~~~</nowiki></tt> will sign your name if you've signed in via the [LocalWiki:action=editprefs Preferences].  This is useful for quick comments.
+* Using <tt><nowiki>$$$$</nowiki></tt> will sign your name followed by a timestamp if you've signed in via the [LocalWiki:action=editprefs Preferences].
+
+== Advanced Syntax =
+* To quote text without applying the wiki formatting rules, enclose it within a <nowiki><nowiki></nowiki> ... <nowiki></nowiki></nowiki> section. Within a nowiki section, only HTML-quoting of special characters (<>&) will occur - no other formatting rules will be applied.
+* If raw-HTML sections are enabled (they are disabled by default), you can enter raw HTML code within an <html> ... </html> section. Note that <b>no</b> quoting is done, so you will need to use sequences like &amp;lt; if you want to display a < character.
+* Most of the formatting rules are order-independent. On rare occasions, the order of processing may be important. The rules are processed in the following order: raw HTML sections, HTML quoting, nowiki tags, backslash line joining, preformatted sections, paragraphs, lists and indented text, horizontal lines, italic/bold text, URLs, and finally ordinary WikiName links.
+
+=== Directives =
+* To redirect one wiki page to another, use the following syntax:
+<pre>
+  <nowiki>{{redirect:TargetPage}}</nowiki>
+  <nowiki>{{redirect:TargetPage/SubPage}}</nowiki>
+  <nowiki>{{redirect:[[Freelink]]}}</nowiki>
+</pre>
+* To include a file that was added into the <tt><nowiki>$DataDir</nowiki></tt>:
+<pre>
+  <nowiki>{{include:filename}}</nowiki>
+</pre>
+
+ {{include:something.html}}
+
+* Magic Content Pages create content based upon input parameters.  The ListOfWantedPages are an example of Magic Content.  A list of modules can be had by providing <tt><nowiki>ModuleName=ListCommands</nowiki></tt>. The effects of the Magic Content won't show up until page is saved.
+<pre>
+  #MAGIC ModuleName param1=value1 param2=value2 ...
+</pre>
+
+* To list all of the sub pages of a parent page do the following, leaving <tt><nowiki>TargetPage</nowiki></tt> blank if this is for the current page being edited:
+<pre>
+  {{subpages:TargetPage}}
+</pre>
+
+* Flash SWF content can be inserted into place if three parameters - name, width, and height - are provided.  The defaults will be set if not given to name=ufo.swf, width=400 pixels, and height=300 pixels.  This is a single flash object within a page, which is ideal for standalone applications.  For use of Flash multiple times within a page, see WikiFlash.
+
+<pre>
+  #MAGIC Flash name=diceland.swf height=300 width=200
+</pre>
+
+{{template:RelatedEntries/WikiEditing}}
+ÿþ3minorÿþ30ÿþ3newauthorÿþ30ÿþ2usernameÿþ2RobertKurcinaÿþ2hostÿþ2localhostÿþ2revisionÿþ263ÿþ2tscreateÿþ21178782941ÿþ2idÿþ21293ÿþ2keeptsÿþ21222853357ÿþ1tsÿþ21222853357ÿþ2ipÿþ2127.0.0.1ÿþ2versionÿþ21ÿþ2nameÿþ2text_defaultÿþ2dataÿþ2summaryÿþ3*ÿþ3textÿþ3= Wiki Text Formatting Rules =
+The following is an overview of the [http://www.usemod.com/cgi-bin/wiki.pl UseModWiki] text formatting rules for when editing a page. For examples without all the explanatory text, see WikiMarkup. To try these rules for yourself, please feel free to edit the SandBox page. 
+To see how any page is formatted, just follow the link "Edit text of this page" at the bottom of the page. 
+
+{{toc}}
+
+== Basic Syntax =
+The first character entered on a line often controls the formatting of the text on that line.  Repetition of the first character on the line generally increases the indentation or emphasis
+* <tt>" "</tt> space causes text to appear in a <tt>monospaced font where spaces are significant</tt>. 
+* <tt>":"</tt> colon causes text to be indented
+* <tt>"="</tt> equals - followed by a space - creates a heading, a trailing <tt>"="</tt> - preceded by a space - is required
+* <tt>"*"</tt> asterisk creates a bulleted list
+* <tt>"#"</tt> hash creates a numbered list
+* <tt>";"</tt> semicolon creates a <i>definition</i> list, a <tt>":"</tt> colon is required subsequently on the same line
+* <tt>"<nowiki>----</nowiki>"</tt> four hyphens creates a horizontal line
+
+=== Decoration =
+Entering text on a wiki can be done simply. Follow these guidelines:
+* Use tags <nowiki><b></nowiki><b>bold</b><nowiki></b></nowiki> and <nowiki><i></nowiki><i>italic</i><nowiki></i></nowiki> 
+* Use tag <nowiki><tt></nowiki><tt>for monospace text</tt><nowiki></tt></nowiki> (tt stands for typewriter text)
+
+=== Miscellaneous =
+* Create links to other pages by naming it using the WikiWord syntax; any 2 or more capitalized words placed together.
+* New pages can be created by using a <tt>WikiWord</tt>, saving the page, and then clicking on the hyperlink that was formed.
+* A line which ends in a backslash character (\) will be joined with the next line before most formatting rules are applied. This can be useful for breaking up long sections of text in line-sensitive sections (like lists or indented text).
+* Using paired <tt><nowiki><blockquote>..</blockquote></nowiki></tt> will throw a nice quotation marks images at the top left of the quote.
+* Using <tt><nowiki>~~~~</nowiki></tt> will sign your name if you've signed in via the [LocalWiki:action=editprefs Preferences].  This is useful for quick comments.
+* Using <tt><nowiki>$$$$</nowiki></tt> will sign your name followed by a timestamp if you've signed in via the [LocalWiki:action=editprefs Preferences].
+
+== Advanced Syntax =
+* To quote text without applying the wiki formatting rules, enclose it within a <nowiki><nowiki></nowiki> ... <nowiki></nowiki></nowiki> section. Within a nowiki section, only HTML-quoting of special characters (<>&) will occur - no other formatting rules will be applied.
+* If raw-HTML sections are enabled (they are disabled by default), you can enter raw HTML code within an <html> ... </html> section. Note that <b>no</b> quoting is done, so you will need to use sequences like &amp;lt; if you want to display a < character.
+* Most of the formatting rules are order-independent. On rare occasions, the order of processing may be important. The rules are processed in the following order: raw HTML sections, HTML quoting, nowiki tags, backslash line joining, preformatted sections, paragraphs, lists and indented text, horizontal lines, italic/bold text, URLs, and finally ordinary WikiName links.
+
+=== Directives =
+* To redirect one wiki page to another, use the following syntax:
+<pre>
+  <nowiki>{{redirect:TargetPage}}</nowiki>
+  <nowiki>{{redirect:TargetPage/SubPage}}</nowiki>
+  <nowiki>{{redirect:[[Freelink]]}}</nowiki>
+</pre>
+* To include a file that was added into the <tt><nowiki>$DataDir</nowiki></tt>:
+<pre>
+  <nowiki>{{include:filename}}</nowiki>
+</pre>
+
+ {{include:something.html}}
+
+* Magic Content Pages create content based upon input parameters.  The ListOfWantedPages are an example of Magic Content.  A list of modules can be had by providing <tt><nowiki>ModuleName=ListCommands</nowiki></tt>. The effects of the Magic Content won't show up until page is saved.
+<pre>
+  {{command: ModuleName param1=value1 param2=value2 ...}}
+</pre>
+
+* To list all of the sub pages of a parent page do the following, leaving <tt><nowiki>TargetPage</nowiki></tt> blank if this is for the current page being edited:
+<pre>
+  {{subpages:TargetPage}}
+</pre>
+
+* Flash SWF content can be inserted into place if three parameters - name, width, and height - are provided.  The defaults will be set if not given to name=ufo.swf, width=400 pixels, and height=300 pixels.  This is a single flash object within a page, which is ideal for standalone applications.  For use of Flash multiple times within a page, see WikiFlash.
+
+<pre>
+  {{command: Flash name=diceland.swf height=300 width=200}}
+</pre>
+
+{{template:RelatedEntries/WikiEditing}}
+ÿþ3newauthorÿþ30ÿþ3minorÿþ31ÿþ2hostÿþ2localhostÿþ2usernameÿþ2RobertKurcinaÿþ2revisionÿþ264ÿþ2idÿþ21293ÿþ2tscreateÿþ21178782941ÿþ2keeptsÿþ21223011244

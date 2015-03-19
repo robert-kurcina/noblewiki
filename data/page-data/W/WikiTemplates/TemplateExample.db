@@ -1,0 +1,15 @@
+versionÿþ13ÿþ1tsÿþ11222570429ÿþ1cache_oldmajorÿþ18ÿþ1cache_oldauthorÿþ17ÿþ1cache_diff_default_authorÿþ1<div id=wikidiffdiv><table id=wikidifftable><tr valign=top><td class="diff-header">Paragraph 3</td><td class="diff-vertical">&nbsp;</td><td class="diff-header">Paragraph 3</td></tr><tr valign=top><td class="diff-para-changed"><span class="diff-span-ident">||Image|</span><span class="diff-span-ident">|$VARIABLE1$|</span><span class="diff-span-ident">|<br>
+</span></td><td class="diff-vertical"></td><td class="diff-para-changed"><span class="diff-span-ident">||Image|</span><span class="diff-span-added">width=100|class=first|</span><span class="diff-span-ident">|$VARIABLE1$|</span><span class="diff-span-added">align=left |</span><span class="diff-span-ident">|<br>
+</span></td></tr><tr valign=top><td class="diff-header">Paragraph 7</td><td class="diff-vertical">&nbsp;</td><td class="diff-header">Paragraph 7</td></tr><tr valign=top><td class="diff-para-changed"><span class="diff-span-ident">||bracketed url ||$VARIABLE5$</span><span class="diff-span-deleted">}</span><span class="diff-span-ident">||<br>
+</span></td><td class="diff-vertical"></td><td class="diff-para-changed"><span class="diff-span-ident">||bracketed url ||$VARIABLE5$</span><span class="diff-span-ident">||<br>
+</span></td></tr></table></div>ÿþ1revisionÿþ19ÿþ1tscreateÿþ11179982863ÿþ1text_defaultÿþ1versionÿþ21ÿþ2ipÿþ2127.0.0.1ÿþ2tsÿþ21222570429ÿþ2nameÿþ2text_defaultÿþ2dataÿþ2summaryÿþ3*ÿþ3textÿþ3 
+
+!!!!EXAMPLE Sub-page Template!!
+||Image|width=100|class=first||$VARIABLE1$|align=left ||
+||link||$VARIABLE2$||
+||my sub-page||$VARIABLE3$||
+||your sub-page ||$VARIABLE4$ ||
+||bracketed url ||$VARIABLE5$||
+ÿþ3newauthorÿþ30ÿþ3minorÿþ30ÿþ2usernameÿþ2RobertKurcinaÿþ2hostÿþ2localhostÿþ2revisionÿþ29ÿþ2tscreateÿþ21179982863ÿþ2idÿþ21257ÿþ2keeptsÿþ21222570429ÿþ1cache_diff_default_majorÿþ11ÿþ1cache_diff_default_minorÿþ1<div id=wikidiffdiv><table id=wikidifftable><tr valign=top><td class="diff-header">Paragraph 7</td><td class="diff-vertical">&nbsp;</td><td class="diff-header">Paragraph 7</td></tr><tr valign=top><td class="diff-para-changed"><span class="diff-span-ident">||bracketed url ||$VARIABLE5$</span><span class="diff-span-deleted">}</span><span class="diff-span-ident">||<br>
+</span></td><td class="diff-vertical"></td><td class="diff-para-changed"><span class="diff-span-ident">||bracketed url ||$VARIABLE5$</span><span class="diff-span-ident">||<br>
+</span></td></tr></table></div>

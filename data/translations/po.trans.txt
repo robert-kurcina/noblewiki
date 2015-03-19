@@ -1,0 +1,415 @@
+# Polish translation by Krzysztof P. Jasiutowicz <kpjas@ceti.pl>
+# RecentChanges
+# Ostatnie zmiany
+%Translate = split('\n',<<END_OF_TRANSLATION);
+Could not create %s
+Nie mo¿na utworzyæ %s
+Showing revision %s
+Pokazujê wersjê %s
+Revision %s not available
+Wersja %s niedostêpna
+showing current revision instead
+pokazujê aktualn± wersjê zamiast tego
+Updates since %s
+Uaktualnienia od %s
+Updates in the last %s day
+Uaktualnienia w ci±gu %s dnia
+Updates in the last %s days
+Uaktualnienia w ci±gu %s dni
+Could not open %s log file
+Nie mo¿na otworzyæ %s plik logu
+Error was
+B±d to
+Note: This error is normal if no changes have been made.
+Uwaga: Ten b±d wystêpuje je¶li nie dokonano zmian.
+Could not open old %s log file
+Nie mo¿na otworzyæ dawnego %s pliku log
+for %s only
+tylko do %
+%s day
+%s dzieñ
+%s days
+%s dni
+List new changes starting from
+Wypisz nowe zmiany zaczynaj±c od
+No updates since %s
+Bez zmian od %s
+Page generated %s
+Strona utworzona %s
+(edit)
+(edytuj)
+(diff)
+(dokonane zmiany)
+changes
+zmian(y)
+History of %s
+% Historia zmian
+Revision %s
+Wersja %s
+View
+Zobacz
+Edit
+Edycja
+Diff
+
+by
+-
+Preferences
+Opcje
+Random Page
+Strona wybrana losowo
+ID %s
+%s ID
+from %s
+z %s
+[Home]
+[Strona domowa]
+redirected from %s
+przekierowanie z %s
+Edit revision %s of this page
+Edytuj wersjê %s tej strony
+Edit text of this page
+Edycja tej strony
+This page is read-only
+To strona tylko do odczytu
+View other revisions
+Zobacz inne wersje
+View current revision
+Zobacz aktualn± wersjê
+Last edited
+Ostatnio zmieniona :
+Edited
+Zmieniona
+Warning
+Ostrze¿enie
+Database is stored in temporary directory %s
+Baza danych jest utrzymywana w katalogu tymczasowym %s
+Search:
+Szukaj:
+Your browser should go to the %s page.
+Przegl±darka powinna przej¶æ do strony %s.
+If it does not, click %s to continue.
+W przeciwnym razie, kliknij %s by przej¶æ.
+Thanks for editing...
+Dziêkujê za wprowadzenie zmian...
+Thank you for editing %s.
+%s dziêkujê za wprowadzenie zmian.
+Link to another page...
+Link do innej strony...
+Follow the %s link to continue.
+Kliknij link %s by przej¶æ dalej.
+alternate
+alternatywny
+search
+szukanie
+major diff
+du¿e zmiany
+minor diff
+mae zmiany
+author diff
+diff autorów
+major
+du¿ej
+minor
+maej
+author
+autor
+(The revisions are identical or unavailable.)
+(Wersje s± identyczne lub niedostêpne.)
+no other diffs
+nie ma innych diffów
+No diff available.
+Nie ma ¿adnego diffa.
+Difference (from revision %s to current revision)
+Ró¿nica (miêdzy wersj± %s i aktualn± wersj±)
+No diff available--this is the first %s revision.
+Nie ma historii zmian--to jest pierwsza %s wersja.
+Difference (from prior %s revision)
+Ró¿nica (w por. do wersji %s)
+Changed:
+Zmienione:
+Removed:
+Usuniête:
+Added:
+Dodane:
+Describe the new page here.
+Wpisz tutaj tre¶æ nowej strony.
+Bad page version (or corrupt page).
+Nieprawidowa wersja strony (lub strona uszkodzona).
+cant write %s
+nie mo¿na zapisaæ %s
+Page name is too long: %s
+Nazwa strony jest za duga: %s
+Page name may not contain space characters: %s
+Nazwa strony nie mo¿e zawieraæ spacji: %s
+Too many / characters in page %s
+Za du¿o znaków / na stronie %s
+Invalid Page %s (subpage without main page)
+Nieprawidowa strona %s (podstrona bez strony gównej)
+Invalid Page %s (missing subpage name)
+Nieprawidowa strona %s (brakuj±ca nazwa podstrony)
+Invalid Page %s (/ not allowed)
+Strona nieprawidowa %s (/ niedopuszczalne) 
+Invalid Page %s
+Strona nieprawidowa %s
+Invalid Page %s (must not end with .db)
+Strona nieprawidowa %s (nie mo¿e mieæ zakoñczenia .db)
+Invalid Page %s (must not end with .lck)
+Strona nieprawidowa %s (nie mo¿e mieæ zakoñczenia .lck)
+can not make %s
+nie mo¿na utworzyæ %s
+Can not open %s
+Nie mo¿na otworzyæ %s
+Invalid action parameter %s
+Nieprawidowy parametr %s do wykonania
+Invalid URL.
+Nieprawidowy URL.
+Editing Denied
+Edycja wzbroniona
+Editing not allowed: user, ip, or network is blocked.
+Editing wzbroniona: u¿ytownik, IP lub sieæ jest zablokowana. 
+Contact the wiki administrator for more information.
+Proszê skontaktowaæ siê z administratorem wiki.
+Editing not allowed: %s is read-only.
+Edycja wzbroniona: %s tylko do odczytu.
+Editing %s
+%s - Edycja
+Editing revision %s of
+Edycja wersji %s 
+Editing old revision %s.
+Edycja starej wersji %s.
+Saving this page will replace the latest revision with this text.
+Zapis tej strony zast±pi ostatni± wersjê tym tekstem.
+Edit Conflict!
+Konflikt edycji!
+(This is a new conflict)
+(Nowy konflikt)
+Someone saved this page after you started editing.
+Kto¶ zapisa tê stronê po rozpoczêciu edycji przez ciebie. 
+The top textbox contains the saved text.
+Górna ramka zawiera zapisany tekst.
+Only the text in the top textbox will be saved.
+Tylko tekst z gornej ramki zaostanie zapisany.
+Scroll down to see your edited text.
+Przesuñ w dó by zobaczyæ edytowany przez ciebie tekst.
+Last save time:
+Ostatni zapis:
+Current time is:
+Aktualny czas:
+Summary:
+Posumowanie:
+This change is a minor edit.
+To tylko drobna zmiana.
+Send email notification that %s has been changed.
+Wy¶lij zawiadomienie o zmianie %s.
+Save
+Zapisz
+Your user name is
+Twój identyfikator to
+Visit %s to set your user name.
+Wejd¼ w %s by zmieniæ identyfikator
+Preview
+Podgl±d
+This is the text you submitted:
+Ten tekst zosta umieszczony:
+Preview:
+Podgl±d:
+NOTE: This preview shows the revision of the other author.
+UWAGA: Ten widok pokazuje wersjê innego autora.
+Preview only, not yet saved
+Tylko podgl±d, niezapisane
+Editing Preferences
+Edycja Opcji
+User Information:
+Informacje o u¿ytowniku:
+Your User ID number: %s
+Twój numer identyfikacyjny: %s
+UserName:
+Nazwa u¿ytownika:
+(blank to remove, or valid page name)
+(puste pole by usun±æ lub wpisz poprawn± nazwê strony)
+Set Password:
+Ustalanie hasa:
+(blank to remove password)
+(puste pole by usun±æ haso)
+Passwords allow sharing preferences between multiple systems.
+Hasa umo¿liwiaj± posiadanie wasnych ustawieñ na ró¿nych komputerach.
+Passwords are completely optional.
+Hasa s± cakowicie dowolne.
+Administrator Password:
+Haso administratora:
+(Administrator passwords are used for special maintenance.)
+(Hasa administratora s± u¿ywane do celów wewnêtrznych.)
+Include this address in the site email list.
+Do±cz ten adres do listy wyskowej tego serwisu.
+(Uncheck the box to remove the address.)
+(Usuñ zaznaczenie by usun±æ adres.)
+Email Address:
+Adres e-mail:
+Default days to display:
+Domy¶lna ilo¶æ pokazywanych dni:
+Most recent changes on top
+Najnowsze zmiany na górze
+Show all changes (not just most recent)
+Poka¿ wszystkie zmiany (nie tylko najnowsze)
+Hide minor edits
+Schowaj drobne zmiany
+Show minor edits
+Poka¿ drobne zmiany
+Show only minor edits
+Pokazuj tylko drobne zmiany
+Minor edit display:
+Wykaz drobnych zmian:
+Use "changes" as link to history
+U¿yj "zmiany" jako link do historii
+Differences:
+Ró¿nice:
+Show (diff) links on %s
+Poka¿ linki (diff) %s
+Show differences on all pages
+Pokazuj ró¿nice na wszystkich stronach
+No differences on %s
+Nie ma ró¿nic %s
+Major
+Du¿a
+Minor
+Drobna
+Author
+Autor
+Default difference type:
+Domy¶lny typ ró¿nicowania:
+Misc:
+Inne:
+Server time:
+Czas na serwerze:
+Time Zone offset (hours):
+Przesuniêcie strefy czasowej (godz):
+Use 100% wide edit area (if supported)
+U¿ywaj 100% pola edycji (je¶li mo¿liwe)
+Edit area rows:
+Ilo¶æ linii pola edycji:
+columns:
+kolumn:
+Show link bar on top
+Pokazuj linki u góry
+Add "Random Page" link to link bar
+Dodaj link "Strona losowa"
+Saving Preferences
+Zapis opcji
+Invalid UserID %s, preferences not saved.
+Nieprawidowy identyfikator u¿ytownika %s, opcje nie zapisane.
+(Preferences require cookies, but no cookie was sent.)
+(Opcje wymagaj± ciasteczek, a ¿adne nie zostao wysane.)
+UserName removed.
+U¿ytkownik usuniêty.
+Invalid UserName %s: not saved.
+Nieprawidowy identyfikator %s: nie zapisane.
+UserName must be 50 characters or less. (not saved)
+Identyfikator musi mieæ najwy¿ej 50 znaków. (nie zapisane)
+UserName %s saved.
+Identyfikator %s zapisany.
+Password removed.
+Haso usuniête.
+Password changed.
+Haso zmienione.
+Administrator password removed.
+Haso administratora usuniête.
+Administrator password changed.
+Haso administratora zmienione.
+User has administrative abilities.
+U¿ytkownik ma uprawnienia administratora.
+User has editor abilities.
+U¿ytkownik ma uprawnienia edycyjne.
+User does not have administrative abilities.
+U¿ytkownik nie ma uprawnieñ administratora.
+(Password does not match administrative password(s).)
+(Haso nie pasuje do hasa(hase) administratora.
+Local time:
+Czas lokalny:
+Preferences saved.
+OPcje zapisane.
+Could not read from %s:
+Odczyt z %s niemo¿liwy:
+Could not get mail lock
+Mail lock niemo¿liwy
+Could not append to %s:
+Nie mo¿na dopisaæ do %s:
+Could not overwrite %s:
+Nie mo¿na nadpisaæ %s:
+Index of all pages
+Katalog wszystkich stron
+Login
+Logowanie
+User ID number:
+Numer identyfikacyjny u¿ytownika:
+Password:
+Haso:
+Login Results
+Wynik logowania
+Login for user ID %s complete.
+Logowanie u¿ytownika %s zakoñczone.
+Login for user ID %s failed.
+Logowanie u¿ytownika %s nieudane.
+Could not get user-ID lock
+Nie mo¿na uzyskaæ blokady u¿ytownika
+Search for: %s
+Szukaj : %s
+%s pages found:
+Ilo¶æ znalezionych stron %s: 
+Full Link List
+Pena lista linków
+Editing not allowed for %s.
+Edycja %s niedozwolona.
+SampleUndefinedPage
+PrzykadowaStrona
+%s cannot be defined.
+Nie mo¿na zdefiniowaæ %s.
+Sample_Undefined_Page
+Przykadowa_Strona
+[[%s]] cannot be defined.
+Nie mo¿na zdefiniowaæ [[%s]]
+Could not get editing lock
+Nie mo¿na uzyskaæ blokady edycji
+Normal Unlock.
+Prawidowe odblokowanie.
+Removing edit lock
+Usuwanie blokady edycji
+This operation may take several seconds...
+Ta operacja mo¿e zaj±æ kilka sekund...
+Forced Unlock.
+Odblokowanie siowe.
+%s log error:
+
+can not write diff_log
+nie mo¿na zapisaæ do diff_log
+Maintenance on all pages
+Serwisowanie wszystkich stron
+Maintenance not done.
+Serwisowanie nie wykonane.
+(Maintenance can only be done once every 12 hours.)
+(Serwisowanie mo¿na wykonywaæ tylko raz na 12 godz.)
+Remove the "maintain" file or wait.
+Usuñ plik "maintain" lub zaczekaj.
+Could not get maintain-lock
+Nie mo¿na uzyskaæ blokady serwisowania.
+Processing rename/delete commands:
+Wykonujê polecenia zmiany nazwy/usuwania:
+This operation is restricted to site editors only...
+Ta czynno¶æ jest zastrze¿ona tylko dla edytorów...
+This operation is restricted to administrators only...
+Ta czynno¶æ jest zastrze¿ona tylko dla administratora...
+Set or Remove global edit lock
+Ustaw lub usuñ globaln± blokadê edycji
+Edit lock created.
+Blokada edycji utworzona.
+Edit lock removed.
+Blokada edycji usuniêta.
+Set or Remove page edit lock
+Ustaw lub usuñ blokada edycji strony
+Missing page id to lock/unlock...
+Brak id strony do blokady/odblokowania...
+Lock for %s created.
+Blokada dla %s utworzona.
+Lock for %s removed.
+Blokada dla %s usuniêta.
+END_OF_TRANSLATION

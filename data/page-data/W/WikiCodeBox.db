@@ -1,0 +1,94 @@
+tsÿþ11222752493ÿþ1versionÿþ13ÿþ1cache_oldmajorÿþ11ÿþ1authorcreateÿþ1ÿþ1cache_oldauthorÿþ12ÿþ1cache_diff_default_authorÿþ11ÿþ1revisionÿþ13ÿþ1tscreateÿþ11197121517ÿþ1text_defaultÿþ1ipÿþ2127.0.0.1ÿþ2tsÿþ21222752493ÿþ2versionÿþ21ÿþ2nameÿþ2text_defaultÿþ2dataÿþ2summaryÿþ3*ÿþ3textÿþ3= <nowiki>CodePress</nowiki> Code Boxes =
+NobleWiki employs the <nowiki>CodePress</nowiki> "[http://codepress.org Real Time Syntax Highlighting Editor written in JavaScript]" written by [mailto:fermads@gmail.com Fernando M.A.d.S.].  With the use of these 'code boxes', script and programming language code may be displayed in a nicely formatted manner for citation within pages dedicated to software development.
+{{toc}}
+== Invocation ==
+The basic code box invocation is as follows:
+<pre>
+{{code:LANGUAGE|option=value1|option=value2
+lines of code
+lines of code
+}}
+</pre>
+
+!!Element!!Description!!
+||<tt>:LANGUAGE</tt>||Specify the language parameter for the syntax-highlighting  If the wrong parameter is specified or if none is given, no highlighting will occur.||
+||<tt>option=value</tt>||Specify option switches delimited by the '|' character.||
+||<tt>lines of code</tt>||Have all of the code to be highlighted on their own lines; do not fold them into the same lines as the starting or ending pairs of braces.||
+
+== Supported Syntaxes =
+Here are the supported languages that can be syntax-highlighted by the <nowiki>CodePress</nowiki> engine:
+!!Language!!parameter!!Description!!
+||ASP||<tt>:asp</tt>||Microsoft Active Server Pages||
+||C#||<tt>:csharp</tt>||Microsoft C#||
+||Auto IT||<tt>:autoit</tt>||??||
+||CSS||<tt>:css</tt>||Cascading Style Sheet||
+||Generic||<tt>:generic</tt>||Specify this to highlight any syntax||
+||HTML||<tt>:html</tt>||Hypertext Markup Language||
+||Java||<tt>:java</tt>||Sun Java||
+||<nowiki>JavaScript</nowiki>||<tt>:javascript</tt>||Sun <nowiki>JavaScript</nowiki>||
+||perl||<tt>:perl</tt>||Practical Extraction and Reporting Language||
+||PHP||<tt>:php</tt>||PHP||
+||Ruby||<tt>:ruby</tt>||The Ruby Language||
+||SQL||<tt>:sql</tt>||Standard Query Language||
+||TXT||<tt>:text</tt>||Plain text.  This is the default; no syntax-highlighting occurs.||
+||<nowiki>VBScript</nowiki>||<tt>:vbscript</tt>||Microsoft <nowiki>VBScript</nowiki>||
+||XSL||<tt>:xsl</tt>||<nowiki>XML Style Sheets</nowiki>||
+
+== Common Switches =
+Here are the option switches currently available:
+!!Switch!!Description!!
+||<tt>height=NNN</tt>||Sets the height in pixels of the textarea displayed for the highlighted code.  The minimum height of 100 pixels tall is the default if this switch is not specified.||
+
+== Simple Example =
+{{code
+print 'HELLO WORLD';
+}}
+
+The above was created using this syntax:
+<pre>
+{{code
+print 'HELLO WORLD';
+}}
+</pre>
+
+== Detailed Example =
+{{code:javascript|height=150
+self.toggleAutoComplete = function() {
+	self.editor.autocomplete = (self.editor.autocomplete) ? false : true;
+}
+
+self.toggleReadOnly = function() {
+	self.textarea.readOnly = (self.textarea.readOnly) ? false : true;
+	if(self.style.display != 'none') // prevent exception on FF + iframe with display:none
+		self.editor.readOnly(self.textarea.readOnly ? true : false);
+}
+}}
+
+The above was created using:
+<pre>
+{{code:javascript|height=150
+self.toggleAutoComplete = function() {
+	self.editor.autocomplete = (self.editor.autocomplete) ? false : true;
+}
+
+self.toggleReadOnly = function() {
+	self.textarea.readOnly = (self.textarea.readOnly) ? false : true;
+	if(self.style.display != 'none') // prevent exception on FF + iframe with display:none
+		self.editor.readOnly(self.textarea.readOnly ? true : false);
+}
+}}
+</pre>
+ÿþ3newauthorÿþ31ÿþ3minorÿþ31ÿþ2usernameÿþ2RobertKurcinaÿþ2hostÿþ2localhostÿþ2revisionÿþ23ÿþ2tscreateÿþ21197121517ÿþ2idÿþ21278ÿþ2keeptsÿþ21222752493ÿþ1cache_diff_default_majorÿþ1<div id=wikidiffdiv><table id=wikidifftable><tr valign=top><td class="diff-header">Paragraph 2</td><td class="diff-vertical">&nbsp;</td><td class="diff-header">Paragraph 2</td></tr><tr valign=top><td class="diff-para-ident">NobleWiki employs the &lt;nowiki&gt;CodePress&lt;/nowiki&gt; "[http://codepress.org Real Time Syntax Highlighting Editor written in JavaScript]" written by [mailto:fermads@gmail.com Fernando M.A.d.S.].&nbsp; With the use of these 'code boxes', script and programming language code may be displayed in a nicely formatted manner for citation within pages dedicated to software development.<br>
+</td><td class="diff-vertical"></td><td class="diff-para-ident">NobleWiki employs the &lt;nowiki&gt;CodePress&lt;/nowiki&gt; "[http://codepress.org Real Time Syntax Highlighting Editor written in JavaScript]" written by [mailto:fermads@gmail.com Fernando M.A.d.S.].&nbsp; With the use of these 'code boxes', script and programming language code may be displayed in a nicely formatted manner for citation within pages dedicated to software development.<br>
+</td></tr><tr valign=top><td class="diff-para-deleted">&lt;toc&gt;<br>
+</td><td class="diff-vertical"></td><td class="diff-para-added">{{toc}}<br>
+</td></tr><tr valign=top><td class="diff-para-ident">== Invocation ==<br>
+</td><td class="diff-vertical"></td><td class="diff-para-ident">== Invocation ==<br>
+</td></tr></table></div>ÿþ1cache_diff_default_minorÿþ1<div id=wikidiffdiv><table id=wikidifftable><tr valign=top><td class="diff-header">Paragraph 2</td><td class="diff-vertical">&nbsp;</td><td class="diff-header">Paragraph 2</td></tr><tr valign=top><td class="diff-para-ident">NobleWiki employs the &lt;nowiki&gt;CodePress&lt;/nowiki&gt; "[http://codepress.org Real Time Syntax Highlighting Editor written in JavaScript]" written by [mailto:fermads@gmail.com Fernando M.A.d.S.].&nbsp; With the use of these 'code boxes', script and programming language code may be displayed in a nicely formatted manner for citation within pages dedicated to software development.<br>
+</td><td class="diff-vertical"></td><td class="diff-para-ident">NobleWiki employs the &lt;nowiki&gt;CodePress&lt;/nowiki&gt; "[http://codepress.org Real Time Syntax Highlighting Editor written in JavaScript]" written by [mailto:fermads@gmail.com Fernando M.A.d.S.].&nbsp; With the use of these 'code boxes', script and programming language code may be displayed in a nicely formatted manner for citation within pages dedicated to software development.<br>
+</td></tr><tr valign=top><td class="diff-para-deleted"><br>
+&lt;toc&gt;<br>
+</td><td class="diff-vertical"></td><td class="diff-para-added">{{toc}}<br>
+</td></tr><tr valign=top><td class="diff-para-ident">== Invocation ==<br>
+</td><td class="diff-vertical"></td><td class="diff-para-ident">== Invocation ==<br>
+</td></tr></table></div>

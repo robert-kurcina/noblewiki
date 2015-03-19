@@ -1,0 +1,33 @@
+ÿþ1revisionÿþ25ÿþ2tsÿþ21178998539ÿþ2hostÿþ2localhostÿþ2nameÿþ2text_defaultÿþ2dataÿþ2summaryÿþ3*ÿþ3minorÿþ30ÿþ3textÿþ3This is an example page demonstrating the Wiki:WikiName format (capitalized words squished together).
+
+==== Examples ====
+
+:ISThisAWord ''-- yes''
+:IsThisAWord ''-- yes''
+:IsTHISAWORD ''-- yes''
+:IsthisaworD ''-- yes''
+:ISTHISAWORD ''-- no''
+:iSTHISAWORD ''-- no''
+:isthisaword ''-- no''
+:isthisaworD ''-- no''
+:Isthisaword ''-- no''
+:isthisaworD ''-- no''
+
+
+<i><b>NOTE:</b> It is the presence of the ? link which indicates that the WikiWord is valid.  However, please don't create any entries from this page.</i>
+ÿþ3newauthorÿþ30ÿþ2ipÿþ2127.0.0.1ÿþ2usernameÿþ2ÿþ2idÿþ21006ÿþ2versionÿþ21ÿþ2keeptsÿþ21179103081ÿþ2tscreateÿþ21178786687ÿþ1revisionÿþ27ÿþ2tsÿþ21179389046ÿþ2hostÿþ2localhostÿþ2nameÿþ2text_defaultÿþ2dataÿþ2summaryÿþ3*ÿþ3minorÿþ31ÿþ3textÿþ3== Demonstration of <nowiki>WikiName</nowiki> =
+This is an example page demonstrating the Wiki:WikiName format (capitalized words squished together).
+
+:ISThisAWord ''-- yes''
+:IsThisAWord ''-- yes''
+:IsTHISAWORD ''-- yes''
+:IsthisaworD ''-- yes''
+:ISTHISAWORD ''-- no''
+:iSTHISAWORD ''-- no''
+:isthisaword ''-- no''
+:isthisaworD ''-- no''
+:Isthisaword ''-- no''
+:isthisaworD ''-- no''
+
+<i><b>NOTE:</b> It is the presence of the ? link which indicates that the WikiWord is valid. </i>
+ÿþ3newauthorÿþ31ÿþ2ipÿþ2127.0.0.1ÿþ2usernameÿþ2ÿþ2idÿþ21018ÿþ2versionÿþ21ÿþ2keeptsÿþ21179996720ÿþ2tscreateÿþ21178786687

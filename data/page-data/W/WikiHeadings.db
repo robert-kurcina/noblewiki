@@ -1,0 +1,39 @@
+versionÿþ13ÿþ1tsÿþ11223011262ÿþ1cache_oldmajorÿþ17ÿþ1cache_oldauthorÿþ113ÿþ1revisionÿþ114ÿþ1cache_diff_default_authorÿþ11ÿþ1tscreateÿþ11178783770ÿþ1text_defaultÿþ1versionÿþ21ÿþ2ipÿþ2127.0.0.1ÿþ2tsÿþ21223011262ÿþ2nameÿþ2text_defaultÿþ2dataÿþ2summaryÿþ3*ÿþ3textÿþ3== Section Headings ==
+Up to six levels of heading can be used. Sections headings correspond to, and are implemented as, the HTML tags <nowiki><h1> to <h6></nowiki>.  You create headings by using a "=" equals as the first character on a line. A space must separate the heading text from the "=" equals.
+
+Standard practice for this wiki is that all first-level documents begin with 'h1' headings, and all nested documents begin with 'h2' headings.  The way to determine if a document is second-level, examine the page title at the top; if shows a slash '/' then it is a second-level document.  Additionally, all headers of type h2 through h6 are to be preceded by a carriage-return.  For more on this, see WikiStyleGuide.
+
+<b>Example headings:</b>
+= H1 =
+== H2 =
+=== H3 =
+==== H4 =
+===== H5 =
+====== H6 =
+
+The above were created using the following syntax:
+<pre>= Section Heading 1 =</pre>
+<pre>== Section Heading 2 =</pre>
+<pre>=== Section Heading 3 =</pre>
+<pre>==== Section Heading 4 =</pre>
+<pre>===== Section Heading 5 =</pre>
+<pre>====== Section Heading 6 =</pre>
+== Related Entries =
+{{template:RelatedEntries/WikiEditing}}
+ÿþ3newauthorÿþ31ÿþ3minorÿþ31ÿþ2usernameÿþ2RobertKurcinaÿþ2hostÿþ2localhostÿþ2revisionÿþ214ÿþ2tscreateÿþ21178783770ÿþ2idÿþ21298ÿþ2keeptsÿþ21223011262ÿþ1cache_diff_default_majorÿþ1<div id=wikidiffdiv><table id=wikidifftable><tr valign=top><td class="diff-header">Paragraph 2</td><td class="diff-vertical">&nbsp;</td><td class="diff-header">Paragraph 2</td></tr><tr valign=top><td class="diff-para-changed"><span class="diff-span-ident">Up to six levels of heading can be used. Sections headings correspond to, and are implemented as, the </span><span class="diff-span-deleted">HyperTextMarkupLanguage</span><span class="diff-span-ident">&nbsp;tags &lt;nowiki&gt;&lt;h1&gt; to &lt;h6&gt;&lt;/nowiki&gt;.&nbsp; You create headings by using a "=" equals as the first character on a line. A space must separate the heading text from the "=" equals.<br>
+</span></td><td class="diff-vertical"></td><td class="diff-para-changed"><span class="diff-span-ident">Up to six levels of heading can be used. Sections headings correspond to, and are implemented as, the </span><span class="diff-span-added">HTML</span><span class="diff-span-ident">&nbsp;tags &lt;nowiki&gt;&lt;h1&gt; to &lt;h6&gt;&lt;/nowiki&gt;.&nbsp; You create headings by using a "=" equals as the first character on a line. A space must separate the heading text from the "=" equals.<br>
+</span></td></tr><tr valign=top><td class="diff-header">Paragraph 17</td><td class="diff-vertical">&nbsp;</td><td class="diff-header">Paragraph 17</td></tr><tr valign=top><td class="diff-para-ident">&lt;pre&gt;====== Section Heading 6 =&lt;/pre&gt;<br>
+</td><td class="diff-vertical"></td><td class="diff-para-ident">&lt;pre&gt;====== Section Heading 6 =&lt;/pre&gt;<br>
+</td></tr><tr valign=top><td class="diff-para-deleted"><br>
+</td><td class="diff-vertical"></td><td class="diff-para-ident"></td></tr><tr valign=top><td class="diff-para-changed"><span class="diff-span-ident">==</span><span class="diff-span-deleted">====</span><span class="diff-span-ident">&nbsp;Related Entries =<br>
+</span></td><td class="diff-vertical"></td><td class="diff-para-changed"><span class="diff-span-ident">==</span><span class="diff-span-ident">&nbsp;Related Entries =<br>
+</span></td></tr><tr valign=top><td class="diff-para-deleted">&nbsp;WikiStyleGuide<br>
+ WikiTOCs<br>
+</td><td class="diff-vertical"></td><td class="diff-para-added">{{template:RelatedEntries/WikiEditing}}<br>
+</td></tr></table></div>ÿþ1cache_diff_default_minorÿþ1<div id=wikidiffdiv><table id=wikidifftable><tr valign=top><td class="diff-header">Paragraph 17</td><td class="diff-vertical">&nbsp;</td><td class="diff-header">Paragraph 17</td></tr><tr valign=top><td class="diff-para-ident">&lt;pre&gt;====== Section Heading 6 =&lt;/pre&gt;<br>
+</td><td class="diff-vertical"></td><td class="diff-para-ident">&lt;pre&gt;====== Section Heading 6 =&lt;/pre&gt;<br>
+</td></tr><tr valign=top><td class="diff-para-deleted"><br>
+</td><td class="diff-vertical"></td><td class="diff-para-added">== Related Entries =<br>
+</td></tr><tr valign=top><td class="diff-para-ident">{{template:RelatedEntries/WikiEditing}}<br>
+</td><td class="diff-vertical"></td><td class="diff-para-ident">{{template:RelatedEntries/WikiEditing}}<br>
+</td></tr></table></div>

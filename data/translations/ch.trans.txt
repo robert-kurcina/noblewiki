@@ -1,0 +1,526 @@
+%Translate = split('\n',<<END_OF_TRANSLATION);
+Unknown Error (no error text)
+未知错误 (无错误信息)
+Could not create %s
+无法创建 %s
+Showing revision %s
+显示 %s 的版本
+Revision %s not available
+版本 %s 不存在
+showing current revision instead
+显示当前的版本
+Updates since %s
+从 %s 以来的更新
+Updates in the last %s day
+在 %s 天内的更新
+Updates in the last %s days
+在 %s 天内的更新
+Could not open %s log file
+无法打开 %s 的日志文件
+Error was
+错误是
+Note: This error is normal if no changes have been made.
+注意：如果没有修改，这个错误是正常的。
+Could not open old %s log file
+无法打开 %s 旧的日志文件
+for %s only
+只限 %s
+%s day
+%s 天
+%s days
+%s 天
+List new changes starting from
+列出新的改变，自
+No updates since %s
+在 %s 之后没有更新
+Page generated %s
+生成页面 %s
+(edit)
+（编辑）
+(diff)
+（差异）
+changes
+修改
+History of %s
+%s 的历史记录
+Compare
+比较
+(logged)
+(已记录)
+Revision %s
+版本 %s
+Edit
+编辑
+by
+被
+RecentChanges
+最近修改
+HomePage
+首页
+Index
+索引
+Preferences
+个性设置
+Login
+登录
+Random Page
+随机页面
+Upload
+上载
+ID %s
+编号 %s
+from %s
+从 %s
+[Home]
+[首页]
+redirected from %s
+自 %s 重定向
+Edit revision %s of this page
+编辑本页面的 %s 版本
+Edit text of this page
+编辑本页面
+This page is read-only
+本页面只读
+View other revisions
+查看其他版本
+View current revision
+查看目前版本
+Search MetaWiki
+查询 MetaWiki
+Last edited
+最后修订
+Edited
+已修订
+by %s
+被 %s
+Warning
+警告
+Database is stored in temporary directory %s
+资料已经存储在临时路径 %s
+Config file error:
+配置文件错误:
+Search:
+搜索：
+Go!
+Go!
+Your browser should go to the %s page.
+你的浏览器将跳转至 %s 页面。
+If it does not, click %s to continue.
+如果没有，请点击 %s 继续。
+Thanks for editing...
+感谢您的修订...
+Thank you for editing %s.
+感谢您修订 %s 。
+Link to another page...
+链接到另外的页面...
+Follow the %s link to continue.
+请继续前往 %s 。
+Local rule error:
+本地规则错误:
+major diff
+主要的差异
+minor diff
+次要的差异
+author diff
+作者间差异
+major
+主要的
+minor
+次要的
+author
+作者
+(The revisions are identical or unavailable.)
+（版本完全相同或是不存在的）
+no other diffs
+没有其它差异
+No diff available.
+没有发现差异。
+current revision
+当前版本
+revision %s
+版本 %s
+Difference (from revision %1 to %2)
+差异（从版本 %1 到 %2)
+No diff available--this is the first %s revision.
+没有差异 —— 这是第一个 %s 版本。
+Difference (from prior %s revision)
+差异（相对于先前 %s 的版本）
+Changed:
+改变：
+Removed:
+删除：
+Added:
+增加：
+Describe the new page here.
+在这里添加新的页面。
+Bad page version (or corrupt page).
+错误的版本（或是损坏的页面）。
+cant write %s
+无法写入 %s
+Page name is too long: %s
+页面 %s 的名称太长
+Page name may not contain space characters: %s
+页面名称请不要包含空格: %s
+Too many / characters in page %s
+页面 %s 包含太多的 "/" 字符
+Invalid Page %s (subpage without main page)
+无效的页面 %s（子页面没有对应的主页面）
+Invalid Page %s (missing subpage name)
+无效的页面 %s（缺失子页面名称）
+Invalid Page %s (/ not allowed)
+无效的页面 %s（不允许 "/" 字符）
+Invalid Page %s
+无效的页面 %s
+Invalid Page %s (must not end with .db)
+无效的页面 %s（不允许以 ".db" 结尾）
+Invalid Page %s (must not end with .lck)
+无效的页面 %s（不允许以 ".lck" 结尾）
+can not make %s
+无法生成 %s
+Can not open %s
+无法打开 %s
+Invalid action parameter %s
+无效的参数 %s
+Invalid URL.
+无效的 URL。
+Editing Denied
+禁止修改。
+Editing not allowed: user, ip, or network is blocked.
+修改被禁止：用户名，ip，或是子网被禁用。
+Contact the wiki administrator for more information.
+通知 wiki 管理者以获得更多的信息。
+Editing not allowed: %s is read-only.
+修改被禁止：%s 是只读的。
+Editing %s
+正在编辑 %s
+Editing revision %s of 
+编辑 %s 版本的
+Editing old revision %s.
+编辑旧版本 %s 。
+Saving this page will replace the latest revision with this text.
+保存将会用该文本取代本页面的最新版本。
+Edit Conflict!
+编辑冲突！
+(This is a new conflict)
+（这是新的冲突）
+Someone saved this page after you started editing.
+有人在你开始编辑后修改了本页面。
+The top textbox contains the saved text.
+上面的编辑区包含已保存的文本。
+Only the text in the top textbox will be saved.
+只有上面的编辑区內的文本会被保存。
+Scroll down to see your edited text.
+向下滚动可以看到你所编辑的文本。
+Last save time:
+最后保存的时间：
+Current time is:
+目前的时间：
+Summary:
+改动原因：
+This change is a minor edit.
+此次的修改是次要的修订。
+Send email notification that %s has been changed.
+发送邮件通知 %s 已被更改了。
+Save
+保存
+Your user name is
+您的用户名是
+Visit %s to set your user name.
+访问 %s 来设置你的账号。
+or %s with an existing one.
+或者选择 %s 用已有账号登录。
+Preview
+预览
+This is the text you submitted:
+这是你提交的文本：
+Preview:
+预览：
+NOTE: This preview shows the revision of the other author.
+注意：本次预览显示的是其他作者的版本。
+Preview only, not yet saved
+只是预览，还没有保存
+Editing Preferences
+编辑个性设置
+User Information:
+用户信息：
+Your User ID number: %s
+您的用户编号是：%s
+UserName:
+用户名：
+(blank to remove, or valid page name)
+（空白可以清除或验证页面名称）
+Set Password:
+设置口令：
+(blank to remove password)
+（空白可以清除口令）
+Passwords allow sharing preferences between multiple systems.
+口令可以在多个系统中共享设置。
+Passwords are completely optional.
+口令不是必要的。
+Administrator Password:
+管理者口令：
+(Administrator passwords are used for special maintenance.)
+（管理者口令是在特別的维护功能才被使用。）
+Include this address in the site email list.
+将此地址包含在站点的 email 列表中。
+(Uncheck the box to remove the address.)
+（反选可清除地址）
+Email Address:
+Email 地址：
+Default days to display:
+缺省显示的天数：
+Most recent changes on top
+将最新的修改置顶
+Show all changes (not just most recent)
+显示所有的变化（而不只是最新的）
+Hide minor edits
+隐藏次要的修改
+Show minor edits
+显示次要的修改
+Show only minor edits
+只显示次要的修改
+Minor edit display:
+次要修改的显示方式：
+Use "changes" as link to history
+使用 "changes" 作为到历史记录的连接
+Differences:
+差异：
+Show (diff) links on %s
+显示 %s（差异）的连接
+Show differences on all pages
+显示所有页面上的差异
+No differences on %s
+在 %s 上没有差异
+Major
+主要的
+Minor
+次要的
+Author
+作者
+Default difference type:
+缺省的差异类型：
+Misc:
+其他：
+Server time:
+服务器时间：
+Time Zone offset (hours):
+时区偏移量（小时）：
+Use 100% wide edit area (if supported)
+编辑框使用 100% 的宽度（如果支持的话）：
+Edit area rows:
+编辑框列數：
+columns:
+编辑框行數：
+Show link bar on top
+在顶端显示链接栏
+Add "Index" link to link bar
+在链接栏中加入"索引"的链接
+Add "Random Page" link to link bar
+在链接栏中加入"随机页面"的链接
+StyleSheet URL:
+样式表 URL:
+Saving Preferences
+保存个性设置
+Invalid UserID %s, preferences not saved.
+无效的用户ID %s，设定没有保存。
+(Preferences require cookies, but no cookie was sent.)
+（个性设置需要使用 cookies，但没有 cookie 传送。）
+UserName removed.
+用户名称已清除。
+Invalid UserName %s: not saved.
+无效的用户名 %s：没有保存。
+UserName must be 50 characters or less. (not saved)
+用户名必需少于 50 个字符。（没有保存）
+UserName %s saved.
+用户名称：%s 已保存。
+Password removed.
+口令已清除。
+Password changed.
+口令已改变。
+Administrator password removed.
+管理者口令已清除。
+Administrator password changed.
+管理者口令已改变。
+User has administrative abilities.
+用户有管理的权限。
+User has editor abilities.
+用户有编辑的权限。
+User does not have administrative abilities.
+用户没有管理的权限。
+(Password does not match administrative password(s).)
+（错误的管理者口令）
+Local time:
+本地时间：
+StyleSheet URL removed.
+样式表 URL 已清除。
+StyleSheet setting saved.
+样式表设置已保存。
+Preferences saved.
+个性设置已保存。
+Could not read from %s:
+无法从 %s 读取：
+Could not get mail lock
+无法取得 mail 锁定
+Could not append to %s:
+无法附加在 %s：
+Could not overwrite %s:
+无法覆盖 %s：
+Index of all pages
+所有页面的索引
+If you don't have a User ID yet, go to %s and get one.
+如果您没有账号，访问 %s 来获取账号。
+User ID number:
+用户ID：
+Password:
+口令：
+Login Results
+登录结果
+Login for user ID %s complete.
+用户 %s 成功登录。
+Login for user ID %s failed.
+用户 %s 登录失败。
+Could not get user-ID lock
+无法获得用户ID锁
+Search for: %s
+搜索: %s
+Backlinks for: %s
+%s 的后退链接
+%s pages found:
+发现　%s 个页面：
+Full Link List
+完整的连接列表
+Editing not allowed for %s.
+%s 的编辑不被允许。
+SampleUndefinedPage
+未定义页面示例
+Sample_Undefined_Page
+未定义页面示例
+%s cannot be defined.
+%s 无法定义。
+Could not get editing lock
+无法取得编辑锁
+Normal Unlock.
+正常解除锁定。
+Removing edit lock
+清除编辑锁定
+This operation may take several seconds...
+这个操作需要花费几秒种...
+Forced Unlock.
+强制解除锁定。
+%s log error:
+%s 记录错误：
+can not write diff_log
+无法写入 diff_log
+(done)
+(完成)
+(deleted)
+(已删除)
+(replaced)
+(已替换)
+Maintenance on all pages
+所有页面的维护
+Maintenance not done.
+维护未完成。
+(Maintenance can only be done once every 12 hours.)
+（维护每 12 小时只能做一次）
+Remove the "maintain" file or wait.
+清除 "maintain" 文件或者等待。
+Could not get maintain-lock
+无法取得维护锁
+Maintenance done at %s
+维护完成时间 %s
+Processing rename/delete commands:
+正在处理改名/删除命令：
+Could not get lock for RC maintenance
+无法取得 RC 维护锁
+Maintaining RC log
+维护 RC 日志
+RC maintenance done.
+RC 维护已完成。
+RC maintenance not done.
+RC 维护未完成。
+This operation is restricted to site editors only...
+只有站上的编辑者才能进行这个被限制的操作...
+This operation is restricted to administrators only...
+只有站上的管理者才能进行这个被限制的操作...
+Set or Remove global edit lock
+设定或清除全局的编辑锁
+Edit lock created.
+建立编辑锁定。
+Edit lock removed.
+清除编辑锁定。
+Set or Remove page edit lock
+设定或清除页面的编辑锁定
+Missing page id to lock/unlock...
+缺少需要锁定/解鎖的页面 id...
+Lock for %s created.
+%s 的锁定已建立。
+Lock for %s removed.
+%s 的锁定已清除。
+UpdateLinksList could not get main lock
+UpdateLinksList 无法得到主锁
+Updating Links
+更新链接
+Administration
+管理
+Unlock page
+页面解锁
+Lock page
+页面锁定
+Delete this page
+删除该页面
+Edit Banned List
+编辑禁用列表
+Run Maintenance
+运行维护
+Edit/Rename pages
+编译页面/修改页面名称
+Unlock site
+解锁站点
+Lock site
+锁定站点
+Confirm Delete %s
+确认删除 %s
+Confirm deletion of %s by following this link:
+确认删除 %s ，请点击:
+Confirm Delete
+确认删除
+Delete %s
+删除 %s
+%s can not be deleted.
+%s 不能被删除。
+%s can not be deleted because it is locked.
+%s 不能被删除，因为被锁定。
+%s has been deleted.
+%s 已被删除。
+File Upload Page
+文件上载页面
+The current upload size limit is %s.
+当前上载文件长度限制 %s。
+Change the %s variable to increase this limit.
+修改 %s 变量重新设定限制
+Upload Finished
+上载完毕
+The wiki link to your file is:
+您的文件的 wiki 链接为:
+Could not open file %s
+无法打开文件 %s
+Convert wiki DB
+转换 wiki DB
+You must change the %s option before converting the wiki DB.
+您必须在转换 wkik DB 前修改 %s 选项。
+Wiki DB locked for conversion.
+Wiki DB 正在转换，被锁定。
+Converting Wiki DB...
+转换 Wiki DB...
+Finished converting wiki DB.
+完成转换 wiki DB。
+Remove file %s to unlock wiki for editing.
+解除 wiki 编辑锁定，请删除文件 %s。
+Trim wiki users
+整理 wiki 用户
+Removed %s files.
+删除文件 %s。
+Recommended $StartUID setting is %s.
+建议 $StartUID 的设置为 %s。
+END_OF_TRANSLATION

@@ -1,0 +1,413 @@
+%Translate = split('\n',<<END_OF_TRANSLATION);
+Could not create %s
+Nemohu vytvor(it %s
+Showing revision %s
+Ukazuji revizi %s
+Revision %s not available
+Revize %s není k dispozici
+showing current revision instead
+ukazuji místo ní aktuální revizi
+Updates since %s
+Aktualizace od %s
+Updates in the last %s day
+Aktualizace za poslední %s den
+Updates in the last %s days
+Aktualizace za posledních %s dnu*
+Could not open %s log file
+Nemohu otevr(ít %s log soubor
+Error was
+Chyba byla
+Note: This error is normal if no changes have been made.
+Poznámka: Tato chyba nemá vıznam, pokud nebyly provedeny ádné zme(ny.
+Could not open old %s log file
+Nemohu otevr(ít starı %s log soubor
+for %s only
+jen pro %s
+%s day
+%s den
+%s days
+%s dnu*
+List new changes starting from
+Pr(ehled novıch zme(n poc(ínaje od
+No updates since %s
+ádné zme(ny od %s
+Page generated %s
+Stránka generována %s
+(edit)
+(upravit)
+(diff)
+(rozdíly)
+changes
+× zme(ne(no
+History of %s
+Historie %s
+Revision %s
+Revize %s
+View
+Ukázat
+Edit
+Upravit
+Diff
+Rozdíly
+by
+od
+Preferences
+Nastavení
+Random Page
+Náhodná stránka
+ID %s
+ID %s
+from %s
+od %s
+[Home]
+[Vıchozí]
+redirected from %s
+pr(esme(rováno z %s
+Edit revision %s of this page
+Upravit revizi %s této stránky
+Edit text of this page
+Upravit tuto stránku
+This page is read-only
+Tato stránka je pouze pro c(tení
+View other revisions
+Ukázat ostatní revize
+View current revision
+Ukázat aktuální revizi
+Last edited
+Poslední úpravy
+Edited
+Upraveno
+Warning
+Upozorne(ní
+Database is stored in temporary directory %s
+Databáze je uloena v doc(asné sloce %s
+Search:
+Hledat:
+Your browser should go to the %s page.
+Váš prohlíec( by me(l pr(ejít na stránku %s.
+If it does not, click %s to continue.
+Pokud ne, klikne(te zde %s.
+Thanks for editing...
+Díky za úpravy...
+Thank you for editing %s.
+Díky Vám za úpravy %s.
+Link to another page...
+Odkaz na jinou stránku...
+Follow the %s link to continue.
+Pro pokrac(ování následujte odkaz %s.
+alternate
+alternativa
+search
+hledání
+major diff
+rozdíl vıznamné úpravy
+minor diff
+rozdíl menší úpravy
+author diff
+rozdíly podle autory
+major
+vıznamné
+minor
+menší
+author
+autor
+(The revisions are identical or unavailable.)
+(Revize jsou identické nebo nejsou dostupné.)
+no other diffs
+ádné další rozdíly
+No diff available.
+Rozdíly nejsou k dispozici.
+Difference (from revision %s to current revision)
+Rozdíly (mezi revizí %s a aktuální revizí)
+No diff available--this is the first %s revision.
+ádné rozdíly - toto je první revize %s.
+Difference (from prior %s revision)
+Rozdíly (mezi pr(edchozí a %s revizí)
+Changed:
+Zme(ne(no:
+Removed:
+Odstrane(no:
+Added:
+Pr(idáno:
+Describe the new page here.
+Zde popište novou stránku.
+Bad page version (or corrupt page).
+Nesprávná verze stránky (nebo je stránka poškozená).
+cant write %s
+nemohu zapsat %s
+Page name is too long: %s
+Jméno stránky je pr(íliš dlouhé: %s
+Page name may not contain space characters: %s
+Jméno stránky nesmí obsahovat znaky mezera: %s
+Too many / characters in page %s
+Pr(íliš mnoho znaku* / ve stránce %s
+Invalid Page %s (subpage without main page)
+Neplatná stránka %s (podstránka bez hlavní stránky)
+Invalid Page %s (missing subpage name)
+Neplatná stránka %s (chybí jméno postránky)
+Invalid Page %s (/ not allowed)
+Neplatná stránka %s (znak / není povolen)
+Invalid Page %s
+Neplatná stránka %s
+Invalid Page %s (must not end with .db)
+Neplatná stránka %s (nesmí konc(it na .db)
+Invalid Page %s (must not end with .lck)
+Neplatná stránka %s (nesmí konc(it na .lck)
+can not make %s
+nemohu ude(lat %s
+Can not open %s
+Nemohu otevr(ít %s
+Invalid action parameter %s
+Neplatnı parametr akce: %s
+Invalid URL.
+Neplatné URL.
+Editing Denied
+Úpravy odmítnuty.
+Editing not allowed: user, ip, or network is blocked.
+Úpravy nejsou povoleny: uivatel, IP adresa nebo sít( je blokována.
+Contact the wiki administrator for more information.
+Pro další informace se spojte s administrátorem wiki.
+Editing not allowed: %s is read-only.
+Úpravy nejsou povoleny: %s je pouze ke c(tení.
+Editing %s
+Úpravy stránky %s
+Editing revision %s of
+Úpravy revize %s
+Editing old revision %s.
+Úpravy starší revize %s.
+Saving this page will replace the latest revision with this text.
+Uloení této stránky nahradí nejnove(jší revizi tímto textem.
+Edit Conflict!
+Konfliktní úprava!
+(This is a new conflict)
+(Toto je novı konflikt)
+Someone saved this page after you started editing.
+Ne(kdo uloil tuto stránku poté, co jste ji zac(ali upravovat.
+The top textbox contains the saved text.
+
+Vıše uvedené vstupní pole obsahuje uloenı text.
+Only the text in the top textbox will be saved.
+Bude uloen pouze text z vıše uvedeného vstupního pole.
+Scroll down to see your edited text.
+Posun(te vstupní pole dolu*, abyste vide(li celı Vámi upravovanı text.
+Last save time:
+Naposledy uloeno:
+Current time is:
+Aktuální c(as je:
+Summary:
+Shrnutí:
+This change is a minor edit.
+Tato zme(na je jen malou úpravou.
+Send email notification that %s has been changed.
+Zaslat e-mailové upozorne(ní o zme(ne( %s.
+Save
+Uloit
+Your user name is
+Vaše uivatelské jméno je
+Visit %s to set your user name.
+Pro nastavení Vašeho uivatelského jména navštivte %s.
+Preview
+Náhled
+This is the text you submitted:
+Toto je text, kterı jste vloili:
+Preview:
+Náhled:
+NOTE: This preview shows the revision of the other author.
+POZNÁMKA: Tento náhled zobrazuje revize od jiného autora.
+Preview only, not yet saved
+Toto je pouze náhled, zme(ny dosud nejsou uloeny
+Editing Preferences
+Úpravy nastavení
+User Information:
+Informace o uivateli:
+Your User ID number: %s
+Vaše ID c(íslo uivatele: %s
+UserName:
+Jméno uivatele:
+(blank to remove, or valid page name)
+(prázdné, pokud chcete jméno odstranit, jinak jméno platné stránky)
+Set Password:
+Nastavit heslo:
+(blank to remove password)
+(prázdné, pokud chcete heslo odstranit)
+Passwords allow sharing preferences between multiple systems.
+Hesla umon(ují sdílení preferncí mezi více systémy.
+Passwords are completely optional.
+Hesla jsou naprosto nepovinná.
+Administrator Password:
+Heslo administrátora:
+(Administrator passwords are used for special maintenance.)
+(Hesla administrátoru* slouí pro zvláštní údrbu.)
+Include this address in the site email list.
+Zahrnout tuto adresu do e-mailového seznamu této site.
+(Uncheck the box to remove the address.)
+(K odstrane(ní adresy odškrtne(ne zaškrtávátko.)
+Email Address:
+E-mailová adresa:
+Default days to display:
+Vıchozí poc(et zobrazenıch dnu*:
+Most recent changes on top
+Nejnove(jší zme(ny umístit nahoru
+Show all changes (not just most recent)
+Ukázat všechny zme(ny (nejen ty nejnove(jší)
+Hide minor edits
+Skrıt menší úpravy
+Show minor edits
+Ukazovat menší úpravy
+Show only minor edits
+Ukazovat pouze menší úpravy
+Minor edit display:
+Zpu*sob zobrazení menších úprav
+Use "changes" as link to history
+Pouívat "× zme(ne(no" jako odkaz na historii
+Differences:
+Rozdíly:
+Show (diff) links on %s
+Zobrazovat odkazy (rozdíly) na %s
+Show differences on all pages
+Ukazovat rozdíly na všech stránkách
+No differences on %s
+ádné rozdíly v %s
+Major
+Vıznamné
+Minor
+Menší
+Author
+Autor
+Default difference type:
+Vıchozí typ zobrazenıch rozdílu*:
+Misc:
+Ru*zné:
+Server time:
+C(as na serveru:
+Time Zone offset (hours):
+Posunutí c(asového pásma (v hodinách):
+Use 100% wide edit area (if supported)
+Pouívat 100% šír(ky editac(ní oblasti (je-li podporováno)
+Edit area rows:
+Poc(et r(ádku* editac(ní oblasti:
+columns:
+a poc(et sloupcu*
+Show link bar on top
+Zobrazovat r(ádek odkazu* také nahor(e
+Add "Random Page" link to link bar
+Pr(idat odkaz "Náhodná stránka" do r(ádku odkazu*
+Saving Preferences
+Ukládám nastavení
+Invalid UserID %s, preferences not saved.
+Neplatné ID uivatele %s, nastavení nebyla uloena.
+(Preferences require cookies, but no cookie was sent.)
+(Nastavení vyadují cookie, ale ádné nebyly poslány.)
+UserName removed.
+Jméno uivatele bylo odstrane(no.
+Invalid UserName %s: not saved.
+Neplatné jméno uivatele %s: neuloeno.
+UserName must be 50 characters or less. (not saved)
+Jméno uivatele mu*e bıt nejvıše 50 znaku* dlouhé. (neuloeno)
+UserName %s saved.
+Jméno uivatale %s bylo uloeno.
+Password removed.
+Heslo bylo odstrane(no.
+Password changed.
+Heslo bylo zme(ne(no.
+Administrator password removed.
+Heslo administrátora bylo odstrane(no.
+Administrator password changed.
+Heslo administrátora bylo zme(ne(no.
+User has administrative abilities.
+Uivatel má monosti administrátora.
+User has editor abilities.
+Uivatel má monosti editora.
+User does not have administrative abilities.
+Uivatel nemá monosti administrátora.
+(Password does not match administrative password(s).)
+Heslo neodpovídá administrativnímu heslu(-u*m).)
+Local time:
+Místní c(as:
+Preferences saved.
+Nastavení byla uloena.
+Could not read from %s:
+Nemohu c(íst z %s:
+Could not get mail lock
+Nemohu získat zámek pošty
+Could not append to %s:
+Nemohu pr(idávat k %s:
+Could not overwrite %s:
+Nemohu pr(epsat %s:
+Index of all pages
+Rejstr(ík všech stránek
+Login
+Pr(ihlášení
+User ID number:
+ID c(íslo uivatele:
+Password:
+Heslo:
+Login Results
+Vısledky pr(ihlášení
+Login for user ID %s complete.
+Pr(ihlášení pro uivatele ID %s bylo dokonc(eno.
+Login for user ID %s failed.
+Pr(ihlášení pro uivatele ID %s neuspe(lo.
+Could not get user-ID lock
+Nemohu získat zámek k ID uivatele
+Search for: %s
+Hledáno: %s
+%s pages found:
+Nalezeno %s stránek:
+Full Link List
+Úplnı seznam odkazu*
+Editing not allowed for %s.
+%s není dovolena editace.
+SampleUndefinedPage
+UkazkaNedefinovaneStranky
+%s cannot be defined.
+%s nemu*e bıt definováno.
+Sample_Undefined_Page
+Ukazka_Nedefinovane_Stranky
+[[%s]] cannot be defined.
+[[%s]] nemu*e bıt definováno.
+Could not get editing lock
+Nemohu získat zámek pro úpravy
+Normal Unlock.
+Normální odemc(ení.
+Removing edit lock
+Odstran(uji zámek pro úpravy
+This operation may take several seconds...
+Tato c(innost mu*e trvat ne(kolik vter(in...
+Forced Unlock.
+Vynucené odemc(ení.
+%s log error:
+%s logovací chyba:
+can not write diff_log
+nemohu zapsat log rozdílu*
+Maintenance on all pages
+Údrba všech stránek
+Maintenance not done.
+Údrba nebyla provedena.
+(Maintenance can only be done once every 12 hours.)
+(Údrba mu*e bıt prováde(na jen jednou za 12 hodin.)
+Remove the "maintain" file or wait.
+Odstran(te soubor "maintain" nebo c(ekejte.
+Could not get maintain-lock
+Nemohu získat zámek pro údrbu
+Processing rename/delete commands:
+Provádím pr(íkazy pr(ejmenovat/odstranit:
+This operation is restricted to site editors only...
+Tato c(innost je povolena pouze editoru*m site...
+This operation is restricted to administrators only...
+Tato c(innost je povolena pouze administrátoru*m...
+Set or Remove global edit lock
+Nastavení nebo odstrane(ní globálního zámku pro úpravy
+Edit lock created.
+Zámek pro úpravy byl vytvor(en.
+Edit lock removed.
+Zámek pro úpravy byl odstrane(n.
+Set or Remove page edit lock
+Nastavení nebo odstrane(ní zámku pro úpravy stránky
+Missing page id to lock/unlock...
+Chybe(jící ID stránky pr(i zamykání/odemykání...
+Lock for %s created.
+Zámek pro %s byl vytvor(en.
+Lock for %s removed.
+Zámek pro %s byl odstrane(n.
+END_OF_TRANSLATION

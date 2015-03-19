@@ -1,0 +1,253 @@
+ÿþ1ipÿþ2127.0.0.1ÿþ2tsÿþ21196915235ÿþ2versionÿþ21ÿþ2nameÿþ2text_defaultÿþ2dataÿþ2summaryÿþ3*ÿþ3textÿþ3= Asset Uploads =
+This wiki engine provides a simple interface for uploading assets, listing them for use, and moving them around.  The sorts of assets allowed for upload are restricted by the wiki variables <tt><nowiki>$DownloadExtensions</nowiki></tt> and <tt><nowiki>$ImageExtensions</nowiki></tt>.  By default, the types of assets allowed will be limited by their file extension:	
+
+<pre>
+ $ImageExtensions = gif|jpg|png|bmp|jpeg|ico|tiff
+ $DownloadExtensions = pdf|psd|ai|xls|xml|ppt|js|css|doc|txt|swf|fla|fh9|fh11
+</pre>
+
+As can be seen, the list is definitive and covers most of the benign file types useful for developers, artists, and the general wiki user.
+
+<toc>
+
+== Uploading Files =
+Click on the [LocalWiki:action=upload Upload] link at the top or bottom "Goto" bar.  In the two-column GUI, the left-navigation will also have the upload link.  The page will refresh an display a simple form.  Click the "Browse..." button to select a file from the file system, and then optionally provide a destination folder.  The destination folder can be something that currently exists as shown in the drop-list, or can be a new folder.  Click the upload button to complete the process.  The response screen will then display the image or link to the image.  Additionally, the response screen will display the <tt><nowiki>upload:filename.tla</nowiki></tt> syntax that can be used to make reference to the file from any wiki page.  See WikiImages for more about that.
+
+== List Assets =
+This basic view is available to all wiki users.  It's a page that displays the available active assets such as bitmaps, text, or source files as a list within a table.  The view also provides a way to preview the asset and shows a string that can be used within any WikiPage in order to present the asset.  All assets may appear in either the MAIN folder or in a sub-folder like <tt>/FlashSWF</tt> or <tt>/Examples</tt>
+
+=== Table Sorting =
+The asset list is in a table format and shows the folder, file type, as asset size in kilo-bytes.  As a properly formed WikiTable, the list allows on or more columns to be sorted.  Clicking a column header will switch between ascending and descending order.  Shift-click multiple columns to sort by that many.
+
+=== Search Filters =
+The default sort filter is <tt>!/</tt> which basically is the same as indicating the <tt>MAIN</tt> folder.  Removing the default sort will show all assets in all folders.  The filter can be any keywords or fragments; the engine will then display just those assets with values.  To exclude a keyword or fragment precede it with an exclamation point.
+
+For example:
+ !/         Displays anything without a slash '/'; essentially the same as 'MAIN'
+ jpg        Displays all jpg files
+ jpg, swf   Displays all jpg and swf files.
+ !jpg, !swf Displays all files except those that are swf or jpg.
+
+== Priviledged Mode =
+Editors and Administrators that access the asset view are in 'priviledged mode' and will be given a some powerful interface features.  This is signified by replacing the name of view from 'List Assets' to 'Manage Assets'. 
+
+=== Managed Active Assets =
+The default view will show an expanded table with a column for the number of back-links and a checkbox column for selecting one or more files to move.  The back-links indicate how many pages make reference to the particular asset.  Assets with zero links are those eligible to be moved.  To move an asset, mark its checkbox and near the bottom of the table pick a new folder to create an move the assets into or select one of the existing folders from the drop-list.
+
+==== Disabling Assets =
+One of the drop-list options is to select 'DISABLED'; any assets moved here will be made unavailable to be linked and will qualify for deletion by an Administrator.  Any files moved into the DISABLED directory will be placed into a similarly named sub-folder if they aren't in the MAIN folder.
+
+=== Managed Disabled Assets =
+Clicking on the 'View Disabled Assets' button will switch the view to the DISABLED directory.  This directory can't be accessed via the browser; any assets here are can't be previewed.  Any search filter in placed when the button is clicked will continue in the next view.
+
+==== Deleting Assets =
+The 'Managed Disabled Assets' view has a slightly modified drop-list.  The option for 'ACTIVE' will re-enable the assets.  The option for 'DELETE' will move the asset into a protected directory on the server.  Once the asset is moved into the DELETED directory it can't be recovered via the wiki but can be accessed by the server administrator or wiki owner to either permanently delete or to move back into the other directories.
+
+=== File Clobbering =
+Any assets that are moved will clobber - erase, and over-write - any existing assets in the destination if their filenames are the same.  This can be a quick way to 
+
+== Related Entries =
+{{template:RelatedEntries/WikiEditing}}
+
+ÿþ3minorÿþ30ÿþ3newauthorÿþ31ÿþ2usernameÿþ2RobertKurcinaÿþ2hostÿþ2localhostÿþ2revisionÿþ24ÿþ2tscreateÿþ21196751235ÿþ2idÿþ21192ÿþ2keeptsÿþ21197615831ÿþ1versionÿþ21ÿþ2tsÿþ21197615831ÿþ2ipÿþ2127.0.0.1ÿþ2nameÿþ2text_defaultÿþ2dataÿþ2summaryÿþ3*ÿþ3textÿþ3= Asset Uploads =
+This wiki engine provides a simple interface for uploading assets, listing them for use, and moving them around.  The sorts of assets allowed for upload are restricted by the wiki variables <tt><nowiki>$DownloadExtensions</nowiki></tt> and <tt><nowiki>$ImageExtensions</nowiki></tt>.  By default, the types of assets allowed will be limited by their file extension:	
+
+<pre>
+ $ImageExtensions = gif|jpg|png|bmp|jpeg|ico|tiff
+ $DownloadExtensions = pdf|psd|ai|xls|xml|ppt|js|css|doc|txt|swf|fla|fh9|fh11
+</pre>
+
+As can be seen, the list is definitive and covers most of the benign file types useful for developers, artists, and the general wiki user.
+
+<toc>
+
+== Uploading Files =
+Click on the [LocalWiki:action=upload Upload] link at the top or bottom "Goto" bar.  In the two-column GUI, the left-navigation will also have the upload link.  The page will refresh an display a simple form.  Click the "Browse..." button to select a file from the file system, and then optionally provide a destination folder.  The destination folder can be something that currently exists as shown in the drop-list, or can be a new folder.  Click the upload button to complete the process.  The response screen will then display the image or link to the image.  Additionally, the response screen will display the <tt><nowiki>upload:filename.tla</nowiki></tt> syntax that can be used to make reference to the file from any wiki page.  See WikiImages for more about that.
+
+== List Assets =
+This basic view is available to all wiki users.  It's a page that displays the available active assets such as bitmaps, text, or source files as a list within a table.  The view also provides a way to preview the asset and shows a string that can be used within any WikiPage in order to present the asset.  All assets may appear in either the MAIN folder or in a sub-folder like <tt>/FlashSWF</tt> or <tt>/Examples</tt>
+
+=== Table Sorting =
+The asset list is in a table format and shows the folder, file type, as asset size in kilo-bytes.  As a properly formed WikiTable, the list allows on or more columns to be sorted.  Clicking a column header will switch between ascending and descending order.  Shift-click multiple columns to sort by that many.
+
+=== Search Filters =
+The default sort filter is <tt>!/</tt> which basically is the same as indicating the <tt>MAIN</tt> folder.  Removing the default sort will show all assets in all folders.  The filter can be any keywords or fragments; the engine will then display just those assets with values.  To exclude a keyword or fragment precede it with an exclamation point.
+
+For example:
+ !/         Displays anything without a slash '/'; essentially the same as 'MAIN'
+ jpg        Displays all jpg files
+ jpg, swf   Displays all jpg and swf files.
+ !jpg, !swf Displays all files except those that are swf or jpg.
+
+== Priviledged Mode =
+Editors and Administrators that access the asset view are in 'priviledged mode' and will be given a some powerful interface features.  This is signified by replacing the name of view from 'List Assets' to 'Manage Assets'. 
+
+=== Managed Active Assets =
+The default view will show an expanded table with a column for the number of back-links and a checkbox column for selecting one or more files to move.  The back-links indicate how many pages make reference to the particular asset.  Assets with zero links are those eligible to be moved.  To move an asset, mark its checkbox and near the bottom of the table pick a new folder to create an move the assets into or select one of the existing folders from the drop-list.
+
+==== Disabling Assets =
+One of the drop-list options is to select 'DISABLED'; any assets moved here will be made unavailable to be linked and will qualify for deletion by an Administrator.  Any files moved into the DISABLED directory will be placed into a similarly named sub-folder if they aren't in the MAIN folder.
+
+=== Managed Disabled Assets =
+Clicking on the 'View Disabled Assets' button will switch the view to the DISABLED directory.  This directory can't be accessed via the browser; any assets here are can't be previewed.  Any search filter in placed when the button is clicked will continue in the next view.
+
+==== Deleting Assets =
+The 'Managed Disabled Assets' view has a slightly modified drop-list.  The option for 'ACTIVE' will re-enable the assets.  The option for 'DELETE' will move the asset into a protected directory on the server.  Once the asset is moved into the DELETED directory it can't be recovered via the wiki but can be accessed by the server administrator or wiki owner to either permanently delete or to move back into the other directories.
+
+=== File Clobbering =
+Any assets that are moved will clobber - erase, and over-write - any existing assets in the destination if their filenames are the same.  This can be a quick way to 
+
+== Related Entries =
+{{template:RelatedEntries/WikiEditing}}
+
+[[Category:Nova]]
+ÿþ3newauthorÿþ31ÿþ3minorÿþ30ÿþ2hostÿþ2localhostÿþ2usernameÿþ2RobertKurcinaÿþ2revisionÿþ25ÿþ2idÿþ21205ÿþ2tscreateÿþ21196751235ÿþ2keeptsÿþ21222628125ÿþ1ipÿþ2127.0.0.1ÿþ2tsÿþ21222628125ÿþ2versionÿþ21ÿþ2nameÿþ2text_defaultÿþ2dataÿþ2summaryÿþ3*ÿþ3textÿþ3= Asset Uploads =
+This wiki engine provides a simple interface for uploading assets, listing them for use, and moving them around.  The sorts of assets allowed for upload are restricted by the wiki variables <tt><nowiki>$DownloadExtensions</nowiki></tt> and <tt><nowiki>$ImageExtensions</nowiki></tt>.  By default, the types of assets allowed will be limited by their file extension:	
+
+<pre>
+ $ImageExtensions = gif|jpg|png|bmp|jpeg|ico|tiff
+ $DownloadExtensions = pdf|psd|ai|xls|xml|ppt|js|css|doc|txt|swf|fla|fh9|fh11
+</pre>
+
+As can be seen, the list is definitive and covers most of the benign file types useful for developers, artists, and the general wiki user.
+
+<toc>
+
+== Uploading Files =
+Click on the [LocalWiki:action=upload Upload] link at the top or bottom "Goto" bar.  In the two-column GUI, the left-navigation will also have the upload link.  The page will refresh an display a simple form.  Click the "Browse..." button to select a file from the file system, and then optionally provide a destination folder.  The destination folder can be something that currently exists as shown in the drop-list, or can be a new folder.  Click the upload button to complete the process.  The response screen will then display the image or link to the image.  Additionally, the response screen will display the <tt><nowiki>upload:filename.tla</nowiki></tt> syntax that can be used to make reference to the file from any wiki page.  See WikiImages for more about that.
+
+== List Assets =
+This basic view is available to all wiki users.  It's a page that displays the available active assets such as bitmaps, text, or source files as a list within a table.  The view also provides a way to preview the asset and shows a string that can be used within any WikiPage in order to present the asset.  All assets may appear in either the MAIN folder or in a sub-folder like <tt>/FlashSWF</tt> or <tt>/Examples</tt>
+
+=== Table Sorting =
+The asset list is in a table format and shows the folder, file type, as asset size in kilo-bytes.  As a properly formed WikiTable, the list allows on or more columns to be sorted.  Clicking a column header will switch between ascending and descending order.  Shift-click multiple columns to sort by that many.
+
+=== Search Filters =
+The default sort filter is <tt>!/</tt> which basically is the same as indicating the <tt>MAIN</tt> folder.  Removing the default sort will show all assets in all folders.  The filter can be any keywords or fragments; the engine will then display just those assets with values.  To exclude a keyword or fragment precede it with an exclamation point.
+
+For example:
+ !/         Displays anything without a slash '/'; essentially the same as 'MAIN'
+ jpg        Displays all jpg files
+ jpg, swf   Displays all jpg and swf files.
+ !jpg, !swf Displays all files except those that are swf or jpg.
+
+== Priviledged Mode =
+Editors and Administrators that access the asset view are in 'priviledged mode' and will be given a some powerful interface features.  This is signified by replacing the name of view from 'List Assets' to 'Manage Assets'. 
+
+=== Managed Active Assets =
+The default view will show an expanded table with a column for the number of back-links and a checkbox column for selecting one or more files to move.  The back-links indicate how many pages make reference to the particular asset.  Assets with zero links are those eligible to be moved.  To move an asset, mark its checkbox and near the bottom of the table pick a new folder to create an move the assets into or select one of the existing folders from the drop-list.
+
+==== Disabling Assets =
+One of the drop-list options is to select 'DISABLED'; any assets moved here will be made unavailable to be linked and will qualify for deletion by an Administrator.  Any files moved into the DISABLED directory will be placed into a similarly named sub-folder if they aren't in the MAIN folder.
+
+=== Managed Disabled Assets =
+Clicking on the 'View Disabled Assets' button will switch the view to the DISABLED directory.  This directory can't be accessed via the browser; any assets here are can't be previewed.  Any search filter in placed when the button is clicked will continue in the next view.
+
+==== Deleting Assets =
+The 'Managed Disabled Assets' view has a slightly modified drop-list.  The option for 'ACTIVE' will re-enable the assets.  The option for 'DELETE' will move the asset into a protected directory on the server.  Once the asset is moved into the DELETED directory it can't be recovered via the wiki but can be accessed by the server administrator or wiki owner to either permanently delete or to move back into the other directories.
+
+=== File Clobbering =
+Any assets that are moved will clobber - erase, and over-write - any existing assets in the destination if their filenames are the same.  This can be a quick way to 
+
+{{template:RelatedEntries/WikiEditing}}
+
+[[Category:Nova]]
+ÿþ3minorÿþ31ÿþ3newauthorÿþ31ÿþ2usernameÿþ2RobertKurcinaÿþ2hostÿþ2localhostÿþ2revisionÿþ26ÿþ2tscreateÿþ21196751235ÿþ2idÿþ21261ÿþ2keeptsÿþ21222628143ÿþ1versionÿþ21ÿþ2tsÿþ21222628143ÿþ2ipÿþ2127.0.0.1ÿþ2nameÿþ2text_defaultÿþ2dataÿþ2summaryÿþ3*ÿþ3textÿþ3= Asset Uploads =
+This wiki engine provides a simple interface for uploading assets, listing them for use, and moving them around.  The sorts of assets allowed for upload are restricted by the wiki variables <tt><nowiki>$DownloadExtensions</nowiki></tt> and <tt><nowiki>$ImageExtensions</nowiki></tt>.  By default, the types of assets allowed will be limited by their file extension:	
+
+<pre>
+ $ImageExtensions = gif|jpg|png|bmp|jpeg|ico|tiff
+ $DownloadExtensions = pdf|psd|ai|xls|xml|ppt|js|css|doc|txt|swf|fla|fh9|fh11
+</pre>
+
+As can be seen, the list is definitive and covers most of the benign file types useful for developers, artists, and the general wiki user.
+
+<toc>
+
+== Uploading Files =
+Click on the [LocalWiki:action=upload Upload] link at the top or bottom "Goto" bar.  In the two-column GUI, the left-navigation will also have the upload link.  The page will refresh an display a simple form.  Click the "Browse..." button to select a file from the file system, and then optionally provide a destination folder.  The destination folder can be something that currently exists as shown in the drop-list, or can be a new folder.  Click the upload button to complete the process.  The response screen will then display the image or link to the image.  Additionally, the response screen will display the <tt><nowiki>upload:filename.tla</nowiki></tt> syntax that can be used to make reference to the file from any wiki page.  See WikiImages for more about that.
+
+== List Assets =
+This basic view is available to all wiki users.  It's a page that displays the available active assets such as bitmaps, text, or source files as a list within a table.  The view also provides a way to preview the asset and shows a string that can be used within any WikiPage in order to present the asset.  All assets may appear in either the MAIN folder or in a sub-folder like <tt>/FlashSWF</tt> or <tt>/Examples</tt>
+
+=== Table Sorting =
+The asset list is in a table format and shows the folder, file type, as asset size in kilo-bytes.  As a properly formed WikiTable, the list allows on or more columns to be sorted.  Clicking a column header will switch between ascending and descending order.  Shift-click multiple columns to sort by that many.
+
+=== Search Filters =
+The default sort filter is <tt>!/</tt> which basically is the same as indicating the <tt>MAIN</tt> folder.  Removing the default sort will show all assets in all folders.  The filter can be any keywords or fragments; the engine will then display just those assets with values.  To exclude a keyword or fragment precede it with an exclamation point.
+
+For example:
+ !/         Displays anything without a slash '/'; essentially the same as 'MAIN'
+ jpg        Displays all jpg files
+ jpg, swf   Displays all jpg and swf files.
+ !jpg, !swf Displays all files except those that are swf or jpg.
+
+== Priviledged Mode =
+Editors and Administrators that access the asset view are in 'priviledged mode' and will be given a some powerful interface features.  This is signified by replacing the name of view from 'List Assets' to 'Manage Assets'. 
+
+=== Managed Active Assets =
+The default view will show an expanded table with a column for the number of back-links and a checkbox column for selecting one or more files to move.  The back-links indicate how many pages make reference to the particular asset.  Assets with zero links are those eligible to be moved.  To move an asset, mark its checkbox and near the bottom of the table pick a new folder to create an move the assets into or select one of the existing folders from the drop-list.
+
+==== Disabling Assets =
+One of the drop-list options is to select 'DISABLED'; any assets moved here will be made unavailable to be linked and will qualify for deletion by an Administrator.  Any files moved into the DISABLED directory will be placed into a similarly named sub-folder if they aren't in the MAIN folder.
+
+=== Managed Disabled Assets =
+Clicking on the 'View Disabled Assets' button will switch the view to the DISABLED directory.  This directory can't be accessed via the browser; any assets here are can't be previewed.  Any search filter in placed when the button is clicked will continue in the next view.
+
+==== Deleting Assets =
+The 'Managed Disabled Assets' view has a slightly modified drop-list.  The option for 'ACTIVE' will re-enable the assets.  The option for 'DELETE' will move the asset into a protected directory on the server.  Once the asset is moved into the DELETED directory it can't be recovered via the wiki but can be accessed by the server administrator or wiki owner to either permanently delete or to move back into the other directories.
+
+=== File Clobbering =
+Any assets that are moved will clobber - erase, and over-write - any existing assets in the destination if their filenames are the same.  This can be a quick way to 
+
+{{template:RelatedEntries/WikiEditing}}
+ÿþ3newauthorÿþ30ÿþ3minorÿþ31ÿþ2hostÿþ2localhostÿþ2usernameÿþ2RobertKurcinaÿþ2revisionÿþ27ÿþ2idÿþ21261ÿþ2tscreateÿþ21196751235ÿþ2keeptsÿþ21222752326ÿþ1ipÿþ2127.0.0.1ÿþ2tsÿþ21222752326ÿþ2versionÿþ21ÿþ2nameÿþ2text_defaultÿþ2dataÿþ2summaryÿþ3*ÿþ3textÿþ3= Asset Uploads =
+This wiki engine provides a simple interface for uploading assets, listing them for use, and moving them around.  The sorts of assets allowed for upload are restricted by the wiki variables <tt><nowiki>$DownloadExtensions</nowiki></tt> and <tt><nowiki>$ImageExtensions</nowiki></tt>.  By default, the types of assets allowed will be limited by their file extension:	
+
+<pre>
+ $ImageExtensions = gif|jpg|png|bmp|jpeg|ico|tiff
+ $DownloadExtensions = pdf|psd|ai|xls|xml|ppt|js|css|doc|txt|swf|fla|fh9|fh11
+</pre>
+
+As can be seen, the list is definitive and covers most of the benign file types useful for developers, artists, and the general wiki user.
+
+{{toc}}
+
+== Uploading Files =
+Click on the [LocalWiki:action=upload Upload] link at the top or bottom "Goto" bar.  In the two-column GUI, the left-navigation will also have the upload link.  The page will refresh an display a simple form.  Click the "Browse..." button to select a file from the file system, and then optionally provide a destination folder.  The destination folder can be something that currently exists as shown in the drop-list, or can be a new folder.  Click the upload button to complete the process.  The response screen will then display the image or link to the image.  Additionally, the response screen will display the <tt><nowiki>upload:filename.tla</nowiki></tt> syntax that can be used to make reference to the file from any wiki page.  See WikiImages for more about that.
+
+== List Assets =
+This basic view is available to all wiki users.  It's a page that displays the available active assets such as bitmaps, text, or source files as a list within a table.  The view also provides a way to preview the asset and shows a string that can be used within any WikiPage in order to present the asset.  All assets may appear in either the MAIN folder or in a sub-folder like <tt>/FlashSWF</tt> or <tt>/Examples</tt>
+
+=== Table Sorting =
+The asset list is in a table format and shows the folder, file type, as asset size in kilo-bytes.  As a properly formed WikiTable, the list allows on or more columns to be sorted.  Clicking a column header will switch between ascending and descending order.  Shift-click multiple columns to sort by that many.
+
+=== Search Filters =
+The default sort filter is <tt>!/</tt> which basically is the same as indicating the <tt>MAIN</tt> folder.  Removing the default sort will show all assets in all folders.  The filter can be any keywords or fragments; the engine will then display just those assets with values.  To exclude a keyword or fragment precede it with an exclamation point.
+
+For example:
+ !/         Displays anything without a slash '/'; essentially the same as 'MAIN'
+ jpg        Displays all jpg files
+ jpg, swf   Displays all jpg and swf files.
+ !jpg, !swf Displays all files except those that are swf or jpg.
+
+== Priviledged Mode =
+Editors and Administrators that access the asset view are in 'priviledged mode' and will be given a some powerful interface features.  This is signified by replacing the name of view from 'List Assets' to 'Manage Assets'. 
+
+=== Managed Active Assets =
+The default view will show an expanded table with a column for the number of back-links and a checkbox column for selecting one or more files to move.  The back-links indicate how many pages make reference to the particular asset.  Assets with zero links are those eligible to be moved.  To move an asset, mark its checkbox and near the bottom of the table pick a new folder to create an move the assets into or select one of the existing folders from the drop-list.
+
+==== Disabling Assets =
+One of the drop-list options is to select 'DISABLED'; any assets moved here will be made unavailable to be linked and will qualify for deletion by an Administrator.  Any files moved into the DISABLED directory will be placed into a similarly named sub-folder if they aren't in the MAIN folder.
+
+=== Managed Disabled Assets =
+Clicking on the 'View Disabled Assets' button will switch the view to the DISABLED directory.  This directory can't be accessed via the browser; any assets here are can't be previewed.  Any search filter in placed when the button is clicked will continue in the next view.
+
+==== Deleting Assets =
+The 'Managed Disabled Assets' view has a slightly modified drop-list.  The option for 'ACTIVE' will re-enable the assets.  The option for 'DELETE' will move the asset into a protected directory on the server.  Once the asset is moved into the DELETED directory it can't be recovered via the wiki but can be accessed by the server administrator or wiki owner to either permanently delete or to move back into the other directories.
+
+=== File Clobbering =
+Any assets that are moved will clobber - erase, and over-write - any existing assets in the destination if their filenames are the same.  This can be a quick way to 
+
+{{template:RelatedEntries/WikiEditing}}
+ÿþ3minorÿþ31ÿþ3newauthorÿþ31ÿþ2usernameÿþ2RobertKurcinaÿþ2hostÿþ2localhostÿþ2revisionÿþ28ÿþ2tscreateÿþ21196751235ÿþ2idÿþ21278ÿþ2keeptsÿþ21223011985

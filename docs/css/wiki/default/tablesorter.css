@@ -1,0 +1,27 @@
+/*---------------------------------------------------------------------------*/
+/* TABLESORTER - customize this section */
+/*---------------------------------------------------------------------------*/
+.tablesorter thead tr .header {
+	background-image: url(../../../plugins/jquery/tablesorter/img/bg.gif);
+	background-repeat: no-repeat;
+	background-position: center right;
+	cursor: pointer;
+}
+
+.tablesorter thead tr .headerSortUp {
+	background-image: url(../../../plugins/jquery/tablesorter/img/asc.gif);
+}
+.tablesorter thead tr .headerSortDown {
+	background-image: url(../../../plugins/jquery/tablesorter/img/desc.gif);
+}
+
+.tablesorter tbody tr.odd td {
+	background-color:#F0F0F6;
+}
+table.tablesorter tbody tr.even td.first {
+	background-color:#DBEAF6;
+}
+
+table.tablesorter thead tr .headerSortDown, table.tablesorter thead tr .headerSortUp {
+	background-color: #98B9C7;
+}

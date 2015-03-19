@@ -1,0 +1,256 @@
+ÿþ1tsÿþ21195698931ÿþ2ipÿþ2127.0.0.1ÿþ2versionÿþ21ÿþ2nameÿþ2text_defaultÿþ2dataÿþ2summaryÿþ3*ÿþ3textÿþ3<toc>
+== Overview =
+UseMod:UseModWiki 0.90 and later include some "admin" features.  A new configuration variable <nowiki>$AdminPass</nowiki> has been added.  By default it is "", which disables all admin features.  It can be set to a space-separated list of passwords, allowing multiple separate passwords to be given out.
+
+Users are considered "admins" if <nowiki>UserIsAdmin</nowiki> (their "administrator" password (set in Preferences) is the same as any admin password). Alternatively, one can add "adminpw=password" to the command line (see below), but it puts the password into the site's logs. (On usemod.com and many other sites the logs are semi-public information.) Saving the editbanned list or submitting an editlinks request requires the user to set their administrator password in Preferences.
+
+When you use the Preferences page and give the Administrator Password, after hitting the <i>Save</i> button and navigating back to any wiki page, you'll see some new links at the bottom of every page. These are shortcuts (so you don't have to manually append text like "?action=foo" to URL's) for running various administrative AdminActions.
+
+In addition to "admins", the wiki owner can also create a list of "editor" passwords. To use an editor password, type it <b>into the "Administrator password" line</b> on the Preferences page. The "editor" password(s) grant the ability to edit pages blocked by a global or edit-banned feature, but do not grant the ability to change the edit-locked status of the site. 
+
+The [http://www.usemod.com/cgi-bin/um9.pl UM9 test wiki] currently (April 2001) has an admin password of "test1234" for public testing of the admin features. Please feel free to try these features on that wiki. (The um9 wiki is a test site so it may occasionally be down when new features are tested.) Note that a valid admin password overrides the "global" edit lock or the editable banned list. (If you want to ban yourself you'll have to unset your admin password to see the effect. After testing you can re-enter your admin password and take yourself off the banned list.) 
+
+=== Special features (AdminActions) ==
+Certain features are enabled if the user provides the administrator password via the [http://wiki.kurcina.org/cgi-bin/index.cgi?action=editprefs Preferences] link.
+
+
+Maintenance runs *anytime*, not just once/12 hours.  (Normal users can start the maintenance if the last run was at least 12 hours ago.)
+* <tt><nowiki>LocalWiki:action=maintain</nowiki></tt>
+
+Lock editing for all pages (only admins and "editors" can edit):
+* <tt><nowiki>LocalWiki:action=editlock&set=1</nowiki></tt>
+
+Unlock editing for all pages (everyone can edit):
+* <tt><nowiki>LocalWiki:action=editlock&set=0</nowiki></tt>
+
+Edit-ban list (first set your administrator password in Preferences):
+* <tt><nowiki>LocalWiki:action=editbanned</nowiki></tt>
+
+Lock a single page (only admins (not even "editors") can edit that page):
+* <tt><nowiki>LocalWiki:action=pagelock&set=1&id=AdminFeatures</nowiki></tt>
+
+Unlock a single page:
+* <tt><nowiki>LocalWiki:action=pagelock&set=0&id=AdminFeatures</nowiki></tt>
+
+Rename or delete pages:
+* <tt><nowiki>LocalWiki:action=editlinks</nowiki></tt>
+
+==== Possible Uses: ===
+A "private" wiki site can email editor passwords to invited participants.  Unlike an ordinary wiki, outsiders will not be able to damage the site if they find it (say, through a referrer entry in a log file).
+
+An "invitation-only" wiki could have a single editor password given out to those who seem like good contributors.  Another possibility is to put the editor password in a mission statement or FAQ list, ensuring that those who edit have <i>some</i> exposure to the site's documentation.
+
+An individual can publish a wiki site without giving out edit access. 
+
+In a public wiki, a few people can use admin abilities to quickly limit possible vandalism, without requiring the presence of a site administrator.  Also, trusted members of the community (almost all of them) can be given an editor password which allows them to edit even during most shutdown events.
+
+A wiki can edit-lock a few core pages like RecentChanges, the front page, a few site-policy pages, and other things they feel are important.  This may also make raw-HTML sites slightly safer by locking a set of commonly-read pages.
+
+==== Observations ====
+The "editlock" action applies to the entire wiki, not any particular pages.  (It creates a file called "editlock" in the data directory--if it exists, the entire wiki is locked.)  The "pagelock" action locks only a single page by creating a page-specific lock file.  These two kinds of locking are independent (if you remove the global "editlock" file, any pages locked with "pagelock" are still locked).  --UseMod:CliffordAdams
+----
+The maintainance action (action=maintain) currently (in version 0.92) removes old versions of pages from the keep file if they are more than <nowiki><tt>$KeepDays</tt></nowiki> old (default 14 days).  In future versions the maintenance action may also permanently delete pages (using the MeatBall:DeletedPage convention) or update configuration files.  --UseMod:CliffordAdams
+----
+You could delete a user-ID file, but there is no (current or planned) way to reuse an old ID number.  The "users" in [UseMod:UseModWiki Us are really just preferences (possibly including saved editor/admin passwords), so I don't see why you would want to delete them.  --UseMod:CliffordAdams
+
+=== Version Control =
+To Roll-back a page to an earlier version:
+* Click the "View other revisions" link (at the bottom)
+* Click on the revision you want to keep (for example, "Revision 137")
+* Click the "Edit revision 137 of this page" link at the bottom.
+* Click the save button.  The text that was in revision 137 will become the current revision.
+
+== Related Entries =
+ AdminActions
+ WikiAdmin
+ WikiStyleGuide
+ InterMap
+ÿþ3newauthorÿþ31ÿþ3minorÿþ31ÿþ2hostÿþ2localhostÿþ2usernameÿþ2RobertKurcinaÿþ2revisionÿþ221ÿþ2idÿþ21130ÿþ2tscreateÿþ21178788709ÿþ2keeptsÿþ21195945918ÿþ1versionÿþ21ÿþ2ipÿþ2127.0.0.1ÿþ2tsÿþ21195945918ÿþ2nameÿþ2text_defaultÿþ2dataÿþ2summaryÿþ3*ÿþ3textÿþ3<toc>
+== Overview =
+UseMod:UseModWiki 0.90 and later include some "admin" features.  A new configuration variable <nowiki>$AdminPass</nowiki> has been added.  By default it is "", which disables all admin features.  It can be set to a space-separated list of passwords, allowing multiple separate passwords to be given out.
+
+Users are considered "admins" if <nowiki>UserIsAdmin</nowiki> (their "administrator" password (set in Preferences) is the same as any admin password). Alternatively, one can add "adminpw=password" to the command line (see below), but it puts the password into the site's logs. (On usemod.com and many other sites the logs are semi-public information.) Saving the editbanned list or submitting an editlinks request requires the user to set their administrator password in Preferences.
+
+When you use the Preferences page and give the Administrator Password, after hitting the <i>Save</i> button and navigating back to any wiki page, you'll see some new links at the bottom of every page. These are shortcuts (so you don't have to manually append text like "?action=foo" to URL's) for running various administrative AdminActions.
+
+In addition to "admins", the wiki owner can also create a list of "editor" passwords. To use an editor password, type it <b>into the "Administrator password" line</b> on the Preferences page. The "editor" password(s) grant the ability to edit pages blocked by a global or edit-banned feature, but do not grant the ability to change the edit-locked status of the site. 
+
+The [http://www.usemod.com/cgi-bin/um9.pl UM9 test wiki] currently (April 2001) has an admin password of "test1234" for public testing of the admin features. Please feel free to try these features on that wiki. (The um9 wiki is a test site so it may occasionally be down when new features are tested.) Note that a valid admin password overrides the "global" edit lock or the editable banned list. (If you want to ban yourself you'll have to unset your admin password to see the effect. After testing you can re-enter your admin password and take yourself off the banned list.) 
+
+=== Special features (AdminActions) ==
+Certain features are enabled if the user provides the administrator password via the [http://wiki.kurcina.org/cgi-bin/index.cgi?action=editprefs Preferences] link.
+
+
+Maintenance runs *anytime*, not just once/12 hours.  (Normal users can start the maintenance if the last run was at least 12 hours ago.)
+* <tt><nowiki>LocalWiki:action=maintain</nowiki></tt>
+
+Lock editing for all pages (only admins and "editors" can edit):
+* <tt><nowiki>LocalWiki:action=editlock&set=1</nowiki></tt>
+
+Unlock editing for all pages (everyone can edit):
+* <tt><nowiki>LocalWiki:action=editlock&set=0</nowiki></tt>
+
+Edit-ban list (first set your administrator password in Preferences):
+* <tt><nowiki>LocalWiki:action=editbanned</nowiki></tt>
+
+Lock a single page (only admins (not even "editors") can edit that page):
+* <tt><nowiki>LocalWiki:action=pagelock&set=1&id=AdminFeatures</nowiki></tt>
+
+Unlock a single page:
+* <tt><nowiki>LocalWiki:action=pagelock&set=0&id=AdminFeatures</nowiki></tt>
+
+Rename or delete pages:
+* <tt><nowiki>LocalWiki:action=editlinks</nowiki></tt>
+
+==== Possible Uses: ===
+A "private" wiki site can email editor passwords to invited participants.  Unlike an ordinary wiki, outsiders will not be able to damage the site if they find it (say, through a referrer entry in a log file).
+
+An "invitation-only" wiki could have a single editor password given out to those who seem like good contributors.  Another possibility is to put the editor password in a mission statement or FAQ list, ensuring that those who edit have <i>some</i> exposure to the site's documentation.
+
+An individual can publish a wiki site without giving out edit access. 
+
+In a public wiki, a few people can use admin abilities to quickly limit possible vandalism, without requiring the presence of a site administrator.  Also, trusted members of the community (almost all of them) can be given an editor password which allows them to edit even during most shutdown events.
+
+A wiki can edit-lock a few core pages like RecentChanges, the front page, a few site-policy pages, and other things they feel are important.  This may also make raw-HTML sites slightly safer by locking a set of commonly-read pages.
+
+==== Observations ====
+The "editlock" action applies to the entire wiki, not any particular pages.  (It creates a file called "editlock" in the data directory--if it exists, the entire wiki is locked.)  The "pagelock" action locks only a single page by creating a page-specific lock file.  These two kinds of locking are independent (if you remove the global "editlock" file, any pages locked with "pagelock" are still locked).  --UseMod:CliffordAdams
+----
+The maintainance action (action=maintain) currently (in version 0.92) removes old versions of pages from the keep file if they are more than <nowiki><tt>$KeepDays</tt></nowiki> old (default 14 days).  In future versions the maintenance action may also permanently delete pages (using the MeatBall:DeletedPage convention) or update configuration files.  --UseMod:CliffordAdams
+----
+You could delete a user-ID file, but there is no (current or planned) way to reuse an old ID number.  The "users" in [UseMod:UseModWiki Us are really just preferences (possibly including saved editor/admin passwords), so I don't see why you would want to delete them.  --UseMod:CliffordAdams
+
+=== Version Control =
+To Roll-back a page to an earlier version:
+* Click the "View other revisions" link (at the bottom)
+* Click on the revision you want to keep (for example, "Revision 137")
+* Click the "Edit revision 137 of this page" link at the bottom.
+* Click the save button.  The text that was in revision 137 will become the current revision.
+
+== Related Entries =
+{{template:RelatedEntries/WikiAdministration}}
+ÿþ3minorÿþ31ÿþ3newauthorÿþ31ÿþ2usernameÿþ2RobertKurcinaÿþ2hostÿþ2localhostÿþ2revisionÿþ222ÿþ2tscreateÿþ21178788709ÿþ2idÿþ21149ÿþ2keeptsÿþ21222627816ÿþ1tsÿþ21222627816ÿþ2ipÿþ2127.0.0.1ÿþ2versionÿþ21ÿþ2nameÿþ2text_defaultÿþ2dataÿþ2summaryÿþ3*ÿþ3textÿþ3<toc>
+== Overview =
+UseMod:UseModWiki 0.90 and later include some "admin" features.  A new configuration variable <nowiki>$AdminPass</nowiki> has been added.  By default it is "", which disables all admin features.  It can be set to a space-separated list of passwords, allowing multiple separate passwords to be given out.
+
+Users are considered "admins" if <nowiki>UserIsAdmin</nowiki> (their "administrator" password (set in Preferences) is the same as any admin password). Alternatively, one can add "adminpw=password" to the command line (see below), but it puts the password into the site's logs. (On usemod.com and many other sites the logs are semi-public information.) Saving the editbanned list or submitting an editlinks request requires the user to set their administrator password in Preferences.
+
+When you use the Preferences page and give the Administrator Password, after hitting the <i>Save</i> button and navigating back to any wiki page, you'll see some new links at the bottom of every page. These are shortcuts (so you don't have to manually append text like "?action=foo" to URL's) for running various administrative AdminActions.
+
+In addition to "admins", the wiki owner can also create a list of "editor" passwords. To use an editor password, type it <b>into the "Administrator password" line</b> on the Preferences page. The "editor" password(s) grant the ability to edit pages blocked by a global or edit-banned feature, but do not grant the ability to change the edit-locked status of the site. 
+
+The [http://www.usemod.com/cgi-bin/um9.pl UM9 test wiki] currently (April 2001) has an admin password of "test1234" for public testing of the admin features. Please feel free to try these features on that wiki. (The um9 wiki is a test site so it may occasionally be down when new features are tested.) Note that a valid admin password overrides the "global" edit lock or the editable banned list. (If you want to ban yourself you'll have to unset your admin password to see the effect. After testing you can re-enter your admin password and take yourself off the banned list.) 
+
+=== Special features (AdminActions) ==
+Certain features are enabled if the user provides the administrator password via the [http://wiki.kurcina.org/cgi-bin/index.cgi?action=editprefs Preferences] link.
+
+Maintenance runs *anytime*, not just once/12 hours.  (Normal users can start the maintenance if the last run was at least 12 hours ago.)
+* <tt><nowiki>LocalWiki:action=maintain</nowiki></tt>
+
+Lock editing for all pages (only admins and "editors" can edit):
+* <tt><nowiki>LocalWiki:action=editlock&set=1</nowiki></tt>
+
+Unlock editing for all pages (everyone can edit):
+* <tt><nowiki>LocalWiki:action=editlock&set=0</nowiki></tt>
+
+Edit-ban list (first set your administrator password in Preferences):
+* <tt><nowiki>LocalWiki:action=editbanned</nowiki></tt>
+
+Lock a single page (only admins (not even "editors") can edit that page):
+* <tt><nowiki>LocalWiki:action=pagelock&set=1&id=AdminFeatures</nowiki></tt>
+
+Unlock a single page:
+* <tt><nowiki>LocalWiki:action=pagelock&set=0&id=AdminFeatures</nowiki></tt>
+
+Rename or delete pages:
+* <tt><nowiki>LocalWiki:action=editlinks</nowiki></tt>
+
+==== Possible Uses: ===
+A "private" wiki site can email editor passwords to invited participants.  Unlike an ordinary wiki, outsiders will not be able to damage the site if they find it (say, through a referrer entry in a log file).
+
+An "invitation-only" wiki could have a single editor password given out to those who seem like good contributors.  Another possibility is to put the editor password in a mission statement or FAQ list, ensuring that those who edit have <i>some</i> exposure to the site's documentation.
+
+An individual can publish a wiki site without giving out edit access. 
+
+In a public wiki, a few people can use admin abilities to quickly limit possible vandalism, without requiring the presence of a site administrator.  Also, trusted members of the community (almost all of them) can be given an editor password which allows them to edit even during most shutdown events.
+
+A wiki can edit-lock a few core pages like RecentChanges, the front page, a few site-policy pages, and other things they feel are important.  This may also make raw-HTML sites slightly safer by locking a set of commonly-read pages.
+
+==== Observations ====
+The "editlock" action applies to the entire wiki, not any particular pages.  (It creates a file called "editlock" in the data directory--if it exists, the entire wiki is locked.)  The "pagelock" action locks only a single page by creating a page-specific lock file.  These two kinds of locking are independent (if you remove the global "editlock" file, any pages locked with "pagelock" are still locked).  --UseMod:CliffordAdams
+----
+The maintainance action (action=maintain) currently (in version 0.92) removes old versions of pages from the keep file if they are more than <nowiki><tt>$KeepDays</tt></nowiki> old (default 14 days).  In future versions the maintenance action may also permanently delete pages (using the MeatBall:DeletedPage convention) or update configuration files.  --UseMod:CliffordAdams
+----
+You could delete a user-ID file, but there is no (current or planned) way to reuse an old ID number.  The "users" in [UseMod:UseModWiki Us are really just preferences (possibly including saved editor/admin passwords), so I don't see why you would want to delete them.  --UseMod:CliffordAdams
+
+=== Version Control =
+To Roll-back a page to an earlier version:
+* Click the "View other revisions" link (at the bottom)
+* Click on the revision you want to keep (for example, "Revision 137")
+* Click the "Edit revision 137 of this page" link at the bottom.
+* Click the save button.  The text that was in revision 137 will become the current revision.
+
+{{template:RelatedEntries/WikiAdministration}}
+ÿþ3newauthorÿþ31ÿþ3minorÿþ31ÿþ2hostÿþ2localhostÿþ2usernameÿþ2RobertKurcinaÿþ2revisionÿþ223ÿþ2idÿþ21261ÿþ2tscreateÿþ21178788709ÿþ2keeptsÿþ21222752298ÿþ1versionÿþ21ÿþ2ipÿþ2127.0.0.1ÿþ2tsÿþ21222752298ÿþ2nameÿþ2text_defaultÿþ2dataÿþ2summaryÿþ3*ÿþ3textÿþ3{{toc}}
+== Overview =
+UseMod:UseModWiki 0.90 and later include some "admin" features.  A new configuration variable <nowiki>$AdminPass</nowiki> has been added.  By default it is "", which disables all admin features.  It can be set to a space-separated list of passwords, allowing multiple separate passwords to be given out.
+
+Users are considered "admins" if <nowiki>UserIsAdmin</nowiki> (their "administrator" password (set in Preferences) is the same as any admin password). Alternatively, one can add "adminpw=password" to the command line (see below), but it puts the password into the site's logs. (On usemod.com and many other sites the logs are semi-public information.) Saving the editbanned list or submitting an editlinks request requires the user to set their administrator password in Preferences.
+
+When you use the Preferences page and give the Administrator Password, after hitting the <i>Save</i> button and navigating back to any wiki page, you'll see some new links at the bottom of every page. These are shortcuts (so you don't have to manually append text like "?action=foo" to URL's) for running various administrative AdminActions.
+
+In addition to "admins", the wiki owner can also create a list of "editor" passwords. To use an editor password, type it <b>into the "Administrator password" line</b> on the Preferences page. The "editor" password(s) grant the ability to edit pages blocked by a global or edit-banned feature, but do not grant the ability to change the edit-locked status of the site. 
+
+The [http://www.usemod.com/cgi-bin/um9.pl UM9 test wiki] currently (April 2001) has an admin password of "test1234" for public testing of the admin features. Please feel free to try these features on that wiki. (The um9 wiki is a test site so it may occasionally be down when new features are tested.) Note that a valid admin password overrides the "global" edit lock or the editable banned list. (If you want to ban yourself you'll have to unset your admin password to see the effect. After testing you can re-enter your admin password and take yourself off the banned list.) 
+
+=== Special features (AdminActions) ==
+Certain features are enabled if the user provides the administrator password via the [http://wiki.kurcina.org/cgi-bin/index.cgi?action=editprefs Preferences] link.
+
+Maintenance runs *anytime*, not just once/12 hours.  (Normal users can start the maintenance if the last run was at least 12 hours ago.)
+* <tt><nowiki>LocalWiki:action=maintain</nowiki></tt>
+
+Lock editing for all pages (only admins and "editors" can edit):
+* <tt><nowiki>LocalWiki:action=editlock&set=1</nowiki></tt>
+
+Unlock editing for all pages (everyone can edit):
+* <tt><nowiki>LocalWiki:action=editlock&set=0</nowiki></tt>
+
+Edit-ban list (first set your administrator password in Preferences):
+* <tt><nowiki>LocalWiki:action=editbanned</nowiki></tt>
+
+Lock a single page (only admins (not even "editors") can edit that page):
+* <tt><nowiki>LocalWiki:action=pagelock&set=1&id=AdminFeatures</nowiki></tt>
+
+Unlock a single page:
+* <tt><nowiki>LocalWiki:action=pagelock&set=0&id=AdminFeatures</nowiki></tt>
+
+Rename or delete pages:
+* <tt><nowiki>LocalWiki:action=editlinks</nowiki></tt>
+
+==== Possible Uses: ===
+A "private" wiki site can email editor passwords to invited participants.  Unlike an ordinary wiki, outsiders will not be able to damage the site if they find it (say, through a referrer entry in a log file).
+
+An "invitation-only" wiki could have a single editor password given out to those who seem like good contributors.  Another possibility is to put the editor password in a mission statement or FAQ list, ensuring that those who edit have <i>some</i> exposure to the site's documentation.
+
+An individual can publish a wiki site without giving out edit access. 
+
+In a public wiki, a few people can use admin abilities to quickly limit possible vandalism, without requiring the presence of a site administrator.  Also, trusted members of the community (almost all of them) can be given an editor password which allows them to edit even during most shutdown events.
+
+A wiki can edit-lock a few core pages like RecentChanges, the front page, a few site-policy pages, and other things they feel are important.  This may also make raw-HTML sites slightly safer by locking a set of commonly-read pages.
+
+==== Observations ====
+The "editlock" action applies to the entire wiki, not any particular pages.  (It creates a file called "editlock" in the data directory--if it exists, the entire wiki is locked.)  The "pagelock" action locks only a single page by creating a page-specific lock file.  These two kinds of locking are independent (if you remove the global "editlock" file, any pages locked with "pagelock" are still locked).  --UseMod:CliffordAdams
+----
+The maintainance action (action=maintain) currently (in version 0.92) removes old versions of pages from the keep file if they are more than <nowiki><tt>$KeepDays</tt></nowiki> old (default 14 days).  In future versions the maintenance action may also permanently delete pages (using the MeatBall:DeletedPage convention) or update configuration files.  --UseMod:CliffordAdams
+----
+You could delete a user-ID file, but there is no (current or planned) way to reuse an old ID number.  The "users" in [UseMod:UseModWiki Us are really just preferences (possibly including saved editor/admin passwords), so I don't see why you would want to delete them.  --UseMod:CliffordAdams
+
+=== Version Control =
+To Roll-back a page to an earlier version:
+* Click the "View other revisions" link (at the bottom)
+* Click on the revision you want to keep (for example, "Revision 137")
+* Click the "Edit revision 137 of this page" link at the bottom.
+* Click the save button.  The text that was in revision 137 will become the current revision.
+
+{{template:RelatedEntries/WikiAdministration}}
+ÿþ3minorÿþ31ÿþ3newauthorÿþ31ÿþ2usernameÿþ2RobertKurcinaÿþ2hostÿþ2localhostÿþ2revisionÿþ224ÿþ2tscreateÿþ21178788709ÿþ2idÿþ21278ÿþ2keeptsÿþ21223011197

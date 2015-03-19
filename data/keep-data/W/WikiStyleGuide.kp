@@ -1,0 +1,165 @@
+ÿþ1versionÿþ21ÿþ2ipÿþ2127.0.0.1ÿþ2tsÿþ21179824888ÿþ2nameÿþ2text_defaultÿþ2dataÿþ2minorÿþ30ÿþ3summaryÿþ3*ÿþ3textÿþ3= Noble Pursuit Games Wiki Styleguide =
+This styleguide is for any wiki entries entered to ensure that the presentation is consistently applied between different contributors.  It is a strong recommendation for the veteran editors to pursue, and a requirement for any stable content under one of the links hubs.  It doesn't need to be adhered to by CasualContent or DraftContent.
+
+== First-level Entries =
+A WikiPage is one that is created with the standard WikiName.  All entries, including the HomePage, are created as primary pages.  However, some pages are known as "first-level" entries and represent a sort of hub that lists entries to other pages each of which uses the last [ or second ] word of the first-level pages' name as one of its WikiWord""s.  An example of this is CategoryWiki, which contain links to pages like WikiStyleGuide, WikiMarkup, and WikiURLs.
+
+== Sub-page Entries =
+Sub-pages are those which are created as a WikiName preceded by a slash '/' as in <tt><nowiki>/SubPage</nowiki></tt>.  The slash informs the wiki engine to nest the entry under the directory for the it referring page.  When it is referenced it will always be linked as shown in this format <tt><nowiki>?PrimaryPage/SubPage</nowiki></tt>. Use sub-pages to group collections of related content together for when searching for content.
+
+== Headings =
+First-level pages must begin with an H1 header as the only one of its type upon a page.  All other headers on a first-level page are H2 and lower.  All sub-pages must begin with an H2 header, of which there may be multiple upon a page.  No H1 headers are allowed in second-level pages.  For all headers except for the first on any page, precede them with a blank line. Any other type of WikiPage can be designed as desired, with the exception that the first header [ be it H1, H2, or H3 ] is the only one of it's sort upon the page.  Be sure to reserve H5 and H6 headers for special purposes as described below. 
+
+== Blockquotes =
+All headings of first-level pages and sub-pages must be followed by either a blockquote [ see WikiMarkup ] or some introductory text. 
+
+== Table of Contents =
+As described in WikiTOCs, H2 and lower headers that contain a '#' hashmark before the title as in <tt><nowiki>== # Section 1.1 =</nowiki></tt> can be referenced automatically by a table of contents command <tt>toc</tt>. Always utilize a table of contents for very long pages with varied content.  Candidates would be single-page HTML-formatted rules books.
+
+== Lines =
+Divider lines are formed by a string of 4 dashes like so; <code>----</code>.  Dividers are meant to separate common elements of the same topic.  Use divider lines sparingly! Never use a divider unless adequate non-header content appears before and after it.  Do not have blank lines precede or succeed a divider. 
+
+== Definitions =
+Often, a page needs not be more than a simple definition or list of definitions to be linked from a page with use of their terminology.  Start these pages with an H5 followed by the term being defined, as in <tt><nowiki>===== DEFINITION: Some Term Being Defined =</nowiki></tt>.  For long lists of terms, use the anchor form of the header like so: <tt><nowiki> ====== [#anchorName] Title Text Goes Here =</nowiki></tt>.
+
+== References =
+A wiki is extremely free-form and tends to become disorganized.  A user of a wiki will have a difficult time to quickly locate relevant content.  To circumvent this, always create a list of WikiName""s at the bottom of each page, preceded by an H6 header titled 'Related Entries'.  Each entry is to be a single line preceded by a blank space.  At minimum, the one entry each second-level page should have is a link back to it's first-level parent.
+
+====== Related Entries =
+ WikiMarkup
+ WikiTOCs
+ WikiHeadings
+ WikiLists
+ WikiTables
+ WikiImages
+ WikiURLs
+ÿþ3newauthorÿþ31ÿþ2usernameÿþ2ÿþ2hostÿþ2localhostÿþ2revisionÿþ217ÿþ2tscreateÿþ21179125464ÿþ2idÿþ21027ÿþ2keeptsÿþ21192350612ÿþ1versionÿþ21ÿþ2ipÿþ2127.0.0.1ÿþ2tsÿþ21195700352ÿþ2nameÿþ2text_defaultÿþ2dataÿþ2summaryÿþ3*ÿþ3textÿþ3= Noble Pursuit Games Wiki Styleguide =
+This styleguide is for any wiki entries entered to ensure that the presentation is consistently applied between different contributors.  It is a strong recommendation for the veteran editors to pursue, and a requirement for any stable content under one of the links hubs.  It doesn't need to be adhered to by CasualContent or DraftContent.
+
+<toc>
+
+== First-level Entries =
+A WikiPage is one that is created with the standard WikiName.  All entries, including the HomePage, are created as primary pages.  However, some pages are known as "first-level" entries and represent a sort of hub that lists entries to other pages each of which uses the last [ or second ] word of the first-level pages' name as one of its WikiWord""s.  An example of this is CategoryWiki, which contain links to pages like WikiStyleGuide, WikiMarkup, and WikiURLs.
+
+== Sub-page Entries =
+Sub-pages are those which are created as a WikiName preceded by a slash '/' as in <tt><nowiki>/SubPage</nowiki></tt>.  The slash informs the wiki engine to nest the entry under the directory for the it referring page.  When it is referenced it will always be linked as shown in this format <tt><nowiki>?PrimaryPage/SubPage</nowiki></tt>. Use sub-pages to group collections of related content together for when searching for content.
+
+== Headings =
+First-level pages must begin with an H1 header as the only one of its type upon a page.  All other headers on a first-level page are H2 and lower.  All sub-pages must begin with an H2 header, of which there may be multiple upon a page.  No H1 headers are allowed in second-level pages.  For all headers except for the first on any page, precede them with a blank line. Any other type of WikiPage can be designed as desired, with the exception that the first header [ be it H1, H2, or H3 ] is the only one of it's sort upon the page.  Be sure to reserve H5 and H6 headers for special purposes as described below. 
+
+== Blockquotes =
+All headings of first-level pages and sub-pages must be followed by either a blockquote [ see WikiMarkup ] or some introductory text. 
+
+== Table of Contents =
+As described in WikiTOCs, H2 and lower headers that contain a '#' hashmark before the title as in <tt><nowiki>== # Section 1.1 =</nowiki></tt> can be referenced automatically by a table of contents command <tt>toc</tt>. Always utilize a table of contents for very long pages with varied content.  Candidates would be single-page HTML-formatted rules books.
+
+== Lines =
+Divider lines are formed by a string of 4 dashes like so; <tt>----</tt>.  Dividers are meant to separate common elements of the same topic.  Use divider lines sparingly! Never use a divider unless adequate non-header content appears before and after it.  Do not have blank lines precede or succeed a divider. 
+
+== Definitions =
+Often, a page needs not be more than a simple definition or list of definitions to be linked from a page with use of their terminology.  Start these pages with an H5 followed by the term being defined, as in <tt><nowiki>===== DEFINITION: Some Term Being Defined =</nowiki></tt>.  For long lists of terms, use the anchor form of the header like so: <tt><nowiki> ====== [#anchorName] Title Text Goes Here =</nowiki></tt>.
+
+== References =
+A wiki is extremely free-form and tends to become disorganized.  A user of a wiki will have a difficult time to quickly locate relevant content.  To circumvent this, always create a list of WikiName""s at the bottom of each page, preceded by an H6 header titled 'Related Entries'.  Each entry is to be a single line preceded by a blank space.  At minimum, the one entry each second-level page should have is a link back to it's first-level parent.
+
+== Related Entries =
+ WikiMarkup
+ WikiTOCs
+ WikiHeadings
+ WikiLists
+ WikiTables
+ WikiImages
+ WikiURLs
+ WikiGallery
+ WikiFlash
+ÿþ3minorÿþ31ÿþ3newauthorÿþ30ÿþ2usernameÿþ2RobertKurcinaÿþ2hostÿþ2localhostÿþ2revisionÿþ223ÿþ2tscreateÿþ21179125464ÿþ2idÿþ21130ÿþ2keeptsÿþ21195945027ÿþ1versionÿþ21ÿþ2ipÿþ2127.0.0.1ÿþ2tsÿþ21195945459ÿþ2nameÿþ2text_defaultÿþ2dataÿþ2summaryÿþ3*ÿþ3textÿþ3= Noble Pursuit Games Wiki Styleguide =
+This styleguide is for any wiki entries entered to ensure that the presentation is consistently applied between different contributors.  It is a strong recommendation for the veteran editors to pursue, and a requirement for any stable content under one of the links hubs.  It doesn't need to be adhered to by CasualContent or DraftContent.
+
+<toc>
+
+== First-level Entries =
+A WikiPage is one that is created with the standard WikiName.  All entries, including the HomePage, are created as primary pages.  However, some pages are known as "first-level" entries and represent a sort of hub that lists entries to other pages each of which uses the last [ or second ] word of the first-level pages' name as one of its WikiWord""s.  An example of this is CategoryWiki, which contain links to pages like WikiStyleGuide, WikiMarkup, and WikiURLs.
+
+== Sub-page Entries =
+Sub-pages are those which are created as a WikiName preceded by a slash '/' as in <tt><nowiki>/SubPage</nowiki></tt>.  The slash informs the wiki engine to nest the entry under the directory for the it referring page.  When it is referenced it will always be linked as shown in this format <tt><nowiki>?PrimaryPage/SubPage</nowiki></tt>. Use sub-pages to group collections of related content together for when searching for content.
+
+== Headings =
+First-level pages must begin with an H1 header as the only one of its type upon a page.  All other headers on a first-level page are H2 and lower.  All sub-pages must begin with an H2 header, of which there may be multiple upon a page.  No H1 headers are allowed in second-level pages.  For all headers except for the first on any page, precede them with a blank line. Any other type of WikiPage can be designed as desired, with the exception that the first header [ be it H1, H2, or H3 ] is the only one of it's sort upon the page.  Be sure to reserve H5 and H6 headers for special purposes as described below. 
+
+== Blockquotes =
+All headings of first-level pages and sub-pages must be followed by either a blockquote [ see WikiMarkup ] or some introductory text. 
+
+== Table of Contents =
+As described in WikiTOCs, H2 and lower headers that contain a '#' hashmark before the title as in <tt><nowiki>== # Section 1.1 =</nowiki></tt> can be referenced automatically by a table of contents command <tt>toc</tt>. Always utilize a table of contents for very long pages with varied content.  Candidates would be single-page HTML-formatted rules books.
+
+== Lines =
+Divider lines are formed by a string of 4 dashes like so; <tt>----</tt>.  Dividers are meant to separate common elements of the same topic.  Use divider lines sparingly! Never use a divider unless adequate non-header content appears before and after it.  Do not have blank lines precede or succeed a divider. 
+
+== Definitions =
+Often, a page needs not be more than a simple definition or list of definitions to be linked from a page with use of their terminology.  Start these pages with an H5 followed by the term being defined, as in <tt><nowiki>===== DEFINITION: Some Term Being Defined =</nowiki></tt>.  For long lists of terms, use the anchor form of the header like so: <tt><nowiki> ====== [#anchorName] Title Text Goes Here =</nowiki></tt>.
+
+== References =
+A wiki is extremely free-form and tends to become disorganized.  A user of a wiki will have a difficult time to quickly locate relevant content.  To circumvent this, always create a list of WikiName""s at the bottom of each page, preceded by an H6 header titled 'Related Entries'.  Each entry is to be a single line preceded by a blank space.  At minimum, the one entry each second-level page should have is a link back to it's first-level parent.
+
+== Related Entries =
+{{template:RelatedEntries/WikiEditing}}
+ÿþ3minorÿþ31ÿþ3newauthorÿþ30ÿþ2usernameÿþ2RobertKurcinaÿþ2hostÿþ2localhostÿþ2revisionÿþ225ÿþ2tscreateÿþ21179125464ÿþ2idÿþ21149ÿþ2keeptsÿþ21222627991ÿþ1tsÿþ21222627991ÿþ2ipÿþ2127.0.0.1ÿþ2versionÿþ21ÿþ2nameÿþ2text_defaultÿþ2dataÿþ2summaryÿþ3*ÿþ3textÿþ3= Noble Pursuit Games Wiki Styleguide =
+This styleguide is for any wiki entries entered to ensure that the presentation is consistently applied between different contributors.  It is a strong recommendation for the veteran editors to pursue, and a requirement for any stable content under one of the links hubs.  It doesn't need to be adhered to by CasualContent or DraftContent.
+
+<toc>
+
+== First-level Entries =
+A WikiPage is one that is created with the standard WikiName.  All entries, including the HomePage, are created as primary pages.  However, some pages are known as "first-level" entries and represent a sort of hub that lists entries to other pages each of which uses the last [ or second ] word of the first-level pages' name as one of its WikiWord""s.  An example of this is CategoryWiki, which contain links to pages like WikiStyleGuide, WikiMarkup, and WikiURLs.
+
+== Sub-page Entries =
+Sub-pages are those which are created as a WikiName preceded by a slash '/' as in <tt><nowiki>/SubPage</nowiki></tt>.  The slash informs the wiki engine to nest the entry under the directory for the it referring page.  When it is referenced it will always be linked as shown in this format <tt><nowiki>?PrimaryPage/SubPage</nowiki></tt>. Use sub-pages to group collections of related content together for when searching for content.
+
+== Headings =
+First-level pages must begin with an H1 header as the only one of its type upon a page.  All other headers on a first-level page are H2 and lower.  All sub-pages must begin with an H2 header, of which there may be multiple upon a page.  No H1 headers are allowed in second-level pages.  For all headers except for the first on any page, precede them with a blank line. Any other type of WikiPage can be designed as desired, with the exception that the first header [ be it H1, H2, or H3 ] is the only one of it's sort upon the page.  Be sure to reserve H5 and H6 headers for special purposes as described below. 
+
+== Blockquotes =
+All headings of first-level pages and sub-pages must be followed by either a blockquote [ see WikiMarkup ] or some introductory text. 
+
+== Table of Contents =
+As described in WikiTOCs, H2 and lower headers that contain a '#' hashmark before the title as in <tt><nowiki>== # Section 1.1 =</nowiki></tt> can be referenced automatically by a table of contents command <tt>toc</tt>. Always utilize a table of contents for very long pages with varied content.  Candidates would be single-page HTML-formatted rules books.
+
+== Lines =
+Divider lines are formed by a string of 4 dashes like so; <tt>----</tt>.  Dividers are meant to separate common elements of the same topic.  Use divider lines sparingly! Never use a divider unless adequate non-header content appears before and after it.  Do not have blank lines precede or succeed a divider. 
+
+== Definitions =
+Often, a page needs not be more than a simple definition or list of definitions to be linked from a page with use of their terminology.  Start these pages with an H5 followed by the term being defined, as in <tt><nowiki>===== DEFINITION: Some Term Being Defined =</nowiki></tt>.  For long lists of terms, use the anchor form of the header like so: <tt><nowiki> ====== [#anchorName] Title Text Goes Here =</nowiki></tt>.
+
+== References =
+A wiki is extremely free-form and tends to become disorganized.  A user of a wiki will have a difficult time to quickly locate relevant content.  To circumvent this, always create a list of WikiName""s at the bottom of each page, preceded by an H6 header titled 'Related Entries'.  Each entry is to be a single line preceded by a blank space.  At minimum, the one entry each second-level page should have is a link back to it's first-level parent.
+
+{{template:RelatedEntries/WikiEditing}}
+ÿþ3newauthorÿþ31ÿþ3minorÿþ31ÿþ2hostÿþ2localhostÿþ2usernameÿþ2RobertKurcinaÿþ2revisionÿþ226ÿþ2idÿþ21261ÿþ2tscreateÿþ21179125464ÿþ2keeptsÿþ21222751967ÿþ1versionÿþ21ÿþ2ipÿþ2127.0.0.1ÿþ2tsÿþ21222751967ÿþ2nameÿþ2text_defaultÿþ2dataÿþ2summaryÿþ3*ÿþ3textÿþ3= Noble Pursuit Games Wiki Styleguide =
+This styleguide is for any wiki entries entered to ensure that the presentation is consistently applied between different contributors.  It is a strong recommendation for the veteran editors to pursue, and a requirement for any stable content under one of the links hubs.  It doesn't need to be adhered to by CasualContent or DraftContent.
+
+{{toc}}
+== First-level Entries =
+A WikiPage is one that is created with the standard WikiName.  All entries, including the HomePage, are created as primary pages.  However, some pages are known as "first-level" entries and represent a sort of hub that lists entries to other pages each of which uses the last [ or second ] word of the first-level pages' name as one of its WikiWord""s.  An example of this is CategoryWiki, which contain links to pages like WikiStyleGuide, WikiMarkup, and WikiURLs.
+
+== Sub-page Entries =
+Sub-pages are those which are created as a WikiName preceded by a slash '/' as in <tt><nowiki>/SubPage</nowiki></tt>.  The slash informs the wiki engine to nest the entry under the directory for the it referring page.  When it is referenced it will always be linked as shown in this format <tt><nowiki>?PrimaryPage/SubPage</nowiki></tt>. Use sub-pages to group collections of related content together for when searching for content.
+
+== Headings =
+First-level pages must begin with an H1 header as the only one of its type upon a page.  All other headers on a first-level page are H2 and lower.  All sub-pages must begin with an H2 header, of which there may be multiple upon a page.  No H1 headers are allowed in second-level pages.  For all headers except for the first on any page, precede them with a blank line. Any other type of WikiPage can be designed as desired, with the exception that the first header [ be it H1, H2, or H3 ] is the only one of it's sort upon the page.  Be sure to reserve H5 and H6 headers for special purposes as described below. 
+
+== Blockquotes =
+All headings of first-level pages and sub-pages must be followed by either a blockquote [ see WikiMarkup ] or some introductory text. 
+
+== Table of Contents =
+As described in WikiTOCs, H2 and lower headers that contain a '#' hashmark before the title as in <tt><nowiki>== # Section 1.1 =</nowiki></tt> can be referenced automatically by a table of contents command <tt>toc</tt>. Always utilize a table of contents for very long pages with varied content.  Candidates would be single-page HTML-formatted rules books.
+
+== Lines =
+Divider lines are formed by a string of 4 dashes like so; <tt>----</tt>.  Dividers are meant to separate common elements of the same topic.  Use divider lines sparingly! Never use a divider unless adequate non-header content appears before and after it.  Do not have blank lines precede or succeed a divider. 
+
+== Definitions =
+Often, a page needs not be more than a simple definition or list of definitions to be linked from a page with use of their terminology.  Start these pages with an H5 followed by the term being defined, as in <tt><nowiki>===== DEFINITION: Some Term Being Defined =</nowiki></tt>.  For long lists of terms, use the anchor form of the header like so: <tt><nowiki> ====== [#anchorName] Title Text Goes Here =</nowiki></tt>.
+
+== References =
+A wiki is extremely free-form and tends to become disorganized.  A user of a wiki will have a difficult time to quickly locate relevant content.  To circumvent this, always create a list of WikiName""s at the bottom of each page, preceded by an H6 header titled 'Related Entries'.  Each entry is to be a single line preceded by a blank space.  At minimum, the one entry each second-level page should have is a link back to it's first-level parent.
+
+{{template:RelatedEntries/WikiEditing}}
+ÿþ3minorÿþ31ÿþ3newauthorÿþ31ÿþ2usernameÿþ2RobertKurcinaÿþ2hostÿþ2localhostÿþ2revisionÿþ227ÿþ2tscreateÿþ21179125464ÿþ2idÿþ21278ÿþ2keeptsÿþ21223011345

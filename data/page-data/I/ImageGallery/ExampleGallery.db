@@ -1,0 +1,59 @@
+tsÿþ11223640810ÿþ1versionÿþ13ÿþ1cache_oldmajorÿþ14ÿþ1authorcreateÿþ1RobertKurcinaÿþ1cache_oldauthorÿþ14ÿþ1cache_diff_default_authorÿþ11ÿþ1revisionÿþ15ÿþ1tscreateÿþ11195531893ÿþ1text_defaultÿþ1ipÿþ2127.0.0.1ÿþ2tsÿþ21223640810ÿþ2versionÿþ21ÿþ2nameÿþ2text_defaultÿþ2dataÿþ2summaryÿþ3*ÿþ3textÿþ3== Example Image Gallery =
+
+{{gallery:header=Another Fantastic Set of Images|caption=Another One|description=Donec consectetuer, nibh ac tincidunt facilisis, nulla purus consequat ante, non feugiat sem metus vitae tortor. Quisque lacus quam, feugiat at, cursus eu, rhoncus vel, purus. Aenean eget dolor in risus facilisis euismod. Pellentesque dui est, congue a, varius ut, ultricies sed, orci. Maecenas a elit at libero volutpat sagittis. Donec lacus est, gravida euismod, gravida sit amet, cursus vel, tellus. Nullam eget odio. In hac habitasse platea dictumst. Nam eleifend, nunc id porttitor egestas, diam mi rutrum eros, vitae molestie eros leo quis sem. Etiam egestas metus id tortor posuere iaculis. Integer a turpis. Integer vitae justo ut pede interdum commodo. Ut nibh lacus, eleifend id, consectetuer et, cursus at, tellus. Fusce leo nibh, porta sed, adipiscing eu, posuere at, lectus. Nulla facilisi. Suspendisse ipsum diam, tincidunt nec, adipiscing et, ullamcorper vitae, nunc. Nam a urna. Etiam odio felis, placerat nec, sollicitudin malesuada, vulputate a, orci. Suspendisse vitae libero non arcu venenatis mollis. Vivamus vitae urna.
+thumb=ExampleGallery/thumb_image1.jpg|image=ExampleGallery/image1.jpg|title=caption for tooltip1
+thumb=ExampleGallery/thumb_image2.jpg|image=ExampleGallery/image2.jpg|title=caption for tooltip2
+thumb=ExampleGallery/thumb_image3.jpg|image=ExampleGallery/image3.jpg|title=caption for tooltip3
+thumb=ExampleGallery/thumb_image4.jpg|image=ExampleGallery/image4.jpg|title=caption for tooltip4
+thumb=ExampleGallery/thumb_image1.jpg|image=ExampleGallery/image1.jpg|title=caption for tooltip5
+thumb=ExampleGallery/thumb_image2.jpg|image=ExampleGallery/image2.jpg|title=caption for tooltip6
+thumb=ExampleGallery/thumb_image3.jpg|image=ExampleGallery/image3.jpg|title=caption for tooltip7
+thumb=ExampleGallery/thumb_image4.jpg|image=ExampleGallery/image4.jpg|title=caption for tooltip8
+thumb=ExampleGallery/thumb_image1.jpg|image=ExampleGallery/image1.jpg|title=caption for tooltip9
+thumb=ExampleGallery/thumb_image2.jpg|image=ExampleGallery/image2.jpg|title=caption for tooltip10
+thumb=ExampleGallery/thumb_image3.jpg|image=ExampleGallery/image3.jpg|title=caption for tooltip11
+thumb=ExampleGallery/thumb_image4.jpg|image=ExampleGallery/image4.jpg|title=caption for tooltip12
+thumb=ExampleGallery/thumb_image1.jpg|image=ExampleGallery/image1.jpg|title=caption for tooltip13
+thumb=ExampleGallery/thumb_image2.jpg|image=ExampleGallery/image2.jpg|title=caption for tooltip14
+thumb=ExampleGallery/thumb_image3.jpg|image=ExampleGallery/image3.jpg|title=caption for tooltip15
+thumb=ExampleGallery/thumb_image4.jpg|image=ExampleGallery/image4.jpg|title=caption for tooltip16
+thumb=ExampleGallery/thumb_image1.jpg|image=ExampleGallery/image1.jpg|title=caption for tooltip17
+thumb=ExampleGallery/thumb_image2.jpg|image=ExampleGallery/image2.jpg|title=caption for tooltip18
+}}
+ÿþ3newauthorÿþ31ÿþ3minorÿþ30ÿþ2usernameÿþ2ÿþ2hostÿþ2localhostÿþ2revisionÿþ25ÿþ2tscreateÿþ21195531893ÿþ2idÿþ21307ÿþ2keeptsÿþ21223640810ÿþ1cache_diff_default_majorÿþ11ÿþ1cache_diff_default_minorÿþ1<div id=wikidiffdiv><table id=wikidifftable><tr valign=top><td class="diff-header">Paragraph 3</td><td class="diff-vertical">&nbsp;</td><td class="diff-header">Paragraph 3</td></tr><tr valign=top><td class="diff-para-changed"><span class="diff-span-ident">thumb=ExampleGallery/thumb_image1.jpg|image=ExampleGallery/image1.jpg|title=</span><span class="diff-span-deleted">pity </span><span class="diff-span-ident">caption for tooltip1<br>
+</span><span class="diff-span-ident">thumb=ExampleGallery/thumb_image2.jpg|image=ExampleGallery/image2.jpg|title=</span><span class="diff-span-deleted">pity </span><span class="diff-span-ident">caption for tooltip2<br>
+</span><span class="diff-span-ident">thumb=ExampleGallery/thumb_image3.jpg|image=ExampleGallery/image3.jpg|title=</span><span class="diff-span-deleted">pity </span><span class="diff-span-ident">caption for tooltip3<br>
+</span><span class="diff-span-ident">thumb=ExampleGallery/thumb_image4.jpg|image=ExampleGallery/image4.jpg|title=</span><span class="diff-span-deleted">pity </span><span class="diff-span-ident">caption for tooltip4<br>
+</span><span class="diff-span-ident">thumb=ExampleGallery/thumb_image1.jpg|image=ExampleGallery/image1.jpg|title=</span><span class="diff-span-deleted">pity </span><span class="diff-span-ident">caption for tooltip5<br>
+</span><span class="diff-span-ident">thumb=ExampleGallery/thumb_image2.jpg|image=ExampleGallery/image2.jpg|title=</span><span class="diff-span-deleted">pity </span><span class="diff-span-ident">caption for tooltip6<br>
+</span><span class="diff-span-ident">thumb=ExampleGallery/thumb_image3.jpg|image=ExampleGallery/image3.jpg|title=</span><span class="diff-span-deleted">pity </span><span class="diff-span-ident">caption for tooltip7<br>
+</span><span class="diff-span-ident">thumb=ExampleGallery/thumb_image4.jpg|image=ExampleGallery/image4.jpg|title=</span><span class="diff-span-deleted">pity </span><span class="diff-span-ident">caption for tooltip8<br>
+</span><span class="diff-span-ident">thumb=ExampleGallery/thumb_image1.jpg|image=ExampleGallery/image1.jpg|title=</span><span class="diff-span-deleted">pity </span><span class="diff-span-ident">caption for tooltip9<br>
+</span><span class="diff-span-ident">thumb=ExampleGallery/thumb_image2.jpg|image=ExampleGallery/image2.jpg|title=</span><span class="diff-span-deleted">pity </span><span class="diff-span-ident">caption for tooltip10<br>
+</span><span class="diff-span-ident">thumb=ExampleGallery/thumb_image3.jpg|image=ExampleGallery/image3.jpg|title=</span><span class="diff-span-deleted">pity </span><span class="diff-span-ident">caption for tooltip11<br>
+</span><span class="diff-span-ident">thumb=ExampleGallery/thumb_image4.jpg|image=ExampleGallery/image4.jpg|title=</span><span class="diff-span-deleted">pity </span><span class="diff-span-ident">caption for tooltip12<br>
+</span><span class="diff-span-ident">thumb=ExampleGallery/thumb_image1.jpg|image=ExampleGallery/image1.jpg|title=</span><span class="diff-span-deleted">pity </span><span class="diff-span-ident">caption for tooltip13<br>
+</span><span class="diff-span-ident">thumb=ExampleGallery/thumb_image2.jpg|image=ExampleGallery/image2.jpg|title=</span><span class="diff-span-deleted">pity </span><span class="diff-span-ident">caption for tooltip14<br>
+</span><span class="diff-span-ident">thumb=ExampleGallery/thumb_image3.jpg|image=ExampleGallery/image3.jpg|title=</span><span class="diff-span-deleted">pity </span><span class="diff-span-ident">caption for tooltip15<br>
+</span><span class="diff-span-ident">thumb=ExampleGallery/thumb_image4.jpg|image=ExampleGallery/image4.jpg|title=</span><span class="diff-span-deleted">pity </span><span class="diff-span-ident">caption for tooltip16<br>
+</span><span class="diff-span-ident">thumb=ExampleGallery/thumb_image1.jpg|image=ExampleGallery/image1.jpg|title=</span><span class="diff-span-deleted">pity </span><span class="diff-span-ident">caption for tooltip17<br>
+</span><span class="diff-span-ident">thumb=ExampleGallery/thumb_image2.jpg|image=ExampleGallery/image2.jpg|title=</span><span class="diff-span-deleted">pity </span><span class="diff-span-ident">caption for tooltip18<br>
+</span></td><td class="diff-vertical"></td><td class="diff-para-changed"><span class="diff-span-ident">thumb=ExampleGallery/thumb_image1.jpg|image=ExampleGallery/image1.jpg|title=</span><span class="diff-span-ident">caption for tooltip1<br>
+</span><span class="diff-span-ident">thumb=ExampleGallery/thumb_image2.jpg|image=ExampleGallery/image2.jpg|title=</span><span class="diff-span-ident">caption for tooltip2<br>
+</span><span class="diff-span-ident">thumb=ExampleGallery/thumb_image3.jpg|image=ExampleGallery/image3.jpg|title=</span><span class="diff-span-ident">caption for tooltip3<br>
+</span><span class="diff-span-ident">thumb=ExampleGallery/thumb_image4.jpg|image=ExampleGallery/image4.jpg|title=</span><span class="diff-span-ident">caption for tooltip4<br>
+</span><span class="diff-span-ident">thumb=ExampleGallery/thumb_image1.jpg|image=ExampleGallery/image1.jpg|title=</span><span class="diff-span-ident">caption for tooltip5<br>
+</span><span class="diff-span-ident">thumb=ExampleGallery/thumb_image2.jpg|image=ExampleGallery/image2.jpg|title=</span><span class="diff-span-ident">caption for tooltip6<br>
+</span><span class="diff-span-ident">thumb=ExampleGallery/thumb_image3.jpg|image=ExampleGallery/image3.jpg|title=</span><span class="diff-span-ident">caption for tooltip7<br>
+</span><span class="diff-span-ident">thumb=ExampleGallery/thumb_image4.jpg|image=ExampleGallery/image4.jpg|title=</span><span class="diff-span-ident">caption for tooltip8<br>
+</span><span class="diff-span-ident">thumb=ExampleGallery/thumb_image1.jpg|image=ExampleGallery/image1.jpg|title=</span><span class="diff-span-ident">caption for tooltip9<br>
+</span><span class="diff-span-ident">thumb=ExampleGallery/thumb_image2.jpg|image=ExampleGallery/image2.jpg|title=</span><span class="diff-span-ident">caption for tooltip10<br>
+</span><span class="diff-span-ident">thumb=ExampleGallery/thumb_image3.jpg|image=ExampleGallery/image3.jpg|title=</span><span class="diff-span-ident">caption for tooltip11<br>
+</span><span class="diff-span-ident">thumb=ExampleGallery/thumb_image4.jpg|image=ExampleGallery/image4.jpg|title=</span><span class="diff-span-ident">caption for tooltip12<br>
+</span><span class="diff-span-ident">thumb=ExampleGallery/thumb_image1.jpg|image=ExampleGallery/image1.jpg|title=</span><span class="diff-span-ident">caption for tooltip13<br>
+</span><span class="diff-span-ident">thumb=ExampleGallery/thumb_image2.jpg|image=ExampleGallery/image2.jpg|title=</span><span class="diff-span-ident">caption for tooltip14<br>
+</span><span class="diff-span-ident">thumb=ExampleGallery/thumb_image3.jpg|image=ExampleGallery/image3.jpg|title=</span><span class="diff-span-ident">caption for tooltip15<br>
+</span><span class="diff-span-ident">thumb=ExampleGallery/thumb_image4.jpg|image=ExampleGallery/image4.jpg|title=</span><span class="diff-span-ident">caption for tooltip16<br>
+</span><span class="diff-span-ident">thumb=ExampleGallery/thumb_image1.jpg|image=ExampleGallery/image1.jpg|title=</span><span class="diff-span-ident">caption for tooltip17<br>
+</span><span class="diff-span-ident">thumb=ExampleGallery/thumb_image2.jpg|image=ExampleGallery/image2.jpg|title=</span><span class="diff-span-ident">caption for tooltip18<br>
+</span></td></tr></table></div>

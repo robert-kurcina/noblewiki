@@ -1,0 +1,154 @@
+
+/* FEEDBACK GENERAL */
+.feedback {
+	font-family: Arial, sans-serif;
+	font-size: 0.8em;
+	padding: 5px;
+	list-style-type: none;
+	background-color: #f5f5f5;
+}
+
+.commentText {
+	padding: 5px 20px 10px 10px;
+	line-height: 1.3em;
+	margin-left: 55px;
+}
+
+.feedback a {
+	text-decoration: none;
+	text-decoration: underline;	
+	color: #999999;
+}
+
+.feedback a:hover {
+	text-decoration: none;	
+}
+
+/* FEEDBACK FORM */
+.feedback legend {
+	font-weight: bold;
+}
+
+.feedback label {
+	font-size: 0.9em;
+	font-weight: bold;
+	color: #666666;
+}
+
+.feedback fieldset {
+	background-color: #eeeeee;
+}
+
+.feedback fieldset.author {
+	background-color: #cccccc;
+}
+
+.feedback textarea {
+	width: 100%;
+}
+
+/* FEEDBACK RESULTS */
+.commentBy {
+	font-style: italic;
+}
+
+.commentId {
+	float: left;
+	padding: 5px;
+	height: 40px;
+	width: 40px;
+	margin-top: 5px;
+	margin-left: 5px;
+	_margin-left: 2px;
+	border: 1px solid #cccccc;
+	background-color: #ffffff;
+}
+
+.commentNumber {
+	color: #000000;
+	font-size: 20px;
+	text-align: center;
+	margin-top: 10px;
+}
+
+.commentImage {
+	float: right;
+	padding: 5px;
+	margin: 5px;
+	margin-right: 3px;
+	background-color: #eeeeee;
+	border: 1px solid #cccccc;
+	height: 50px;
+	width: 50px;
+}
+
+.commentTitle {
+	font-weight: bold;
+	font-style: italic;
+	font-size: 1.2em;
+	margin-bottom: 10px;
+}
+
+.commentDateTime {
+	text-align: right;
+	border-top: 1px solid #cccccc;
+	width: 100%;
+	color: #666666;
+	padding-top: 5px;
+}
+
+.commentDateTime a {
+	font-style: italic;
+	color: #666666;
+}		
+.even {
+	background-color: #eeeeee;
+}
+
+.author {
+	background-color: #999999;
+}
+
+.author .commentImage {
+	border: 1px solid #000000;
+	background-color: #cccccc;
+}
+.commentQuoted {
+	padding: 5px;
+	border: 1px dotted #000000;
+	margin: 5px;
+	background-color: #f5f5f5;
+	color: #666666;
+}
+
+.commentQuoted .commentBy,
+.commentQuoted .commentBy a {
+	margin-bottom: 10px;
+	color: #666666;
+}
+
+.author .commentQuoted {
+	background-color: #cccccc;
+	color: #333333;
+}
+
+.author .commentQuoted .commentBy,
+.author .commentQuoted .commentBy a {
+	color: #666666;
+}
+
+.author .commentBy,
+.author .commentBy a {
+	color: #ffffff;	
+}
+
+.author .commentId {
+	background-color: #000000;
+	border: none;
+}
+
+.author .commentNumber,
+.author .commentDateTime,
+.author .commentDateTime a {
+	color: #ffffff;
+}
