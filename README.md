@@ -102,18 +102,18 @@ USE THE WIKI
 		4.  For the SandBox use the following markup by copying and pasting into
 			the textarea:
 			
-			
-== Greetings! =
-
-This is my first page.
-It links to [http://www.google.com/ an external] Web site.
-
-It links to the WikiContacts page, which is not locked.
-
-It also links to the HomePage, which is LOCKED.
-
-And it links to a page NotYetCreated.
-
+```			
+        == Greetings! =
+        
+        This is my first page.
+        It links to [http://www.google.com/ an external] Web site.
+        
+        It links to the WikiContacts page, which is not locked.
+        
+        It also links to the HomePage, which is LOCKED.
+        
+        And it links to a page NotYetCreated.
+```
 
 			
 		5.  What you've just entered is known as Wiki Markup Language.  Press the 
